@@ -20,7 +20,7 @@ howto_steps:
   - name: "Stop using the drive immediately"
     text: "Do not save any new files to the USB drive. Every new write operation overwrites the space where deleted files may still exist. Eject the drive and keep it disconnected until recovery is attempted."
   - name: "Try Windows File Recovery for deleted files"
-    text: "Install Windows File Recovery from the Microsoft Store (free, official Microsoft tool). Run it from an administrator Command Prompt: winfr E: D:\Recovery\ /extensive — replacing E: with your USB drive letter and D:\Recovery\ with a folder on a different drive."
+    text: "Install Windows File Recovery from the Microsoft Store (free, official Microsoft tool). Run it from an administrator Command Prompt: winfr E: D:\\Recovery\\ /extensive — replacing E: with your USB drive letter and D:\\Recovery\\ with a folder on a different drive."
   - name: "Check if the drive needs a file system repair first"
     text: "If Windows shows the drive as RAW or prompts you to format it, run: chkdsk E: /f from an administrator Command Prompt. This repairs file system errors and may restore access without any recovery tool."
   - name: "Use a third-party recovery tool if built-in tools fail"
