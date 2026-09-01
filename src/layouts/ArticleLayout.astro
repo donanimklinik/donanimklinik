@@ -98,6 +98,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   canonical={canonical}
   ogTitle={title}
   ogDescription={description}
+  ogType="article"
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

@@ -663,3 +663,36 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
   color: var(--text-faint); font-family: 'IBM Plex Mono', monospace; font-size: 13px;
 }
 .empty-state p { margin-top: 12px; font-size: 13px; }
+
+/* Cookie consent banner */
+.cookie-banner {
+  display: none;
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+  background: var(--panel-2); border-top: 1px solid var(--line);
+  padding: 16px 24px;
+  flex-wrap: wrap; align-items: center; gap: 16px;
+}
+.cookie-banner--visible { display: flex; }
+.cookie-text {
+  font-size: 13px; color: var(--text-dim); flex: 1; min-width: 240px;
+}
+.cookie-text a { color: var(--brand-blue); text-decoration: none; }
+.cookie-text a:hover { text-decoration: underline; }
+.cookie-actions { display: flex; gap: 8px; flex-shrink: 0; }
+.cookie-btn {
+  font-family: 'IBM Plex Mono', monospace; font-size: 12px;
+  padding: 8px 16px; border-radius: 3px; cursor: pointer; border: 1px solid;
+  white-space: nowrap; min-height: 44px;
+}
+.cookie-btn--accept {
+  background: var(--trace); color: var(--bg); border-color: var(--trace); font-weight: 600;
+}
+.cookie-btn--accept:hover { opacity: 0.85; }
+.cookie-btn--decline {
+  background: transparent; color: var(--text-dim); border-color: var(--line);
+}
+.cookie-btn--decline:hover { border-color: var(--text-faint); color: var(--text); }
+@media (max-width: 600px) {
+  .cookie-banner { padding: 14px 16px; }
+  .cookie-text { font-size: 12px; }
+}
