@@ -1,6 +1,6 @@
 ---
 title: "Windows Product Key Not Working — What to Do"
-description: "Product key rejected by Windows? The cause is almost always a mismatch, a used key, or a key from the wrong channel. Here is how to identify the problem and fix it."
+description: "Product key rejected by Windows? The cause is usually a mismatch, a used key, or a key from the wrong channel. Here is how to identify and fix it."
 category: computers
 pillar: "Windows Activation Errors"
 status: published

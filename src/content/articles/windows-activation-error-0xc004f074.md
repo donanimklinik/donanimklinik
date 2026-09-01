@@ -1,6 +1,6 @@
 ---
 title: "Windows Activation Error 0xC004F074 — Fix"
-description: "Error 0xC004F074 means no KMS server could be contacted for activation. Here is how to fix it on workplace computers and what to do if you are working remotely."
+description: "Error 0xC004F074 means no KMS server could be contacted. Here is how to fix it on workplace devices and what to do when working remotely."
 category: computers
 pillar: "Windows Activation Errors"
 status: published

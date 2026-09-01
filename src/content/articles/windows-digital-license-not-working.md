@@ -1,6 +1,6 @@
 ---
-title: "Windows Digital Licence Not Working — How to Fix It"
-description: "A digital licence links Windows activation to your hardware. If it stops working after a hardware change or reinstall, here is how to restore it using your Microsoft account."
+title: "Windows Digital Licence Not Working — Fix"
+description: "A digital licence links your Windows activation to your hardware. Here is how to restore it after a hardware change or reinstall."
 category: computers
 pillar: "Windows Activation Errors"
 status: published

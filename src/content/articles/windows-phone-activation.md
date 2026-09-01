@@ -1,6 +1,6 @@
 ---
-title: "How to Use Windows Phone Activation When Online Activation Fails"
-description: "Online activation not working? Windows phone activation is Microsoft's official fallback. Here is the exact steps to complete it by phone or automated system."
+title: "Windows Phone Activation — When Online Activation Fails"
+description: "Online activation not working? Phone activation is Microsoft's official fallback. Here are the steps to complete it using the automated system."
 category: computers
 pillar: "Windows Activation Errors"
 status: published
