@@ -27,9 +27,9 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
   <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
   <div class="hero-scanline" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="hero-tag mono">&gt; scanning known error signatures...</div>
+    <div class="hero-tag mono">&gt; <span class="hero-tag-type">scanning known error signatures...</span></div>
     <h1 class="display">
-      Diagnose the exact<br>fault. Fix it once<span class="cursor">_</span>
+      <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
     </h1>
     <p>
       Step-by-step repairs for the errors that stop you cold — sourced from official
@@ -55,6 +55,21 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
     </div>
   </div>
 </section>
+
+<!-- Trust Strip -->
+<div class="trust-strip" aria-hidden="true">
+  <div class="trust-strip-inner">
+    <span><span class="trust-hl">32</span> verified guides</span>
+    <span class="trust-sep">·</span>
+    <span>Official docs only</span>
+    <span class="trust-sep">·</span>
+    <span>No affiliate links</span>
+    <span class="trust-sep">·</span>
+    <span>Hand-verified fixes</span>
+    <span class="trust-sep">·</span>
+    <span>Updated <span class="trust-hl">Sept 2026</span></span>
+  </div>
+</div>
 
 <!-- Categories -->
 <section class="categories" aria-labelledby="cat-heading">
@@ -185,5 +200,24 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
     </div>
   </section>
 )}
+
+<script>
+  // Staggered scroll-reveal for article cards
+  const grid = document.querySelector('.art-grid');
+  if (grid) {
+    grid.classList.add('js-reveal');
+    const cards = [...grid.querySelectorAll('.art-card')];
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const idx = cards.indexOf(entry.target as HTMLElement);
+          setTimeout(() => entry.target.classList.add('is-visible'), idx * 80);
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    cards.forEach(card => obs.observe(card));
+  }
+</script>
 
 </Layout>
