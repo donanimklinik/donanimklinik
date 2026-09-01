@@ -138,7 +138,7 @@ header .wrap {
   .lang { margin-left: auto; margin-right: 18px; }
   .menu-btn {
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    width: 36px; height: 36px; background: transparent;
+    width: 44px; height: 44px; background: transparent;
     border: 1px solid var(--line); cursor: pointer; padding: 0;
   }
   .menu-btn .bar { width: 16px; height: 1.6px; background: var(--text); margin-top: 3.5px; }
@@ -580,9 +580,9 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
   font-size: 17px; font-weight: 600;
   margin: 28px 0 12px; color: var(--text);
 }
-.article-body p { font-size: 15.5px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.75; }
+.article-body p { font-size: 16px; color: var(--text-dim); margin-bottom: 18px; line-height: 1.75; }
 .article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 18px; }
-.article-body li { font-size: 15.5px; color: var(--text-dim); margin-bottom: 8px; line-height: 1.7; }
+.article-body li { font-size: 16px; color: var(--text-dim); margin-bottom: 8px; line-height: 1.7; }
 .article-body strong { color: var(--text); font-weight: 600; }
 .article-body a { color: var(--brand-blue); text-decoration: none; }
 .article-body a:hover { text-decoration: underline; }
