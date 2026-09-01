@@ -23,121 +23,42 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
 
 <!-- Hero -->
 <section class="hero">
-  <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
-  <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
-  <div class="hero-scanline" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="hero-wrap">
-
-      <!-- Left: headline + search -->
-      <div class="hero-left">
-        <div class="hero-version mono">dk / diagnostic engine / 32 guides indexed</div>
-        <h1 class="display">
-          <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
-        </h1>
-        <p class="hero-desc">Official manufacturer docs only — no forum speculation, no guesswork. Exact error code, exact fix.</p>
-        <div class="lookup-wrap">
-          <div class="lookup-header mono">
-            <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true">
-              <circle cx="5.5" cy="5.5" r="4.5" stroke="var(--amber)" stroke-width="1.6"/>
-              <path d="M9 9L12 12" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round"/>
-            </svg>
-            <span>error_lookup.exe</span>
-            <span class="lookup-header-hint">press Enter to search</span>
-          </div>
-          <div class="lookup" role="search">
-            <input type="text" id="error-lookup" class="mono" placeholder="0x0000007B, 0xC004F050, SMTP_CONN..." aria-label="Search error code">
-            <button type="button">Run</button>
-          </div>
+    <div class="hero-content">
+      <p class="hero-label mono">donanimklinik — diagnostic engine</p>
+      <h1 class="display">
+        <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
+      </h1>
+      <p class="hero-sub">Official manufacturer docs only — exact error code, exact fix.</p>
+      <div class="lookup-wrap">
+        <div class="lookup-header mono">
+          <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+            <circle cx="5.5" cy="5.5" r="4.5" stroke="var(--amber)" stroke-width="1.6"/>
+            <path d="M9 9L12 12" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>error_lookup.exe</span>
+          <span class="lookup-header-hint">press Enter to search</span>
+        </div>
+        <div class="lookup" role="search">
+          <input type="text" id="error-lookup" class="mono" placeholder="0x0000007B, 0xC004F050, SMTP_CONN..." aria-label="Search error code">
+          <button type="button">Run</button>
         </div>
       </div>
-
-      <!-- Right: diagnostic log panel (decorative) -->
-      <aside class="hero-right" aria-hidden="true">
-        <div class="diag-panel">
-          <div class="diag-hdr">
-            <span class="diag-dot dc-r"></span>
-            <span class="diag-dot dc-a"></span>
-            <span class="diag-dot dc-g"></span>
-            <span class="diag-title mono">error_trace.log</span>
-          </div>
-          <div class="diag-body">
-            <div class="diag-row">
-              <span class="diag-ok">✓</span>
-              <span class="diag-code mono">0xC004F050</span>
-              <span class="diag-name">WIN_ACTIVATION</span>
-              <span class="diag-badge db-ok">resolved</span>
-            </div>
-            <div class="diag-row">
-              <span class="diag-ok">✓</span>
-              <span class="diag-code mono">0x800CCC0E</span>
-              <span class="diag-name">SMTP_CONN_FAIL</span>
-              <span class="diag-badge db-ok">resolved</span>
-            </div>
-            <div class="diag-row">
-              <span class="diag-ok">✓</span>
-              <span class="diag-code mono">0x8007232B</span>
-              <span class="diag-name">KMS_UNREACHABLE</span>
-              <span class="diag-badge db-ok">resolved</span>
-            </div>
-            <div class="diag-row">
-              <span class="diag-ok">✓</span>
-              <span class="diag-code mono">0xC004C008</span>
-              <span class="diag-name">KEY_IN_USE</span>
-              <span class="diag-badge db-ok">resolved</span>
-            </div>
-            <div class="diag-row diag-active">
-              <span class="diag-spin">↻</span>
-              <span class="diag-code mono">0x80042108</span>
-              <span class="diag-name">IMAP_CONN_FAIL</span>
-              <span class="diag-badge db-pending">analyzing</span>
-            </div>
-          </div>
-          <div class="diag-footer mono">
-            <span class="diag-footer-dot"></span>
-            4 resolved &nbsp;·&nbsp; 1 analyzing &nbsp;·&nbsp; 0 failed
-          </div>
-        </div>
-      </aside>
-
     </div>
   </div>
 </section>
 
-<!-- Ticker strip -->
-<div class="ticker-bar" aria-hidden="true">
-  <div class="ticker-track">
-    <div class="ticker-inner">
-      <span class="tk-item"><span class="tk-dot"></span><span class="tk-hl">LIVE</span></span>
-      <span class="tk-div">|</span>
-      <span class="tk-item"><span class="tk-hl">32</span>&nbsp;guides indexed</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Official sources only</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Hand-verified</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">No affiliate links</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Updated Sept 2026</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Exact error → exact fix</span>
-      <span class="tk-div">|</span>
-      <!-- duplicate for seamless loop -->
-      <span class="tk-item"><span class="tk-dot"></span><span class="tk-hl">LIVE</span></span>
-      <span class="tk-div">|</span>
-      <span class="tk-item"><span class="tk-hl">32</span>&nbsp;guides indexed</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Official sources only</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Hand-verified</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">No affiliate links</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Updated Sept 2026</span>
-      <span class="tk-div">|</span>
-      <span class="tk-item">Exact error → exact fix</span>
-      <span class="tk-div">|</span>
-    </div>
+<!-- Trust strip -->
+<div class="trust-strip" aria-hidden="true">
+  <div class="wrap trust-strip-inner">
+    <span class="ts-item"><span class="ts-dot"></span><span class="ts-hl">32 guides</span></span>
+    <span class="ts-sep">·</span>
+    <span class="ts-item">Official sources only</span>
+    <span class="ts-sep">·</span>
+    <span class="ts-item">Hand-verified</span>
+    <span class="ts-sep">·</span>
+    <span class="ts-item">No affiliate links</span>
+    <span class="ts-sep ts-right" style="margin-left:auto; padding-right:0;">Updated Sept 2026</span>
   </div>
 </div>
 

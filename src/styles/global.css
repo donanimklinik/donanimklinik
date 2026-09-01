@@ -254,15 +254,6 @@ header .wrap {
 .nav-blue .nav-dot { color: var(--brand-blue); }
 .nav-trace .nav-dot { color: var(--trace); }
 .nav-amber .nav-dot { color: var(--amber); }
-/* Always-on category color — not just on hover */
-.desktop-nav a.nav-red   { color: rgba(240,85,58,0.72); }
-.desktop-nav a.nav-blue  { color: rgba(43,179,224,0.72); }
-.desktop-nav a.nav-trace { color: rgba(121,240,192,0.72); }
-.desktop-nav a.nav-amber { color: rgba(251,176,59,0.72); }
-.foot-col a.nav-red   { color: rgba(240,85,58,0.7); }
-.foot-col a.nav-blue  { color: rgba(43,179,224,0.7); }
-.foot-col a.nav-trace { color: rgba(121,240,192,0.7); }
-.foot-col a.nav-amber { color: rgba(251,176,59,0.7); }
 
 /* Brand logo */
 .brand { display: flex; align-items: center; flex-shrink: 0; white-space: nowrap; }
@@ -353,16 +344,6 @@ header .wrap {
   position: relative;
   overflow: hidden;
 }
-/* Dot-grid substrate — premium depth layer (masked to upper-left quadrant) */
-.hero::before {
-  content: '';
-  position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background-image: radial-gradient(circle, rgba(121,240,192,0.35) 1px, transparent 1px);
-  background-size: 30px 30px;
-  mask-image: radial-gradient(ellipse 90% 60% at 30% 30%, black 0%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 90% 60% at 30% 30%, black 0%, transparent 70%);
-  opacity: 0.18;
-}
 /* Film grain texture — adds tactile depth to flat gradient background */
 .hero::after {
   content: '';
@@ -433,8 +414,8 @@ header .wrap {
 }
 @keyframes typeTag { to { width: 38ch; } }
 .hero h1 {
-  font-size: 52px; line-height: 1.1; font-weight: 700;
-  max-width: 700px; letter-spacing: -0.015em;
+  font-size: 68px; line-height: 1.06; font-weight: 700;
+  max-width: 680px; letter-spacing: -0.022em;
   color: var(--text);
 }
 /* Gradient accent on the opening word */
@@ -445,8 +426,24 @@ header .wrap {
   background-clip: text;
 }
 .hero h1 .cursor { color: var(--amber); text-shadow: 0 0 18px rgba(251,176,59,0.5); }
-.hero p {
-  color: var(--text-dim); font-size: 16.5px; max-width: 540px; margin-top: 22px;
+/* Single-column hero content block */
+.hero-content { max-width: 680px; }
+/* Tiny label above headline */
+.hero-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px; color: var(--text-faint); letter-spacing: 0.06em;
+  margin-bottom: 22px;
+  display: flex; align-items: center; gap: 9px;
+}
+.hero-label::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  background: var(--trace); box-shadow: 0 0 6px var(--trace);
+  animation: blinkTag 1.6s ease-in-out infinite;
+}
+/* One-liner below headline */
+.hero-sub {
+  color: var(--text-dim); font-size: 15.5px; max-width: 520px;
+  margin-top: 20px; line-height: 1.65;
 }
 /* Two-column hero layout */
 .hero-wrap {
@@ -478,18 +475,16 @@ header .wrap {
   color: var(--text-dim); font-size: 15px; max-width: 480px;
   margin-top: 18px; line-height: 1.65;
 }
-/* Staggered hero entrance — 4 children: version, h1, desc, lookup */
+/* Staggered hero entrance — label, h1, sub, lookup */
 @keyframes heroFade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.hero-left > * { animation: heroFade 0.7s ease both; }
-.hero-left > *:nth-child(1) { animation-delay: 0.05s; }
-.hero-left > *:nth-child(2) { animation-delay: 0.22s; }
-.hero-left > *:nth-child(3) { animation-delay: 0.40s; }
-.hero-left > *:nth-child(4) { animation-delay: 0.58s; }
-.hero-right { animation: heroFade 0.9s ease 0.50s both; }
+.hero-content > * { animation: heroFade 0.7s ease both; }
+.hero-content > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-content > *:nth-child(2) { animation-delay: 0.22s; }
+.hero-content > *:nth-child(3) { animation-delay: 0.40s; }
+.hero-content > *:nth-child(4) { animation-delay: 0.58s; }
 @media (max-width: 640px) {
   .hero { padding: 64px 0 48px; }
-  .hero h1 { font-size: 36px; }
-  .hero-left h1 { font-size: 36px; }
+  .hero h1 { font-size: 38px; letter-spacing: -0.015em; }
 }
 
 /* Search/Lookup — terminal panel style */
@@ -629,38 +624,30 @@ header .wrap {
 .section-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
 
 /* ============================================================
-   Ticker Strip (scrolling trust bar)
+   Trust Strip
    ============================================================ */
-.ticker-bar {
+.trust-strip {
   background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-  height: 32px; overflow: hidden; position: relative;
 }
-.ticker-bar::before, .ticker-bar::after {
-  content: ''; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none;
-}
-.ticker-bar::before { left: 0; background: linear-gradient(90deg, var(--panel) 30%, transparent); }
-.ticker-bar::after  { right: 0; background: linear-gradient(-90deg, var(--panel) 30%, transparent); }
-.ticker-track { overflow: hidden; height: 100%; display: flex; align-items: center; }
-.ticker-inner {
-  display: flex; align-items: center;
-  white-space: nowrap; gap: 0;
+.trust-strip-inner {
+  display: flex; align-items: center; height: 34px; gap: 0;
   font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-faint);
-  letter-spacing: 0.025em;
-  animation: tickerScroll 32s linear infinite;
+  letter-spacing: 0.03em; overflow: hidden;
 }
-.ticker-bar:hover .ticker-inner { animation-play-state: paused; }
-@keyframes tickerScroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.ts-item { display: flex; align-items: center; gap: 7px; padding: 0 18px; white-space: nowrap; }
+.ts-item:first-child { padding-left: 0; }
+.ts-sep { color: var(--line); flex-shrink: 0; }
+.ts-dot {
+  width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0;
+  background: var(--trace); box-shadow: 0 0 4px var(--trace);
+  animation: blinkTag 2s ease-in-out infinite;
 }
-.tk-item { padding: 0 16px; display: flex; align-items: center; gap: 7px; }
-.tk-div  { color: var(--line); font-size: 14px; line-height: 1; flex-shrink: 0; }
-.tk-dot  {
-  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
-  background: var(--trace); box-shadow: 0 0 5px var(--trace);
-  animation: blinkTag 1.8s ease-in-out infinite;
+.ts-hl { color: var(--trace); }
+.ts-right { margin-left: auto; padding-right: 0; }
+@media (max-width: 640px) {
+  .trust-strip-inner .ts-item:not(:first-child):not(.ts-right) { display: none; }
+  .trust-strip-inner .ts-sep { display: none; }
 }
-.tk-hl { color: var(--trace); }
 
 /* ============================================================
    Category Grid
