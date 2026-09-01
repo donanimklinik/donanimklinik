@@ -15,6 +15,8 @@ interface Props {
   schemaType?: 'Article' | 'HowTo' | 'FAQPage';
   howtoSteps?: { name: string; text: string }[];
   relatedArticles?: { id: string; title: string; description: string; category: string; readTime?: number }[];
+  pillarName?: string;
+  pillarSlug?: string;
 }
 
 const {
@@ -29,6 +31,8 @@ const {
   schemaType = 'Article',
   howtoSteps,
   relatedArticles = [],
+  pillarName,
+  pillarSlug,
 } = Astro.props;
 
 const canonical = `https://donanimklinik.com/${category}/${slug}/`;
@@ -114,6 +118,12 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
       <a href="/">Home</a>
       <span aria-hidden="true">›</span>
       <a href={`/${category}/`}>{tag.label}</a>
+      {pillarName && pillarSlug && (
+        <>
+          <span aria-hidden="true">›</span>
+          <a href={`/${category}/${pillarSlug}/`}>{pillarName}</a>
+        </>
+      )}
       <span aria-hidden="true">›</span>
       <span aria-current="page">{title}</span>
     </nav>

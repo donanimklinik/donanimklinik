@@ -1,0 +1,103 @@
+---
+import Layout from './Layout.astro';
+
+interface Article {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  readTime?: number;
+  schemaType: string;
+}
+
+interface Props {
+  pillarName: string;
+  category: string;
+  categoryLabel: string;
+  articles: Article[];
+}
+
+const { pillarName, category, categoryLabel, articles } = Astro.props;
+
+const canonical = `https://donanimklinik.com/${category}/${Astro.url.pathname.split('/').filter(Boolean).pop()}/`;
+const pageTitle = `${pillarName} — Complete Guide`;
+const pageDesc = `All ${articles.length} guides on ${pillarName}, sourced from official documentation. Step-by-step fixes and explanations.`;
+
+const tagMap: Record<string, { cls: string; color: string }> = {
+  computers:   { cls: 'red',    color: 'var(--red)' },
+  networking:  { cls: 'blue',   color: 'var(--brand-blue)' },
+  software:    { cls: 'trace',  color: 'var(--trace)' },
+  peripherals: { cls: 'amber',  color: 'var(--amber)' },
+};
+const tag = tagMap[category] ?? { cls: 'trace', color: 'var(--trace)' };
+
+const hubSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: pageTitle,
+  description: pageDesc,
+  url: canonical,
+  hasPart: articles.map((a) => ({
+    '@type': 'Article',
+    name: a.title,
+    url: `https://donanimklinik.com/${a.category}/${a.id}/`,
+  })),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://donanimklinik.com/' },
+    { '@type': 'ListItem', position: 2, name: categoryLabel, item: `https://donanimklinik.com/${category}/` },
+    { '@type': 'ListItem', position: 3, name: pillarName, item: canonical },
+  ],
+};
+---
+
+<Layout
+  title={`${pageTitle} | DonanimKlinik`}
+  description={pageDesc}
+  canonical={canonical}
+  ogTitle={pageTitle}
+  ogDescription={pageDesc}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <div class="page-header">
+    <div class="page-header-glow" style={`background: ${tag.color};`} aria-hidden="true"></div>
+    <div class="wrap">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href={`/${category}/`}>{categoryLabel}</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">{pillarName}</span>
+      </nav>
+      <span class={`art-tag ${tag.cls}`}>{categoryLabel}</span>
+      <h1 class="page-title display" style="margin-top: 16px;">{pillarName}</h1>
+      <p class="page-desc">All guides on this topic, sourced from official documentation.</p>
+      <p class="article-count mono">{articles.length} guide{articles.length !== 1 ? 's' : ''} published</p>
+    </div>
+  </div>
+
+  <section class="article-list">
+    <div class="wrap">
+      <div class="art-grid">
+        {articles.map((a) => (
+          <a href={`/${a.category}/${a.id}/`} class="art-card">
+            <span class={`art-tag ${tag.cls}`}>{categoryLabel}</span>
+            <h2 class="art-card-title">{a.title}</h2>
+            <p class="art-card-desc">{a.description}</p>
+            {a.readTime && (
+              <span class="art-card-meta mono">{a.readTime} min read</span>
+            )}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

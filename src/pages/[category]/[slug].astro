@@ -1,45 +1,111 @@
 ---
 import ArticleLayout from '../../layouts/ArticleLayout.astro';
+import PillarHubLayout from '../../layouts/PillarHubLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { toPillarSlug } from '../../utils/pillarSlug';
+
+const categoryMeta: Record<string, { label: string }> = {
+  computers:   { label: 'Computers' },
+  networking:  { label: 'Networking' },
+  software:    { label: 'Software' },
+  peripherals: { label: 'Peripherals' },
+};
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles', ({ data }) => data.status === 'published');
-  return articles.map((article) => ({
-    params: {
-      category: article.data.category,
-      slug: article.id,
-    },
-    props: { article, allArticles: articles },
+  const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
+
+  // Article pages
+  const articlePaths = allArticles.map((article) => ({
+    params: { category: article.data.category, slug: article.id },
+    props: { type: 'article' as const, article, allArticles },
   }));
+
+  // Pillar hub pages — one per unique pillar+category combination
+  const pillarMap = new Map<string, { pillar: string; category: string; articles: typeof allArticles }>();
+  for (const article of allArticles) {
+    const key = `${article.data.category}::${article.data.pillar}`;
+    if (!pillarMap.has(key)) {
+      pillarMap.set(key, { pillar: article.data.pillar, category: article.data.category, articles: [] });
+    }
+    pillarMap.get(key)!.articles.push(article);
+  }
+
+  const hubPaths = Array.from(pillarMap.values()).map(({ pillar, category, articles }) => ({
+    params: { category, slug: toPillarSlug(pillar) },
+    props: { type: 'hub' as const, pillarName: pillar, category, hubArticles: articles },
+  }));
+
+  return [...articlePaths, ...hubPaths];
 }
 
-const { article, allArticles } = Astro.props;
-const { Content } = await render(article);
+const { type } = Astro.props;
 
-const relatedArticles = allArticles
-  .filter((a) => a.data.pillar === article.data.pillar && a.id !== article.id)
-  .slice(0, 3)
-  .map((a) => ({
+// ── Article page ──────────────────────────────────────────────
+let Content: any;
+let article: any;
+let relatedArticles: any[] = [];
+
+if (type === 'article') {
+  const { article: a, allArticles } = Astro.props as any;
+  article = a;
+  const rendered = await render(article);
+  Content = rendered.Content;
+
+  relatedArticles = (allArticles as any[])
+    .filter((x: any) => x.data.pillar === article.data.pillar && x.id !== article.id)
+    .slice(0, 3)
+    .map((x: any) => ({
+      id: x.id,
+      title: x.data.title,
+      description: x.data.description,
+      category: x.data.category,
+      readTime: x.data.read_time,
+    }));
+}
+
+// ── Hub page ──────────────────────────────────────────────────
+let pillarName = '';
+let hubCategory = '';
+let hubArticles: any[] = [];
+
+if (type === 'hub') {
+  const props = Astro.props as any;
+  pillarName = props.pillarName;
+  hubCategory = props.category;
+  hubArticles = props.hubArticles.map((a: any) => ({
     id: a.id,
     title: a.data.title,
     description: a.data.description,
     category: a.data.category,
     readTime: a.data.read_time,
+    schemaType: a.data.schema_type,
   }));
+}
 ---
 
-<ArticleLayout
-  title={article.data.title}
-  description={article.data.description}
-  category={article.data.category}
-  slug={article.id}
-  officialSourceUrl={article.data.official_source_url}
-  writtenAt={article.data.written_at}
-  publishedAt={article.data.published_at}
-  readTime={article.data.read_time}
-  schemaType={article.data.schema_type}
-  howtoSteps={article.data.howto_steps}
-  relatedArticles={relatedArticles}
->
-  <Content />
-</ArticleLayout>
+{type === 'article' ? (
+  <ArticleLayout
+    title={article.data.title}
+    description={article.data.description}
+    category={article.data.category}
+    slug={article.id}
+    officialSourceUrl={article.data.official_source_url}
+    writtenAt={article.data.written_at}
+    publishedAt={article.data.published_at}
+    readTime={article.data.read_time}
+    schemaType={article.data.schema_type}
+    howtoSteps={article.data.howto_steps}
+    relatedArticles={relatedArticles}
+    pillarName={article.data.pillar}
+    pillarSlug={toPillarSlug(article.data.pillar)}
+  >
+    <Content />
+  </ArticleLayout>
+) : (
+  <PillarHubLayout
+    pillarName={pillarName}
+    category={hubCategory}
+    categoryLabel={categoryMeta[hubCategory]?.label ?? hubCategory}
+    articles={hubArticles}
+  />
+)}
