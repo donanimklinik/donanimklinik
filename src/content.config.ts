@@ -6,10 +6,11 @@ const articles = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    category: z.enum(['computers', 'phones', 'networking', 'software', 'peripherals']),
+    category: z.enum(['computers', 'networking', 'software', 'peripherals']),
     pillar: z.string(),
     status: z.enum(['draft', 'review', 'published']).default('published'),
     official_source_url: z.string().url(),
+    source_last_verified_at: z.coerce.date().optional(),
     written_at: z.coerce.date(),
     published_at: z.coerce.date().optional(),
     views_daily: z.number().default(0),
