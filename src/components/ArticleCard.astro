@@ -19,7 +19,7 @@ const tagMap: Record<string, { label: string; cls: string; catCls: string }> = {
 };
 const tag = tagMap[category] ?? { label: category, cls: 'trace', catCls: 'cat-trace' };
 
-const url = `/${category}/${slug}`;
+const url = `/${category}/${slug}/`;
 const dateStr = publishedAt
   ? new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(publishedAt)
   : '';

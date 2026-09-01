@@ -88,12 +88,12 @@ const breadcrumbSchema = {
     <div class="wrap">
       <div class="art-grid">
         {articles.map((a) => (
-          <a href={`/${a.category}/${a.id}/`} class="art-card">
+          <a href={`/${a.category}/${a.id}/`} class={`art-card cat-${tag.cls}`}>
             <span class={`art-tag ${tag.cls}`}>{categoryLabel}</span>
-            <h2 class="art-card-title">{a.title}</h2>
-            <p class="art-card-desc">{a.description}</p>
+            <h3>{a.title}</h3>
+            <p>{a.description}</p>
             {a.readTime && (
-              <span class="art-card-meta mono">{a.readTime} min read</span>
+              <div class="art-meta"><span>{a.readTime} min read</span></div>
             )}
           </a>
         ))}
