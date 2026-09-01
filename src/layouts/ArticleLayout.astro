@@ -35,7 +35,7 @@ const {
   pillarSlug,
 } = Astro.props;
 
-const canonical = `https://donanimklinik.com/${category}/${slug}/`;
+const canonical = `https://www.donanimklinik.com/${category}/${slug}/`;
 const pubDate = publishedAt ?? writtenAt;
 
 const tagMap: Record<string, { label: string; cls: string; color: string }> = {
@@ -58,12 +58,12 @@ const articleSchema = {
   author: {
     '@type': 'Organization',
     name: 'DonanimKlinik',
-    url: 'https://donanimklinik.com',
+    url: 'https://www.donanimklinik.com',
   },
   publisher: {
     '@type': 'Organization',
     name: 'DonanimKlinik',
-    url: 'https://donanimklinik.com',
+    url: 'https://www.donanimklinik.com',
   },
   mainEntityOfPage: {
     '@type': 'WebPage',
@@ -87,8 +87,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://donanimklinik.com/' },
-    { '@type': 'ListItem', position: 2, name: tag.label, item: `https://donanimklinik.com/${category}/` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.donanimklinik.com/' },
+    { '@type': 'ListItem', position: 2, name: tag.label, item: `https://www.donanimklinik.com/${category}/` },
     { '@type': 'ListItem', position: 3, name: title, item: canonical },
   ],
 };

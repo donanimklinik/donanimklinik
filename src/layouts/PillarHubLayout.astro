@@ -19,7 +19,7 @@ interface Props {
 
 const { pillarName, category, categoryLabel, articles } = Astro.props;
 
-const canonical = `https://donanimklinik.com/${category}/${Astro.url.pathname.split('/').filter(Boolean).pop()}/`;
+const canonical = `https://www.donanimklinik.com/${category}/${Astro.url.pathname.split('/').filter(Boolean).pop()}/`;
 const pageTitle = `${pillarName} — Complete Guide`;
 const pageDesc = `All ${articles.length} guides on ${pillarName}, sourced from official documentation. Step-by-step fixes and explanations.`;
 
@@ -40,7 +40,7 @@ const hubSchema = {
   hasPart: articles.map((a) => ({
     '@type': 'Article',
     name: a.title,
-    url: `https://donanimklinik.com/${a.category}/${a.id}/`,
+    url: `https://www.donanimklinik.com/${a.category}/${a.id}/`,
   })),
 };
 
@@ -48,8 +48,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://donanimklinik.com/' },
-    { '@type': 'ListItem', position: 2, name: categoryLabel, item: `https://donanimklinik.com/${category}/` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.donanimklinik.com/' },
+    { '@type': 'ListItem', position: 2, name: categoryLabel, item: `https://www.donanimklinik.com/${category}/` },
     { '@type': 'ListItem', position: 3, name: pillarName, item: canonical },
   ],
 };

@@ -15,10 +15,10 @@ interface Props {
 const {
   title,
   description,
-  canonical = 'https://donanimklinik.com/',
+  canonical = 'https://www.donanimklinik.com/',
   ogTitle = title,
   ogDescription = description,
-  ogImage = 'https://donanimklinik.com/og-default.svg',
+  ogImage = 'https://www.donanimklinik.com/og-default.svg',
   ogType = 'website',
 } = Astro.props;
 
@@ -27,8 +27,8 @@ const websiteSchema = {
   '@graph': [
     {
       '@type': 'WebSite',
-      '@id': 'https://donanimklinik.com/#website',
-      url: 'https://donanimklinik.com/',
+      '@id': 'https://www.donanimklinik.com/#website',
+      url: 'https://www.donanimklinik.com/',
       name: 'DonanimKlinik',
       description: 'Step-by-step fixes for tech problems — sourced from official documentation.',
       potentialAction: {
@@ -42,8 +42,8 @@ const websiteSchema = {
     },
     {
       '@type': 'Organization',
-      '@id': 'https://donanimklinik.com/#organization',
-      url: 'https://donanimklinik.com/',
+      '@id': 'https://www.donanimklinik.com/#organization',
+      url: 'https://www.donanimklinik.com/',
       name: 'DonanimKlinik',
       description: 'Diagnostic tech guides sourced from official manufacturer documentation.',
     },
