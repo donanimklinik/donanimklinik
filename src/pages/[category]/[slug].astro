@@ -9,12 +9,23 @@ export async function getStaticPaths() {
       category: article.data.category,
       slug: article.id,
     },
-    props: { article },
+    props: { article, allArticles: articles },
   }));
 }
 
-const { article } = Astro.props;
+const { article, allArticles } = Astro.props;
 const { Content } = await render(article);
+
+const relatedArticles = allArticles
+  .filter((a) => a.data.pillar === article.data.pillar && a.id !== article.id)
+  .slice(0, 3)
+  .map((a) => ({
+    id: a.id,
+    title: a.data.title,
+    description: a.data.description,
+    category: a.data.category,
+    readTime: a.data.read_time,
+  }));
 ---
 
 <ArticleLayout
@@ -28,6 +39,7 @@ const { Content } = await render(article);
   readTime={article.data.read_time}
   schemaType={article.data.schema_type}
   howtoSteps={article.data.howto_steps}
+  relatedArticles={relatedArticles}
 >
   <Content />
 </ArticleLayout>

@@ -1,0 +1,33 @@
+---
+interface Article {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  readTime?: number;
+}
+
+interface Props {
+  articles: Article[];
+}
+
+const { articles } = Astro.props;
+if (!articles || articles.length === 0) return;
+---
+
+<aside class="related-articles">
+  <h2 class="related-title mono">Related guides</h2>
+  <ul class="related-list">
+    {articles.map((a) => (
+      <li class="related-item">
+        <a href={`/${a.category}/${a.id}/`} class="related-link">
+          <span class="related-item-title">{a.title}</span>
+          <span class="related-item-desc">{a.description}</span>
+          {a.readTime && (
+            <span class="related-item-meta mono">{a.readTime} min read →</span>
+          )}
+        </a>
+      </li>
+    ))}
+  </ul>
+</aside>

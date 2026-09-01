@@ -1,6 +1,7 @@
 ---
 import Layout from './Layout.astro';
 import AdUnit from '../components/AdUnit.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
 
 interface Props {
   title: string;
@@ -13,6 +14,7 @@ interface Props {
   readTime?: number;
   schemaType?: 'Article' | 'HowTo' | 'FAQPage';
   howtoSteps?: { name: string; text: string }[];
+  relatedArticles?: { id: string; title: string; description: string; category: string; readTime?: number }[];
 }
 
 const {
@@ -26,6 +28,7 @@ const {
   readTime,
   schemaType = 'Article',
   howtoSteps,
+  relatedArticles = [],
 } = Astro.props;
 
 const canonical = `https://donanimklinik.com/${category}/${slug}/`;
@@ -135,6 +138,9 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
 
     <!-- Ad: below article -->
     <AdUnit />
+
+    <!-- Related articles -->
+    {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
 
     <!-- Source citation -->
     <div class="source-box">
