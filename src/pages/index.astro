@@ -31,22 +31,11 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
 
       <!-- Left: headline + search -->
       <div class="hero-left">
-        <div class="hero-tag mono">&gt; <span class="hero-tag-type">dk_engine online · 32 guides loaded...</span></div>
-        <div class="hero-divider" aria-hidden="true"></div>
+        <div class="hero-version mono">dk / diagnostic engine / 32 guides indexed</div>
         <h1 class="display">
           <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
         </h1>
-        <div class="hero-status" role="list" aria-label="Trust signals">
-          <div class="hero-status-row">
-            <span class="hs-key">sources</span><span class="hs-sep">//</span><span class="hs-val">official manufacturer docs only</span>
-          </div>
-          <div class="hero-status-row">
-            <span class="hs-key">verified</span><span class="hs-sep">//</span><span class="hs-val">hand-checked before every publish</span>
-          </div>
-          <div class="hero-status-row">
-            <span class="hs-key">method</span><span class="hs-sep">//</span><span class="hs-val">exact error code → exact fix</span>
-          </div>
-        </div>
+        <p class="hero-desc">Official manufacturer docs only — no forum speculation, no guesswork. Exact error code, exact fix.</p>
         <div class="lookup-wrap">
           <div class="lookup-header mono">
             <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true">
@@ -115,20 +104,40 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
   </div>
 </section>
 
-<!-- Status Bar (IDE-style trust strip) -->
-<div class="status-bar" aria-hidden="true">
-  <div class="wrap status-bar-inner">
-    <span class="sb-item"><span class="sb-dot"></span><span class="sb-hl">LIVE</span></span>
-    <span class="sb-sep"></span>
-    <span class="sb-item"><span class="sb-hl">32</span>&nbsp;guides indexed</span>
-    <span class="sb-sep"></span>
-    <span class="sb-item">Official sources only</span>
-    <span class="sb-sep"></span>
-    <span class="sb-item">No affiliate links</span>
-    <span class="sb-sep"></span>
-    <span class="sb-item">Hand-verified</span>
-    <span class="sb-sep"></span>
-    <span class="sb-item sb-right mono">Last build: Sept 2026</span>
+<!-- Ticker strip -->
+<div class="ticker-bar" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span class="tk-item"><span class="tk-dot"></span><span class="tk-hl">LIVE</span></span>
+      <span class="tk-div">|</span>
+      <span class="tk-item"><span class="tk-hl">32</span>&nbsp;guides indexed</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Official sources only</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Hand-verified</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">No affiliate links</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Updated Sept 2026</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Exact error → exact fix</span>
+      <span class="tk-div">|</span>
+      <!-- duplicate for seamless loop -->
+      <span class="tk-item"><span class="tk-dot"></span><span class="tk-hl">LIVE</span></span>
+      <span class="tk-div">|</span>
+      <span class="tk-item"><span class="tk-hl">32</span>&nbsp;guides indexed</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Official sources only</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Hand-verified</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">No affiliate links</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Updated Sept 2026</span>
+      <span class="tk-div">|</span>
+      <span class="tk-item">Exact error → exact fix</span>
+      <span class="tk-div">|</span>
+    </div>
   </div>
 </div>
 
