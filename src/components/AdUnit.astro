@@ -1,0 +1,11 @@
+---
+interface Props {
+  slot?: 'top' | 'middle' | 'bottom';
+  label?: string;
+}
+const { slot = 'middle', label = 'Advertisement' } = Astro.props;
+---
+<div class="ad-unit ad-unit--{slot}" aria-label={label}>
+  <!-- AdSense unit ({slot}) — publisher ID will be inserted after approval -->
+  <!-- ins class="adsbygoogle" data-ad-client="pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" -->
+</div>

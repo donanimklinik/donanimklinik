@@ -1,0 +1,218 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  schemaType?: 'website' | 'article';
+}
+
+const {
+  title,
+  description,
+  canonical = 'https://donanimklinik.com/',
+  ogTitle = title,
+  ogDescription = description,
+  ogImage = 'https://donanimklinik.com/og-default.png',
+} = Astro.props;
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://donanimklinik.com/#website',
+      url: 'https://donanimklinik.com/',
+      name: 'DonanimKlinik',
+      description: 'Step-by-step fixes for tech problems — sourced from official documentation.',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: 'https://www.google.com/search?q={search_term_string}+site:donanimklinik.com',
+        },
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@type': 'Organization',
+      '@id': 'https://donanimklinik.com/#organization',
+      url: 'https://donanimklinik.com/',
+      name: 'DonanimKlinik',
+      description: 'Diagnostic tech guides sourced from official manufacturer documentation.',
+    },
+  ],
+};
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A130E">
+  <meta name="generator" content={Astro.generator}>
+  <link rel="canonical" href={canonical}>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DonanimKlinik">
+  <meta property="og:title" content={ogTitle}>
+  <meta property="og:description" content={ogDescription}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={ogImage}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={ogTitle}>
+  <meta name="twitter:description" content={ogDescription}>
+  <meta name="twitter:image" content={ogImage}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <slot name="head" />
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a href="/" class="brand-logo-wrap" aria-label="DonanimKlinik — Home">
+        <img class="brand-logo-img" src="/logo.png" alt="DonanimKlinik" width="120" height="34">
+        <svg class="brand-logo-glow-svg" viewBox="0 0 398 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path class="brand-logo-glow-path" d="M20,35 L30,35 L40,19 L48,53 L56,35 L68,35" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="desktop-nav" aria-label="Main categories">
+      <a href="/computers" class="nav-red"><span class="nav-dot" aria-hidden="true"></span>Computers</a>
+      <a href="/phones" class="nav-violet"><span class="nav-dot" aria-hidden="true"></span>Phones</a>
+      <a href="/networking" class="nav-blue"><span class="nav-dot" aria-hidden="true"></span>Networking</a>
+      <a href="/software" class="nav-trace"><span class="nav-dot" aria-hidden="true"></span>Software</a>
+      <a href="/peripherals" class="nav-amber"><span class="nav-dot" aria-hidden="true"></span>Peripherals</a>
+    </nav>
+
+    <div class="lang" aria-label="Language">
+      <span class="active" aria-current="true">EN</span>
+      <span class="lang-soon" title="Turkish version coming soon" aria-disabled="true">TR</span>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileNav">
+      <div class="bar" aria-hidden="true"></div>
+      <div class="bar" aria-hidden="true"></div>
+      <div class="bar" aria-hidden="true"></div>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile categories">
+    <a href="/computers" class="nav-red">Computers</a>
+    <a href="/phones" class="nav-violet">Phones</a>
+    <a href="/networking" class="nav-blue">Networking</a>
+    <a href="/software" class="nav-trace">Software</a>
+    <a href="/peripherals" class="nav-amber">Peripherals</a>
+  </nav>
+</header>
+
+<main id="main-content">
+  <slot />
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-brand-block">
+        <a href="/" class="brand-logo-wrap" aria-label="DonanimKlinik — Home">
+          <img class="brand-logo-img" src="/logo.png" alt="" width="110" height="32" aria-hidden="true">
+          <svg class="brand-logo-glow-svg" viewBox="0 0 398 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path class="brand-logo-glow-path" d="M20,35 L30,35 L40,19 L48,53 L56,35 L68,35" fill="none" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <div>
+          <p class="foot-brand display">DonanimKlinik</p>
+          <p class="foot-desc">
+            Every guide is checked against the manufacturer's own documentation before publishing,
+            then reviewed by a person — not auto-published.
+            <a href="/about">How we verify fixes →</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Categories</h4>
+          <a href="/computers" class="nav-red"><span class="nav-dot" aria-hidden="true"></span>Computers</a>
+          <a href="/phones" class="nav-violet"><span class="nav-dot" aria-hidden="true"></span>Phones</a>
+          <a href="/networking" class="nav-blue"><span class="nav-dot" aria-hidden="true"></span>Networking</a>
+          <a href="/software" class="nav-trace"><span class="nav-dot" aria-hidden="true"></span>Software</a>
+          <a href="/peripherals" class="nav-amber"><span class="nav-dot" aria-hidden="true"></span>Peripherals</a>
+        </div>
+        <div class="foot-col">
+          <h4>Site</h4>
+          <a href="/about">About</a>
+          <a href="/about#contact">Contact</a>
+          <a href="/privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="foot-copy mono">
+      © {new Date().getFullYear()} DonanimKlinik. All fixes sourced from official documentation.
+    </p>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!menuBtn.contains(e.target as Node) && !mobileNav.contains(e.target as Node)) {
+        mobileNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'Open navigation menu');
+      }
+    });
+  }
+
+  // Error code search
+  (function () {
+    const input = document.getElementById('error-lookup') as HTMLInputElement | null;
+    const btn = document.querySelector('.lookup button') as HTMLButtonElement | null;
+    if (!input || !btn) return;
+    function doSearch() {
+      const q = input!.value.trim();
+      if (!q) return;
+      window.open(
+        'https://www.google.com/search?q=' + encodeURIComponent(q + ' site:donanimklinik.com'),
+        '_blank',
+        'noopener,noreferrer'
+      );
+    }
+    btn.addEventListener('click', doSearch);
+    input.addEventListener('keydown', (e: KeyboardEvent) => { if (e.key === 'Enter') doSearch(); });
+  })();
+</script>
+
+</body>
+</html>

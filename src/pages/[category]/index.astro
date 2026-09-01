@@ -1,0 +1,117 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const categories = [
+    {
+      slug: 'computers',
+      label: 'Computers',
+      code: '01 · COMPUTERS',
+      color: 'var(--red)',
+      colorCls: 'red',
+      description: 'BSOD codes, boot failures, data recovery, Windows activation errors, GPU driver issues.',
+    },
+    {
+      slug: 'phones',
+      label: 'Phones & Tablets',
+      code: '02 · PHONES',
+      color: 'var(--violet)',
+      colorCls: 'violet',
+      description: 'Battery drain, storage full, backup and restore, device-to-device transfer.',
+    },
+    {
+      slug: 'networking',
+      label: 'Networking',
+      code: '03 · NETWORKING',
+      color: 'var(--brand-blue)',
+      colorCls: 'blue',
+      description: 'Wi-Fi driver conflicts, VPN setup, port forwarding, NAS configuration, router security.',
+    },
+    {
+      slug: 'software',
+      label: 'Software & Apps',
+      code: '04 · SOFTWARE',
+      color: 'var(--trace)',
+      colorCls: 'trace',
+      description: 'Microsoft 365 errors, activation codes, cloud backup failures, password managers.',
+    },
+    {
+      slug: 'peripherals',
+      label: 'Peripherals & Audio',
+      code: '05 · PERIPHERALS',
+      color: 'var(--amber)',
+      colorCls: 'amber',
+      description: 'Smart TV app errors, printer setup, USB not recognised, audio driver issues.',
+    },
+  ];
+
+  return categories.map((cat) => ({
+    params: { category: cat.slug },
+    props: { cat },
+  }));
+}
+
+const { cat } = Astro.props;
+const { category } = Astro.params;
+
+const articles = (
+  await getCollection('articles', ({ data }) =>
+    data.status === 'published' && data.category === category
+  )
+).sort((a, b) => {
+  const dA = a.data.published_at ?? a.data.written_at;
+  const dB = b.data.published_at ?? b.data.written_at;
+  return dB.getTime() - dA.getTime();
+});
+
+const canonical = `https://donanimklinik.com/${category}/`;
+const pageTitle = `${cat.label} — Tech Fixes & Guides | DonanimKlinik`;
+const pageDesc = `${cat.description} Step-by-step guides sourced from official documentation.`;
+---
+
+<Layout title={pageTitle} description={pageDesc} canonical={canonical}>
+
+<div class="page-header">
+  <div class="page-header-glow" style={`background: ${cat.color};`} aria-hidden="true"></div>
+  <div class="wrap">
+    <nav class="page-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">{cat.label}</span>
+    </nav>
+    <p class="page-eyebrow mono" style={`color: ${cat.color};`}>{cat.code}</p>
+    <h1 class="page-title display">{cat.label}</h1>
+    <p class="page-desc">{cat.description}</p>
+    {articles.length > 0 && (
+      <p class="article-count mono">{articles.length} guide{articles.length !== 1 ? 's' : ''} published</p>
+    )}
+  </div>
+</div>
+
+<section class="article-list">
+  <div class="wrap">
+    {articles.length > 0 ? (
+      <div class="art-grid">
+        {articles.map((article) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            category={article.data.category}
+            slug={article.id}
+            readTime={article.data.read_time}
+            publishedAt={article.data.published_at ?? article.data.written_at}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <p class="mono">&gt; No guides published in this category yet.</p>
+        <p>We are currently writing and reviewing our first guides. Check back soon.</p>
+      </div>
+    )}
+  </div>
+</section>
+
+</Layout>

@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  slug: string;
+  readTime?: number;
+  publishedAt?: Date;
+}
+
+const { title, description, category, slug, readTime, publishedAt } = Astro.props;
+
+const tagMap: Record<string, { label: string; cls: string; catCls: string }> = {
+  computers:   { label: 'Computers',   cls: 'red',    catCls: 'cat-red' },
+  phones:      { label: 'Phones',      cls: 'violet',  catCls: 'cat-violet' },
+  networking:  { label: 'Networking',  cls: 'blue',    catCls: 'cat-blue' },
+  software:    { label: 'Software',    cls: 'trace',   catCls: 'cat-trace' },
+  peripherals: { label: 'Peripherals', cls: 'amber',   catCls: 'cat-amber' },
+};
+const tag = tagMap[category] ?? { label: category, cls: 'trace', catCls: 'cat-trace' };
+
+const url = `/${category}/${slug}`;
+const dateStr = publishedAt
+  ? new Intl.DateTimeFormat('en-US', { month: 'short', year: 'numeric' }).format(publishedAt)
+  : '';
+---
+
+<a href={url} class={`art-card ${tag.catCls}`}>
+  <span class={`art-tag ${tag.cls}`}>{tag.label}</span>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <div class="art-meta">
+    {readTime && <span>{readTime} min read</span>}
+    {dateStr && <span>{dateStr}</span>}
+  </div>
+</a>

@@ -1,0 +1,201 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
+const latest = allArticles
+  .sort((a, b) => {
+    const dA = a.data.published_at ?? a.data.written_at;
+    const dB = b.data.published_at ?? b.data.written_at;
+    return dB.getTime() - dA.getTime();
+  })
+  .slice(0, 6);
+
+const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
+---
+
+<Layout
+  title="DonanimKlinik — Diagnose it. Fix it."
+  description="Step-by-step fixes for the tech problems that stop you cold — BitLocker lockouts, dead Wi-Fi drivers, BSOD codes, and router settings nobody explains properly. Sourced from official documentation, verified by hand."
+  canonical="https://donanimklinik.com/"
+>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+  <div class="hero-scanline" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-tag mono">&gt; scanning known error signatures...</div>
+    <h1 class="display">
+      Diagnose the exact<br>fault. Fix it once<span class="cursor">_</span>
+    </h1>
+    <p>
+      Step-by-step repairs for the errors that stop you cold — sourced from official
+      documentation, verified by hand before publishing.
+    </p>
+
+    <label class="lookup-label mono" for="error-lookup">
+      <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+        <circle cx="5.5" cy="5.5" r="4.5" stroke="var(--amber)" stroke-width="1.6"/>
+        <path d="M9 9L12 12" stroke="var(--amber)" stroke-width="1.6" stroke-linecap="round"/>
+      </svg>
+      Instant error code lookup
+    </label>
+    <div class="lookup" role="search">
+      <input
+        type="text"
+        id="error-lookup"
+        class="mono"
+        placeholder="Paste an error code, e.g. 0x0000007B"
+        aria-label="Search error code"
+      >
+      <button type="button">Look up</button>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="categories" aria-labelledby="cat-heading">
+  <div class="wrap">
+    <div class="section-label" id="cat-heading">Browse by category</div>
+    <div class="cat-grid">
+
+      <a href="/computers" class="cat red">
+        <div class="cat-icon-ring">
+          <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2.5" y="4" width="19" height="13" rx="1.5" stroke="var(--red)" stroke-width="1.6"/>
+            <path d="M8.5 20.5h7M12 17v3.5" stroke="var(--red)" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="cat-code mono">01 · COMPUTERS</div>
+        <h3>Computers</h3>
+        <p>BSOD codes, boot loops, dead drives, data recovery.</p>
+      </a>
+
+      <a href="/phones" class="cat violet">
+        <div class="cat-icon-ring">
+          <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="7" y="2.5" width="10" height="19" rx="2" stroke="var(--violet)" stroke-width="1.6"/>
+            <path d="M10.5 18.5h3" stroke="var(--violet)" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="cat-code mono">02 · PHONES</div>
+        <h3>Phones & Tablets</h3>
+        <p>Battery drain, storage full, device-to-device transfer.</p>
+      </a>
+
+      <a href="/networking" class="cat blue">
+        <div class="cat-icon-ring">
+          <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 9.5c4.5-4 11.5-4 16 0M7 13c2.8-2.3 7.2-2.3 10 0M10 16.5c1.2-1 2.8-1 4 0" stroke="var(--brand-blue)" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="12" cy="19.5" r="1.2" fill="var(--brand-blue)"/>
+          </svg>
+        </div>
+        <div class="cat-code mono">03 · NETWORKING</div>
+        <h3>Networking</h3>
+        <p>Wi-Fi, routers, VPN conflicts, port forwarding.</p>
+      </a>
+
+      <a href="/software" class="cat trace">
+        <div class="cat-icon-ring">
+          <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2.5" y="4" width="19" height="16" rx="1.5" stroke="var(--trace)" stroke-width="1.6"/>
+            <path d="M2.5 8h19" stroke="var(--trace)" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <div class="cat-code mono">04 · SOFTWARE</div>
+        <h3>Software & Apps</h3>
+        <p>Office errors, activation codes, sync failures.</p>
+      </a>
+
+      <a href="/peripherals" class="cat amber">
+        <div class="cat-icon-ring">
+          <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 12a8 8 0 0 1 16 0" stroke="var(--amber)" stroke-width="1.6"/>
+            <rect x="2.5" y="12" width="4" height="6" rx="1.2" stroke="var(--amber)" stroke-width="1.6"/>
+            <rect x="17.5" y="12" width="4" height="6" rx="1.2" stroke="var(--amber)" stroke-width="1.6"/>
+          </svg>
+        </div>
+        <div class="cat-code mono">05 · PERIPHERALS</div>
+        <h3>Peripherals & Audio</h3>
+        <p>Smart TVs, printers, USB devices, displays.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Featured -->
+{featured && (
+  <section class="featured" aria-labelledby="feat-heading">
+    <div class="wrap">
+      <div class="section-label" id="feat-heading" style="color: var(--red);">Diagnosis of the week</div>
+      <div class="feat-card">
+        <div class="feat-left">
+          <div class="feat-eyebrow mono">
+            {featured.data.category.charAt(0).toUpperCase() + featured.data.category.slice(1)} · Verified against official docs
+          </div>
+          <h2 class="display">{featured.data.title}</h2>
+          <p>{featured.data.description}</p>
+          <a href={`/${featured.data.category}/${featured.id}`} class="feat-cta">
+            Read the diagnosis →
+          </a>
+        </div>
+        <div class="feat-right">
+          <p class="mono" style="font-size:12px; color: var(--text-faint); line-height:1.7;">
+            Every step in this guide traces back to the official manufacturer or software
+            documentation — no guesswork, no forum rumours.
+          </p>
+          <a
+            href={featured.data.official_source_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="article-source-link"
+          >
+            <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Official source
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+)}
+
+<!-- Latest Articles -->
+{latest.length > 0 && (
+  <section class="articles" aria-labelledby="latest-heading">
+    <div class="wrap">
+      <div class="section-label" id="latest-heading">Latest diagnoses</div>
+      <div class="art-grid">
+        {latest.map((article) => (
+          <ArticleCard
+            title={article.data.title}
+            description={article.data.description}
+            category={article.data.category}
+            slug={article.id}
+            readTime={article.data.read_time}
+            publishedAt={article.data.published_at ?? article.data.written_at}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+{latest.length === 0 && (
+  <section class="articles">
+    <div class="wrap">
+      <div class="section-label">Latest diagnoses</div>
+      <div class="empty-state">
+        <p class="mono" style="font-size:13px; color:var(--text-faint);">&gt; No articles published yet.</p>
+        <p>Check back soon — guides are in review.</p>
+      </div>
+    </div>
+  </section>
+)}
+
+</Layout>

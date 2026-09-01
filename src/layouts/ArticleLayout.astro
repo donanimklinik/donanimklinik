@@ -1,0 +1,145 @@
+---
+import Layout from './Layout.astro';
+import AdUnit from '../components/AdUnit.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  slug: string;
+  officialSourceUrl: string;
+  writtenAt: Date;
+  publishedAt?: Date;
+  readTime?: number;
+  schemaType?: 'Article' | 'HowTo' | 'FAQPage';
+}
+
+const {
+  title,
+  description,
+  category,
+  slug,
+  officialSourceUrl,
+  writtenAt,
+  publishedAt,
+  readTime,
+  schemaType = 'Article',
+} = Astro.props;
+
+const canonical = `https://donanimklinik.com/${category}/${slug}/`;
+const pubDate = publishedAt ?? writtenAt;
+
+const tagMap: Record<string, { label: string; cls: string; color: string }> = {
+  computers:   { label: 'Computers',   cls: 'red',    color: 'var(--red)' },
+  phones:      { label: 'Phones',      cls: 'violet', color: 'var(--violet)' },
+  networking:  { label: 'Networking',  cls: 'blue',   color: 'var(--brand-blue)' },
+  software:    { label: 'Software',    cls: 'trace',  color: 'var(--trace)' },
+  peripherals: { label: 'Peripherals', cls: 'amber',  color: 'var(--amber)' },
+};
+const tag = tagMap[category] ?? { label: category, cls: 'trace', color: 'var(--trace)' };
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': schemaType,
+  headline: title,
+  description,
+  url: canonical,
+  datePublished: pubDate.toISOString(),
+  dateModified: pubDate.toISOString(),
+  author: {
+    '@type': 'Organization',
+    name: 'DonanimKlinik',
+    url: 'https://donanimklinik.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'DonanimKlinik',
+    url: 'https://donanimklinik.com',
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical,
+  },
+  ...(schemaType === 'Article' && {
+    articleSection: tag.label,
+    isBasedOn: officialSourceUrl,
+  }),
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://donanimklinik.com/' },
+    { '@type': 'ListItem', position: 2, name: tag.label, item: `https://donanimklinik.com/${category}/` },
+    { '@type': 'ListItem', position: 3, name: title, item: canonical },
+  ],
+};
+
+const dateStr = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(pubDate);
+---
+
+<Layout
+  title={`${title} | DonanimKlinik`}
+  description={description}
+  canonical={canonical}
+  ogTitle={title}
+  ogDescription={description}
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  </Fragment>
+
+  <div class="wrap">
+    <!-- Breadcrumb -->
+    <nav class="page-breadcrumb" style="padding-top: 28px;" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <a href={`/${category}/`}>{tag.label}</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">{title}</span>
+    </nav>
+
+    <!-- Article meta header -->
+    <div class="article-meta-header">
+      <span class={`art-tag ${tag.cls}`}>{tag.label}</span>
+      <h1>{title}</h1>
+      <div class="article-meta-row">
+        <span>{dateStr}</span>
+        {readTime && <span>{readTime} min read</span>}
+        <a
+          href={officialSourceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="article-source-link"
+        >
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Official source
+        </a>
+      </div>
+    </div>
+
+    <!-- Ad: top -->
+    <AdUnit slot="top" />
+
+    <!-- Article content -->
+    <article class="article-body">
+      <slot />
+    </article>
+
+    <!-- Ad: bottom -->
+    <AdUnit slot="bottom" />
+
+    <!-- Source citation -->
+    <div class="source-box">
+      <span class="source-box-label mono">Source</span>
+      <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
+        {officialSourceUrl}
+      </a>
+    </div>
+
+  </div>
+</Layout>
