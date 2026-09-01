@@ -491,7 +491,7 @@ header .wrap {
 /* Label */
 .hero-label {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px; color: var(--text-faint); letter-spacing: 0.1em;
+  font-size: 13px; color: var(--text-faint); letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 28px;
   display: flex; align-items: center; gap: 10px;
