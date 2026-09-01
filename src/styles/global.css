@@ -457,14 +457,32 @@ header .wrap {
   max-width: none; letter-spacing: -0.028em;
   color: var(--text); text-align: center;
 }
-/* Gradient accent on the opening word */
+/* Gradient accent */
 .hero-word-grad {
-  background: linear-gradient(125deg, var(--trace) 0%, var(--brand-blue) 60%);
+  background: linear-gradient(125deg, var(--trace) 0%, var(--brand-blue) 55%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .hero h1 .cursor { color: var(--amber); text-shadow: 0 0 18px rgba(251,176,59,0.5); }
+/* Two-weight headline contrast — thin intro + bold conclusion */
+.hero-line-a {
+  display: block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.52em;
+  color: var(--text-dim);
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+  margin-bottom: 0.14em;
+}
+.hero-line-b {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.028em;
+  line-height: 1.04;
+}
 /* Centered single-column hero */
 .hero-content {
   max-width: 860px; margin: 0 auto;
