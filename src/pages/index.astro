@@ -127,7 +127,7 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
           </div>
           <h2 class="display">{featured.data.title}</h2>
           <p>{featured.data.description}</p>
-          <a href={`/${featured.data.category}/${featured.id}`} class="feat-cta">
+          <a href={`/${featured.data.category}/${featured.id}/`} class="feat-cta">
             Read the diagnosis →
           </a>
         </div>
