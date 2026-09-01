@@ -23,6 +23,17 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
 
 <!-- Hero -->
 <section class="hero">
+  <!-- Background: grid + scan beam + floating error codes -->
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-scan" aria-hidden="true"></div>
+  <span class="hero-code" style="left:4%;  --d:0s"  aria-hidden="true">0xC004F050</span>
+  <span class="hero-code" style="left:18%; --d:6s"  aria-hidden="true">KERNEL_PANIC</span>
+  <span class="hero-code" style="left:72%; --d:3s"  aria-hidden="true">0x8007232B</span>
+  <span class="hero-code" style="left:84%; --d:9s"  aria-hidden="true">0x800CCC0E</span>
+  <span class="hero-code" style="left:55%; --d:14s" aria-hidden="true">IMAP_CONN_FAIL</span>
+  <span class="hero-code" style="left:38%; --d:18s" aria-hidden="true">0xC004C008</span>
+  <span class="hero-code" style="left:91%; --d:4s"  aria-hidden="true">WIN_ACTIVATION</span>
+  <span class="hero-code" style="left:27%; --d:11s" aria-hidden="true">0x80042108</span>
   <div class="wrap">
     <div class="hero-content">
       <p class="hero-label mono">donanimklinik — diagnostic engine</p>
