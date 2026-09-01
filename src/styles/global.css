@@ -254,6 +254,15 @@ header .wrap {
 .nav-blue .nav-dot { color: var(--brand-blue); }
 .nav-trace .nav-dot { color: var(--trace); }
 .nav-amber .nav-dot { color: var(--amber); }
+/* Always-on category color — not just on hover */
+.desktop-nav a.nav-red   { color: rgba(240,85,58,0.72); }
+.desktop-nav a.nav-blue  { color: rgba(43,179,224,0.72); }
+.desktop-nav a.nav-trace { color: rgba(121,240,192,0.72); }
+.desktop-nav a.nav-amber { color: rgba(251,176,59,0.72); }
+.foot-col a.nav-red   { color: rgba(240,85,58,0.7); }
+.foot-col a.nav-blue  { color: rgba(43,179,224,0.7); }
+.foot-col a.nav-trace { color: rgba(121,240,192,0.7); }
+.foot-col a.nav-amber { color: rgba(251,176,59,0.7); }
 
 /* Brand logo */
 .brand { display: flex; align-items: center; flex-shrink: 0; white-space: nowrap; }
@@ -343,6 +352,16 @@ header .wrap {
   padding: 100px 0 72px;
   position: relative;
   overflow: hidden;
+}
+/* Dot-grid substrate — premium depth layer (masked to upper-left quadrant) */
+.hero::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(121,240,192,0.35) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: radial-gradient(ellipse 90% 60% at 30% 30%, black 0%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 60% at 30% 30%, black 0%, transparent 70%);
+  opacity: 0.18;
 }
 /* Film grain texture — adds tactile depth to flat gradient background */
 .hero::after {
@@ -447,20 +466,25 @@ header .wrap {
   height: 1px; margin: 20px 0 26px;
   background: linear-gradient(90deg, var(--trace) 0%, rgba(121,240,192,0.15) 30%, transparent 65%);
 }
-/* Verification checklist — replaces paragraph */
-.hero-verify {
-  list-style: none; margin-top: 18px;
-  display: flex; flex-direction: column; gap: 7px;
+/* Terminal status block — trust signals in diagnostic output format */
+.hero-status {
+  margin-top: 20px;
+  border: 1px solid rgba(121,240,192,0.18);
+  border-left: 2px solid rgba(121,240,192,0.55);
+  background: rgba(121,240,192,0.025);
+  padding: 12px 16px;
+  display: flex; flex-direction: column; gap: 6px;
 }
-.hero-verify li {
-  font-size: 13px; color: var(--text-dim);
-  display: flex; align-items: flex-start; gap: 9px;
-  line-height: 1.45;
+.hero-status-row {
+  display: flex; align-items: baseline; gap: 12px;
+  font-family: 'IBM Plex Mono', monospace;
 }
-.hv-check {
-  color: var(--trace); flex-shrink: 0;
-  font-size: 12px; margin-top: 1px;
+.hs-key {
+  color: var(--trace); min-width: 70px; flex-shrink: 0;
+  font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em;
 }
+.hs-sep { color: rgba(38,56,38,0.9); flex-shrink: 0; font-size: 11px; }
+.hs-val { color: var(--text-dim); font-size: 12px; }
 /* Staggered hero entrance — 5 children: tag, divider, h1, verify, lookup */
 @keyframes heroFade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .hero-left > * { animation: heroFade 0.65s ease both; }

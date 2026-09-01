@@ -31,16 +31,22 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
 
       <!-- Left: headline + search -->
       <div class="hero-left">
-        <div class="hero-tag mono">&gt; <span class="hero-tag-type">scanning known error signatures...</span></div>
+        <div class="hero-tag mono">&gt; <span class="hero-tag-type">dk_engine online · 32 guides loaded...</span></div>
         <div class="hero-divider" aria-hidden="true"></div>
         <h1 class="display">
           <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
         </h1>
-        <ul class="hero-verify" aria-label="Why trust this">
-          <li><span class="hv-check" aria-hidden="true">✓</span>Official manufacturer docs — no forum guesses</li>
-          <li><span class="hv-check" aria-hidden="true">✓</span>Every step verified by hand before publishing</li>
-          <li><span class="hv-check" aria-hidden="true">✓</span>Exact error code → exact fix, nothing else</li>
-        </ul>
+        <div class="hero-status" role="list" aria-label="Trust signals">
+          <div class="hero-status-row">
+            <span class="hs-key">sources</span><span class="hs-sep">//</span><span class="hs-val">official manufacturer docs only</span>
+          </div>
+          <div class="hero-status-row">
+            <span class="hs-key">verified</span><span class="hs-sep">//</span><span class="hs-val">hand-checked before every publish</span>
+          </div>
+          <div class="hero-status-row">
+            <span class="hs-key">method</span><span class="hs-sep">//</span><span class="hs-val">exact error code → exact fix</span>
+          </div>
+        </div>
         <div class="lookup-wrap">
           <div class="lookup-header mono">
             <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true">
@@ -64,7 +70,7 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
             <span class="diag-dot dc-r"></span>
             <span class="diag-dot dc-a"></span>
             <span class="diag-dot dc-g"></span>
-            <span class="diag-title mono">diagnostic.log</span>
+            <span class="diag-title mono">error_trace.log</span>
           </div>
           <div class="diag-body">
             <div class="diag-row">
