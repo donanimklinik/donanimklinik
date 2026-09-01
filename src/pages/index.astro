@@ -32,10 +32,15 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
       <!-- Left: headline + search -->
       <div class="hero-left">
         <div class="hero-tag mono">&gt; <span class="hero-tag-type">scanning known error signatures...</span></div>
+        <div class="hero-divider" aria-hidden="true"></div>
         <h1 class="display">
           <span class="hero-word-grad">Diagnose</span> the exact<br>fault. Fix it once<span class="cursor">_</span>
         </h1>
-        <p>Step-by-step repairs for the errors that stop you cold — sourced from official documentation, verified by hand before publishing.</p>
+        <ul class="hero-verify" aria-label="Why trust this">
+          <li><span class="hv-check" aria-hidden="true">✓</span>Official manufacturer docs — no forum guesses</li>
+          <li><span class="hv-check" aria-hidden="true">✓</span>Every step verified by hand before publishing</li>
+          <li><span class="hv-check" aria-hidden="true">✓</span>Exact error code → exact fix, nothing else</li>
+        </ul>
         <div class="lookup-wrap">
           <div class="lookup-header mono">
             <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true">

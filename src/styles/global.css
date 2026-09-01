@@ -410,9 +410,9 @@ header .wrap {
 /* Typewriter reveal on the terminal text */
 .hero-tag-type {
   display: inline-block; overflow: hidden; white-space: nowrap; width: 0;
-  animation: typeTag 1.5s steps(35, end) 0.7s forwards;
+  animation: typeTag 1.6s steps(37, end) 0.7s forwards;
 }
-@keyframes typeTag { to { width: 35ch; } }
+@keyframes typeTag { to { width: 38ch; } }
 .hero h1 {
   font-size: 52px; line-height: 1.1; font-weight: 700;
   max-width: 700px; letter-spacing: -0.015em;
@@ -436,27 +436,44 @@ header .wrap {
   gap: 52px;
   align-items: center;
 }
-.hero-left { /* left column — headline + search */ }
-.hero-right { /* right column — diagnostic panel */ }
 @media (max-width: 960px) {
   .hero-wrap { grid-template-columns: 1fr; gap: 0; }
   .hero-right { display: none; }
 }
-/* Remove fixed max-widths inside the column context */
-.hero-left h1 { max-width: none; }
-.hero-left p  { max-width: none; }
-/* Staggered hero content entrance */
+/* Remove inherited max-widths inside column */
+.hero-left h1 { max-width: none; font-size: 44px; }
+/* Divider — terminal output separator before headline */
+.hero-divider {
+  height: 1px; margin: 20px 0 26px;
+  background: linear-gradient(90deg, var(--trace) 0%, rgba(121,240,192,0.15) 30%, transparent 65%);
+}
+/* Verification checklist — replaces paragraph */
+.hero-verify {
+  list-style: none; margin-top: 18px;
+  display: flex; flex-direction: column; gap: 7px;
+}
+.hero-verify li {
+  font-size: 13px; color: var(--text-dim);
+  display: flex; align-items: flex-start; gap: 9px;
+  line-height: 1.45;
+}
+.hv-check {
+  color: var(--trace); flex-shrink: 0;
+  font-size: 12px; margin-top: 1px;
+}
+/* Staggered hero entrance — 5 children: tag, divider, h1, verify, lookup */
 @keyframes heroFade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .hero-left > * { animation: heroFade 0.65s ease both; }
 .hero-left > *:nth-child(1) { animation-delay: 0.05s; }
-.hero-left > *:nth-child(2) { animation-delay: 0.22s; }
-.hero-left > *:nth-child(3) { animation-delay: 0.42s; }
-.hero-left > *:nth-child(4) { animation-delay: 0.60s; }
+.hero-left > *:nth-child(2) { animation-delay: 0.18s; }
+.hero-left > *:nth-child(3) { animation-delay: 0.32s; }
+.hero-left > *:nth-child(4) { animation-delay: 0.50s; }
+.hero-left > *:nth-child(5) { animation-delay: 0.65s; }
 .hero-right { animation: heroFade 0.9s ease 0.55s both; }
 @media (max-width: 640px) {
   .hero { padding: 64px 0 48px; }
   .hero h1 { font-size: 34px; }
-  .hero p { font-size: 15px; }
+  .hero-left h1 { font-size: 34px; }
 }
 
 /* Search/Lookup — terminal panel style */
