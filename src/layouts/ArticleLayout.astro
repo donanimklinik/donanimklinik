@@ -87,6 +87,9 @@ const breadcrumbSchema = {
 };
 
 const dateStr = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(pubDate);
+
+const sourceUrl = new URL(officialSourceUrl);
+const sourceDomain = sourceUrl.hostname.replace('www.', '');
 ---
 
 <Layout
@@ -145,10 +148,13 @@ const dateStr = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(p
 
     <!-- Source citation -->
     <div class="source-box">
-      <span class="source-box-label mono">Source</span>
-      <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
-        {officialSourceUrl}
-      </a>
+      <span class="source-box-label mono">Official source</span>
+      <div class="source-box-content">
+        <span class="source-domain mono">{sourceDomain}</span>
+        <a href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
+          View official documentation →
+        </a>
+      </div>
     </div>
 
   </div>
