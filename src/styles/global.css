@@ -558,6 +558,24 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
   .page-title { font-size: 26px; }
 }
 
+/* Pillar navigation section */
+.pillar-nav { padding: 40px 0 8px; }
+.pillar-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.pillar-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 14px 20px; border: 1px solid var(--line); background: var(--panel);
+  text-decoration: none; color: var(--text);
+  transition: border-color 0.2s ease, background 0.2s ease;
+  min-width: 220px;
+}
+.pillar-card.red:hover    { border-color: var(--red);        background: rgba(240,85,58,0.05); }
+.pillar-card.blue:hover   { border-color: var(--brand-blue); background: rgba(43,179,224,0.05); }
+.pillar-card.trace:hover  { border-color: var(--trace);      background: rgba(121,240,192,0.05); }
+.pillar-card.amber:hover  { border-color: var(--amber);      background: rgba(251,176,59,0.05); }
+.pillar-card-name { font-size: 14px; font-weight: 600; font-family: 'Space Grotesk', sans-serif; }
+.pillar-card-count { font-size: 11px; color: var(--text-faint); white-space: nowrap; }
+@media (max-width: 560px) { .pillar-card { min-width: 100%; } }
+
 /* Article list section */
 .article-list { padding: 56px 0 80px; }
 

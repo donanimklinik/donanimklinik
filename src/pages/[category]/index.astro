@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
+import { toPillarSlug } from '../../utils/pillarSlug';
 
 export async function getStaticPaths() {
   const categories = [
@@ -61,6 +62,16 @@ const articles = (
 const canonical = `https://www.donanimklinik.com/${category}/`;
 const pageTitle = `${cat.label} — Tech Fixes & Guides | DonanimKlinik`;
 const pageDesc = `${cat.description} Step-by-step guides sourced from official documentation.`;
+
+// Unique pillars in this category for hub navigation
+const pillars = [...new Map(
+  articles
+    .filter(a => a.data.pillar)
+    .map(a => [a.data.pillar, { name: a.data.pillar, slug: toPillarSlug(a.data.pillar), count: 0 }])
+).values()].map(p => ({
+  ...p,
+  count: articles.filter(a => a.data.pillar === p.name).length,
+}));
 ---
 
 <Layout title={pageTitle} description={pageDesc} canonical={canonical}>
@@ -81,6 +92,22 @@ const pageDesc = `${cat.description} Step-by-step guides sourced from official d
     )}
   </div>
 </div>
+
+{pillars.length > 0 && (
+  <section class="pillar-nav" aria-labelledby="pillar-nav-heading">
+    <div class="wrap">
+      <div class="section-label" id="pillar-nav-heading">Browse by topic</div>
+      <div class="pillar-grid">
+        {pillars.map(p => (
+          <a href={`/${category}/${p.slug}/`} class={`pillar-card ${cat.colorCls}`}>
+            <span class="pillar-card-name">{p.name}</span>
+            <span class="pillar-card-count mono">{p.count} guide{p.count !== 1 ? 's' : ''} →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
 
 <section class="article-list">
   <div class="wrap">
