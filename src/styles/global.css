@@ -429,35 +429,52 @@ header .wrap {
 .hero p {
   color: var(--text-dim); font-size: 16.5px; max-width: 540px; margin-top: 22px;
 }
+/* Two-column hero layout */
+.hero-wrap {
+  display: grid;
+  grid-template-columns: 55% 1fr;
+  gap: 52px;
+  align-items: center;
+}
+.hero-left { /* left column — headline + search */ }
+.hero-right { /* right column — diagnostic panel */ }
+@media (max-width: 960px) {
+  .hero-wrap { grid-template-columns: 1fr; gap: 0; }
+  .hero-right { display: none; }
+}
+/* Remove fixed max-widths inside the column context */
+.hero-left h1 { max-width: none; }
+.hero-left p  { max-width: none; }
 /* Staggered hero content entrance */
 @keyframes heroFade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
-.hero .wrap > * { animation: heroFade 0.65s ease both; }
-.hero .wrap > *:nth-child(1) { animation-delay: 0.05s; }
-.hero .wrap > *:nth-child(2) { animation-delay: 0.22s; }
-.hero .wrap > *:nth-child(3) { animation-delay: 0.42s; }
-.hero .wrap > *:nth-child(4) { animation-delay: 0.56s; }
-.hero .wrap > *:nth-child(5) { animation-delay: 0.68s; }
+.hero-left > * { animation: heroFade 0.65s ease both; }
+.hero-left > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-left > *:nth-child(2) { animation-delay: 0.22s; }
+.hero-left > *:nth-child(3) { animation-delay: 0.42s; }
+.hero-left > *:nth-child(4) { animation-delay: 0.60s; }
+.hero-right { animation: heroFade 0.9s ease 0.55s both; }
 @media (max-width: 640px) {
   .hero { padding: 64px 0 48px; }
   .hero h1 { font-size: 34px; }
   .hero p { font-size: 15px; }
 }
 
-/* Search/Lookup */
-.lookup-label {
-  margin-top: 40px;
-  font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--amber);
-  text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px;
-  display: flex; align-items: center;
-  cursor: pointer;
+/* Search/Lookup — terminal panel style */
+.lookup-wrap { margin-top: 36px; }
+.lookup-header {
+  background: var(--panel); border: 1px solid var(--amber);
+  border-bottom: none; border-radius: 4px 4px 0 0;
+  padding: 7px 14px; display: flex; align-items: center; gap: 8px;
+  font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--amber);
+  letter-spacing: 0.04em;
 }
-.lookup-label svg { flex-shrink: 0; margin-right: 8px; }
+.lookup-header svg { flex-shrink: 0; }
+.lookup-header-hint { margin-left: auto; color: var(--text-faint); font-size: 10px; letter-spacing: 0.02em; }
 .lookup {
   display: flex;
-  max-width: 600px;
-  border: 2px solid var(--amber);
-  background: linear-gradient(180deg, rgba(251,176,59,0.07), rgba(251,176,59,0.02));
-  border-radius: 4px;
+  border: 1px solid var(--amber); border-top: 1px solid rgba(251,176,59,0.3);
+  background: linear-gradient(180deg, rgba(251,176,59,0.06), rgba(251,176,59,0.02));
+  border-radius: 0 0 4px 4px;
   overflow: hidden;
   position: relative;
   animation: lookupGlow 2.6s ease-in-out infinite;
@@ -492,6 +509,81 @@ header .wrap {
 }
 
 /* ============================================================
+   Diagnostic Panel (hero right column)
+   ============================================================ */
+.diag-panel {
+  background: rgba(10,19,14,0.94);
+  border: 1px solid var(--line);
+  border-radius: 10px; overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.04), inset 0 1px 0 rgba(255,255,255,0.05);
+  animation: diagFloat 7s ease-in-out infinite;
+}
+@keyframes diagFloat {
+  0%,100% { transform: translateY(0px); }
+  50%      { transform: translateY(-10px); }
+}
+.diag-hdr {
+  background: var(--panel-2); border-bottom: 1px solid var(--line);
+  padding: 11px 16px;
+  display: flex; align-items: center; gap: 7px;
+}
+.diag-dot {
+  width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; opacity: 0.8;
+}
+.dc-r { background: #FF5F57; }
+.dc-a { background: #FEBC2E; }
+.dc-g { background: #28C840; }
+.diag-title {
+  flex: 1; text-align: center;
+  font-size: 11px; color: var(--text-faint); letter-spacing: 0.05em;
+}
+.diag-body { }
+.diag-row {
+  display: grid; grid-template-columns: 18px 108px 1fr auto;
+  gap: 10px; align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(38,56,38,0.5);
+  transition: background 0.15s ease;
+}
+.diag-row:last-child { border-bottom: none; }
+.diag-row:hover { background: rgba(255,255,255,0.025); }
+.diag-active { background: rgba(251,176,59,0.04); }
+.diag-ok {
+  color: var(--trace); font-size: 12px; font-weight: 600;
+  text-align: center;
+}
+.diag-spin {
+  color: var(--amber); font-size: 14px; display: inline-block;
+  animation: spin 1.1s linear infinite; text-align: center;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.diag-code {
+  font-size: 11.5px; color: var(--text); letter-spacing: 0.02em;
+}
+.diag-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px; color: var(--text-faint);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.diag-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px; padding: 2px 7px; border-radius: 3px;
+  text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap;
+}
+.db-ok      { color: var(--trace);      background: rgba(121,240,192,0.1);  border: 1px solid rgba(121,240,192,0.25); }
+.db-pending { color: var(--amber);      background: rgba(251,176,59,0.1);   border: 1px solid rgba(251,176,59,0.28); }
+.diag-footer {
+  background: var(--panel-2); border-top: 1px solid var(--line);
+  padding: 9px 16px; font-size: 10.5px; color: var(--text-faint);
+  display: flex; align-items: center; gap: 8px;
+}
+.diag-footer-dot {
+  width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0;
+  background: var(--trace); box-shadow: 0 0 5px var(--trace);
+  animation: blinkTag 1.4s ease-in-out infinite;
+}
+
+/* ============================================================
    Section Labels
    ============================================================ */
 .section-label {
@@ -504,19 +596,32 @@ header .wrap {
 .section-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
 
 /* ============================================================
-   Trust Strip
+   Status Bar (IDE-style — replaces trust strip)
    ============================================================ */
-.trust-strip {
-  background: var(--bg); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+.status-bar {
+  background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  height: 30px; overflow: hidden;
 }
-.trust-strip-inner {
-  max-width: 1120px; margin: 0 auto; padding: 11px 32px;
-  display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+.status-bar-inner {
+  display: flex; align-items: stretch; height: 100%;
   font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-faint);
   letter-spacing: 0.02em;
 }
-.trust-sep { color: var(--line); user-select: none; }
-.trust-hl { color: var(--trace); }
+.sb-item {
+  display: flex; align-items: center; gap: 6px;
+  padding: 0 14px; white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.sb-item:hover { background: rgba(255,255,255,0.03); color: var(--text); }
+.sb-sep { width: 1px; background: var(--line); flex-shrink: 0; }
+.sb-hl { color: var(--trace); }
+.sb-dot {
+  width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+  background: var(--trace); box-shadow: 0 0 5px var(--trace);
+  animation: blinkTag 1.8s ease-in-out infinite;
+}
+.sb-right { margin-left: auto; }
+@media (max-width: 640px) { .status-bar-inner .sb-item:not(:first-child):not(:last-child):not(:nth-child(2)):not(:nth-child(3)) { display: none; } .status-bar { height: auto; } .status-bar-inner { flex-wrap: wrap; height: auto; padding: 8px 0; } }
 
 /* ============================================================
    Category Grid
