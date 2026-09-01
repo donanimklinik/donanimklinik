@@ -17,6 +17,7 @@ const articles = defineCollection({
     views_monthly: z.number().default(0),
     revenue_daily: z.number().default(0),
     top_search_queries: z.array(z.string()).default([]),
+    howto_steps: z.array(z.object({ name: z.string(), text: z.string() })).optional(),
     read_time: z.number().optional(),
     schema_type: z.enum(['Article', 'HowTo', 'FAQPage']).default('Article'),
     featured: z.boolean().default(false),

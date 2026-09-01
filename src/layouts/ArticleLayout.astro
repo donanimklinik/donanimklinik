@@ -12,6 +12,7 @@ interface Props {
   publishedAt?: Date;
   readTime?: number;
   schemaType?: 'Article' | 'HowTo' | 'FAQPage';
+  howtoSteps?: { name: string; text: string }[];
 }
 
 const {
@@ -24,6 +25,7 @@ const {
   publishedAt,
   readTime,
   schemaType = 'Article',
+  howtoSteps,
 } = Astro.props;
 
 const canonical = `https://donanimklinik.com/${category}/${slug}/`;
@@ -63,6 +65,14 @@ const articleSchema = {
   ...(schemaType === 'Article' && {
     articleSection: tag.label,
     isBasedOn: officialSourceUrl,
+  }),
+  ...(schemaType === 'HowTo' && howtoSteps && {
+    step: howtoSteps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
   }),
 };
 
@@ -122,16 +132,16 @@ const dateStr = new Intl.DateTimeFormat('en-US', { dateStyle: 'long' }).format(p
       </div>
     </div>
 
-    <!-- Ad: top -->
-    <AdUnit slot="top" />
+    <!-- Ad: above article -->
+    <AdUnit />
 
     <!-- Article content -->
     <article class="article-body">
       <slot />
     </article>
 
-    <!-- Ad: bottom -->
-    <AdUnit slot="bottom" />
+    <!-- Ad: below article -->
+    <AdUnit />
 
     <!-- Source citation -->
     <div class="source-box">
