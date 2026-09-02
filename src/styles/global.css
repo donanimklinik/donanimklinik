@@ -421,19 +421,30 @@ header .wrap {
   50% { transform: translate(-25px, 25px) scale(1.05); }
 }
 .hero-scanline {
-  position: absolute; left: 0; right: 0; top: 0; height: 2px;
-  background: linear-gradient(90deg, var(--red), var(--violet), var(--brand-blue), var(--trace), var(--amber));
-  box-shadow: 0 0 16px rgba(255,255,255,0.25);
+  position: absolute; left: 0; right: 0; top: 0; height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--red) 12%,
+    var(--violet) 28%,
+    var(--brand-blue) 48%,
+    var(--trace) 68%,
+    var(--amber) 86%,
+    transparent 100%
+  );
+  box-shadow:
+    0 0 8px rgba(121,240,192,0.5),
+    0 0 24px rgba(43,179,224,0.25),
+    0 0 48px rgba(121,240,192,0.1);
   opacity: 0;
-  animation: scanDown 6s ease-in-out infinite;
-  pointer-events: none; z-index: 0;
+  animation: scanDown 16s ease-in-out 1s infinite;
+  pointer-events: none; z-index: 1;
 }
 @keyframes scanDown {
-  0% { top: 0; opacity: 0; }
-  6% { opacity: 0.9; }
-  45% { opacity: 0.55; }
-  85% { top: 100%; opacity: 0.15; }
-  100% { top: 100%; opacity: 0; }
+  0%   { top: 2%;   opacity: 0; }
+  6%   { opacity: 0.9; }
+  78%  { opacity: 0.5; }
+  95%  { top: 97%;  opacity: 0; }
+  100% { top: 97%;  opacity: 0; }
 }
 .hero .wrap { position: relative; z-index: 1; }
 .hero-tag {
