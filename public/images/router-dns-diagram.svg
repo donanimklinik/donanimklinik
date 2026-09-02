@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 210" role="img" aria-label="DNS settings diagram: router forwards DNS queries to either ISP DNS or Google public DNS 8.8.8.8. Google DNS is faster and more reliable.">
+  <defs>
+    <pattern id="dgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.8"/>
+    </pattern>
+    <marker id="darr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#3b82f6"/>
+    </marker>
+    <marker id="darr2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#00E5A0"/>
+    </marker>
+    <marker id="darr3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0, 8 4, 0 8" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect width="780" height="210" fill="#0A130E" rx="10"/>
+  <rect width="780" height="210" fill="url(#dgrid)" rx="10"/>
+
+  <text x="390" y="22" fill="#6B7F72" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">DNS SERVER SETTINGS</text>
+
+  <!-- Router (center-left) -->
+  <rect x="60" y="65" width="160" height="100" fill="#111e14" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Antennas -->
+  <line x1="100" y1="88" x2="97" y2="70" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="97" cy="68" r="2.5" fill="#3b82f6"/>
+  <line x1="140" y1="88" x2="140" y2="68" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="140" cy="66" r="2.5" fill="#3b82f6"/>
+  <line x1="180" y1="88" x2="183" y2="70" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="183" cy="68" r="2.5" fill="#3b82f6"/>
+  <rect x="74" y="88" width="132" height="44" fill="#0d1810" rx="4" stroke="#3b82f6"/>
+  <circle cx="88" cy="100" r="3" fill="#00E5A0"/>
+  <circle cx="100" cy="100" r="3" fill="#3b82f6"/>
+  <circle cx="112" cy="100" r="3" fill="#3b82f6" opacity="0.5"/>
+  <rect x="80" y="110" width="120" height="12" fill="#0A130E" rx="2" stroke="#1e3a22"/>
+  <rect x="84" y="112" width="20" height="8" fill="#1e3a22" rx="1"/>
+  <rect x="108" y="112" width="20" height="8" fill="#1e3a22" rx="1"/>
+  <rect x="132" y="112" width="20" height="8" fill="#1e3a22" rx="1"/>
+  <text x="140" y="158" fill="#93c5fd" font-size="10" font-family="monospace" text-anchor="middle">Your Router</text>
+  <text x="140" y="170" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">DNS Query</text>
+
+  <!-- Label: DNS query from device -->
+  <text x="140" y="52" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">Device asks: "Where is google.com?"</text>
+
+  <!-- Arrow to ISP DNS (top path - bad) -->
+  <path d="M 220,90 Q 340,50 450,80" fill="none" stroke="#ef4444" stroke-width="1.5" marker-end="url(#darr3)" stroke-dasharray="5,3"/>
+  <text x="340" y="50" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle" opacity="0.8">ISP DNS (slow, may fail)</text>
+
+  <!-- Arrow to Google DNS (bottom path - good) -->
+  <path d="M 220,140 Q 340,180 450,155" fill="none" stroke="#00E5A0" stroke-width="2" marker-end="url(#darr2)"/>
+  <text x="340" y="185" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle">Google Public DNS (recommended)</text>
+
+  <!-- ISP DNS box (bad) -->
+  <rect x="450" y="48" width="150" height="72" fill="#1a0d0d" rx="8" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="525" y="72" fill="#ef4444" font-size="11" font-family="monospace" text-anchor="middle" font-weight="bold">ISP DNS</text>
+  <text x="525" y="89" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Assigned automatically</text>
+  <text x="525" y="103" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Can be slow or unreliable</text>
+  <!-- X mark -->
+  <text x="570" y="66" fill="#ef4444" font-size="14" text-anchor="middle" opacity="0.7">✕</text>
+
+  <!-- Google DNS box (good) -->
+  <rect x="450" y="132" width="150" height="72" fill="#0d1a12" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="525" y="155" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle" font-weight="bold">Google DNS</text>
+  <text x="525" y="172" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">8.8.8.8</text>
+  <text x="525" y="186" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">8.8.4.4</text>
+  <!-- Check mark -->
+  <text x="570" y="150" fill="#00E5A0" font-size="14" text-anchor="middle" opacity="0.8">✓</text>
+
+  <!-- Cloudflare DNS box -->
+  <rect x="622" y="132" width="138" height="72" fill="#0d1015" rx="8" stroke="#f97316" stroke-width="1.5"/>
+  <text x="691" y="155" fill="#f97316" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">Cloudflare DNS</text>
+  <text x="691" y="172" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">1.1.1.1</text>
+  <text x="691" y="186" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">1.0.0.1</text>
+  <text x="728" y="150" fill="#f97316" font-size="14" text-anchor="middle" opacity="0.8">✓</text>
+
+  <!-- Arrow: also good option -->
+  <path d="M 220,140 Q 500,195 620,180" fill="none" stroke="#f97316" stroke-width="1.2" marker-end="url(#darr)" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- How to set label -->
+  <rect x="622" y="48" width="138" height="72" fill="#111e14" rx="8" stroke="#1e3a22" stroke-width="1.5"/>
+  <text x="691" y="68" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Set in router admin:</text>
+  <text x="691" y="82" fill="#F0F4F1" font-size="8" font-family="monospace" text-anchor="middle">192.168.1.1 → WAN</text>
+  <text x="691" y="96" fill="#F0F4F1" font-size="8" font-family="monospace" text-anchor="middle">→ DNS Settings</text>
+  <text x="691" y="110" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle">Enter 8.8.8.8 / 8.8.4.4</text>
+</svg>
