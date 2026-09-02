@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 230" role="img" aria-label="Why internet keeps dropping: ISP line instability, loose coax cable, overheating modem, router DHCP issue, or DNS failure — each point in the chain can cause intermittent disconnections">
+  <defs>
+    <pattern id="idd" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+    <marker id="idda" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0,8 4,0 8" fill="#1e3a22" opacity=".9"/>
+    </marker>
+  </defs>
+  <rect width="780" height="230" fill="#0A130E" rx="10"/>
+  <rect width="780" height="230" fill="url(#idd)" rx="10"/>
+  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">WHY INTERNET KEEPS DROPPING — WHERE TO LOOK</text>
+
+  <!-- Signal line across -->
+  <line x1="60" y1="105" x2="720" y2="105" stroke="#1e3a22" stroke-width="2"/>
+
+  <!-- ── 1: ISP / Street cabinet ── -->
+  <rect x="28" y="78" width="64" height="54" fill="#0d1810" rx="6" stroke="#4a5e4e" stroke-width="1.2"/>
+  <!-- Tower icon -->
+  <line x1="60" y1="86" x2="60" y2="98" stroke="#6B7F72" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="90" x2="72" y2="90" stroke="#6B7F72" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="52" y1="86" x2="68" y2="86" stroke="#6B7F72" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="56" y1="83" x2="64" y2="83" stroke="#6B7F72" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="60" y="116" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">ISP Signal</text>
+  <text x="60" y="125" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">/ Cabinet</text>
+  <!-- Warning -->
+  <rect x="24" y="140" width="72" height="28" fill="#1a1200" rx="3" stroke="#92400e" stroke-width="1"/>
+  <text x="60" y="151" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">⚠ Outage or</text>
+  <text x="60" y="161" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">line instability</text>
+  <text x="60" y="174" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">→ Call ISP</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="94" y1="105" x2="152" y2="105" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#idda)"/>
+  <text x="123" y="98" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">coax/fiber</text>
+
+  <!-- ── 2: Cable / Wall entry ── -->
+  <rect x="154" y="82" width="58" height="46" fill="#0d1810" rx="5" stroke="#4a5e4e" stroke-width="1.2"/>
+  <rect x="162" y="90" width="42" height="30" fill="#0A130E" rx="2" stroke="#1e3a22"/>
+  <line x1="171" y1="90" x2="171" y2="120" stroke="#4a5e4e" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="183" y="104" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Wall</text>
+  <text x="183" y="113" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">outlet</text>
+  <text x="183" y="144" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Cable</text>
+  <!-- Warning -->
+  <rect x="150" y="140" width="66" height="28" fill="#1a1200" rx="3" stroke="#92400e" stroke-width="1"/>
+  <text x="183" y="151" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">⚠ Loose coax</text>
+  <text x="183" y="161" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">or bent cable</text>
+  <text x="183" y="174" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">→ Re-seat cable</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="218" y1="105" x2="268" y2="105" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#idda)"/>
+
+  <!-- ── 3: Modem ── -->
+  <rect x="270" y="78" width="70" height="54" fill="#0d1810" rx="6" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="280" y="88" width="50" height="30" fill="#111e14" rx="3" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="291" cy="103" r="4" fill="#f59e0b" opacity=".9"/>
+  <text x="291" y="116" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">Online</text>
+  <circle cx="305" cy="103" r="4" fill="#00E5A0" opacity=".7"/>
+  <text x="305" y="116" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">Power</text>
+  <circle cx="319" cy="103" r="4" fill="#1e3a22" stroke="#2d5a3d" stroke-width="1"/>
+  <text x="319" y="116" fill="#4a5e4e" font-size="6" font-family="monospace" text-anchor="middle">DS/US</text>
+  <text x="305" y="88" fill="#ef4444" font-size="6.5" font-family="monospace" text-anchor="middle">MODEM</text>
+  <!-- Warning -->
+  <rect x="266" y="140" width="78" height="36" fill="#1a1200" rx="3" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="305" y="151" fill="#ef4444" font-size="7.5" font-family="monospace" text-anchor="middle">⚠ Most common!</text>
+  <text x="305" y="162" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">Overheating or</text>
+  <text x="305" y="172" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">firmware crash</text>
+  <text x="305" y="183" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">→ Reboot modem</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="342" y1="105" x2="392" y2="105" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#idda)"/>
+  <text x="367" y="98" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Ethernet</text>
+
+  <!-- ── 4: Router ── -->
+  <rect x="394" y="78" width="70" height="54" fill="#0d1810" rx="6" stroke="#f59e0b" stroke-width="1.2"/>
+  <rect x="402" y="88" width="54" height="30" fill="#111e14" rx="3" stroke="#3b82f6"/>
+  <circle cx="413" cy="103" r="4" fill="#00E5A0" opacity=".9"/>
+  <text x="413" y="116" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">Power</text>
+  <circle cx="427" cy="103" r="4" fill="#f59e0b" opacity=".8"/>
+  <text x="427" y="116" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">WAN</text>
+  <circle cx="441" cy="103" r="4" fill="#3b82f6" opacity=".7"/>
+  <text x="441" y="116" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">WiFi</text>
+  <!-- Antennas -->
+  <line x1="420" y1="88" x2="418" y2="80" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="429" y1="88" x2="429" y2="79" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="438" y1="88" x2="440" y2="80" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="429" y="88" fill="#f59e0b" font-size="6.5" font-family="monospace" text-anchor="middle">ROUTER</text>
+  <!-- Warning -->
+  <rect x="390" y="140" width="78" height="36" fill="#1a1200" rx="3" stroke="#92400e" stroke-width="1"/>
+  <text x="429" y="151" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">⚠ DHCP lease</text>
+  <text x="429" y="162" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">expired or old</text>
+  <text x="429" y="172" fill="#f59e0b" font-size="7" font-family="monospace" text-anchor="middle">firmware</text>
+  <text x="429" y="183" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">→ Reboot + update</text>
+
+  <!-- Arrow 4→5 -->
+  <line x1="466" y1="105" x2="516" y2="105" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#idda)"/>
+  <text x="491" y="98" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">WiFi / cable</text>
+
+  <!-- ── 5: DNS ── -->
+  <rect x="518" y="82" width="60" height="46" fill="#0d1810" rx="5" stroke="#4a5e4e" stroke-width="1.2"/>
+  <circle cx="548" cy="100" r="14" fill="#0A130E" stroke="#1e3a22" stroke-width="1"/>
+  <text x="548" y="97" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">DNS</text>
+  <text x="548" y="107" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">8.8.8.8</text>
+  <text x="548" y="144" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">DNS Server</text>
+  <!-- Warning -->
+  <rect x="514" y="140" width="68" height="36" fill="#0d1810" rx="3" stroke="#1e3a22"/>
+  <text x="548" y="151" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">⚠ ISP DNS</text>
+  <text x="548" y="162" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">slow / failing</text>
+  <text x="548" y="172" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">→ Use 8.8.8.8</text>
+  <text x="548" y="183" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">or 1.1.1.1</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="582" y1="105" x2="630" y2="105" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#idda)"/>
+
+  <!-- ── 6: Device ── -->
+  <rect x="632" y="82" width="86" height="46" fill="#0d1a12" rx="5" stroke="#00E5A0" stroke-width="1.5"/>
+  <!-- Laptop + phone -->
+  <rect x="642" y="88" width="32" height="22" fill="#0A130E" rx="3" stroke="#2d5a3d"/>
+  <rect x="644" y="90" width="28" height="16" fill="#0d1810" rx="1"/>
+  <rect x="638" y="110" width="40" height="3" fill="#0d1810" rx="1" stroke="#1e3a22"/>
+  <rect x="682" y="88" width="16" height="26" fill="#0A130E" rx="4" stroke="#2d5a3d"/>
+  <rect x="684" y="90" width="12" height="18" fill="#0d1810" rx="1"/>
+  <text x="675" y="143" fill="#00E5A0" font-size="7" font-family="monospace" text-anchor="middle">Your devices</text>
+  <!-- OK badge -->
+  <rect x="638" y="152" width="72" height="16" fill="#0d1a12" rx="3" stroke="#00E5A0" stroke-width="1"/>
+  <text x="674" y="163" fill="#00E5A0" font-size="7.5" font-family="monospace" text-anchor="middle">✓ Internet stable</text>
+  <text x="674" y="180" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">after fix</text>
+
+  <!-- Bottom note -->
+  <rect x="24" y="196" width="732" height="26" fill="#0d1810" rx="4" stroke="#1e3a22"/>
+  <text x="390" y="208" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">Fix order: ISP outage check → re-seat coax cable → reboot modem (60 sec) → reboot router → change DNS to 8.8.8.8</text>
+  <text x="390" y="218" fill="#2d5a3d" font-size="7.5" font-family="monospace" text-anchor="middle">Modem is the most common cause — always reboot it first, unplugged for 60 seconds</text>
+</svg>
