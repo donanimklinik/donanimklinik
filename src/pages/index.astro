@@ -300,6 +300,16 @@ const searchIndex = allArticles.map(a => ({
   }
 
   // --- Render ---
+  // --- Position dropdown below lookup-wrap using fixed coords (bypasses overflow:hidden on hero) ---
+  function positionDrop() {
+    const wrap = document.querySelector('.lookup-wrap');
+    if (!wrap) return;
+    const r = wrap.getBoundingClientRect();
+    drop.style.top   = (r.bottom + 4) + 'px';
+    drop.style.left  = r.left + 'px';
+    drop.style.width = r.width + 'px';
+  }
+
   function render(results, terms) {
     if (!results.length) {
       const gUrl = 'https://www.google.com/search?q=' + encodeURIComponent(terms.join(' ') + ' site:donanimklinik.com');
@@ -333,7 +343,11 @@ const searchIndex = allArticles.map(a => ({
     const results = runSearch(q);
     const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
     render(results, terms);
+    positionDrop();
   }
+
+  // Reposition on resize so fixed coords stay accurate
+  window.addEventListener('resize', () => { if (!drop.hidden) positionDrop(); }, { passive: true });
 
   // --- Keyboard navigation ---
   let activeIdx = -1;

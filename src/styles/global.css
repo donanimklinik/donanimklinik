@@ -659,10 +659,8 @@ header .wrap {
    Search Dropdown
    ============================================================ */
 .search-drop {
-  position: absolute;
-  top: 100%;
-  left: 0; right: 0;
-  margin-top: 6px;
+  position: fixed;
+  /* top / left / width set by JS via getBoundingClientRect() */
   background: #091510;
   border: 1px solid #2a5236;
   border-radius: 6px;
