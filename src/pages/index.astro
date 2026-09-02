@@ -68,19 +68,21 @@ const searchIndex = allArticles.map(a => ({
           <input type="text" id="error-lookup" class="mono" placeholder="0x0000007B, 0xC004F050, paper jam..." aria-label="Search error code or keyword" autocomplete="off" spellcheck="false">
           <button type="button" id="search-run-btn">Run</button>
         </div>
-        <div class="search-drop" id="search-drop" role="listbox" aria-label="Search results" hidden>
-          <div class="search-drop-list" id="search-drop-list"></div>
-          <div class="search-drop-hint">
-            <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
-            <span><kbd>↵</kbd> open</span>
-            <span><kbd>Esc</kbd> close</span>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
+
+<!-- Search dropdown — intentionally outside .hero to escape overflow:hidden -->
+<div class="search-drop" id="search-drop" role="listbox" aria-label="Search results" hidden>
+  <div class="search-drop-list" id="search-drop-list"></div>
+  <div class="search-drop-hint">
+    <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+    <span><kbd>↵</kbd> open</span>
+    <span><kbd>Esc</kbd> close</span>
+  </div>
+</div>
 
 <!-- Categories -->
 <section class="categories" aria-labelledby="cat-heading">
