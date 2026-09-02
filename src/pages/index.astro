@@ -348,8 +348,28 @@ const searchIndex = allArticles.map(a => ({
     positionDrop();
   }
 
-  // Reposition on resize so fixed coords stay accurate
+  // Reposition on resize
   window.addEventListener('resize', () => { if (!drop.hidden) positionDrop(); }, { passive: true });
+
+  // On page scroll: follow the search box, close if it scrolls off-screen
+  window.addEventListener('scroll', () => {
+    if (drop.hidden) return;
+    const wrap = document.querySelector('.lookup-wrap');
+    if (!wrap) { close(); return; }
+    const r = wrap.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > window.innerHeight) close();
+    else positionDrop();
+  }, { passive: true });
+
+  // Prevent page scroll when wheeling inside the dropdown list
+  list.addEventListener('wheel', (e) => {
+    const scrollable = list.scrollHeight > list.clientHeight;
+    if (!scrollable) { e.preventDefault(); return; }
+    const atTop    = list.scrollTop <= 0 && e.deltaY < 0;
+    const atBottom = list.scrollHeight - list.scrollTop <= list.clientHeight + 1 && e.deltaY > 0;
+    if (atTop || atBottom) e.preventDefault();
+    else e.stopPropagation();
+  }, { passive: false });
 
   // --- Keyboard navigation ---
   let activeIdx = -1;
