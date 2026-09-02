@@ -95,10 +95,13 @@ const websiteSchema = {
 
   <slot name="head" />
 </head>
-<body>
+<body class={glowColor ? 'has-glow' : ''}>
 
 {glowColor && (
-  <div class="page-bg-glow" style={`background: ${glowColor};`} aria-hidden="true"></div>
+  <>
+    <div class="page-bg-glow page-bg-glow--top" style={`background: ${glowColor};`} aria-hidden="true"></div>
+    <div class="page-bg-glow page-bg-glow--mid" style={`background: ${glowColor};`} aria-hidden="true"></div>
+  </>
 )}
 
 <a href="#main-content" class="skip-link">Skip to content</a>
