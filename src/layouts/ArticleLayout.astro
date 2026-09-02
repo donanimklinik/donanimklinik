@@ -106,6 +106,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   ogTitle={title}
   ogDescription={description}
   ogType="article"
+  glowColor={tag.color}
 >
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

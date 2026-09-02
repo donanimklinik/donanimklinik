@@ -994,6 +994,18 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
   opacity: 0.2;
 }
 .article-page-hero .wrap { position: relative; z-index: 1; }
+
+/* Full-page ambient glow (category-colored, fixed to top of viewport) */
+.page-bg-glow {
+  position: fixed;
+  top: -260px; left: 50%; transform: translateX(-50%);
+  width: 900px; height: 700px;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
 .page-breadcrumb {
   font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-faint);
   margin-bottom: 16px; display: flex; align-items: center; gap: 8px;

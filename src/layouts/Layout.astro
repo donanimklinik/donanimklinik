@@ -10,6 +10,7 @@ interface Props {
   ogImage?: string;
   ogType?: string;
   schemaType?: 'website' | 'article';
+  glowColor?: string;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   ogDescription = description,
   ogImage = 'https://www.donanimklinik.com/og-default.svg',
   ogType = 'website',
+  glowColor,
 } = Astro.props;
 
 const websiteSchema = {
@@ -94,6 +96,10 @@ const websiteSchema = {
   <slot name="head" />
 </head>
 <body>
+
+{glowColor && (
+  <div class="page-bg-glow" style={`background: ${glowColor};`} aria-hidden="true"></div>
+)}
 
 <a href="#main-content" class="skip-link">Skip to content</a>
 
