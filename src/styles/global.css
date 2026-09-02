@@ -881,16 +881,16 @@ header .wrap {
 .art-card:hover::after { opacity: 0.75; transform: scale(1.5); }
 .art-card:hover { transform: translateY(-4px); }
 /* Per-category: CSS custom property + micro gradient background */
-.art-card.cat-red   { --card-accent: var(--red);        border-left-color: var(--red);        background: linear-gradient(145deg, rgba(240,85,58,0.05) 0%, var(--panel-2) 38%); }
-.art-card.cat-red:hover   { box-shadow: 0 14px 36px rgba(240,85,58,0.2), 0 4px 10px rgba(0,0,0,0.4); }
-.art-card.cat-violet { --card-accent: var(--violet);    border-left-color: var(--violet);     background: linear-gradient(145deg, rgba(167,139,250,0.05) 0%, var(--panel-2) 38%); }
-.art-card.cat-violet:hover { box-shadow: 0 14px 36px rgba(167,139,250,0.2), 0 4px 10px rgba(0,0,0,0.4); }
-.art-card.cat-blue  { --card-accent: var(--brand-blue); border-left-color: var(--brand-blue); background: linear-gradient(145deg, rgba(43,179,224,0.05) 0%, var(--panel-2) 38%); }
-.art-card.cat-blue:hover  { box-shadow: 0 14px 36px rgba(43,179,224,0.2), 0 4px 10px rgba(0,0,0,0.4); }
-.art-card.cat-trace { --card-accent: var(--trace);      border-left-color: var(--trace);      background: linear-gradient(145deg, rgba(121,240,192,0.05) 0%, var(--panel-2) 38%); }
-.art-card.cat-trace:hover { box-shadow: 0 14px 36px rgba(121,240,192,0.2), 0 4px 10px rgba(0,0,0,0.4); }
-.art-card.cat-amber { --card-accent: var(--amber);      border-left-color: var(--amber);      background: linear-gradient(145deg, rgba(251,176,59,0.05) 0%, var(--panel-2) 38%); }
-.art-card.cat-amber:hover { box-shadow: 0 14px 36px rgba(251,176,59,0.2), 0 4px 10px rgba(0,0,0,0.4); }
+.art-card.cat-red   { --card-accent: var(--red);        border-left-color: var(--red);        background: radial-gradient(ellipse at 15% 15%, rgba(240,85,58,0.18) 0%, rgba(240,85,58,0.06) 45%, var(--panel-2) 75%); }
+.art-card.cat-red:hover   { box-shadow: 0 14px 36px rgba(240,85,58,0.22), 0 4px 10px rgba(0,0,0,0.4); }
+.art-card.cat-violet { --card-accent: var(--violet);    border-left-color: var(--violet);     background: radial-gradient(ellipse at 15% 15%, rgba(167,139,250,0.18) 0%, rgba(167,139,250,0.06) 45%, var(--panel-2) 75%); }
+.art-card.cat-violet:hover { box-shadow: 0 14px 36px rgba(167,139,250,0.22), 0 4px 10px rgba(0,0,0,0.4); }
+.art-card.cat-blue  { --card-accent: var(--brand-blue); border-left-color: var(--brand-blue); background: radial-gradient(ellipse at 15% 15%, rgba(43,179,224,0.18) 0%, rgba(43,179,224,0.06) 45%, var(--panel-2) 75%); }
+.art-card.cat-blue:hover  { box-shadow: 0 14px 36px rgba(43,179,224,0.22), 0 4px 10px rgba(0,0,0,0.4); }
+.art-card.cat-trace { --card-accent: var(--trace);      border-left-color: var(--trace);      background: radial-gradient(ellipse at 15% 15%, rgba(121,240,192,0.18) 0%, rgba(121,240,192,0.06) 45%, var(--panel-2) 75%); }
+.art-card.cat-trace:hover { box-shadow: 0 14px 36px rgba(121,240,192,0.22), 0 4px 10px rgba(0,0,0,0.4); }
+.art-card.cat-amber { --card-accent: var(--amber);      border-left-color: var(--amber);      background: radial-gradient(ellipse at 15% 15%, rgba(251,176,59,0.18) 0%, rgba(251,176,59,0.06) 45%, var(--panel-2) 75%); }
+.art-card.cat-amber:hover { box-shadow: 0 14px 36px rgba(251,176,59,0.22), 0 4px 10px rgba(0,0,0,0.4); }
 /* Tag — filled badge instead of outline-only */
 .art-tag {
   display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 10px;
