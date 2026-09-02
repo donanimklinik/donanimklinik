@@ -206,23 +206,6 @@ const websiteSchema = {
     });
   }
 
-  // Error code search
-  (function () {
-    const input = document.getElementById('error-lookup') as HTMLInputElement | null;
-    const btn = document.querySelector('.lookup button') as HTMLButtonElement | null;
-    if (!input || !btn) return;
-    function doSearch() {
-      const q = input!.value.trim();
-      if (!q) return;
-      window.open(
-        'https://www.google.com/search?q=' + encodeURIComponent(q + ' site:donanimklinik.com'),
-        '_blank',
-        'noopener,noreferrer'
-      );
-    }
-    btn.addEventListener('click', doSearch);
-    input.addEventListener('keydown', (e: KeyboardEvent) => { if (e.key === 'Enter') doSearch(); });
-  })();
 </script>
 
 

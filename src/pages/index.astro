@@ -13,6 +13,16 @@ const latest = allArticles
   .slice(0, 6);
 
 const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
+
+// Search index passed to client — compact keys to minimize payload
+const searchIndex = allArticles.map(a => ({
+  t: a.data.title,
+  d: a.data.description,
+  c: a.data.category,
+  p: a.data.pillar ?? '',
+  u: `/${a.data.category}/${a.id}/`,
+  q: a.data.top_search_queries ?? [],
+}));
 ---
 
 <Layout
@@ -55,8 +65,16 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
           <span class="lookup-header-hint">press Enter to search</span>
         </div>
         <div class="lookup" role="search">
-          <input type="text" id="error-lookup" class="mono" placeholder="0x0000007B, 0xC004F050, SMTP_CONN..." aria-label="Search error code">
-          <button type="button">Run</button>
+          <input type="text" id="error-lookup" class="mono" placeholder="0x0000007B, 0xC004F050, paper jam..." aria-label="Search error code or keyword" autocomplete="off" spellcheck="false">
+          <button type="button" id="search-run-btn">Run</button>
+        </div>
+        <div class="search-drop" id="search-drop" role="listbox" aria-label="Search results" hidden>
+          <div class="search-drop-list" id="search-drop-list"></div>
+          <div class="search-drop-hint">
+            <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+            <span><kbd>↵</kbd> open</span>
+            <span><kbd>Esc</kbd> close</span>
+          </div>
         </div>
       </div>
     </div>
@@ -211,6 +229,178 @@ const featured = allArticles.find((a) => a.data.featured) ?? latest[0];
     }, { threshold: 0.08 });
     cards.forEach(card => obs.observe(card));
   }
+</script>
+
+<script define:vars={{ searchIndex }}>
+(function () {
+  const input = document.getElementById('error-lookup');
+  const btn = document.getElementById('search-run-btn');
+  const drop = document.getElementById('search-drop');
+  const list = document.getElementById('search-drop-list');
+  if (!input || !btn || !drop || !list) return;
+
+  const CAT_COLORS = {
+    computers: '#F0553A',
+    networking: '#2BB3E0',
+    software: '#79F0C0',
+    peripherals: '#FBB03B',
+  };
+
+  // --- Scoring ---
+  function scoreItem(item, terms, phrase) {
+    const tL = item.t.toLowerCase();
+    const dL = item.d.toLowerCase();
+    const qL = item.q.join(' ').toLowerCase();
+    const pL = item.p.toLowerCase();
+    let pts = 0;
+
+    if (tL === phrase)              pts += 20;
+    else if (tL.startsWith(phrase)) pts += 14;
+    else if (tL.includes(phrase))   pts += 11;
+
+    if (qL.includes(phrase))        pts += 8;
+    if (pL.includes(phrase))        pts += 5;
+    if (dL.includes(phrase))        pts += 3;
+
+    for (const term of terms) {
+      if (tL.includes(term)) pts += 4;
+      if (qL.includes(term)) pts += 3;
+      if (pL.includes(term)) pts += 2;
+      if (dL.includes(term)) pts += 1;
+    }
+    return pts;
+  }
+
+  function runSearch(raw) {
+    const terms = raw.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    if (!terms.length) return [];
+    const phrase = terms.join(' ');
+    return searchIndex
+      .map(item => ({ item, pts: scoreItem(item, terms, phrase) }))
+      .filter(x => x.pts > 0)
+      .sort((a, b) => b.pts - a.pts)
+      .slice(0, 7)
+      .map(x => x.item);
+  }
+
+  // --- Safe HTML helpers ---
+  function esc(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+  function escRe(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+  function highlight(text, terms) {
+    let out = esc(text);
+    for (const term of terms) {
+      const safe = escRe(esc(term));
+      out = out.replace(new RegExp('(' + safe + ')', 'gi'), '<mark>$1</mark>');
+    }
+    return out;
+  }
+
+  // --- Render ---
+  function render(results, terms) {
+    if (!results.length) {
+      const gUrl = 'https://www.google.com/search?q=' + encodeURIComponent(terms.join(' ') + ' site:donanimklinik.com');
+      list.innerHTML = `<div class="search-drop-empty">No match — <a href="${gUrl}" target="_blank" rel="noopener noreferrer">search Google</a></div>`;
+    } else {
+      list.innerHTML = results.map((item, i) => {
+        const color = CAT_COLORS[item.c] || '#aaa';
+        const desc = item.d.length > 100 ? item.d.slice(0, 97) + '…' : item.d;
+        return `<a class="search-drop-item" href="${esc(item.u)}" role="option" tabindex="-1" data-idx="${i}">
+          <span class="search-drop-cat" style="color:${color}">${esc(item.c)}</span>
+          <span class="search-drop-title">${highlight(item.t, terms)}</span>
+          <svg class="search-drop-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="search-drop-desc">${highlight(desc, terms)}</span>
+        </a>`;
+      }).join('');
+    }
+    drop.hidden = false;
+    activeIdx = -1;
+  }
+
+  function close() {
+    drop.hidden = true;
+    activeIdx = -1;
+  }
+
+  function open(raw) {
+    const q = raw.trim();
+    if (!q) { close(); return; }
+    const results = runSearch(q);
+    const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+    render(results, terms);
+  }
+
+  // --- Keyboard navigation ---
+  let activeIdx = -1;
+
+  function getItems() {
+    return [...list.querySelectorAll('.search-drop-item')];
+  }
+
+  function setActive(idx) {
+    const items = getItems();
+    if (!items.length) return;
+    idx = Math.max(0, Math.min(idx, items.length - 1));
+    items.forEach((el, i) => el.classList.toggle('is-active', i === idx));
+    activeIdx = idx;
+    items[idx].focus();
+  }
+
+  input.addEventListener('input', () => open(input.value));
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { close(); return; }
+    if (drop.hidden) {
+      if (e.key === 'Enter') { e.preventDefault(); open(input.value); return; }
+      return;
+    }
+    if (e.key === 'ArrowDown') { e.preventDefault(); setActive(0); return; }
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const first = list.querySelector('.search-drop-item');
+      if (first) first.click();
+    }
+  });
+
+  list.addEventListener('keydown', (e) => {
+    const items = getItems();
+    if (e.key === 'ArrowDown') { e.preventDefault(); setActive(activeIdx + 1); }
+    else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (activeIdx <= 0) { input.focus(); activeIdx = -1; items.forEach(el => el.classList.remove('is-active')); }
+      else setActive(activeIdx - 1);
+    }
+    else if (e.key === 'Escape') { close(); input.focus(); }
+    else if (e.key === 'Enter' && activeIdx >= 0 && items[activeIdx]) {
+      items[activeIdx].click();
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    if (!drop.hidden) {
+      const first = list.querySelector('.search-drop-item');
+      if (first) { first.click(); return; }
+    }
+    open(input.value);
+    input.focus();
+  });
+
+  // Close when focus leaves the lookup-wrap
+  document.addEventListener('focusin', (e) => {
+    const wrap = document.querySelector('.lookup-wrap');
+    if (wrap && !wrap.contains(e.target)) close();
+  });
+
+  document.addEventListener('click', (e) => {
+    const wrap = document.querySelector('.lookup-wrap');
+    if (wrap && !wrap.contains(e.target)) close();
+  });
+})();
 </script>
 
 </Layout>
