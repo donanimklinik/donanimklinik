@@ -112,32 +112,37 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   </Fragment>
 
-  <div class="wrap">
-    <!-- Breadcrumb -->
-    <nav class="page-breadcrumb" style="padding-top: 28px;" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span aria-hidden="true">›</span>
-      <a href={`/${category}/`}>{tag.label}</a>
-      {pillarName && pillarSlug && (
-        <>
-          <span aria-hidden="true">›</span>
-          <a href={`/${category}/${pillarSlug}/`}>{pillarName}</a>
-        </>
-      )}
-      <span aria-hidden="true">›</span>
-      <span aria-current="page">{title}</span>
-    </nav>
+  <div class="article-page-hero">
+    <div class="article-page-glow" style={`background: ${tag.color};`} aria-hidden="true"></div>
+    <div class="wrap">
+      <!-- Breadcrumb -->
+      <nav class="page-breadcrumb" style="padding-top: 28px;" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <a href={`/${category}/`}>{tag.label}</a>
+        {pillarName && pillarSlug && (
+          <>
+            <span aria-hidden="true">›</span>
+            <a href={`/${category}/${pillarSlug}/`}>{pillarName}</a>
+          </>
+        )}
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">{title}</span>
+      </nav>
 
-    <!-- Article meta header -->
-    <div class="article-meta-header">
-      <span class={`art-tag ${tag.cls}`}>{tag.label}</span>
-      <h1>{title}</h1>
-      <div class="article-meta-row">
-        <span>{dateStr}</span>
-        {readTime && <span>{readTime} min read</span>}
+      <!-- Article meta header -->
+      <div class="article-meta-header">
+        <span class={`art-tag ${tag.cls}`}>{tag.label}</span>
+        <h1>{title}</h1>
+        <div class="article-meta-row">
+          <span>{dateStr}</span>
+          {readTime && <span>{readTime} min read</span>}
+        </div>
       </div>
     </div>
+  </div>
 
+  <div class="wrap">
     <!-- Ad: above article -->
     <AdUnit />
 

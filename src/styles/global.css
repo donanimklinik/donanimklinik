@@ -343,7 +343,9 @@ header .wrap {
   padding: 130px 0 100px;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(ellipse at 38% 28%, #1C3326 0%, #101A12 50%, #060D08 100%);
+  background:
+    radial-gradient(ellipse 40% 35% at 50% 30%, #2A4A35 0%, #1C3326 20%, transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 20%, #122018 0%, #080F0A 60%, #040C07 100%);
 }
 /* ── Hero background layers ─────────────────────────────────────── */
 /* Subtle line-grid substrate */
@@ -972,11 +974,26 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
 }
 .page-header-glow {
   position: absolute; border-radius: 50%;
-  filter: blur(80px); pointer-events: none; z-index: 0;
-  width: 400px; height: 300px; top: -100px; left: -60px;
-  opacity: 0.18;
+  filter: blur(70px); pointer-events: none; z-index: 0;
+  width: 520px; height: 380px;
+  top: -160px; left: 50%; transform: translateX(-50%);
+  opacity: 0.22;
 }
 .page-header .wrap { position: relative; z-index: 1; }
+
+/* Article page hero glow */
+.article-page-hero {
+  position: relative; overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+.article-page-glow {
+  position: absolute; border-radius: 50%;
+  filter: blur(70px); pointer-events: none; z-index: 0;
+  width: 520px; height: 380px;
+  top: -160px; left: 50%; transform: translateX(-50%);
+  opacity: 0.2;
+}
+.article-page-hero .wrap { position: relative; z-index: 1; }
 .page-breadcrumb {
   font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-faint);
   margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
@@ -1078,7 +1095,7 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
 /* Article meta header */
 .article-meta-header {
   max-width: 720px; margin: 0 auto;
-  padding: 40px 0 0;
+  padding: 40px 0 48px;
 }
 .article-meta-header .art-tag { margin-bottom: 20px; }
 .article-meta-header h1 {
