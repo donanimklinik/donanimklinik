@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="BitLocker recovery key in Active Directory: IT admin opens ADUC, finds computer object, goes to BitLocker Recovery tab to retrieve the 48-digit key">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrg" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="#091510" rx="12"/>
+  <rect width="800" height="440" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">BitLocker Key in Active Directory — IT Admin Steps</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="18" y="62" width="172" height="148" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="104" y="88" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Step 1</text>
+  <text x="104" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Open ADUC</text>
+  <text x="104" y="132" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Active Directory</text>
+  <text x="104" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Users &amp; Computers</text>
+  <text x="104" y="172" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Server Manager</text>
+  <text x="104" y="188" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">→ Tools → ADUC</text>
+
+  <line x1="192" y1="136" x2="220" y2="136" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 2 -->
+  <rect x="222" y="62" width="172" height="148" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="308" y="88" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Step 2</text>
+  <text x="308" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Find Computer</text>
+  <text x="308" y="132" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Search by device</text>
+  <text x="308" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">name or username</text>
+  <text x="308" y="172" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Right-click →</text>
+  <text x="308" y="188" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Properties</text>
+
+  <line x1="396" y1="136" x2="424" y2="136" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Step 3 -->
+  <rect x="426" y="62" width="172" height="148" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="512" y="88" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Step 3</text>
+  <text x="512" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">BitLocker Tab</text>
+  <text x="512" y="132" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Properties window</text>
+  <text x="512" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">→ BitLocker Recovery</text>
+  <text x="512" y="172" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Requires AD schema</text>
+  <text x="512" y="188" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">extended for BitLocker</text>
+
+  <line x1="600" y1="136" x2="628" y2="136" stroke="#00E5A0" stroke-width="2" marker-end="url(#arrg)"/>
+
+  <!-- Step 4: Key Found -->
+  <rect x="630" y="62" width="152" height="148" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="706" y="88" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Key Found</text>
+  <text x="706" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">48-digit key</text>
+  <text x="706" y="130" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">shown in list</text>
+  <text x="706" y="152" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Copy and give</text>
+  <text x="706" y="170" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">to the user ✓</text>
+  <text x="706" y="194" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Document access</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="228" x2="760" y2="228" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Prerequisites section -->
+  <text x="400" y="254" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Prerequisites for AD Key Escrow to Work</text>
+
+  <rect x="18" y="266" width="760" height="156" fill="#0d1e16" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+
+  <rect x="34" y="280" width="170" height="128" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="119" y="304" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">GPO Enabled</text>
+  <text x="119" y="326" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Group Policy must</text>
+  <text x="119" y="344" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">configure BitLocker</text>
+  <text x="119" y="362" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">key backup to AD</text>
+  <text x="119" y="392" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Computer Config → Admin</text>
+
+  <rect x="218" y="280" width="170" height="128" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="303" y="304" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Domain-Joined</text>
+  <text x="303" y="326" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">PC must be joined</text>
+  <text x="303" y="344" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">to the domain when</text>
+  <text x="303" y="362" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">BitLocker enabled</text>
+  <text x="303" y="392" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">sysdm.cpl to verify</text>
+
+  <rect x="402" y="280" width="170" height="128" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="487" y="304" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Schema Extended</text>
+  <text x="487" y="326" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">AD schema must</text>
+  <text x="487" y="344" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">include BitLocker</text>
+  <text x="487" y="362" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">recovery objects</text>
+  <text x="487" y="392" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Windows 2008+ AD</text>
+
+  <rect x="586" y="280" width="178" height="128" fill="#091510" rx="6" stroke="#ef4444" stroke-width="1"/>
+  <text x="675" y="304" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">If No Key Found</text>
+  <text x="675" y="326" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">BitLocker was enabled</text>
+  <text x="675" y="344" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">before domain join</text>
+  <text x="675" y="362" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Key never escrowed</text>
+  <text x="675" y="392" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Check Microsoft account</text>
+</svg>

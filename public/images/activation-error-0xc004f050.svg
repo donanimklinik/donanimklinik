@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Windows activation error 0xC004F050: the software licensing service reported the product key is invalid — key is fake, used, or typed incorrectly. Double-check key format and buy genuine if needed">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Main title -->
+  <text x="400" y="38" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0xC004F050 — Product Key Is Invalid</text>
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Error panel left -->
+  <rect x="20" y="62" width="310" height="180" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="2"/>
+  <text x="175" y="88" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Key Rejected</text>
+  <line x1="36" y1="96" x2="314" y2="96" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Key format box -->
+  <rect x="36" y="104" width="278" height="36" fill="#091510" rx="4" stroke="#ef4444" stroke-width="1"/>
+  <text x="175" y="128" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" letter-spacing="3">XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</text>
+  <text x="175" y="158" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Possible reasons:</text>
+  <text x="42" y="179" fill="#D4EAD8" font-size="14" font-family="monospace">• Typo when entering key</text>
+  <text x="42" y="198" fill="#D4EAD8" font-size="14" font-family="monospace">• Key already used elsewhere</text>
+  <text x="42" y="217" fill="#D4EAD8" font-size="14" font-family="monospace">• Pirated or leaked key</text>
+  <text x="42" y="236" fill="#D4EAD8" font-size="14" font-family="monospace">• Wrong Windows version</text>
+
+  <!-- Checklist panel -->
+  <rect x="346" y="62" width="434" height="180" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="563" y="88" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Checklist</text>
+  <line x1="362" y1="96" x2="764" y2="96" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="362" y="118" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="382" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Re-type key carefully</text>
+  <text x="382" y="136" fill="#A8C4B0" font-size="13" font-family="monospace">Watch: 0 (zero) vs O (letter),</text>
+  <text x="382" y="152" fill="#A8C4B0" font-size="13" font-family="monospace">also 1 vs I vs l (lowercase L)</text>
+
+  <line x1="362" y1="162" x2="764" y2="162" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="362" y="184" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="382" y="184" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Copy-paste from purchase email</text>
+  <text x="382" y="202" fill="#A8C4B0" font-size="13" font-family="monospace">Avoids all typing errors instantly</text>
+  <text x="382" y="218" fill="#A8C4B0" font-size="13" font-family="monospace">Check spam folder if not found</text>
+  <text x="382" y="236" fill="#A8C4B0" font-size="13" font-family="monospace">Check sticker on PC bottom/back</text>
+
+  <!-- Bottom: Where to get genuine key + digital license -->
+  <rect x="20" y="258" width="760" height="148" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="282" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Where to Get a Genuine Key</text>
+  <line x1="36" y1="290" x2="764" y2="290" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Sources -->
+  <rect x="36" y="300" width="210" height="90" fill="#091510" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="141" y="320" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Microsoft Store</text>
+  <text x="141" y="339" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">microsoft.com/store</text>
+  <text x="141" y="357" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Official — safest option</text>
+  <text x="141" y="374" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Digital delivery ✓</text>
+
+  <rect x="258" y="300" width="210" height="90" fill="#091510" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="363" y="320" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">OEM Sticker</text>
+  <text x="363" y="339" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Bottom/back of PC</text>
+  <text x="363" y="357" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Laptops and desktops</text>
+  <text x="363" y="374" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Tied to that device ✓</text>
+
+  <rect x="480" y="300" width="264" height="90" fill="#091510" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="612" y="320" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Digital License Alternative</text>
+  <text x="612" y="339" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Link Windows to MS account</text>
+  <text x="612" y="357" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">No product key needed</text>
+  <text x="612" y="374" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Settings → Activation ✓</text>
+
+  <text x="400" y="412" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Warning: Avoid unofficial third-party key resellers — they often sell leaked, invalid, or already-used keys.</text>
+</svg>

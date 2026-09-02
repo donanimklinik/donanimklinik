@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="When to use professional hard drive recovery services: DIY fails when drive makes clicking noise, not detected in BIOS, has physical damage, or was in fire or flood — professional cleanroom recovery costs $300-$1500">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Professional Recovery — When DIY Tools Fail</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Left panel: When to go pro -->
+  <rect x="20" y="58" width="370" height="272" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="205" y="82" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Call a Pro When...</text>
+  <line x1="36" y1="92" x2="374" y2="92" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="44" y="116" fill="#ef4444" font-size="16" font-family="monospace">✕</text>
+  <text x="68" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Drive clicks or grinds</text>
+  <text x="68" y="134" fill="#A8C4B0" font-size="13" font-family="monospace">Read/write head failure — stop using it immediately</text>
+
+  <text x="44" y="160" fill="#ef4444" font-size="16" font-family="monospace">✕</text>
+  <text x="68" y="160" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Not detected in BIOS</text>
+  <text x="68" y="178" fill="#A8C4B0" font-size="13" font-family="monospace">PCB or firmware failure — software cannot help</text>
+
+  <text x="44" y="204" fill="#ef4444" font-size="16" font-family="monospace">✕</text>
+  <text x="68" y="204" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Physical damage visible</text>
+  <text x="68" y="222" fill="#A8C4B0" font-size="13" font-family="monospace">Burned, bent, flooded — needs cleanroom</text>
+
+  <text x="44" y="248" fill="#ef4444" font-size="16" font-family="monospace">✕</text>
+  <text x="68" y="248" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">DIY tools find 0 files</text>
+  <text x="68" y="266" fill="#A8C4B0" font-size="13" font-family="monospace">Platter damage — requires magnetic imaging</text>
+
+  <text x="44" y="308" fill="#ef4444" font-size="16" font-family="monospace">✕</text>
+  <text x="68" y="308" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Fire or flood exposure</text>
+  <text x="68" y="322" fill="#A8C4B0" font-size="13" font-family="monospace">Extreme heat/water damage — emergency service</text>
+
+  <!-- Right panel: What pros do -->
+  <rect x="410" y="58" width="370" height="272" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="595" y="82" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">What Professionals Do</text>
+  <line x1="426" y1="92" x2="764" y2="92" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="430" y="118" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">&#x2460;</text>
+  <text x="456" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Cleanroom disassembly</text>
+  <text x="456" y="136" fill="#A8C4B0" font-size="13" font-family="monospace">ISO Class 5 — 100 particles/ft&#xB3; max</text>
+
+  <text x="430" y="162" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">&#x2461;</text>
+  <text x="456" y="162" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Head/platter swap</text>
+  <text x="456" y="180" fill="#A8C4B0" font-size="13" font-family="monospace">Replace failed components with donor parts</text>
+
+  <text x="430" y="206" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">&#x2462;</text>
+  <text x="456" y="206" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Sector-by-sector imaging</text>
+  <text x="456" y="224" fill="#A8C4B0" font-size="13" font-family="monospace">Magnetic clone before any data extraction</text>
+
+  <text x="430" y="250" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">&#x2463;</text>
+  <text x="456" y="250" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Filesystem reconstruction</text>
+  <text x="456" y="268" fill="#A8C4B0" font-size="13" font-family="monospace">Specialized firmware + forensic tools</text>
+
+  <text x="430" y="300" fill="#f59e0b" font-size="18" font-family="monospace">$</text>
+  <text x="456" y="300" fill="#f59e0b" font-size="14" font-family="monospace" font-weight="bold">Cost: $300 – $1,500+</text>
+  <text x="456" y="318" fill="#A8C4B0" font-size="13" font-family="monospace">No recovery = no charge (always ask)</text>
+
+  <!-- Bottom warning -->
+  <rect x="20" y="346" width="760" height="56" fill="#0d1e16" rx="6" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="400" y="370" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">&#x26A0; Critical Warning</text>
+  <text x="400" y="390" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Never open a clicking hard drive — platter exposure in air destroys data instantly</text>
+</svg>

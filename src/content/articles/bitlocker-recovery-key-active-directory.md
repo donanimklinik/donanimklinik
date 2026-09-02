@@ -31,6 +31,8 @@ Work and school computers managed by an organisation behave differently from per
 
 If you are locked out of a work or school device, your personal Microsoft account page will not contain the key. The key is held by your organisation's IT department.
 
+![BitLocker Active Directory flow: IT admin opens ADUC, finds computer, goes to BitLocker Recovery tab to retrieve 48-digit key](/images/bitlocker-active-directory-flow.svg)
+
 ## Where the key is stored on managed devices
 
 **On-premises Active Directory (AD DS):** For devices joined to a traditional Windows domain, the recovery key is stored in the computer object within Active Directory Domain Services. Only users with the appropriate AD permissions — typically IT administrators — can read this value.

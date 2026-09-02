@@ -33,6 +33,8 @@ This is a KMS connectivity error. Windows attempted to reach a KMS server for vo
 
 According to Microsoft's documentation, this error is specific to devices configured for KMS or volume activation. It does not typically appear on personal home devices using retail product keys.
 
+![Windows KMS activation flow: PC sends DNS lookup for KMS server on port 1688 — fails when off corporate network, fix with VPN or MAK key](/images/windows-activation-kms-flow.svg)
+
 ## Why 0xC004F074 occurs
 
 Windows volume licences activated via KMS require periodic contact with the KMS server. The device renews its activation every 180 days by default. If the renewal attempt fails because the KMS server is unreachable, Windows enters a grace period. When the grace period expires without a successful renewal, 0xC004F074 appears and Windows shows as unactivated.

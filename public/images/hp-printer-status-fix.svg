@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img" aria-label="HP printer offline fix: printer shows offline in Windows even when powered on — uncheck Use Printer Offline, set as default printer, restart Print Spooler service">
+  <defs>
+    <pattern id="g11" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="270" fill="#0A130E" rx="12"/>
+  <rect width="800" height="270" fill="url(#g11)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">HP PRINTER OFFLINE — 3-STEP FIX</text>
+
+  <!-- Step 1 -->
+  <rect x="20" y="38" width="238" height="196" fill="#0d1810" rx="12" stroke="#ef4444" stroke-width="1.8"/>
+  <rect x="20" y="38" width="238" height="44" fill="#1a0d0d" rx="12"/>
+  <rect x="20" y="70" width="238" height="12" fill="#1a0d0d"/>
+  <text x="139" y="62" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 1 — The Toggle</text>
+  <!-- Printer queue mockup -->
+  <rect x="34" y="90" width="210" height="84" fill="#0A130E" rx="4" stroke="#1e3a22"/>
+  <text x="139" y="108" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Printers &amp; scanners → HP</text>
+  <text x="139" y="123" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">→ Open print queue</text>
+  <rect x="50" y="130" width="178" height="22" fill="#1a0d0d" rx="3" stroke="#f59e0b" stroke-width="1"/>
+  <text x="139" y="145" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle">☑ Use Printer Offline ← UNCHECK</text>
+  <text x="139" y="165" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Printer menu → uncheck</text>
+  <text x="139" y="182" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">"Use Printer Offline"</text>
+  <text x="139" y="218" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fixes 60% of cases</text>
+
+  <!-- Step 2 -->
+  <rect x="282" y="38" width="236" height="196" fill="#0d1810" rx="12" stroke="#f59e0b" stroke-width="1.8"/>
+  <rect x="282" y="38" width="236" height="44" fill="#1a1200" rx="12"/>
+  <rect x="282" y="70" width="236" height="12" fill="#1a1200"/>
+  <text x="400" y="62" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 2 — Print Spooler</text>
+  <!-- Services mockup -->
+  <rect x="296" y="90" width="208" height="84" fill="#0A130E" rx="4" stroke="#1e3a22"/>
+  <text x="400" y="108" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Win+R → services.msc</text>
+  <text x="400" y="123" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">→ Print Spooler</text>
+  <rect x="310" y="130" width="180" height="36" fill="#1a1200" rx="3" stroke="#f59e0b" stroke-width="1"/>
+  <text x="400" y="145" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle">Right-click → Restart</text>
+  <text x="400" y="160" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">or Stop → Start</text>
+  <text x="400" y="185" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Clears stuck print jobs</text>
+  <text x="400" y="218" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fixes stuck queue</text>
+
+  <!-- Step 3 -->
+  <rect x="542" y="38" width="238" height="196" fill="#0d1a12" rx="12" stroke="#00E5A0" stroke-width="2"/>
+  <rect x="542" y="38" width="238" height="44" fill="#0a1f12" rx="12"/>
+  <rect x="542" y="70" width="238" height="12" fill="#0a1f12"/>
+  <text x="661" y="62" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 3 — Set Default</text>
+  <rect x="556" y="90" width="210" height="84" fill="#0A130E" rx="4" stroke="#1e3a22"/>
+  <text x="661" y="108" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Printers &amp; scanners</text>
+  <text x="661" y="123" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">→ Select HP printer</text>
+  <rect x="572" y="130" width="178" height="36" fill="#0a1f12" rx="3" stroke="#00E5A0" stroke-width="1"/>
+  <text x="661" y="145" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">Set as default printer</text>
+  <text x="661" y="160" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">+ Remove &amp; re-add</text>
+  <text x="661" y="182" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">driver if still offline</text>
+  <text x="661" y="218" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Final reset ✓</text>
+
+  <!-- Bottom note -->
+  <rect x="20" y="246" width="760" height="18" fill="#0d1810" rx="4" stroke="#1e3a22"/>
+  <text x="400" y="258" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">If printer is on WiFi: also check its IP hasn't changed — Windows port may point to old IP address</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img" aria-label="SSD recovery after failure: SSD failures are different from HDD — TRIM command erases deleted data, no moving parts but controller fails. Check if detected in BIOS, try different port, freeze trick does not work on SSD">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="270" fill="#0A130E" rx="12"/>
+  <rect width="800" height="270" fill="url(#g)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">SSD RECOVERY AFTER FAILURE — WHAT WORKS, WHAT DOESN'T</text>
+
+  <!-- SSD vs HDD comparison header -->
+  <rect x="20" y="36" width="370" height="190" fill="#0d1810" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="205" y="58" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Why SSD Recovery Is Harder</text>
+  <line x1="36" y1="66" x2="374" y2="66" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="36" y="88" fill="#ef4444" font-size="12" font-family="monospace">✕</text>
+  <text x="56" y="88" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">TRIM erases deleted data</text>
+  <text x="56" y="104" fill="#93B5A0" font-size="12" font-family="monospace">Deleted files wiped from NAND immediately</text>
+
+  <text x="36" y="126" fill="#ef4444" font-size="12" font-family="monospace">✕</text>
+  <text x="56" y="126" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Wear leveling scrambles data</text>
+  <text x="56" y="142" fill="#93B5A0" font-size="12" font-family="monospace">File fragments spread across chips</text>
+
+  <text x="36" y="164" fill="#ef4444" font-size="12" font-family="monospace">✕</text>
+  <text x="56" y="164" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">No moving parts = no click sound</text>
+  <text x="56" y="180" fill="#93B5A0" font-size="12" font-family="monospace">Failure is silent — sudden death common</text>
+
+  <text x="36" y="202" fill="#ef4444" font-size="12" font-family="monospace">✕</text>
+  <text x="56" y="202" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Freeze trick does NOT work</text>
+  <text x="56" y="218" fill="#93B5A0" font-size="12" font-family="monospace">HDD trick — destroys SSD controller</text>
+
+  <!-- Recovery options -->
+  <rect x="410" y="36" width="370" height="190" fill="#0d1810" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="595" y="58" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">What You Can Try</text>
+  <line x1="426" y1="66" x2="764" y2="66" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="426" y="88" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
+  <text x="446" y="88" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Different SATA/M.2 port</text>
+  <text x="446" y="104" fill="#93B5A0" font-size="12" font-family="monospace">Port failure, not drive — quick test</text>
+
+  <text x="426" y="126" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
+  <text x="446" y="126" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Check BIOS detection</text>
+  <text x="446" y="142" fill="#93B5A0" font-size="12" font-family="monospace">If BIOS sees it, OS boot can fix it</text>
+
+  <text x="426" y="164" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
+  <text x="446" y="164" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Disk Drill or R-Studio</text>
+  <text x="446" y="180" fill="#93B5A0" font-size="12" font-family="monospace">If detected, scan for file headers</text>
+
+  <text x="426" y="202" fill="#f59e0b" font-size="12" font-family="monospace">→</text>
+  <text x="446" y="202" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">Pro: NAND chip recovery</text>
+  <text x="446" y="218" fill="#93B5A0" font-size="12" font-family="monospace">Desolder chips — expensive, last resort</text>
+
+  <!-- Bottom bar -->
+  <rect x="20" y="240" width="760" height="22" fill="#0d1810" rx="4" stroke="#1e3a22"/>
+  <text x="400" y="255" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Best SSD protection: daily cloud backup — recovery after total failure has low success rate even professionally</text>
+</svg>

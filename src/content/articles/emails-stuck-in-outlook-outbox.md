@@ -31,6 +31,8 @@ When an email is stuck in the Outlook Outbox, it means Outlook has accepted the 
 
 According to Microsoft's Outlook documentation, emails get stuck in the Outbox for three primary reasons: Outlook is in offline mode, the message itself has a problem (typically an oversized attachment), or a third-party add-in is interfering with the send process.
 
+![Outlook outbox stuck: go offline first, delete the stuck message, resize attachment if over 25MB, then go online and resend](/images/outlook-outbox-stuck.svg)
+
 ## Why emails get stuck
 
 **Offline mode is active.** This is the most common cause. Outlook's Work Offline mode suspends all sending and receiving. It can be enabled accidentally by clicking the button on the Send/Receive tab, or it may have activated automatically when Outlook could not reach the server during a previous session.

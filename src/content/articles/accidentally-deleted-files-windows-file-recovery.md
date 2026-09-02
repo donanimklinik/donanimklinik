@@ -31,6 +31,8 @@ When a file is deleted and is no longer in the Recycle Bin — because it was re
 
 Microsoft provides a free official tool called Windows File Recovery that scans for and restores these deleted files. Speed matters: the sooner you act after deletion, the higher the chance of successful recovery.
 
+![Accidentally deleted files recovery steps: Recycle Bin first, then Ctrl+Z undo, Windows File Recovery tool, then Recuva deep scan](/images/accidentally-deleted-files-recovery.svg)
+
 ## What causes files to bypass the Recycle Bin
 
 According to Microsoft's documentation, files are permanently deleted — skipping the Recycle Bin entirely — in three situations:

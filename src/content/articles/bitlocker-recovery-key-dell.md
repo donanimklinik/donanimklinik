@@ -30,6 +30,8 @@ Dell does not store BitLocker recovery keys. This is one of the most common poin
 
 This guide explains where to look based on how the Dell was set up.
 
+![Dell BitLocker recovery key locations: Microsoft account is primary, Dell TechDirect for enterprise, or IT Active Directory](/images/bitlocker-dell-recovery.svg)
+
 ## Why Dell laptops and desktops trigger BitLocker recovery
 
 Dell computers frequently trigger BitLocker recovery after:

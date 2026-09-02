@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Ethernet connected but no internet: check each layer — physical cable and port, network adapter and driver, TCP IP stack and IP address, router and DNS settings">
+  <defs>
+    <pattern id="g4" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g4)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Ethernet Connected — No Internet</text>
+  <text x="400" y="56" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle">Diagnose by layer — start from Layer 1 and work upward</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Layer 1: Physical -->
+  <rect x="20" y="80" width="760" height="72" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.2"/>
+  <rect x="20" y="80" width="8" height="72" fill="#00E5A0" rx="4"/>
+  <text x="50" y="104" fill="#4ade80" font-size="16" font-family="monospace" font-weight="bold">Layer 1 — Physical</text>
+  <text x="50" y="124" fill="#D4EAD8" font-size="14" font-family="monospace">Cable seated firmly at both ends · Try a different cable · Check router LAN port LEDs</text>
+  <text x="50" y="142" fill="#A8C4B0" font-size="13" font-family="monospace">Ethernet LED on PC NIC should be solid green or amber — if off, cable or port is dead</text>
+  <rect x="640" y="90" width="120" height="26" fill="#0d1e16" rx="4" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="700" y="108" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Check first</text>
+
+  <!-- Layer 2: Network Adapter -->
+  <rect x="20" y="164" width="760" height="72" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.2"/>
+  <rect x="20" y="164" width="8" height="72" fill="#3b82f6" rx="4"/>
+  <text x="50" y="188" fill="#3b82f6" font-size="16" font-family="monospace" font-weight="bold">Layer 2 — Network Adapter &amp; Driver</text>
+  <text x="50" y="208" fill="#D4EAD8" font-size="14" font-family="monospace">Device Manager → Network Adapters → Ethernet adapter → Update driver</text>
+  <text x="50" y="226" fill="#A8C4B0" font-size="13" font-family="monospace">Also try: right-click adapter → Disable → Enable · Yellow exclamation mark = driver problem</text>
+  <rect x="608" y="174" width="152" height="26" fill="#0d1020" rx="4" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="684" y="192" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle">Driver issue likely</text>
+
+  <!-- Layer 3: TCP/IP -->
+  <rect x="20" y="248" width="760" height="72" fill="#0d1e16" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="20" y="248" width="8" height="72" fill="#f59e0b" rx="4"/>
+  <text x="50" y="272" fill="#f59e0b" font-size="16" font-family="monospace" font-weight="bold">Layer 3 — IP Address / TCP Stack</text>
+  <text x="50" y="292" fill="#D4EAD8" font-size="14" font-family="monospace">Run ipconfig — IP must be 192.168.x.x, not 169.254.x.x (APIPA = DHCP failed)</text>
+  <text x="50" y="310" fill="#A8C4B0" font-size="13" font-family="monospace">Fix: netsh int ip reset · netsh winsock reset · ipconfig /release then /renew · Restart</text>
+
+  <!-- Layer 4: Router/DNS -->
+  <rect x="20" y="332" width="760" height="72" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <rect x="20" y="332" width="8" height="72" fill="#00E5A0" rx="4"/>
+  <text x="50" y="356" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">Layer 4 — Router &amp; DNS</text>
+  <text x="50" y="376" fill="#D4EAD8" font-size="14" font-family="monospace">Router admin panel → WAN status must show assigned IP (not 0.0.0.0)</text>
+  <text x="50" y="394" fill="#A8C4B0" font-size="13" font-family="monospace">Change DNS to 8.8.8.8 · In CMD: ping 8.8.8.8 — if reply works but website fails, DNS is the culprit</text>
+
+  <!-- Right side label -->
+  <text x="780" y="240" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle" transform="rotate(90 780 240)">CHECK ORDER — START AT LAYER 1 ↑</text>
+</svg>

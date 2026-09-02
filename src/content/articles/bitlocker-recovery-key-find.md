@@ -31,6 +31,8 @@ howto_steps:
 
 When Windows cannot unlock a BitLocker-protected drive on its own — after a firmware update, a hardware change, or a failed PIN attempt — it displays a blue recovery screen and asks for a 48-digit recovery key. Without that key, the drive stays locked. Where the key is stored depends entirely on choices made when BitLocker was first set up. According to official Microsoft documentation, there are five places to check, in order of likelihood.
 
+![BitLocker key locations: Microsoft account, Azure AD, Active Directory, USB drive, printed copy — 5 places to check](/images/bitlocker-key-locations.svg)
+
 ## What causes the BitLocker recovery screen
 
 According to Microsoft's BitLocker documentation, the recovery screen appears when the TPM (Trusted Platform Module) detects a change it was not expecting. Common triggers include:

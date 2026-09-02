@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Outlook error 0x800CCC0E: cannot connect to server — wrong SMTP port or SSL settings. Fix by setting port 587 with STARTTLS or port 465 with SSL">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0x800CCC0E — Cannot Connect to Server</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Error Box (left) -->
+  <rect x="20" y="58" width="300" height="120" fill="#1a0d0d" rx="10" stroke="#ef4444" stroke-width="2"/>
+  <text x="170" y="84" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0x800CCC0E</text>
+  <line x1="36" y1="92" x2="304" y2="92" stroke="#2a1010" stroke-width="1"/>
+  <text x="170" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">"The connection to the</text>
+  <text x="170" y="134" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">server has failed"</text>
+  <text x="170" y="158" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Cause: Port blocked or SSL mismatch</text>
+
+  <!-- Port Settings Box (left bottom) -->
+  <rect x="20" y="194" width="300" height="140" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="170" y="218" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Correct Port Settings</text>
+  <line x1="36" y1="226" x2="304" y2="226" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Port 587 -->
+  <rect x="36" y="234" width="124" height="84" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="98" y="256" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Port 587</text>
+  <text x="98" y="276" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">STARTTLS</text>
+  <text x="98" y="295" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Recommended</text>
+  <text x="98" y="312" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">for most ISPs</text>
+
+  <!-- Port 465 -->
+  <rect x="172" y="234" width="124" height="84" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="234" y="256" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Port 465</text>
+  <text x="234" y="276" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">SSL / TLS</text>
+  <text x="234" y="295" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Alternative</text>
+  <text x="234" y="312" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">option</text>
+
+  <!-- Warning: Port 25 -->
+  <rect x="36" y="324" width="260" height="30" fill="#1a0a00" rx="4" stroke="#f59e0b" stroke-width="1"/>
+  <text x="166" y="344" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle">Port 25 is BLOCKED by most ISPs</text>
+
+  <!-- Fix Steps Panel (right) -->
+  <rect x="334" y="58" width="446" height="276" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="557" y="82" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Steps</text>
+  <line x1="350" y1="92" x2="764" y2="92" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <text x="356" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="382" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Open Account Settings</text>
+  <text x="382" y="136" fill="#A8C4B0" font-size="13" font-family="monospace">File → Account Settings → select account</text>
+  <line x1="350" y1="150" x2="764" y2="150" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 2 -->
+  <text x="356" y="174" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="382" y="174" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Change → More Settings</text>
+  <text x="382" y="194" fill="#A8C4B0" font-size="13" font-family="monospace">Outgoing Server tab → Advanced tab</text>
+  <line x1="350" y1="208" x2="764" y2="208" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 3 -->
+  <text x="356" y="232" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="382" y="232" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Set SMTP port to 587</text>
+  <text x="382" y="252" fill="#A8C4B0" font-size="13" font-family="monospace">Encryption: STARTTLS → OK → Test</text>
+  <line x1="350" y1="266" x2="764" y2="266" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 4 -->
+  <text x="356" y="290" fill="#f59e0b" font-size="16" font-family="monospace" font-weight="bold">④</text>
+  <text x="382" y="290" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Gmail / 2FA users</text>
+  <text x="382" y="310" fill="#A8C4B0" font-size="13" font-family="monospace">Use App Password — not account password</text>
+
+  <!-- Bottom SMTP Reference -->
+  <rect x="20" y="352" width="760" height="52" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="372" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Common SMTP Server Reference</text>
+  <text x="133" y="394" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Gmail: smtp.gmail.com</text>
+  <text x="400" y="394" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Outlook: smtp.office365.com</text>
+  <text x="666" y="394" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Yahoo: smtp.mail.yahoo.com</text>
+</svg>

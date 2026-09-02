@@ -31,6 +31,8 @@ Phone activation is Microsoft's official alternative to online activation for Wi
 
 According to Microsoft's activation documentation, phone activation is intended for situations where online activation fails, including cases where the product key has been flagged due to hardware changes, where the device does not have an internet connection, or where repeated online activation attempts have been blocked.
 
+![Windows phone activation steps: run slui 4, call the number shown, enter Installation ID digits, receive Confirmation ID, enter to activate](/images/windows-phone-activation.svg)
+
 ## When to use phone activation
 
 Phone activation is appropriate when:

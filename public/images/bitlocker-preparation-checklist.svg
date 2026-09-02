@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="Preparing for BitLocker recovery: save recovery key in 3 places before encrypting — Microsoft account, USB drive, and printed paper copy. Never save to same drive being encrypted">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="440" fill="#091510" rx="12"/>
+  <rect width="800" height="440" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Preparing for BitLocker — Before You Enable It</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="400" y="72" fill="#D4EAD8" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Save Your Recovery Key in 3 Different Places</text>
+
+  <!-- Card 1: MS Account -->
+  <rect x="18" y="88" width="236" height="160" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="136" y="118" fill="#00E5A0" font-size="28" text-anchor="middle">☁</text>
+  <text x="136" y="148" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Microsoft Account</text>
+  <text x="136" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Automatic if signed in</text>
+  <text x="136" y="190" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">account.microsoft.com</text>
+  <text x="136" y="210" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Devices → Recovery keys</text>
+  <text x="136" y="234" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Most reliable ✓ — #1 choice</text>
+
+  <!-- Card 2: USB -->
+  <rect x="282" y="88" width="236" height="160" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="400" y="118" fill="#3b82f6" font-size="28" text-anchor="middle">💾</text>
+  <text x="400" y="148" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">USB Flash Drive</text>
+  <text x="400" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Save .bek key file</text>
+  <text x="400" y="190" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Keep USB separate</text>
+  <text x="400" y="210" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">⚠ Never store on C: drive</text>
+  <text x="400" y="234" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Offline backup — #2</text>
+
+  <!-- Card 3: Print -->
+  <rect x="546" y="88" width="236" height="160" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="664" y="118" fill="#f59e0b" font-size="28" text-anchor="middle">🖨</text>
+  <text x="664" y="148" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Print / Write Down</text>
+  <text x="664" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">48-digit recovery key</text>
+  <text x="664" y="190" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Store in a safe place</text>
+  <text x="664" y="210" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Works without internet</text>
+  <text x="664" y="234" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Physical backup — #3</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="270" x2="760" y2="270" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Critical rules section -->
+  <text x="400" y="296" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Critical Rules — Do Not Skip</text>
+
+  <rect x="18" y="308" width="760" height="116" fill="#160808" rx="8" stroke="#ef4444" stroke-width="1.5"/>
+
+  <rect x="34" y="320" width="225" height="90" fill="#0d1e16" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="146" y="344" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle">✕ Never save key to the</text>
+  <text x="146" y="363" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle">same drive being encrypted</text>
+  <text x="146" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">If C: is locked, you can't</text>
+  <text x="146" y="407" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">read the key from C:</text>
+
+  <rect x="288" y="320" width="225" height="90" fill="#0d1e16" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="344" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle">✕ Never store key in only</text>
+  <text x="400" y="363" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle">one single location</text>
+  <text x="400" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">USB lost = key lost</text>
+  <text x="400" y="407" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Redundancy is essential</text>
+
+  <rect x="542" y="320" width="222" height="90" fill="#0d1e16" rx="6" stroke="#00E5A0" stroke-width="1"/>
+  <text x="653" y="344" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle">✓ Verify key works before</text>
+  <text x="653" y="363" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle">fully sealing drive</text>
+  <text x="653" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Test in BitLocker settings</text>
+  <text x="653" y="407" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Confirm key is accessible</text>
+</svg>

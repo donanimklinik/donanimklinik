@@ -33,6 +33,8 @@ This error means Outlook attempted to connect to the outgoing mail server (SMTP)
 
 According to Microsoft's documentation on Outlook error codes, 0x800CCC0E is produced specifically by the SMTP subsystem when a TCP connection to the outgoing server cannot be established or is interrupted before the exchange completes.
 
+![Outlook error 0x800CCC0E: SMTP connection fails — correct port is 587 STARTTLS or 465 SSL, not blocked port 25. Check SMTP authentication settings](/images/outlook-error-0x800ccc0e.svg)
+
 ## What causes 0x800CCC0E
 
 **Wrong SMTP port.** Port 25 — the traditional SMTP port — is blocked by most ISPs for outbound email from residential and business connections. If Outlook is configured to use port 25, connections will time out, producing 0x800CCC0E. The correct ports are 587 (STARTTLS) or 465 (SSL/TLS).

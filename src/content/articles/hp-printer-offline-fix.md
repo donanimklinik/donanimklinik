@@ -34,6 +34,8 @@ An HP printer that shows **Offline** in Windows is not responding to print comma
 
 According to HP's official support documentation, the most common causes are the **Use Printer Offline** mode being active in Windows, a stalled Print Spooler service, or a stuck print job blocking the queue.
 
+![HP printer offline 3-step fix: Uncheck Use Printer Offline, Restart Print Spooler service, Set as Default printer](/images/hp-printer-status-fix.svg)
+
 ## What causes HP Printer Offline status
 
 Windows assigns a printer the "Offline" label when it cannot establish two-way communication with the device. This can happen for several reasons:

@@ -27,6 +27,8 @@ howto_steps:
 
 If the Manage BitLocker screen shows your drive as **Suspended** rather than **On**, the drive is still encrypted — but the boot-time protection that makes BitLocker effective has been temporarily disabled. According to official Microsoft documentation, suspended mode is a deliberate, controlled state designed for short-term use during system maintenance. It is not meant to persist, and restoring full protection takes less than a minute.
 
+![BitLocker suspend toggle: Active protection to Suspended mode to Re-enabled — how to resume via Control Panel or PowerShell](/images/bitlocker-suspend-toggle.svg)
+
 ## What BitLocker suspended mode means
 
 According to Microsoft's BitLocker operations documentation, suspending BitLocker keeps the drive encrypted but replaces the normal TPM-protected key with a clear key — a decryption key stored openly on the drive itself. This allows the system to boot without performing TPM measurements, which prevents the recovery screen from appearing during operations that modify the boot environment.

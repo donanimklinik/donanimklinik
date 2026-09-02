@@ -31,6 +31,8 @@ Outlook not sending email is one of the most common issues reported across Micro
 
 According to Microsoft's Outlook troubleshooting documentation, the failure to send email falls into a small number of categories: the client is offline, the outgoing mail server settings are wrong, the message itself is blocking the queue, or a local data file is corrupted.
 
+![Outlook sending flow: Compose to SMTP Auth (common fail point with wrong port or password) to Mail Server to delivery — fix checklist on right](/images/outlook-sending-flow.svg)
+
 ## Step 1 — Check Work Offline mode
 
 Outlook has a Work Offline mode designed for use without an internet connection. If this mode is active, no emails will be sent or received regardless of your connection status.

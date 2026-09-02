@@ -27,6 +27,8 @@ If a Windows update finishes and the next restart brings up the blue BitLocker r
 
 Entering the correct key resolves the immediate lockout. Suspending BitLocker before future updates prevents the screen from appearing again.
 
+![BitLocker update trigger flow: Windows Update changes TPM boot measurements causing recovery screen — suspend BitLocker before updates to prevent this](/images/bitlocker-update-trigger.svg)
+
 ## Why Windows Update triggers the BitLocker recovery screen
 
 BitLocker works by measuring the boot environment at setup time and storing those measurements in the TPM (Trusted Platform Module). Every time the device starts, BitLocker compares the current boot state against those stored values. According to Microsoft's BitLocker documentation, if the comparison fails — because a component has changed — BitLocker enters recovery mode.

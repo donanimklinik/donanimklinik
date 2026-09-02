@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" role="img" aria-label="HP printer not connecting to WiFi: use HP printer control panel wireless setup wizard or WPS button on router — ensure printer and router are on same network band (2.4GHz not 5GHz)">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="270" fill="#0A130E" rx="12"/>
+  <rect width="800" height="270" fill="url(#g)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">HP PRINTER NOT CONNECTING TO WIFI — TWO METHODS</text>
+
+  <!-- Method 1: Setup Wizard -->
+  <rect x="20" y="36" width="370" height="196" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="205" y="58" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Method 1 — Wireless Setup Wizard</text>
+  <line x1="36" y1="66" x2="374" y2="66" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="36" y="88" fill="#00E5A0" font-size="12" font-family="monospace">①</text>
+  <text x="56" y="88" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Printer control panel</text>
+  <text x="56" y="105" fill="#93B5A0" font-size="12" font-family="monospace">Wireless icon → Settings</text>
+
+  <text x="36" y="127" fill="#00E5A0" font-size="12" font-family="monospace">②</text>
+  <text x="56" y="127" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Wireless Setup Wizard</text>
+  <text x="56" y="144" fill="#93B5A0" font-size="12" font-family="monospace">Select your WiFi network</text>
+
+  <text x="36" y="166" fill="#00E5A0" font-size="12" font-family="monospace">③</text>
+  <text x="56" y="166" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Enter WiFi password</text>
+  <text x="56" y="183" fill="#93B5A0" font-size="12" font-family="monospace">Case-sensitive</text>
+
+  <text x="36" y="205" fill="#00E5A0" font-size="12" font-family="monospace">④</text>
+  <text x="56" y="205" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Print Wireless Test Report</text>
+  <text x="56" y="222" fill="#93B5A0" font-size="12" font-family="monospace">Confirms connection and IP address</text>
+
+  <!-- Method 2: WPS -->
+  <rect x="410" y="36" width="370" height="196" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="595" y="58" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Method 2 — WPS Button</text>
+  <line x1="426" y1="66" x2="764" y2="66" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="426" y="88" fill="#00E5A0" font-size="12" font-family="monospace">①</text>
+  <text x="446" y="88" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Press WPS on router</text>
+  <text x="446" y="105" fill="#93B5A0" font-size="12" font-family="monospace">Hold 2 seconds — light blinks</text>
+
+  <text x="426" y="127" fill="#00E5A0" font-size="12" font-family="monospace">②</text>
+  <text x="446" y="127" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Within 2 minutes:</text>
+  <text x="446" y="144" fill="#93B5A0" font-size="12" font-family="monospace">HP printer → Wireless → WPS</text>
+
+  <text x="426" y="166" fill="#00E5A0" font-size="12" font-family="monospace">③</text>
+  <text x="446" y="166" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Wait for connection</text>
+  <text x="446" y="183" fill="#93B5A0" font-size="12" font-family="monospace">Blue light steady = connected</text>
+
+  <text x="426" y="210" fill="#f59e0b" font-size="12" font-family="monospace">⚠</text>
+  <text x="446" y="210" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">Use 2.4 GHz band</text>
+  <text x="446" y="226" fill="#93B5A0" font-size="12" font-family="monospace">HP printers don't support 5 GHz WiFi</text>
+
+  <!-- Bottom note -->
+  <rect x="20" y="244" width="760" height="18" fill="#0d1810" rx="4" stroke="#1e3a22"/>
+  <text x="400" y="256" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Restore network settings: Printer → Wireless → Restore Network Settings — then redo WiFi setup</text>
+</svg>

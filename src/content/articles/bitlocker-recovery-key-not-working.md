@@ -31,6 +31,8 @@ You found a BitLocker recovery key but the screen keeps rejecting it. According 
 
 BitLocker can protect multiple drives, and every drive has its own unique recovery key. If you have more than one key saved, each one is only valid for the specific drive it was created for. Entering the right key for the wrong drive produces exactly the same rejection message as entering a wrong key entirely.
 
+![BitLocker key ID match: recovery screen shows Key ID A3F7-9C2E, Microsoft account shows 3 keys — match the ID to find correct one](/images/bitlocker-key-id-match.svg)
+
 ## Why the recovery key is not working
 
 **You are entering a key for the wrong drive.** This is the most common cause. If you have ever set up BitLocker on more than one device or drive, multiple keys may be saved to your Microsoft account. Each key is tied to a specific drive, identified by an 8-digit Key ID.

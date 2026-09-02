@@ -31,6 +31,8 @@ USB flash drive problems fall into a few predictable categories, and each has a 
 
 The most important rule applies before you do anything else: stop writing to the drive. Every new file saved to a USB drive can overwrite the physical storage blocks where deleted data still exists. Eject the drive now and do not reconnect it until you are ready to attempt recovery.
 
+![USB recovery process: check if drive detected in Disk Management — if yes use Recuva, if no try different port then diskpart to diagnose](/images/usb-recovery-process.svg)
+
 ## What kind of problem do you have?
 
 ### Files were accidentally deleted

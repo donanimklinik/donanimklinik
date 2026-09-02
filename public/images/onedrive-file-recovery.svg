@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="OneDrive deleted files recovery: files go to OneDrive recycle bin for 30 days, then second stage recycle bin for 93 days total — restore from onedrive.com or right-click in File Explorer">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
+    </marker>
+    <marker id="arr-red" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#ef4444"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">OneDrive Deleted Files — Recovery Window</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Stage 1: OneDrive -->
+  <rect x="20" y="62" width="160" height="130" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="2"/>
+  <text x="100" y="92" fill="#00E5A0" font-size="28" text-anchor="middle">&#x2601;</text>
+  <text x="100" y="116" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">OneDrive</text>
+  <line x1="36" y1="124" x2="164" y2="124" stroke="#1e3a22" stroke-width="1"/>
+  <text x="100" y="142" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">File deleted</text>
+  <text x="100" y="160" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">from cloud</text>
+  <text x="100" y="182" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Day 0</text>
+  <line x1="182" y1="127" x2="218" y2="127" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Stage 2: Recycle Bin (first) -->
+  <rect x="220" y="62" width="170" height="130" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="305" y="92" fill="#f59e0b" font-size="26" text-anchor="middle">&#x1F5D1;</text>
+  <text x="305" y="116" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Recycle Bin</text>
+  <line x1="236" y1="124" x2="374" y2="124" stroke="#1e3a22" stroke-width="1"/>
+  <text x="305" y="142" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">First stage</text>
+  <text x="305" y="160" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">30 days</text>
+  <text x="305" y="182" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Easy restore ✓</text>
+  <line x1="392" y1="127" x2="428" y2="127" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Stage 3: Second Stage Bin -->
+  <rect x="430" y="62" width="185" height="130" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="522" y="92" fill="#ef4444" font-size="26" text-anchor="middle">&#x1F5D1;</text>
+  <text x="522" y="116" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Second Stage</text>
+  <line x1="446" y1="124" x2="599" y2="124" stroke="#1e3a22" stroke-width="1"/>
+  <text x="522" y="142" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Emptied recycle bin</text>
+  <text x="522" y="160" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">+63 more days</text>
+  <text x="522" y="182" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Still recoverable!</text>
+  <line x1="617" y1="127" x2="653" y2="127" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-red)"/>
+
+  <!-- Stage 4: Gone -->
+  <rect x="655" y="62" width="125" height="130" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="2"/>
+  <text x="717" y="96" fill="#ef4444" font-size="28" text-anchor="middle">✕</text>
+  <text x="717" y="120" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Gone</text>
+  <line x1="671" y1="128" x2="764" y2="128" stroke="#1e3a22" stroke-width="1"/>
+  <text x="717" y="146" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">93 days total</text>
+  <text x="717" y="164" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Permanently</text>
+  <text x="717" y="182" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">deleted</text>
+
+  <!-- Timeline bar -->
+  <rect x="20" y="210" width="760" height="8" rx="4" fill="#1e3a22"/>
+  <rect x="20" y="210" width="480" height="8" rx="4" fill="#00E5A0" opacity="0.7"/>
+  <text x="20" y="232" fill="#A8C4B0" font-size="12" font-family="monospace">Day 0</text>
+  <text x="182" y="232" fill="#f59e0b" font-size="12" font-family="monospace">Day 30</text>
+  <text x="357" y="232" fill="#ef4444" font-size="12" font-family="monospace">Day 93</text>
+  <text x="710" y="232" fill="#7FB09A" font-size="12" font-family="monospace">Gone</text>
+
+  <!-- How to restore -->
+  <rect x="20" y="248" width="760" height="148" fill="#0d1e16" rx="8" stroke="#2a5236"/>
+  <text x="400" y="274" fill="#D4EAD8" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">How to Restore Your Files</text>
+  <line x1="36" y1="284" x2="764" y2="284" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Method 1 -->
+  <rect x="36" y="296" width="350" height="90" fill="#091510" rx="6" stroke="#1e3a22"/>
+  <text x="56" y="318" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">Method 1: onedrive.com</text>
+  <text x="56" y="338" fill="#D4EAD8" font-size="14" font-family="monospace">1. Sign in to onedrive.com</text>
+  <text x="56" y="356" fill="#D4EAD8" font-size="14" font-family="monospace">2. Left sidebar &#x2192; Recycle bin</text>
+  <text x="56" y="374" fill="#D4EAD8" font-size="14" font-family="monospace">3. Select file &#x2192; Restore</text>
+
+  <!-- Divider -->
+  <line x1="400" y1="296" x2="400" y2="386" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Method 2 -->
+  <rect x="414" y="296" width="350" height="90" fill="#091510" rx="6" stroke="#1e3a22"/>
+  <text x="434" y="318" fill="#3b82f6" font-size="16" font-family="monospace" font-weight="bold">Method 2: File Explorer</text>
+  <text x="434" y="338" fill="#D4EAD8" font-size="14" font-family="monospace">1. Right-click OneDrive folder</text>
+  <text x="434" y="356" fill="#D4EAD8" font-size="14" font-family="monospace">2. Select "Undo Delete"</text>
+  <text x="434" y="374" fill="#A8C4B0" font-size="13" font-family="monospace">Works for recent deletions only</text>
+</svg>

@@ -31,6 +31,8 @@ When Windows locks a drive with BitLocker and asks for a recovery key, it someti
 
 Typing `aka.ms/myrecoverykey` into any browser on another device will redirect you to `account.microsoft.com/devices/recoverykey`, which is the official Microsoft page listing all BitLocker recovery keys saved to your account.
 
+![aka.ms/myrecoverykey steps: sign in to Microsoft account on another device, find PC by name, match Key ID, copy 48-digit recovery key](/images/aka-ms-recoverykey-steps.svg)
+
 ## What the page shows
 
 When you sign in to the recovery key page, you will see a list of recovery keys associated with your Microsoft account. Each entry shows:

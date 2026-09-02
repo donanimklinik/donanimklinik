@@ -22,6 +22,8 @@ The short answer is no. According to Microsoft's official BitLocker documentatio
 
 This article explains why bypassing BitLocker is not possible, what you can still try to locate a valid key, and what your options are if no key exists.
 
+![Unlock BitLocker without key: 4 options — Microsoft account, Azure AD, Active Directory, or last resort format. AES-256 brute force is not feasible](/images/unlock-bitlocker-options.svg)
+
 ## Why BitLocker cannot be bypassed
 
 BitLocker uses AES-256 or AES-128 encryption. The encrypted data on the drive is mathematically unreadable without the Volume Master Key, which is itself protected by the recovery key or the TPM plus PIN. There is no backdoor built into BitLocker, and Microsoft does not hold a copy of your recovery key.

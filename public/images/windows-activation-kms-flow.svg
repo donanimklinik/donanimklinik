@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Windows activation error 0xC004F074: KMS server not found. Device tries to reach KMS server on port 1688 through DNS lookup but fails — fix by switching to MAK key or connecting to corporate network">
+  <defs>
+    <pattern id="g9" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="a9ok" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+    <marker id="a9fail" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#ef4444"/>
+    </marker>
+    <marker id="a9warn" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g9)" rx="12"/>
+
+  <!-- Main title -->
+  <text x="400" y="38" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0xC004F074 — KMS Server Not Reachable</text>
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="68" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Volume license Windows must contact the KMS server on port 1688 every 180 days — if unreachable, this error appears.</text>
+
+  <!-- Flow: PC → (DNS lookup) → KMS Server (FAIL) -->
+  <!-- PC Box -->
+  <rect x="20" y="82" width="180" height="130" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="110" y="106" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Your PC</text>
+  <line x1="36" y1="114" x2="184" y2="114" stroke="#1e3a22" stroke-width="1"/>
+  <text x="110" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Volume License</text>
+  <text x="110" y="151" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Windows installed</text>
+  <text x="110" y="172" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Must check KMS</text>
+  <text x="110" y="189" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">every 180 days</text>
+  <text x="110" y="204" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Port 1688</text>
+
+  <!-- Arrow failing -->
+  <line x1="202" y1="147" x2="264" y2="147" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#a9warn)"/>
+  <text x="233" y="137" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">DNS lookup</text>
+  <text x="233" y="162" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">FAILS</text>
+
+  <!-- KMS Server box (unreachable) -->
+  <rect x="266" y="82" width="180" height="130" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="356" y="106" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">KMS Server</text>
+  <line x1="282" y1="114" x2="430" y2="114" stroke="#1e3a22" stroke-width="1"/>
+  <text x="356" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Corporate network</text>
+  <text x="356" y="151" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Port: 1688</text>
+  <text x="356" y="174" fill="#ef4444" font-size="22" text-anchor="middle">✕</text>
+  <text x="356" y="196" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">Not reachable</text>
+  <text x="356" y="210" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">No VPN active</text>
+
+  <!-- Error label -->
+  <line x1="356" y1="214" x2="356" y2="234" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <rect x="266" y="236" width="180" height="64" fill="#0d1e16" rx="8" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="356" y="260" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0xC004F074</text>
+  <text x="356" y="278" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">"KMS server could</text>
+  <text x="356" y="295" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">not be contacted"</text>
+
+  <!-- Fixes panel right -->
+  <rect x="462" y="82" width="318" height="218" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="621" y="106" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fixes</text>
+  <line x1="478" y1="114" x2="764" y2="114" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="478" y="136" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="498" y="136" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Connect to corporate VPN</text>
+  <text x="498" y="153" fill="#A8C4B0" font-size="13" font-family="monospace">KMS server is on your company LAN</text>
+  <text x="498" y="169" fill="#A8C4B0" font-size="13" font-family="monospace">VPN makes it reachable from home</text>
+
+  <line x1="478" y1="179" x2="764" y2="179" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="478" y="201" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="498" y="201" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Contact IT — convert to MAK</text>
+  <text x="498" y="218" fill="#A8C4B0" font-size="13" font-family="monospace">MAK (Multiple Activation Key)</text>
+  <text x="498" y="234" fill="#A8C4B0" font-size="13" font-family="monospace">works fully offline, no KMS needed</text>
+
+  <line x1="478" y1="244" x2="764" y2="244" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="478" y="266" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="498" y="266" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Force reactivation attempt</text>
+  <text x="498" y="283" fill="#93c5fd" font-size="13" font-family="monospace">slmgr /ato   (run as Administrator)</text>
+  <text x="498" y="299" fill="#A8C4B0" font-size="13" font-family="monospace">Triggers immediate KMS check</text>
+
+  <!-- Bottom: KMS renewal cycle -->
+  <rect x="20" y="316" width="760" height="92" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="340" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">KMS Activation Renewal Cycle</text>
+  <line x1="36" y1="348" x2="764" y2="348" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Timeline boxes -->
+  <rect x="36" y="358" width="156" height="40" fill="#091510" rx="6" stroke="#3b82f6" stroke-width="1"/>
+  <text x="114" y="375" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Initial Activation</text>
+  <text x="114" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Contacts KMS ✓</text>
+
+  <line x1="194" y1="378" x2="214" y2="378" stroke="#00E5A0" stroke-width="1.5" marker-end="url(#a9ok)"/>
+
+  <rect x="216" y="358" width="156" height="40" fill="#091510" rx="6" stroke="#00E5A0" stroke-width="1"/>
+  <text x="294" y="375" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Activated (180 days)</text>
+  <text x="294" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Fully functional</text>
+
+  <line x1="374" y1="378" x2="394" y2="378" stroke="#f59e0b" stroke-width="1.5" marker-end="url(#a9warn)"/>
+
+  <rect x="396" y="358" width="170" height="40" fill="#091510" rx="6" stroke="#f59e0b" stroke-width="1"/>
+  <text x="481" y="375" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Renewal attempt</text>
+  <text x="481" y="390" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">KMS must respond</text>
+
+  <line x1="568" y1="378" x2="588" y2="378" stroke="#ef4444" stroke-width="1.5" marker-end="url(#a9fail)"/>
+
+  <rect x="590" y="358" width="174" height="40" fill="#091510" rx="6" stroke="#ef4444" stroke-width="1"/>
+  <text x="677" y="375" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">KMS unreachable</text>
+  <text x="677" y="390" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">→ Error 0xC004F074</text>
+</svg>

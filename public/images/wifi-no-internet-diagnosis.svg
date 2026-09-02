@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="WiFi connected but no internet diagnosis: check device only or all devices, then flush DNS, then restart router, then check ISP">
+  <defs>
+    <pattern id="g1" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+    <marker id="a1" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+    <marker id="a1r" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#ef4444"/>
+    </marker>
+  </defs>
+  <rect width="800" height="280" fill="#0A130E" rx="12"/>
+  <rect width="800" height="280" fill="url(#g1)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">WIFI CONNECTED — NO INTERNET: FIND THE CAUSE</text>
+
+  <!-- START node -->
+  <rect x="296" y="38" width="208" height="44" fill="#1a0d0d" rx="22" stroke="#ef4444" stroke-width="2"/>
+  <text x="400" y="56" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">WiFi shows Connected</text>
+  <text x="400" y="73" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">but no internet</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="82" x2="400" y2="108" stroke="#1e3a22" stroke-width="2" marker-end="url(#a1)"/>
+
+  <!-- Q1 diamond -->
+  <polygon points="400,110 520,142 400,174 280,142" fill="#0d1810" stroke="#f59e0b" stroke-width="1.8"/>
+  <text x="400" y="137" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">Other devices</text>
+  <text x="400" y="154" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">affected too?</text>
+
+  <!-- YES branch (right) -->
+  <line x1="520" y1="142" x2="596" y2="142" stroke="#1e3a22" stroke-width="2" marker-end="url(#a1)"/>
+  <text x="555" y="134" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">YES</text>
+  <rect x="598" y="112" width="164" height="60" fill="#0d1810" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="680" y="135" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Router / ISP issue</text>
+  <text x="680" y="152" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Restart modem first</text>
+  <text x="680" y="167" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">then router</text>
+
+  <!-- NO branch (left) -->
+  <line x1="280" y1="142" x2="204" y2="142" stroke="#1e3a22" stroke-width="2" marker-end="url(#a1)"/>
+  <text x="245" y="134" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle">NO</text>
+  <rect x="38" y="112" width="164" height="60" fill="#0d1810" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="120" y="135" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">This device only</text>
+  <text x="120" y="152" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Flush DNS &amp; reset</text>
+  <text x="120" y="167" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">network adapter</text>
+
+  <!-- Fix boxes row -->
+  <!-- Fix A: DNS flush -->
+  <rect x="38" y="196" width="172" height="68" fill="#091509" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="124" y="214" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix A — DNS Flush</text>
+  <text x="124" y="231" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">ipconfig /flushdns</text>
+  <text x="124" y="246" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">ipconfig /release</text>
+  <text x="124" y="261" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">ipconfig /renew</text>
+
+  <!-- Fix B: Router restart -->
+  <rect x="226" y="196" width="172" height="68" fill="#091509" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="312" y="214" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix B — Router</text>
+  <text x="312" y="231" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Unplug modem 60s</text>
+  <text x="312" y="248" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Plug modem → wait</text>
+  <text x="312" y="265" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Then plug router</text>
+
+  <!-- Fix C: Change DNS -->
+  <rect x="414" y="196" width="172" height="68" fill="#091509" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="500" y="214" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix C — DNS Server</text>
+  <text x="500" y="231" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Router admin panel</text>
+  <text x="500" y="248" fill="#93c5fd" font-size="12" font-family="monospace" text-anchor="middle">Primary: 8.8.8.8</text>
+  <text x="500" y="265" fill="#93c5fd" font-size="12" font-family="monospace" text-anchor="middle">Secondary: 8.8.4.4</text>
+
+  <!-- Fix D: ISP -->
+  <rect x="602" y="196" width="160" height="68" fill="#091509" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="682" y="214" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix D — ISP</text>
+  <text x="682" y="231" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Check outage map</text>
+  <text x="682" y="248" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Call ISP if modem</text>
+  <text x="682" y="265" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Online LED blinks</text>
+
+  <!-- Arrow from router box down to Fix B and C -->
+  <line x1="680" y1="172" x2="680" y2="188" stroke="#1e3a22" stroke-width="1.5"/>
+  <line x1="680" y1="188" x2="314" y2="188" stroke="#1e3a22" stroke-width="1.5"/>
+  <line x1="500" y1="188" x2="500" y2="194" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#a1)"/>
+  <line x1="314" y1="188" x2="314" y2="194" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#a1)"/>
+  <line x1="680" y1="188" x2="682" y2="194" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#a1)"/>
+  <!-- Arrow from device-only box down to Fix A -->
+  <line x1="120" y1="172" x2="120" y2="194" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#a1)"/>
+</svg>

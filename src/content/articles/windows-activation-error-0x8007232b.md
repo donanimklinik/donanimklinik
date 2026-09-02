@@ -31,6 +31,8 @@ Error code **0x8007232B** appears during Windows activation with the message: "D
 
 According to Microsoft's support documentation, this error almost exclusively affects devices configured for volume licence (KMS) activation. It is common on workplace computers and rarely appears on personal home devices using retail product keys.
 
+![Windows activation error 0x8007232B: DNS name does not exist, KMS server not found via DNS — fix by setting KMS manually or connecting to corporate VPN](/images/activation-error-0x8007232b.svg)
+
 ## What KMS activation is
 
 Key Management Service (KMS) is Microsoft's volume licensing system for organisations. Instead of each device activating individually against Microsoft's servers, devices activate against a KMS server running on the organisation's internal network. The KMS server's address is published in DNS, and Windows finds it automatically by querying for a specific DNS record.

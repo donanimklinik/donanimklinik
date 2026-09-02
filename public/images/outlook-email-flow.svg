@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Outlook not receiving emails: email flow from sender through SMTP server to mailbox to Outlook, showing where problems occur — junk folder, rules, sync, server connection">
+  <defs>
+    <pattern id="g10" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="a10" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g10)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Outlook Not Receiving Emails — Where to Check</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Flow label -->
+  <text x="400" y="68" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Email travels through 4 stages — each stage can be where the problem occurs</text>
+
+  <!-- Stage 1: Sender -->
+  <rect x="20" y="84" width="120" height="90" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="80" y="108" fill="#D4EAD8" font-size="22" text-anchor="middle">✉</text>
+  <text x="80" y="132" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Sender</text>
+  <text x="80" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Sends email</text>
+  <text x="80" y="167" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">via SMTP</text>
+
+  <!-- Arrow 1 -->
+  <line x1="142" y1="129" x2="168" y2="129" stroke="#3b82f6" stroke-width="2" marker-end="url(#a10)"/>
+
+  <!-- Stage 2: Mail Server -->
+  <rect x="170" y="68" width="150" height="122" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="245" y="92" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Mail Server</text>
+  <line x1="186" y1="100" x2="304" y2="100" stroke="#1e3a22" stroke-width="1"/>
+  <text x="245" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">SMTP received</text>
+  <text x="245" y="136" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Spam filter runs</text>
+  <!-- Fork indicators -->
+  <text x="214" y="158" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">Junk?</text>
+  <text x="277" y="158" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">Inbox</text>
+  <line x1="245" y1="164" x2="245" y2="180" stroke="#1e3a22" stroke-width="1.5"/>
+  <line x1="214" y1="164" x2="245" y2="164" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="245" y1="164" x2="276" y2="164" stroke="#4ade80" stroke-width="1.5"/>
+
+  <!-- Arrow 2 -->
+  <line x1="322" y1="129" x2="360" y2="129" stroke="#3b82f6" stroke-width="2" marker-end="url(#a10)"/>
+
+  <!-- Stage 3: Inbox Rules -->
+  <rect x="362" y="68" width="160" height="122" fill="#0d1e16" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="442" y="92" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Inbox Rules</text>
+  <line x1="378" y1="100" x2="506" y2="100" stroke="#1e3a22" stroke-width="1"/>
+  <text x="442" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Rule may redirect</text>
+  <text x="442" y="136" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">to a subfolder</text>
+  <text x="442" y="156" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">Check: Home →</text>
+  <text x="442" y="173" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">Rules → All Rules</text>
+
+  <!-- Arrow 3 -->
+  <line x1="524" y1="129" x2="562" y2="129" stroke="#3b82f6" stroke-width="2" marker-end="url(#a10)"/>
+
+  <!-- Stage 4: Outlook Sync -->
+  <rect x="564" y="68" width="150" height="122" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="639" y="92" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Outlook Sync</text>
+  <line x1="580" y1="100" x2="698" y2="100" stroke="#1e3a22" stroke-width="1"/>
+  <text x="639" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">IMAP / Exchange</text>
+  <text x="639" y="136" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">pulls to inbox</text>
+  <text x="639" y="156" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">Press F9 to</text>
+  <text x="639" y="173" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">force sync now</text>
+
+  <!-- Arrow 4 -->
+  <line x1="716" y1="129" x2="748" y2="129" stroke="#00E5A0" stroke-width="2"/>
+  <polygon points="745,124 755,129 745,134" fill="#00E5A0"/>
+
+  <!-- Destination -->
+  <rect x="750" y="100" width="36" height="58" fill="#0d1e16" rx="6" stroke="#00E5A0" stroke-width="2"/>
+  <text x="768" y="120" fill="#00E5A0" font-size="16" text-anchor="middle">📥</text>
+  <text x="768" y="148" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">In</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="212" x2="760" y2="212" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Quick Checks Bottom Panel -->
+  <rect x="20" y="224" width="760" height="178" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="400" y="250" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Quick Checks — Run in This Order</text>
+  <line x1="36" y1="260" x2="764" y2="260" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Check 1 -->
+  <rect x="40" y="272" width="130" height="116" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="105" y="294" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">① Junk</text>
+  <text x="105" y="314" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Open Junk</text>
+  <text x="105" y="332" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Email folder</text>
+  <text x="105" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Right-click →</text>
+  <text x="105" y="369" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Not Junk</text>
+
+  <!-- Check 2 -->
+  <rect x="184" y="272" width="130" height="116" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="249" y="294" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">② Rules</text>
+  <text x="249" y="314" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Home tab →</text>
+  <text x="249" y="332" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Rules menu</text>
+  <text x="249" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Check Manage</text>
+  <text x="249" y="369" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Rules &amp; Alerts</text>
+
+  <!-- Check 3 -->
+  <rect x="328" y="272" width="130" height="116" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="393" y="294" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">③ Press F9</text>
+  <text x="393" y="314" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Force sync</text>
+  <text x="393" y="332" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">all folders</text>
+  <text x="393" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Ctrl+Alt+S for</text>
+  <text x="393" y="369" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">group settings</text>
+
+  <!-- Check 4 -->
+  <rect x="472" y="272" width="130" height="116" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="537" y="294" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">④ Storage</text>
+  <text x="537" y="314" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Mailbox full</text>
+  <text x="537" y="332" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">stops new mail</text>
+  <text x="537" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">File → Info →</text>
+  <text x="537" y="369" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Mailbox Size</text>
+
+  <!-- Check 5 -->
+  <rect x="616" y="272" width="144" height="116" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="688" y="294" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">⑤ Reconnect</text>
+  <text x="688" y="314" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Remove and</text>
+  <text x="688" y="332" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">re-add account</text>
+  <text x="688" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">File → Account</text>
+  <text x="688" y="369" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Settings</text>
+</svg>

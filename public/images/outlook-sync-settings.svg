@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Outlook not syncing: check sync frequency setting, update folders manually with F9, verify account connection status — IMAP sync issues vs Exchange cached mode issues">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="260" fill="#0A130E" rx="12"/>
+  <rect width="800" height="260" fill="url(#g)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">OUTLOOK NOT SYNCING — DIAGNOSIS AND FIX</text>
+
+  <!-- IMAP vs Exchange -->
+  <rect x="20" y="38" width="370" height="100" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="205" y="60" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">IMAP Sync Issues</text>
+  <text x="36" y="82" fill="#93B5A0" font-size="12" font-family="monospace">Send/Receive group settings</text>
+  <text x="36" y="99" fill="#93B5A0" font-size="12" font-family="monospace">→ File → Account Settings</text>
+  <text x="36" y="116" fill="#6B7F72" font-size="11" font-family="monospace">→ Change → More Settings → IMAP tab</text>
+  <text x="36" y="132" fill="#93c5fd" font-size="12" font-family="monospace">Subscribed Folders: check All Folders</text>
+
+  <rect x="410" y="38" width="370" height="100" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="595" y="60" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Exchange Cached Mode</text>
+  <text x="426" y="82" fill="#93B5A0" font-size="12" font-family="monospace">Old emails: Cached Exchange Mode</text>
+  <text x="426" y="99" fill="#93B5A0" font-size="12" font-family="monospace">Account Settings → Change</text>
+  <text x="426" y="116" fill="#6B7F72" font-size="11" font-family="monospace">→ Drag "Mail to keep offline" slider</text>
+  <text x="426" y="132" fill="#93c5fd" font-size="12" font-family="monospace">Or uncheck "Use Cached Mode"</text>
+
+  <!-- Quick Fixes -->
+  <rect x="20" y="152" width="760" height="96" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="400" y="174" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Quick Sync Fixes</text>
+  <line x1="36" y1="182" x2="764" y2="182" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="90" y="202" fill="#00E5A0" font-size="24" text-anchor="middle">F9</text>
+  <text x="90" y="222" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Force sync now</text>
+  <text x="90" y="238" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Immediate</text>
+
+  <line x1="185" y1="188" x2="185" y2="242" stroke="#1e3a22" stroke-width="1"/>
+  <text x="280" y="202" fill="#00E5A0" font-size="18" text-anchor="middle">🔁</text>
+  <text x="280" y="222" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Close + reopen</text>
+  <text x="280" y="238" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Outlook restart</text>
+
+  <line x1="375" y1="188" x2="375" y2="242" stroke="#1e3a22" stroke-width="1"/>
+  <text x="460" y="198" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Repair account:</text>
+  <text x="460" y="215" fill="#93c5fd" font-size="12" font-family="monospace" text-anchor="middle">File → Info → Repair</text>
+  <text x="460" y="232" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">(Exchange/M365)</text>
+
+  <line x1="560" y1="188" x2="560" y2="242" stroke="#1e3a22" stroke-width="1"/>
+  <text x="660" y="198" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Rebuild OST file:</text>
+  <text x="660" y="215" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Delete .ost → Outlook</text>
+  <text x="660" y="232" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">rebuilds on open</text>
+</svg>

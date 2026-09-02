@@ -32,6 +32,8 @@ howto_steps:
 
 Wi-Fi that repeatedly disconnects — dropping every few minutes, reconnecting automatically, then dropping again — is almost never a hardware failure. According to Microsoft's Windows networking documentation, the most common causes are the Windows Wi-Fi adapter power management setting and an outdated or incompatible wireless driver.
 
+![WiFi disconnect causes: power management, channel interference, weak signal, DHCP lease — each with fix](/images/wifi-disconnect-causes.svg)
+
 ## What causes Wi-Fi to keep disconnecting
 
 Windows manages Wi-Fi adapters aggressively to save power on laptops. Other common causes include:

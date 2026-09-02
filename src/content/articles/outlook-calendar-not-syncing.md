@@ -31,6 +31,8 @@ When Outlook calendar is not syncing, meetings created or accepted on one device
 
 According to Microsoft's calendar troubleshooting documentation, calendar sync relies on the same Exchange or Microsoft 365 connection that handles email. A calendar sync failure is therefore often a symptom of a broader account sync issue — but calendars can also fail independently due to permission problems, data file configuration, or a corrupted local calendar cache.
 
+![Outlook calendar sync issues: shared calendar permissions, mobile sync off, delegate access, corrupted data — universal fix is remove and re-add account](/images/outlook-calendar-sync.svg)
+
 ## Why Outlook calendar stops syncing
 
 **Wrong default data file.** If Outlook is configured to save new items to a local PST file rather than the Exchange mailbox, calendar events created on the desktop stay local and never reach the server or other devices.

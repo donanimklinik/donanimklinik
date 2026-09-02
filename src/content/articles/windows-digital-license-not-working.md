@@ -31,6 +31,8 @@ A **digital licence** (called a digital entitlement in earlier versions of Windo
 
 The digital licence system works seamlessly in normal use. Problems appear when the hardware changes significantly, when Windows is reinstalled, or when the Microsoft account linked to the licence is not connected during setup.
 
+![Windows digital license: hardware ID linked to Microsoft account — no key needed, auto-activates. Fix by signing in with correct account and running troubleshooter](/images/windows-digital-license.svg)
+
 ## How digital licences work
 
 According to Microsoft's activation documentation, a digital licence is created when:

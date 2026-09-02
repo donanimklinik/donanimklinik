@@ -31,6 +31,8 @@ Outlook not syncing means the desktop or mobile application is not reflecting th
 
 According to Microsoft's sync troubleshooting documentation, sync failures in Outlook are caused by a handful of well-defined issues: the client is offline, the local data file is corrupted, the sync schedule is misconfigured, or the connection to the Exchange or Microsoft 365 server is being interrupted.
 
+![Outlook sync settings: IMAP subscribed folders vs Exchange cached mode — F9 force sync, rebuild OST file, repair account](/images/outlook-sync-settings.svg)
+
 ## What sync means in Outlook
 
 Outlook stores a local copy of your mailbox in an Offline Storage Table (OST) file. When sync is working, changes on the server — new mail, deletions, flag changes — are reflected in the OST file, and vice versa. When sync fails, the local and server states diverge.

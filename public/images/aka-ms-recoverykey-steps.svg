@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="aka.ms/myrecoverykey: how to find BitLocker recovery key on Microsoft account website — sign in, go to Devices, find your PC, copy the 48-digit key">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="440" fill="#091510" rx="12"/>
+  <rect width="800" height="440" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">aka.ms/myrecoverykey — Find Your BitLocker Key</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Microsoft account mockup panel -->
+  <rect x="18" y="58" width="460" height="248" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Browser bar mockup -->
+  <rect x="18" y="58" width="460" height="32" fill="#091510" rx="10"/>
+  <rect x="18" y="78" width="460" height="12" fill="#091510"/>
+  <rect x="30" y="66" width="290" height="16" fill="#0d1e16" rx="4" stroke="#2a5236" stroke-width="1"/>
+  <text x="175" y="78" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">account.microsoft.com/devices</text>
+  <text x="400" y="76" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="end">BitLocker keys</text>
+
+  <!-- Page heading -->
+  <text x="248" y="112" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Your Devices — BitLocker Recovery Keys</text>
+  <line x1="30" y1="120" x2="466" y2="120" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Device entry 1 -->
+  <rect x="30" y="128" width="436" height="58" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="150" fill="#3b82f6" font-size="14" font-family="monospace" font-weight="bold">DESKTOP-A7K2M</text>
+  <text x="50" y="170" fill="#A8C4B0" font-size="13" font-family="monospace">Windows 11 Home · Last seen 2 days ago</text>
+  <text x="454" y="161" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="end">View BitLocker keys →</text>
+
+  <!-- Key revealed panel -->
+  <rect x="30" y="196" width="436" height="96" fill="#081a10" rx="6" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="50" y="220" fill="#A8C4B0" font-size="13" font-family="monospace">Recovery Key ID:</text>
+  <text x="210" y="220" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">A3F7-9C2E</text>
+  <text x="50" y="246" fill="#7FB09A" font-size="12" font-family="monospace">Recovery Key (48 digits):</text>
+  <text x="50" y="266" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">123456-789012-345678-901234-567890-12</text>
+  <text x="454" y="284" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="end">📋 Copy</text>
+
+  <!-- Steps panel -->
+  <rect x="494" y="58" width="288" height="248" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="638" y="84" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Steps (Use Another Device)</text>
+  <line x1="510" y1="92" x2="766" y2="92" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="514" y="116" fill="#00E5A0" font-size="14" font-family="monospace">1.</text>
+  <text x="538" y="116" fill="#D4EAD8" font-size="14" font-family="monospace">aka.ms/myrecoverykey</text>
+
+  <text x="514" y="144" fill="#00E5A0" font-size="14" font-family="monospace">2.</text>
+  <text x="538" y="144" fill="#D4EAD8" font-size="14" font-family="monospace">Sign in to Microsoft</text>
+  <text x="538" y="162" fill="#D4EAD8" font-size="14" font-family="monospace">account</text>
+
+  <text x="514" y="186" fill="#00E5A0" font-size="14" font-family="monospace">3.</text>
+  <text x="538" y="186" fill="#D4EAD8" font-size="14" font-family="monospace">Find your PC by name</text>
+
+  <text x="514" y="214" fill="#00E5A0" font-size="14" font-family="monospace">4.</text>
+  <text x="538" y="214" fill="#D4EAD8" font-size="14" font-family="monospace">Match the Key ID</text>
+  <text x="538" y="232" fill="#A8C4B0" font-size="13" font-family="monospace">shown on recovery screen</text>
+
+  <text x="514" y="258" fill="#00E5A0" font-size="14" font-family="monospace">5.</text>
+  <text x="538" y="258" fill="#D4EAD8" font-size="14" font-family="monospace">Copy 48-digit key</text>
+  <text x="538" y="276" fill="#A8C4B0" font-size="13" font-family="monospace">Type it on locked PC</text>
+
+  <!-- Bottom warning bar -->
+  <rect x="18" y="318" width="764" height="106" fill="#0d1e16" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="342" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Important: Always Match the Key ID First</text>
+
+  <rect x="32" y="354" width="352" height="58" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="208" y="376" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Key ID on recovery screen:</text>
+  <text x="208" y="398" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">A3F7-9C2E  ← note this first</text>
+
+  <rect x="400" y="354" width="368" height="58" fill="#091510" rx="6" stroke="#00E5A0" stroke-width="1"/>
+  <text x="584" y="376" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Find matching ID in account:</text>
+  <text x="584" y="398" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">A3F7-9C2E → use that key ✓</text>
+</svg>

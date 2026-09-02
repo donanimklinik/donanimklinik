@@ -21,6 +21,8 @@ Error code **0xC004C060** appears when the Microsoft activation server determine
 
 According to Microsoft's activation error documentation, this error is server-side — the key was received and evaluated by Microsoft's systems, and the systems returned a rejection. This distinguishes it from errors caused by network problems or incorrect key entry.
 
+![Windows activation error 0xC004C060: wrong edition key mismatch — Pro key on Home edition or Home key on Pro edition won't work](/images/activation-error-0xc004c060.svg)
+
 ## What causes error 0xC004C060
 
 **The product key has been flagged or suspended.** Microsoft's activation servers track each product key. If a key is detected on an unusual number of devices, associated with fraudulent activity, or reported as misused, the server can suspend it — preventing further activations even if the key itself is technically valid.

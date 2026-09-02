@@ -22,6 +22,8 @@ SSD failure is quieter than hard drive failure — no clicking, no grinding, oft
 
 The core issue is NAND flash technology. Unlike magnetic platters, where deleted data leaves a physical trace until overwritten, SSDs actively erase deleted data through a feature called TRIM. Understanding which type of failure has occurred determines what recovery is realistically possible — and what is not.
 
+![SSD recovery options: TRIM erases deleted data making recovery harder — try different port, BIOS check, Disk Drill if detected, pro NAND chip recovery as last resort](/images/ssd-recovery-options.svg)
+
 ## Why SSD recovery is fundamentally different from hard drive recovery
 
 On a traditional hard drive, deleted or lost data remains magnetically encoded on the platters until new data physically overwrites it. Software tools exploit this by scanning for those residual patterns.

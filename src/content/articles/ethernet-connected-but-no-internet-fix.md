@@ -33,6 +33,8 @@ An Ethernet connection that shows as connected in Windows — the cable icon app
 
 According to Microsoft's Windows Ethernet troubleshooting documentation, the most common causes are a corrupted IP or DNS configuration, a driver that needs updating, or a loose cable that appears connected but is not transmitting reliably.
 
+![Ethernet no internet layer stack: Physical cable, Network Adapter, TCP/IP stack, Router DNS — each layer's fix](/images/ethernet-no-internet-layers.svg)
+
 ## What causes Ethernet connected but no internet
 
 The Windows status "Connected" for an Ethernet connection means the adapter detected a link signal from the router — it does not confirm that internet traffic is flowing. No internet errors occur when:

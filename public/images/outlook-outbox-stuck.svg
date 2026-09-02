@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Emails stuck in Outlook outbox: message stuck in outbox means send failed — work offline mode, delete the stuck message then resend, or check attachment size limit">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Emails Stuck in Outbox — How to Clear Them</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Left panel: Outbox mockup -->
+  <rect x="20" y="58" width="360" height="220" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Outbox header -->
+  <rect x="20" y="58" width="360" height="36" fill="#0a1509" rx="10"/>
+  <rect x="20" y="84" width="360" height="10" fill="#0a1509"/>
+  <text x="200" y="80" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Outbox (1 message stuck)</text>
+
+  <!-- Stuck message row -->
+  <rect x="36" y="102" width="328" height="70" fill="#1a1200" rx="6" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="52" y="124" fill="#f59e0b" font-size="14" font-family="monospace" font-weight="bold">Report Q3 2025.docx</text>
+  <text x="52" y="144" fill="#D4EAD8" font-size="14" font-family="monospace">Status: Sending... (stuck 47 min)</text>
+  <text x="52" y="163" fill="#ef4444" font-size="14" font-family="monospace">Attachment: 22 MB  ⚠ over limit</text>
+
+  <!-- Causes list -->
+  <text x="36" y="196" fill="#4ade80" font-size="16" font-family="monospace" font-weight="bold">Common Causes</text>
+  <line x1="36" y1="204" x2="364" y2="204" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="224" fill="#D4EAD8" font-size="14" font-family="monospace">• Attachment too large (limit: 20–25 MB)</text>
+  <text x="36" y="244" fill="#D4EAD8" font-size="14" font-family="monospace">• Network dropped while sending</text>
+  <text x="36" y="264" fill="#D4EAD8" font-size="14" font-family="monospace">• Outlook in Work Offline mode</text>
+
+  <!-- Right panel: Fix Steps -->
+  <rect x="394" y="58" width="386" height="220" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="587" y="82" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Steps</text>
+  <line x1="410" y1="92" x2="764" y2="92" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Fix 1 -->
+  <text x="412" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="436" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Go Work Offline first</text>
+  <text x="436" y="136" fill="#A8C4B0" font-size="13" font-family="monospace">Send/Receive tab → Work Offline</text>
+  <text x="436" y="153" fill="#A8C4B0" font-size="13" font-family="monospace">This stops Outlook retrying the send</text>
+  <line x1="410" y1="164" x2="764" y2="164" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Fix 2 -->
+  <text x="412" y="186" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="436" y="186" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Delete the stuck message</text>
+  <text x="436" y="206" fill="#A8C4B0" font-size="13" font-family="monospace">Open Outbox → right-click → Delete</text>
+  <line x1="410" y1="218" x2="764" y2="218" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Fix 3 -->
+  <text x="412" y="240" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="436" y="240" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Fix and resend</text>
+  <text x="436" y="260" fill="#A8C4B0" font-size="13" font-family="monospace">Compress file or use OneDrive link</text>
+  <text x="436" y="277" fill="#A8C4B0" font-size="13" font-family="monospace">Uncheck Work Offline → resend → F9</text>
+
+  <!-- Bottom info panel -->
+  <rect x="20" y="292" width="760" height="110" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="316" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Attachment Size Limits by Provider</text>
+  <line x1="36" y1="326" x2="764" y2="326" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Size limits grid -->
+  <text x="133" y="350" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Gmail</text>
+  <text x="133" y="370" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">25 MB per email</text>
+  <text x="133" y="388" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Use Drive link over 25MB</text>
+
+  <line x1="267" y1="336" x2="267" y2="396" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="400" y="350" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Outlook / Microsoft 365</text>
+  <text x="400" y="370" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">20 MB default, 150 MB Exchange</text>
+  <text x="400" y="388" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Share via OneDrive link instead</text>
+
+  <line x1="533" y1="336" x2="533" y2="396" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="649" y="350" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Yahoo Mail</text>
+  <text x="649" y="370" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">25 MB per email</text>
+  <text x="649" y="388" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Dropbox / Google Drive link</text>
+</svg>

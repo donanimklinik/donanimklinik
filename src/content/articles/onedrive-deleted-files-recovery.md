@@ -31,6 +31,8 @@ When you delete a file from OneDrive — whether by pressing Delete on your keyb
 
 This means recovery is straightforward as long as the 30-day window has not passed.
 
+![OneDrive file recovery: files go to Recycle Bin for 30 days, then second-stage for 63 more days, total 93 days before permanent deletion](/images/onedrive-file-recovery.svg)
+
 ## How long deleted files are kept
 
 The retention period depends on your OneDrive plan:

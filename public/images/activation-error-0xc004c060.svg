@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Windows activation error 0xC004C060: software licensing service determined the key is invalid for this version of Windows — wrong edition key used. Need key matching Windows edition">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Main title -->
+  <text x="400" y="38" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Error 0xC004C060 — Wrong Edition Key</text>
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Error panel -->
+  <rect x="20" y="62" width="350" height="160" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="2"/>
+  <text x="195" y="88" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">What This Error Means</text>
+  <line x1="36" y1="96" x2="354" y2="96" stroke="#1e3a22" stroke-width="1"/>
+  <text x="195" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">"The software licensing service</text>
+  <text x="195" y="134" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">determined the product key</text>
+  <text x="195" y="152" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">is invalid for this Windows version"</text>
+  <line x1="36" y1="162" x2="354" y2="162" stroke="#1e3a22" stroke-width="1"/>
+  <text x="195" y="182" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">You entered a key for a different</text>
+  <text x="195" y="200" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Windows edition than installed.</text>
+
+  <!-- How to fix panel -->
+  <rect x="386" y="62" width="394" height="160" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="583" y="88" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">How to Fix</text>
+  <line x1="402" y1="96" x2="764" y2="96" stroke="#1e3a22" stroke-width="1"/>
+  <text x="402" y="118" fill="#4ade80" font-size="14" font-family="monospace">①</text>
+  <text x="422" y="118" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Find your Windows edition</text>
+  <text x="422" y="136" fill="#93c5fd" font-size="14" font-family="monospace">Settings → System → About</text>
+  <text x="422" y="153" fill="#A8C4B0" font-size="13" font-family="monospace">Note: "Windows 11 Home" or "Pro"</text>
+  <line x1="402" y1="163" x2="764" y2="163" stroke="#1e3a22" stroke-width="1"/>
+  <text x="402" y="184" fill="#4ade80" font-size="14" font-family="monospace">②</text>
+  <text x="422" y="184" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Use the correct matching key</text>
+  <text x="422" y="201" fill="#A8C4B0" font-size="13" font-family="monospace">Home key → Home edition only</text>
+
+  <!-- Mismatch diagram -->
+  <rect x="20" y="238" width="760" height="162" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="262" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Edition vs. Key Compatibility Chart</text>
+  <line x1="36" y1="270" x2="764" y2="270" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Headers -->
+  <text x="140" y="292" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Key Type</text>
+  <text x="340" y="292" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Windows Home</text>
+  <text x="520" y="292" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Windows Pro</text>
+  <text x="690" y="292" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Result</text>
+  <line x1="36" y1="298" x2="764" y2="298" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <text x="140" y="320" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Home key</text>
+  <text x="340" y="320" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">✓ Works</text>
+  <text x="520" y="320" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">✕ Fails</text>
+  <text x="690" y="320" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Edition mismatch</text>
+  <line x1="36" y1="330" x2="764" y2="330" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <text x="140" y="352" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Pro key</text>
+  <text x="340" y="352" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">→ Upgrades</text>
+  <text x="520" y="352" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">✓ Works</text>
+  <text x="690" y="352" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Pro key upgrades Home</text>
+  <line x1="36" y1="362" x2="764" y2="362" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <text x="140" y="384" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Volume key</text>
+  <text x="340" y="384" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">✕ Fails</text>
+  <text x="520" y="384" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">✕ Fails*</text>
+  <text x="690" y="384" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Needs KMS server</text>
+
+  <text x="400" y="410" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">* Volume keys require a KMS server on port 1688 — they will not work on retail Windows installs without one.</text>
+</svg>

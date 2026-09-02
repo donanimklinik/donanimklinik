@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Recuva data recovery guide: color coded results — green dot means excellent recovery chance, orange means poor chance, red means file overwritten. Scan in deep scan mode for best results">
+  <defs>
+    <pattern id="g12" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g12)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Recuva — How to Read Your Scan Results</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Recuva window mockup -->
+  <rect x="20" y="58" width="450" height="330" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.2"/>
+  <!-- Title bar -->
+  <rect x="20" y="58" width="450" height="30" fill="#091510" rx="10"/>
+  <rect x="20" y="78" width="450" height="10" fill="#091510"/>
+  <circle cx="38" cy="73" r="5" fill="#2a5236"/>
+  <circle cx="54" cy="73" r="5" fill="#2a5236"/>
+  <circle cx="70" cy="73" r="5" fill="#2a5236"/>
+  <text x="245" y="77" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Recuva — Scan Results</text>
+
+  <!-- Column headers -->
+  <rect x="30" y="92" width="430" height="22" fill="#091510" rx="2"/>
+  <text x="52" y="107" fill="#4ade80" font-size="13" font-family="monospace">●</text>
+  <text x="76" y="107" fill="#4ade80" font-size="13" font-family="monospace" font-weight="bold">Filename</text>
+  <text x="300" y="107" fill="#4ade80" font-size="13" font-family="monospace" font-weight="bold">Size</text>
+  <text x="390" y="107" fill="#4ade80" font-size="13" font-family="monospace" font-weight="bold">State</text>
+
+  <!-- Row 1: Excellent -->
+  <rect x="30" y="116" width="430" height="28" fill="#091510" rx="2"/>
+  <circle cx="50" cy="130" r="7" fill="#00E5A0"/>
+  <text x="76" y="134" fill="#D4EAD8" font-size="14" font-family="monospace">vacation_photo_2024.jpg</text>
+  <text x="300" y="134" fill="#A8C4B0" font-size="13" font-family="monospace">3.2 MB</text>
+  <text x="390" y="134" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">Excellent</text>
+
+  <!-- Row 2: Excellent -->
+  <rect x="30" y="146" width="430" height="28" fill="#0d1e16" rx="2"/>
+  <circle cx="50" cy="160" r="7" fill="#00E5A0"/>
+  <text x="76" y="164" fill="#D4EAD8" font-size="14" font-family="monospace">report_final.docx</text>
+  <text x="300" y="164" fill="#A8C4B0" font-size="13" font-family="monospace">128 KB</text>
+  <text x="390" y="164" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">Excellent</text>
+
+  <!-- Row 3: Poor -->
+  <rect x="30" y="176" width="430" height="28" fill="#0d1e16" rx="2"/>
+  <circle cx="50" cy="190" r="7" fill="#f59e0b"/>
+  <text x="76" y="194" fill="#D4EAD8" font-size="14" font-family="monospace">old_backup.zip</text>
+  <text x="300" y="194" fill="#A8C4B0" font-size="13" font-family="monospace">44 MB</text>
+  <text x="390" y="194" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">Poor</text>
+
+  <!-- Row 4: Unrecoverable -->
+  <rect x="30" y="206" width="430" height="28" fill="#0d1e16" rx="2"/>
+  <circle cx="50" cy="220" r="7" fill="#ef4444"/>
+  <text x="76" y="224" fill="#7FB09A" font-size="14" font-family="monospace">deleted_video.mp4</text>
+  <text x="300" y="224" fill="#7FB09A" font-size="13" font-family="monospace">1.8 GB</text>
+  <text x="390" y="224" fill="#ef4444" font-size="13" font-family="monospace" font-weight="bold">Overwritten</text>
+
+  <!-- Row 5: Excellent -->
+  <rect x="30" y="236" width="430" height="28" fill="#0d1e16" rx="2"/>
+  <circle cx="50" cy="250" r="7" fill="#00E5A0"/>
+  <text x="76" y="254" fill="#D4EAD8" font-size="14" font-family="monospace">spreadsheet_2025.xlsx</text>
+  <text x="300" y="254" fill="#A8C4B0" font-size="13" font-family="monospace">56 KB</text>
+  <text x="390" y="254" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">Excellent</text>
+
+  <!-- Row 6: Poor -->
+  <rect x="30" y="266" width="430" height="28" fill="#0d1e16" rx="2"/>
+  <circle cx="50" cy="280" r="7" fill="#f59e0b"/>
+  <text x="76" y="284" fill="#D4EAD8" font-size="14" font-family="monospace">presentation_draft.pptx</text>
+  <text x="300" y="284" fill="#A8C4B0" font-size="13" font-family="monospace">8.4 MB</text>
+  <text x="390" y="284" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">Poor</text>
+
+  <!-- Row 7: Excellent -->
+  <rect x="30" y="296" width="430" height="28" fill="#091510" rx="2"/>
+  <circle cx="50" cy="310" r="7" fill="#00E5A0"/>
+  <text x="76" y="314" fill="#D4EAD8" font-size="14" font-family="monospace">tax_return_2024.pdf</text>
+  <text x="300" y="314" fill="#A8C4B0" font-size="13" font-family="monospace">1.1 MB</text>
+  <text x="390" y="314" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">Excellent</text>
+
+  <!-- Recover button -->
+  <rect x="30" y="336" width="150" height="28" fill="#00E5A0" rx="5" opacity="0.9"/>
+  <text x="105" y="354" fill="#091510" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Recover checked</text>
+  <rect x="196" y="336" width="130" height="28" fill="#0d1e16" rx="5" stroke="#2a5236"/>
+  <text x="261" y="354" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Deep Scan Mode</text>
+
+  <!-- Legend panel -->
+  <rect x="490" y="58" width="290" height="330" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="635" y="86" fill="#D4EAD8" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Dot Color Guide</text>
+  <line x1="506" y1="96" x2="764" y2="96" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Green -->
+  <circle cx="516" cy="124" r="12" fill="#00E5A0"/>
+  <text x="540" y="118" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">Green — Excellent</text>
+  <text x="540" y="136" fill="#D4EAD8" font-size="14" font-family="monospace">File intact, sectors unused</text>
+  <text x="540" y="154" fill="#A8C4B0" font-size="13" font-family="monospace">High recovery chance</text>
+  <text x="540" y="170" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">&#x2192; Recover immediately</text>
+
+  <line x1="506" y1="184" x2="764" y2="184" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Orange -->
+  <circle cx="516" cy="214" r="12" fill="#f59e0b"/>
+  <text x="540" y="208" fill="#f59e0b" font-size="16" font-family="monospace" font-weight="bold">Orange — Poor</text>
+  <text x="540" y="226" fill="#D4EAD8" font-size="14" font-family="monospace">Partially overwritten</text>
+  <text x="540" y="244" fill="#A8C4B0" font-size="13" font-family="monospace">File may be corrupt</text>
+  <text x="540" y="260" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">&#x2192; Try, verify after</text>
+
+  <line x1="506" y1="274" x2="764" y2="274" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Red -->
+  <circle cx="516" cy="304" r="12" fill="#ef4444"/>
+  <text x="540" y="298" fill="#ef4444" font-size="16" font-family="monospace" font-weight="bold">Red — Overwritten</text>
+  <text x="540" y="316" fill="#D4EAD8" font-size="14" font-family="monospace">Sectors reused by new data</text>
+  <text x="540" y="334" fill="#A8C4B0" font-size="13" font-family="monospace">Cannot be recovered</text>
+  <text x="540" y="350" fill="#ef4444" font-size="13" font-family="monospace" font-weight="bold">&#x2192; Skip these files</text>
+
+  <!-- Bottom note -->
+  <rect x="20" y="400" width="760" height="14" fill="none"/>
+</svg>

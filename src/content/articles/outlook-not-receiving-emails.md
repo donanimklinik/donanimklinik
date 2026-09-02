@@ -31,6 +31,8 @@ When Outlook is not receiving emails but can still send, the problem is isolated
 
 According to Microsoft's Outlook troubleshooting documentation, the most common causes of one-way email failure — sending works, receiving does not — are a redirecting rule, a full or near-full mailbox, a connection problem with the incoming mail server, or an Outlook profile issue.
 
+![Outlook email flow diagram: Sender to Mail Server with junk fork, through Inbox Rules, Outlook Sync, to Inbox — with quick checks listed](/images/outlook-email-flow.svg)
+
 ## Why incoming mail stops while sending continues
 
 **An Outlook rule is redirecting or deleting incoming messages.** Rules that run on incoming messages can move mail to other folders, forward it elsewhere, or delete it before it reaches the inbox. A rule created accidentally or inherited from a previous profile can silently intercept every incoming message.

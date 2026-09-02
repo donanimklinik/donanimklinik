@@ -22,6 +22,8 @@ Software recovery tools — including Microsoft's own Windows File Recovery — 
 
 If your drive is making clicking or grinding sounds, is not detected by the computer at all, or has been exposed to water, heat, or physical impact, the next step is a professional data recovery service — not another scan.
 
+![Professional recovery when DIY fails: clicking drive, not detected in BIOS, physical damage — cleanroom recovery costs $300-$1500](/images/professional-recovery-when.svg)
+
 ## Signs you need professional recovery, not software
 
 According to Seagate's official support documentation, continuing to run a physically damaged drive risks the read heads making repeated contact with the platters, which can permanently destroy the magnetic surface where data is stored.

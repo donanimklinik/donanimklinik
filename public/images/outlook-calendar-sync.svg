@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Outlook calendar not syncing: calendar syncs through same account as email — check if calendar is shared, permissions are set, and delegate access is correct">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Outlook Calendar Not Syncing — Causes &amp; Fixes</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Card 1: Shared Calendar -->
+  <rect x="20" y="58" width="175" height="160" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="107" y="82" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Shared Calendar</text>
+  <line x1="36" y1="90" x2="179" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="107" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Permission changed</text>
+  <text x="107" y="130" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">by calendar owner</text>
+  <text x="107" y="155" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="107" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Re-accept the invite</text>
+  <text x="107" y="191" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">or ask owner to</text>
+  <text x="107" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">re-share calendar</text>
+
+  <!-- Card 2: Mobile Sync Off -->
+  <rect x="209" y="58" width="175" height="160" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="296" y="82" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Mobile Sync Off</text>
+  <line x1="225" y1="90" x2="368" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="296" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Phone calendar</text>
+  <text x="296" y="130" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">not showing events</text>
+  <text x="296" y="155" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="296" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Outlook mobile app</text>
+  <text x="296" y="191" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">→ Settings → Account</text>
+  <text x="296" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">→ Sync Calendar ON</text>
+
+  <!-- Card 3: Delegate Access -->
+  <rect x="398" y="58" width="175" height="160" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="485" y="82" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Delegate Access</text>
+  <line x1="414" y1="90" x2="557" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="485" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Assistant cannot</text>
+  <text x="485" y="130" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">see your calendar</text>
+  <text x="485" y="155" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="485" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">File → Account</text>
+  <text x="485" y="191" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Settings → Delegate</text>
+  <text x="485" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Access → Add them</text>
+
+  <!-- Card 4: Corrupted Data -->
+  <rect x="587" y="58" width="193" height="160" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="683" y="82" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Corrupted Data</text>
+  <line x1="603" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="683" y="110" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Calendar events</text>
+  <text x="683" y="130" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">stuck or missing</text>
+  <text x="683" y="155" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="683" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Run scanpst.exe</text>
+  <text x="683" y="191" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Inbox Repair Tool</text>
+  <text x="683" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">repairs .pst file</text>
+
+  <!-- Separator -->
+  <line x1="40" y1="238" x2="760" y2="238" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Universal Fix Panel -->
+  <rect x="20" y="252" width="760" height="150" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="400" y="278" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Universal Fix — Works for Most Cases</text>
+  <line x1="36" y1="288" x2="764" y2="288" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Step 1 -->
+  <rect x="50" y="300" width="200" height="88" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="150" y="320" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 1</text>
+  <text x="150" y="340" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Remove account</text>
+  <text x="150" y="358" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">File → Account</text>
+  <text x="150" y="375" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Settings → Remove</text>
+
+  <!-- Arrow 1 -->
+  <line x1="254" y1="344" x2="290" y2="344" stroke="#00E5A0" stroke-width="2"/>
+  <polygon points="287,339 297,344 287,349" fill="#00E5A0"/>
+
+  <!-- Step 2 -->
+  <rect x="300" y="300" width="200" height="88" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="320" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 2</text>
+  <text x="400" y="340" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Re-add account</text>
+  <text x="400" y="358" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Add Account with</text>
+  <text x="400" y="375" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">fresh credentials</text>
+
+  <!-- Arrow 2 -->
+  <line x1="504" y1="344" x2="540" y2="344" stroke="#00E5A0" stroke-width="2"/>
+  <polygon points="537,339 547,344 537,349" fill="#00E5A0"/>
+
+  <!-- Step 3 -->
+  <rect x="550" y="300" width="200" height="88" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="650" y="320" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Step 3</text>
+  <text x="650" y="340" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Let it rebuild</text>
+  <text x="650" y="358" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Calendar syncs</text>
+  <text x="650" y="375" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">automatically</text>
+</svg>

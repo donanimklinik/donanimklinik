@@ -1,94 +1,100 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" role="img" aria-label="Correct power-on sequence: step 1 unplug both devices, step 2 plug in modem and wait 60 seconds for Online LED, step 3 plug in router and wait 60 seconds, step 4 check green WAN LED">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Correct power-on sequence: step 1 unplug both devices, step 2 plug in modem and wait 60 seconds for Online LED, step 3 plug in router and wait 60 seconds, step 4 check green WAN LED">
   <defs>
     <pattern id="psg" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
     <marker id="pa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <polygon points="0 0,8 4,0 8" fill="#00E5A0" opacity=".7"/>
+      <polygon points="0 0,8 4,0 8" fill="#00E5A0" opacity=".8"/>
     </marker>
   </defs>
-  <rect width="780" height="180" fill="#0A130E" rx="10"/>
-  <rect width="780" height="180" fill="url(#psg)" rx="10"/>
-  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">POWER-ON SEQUENCE — ORDER MATTERS</text>
+  <rect width="800" height="420" fill="#091510" rx="10"/>
+  <rect width="800" height="420" fill="url(#psg)" rx="10"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Modem + Router Power-On Sequence</text>
+  <text x="400" y="58" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Order matters — wrong order = no internet connection</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
 
   <!-- Timeline bar -->
-  <line x1="60" y1="100" x2="720" y2="100" stroke="#1e3a22" stroke-width="2"/>
+  <line x1="60" y1="200" x2="740" y2="200" stroke="#1e3a22" stroke-width="2"/>
 
-  <!-- ── STEP 1: Unplug both ── -->
-  <circle cx="100" cy="100" r="18" fill="#1a0d0d" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="100" y="95" fill="#ef4444" font-size="9" font-family="monospace" text-anchor="middle">UN-</text>
-  <text x="100" y="106" fill="#ef4444" font-size="9" font-family="monospace" text-anchor="middle">PLUG</text>
-  <text x="100" y="134" fill="#F0F4F1" font-size="9" font-family="monospace" text-anchor="middle">Unplug both</text>
-  <text x="100" y="146" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">modem + router</text>
-  <text x="100" y="62" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Step 1</text>
+  <!-- STEP 1: Unplug both -->
+  <circle cx="110" cy="200" r="30" fill="#1a0d0d" stroke="#ef4444" stroke-width="2"/>
+  <text x="110" y="194" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">UN-</text>
+  <text x="110" y="212" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">PLUG</text>
+  <text x="110" y="250" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Unplug both</text>
+  <text x="110" y="268" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">modem + router</text>
+  <text x="110" y="286" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">from power</text>
+  <text x="110" y="154" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Step 1</text>
 
   <!-- Arrow 1→2 -->
-  <line x1="122" y1="100" x2="225" y2="100" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#pa)"/>
-  <text x="174" y="92" fill="#4a5e4e" font-size="7.5" font-family="monospace" text-anchor="middle">30 sec wait</text>
+  <line x1="143" y1="200" x2="228" y2="200" stroke="#1e3a22" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="186" y="188" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">30 sec wait</text>
 
-  <!-- ── STEP 2: Modem on ── -->
-  <circle cx="250" cy="100" r="22" fill="#0d1810" stroke="#00E5A0" stroke-width="1.5"/>
-  <!-- Modem mini icon -->
-  <rect x="239" y="92" width="22" height="14" fill="#111e14" rx="2" stroke="#2d5a3d"/>
-  <circle cx="244" cy="99" r="2.5" fill="#00E5A0" opacity=".9"/>
-  <circle cx="252" cy="99" r="2.5" fill="#00E5A0" opacity=".5"/>
-  <text x="250" y="134" fill="#F0F4F1" font-size="9" font-family="monospace" text-anchor="middle">Modem ON</text>
-  <text x="250" y="146" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">plug into power</text>
-  <text x="250" y="62" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Step 2</text>
+  <!-- STEP 2: Modem ON -->
+  <circle cx="265" cy="200" r="34" fill="#0d1e16" stroke="#00E5A0" stroke-width="2"/>
+  <rect x="248" y="190" width="34" height="20" fill="#0d1e16" rx="3" stroke="#2a5236"/>
+  <circle cx="256" cy="200" r="4" fill="#00E5A0" opacity=".9"/>
+  <circle cx="268" cy="200" r="4" fill="#00E5A0" opacity=".5"/>
+  <text x="265" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Modem ON</text>
+  <text x="265" y="270" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">plug into power</text>
+  <text x="265" y="154" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Step 2</text>
 
-  <!-- Arrow 2→3 -->
-  <line x1="276" y1="100" x2="373" y2="100" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#pa)"/>
-  <!-- 60s clock -->
-  <circle cx="325" cy="85" r="12" fill="#0d1810" stroke="#2d5a3d" stroke-width="1"/>
-  <line x1="325" y1="85" x2="325" y2="76" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="325" y1="85" x2="333" y2="85" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="325" y="72" fill="#00E5A0" font-size="7.5" font-family="monospace" text-anchor="middle">60 sec</text>
+  <!-- Arrow 2→3 with clock -->
+  <line x1="302" y1="200" x2="386" y2="200" stroke="#1e3a22" stroke-width="2" marker-end="url(#pa)"/>
+  <circle cx="344" cy="174" r="18" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5"/>
+  <line x1="344" y1="174" x2="344" y2="160" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="344" y1="174" x2="356" y2="174" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
+  <text x="344" y="143" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Wait 60 sec</text>
 
-  <!-- ── STEP 3: LED check ── -->
-  <circle cx="400" cy="100" r="22" fill="#0d1810" stroke="#00E5A0" stroke-width="2"/>
-  <!-- LED solid green icon -->
-  <circle cx="400" cy="97" r="8" fill="#00E5A0" opacity=".2" stroke="#00E5A0" stroke-width="1.5"/>
-  <circle cx="400" cy="97" r="4" fill="#00E5A0" opacity=".9"/>
-  <text x="400" y="110" fill="#00E5A0" font-size="6.5" font-family="monospace" text-anchor="middle">Online ●</text>
-  <text x="400" y="134" fill="#F0F4F1" font-size="9" font-family="monospace" text-anchor="middle">Online LED solid</text>
-  <text x="400" y="146" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">modem ready</text>
-  <text x="400" y="62" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle">✓ Wait for this</text>
+  <!-- STEP 3: Wait for Online LED -->
+  <circle cx="420" cy="200" r="34" fill="#0d1e16" stroke="#00E5A0" stroke-width="2.5"/>
+  <circle cx="420" cy="196" r="14" fill="#00E5A0" opacity=".15" stroke="#00E5A0" stroke-width="1.5"/>
+  <circle cx="420" cy="196" r="7" fill="#00E5A0" opacity=".9"/>
+  <text x="420" y="218" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">Online LED</text>
+  <text x="420" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Online LED solid</text>
+  <text x="420" y="270" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">modem is ready</text>
+  <text x="420" y="154" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">✓ Wait for this</text>
 
-  <!-- Arrow 3→4 -->
-  <line x1="426" y1="100" x2="523" y2="100" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#pa)"/>
-  <!-- 60s clock -->
-  <circle cx="475" cy="85" r="12" fill="#0d1810" stroke="#2d5a3d" stroke-width="1"/>
-  <line x1="475" y1="85" x2="475" y2="76" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="475" y1="85" x2="483" y2="85" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="475" y="72" fill="#00E5A0" font-size="7.5" font-family="monospace" text-anchor="middle">60 sec</text>
+  <!-- Arrow 3→4 with clock -->
+  <line x1="457" y1="200" x2="540" y2="200" stroke="#1e3a22" stroke-width="2" marker-end="url(#pa)"/>
+  <circle cx="498" cy="174" r="18" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5"/>
+  <line x1="498" y1="174" x2="498" y2="160" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
+  <line x1="498" y1="174" x2="510" y2="174" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
+  <text x="498" y="143" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Wait 60 sec</text>
 
-  <!-- ── STEP 4: Router on ── -->
-  <circle cx="550" cy="100" r="22" fill="#0d1810" stroke="#3b82f6" stroke-width="1.5"/>
-  <!-- Router mini -->
-  <rect x="538" y="92" width="24" height="14" fill="#111e14" rx="2" stroke="#3b82f6"/>
-  <line x1="545" y1="92" x2="543" y2="84" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="556" y1="92" x2="556" y2="83" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
-  <line x1="567" y1="92" x2="569" y2="84" stroke="#5a9af0" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="550" y="134" fill="#F0F4F1" font-size="9" font-family="monospace" text-anchor="middle">Router ON</text>
-  <text x="550" y="146" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">plug into power</text>
-  <text x="550" y="62" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Step 3</text>
+  <!-- STEP 4: Router ON -->
+  <circle cx="576" cy="200" r="34" fill="#0d1e16" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="556" y="190" width="40" height="20" fill="#0d1e16" rx="3" stroke="#3b82f6"/>
+  <line x1="563" y1="190" x2="561" y2="178" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="576" y1="190" x2="576" y2="177" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  <line x1="589" y1="190" x2="591" y2="178" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+  <text x="576" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Router ON</text>
+  <text x="576" y="270" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">plug into power</text>
+  <text x="576" y="154" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Step 3</text>
 
   <!-- Arrow 4→5 -->
-  <line x1="576" y1="100" x2="643" y2="100" stroke="#1e3a22" stroke-width="1.5" marker-end="url(#pa)"/>
-  <text x="610" y="92" fill="#4a5e4e" font-size="7.5" font-family="monospace" text-anchor="middle">60 sec</text>
+  <line x1="612" y1="200" x2="670" y2="200" stroke="#1e3a22" stroke-width="2" marker-end="url(#pa)"/>
+  <text x="641" y="188" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">60 sec</text>
 
-  <!-- ── STEP 5: WAN LED green = done ── -->
-  <circle cx="680" cy="100" r="28" fill="#0d1a12" stroke="#00E5A0" stroke-width="2"/>
-  <!-- WAN LED indicator -->
-  <text x="680" y="89" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">WAN LED</text>
-  <circle cx="680" cy="102" r="9" fill="#00E5A0" opacity=".2" stroke="#00E5A0" stroke-width="1.5"/>
-  <circle cx="680" cy="102" r="5" fill="#00E5A0"/>
-  <text x="680" y="118" fill="#00E5A0" font-size="7" font-family="monospace" text-anchor="middle">● SOLID GREEN</text>
-  <text x="680" y="140" fill="#00E5A0" font-size="8.5" font-family="monospace" text-anchor="middle" font-weight="bold">Connected ✓</text>
-  <text x="680" y="152" fill="#6B7F72" font-size="7.5" font-family="monospace" text-anchor="middle">router has internet</text>
-  <text x="680" y="60" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle">Step 4</text>
+  <!-- STEP 5: WAN LED green = done -->
+  <circle cx="714" cy="200" r="40" fill="#0d1e16" stroke="#00E5A0" stroke-width="2.5"/>
+  <text x="714" y="182" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">WAN LED</text>
+  <circle cx="714" cy="200" r="14" fill="#00E5A0" opacity=".2" stroke="#00E5A0" stroke-width="1.5"/>
+  <circle cx="714" cy="200" r="7" fill="#00E5A0"/>
+  <text x="714" y="222" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">SOLID GREEN</text>
+  <text x="714" y="256" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Connected ✓</text>
+  <text x="714" y="274" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">router has internet</text>
+  <text x="714" y="154" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Step 4</text>
 
   <!-- Warning note -->
-  <rect x="30" y="158" width="720" height="16" fill="#1a1400" rx="3" stroke="#92400e" stroke-width="1" opacity=".7"/>
-  <text x="390" y="169" fill="#f59e0b" font-size="8" font-family="monospace" text-anchor="middle">⚠  Never power the router on before the modem's Online LED is solid — the router will fail to get an IP address</text>
+  <rect x="24" y="310" width="752" height="48" fill="#1a1400" rx="6" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="330" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Warning</text>
+  <text x="400" y="350" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Never power on the router before the modem's Online LED is solid — router will fail to get an IP address</text>
+
+  <!-- Common mistakes -->
+  <rect x="24" y="372" width="752" height="38" fill="#0d1e16" rx="6" stroke="#2a5236"/>
+  <text x="40" y="390" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Common mistake:</text>
+  <text x="190" y="390" fill="#D4EAD8" font-size="14" font-family="monospace">Powering on both at once → router can't register with ISP → no internet</text>
+  <text x="40" y="404" fill="#7FB09A" font-size="13" font-family="monospace">Fix: fully unplug, wait 30 seconds, then follow the sequence above</text>
 </svg>

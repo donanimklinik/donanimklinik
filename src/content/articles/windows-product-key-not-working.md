@@ -31,6 +31,8 @@ A Windows product key that does not work has a specific reason for failing — a
 
 According to Microsoft's activation documentation, the most effective first step is to note the exact error code displayed after the rejection. Without it, troubleshooting is guesswork.
 
+![Windows product key types: OEM tied to one PC, Retail transferable, Volume license for organizations, Digital license via Microsoft account](/images/windows-product-key-types.svg)
+
 ## Read the error code first
 
 When Windows rejects a product key, it displays an error code in the activation window. The most common codes and their meanings:

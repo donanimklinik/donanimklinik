@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Canon printer not connecting to WiFi: use Wireless LAN Setup in printer menu or Canon PRINT app on phone to connect printer to WiFi network">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Canon Printer — WiFi Connection Guide</text>
+  <line x1="20" y1="44" x2="780" y2="44" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Method 1: Printer Menu -->
+  <rect x="20" y="56" width="370" height="230" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="205" y="80" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Method 1 — Printer Menu</text>
+  <line x1="36" y1="90" x2="374" y2="90" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="44" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="70" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">LAN settings → Wireless LAN</text>
+  <text x="70" y="135" fill="#A8C4B0" font-size="13" font-family="monospace">Printer display → Setup → LAN Settings</text>
+
+  <text x="44" y="162" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="70" y="162" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Wireless LAN Setup Wizard</text>
+  <text x="70" y="181" fill="#A8C4B0" font-size="13" font-family="monospace">Select your WiFi network name (SSID)</text>
+
+  <text x="44" y="208" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="70" y="208" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Enter WiFi password</text>
+  <text x="70" y="227" fill="#A8C4B0" font-size="13" font-family="monospace">Use printer keypad or scroll to characters</text>
+
+  <rect x="36" y="248" width="338" height="26" fill="#0a1f14" rx="6" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="205" y="265" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Blue WiFi light = connected ✓</text>
+
+  <!-- Method 2: Canon PRINT App -->
+  <rect x="410" y="56" width="370" height="230" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="595" y="80" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Method 2 — Canon PRINT App</text>
+  <line x1="426" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="434" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="460" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Install Canon PRINT app</text>
+  <text x="460" y="135" fill="#A8C4B0" font-size="13" font-family="monospace">Available for iOS and Android</text>
+
+  <text x="434" y="162" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="460" y="162" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Register printer in app</text>
+  <text x="460" y="181" fill="#A8C4B0" font-size="13" font-family="monospace">App detects nearby printer automatically</text>
+
+  <text x="434" y="208" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="460" y="208" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Share WiFi credentials via app</text>
+  <text x="460" y="227" fill="#A8C4B0" font-size="13" font-family="monospace">App sends WiFi info directly to printer</text>
+
+  <rect x="426" y="248" width="338" height="26" fill="#0a1f14" rx="6" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="595" y="265" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Easiest method — no keypad needed ✓</text>
+
+  <!-- Troubleshooting tips -->
+  <rect x="20" y="302" width="370" height="100" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="205" y="326" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Common Problems</text>
+  <line x1="36" y1="336" x2="374" y2="336" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="358" fill="#D4EAD8" font-size="14" font-family="monospace">5 GHz only router → enable 2.4 GHz band</text>
+  <text x="36" y="378" fill="#D4EAD8" font-size="14" font-family="monospace">Wrong password → check caps lock, symbols</text>
+  <text x="36" y="396" fill="#A8C4B0" font-size="13" font-family="monospace">Too far from router → move printer closer during setup</text>
+
+  <!-- Reset note -->
+  <rect x="410" y="302" width="370" height="100" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="595" y="326" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Reset WiFi Settings</text>
+  <line x1="426" y1="336" x2="764" y2="336" stroke="#1e3a22" stroke-width="1"/>
+  <text x="426" y="358" fill="#D4EAD8" font-size="14" font-family="monospace">Hold WiFi button 3 seconds → light flashes</text>
+  <text x="426" y="378" fill="#D4EAD8" font-size="14" font-family="monospace">This clears all WiFi settings completely</text>
+  <text x="426" y="396" fill="#A8C4B0" font-size="13" font-family="monospace">Redo setup from scratch after reset</text>
+</svg>

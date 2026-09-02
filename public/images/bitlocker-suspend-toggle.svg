@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="BitLocker suspended mode: shows how to suspend and re-enable BitLocker via Control Panel or PowerShell — suspended means drive is not encrypted during updates">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#f59e0b"/>
+    </marker>
+    <marker id="arr2" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">BitLocker Suspended Mode — How to Re-Enable</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- State 1: Active -->
+  <rect x="18" y="62" width="220" height="170" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="128" y="92" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">🔒 Active</text>
+  <text x="128" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Fully Protected</text>
+  <text x="128" y="140" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">TPM verifies boot</text>
+  <text x="128" y="160" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Data is encrypted</text>
+  <text x="128" y="180" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Normal operation</text>
+  <text x="128" y="204" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Status: On ✓</text>
+
+  <!-- Arrow Suspend -->
+  <line x1="240" y1="130" x2="312" y2="130" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arr)"/>
+  <text x="276" y="118" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Suspend</text>
+
+  <!-- State 2: Suspended -->
+  <rect x="314" y="62" width="172" height="170" fill="#160e00" rx="10" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="92" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">⏸ Suspended</text>
+  <text x="400" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Paused Protection</text>
+  <text x="400" y="140" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">No PIN at boot</text>
+  <text x="400" y="160" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Data still encrypted</text>
+  <text x="400" y="180" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">Safe for updates</text>
+  <text x="400" y="204" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Status: Suspended ⚠</text>
+
+  <!-- Arrow Resume -->
+  <line x1="488" y1="130" x2="560" y2="130" stroke="#00E5A0" stroke-width="2.5" marker-end="url(#arr2)"/>
+  <text x="524" y="118" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Resume</text>
+
+  <!-- State 3: Active again -->
+  <rect x="562" y="62" width="220" height="170" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="672" y="92" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">🔒 Re-enabled</text>
+  <text x="672" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Fully Protected</text>
+  <text x="672" y="140" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">TPM re-seals</text>
+  <text x="672" y="160" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">New boot state saved</text>
+  <text x="672" y="180" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Auto on next boot</text>
+  <text x="672" y="204" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Status: On ✓</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="252" x2="760" y2="252" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- How to re-enable section -->
+  <text x="400" y="278" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Commands to Suspend and Resume BitLocker</text>
+
+  <!-- Control Panel method -->
+  <rect x="18" y="292" width="370" height="114" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="203" y="316" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Control Panel Method</text>
+  <text x="203" y="338" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Control Panel → System and Security</text>
+  <text x="203" y="358" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">→ BitLocker Drive Encryption</text>
+  <text x="203" y="378" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Click "Suspend Protection"</text>
+  <text x="203" y="398" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">or "Resume Protection"</text>
+
+  <!-- PowerShell method -->
+  <rect x="412" y="292" width="370" height="114" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="597" y="316" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">PowerShell Method (Admin)</text>
+  <text x="597" y="340" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Suspend:</text>
+  <text x="597" y="358" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Suspend-BitLocker -MountPoint C:</text>
+  <text x="597" y="380" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Resume:</text>
+  <text x="597" y="398" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Resume-BitLocker -MountPoint C:</text>
+</svg>

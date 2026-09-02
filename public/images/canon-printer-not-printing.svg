@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Canon printer not printing: check ink levels and print head, run nozzle check from printer utility, clear print queue in Windows, and ensure Canon driver is installed correctly">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="460" fill="#091510" rx="12"/>
+  <rect width="800" height="460" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Canon Printer Not Printing — Diagnosis Checklist</text>
+  <line x1="20" y1="44" x2="780" y2="44" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Card 1: Ink Levels -->
+  <rect x="20" y="56" width="178" height="210" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="109" y="80" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">① Ink Levels</text>
+  <line x1="36" y1="90" x2="182" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="109" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Open Canon IJ</text>
+  <text x="109" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">utility or check</text>
+  <text x="109" y="152" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">printer display</text>
+  <text x="109" y="178" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Any empty?</text>
+  <text x="109" y="197" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Canon stops ALL</text>
+  <text x="109" y="214" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">printing if any</text>
+  <text x="109" y="231" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">ink is low</text>
+  <text x="109" y="254" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">→ Replace cartridge</text>
+
+  <!-- Card 2: Nozzle Check -->
+  <rect x="214" y="56" width="178" height="210" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="303" y="80" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">② Nozzle Check</text>
+  <line x1="230" y1="90" x2="376" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="303" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Canon IJ Utility</text>
+  <text x="303" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">→ Maintenance</text>
+  <text x="303" y="152" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">→ Nozzle Check</text>
+  <text x="303" y="178" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Lines missing?</text>
+  <text x="303" y="197" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Run Head Cleaning</text>
+  <text x="303" y="214" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">1–3 times until</text>
+  <text x="303" y="231" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">pattern is solid</text>
+  <text x="303" y="254" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">→ Then re-check</text>
+
+  <!-- Card 3: Print Queue -->
+  <rect x="408" y="56" width="178" height="210" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="497" y="80" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">③ Print Queue</text>
+  <line x1="424" y1="90" x2="570" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="497" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Stuck job blocks</text>
+  <text x="497" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">all new prints</text>
+  <text x="497" y="158" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Open queue →</text>
+  <text x="497" y="175" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Cancel All Docs</text>
+  <text x="497" y="200" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">services.msc →</text>
+  <text x="497" y="217" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">Print Spooler →</text>
+  <text x="497" y="234" fill="#4ade80" font-size="13" font-family="monospace" text-anchor="middle">Restart</text>
+  <text x="497" y="254" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">→ Clears stuck jobs</text>
+
+  <!-- Card 4: Driver -->
+  <rect x="602" y="56" width="178" height="210" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="691" y="80" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">④ Driver Reinstall</text>
+  <line x1="618" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="691" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Remove Canon</text>
+  <text x="691" y="133" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">from Add/Remove</text>
+  <text x="691" y="152" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Programs first</text>
+  <text x="691" y="178" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">canon.com/support</text>
+  <text x="691" y="195" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Download latest</text>
+  <text x="691" y="212" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">driver for model</text>
+  <text x="691" y="231" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Reinstall fresh</text>
+  <text x="691" y="254" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">→ Fixes most issues ✓</text>
+
+  <!-- Error Light Guide -->
+  <rect x="20" y="282" width="760" height="90" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="306" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Canon Error Light Guide — Count the Orange Blinks</text>
+  <line x1="36" y1="316" x2="764" y2="316" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="340" fill="#D4EAD8" font-size="14" font-family="monospace">2 blinks = no paper loaded</text>
+  <text x="36" y="360" fill="#D4EAD8" font-size="14" font-family="monospace">4 blinks = cartridge not installed</text>
+  <text x="420" y="340" fill="#D4EAD8" font-size="14" font-family="monospace">7 blinks = ink absorber full</text>
+  <text x="420" y="360" fill="#D4EAD8" font-size="14" font-family="monospace">13 blinks = cartridge wrong position</text>
+
+  <!-- Reset note -->
+  <rect x="20" y="388" width="760" height="56" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="410" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Quick Reset</text>
+  <text x="400" y="432" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Hold Stop/Reset button for 5 seconds — clears most error states and restarts print engine</text>
+</svg>

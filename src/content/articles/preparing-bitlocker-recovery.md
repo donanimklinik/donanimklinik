@@ -21,6 +21,8 @@ The "Preparing BitLocker Recovery" message appears briefly at startup before Win
 
 The message typically displays for a few seconds, then the screen changes to the standard BitLocker recovery screen with the Key ID and the 48-digit entry field.
 
+![BitLocker preparation checklist: save recovery key in 3 places before encrypting — Microsoft account, USB drive, and printed copy](/images/bitlocker-preparation-checklist.svg)
+
 ## What triggers this screen
 
 According to Microsoft's BitLocker recovery documentation, BitLocker enters recovery mode when something changes in the system's startup environment that the TPM (Trusted Platform Module) cannot verify. Common causes include:

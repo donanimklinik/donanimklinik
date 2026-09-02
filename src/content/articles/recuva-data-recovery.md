@@ -33,6 +33,8 @@ Recuva is a free file recovery tool developed by Piriform. When a file is delete
 
 Before opening Recuva, stop using the drive you are trying to recover from. Every write operation — including saving new files, installing software, or even browsing the web if the drive is your system drive — reduces the chance of successful recovery.
 
+![Recuva scan guide: Recuva window with color-coded dots — green Excellent means high recovery chance, orange Poor means partial, red Overwritten means gone](/images/recuva-scan-guide.svg)
+
 ## Step 1 — Download and install Recuva
 
 Download Recuva from the official Piriform website. The free version is fully functional — the paid version adds automatic updates and virtual hard drive support, which most users do not need.

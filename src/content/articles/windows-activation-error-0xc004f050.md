@@ -31,6 +31,8 @@ Error code **0xC004F050** appears when Windows cannot accept the product key you
 
 According to Microsoft's activation error documentation, this error has a small number of causes, each with a specific resolution.
 
+![Windows activation error 0xC004F050: invalid product key — check for typos, confirm key matches Windows edition, avoid grey-market keys](/images/activation-error-0xc004f050.svg)
+
 ## What causes error 0xC004F050
 
 **The product key was typed incorrectly.** A 25-character Windows product key contains only letters and digits, but several characters are visually similar: the digit `0` and the letter `O`, the digit `1` and the letters `I` or `L`. A single wrong character produces this error.

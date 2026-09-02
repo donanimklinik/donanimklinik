@@ -22,6 +22,8 @@ Error code **0xC004C008** appears with the message: "The activation server deter
 
 The error is distinct from key entry mistakes or network problems. The key reached Microsoft's servers successfully; the servers blocked it.
 
+![Windows activation error 0xC004C008: key exceeded limit, phone activation with slui 4 or buy new genuine key](/images/activation-error-0xc004c008.svg)
+
 ## What causes 0xC004C008
 
 **The product key exceeded its activation limit.** Retail Windows licences are typically licensed for one device at a time. If the same key is used to activate Windows on more devices than the licence permits — including transfers that were not properly deactivated on the previous device — Microsoft's servers block further activations.

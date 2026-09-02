@@ -22,6 +22,8 @@ When files disappear — deleted by accident, lost after a format, or made inacc
 
 The most important rule applies before opening any tool: stop writing new data to the drive. Every file you save overwrites the space where deleted data may still exist.
 
+![Data recovery software comparison: Recuva free start-here, Disk Drill free 500MB good UI, PhotoRec open source, R-Studio professional paid](/images/data-recovery-software-comparison.svg)
+
 ## Windows File Recovery — Microsoft's official tool
 
 **Best for:** Recently deleted files on healthy drives and formatted drives

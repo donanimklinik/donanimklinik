@@ -31,6 +31,8 @@ When Outlook send and receive is not working, no email can be sent or received â
 
 According to Microsoft's Outlook troubleshooting documentation, a complete send and receive failure is usually caused by one of three things: Outlook is in offline mode, the connection to the mail server is blocked or unavailable, or the Outlook profile has become corrupted.
 
+![Outlook send receive fix: F9 force sync, disable antivirus email scan, create new Outlook profile to remove corruption](/images/outlook-send-receive-fix.svg)
+
 ## Understanding the Send/Receive function
 
 In Outlook, Send/Receive is the process that synchronizes the local mailbox with the mail server. It sends queued outgoing messages via SMTP, and downloads new incoming messages via IMAP or Exchange ActiveSync.

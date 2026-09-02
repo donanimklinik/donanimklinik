@@ -33,6 +33,8 @@ The **WiFi connected but no internet** error is one of the most common network p
 
 According to Microsoft's Windows networking troubleshooting documentation, this error occurs when your device connects to the router but the router cannot reach the internet, or when the device has incorrect DNS or IP configuration that prevents it from resolving addresses even with a valid connection.
 
+![WiFi no internet diagnosis: decision tree showing all-devices vs single-device issue with 4 fix paths](/images/wifi-no-internet-diagnosis.svg)
+
 ## What causes "WiFi connected but no internet"
 
 The error appears in two distinct scenarios:

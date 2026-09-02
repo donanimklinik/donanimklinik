@@ -33,6 +33,8 @@ A laptop that can see Wi-Fi networks in the list but fails to connect — showin
 
 According to Microsoft's Windows wireless connectivity troubleshooting documentation, the most common causes are corrupted saved network credentials, an incorrectly configured wireless adapter, and a damaged TCP/IP or Winsock configuration.
 
+![Laptop WiFi fix steps: Airplane Mode check, Forget and reconnect, Update driver, Reset TCP/IP](/images/laptop-wifi-fix-steps.svg)
+
 ## What causes a laptop to not connect to Wi-Fi
 
 The specific failure mode matters:

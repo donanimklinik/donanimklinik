@@ -22,6 +22,8 @@ Hard drives give warnings before they fail completely. Recognising those warning
 
 SSDs fail differently from traditional hard drives (HDDs). This article focuses primarily on HDDs, which have moving parts and exhibit more predictable failure patterns. SSD-specific failure signs are noted where they differ.
 
+![Hard drive failure timeline: 4 stages from Early Warning (clicking, slowness) through Degrading, Critical, to Drive Dead](/images/hard-drive-failure-timeline.svg)
+
 ## Warning signs of hard drive failure
 
 ### Unusual sounds

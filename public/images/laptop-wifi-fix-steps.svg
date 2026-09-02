@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="Laptop won't connect to WiFi: step by step fix — check airplane mode, forget and reconnect network, update WiFi driver, reset TCP/IP stack">
+  <defs>
+    <pattern id="g3" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+    <marker id="a3" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+  </defs>
+  <rect width="800" height="280" fill="#0A130E" rx="12"/>
+  <rect width="800" height="280" fill="url(#g3)" rx="12"/>
+  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">LAPTOP WON'T CONNECT TO WIFI — STEP-BY-STEP FIX</text>
+
+  <!-- Step 1 -->
+  <rect x="20" y="36" width="168" height="200" fill="#0d1810" rx="10" stroke="#1e3a22" stroke-width="1.5"/>
+  <circle cx="104" cy="62" r="18" fill="#0A130E" stroke="#00E5A0" stroke-width="2"/>
+  <text x="104" y="68" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">1</text>
+  <text x="104" y="96" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Airplane Mode</text>
+  <line x1="36" y1="108" x2="172" y2="108" stroke="#1e3a22" stroke-width="1"/>
+  <text x="104" y="128" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Toggle ON then</text>
+  <text x="104" y="144" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">OFF in taskbar</text>
+  <text x="104" y="166" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Also check the</text>
+  <text x="104" y="181" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">physical WiFi</text>
+  <text x="104" y="196" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">switch (Fn + F2)</text>
+  <rect x="36" y="214" width="136" height="18" fill="#0d1a12" rx="4" stroke="#00E5A0" stroke-width="1"/>
+  <text x="104" y="227" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">Fixes 30% of cases</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="192" y1="136" x2="210" y2="136" stroke="#1e3a22" stroke-width="2" marker-end="url(#a3)"/>
+
+  <!-- Step 2 -->
+  <rect x="214" y="36" width="168" height="200" fill="#0d1810" rx="10" stroke="#1e3a22" stroke-width="1.5"/>
+  <circle cx="298" cy="62" r="18" fill="#0A130E" stroke="#00E5A0" stroke-width="2"/>
+  <text x="298" y="68" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">2</text>
+  <text x="298" y="96" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Forget &amp; Reconnect</text>
+  <line x1="230" y1="108" x2="366" y2="108" stroke="#1e3a22" stroke-width="1"/>
+  <text x="298" y="128" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">WiFi Settings →</text>
+  <text x="298" y="144" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Forget network</text>
+  <text x="298" y="166" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Reconnect fresh</text>
+  <text x="298" y="181" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">and re-enter</text>
+  <text x="298" y="196" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">password</text>
+  <rect x="230" y="214" width="136" height="18" fill="#0d1a12" rx="4" stroke="#00E5A0" stroke-width="1"/>
+  <text x="298" y="227" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">Clears bad profile</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="386" y1="136" x2="404" y2="136" stroke="#1e3a22" stroke-width="2" marker-end="url(#a3)"/>
+
+  <!-- Step 3 -->
+  <rect x="408" y="36" width="168" height="200" fill="#0d1810" rx="10" stroke="#1e3a22" stroke-width="1.5"/>
+  <circle cx="492" cy="62" r="18" fill="#0A130E" stroke="#00E5A0" stroke-width="2"/>
+  <text x="492" y="68" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">3</text>
+  <text x="492" y="96" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Update Driver</text>
+  <line x1="424" y1="108" x2="560" y2="108" stroke="#1e3a22" stroke-width="1"/>
+  <text x="492" y="128" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Device Manager →</text>
+  <text x="492" y="144" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Network Adapters</text>
+  <text x="492" y="166" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Right-click WiFi</text>
+  <text x="492" y="181" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">adapter → Update</text>
+  <text x="492" y="196" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">driver</text>
+  <rect x="424" y="214" width="136" height="18" fill="#0d1a12" rx="4" stroke="#00E5A0" stroke-width="1"/>
+  <text x="492" y="227" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">Fixes driver bugs</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="580" y1="136" x2="598" y2="136" stroke="#1e3a22" stroke-width="2" marker-end="url(#a3)"/>
+
+  <!-- Step 4 -->
+  <rect x="602" y="36" width="178" height="200" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="2"/>
+  <circle cx="691" cy="62" r="18" fill="#0A130E" stroke="#00E5A0" stroke-width="2"/>
+  <text x="691" y="68" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">4</text>
+  <text x="691" y="96" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Reset TCP/IP</text>
+  <line x1="618" y1="108" x2="764" y2="108" stroke="#1e3a22" stroke-width="1"/>
+  <text x="691" y="124" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">CMD as Admin:</text>
+  <text x="691" y="144" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">netsh int ip reset</text>
+  <text x="691" y="160" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">netsh winsock</text>
+  <text x="691" y="175" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">reset</text>
+  <text x="691" y="191" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Restart after</text>
+  <rect x="618" y="214" width="148" height="18" fill="#0d1a12" rx="4" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="691" y="227" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle" font-weight="bold">Full stack reset ✓</text>
+
+  <!-- Bottom note -->
+  <rect x="20" y="248" width="760" height="24" fill="#0d1810" rx="6" stroke="#1e3a22"/>
+  <text x="400" y="264" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">If Step 4 fails: run Windows Troubleshooter → right-click network icon → Troubleshoot Problems</text>
+</svg>
