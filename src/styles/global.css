@@ -995,24 +995,26 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
 }
 .article-page-hero .wrap { position: relative; z-index: 1; }
 
-/* Full-page ambient glow (category-colored) */
-body.has-glow { background-color: #0D1812; }
-
-.page-bg-glow { position: fixed; border-radius: 50%; pointer-events: none; z-index: 0; }
-
-/* Top orb — concentrated, visible header glow */
-.page-bg-glow--top {
-  top: -180px; left: 50%; transform: translateX(-50%);
-  width: 1000px; height: 750px;
-  filter: blur(110px);
-  opacity: 0.28;
+/* ── Article page ambient colour ────────────────────────────────────
+   No blobs. Background-color shifts the page "temperature";
+   background-image adds a barely-visible top wash of the accent colour.
+   Opacity is kept low on purpose: mood, not spotlight.
+──────────────────────────────────────────────────────────────────── */
+body.cat-computers {
+  background-color: #100D0D;
+  background-image: linear-gradient(170deg, rgba(240,85,58,0.08) 0%, transparent 42%);
 }
-/* Mid orb — large, diffuse, coats the reading area */
-.page-bg-glow--mid {
-  top: 20vh; left: 50%; transform: translateX(-50%);
-  width: 1600px; height: 1100px;
-  filter: blur(160px);
-  opacity: 0.13;
+body.cat-networking {
+  background-color: #0A0F14;
+  background-image: linear-gradient(170deg, rgba(43,179,224,0.08) 0%, transparent 42%);
+}
+body.cat-software {
+  background-color: #0B1410;
+  background-image: linear-gradient(170deg, rgba(121,240,192,0.06) 0%, transparent 42%);
+}
+body.cat-peripherals {
+  background-color: #13100A;
+  background-image: linear-gradient(170deg, rgba(251,176,59,0.08) 0%, transparent 42%);
 }
 .page-breadcrumb {
   font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-faint);
