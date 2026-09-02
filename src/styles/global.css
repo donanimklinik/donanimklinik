@@ -1001,8 +1001,8 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
    Opacity intentionally low — mood shift, not spotlight.
 ──────────────────────────────────────────────────────────────────── */
 body.cat-computers {
-  background-color: #0F0C0E;
-  background-image: linear-gradient(155deg, rgba(185,30,55,0.11) 0%, rgba(185,30,55,0.05) 55%, rgba(185,30,55,0.018) 100%);
+  background-color: #110B0D;
+  background-image: linear-gradient(155deg, rgba(200,30,80,0.16) 0%, rgba(200,30,80,0.07) 50%, rgba(200,30,80,0.025) 100%);
   background-attachment: fixed;
 }
 body.cat-networking {
