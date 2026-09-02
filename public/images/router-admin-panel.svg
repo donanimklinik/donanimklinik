@@ -1,101 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 210" role="img" aria-label="How to access router admin panel: open a browser, type 192.168.1.1 in the address bar, and log in with admin credentials">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="How to access router admin panel: open a browser, type 192.168.1.1 in the address bar, and log in with admin credentials">
   <defs>
     <pattern id="agrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.8"/>
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
     <marker id="aarr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <polygon points="0 0, 8 4, 0 8" fill="#00E5A0"/>
+      <polygon points="0 0, 8 4, 0 8" fill="#00E5A0" opacity=".8"/>
     </marker>
   </defs>
 
-  <rect width="780" height="210" fill="#0A130E" rx="10"/>
-  <rect width="780" height="210" fill="url(#agrid)" rx="10"/>
+  <rect width="800" height="420" fill="#091510" rx="10"/>
+  <rect width="800" height="420" fill="url(#agrid)" rx="10"/>
 
-  <text x="390" y="22" fill="#6B7F72" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">HOW TO ACCESS ROUTER SETTINGS</text>
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">How to Access Router Admin Panel</text>
+  <text x="400" y="58" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Browser → router IP → login → full control of all settings</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
 
-  <!-- Step 1: Browser -->
-  <rect x="20" y="38" width="200" height="140" fill="#111e14" rx="8" stroke="#1e3a22" stroke-width="1.5"/>
+  <!-- Step 1: Browser with address bar -->
+  <rect x="24" y="82" width="222" height="200" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
   <!-- Browser chrome -->
-  <rect x="20" y="38" width="200" height="28" fill="#0d1810" rx="8"/>
-  <rect x="20" y="52" width="200" height="14" fill="#0d1810"/>
+  <rect x="24" y="82" width="222" height="34" fill="#0a1509" rx="8"/>
+  <rect x="24" y="106" width="222" height="10" fill="#0a1509"/>
   <!-- Traffic lights -->
-  <circle cx="36" cy="52" r="4" fill="#1e3a22"/>
-  <circle cx="50" cy="52" r="4" fill="#1e3a22"/>
-  <circle cx="64" cy="52" r="4" fill="#1e3a22"/>
+  <circle cx="42" cy="99" r="5" fill="#ef4444" opacity=".5"/>
+  <circle cx="58" cy="99" r="5" fill="#f59e0b" opacity=".5"/>
+  <circle cx="74" cy="99" r="5" fill="#00E5A0" opacity=".5"/>
   <!-- Address bar -->
-  <rect x="78" y="44" width="130" height="16" fill="#0A130E" rx="3" stroke="#243d28" stroke-width="1"/>
-  <text x="143" y="55" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle">192.168.1.1</text>
-  <!-- Page content area -->
-  <rect x="28" y="70" width="184" height="100" fill="#0A130E" rx="3"/>
-  <!-- Login form -->
-  <text x="120" y="92" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Router Login</text>
-  <rect x="44" y="100" width="152" height="16" fill="#0d1810" rx="3" stroke="#1e3a22"/>
-  <text x="120" y="112" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Username: admin</text>
-  <rect x="44" y="122" width="152" height="16" fill="#0d1810" rx="3" stroke="#1e3a22"/>
-  <text x="120" y="134" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Password: ••••••••</text>
-  <rect x="72" y="145" width="96" height="18" fill="#00E5A0" rx="3" opacity="0.85"/>
-  <text x="120" y="157" fill="#0A130E" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">Log In</text>
+  <rect x="90" y="88" width="144" height="22" fill="#091510" rx="3" stroke="#2a5236" stroke-width="1"/>
+  <text x="162" y="103" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">192.168.1.1</text>
+  <!-- Login form in page -->
+  <rect x="32" y="124" width="206" height="150" fill="#091510" rx="3"/>
+  <text x="135" y="148" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Router Login</text>
+  <line x1="34" y1="156" x2="234" y2="156" stroke="#1e3a22" stroke-width="1"/>
+  <rect x="46" y="164" width="172" height="22" fill="#0d1e16" rx="3" stroke="#1e3a22"/>
+  <text x="132" y="179" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Username: admin</text>
+  <rect x="46" y="192" width="172" height="22" fill="#0d1e16" rx="3" stroke="#1e3a22"/>
+  <text x="132" y="207" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Password: ••••••••</text>
+  <rect x="78" y="222" width="114" height="26" fill="#00E5A0" rx="4" opacity="0.9"/>
+  <text x="135" y="239" fill="#091510" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Log In</text>
   <!-- Step label -->
-  <text x="120" y="192" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle">① Open browser</text>
+  <text x="135" y="298" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">① Open browser</text>
+  <text x="135" y="316" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Type 192.168.1.1</text>
+  <text x="135" y="334" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">in address bar</text>
 
   <!-- Arrow 1 -->
-  <line x1="228" y1="115" x2="288" y2="115" stroke="#00E5A0" stroke-width="2" marker-end="url(#aarr)" opacity="0.7"/>
-  <text x="258" y="108" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">connects to</text>
+  <line x1="250" y1="183" x2="296" y2="183" stroke="#00E5A0" stroke-width="2" marker-end="url(#aarr)" opacity="0.8"/>
+  <text x="273" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">connects</text>
 
   <!-- Router box -->
-  <rect x="292" y="38" width="180" height="140" fill="#111e14" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="300" y="82" width="200" height="200" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Antennas -->
-  <line x1="335" y1="65" x2="332" y2="45" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="332" cy="43" r="2.5" fill="#3b82f6"/>
-  <line x1="382" y1="65" x2="382" y2="43" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="382" cy="41" r="2.5" fill="#3b82f6"/>
-  <line x1="429" y1="65" x2="432" y2="45" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="432" cy="43" r="2.5" fill="#3b82f6"/>
+  <line x1="342" y1="112" x2="339" y2="88" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="339" cy="86" r="4" fill="#3b82f6"/>
+  <line x1="400" y1="112" x2="400" y2="86" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="400" cy="84" r="4" fill="#3b82f6"/>
+  <line x1="458" y1="112" x2="461" y2="88" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="461" cy="86" r="4" fill="#3b82f6"/>
   <!-- Router body -->
-  <rect x="306" y="65" width="152" height="56" fill="#0d1810" rx="4" stroke="#3b82f6"/>
-  <circle cx="320" cy="78" r="3.5" fill="#00E5A0" opacity="0.9"/>
-  <circle cx="334" cy="78" r="3.5" fill="#3b82f6" opacity="0.8"/>
-  <circle cx="348" cy="78" r="3.5" fill="#3b82f6" opacity="0.5"/>
-  <circle cx="362" cy="78" r="3.5" fill="#00E5A0" opacity="0.3"/>
+  <rect x="316" y="112" width="168" height="64" fill="#091510" rx="4" stroke="#3b82f6"/>
+  <!-- LEDs -->
+  <circle cx="332" cy="128" r="5" fill="#00E5A0" opacity="0.9"/>
+  <circle cx="350" cy="128" r="5" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="368" cy="128" r="5" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="386" cy="128" r="5" fill="#00E5A0" opacity="0.3"/>
+  <text x="338" y="148" fill="#A8C4B0" font-size="12" font-family="monospace">PWR  INT  2.4G  5G</text>
   <!-- Port row -->
-  <rect x="312" y="96" width="140" height="14" fill="#0A130E" rx="2" stroke="#1e3a22"/>
-  <rect x="316" y="98" width="20" height="10" fill="#1e3a22" rx="1"/>
-  <rect x="340" y="98" width="20" height="10" fill="#1e3a22" rx="1"/>
-  <rect x="364" y="98" width="20" height="10" fill="#1e3a22" rx="1"/>
-  <rect x="388" y="98" width="20" height="10" fill="#3b82f6" rx="1" opacity="0.5"/>
+  <rect x="320" y="158" width="156" height="16" fill="#091510" rx="2" stroke="#1e3a22"/>
+  <rect x="324" y="160" width="24" height="12" fill="#1e3a22" rx="1"/>
+  <rect x="352" y="160" width="24" height="12" fill="#1e3a22" rx="1"/>
+  <rect x="380" y="160" width="24" height="12" fill="#1e3a22" rx="1"/>
+  <rect x="408" y="160" width="24" height="12" fill="#3b82f6" rx="1" opacity="0.6"/>
   <!-- Label -->
-  <text x="382" y="140" fill="#93c5fd" font-size="10" font-family="monospace" text-anchor="middle">WiFi Router</text>
+  <text x="400" y="198" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">WiFi Router</text>
   <!-- IP label -->
-  <rect x="315" y="148" width="152" height="18" fill="#0A130E" rx="3" stroke="#243d28"/>
-  <text x="391" y="161" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle">IP: 192.168.1.1</text>
-  <text x="382" y="192" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle">② Router responds</text>
+  <rect x="318" y="208" width="164" height="24" fill="#091510" rx="3" stroke="#2a5236"/>
+  <text x="400" y="224" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">IP: 192.168.1.1</text>
+  <!-- Step label -->
+  <text x="400" y="298" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">② Router responds</text>
+  <text x="400" y="316" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Serves login page</text>
+  <text x="400" y="334" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">at its gateway IP</text>
 
   <!-- Arrow 2 -->
-  <line x1="480" y1="115" x2="540" y2="115" stroke="#00E5A0" stroke-width="2" marker-end="url(#aarr)" opacity="0.7"/>
-  <text x="510" y="108" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">opens</text>
+  <line x1="504" y1="183" x2="548" y2="183" stroke="#00E5A0" stroke-width="2" marker-end="url(#aarr)" opacity="0.8"/>
+  <text x="526" y="173" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">opens</text>
 
   <!-- Admin Panel result -->
-  <rect x="544" y="38" width="216" height="140" fill="#111e14" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <rect x="552" y="82" width="224" height="200" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.8"/>
   <!-- Panel header -->
-  <rect x="544" y="38" width="216" height="32" fill="#0d1810" rx="8"/>
-  <rect x="544" y="56" width="216" height="14" fill="#0d1810"/>
-  <text x="652" y="58" fill="#00E5A0" font-size="10" font-family="monospace" text-anchor="middle">Router Admin Panel</text>
-  <!-- Nav -->
-  <rect x="554" y="76" width="196" height="90" fill="#0A130E" rx="3"/>
-  <rect x="558" y="80" width="52" height="12" fill="#00E5A0" rx="2" opacity="0.2"/>
-  <text x="584" y="90" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle">Wireless</text>
-  <rect x="614" y="80" width="52" height="12" fill="#1e3a22" rx="2"/>
-  <text x="640" y="90" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Security</text>
-  <rect x="670" y="80" width="52" height="12" fill="#1e3a22" rx="2"/>
-  <text x="696" y="90" fill="#6B7F72" font-size="8" font-family="monospace" text-anchor="middle">Advanced</text>
+  <rect x="552" y="82" width="224" height="34" fill="#0a1f12" rx="8"/>
+  <rect x="552" y="106" width="224" height="10" fill="#0a1f12"/>
+  <text x="664" y="103" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Router Admin Panel</text>
+  <!-- Nav tabs -->
+  <rect x="560" y="124" width="208" height="104" fill="#091510" rx="3"/>
+  <rect x="564" y="128" width="58" height="18" fill="#00E5A0" rx="2" opacity="0.2" stroke="#00E5A0" stroke-width="1"/>
+  <text x="593" y="141" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Wireless</text>
+  <rect x="626" y="128" width="58" height="18" fill="#1e3a22" rx="2"/>
+  <text x="655" y="141" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Security</text>
+  <rect x="688" y="128" width="58" height="18" fill="#1e3a22" rx="2"/>
+  <text x="717" y="141" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Advanced</text>
   <!-- Settings rows -->
-  <rect x="558" y="98" width="186" height="10" fill="#111e14" rx="1"/>
-  <text x="565" y="106" fill="#6B7F72" font-size="7.5" font-family="monospace">SSID (Network Name): MyHomeWiFi</text>
-  <rect x="558" y="112" width="186" height="10" fill="#111e14" rx="1"/>
-  <text x="565" y="120" fill="#6B7F72" font-size="7.5" font-family="monospace">Security: WPA2-Personal</text>
-  <rect x="558" y="126" width="186" height="10" fill="#111e14" rx="1"/>
-  <text x="565" y="134" fill="#6B7F72" font-size="7.5" font-family="monospace">Channel: Auto (6)</text>
-  <rect x="558" y="140" width="186" height="10" fill="#111e14" rx="1"/>
-  <text x="565" y="148" fill="#6B7F72" font-size="7.5" font-family="monospace">DNS: 8.8.8.8 / 8.8.4.4</text>
-  <text x="652" y="192" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle">③ Router settings panel</text>
+  <rect x="564" y="150" width="200" height="16" fill="#0d1e16" rx="2"/>
+  <text x="572" y="162" fill="#A8C4B0" font-size="13" font-family="monospace">SSID: MyHomeWiFi</text>
+  <rect x="564" y="170" width="200" height="16" fill="#0d1e16" rx="2"/>
+  <text x="572" y="182" fill="#A8C4B0" font-size="13" font-family="monospace">Security: WPA2-Personal</text>
+  <rect x="564" y="190" width="200" height="16" fill="#0d1e16" rx="2"/>
+  <text x="572" y="202" fill="#A8C4B0" font-size="13" font-family="monospace">Channel: Auto (6)</text>
+  <rect x="564" y="210" width="200" height="16" fill="#0d1e16" rx="2"/>
+  <text x="572" y="222" fill="#A8C4B0" font-size="13" font-family="monospace">DNS: 8.8.8.8 / 8.8.4.4</text>
+
+  <!-- Step label -->
+  <text x="664" y="298" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">③ Settings panel</text>
+  <text x="664" y="316" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Change WiFi name,</text>
+  <text x="664" y="334" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">password, DNS, etc.</text>
+
+  <!-- Bottom tips -->
+  <rect x="24" y="360" width="752" height="48" fill="#0d1e16" rx="6" stroke="#2a5236"/>
+  <text x="40" y="378" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Common gateway IPs by brand:</text>
+  <text x="40" y="398" fill="#D4EAD8" font-size="14" font-family="monospace">Netgear / Linksys: 192.168.1.1</text>
+  <text x="280" y="398" fill="#D4EAD8" font-size="14" font-family="monospace">TP-Link / D-Link: 192.168.0.1</text>
+  <text x="540" y="398" fill="#D4EAD8" font-size="14" font-family="monospace">Asus: 192.168.1.1 or router.asus.com</text>
 </svg>

@@ -1,51 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Dell BitLocker recovery key: Dell stores key in BIOS TPM or via Microsoft account — check account.microsoft.com first, then Dell TechDirect for enterprise devices">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="Dell BitLocker recovery key: Dell stores key in BIOS TPM or via Microsoft account — check account.microsoft.com first, then Dell TechDirect for enterprise devices">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
+    </marker>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">DELL BITLOCKER RECOVERY KEY — WHERE TO FIND IT</text>
+  <rect width="800" height="440" fill="#091510" rx="12"/>
+  <rect width="800" height="440" fill="url(#g)" rx="12"/>
 
-  <!-- Dell logo area -->
-  <rect x="20" y="40" width="130" height="110" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="85" y="75" fill="#3b82f6" font-size="22" text-anchor="middle">💻</text>
-  <text x="85" y="98" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Dell PC</text>
-  <text x="85" y="116" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">TPM chip stores</text>
-  <text x="85" y="132" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">encryption seal</text>
-  <text x="85" y="148" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Key is elsewhere</text>
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Dell BitLocker Recovery Key — Where to Find It</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
 
-  <!-- Option 1: MS Account -->
-  <rect x="180" y="40" width="180" height="110" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="2"/>
-  <text x="270" y="63" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">① Microsoft Account</text>
-  <text x="270" y="81" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">account.microsoft.com</text>
-  <text x="270" y="97" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Devices → BitLocker</text>
-  <text x="270" y="113" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">recovery keys</text>
-  <text x="270" y="135" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Check here first</text>
-  <text x="270" y="150" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Home/personal PCs</text>
+  <!-- Dell PC source box -->
+  <rect x="18" y="62" width="150" height="160" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="93" y="94" fill="#3b82f6" font-size="30" text-anchor="middle">💻</text>
+  <text x="93" y="120" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Dell PC</text>
+  <text x="93" y="144" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">TPM chip handles</text>
+  <text x="93" y="163" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">encryption seal</text>
+  <text x="93" y="185" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Key stored</text>
+  <text x="93" y="203" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">elsewhere</text>
+
+  <!-- Option 1: MS Account (priority) -->
+  <rect x="192" y="62" width="186" height="160" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="285" y="84" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">① Microsoft Account</text>
+  <text x="285" y="108" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">account.microsoft.com</text>
+  <text x="285" y="130" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Devices → BitLocker</text>
+  <text x="285" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">recovery keys</text>
+  <text x="285" y="176" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Check here first ✓</text>
+  <text x="285" y="198" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Home/personal PCs</text>
+  <line x1="168" y1="142" x2="190" y2="142" stroke="#00E5A0" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arr)"/>
 
   <!-- Option 2: Dell TechDirect -->
-  <rect x="390" y="40" width="190" height="110" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="485" y="63" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">② Dell TechDirect</text>
-  <text x="485" y="81" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">techdirect.dell.com</text>
-  <text x="485" y="97" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Business accounts only</text>
-  <text x="485" y="113" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Search by Service Tag</text>
-  <text x="485" y="135" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle">Enterprise/fleet PCs</text>
-  <text x="485" y="150" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Needs company account</text>
+  <rect x="402" y="62" width="186" height="160" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="495" y="84" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">② Dell TechDirect</text>
+  <text x="495" y="108" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">techdirect.dell.com</text>
+  <text x="495" y="130" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Business accounts only</text>
+  <text x="495" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Search by Service Tag</text>
+  <text x="495" y="176" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle">Enterprise/fleet PCs</text>
+  <text x="495" y="198" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Needs company account</text>
 
-  <!-- Option 3: IT/AD -->
-  <rect x="610" y="40" width="170" height="110" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="695" y="63" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">③ IT / AD</text>
-  <text x="695" y="81" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Domain-joined Dell</text>
-  <text x="695" y="97" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">IT has the key in</text>
-  <text x="695" y="113" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Active Directory</text>
-  <text x="695" y="135" fill="#3b82f6" font-size="12" font-family="monospace" text-anchor="middle">Call IT helpdesk</text>
-  <text x="695" y="150" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Work/school device</text>
+  <!-- Option 3: IT / AD -->
+  <rect x="612" y="62" width="170" height="160" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="697" y="84" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">③ IT / AD</text>
+  <text x="697" y="108" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Domain-joined Dell</text>
+  <text x="697" y="130" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">IT has key stored</text>
+  <text x="697" y="150" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">in Active Directory</text>
+  <text x="697" y="176" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle">Call IT helpdesk</text>
+  <text x="697" y="198" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Work/school device</text>
 
-  <!-- Dell-specific note -->
-  <rect x="20" y="170" width="760" height="72" fill="#0d1810" rx="8" stroke="#1e3a22"/>
-  <text x="400" y="192" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Dell-Specific: Check Your Service Tag</text>
-  <text x="400" y="213" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Service Tag is on the bottom label of your Dell — format: ABC1234</text>
-  <text x="400" y="232" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Dell Support (dell.com/support) uses Service Tag to verify ownership — have it ready when calling</text>
+  <!-- Divider -->
+  <line x1="40" y1="242" x2="760" y2="242" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Dell Service Tag section -->
+  <text x="400" y="268" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Dell-Specific: Your Service Tag</text>
+
+  <rect x="18" y="280" width="760" height="148" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+
+  <rect x="34" y="294" width="350" height="120" fill="#091510" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="209" y="318" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Finding Your Service Tag</text>
+  <text x="209" y="340" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Bottom label of your Dell laptop</text>
+  <text x="209" y="360" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Format: 7 characters (e.g. ABC1234)</text>
+  <text x="209" y="380" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Also: Settings → System → About</text>
+  <text x="209" y="400" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">or dell.com/support to detect it</text>
+
+  <rect x="402" y="294" width="362" height="120" fill="#091510" rx="6" stroke="#00E5A0" stroke-width="1"/>
+  <text x="583" y="318" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Using Service Tag for Support</text>
+  <text x="583" y="340" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Go to dell.com/support</text>
+  <text x="583" y="360" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Enter your Service Tag</text>
+  <text x="583" y="380" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Proves ownership to Dell support</text>
+  <text x="583" y="400" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Have tag ready before calling 1-800-DELL</text>
 </svg>

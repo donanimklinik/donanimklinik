@@ -1,104 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 220" role="img" aria-label="How to connect modem to router: modem's single Ethernet port connects to router's WAN port (yellow), not the LAN ports numbered 1 to 4">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="How to connect modem to router: modem's single Ethernet port connects to router's WAN port (yellow), not the LAN ports numbered 1 to 4">
   <defs>
     <pattern id="pg" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
   </defs>
-  <rect width="780" height="220" fill="#0A130E" rx="10"/>
-  <rect width="780" height="220" fill="url(#pg)" rx="10"/>
-  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">MODEM → ROUTER: WHICH PORTS TO USE</text>
+  <rect width="800" height="420" fill="#091510" rx="10"/>
+  <rect width="800" height="420" fill="url(#pg)" rx="10"/>
 
-  <!-- ═══ MODEM (left) ═══ -->
-  <rect x="30" y="40" width="200" height="140" fill="#111e14" rx="8" stroke="#1e3a22" stroke-width="1.5"/>
-  <text x="130" y="60" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle" letter-spacing="1">MODEM</text>
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Modem → Router: Which Ports to Use</text>
+  <text x="400" y="58" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Modem's Ethernet/LAN out → Router's WAN port (not LAN ports)</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
 
-  <!-- Coax input (top) -->
-  <rect x="110" y="42" width="40" height="12" fill="#0d1810" rx="2" stroke="#2d5a3d"/>
-  <text x="130" y="52" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Coax / Fiber in</text>
-  <!-- from wall arrow -->
-  <text x="130" y="36" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">↑ from wall (ISP)</text>
+  <!-- MODEM (left) -->
+  <rect x="24" y="88" width="218" height="200" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="133" y="114" fill="#D4EAD8" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">MODEM</text>
+
+  <!-- Coax input indicator -->
+  <rect x="113" y="90" width="44" height="14" fill="#0d1e16" rx="2" stroke="#2a5236"/>
+  <text x="135" y="101" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Coax/Fiber in</text>
+  <text x="135" y="82" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">↑ from wall (ISP)</text>
 
   <!-- Modem body LEDs -->
-  <rect x="60" y="75" width="140" height="50" fill="#0d1810" rx="4" stroke="#243d28"/>
-  <circle cx="78" cy="100" r="5" fill="#00E5A0" opacity=".9"/>
-  <text x="78" y="115" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Power</text>
-  <circle cx="108" cy="100" r="5" fill="#00E5A0" opacity=".7"/>
-  <text x="108" y="115" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Online</text>
-  <circle cx="138" cy="100" r="5" fill="#00E5A0" opacity=".5"/>
-  <text x="138" y="115" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">DS/US</text>
-  <circle cx="168" cy="100" r="5" fill="#1e3a22"/>
-  <text x="168" y="115" fill="#4a5e4e" font-size="6.5" font-family="monospace" text-anchor="middle">ETH</text>
+  <rect x="56" y="124" width="150" height="62" fill="#091510" rx="4" stroke="#2a5236"/>
+  <circle cx="76" cy="155" r="7" fill="#00E5A0" opacity=".9"/>
+  <text x="76" y="176" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Power</text>
+  <circle cx="114" cy="155" r="7" fill="#00E5A0" opacity=".7"/>
+  <text x="114" y="176" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Online</text>
+  <circle cx="152" cy="155" r="7" fill="#00E5A0" opacity=".5"/>
+  <text x="152" y="176" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">DS/US</text>
+  <circle cx="190" cy="155" r="7" fill="#1e3a22"/>
+  <text x="190" y="176" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">ETH</text>
 
-  <!-- CORRECT ETH port -->
-  <rect x="88" y="140" width="84" height="26" fill="#0A130E" rx="3" stroke="#00E5A0" stroke-width="2"/>
-  <text x="130" y="151" fill="#00E5A0" font-size="8" font-family="monospace" text-anchor="middle" font-weight="bold">Ethernet / LAN</text>
-  <text x="130" y="161" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">← USE THIS PORT</text>
+  <!-- Correct Ethernet port (highlighted) -->
+  <rect x="86" y="198" width="96" height="34" fill="#091510" rx="3" stroke="#00E5A0" stroke-width="2.5"/>
+  <text x="134" y="213" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Ethernet / LAN</text>
+  <text x="134" y="228" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">← USE THIS PORT</text>
 
-  <!-- ═══ ETHERNET CABLE (middle) ═══ -->
-  <!-- Cable body -->
-  <rect x="238" y="149" width="304" height="8" fill="#3b82f6" rx="2"/>
-  <!-- Connectors -->
-  <rect x="230" y="145" width="12" height="16" fill="#2563eb" rx="2"/>
-  <rect x="538" y="145" width="12" height="16" fill="#2563eb" rx="2"/>
-  <!-- Click tab indicators -->
-  <rect x="234" y="153" width="4" height="4" fill="#1d4ed8" rx="1"/>
-  <rect x="542" y="153" width="4" height="4" fill="#1d4ed8" rx="1"/>
+  <text x="133" y="262" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Single port on most modems</text>
+  <text x="133" y="278" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">May be labeled: LAN, ETH, or</text>
+  <text x="133" y="293" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">just "Ethernet" with RJ-45 icon</text>
 
-  <text x="390" y="140" fill="#3b82f6" font-size="9" font-family="monospace" text-anchor="middle">Standard Ethernet cable (Cat 5e / Cat 6)</text>
-  <text x="390" y="178" fill="#4a5e4e" font-size="8" font-family="monospace" text-anchor="middle">Push firmly until you hear a click at both ends</text>
+  <!-- ETHERNET CABLE (middle) -->
+  <rect x="256" y="225" width="292" height="12" fill="#3b82f6" rx="3"/>
+  <rect x="242" y="218" width="16" height="24" fill="#2563eb" rx="2"/>
+  <rect x="546" y="218" width="16" height="24" fill="#2563eb" rx="2"/>
+  <rect x="248" y="228" width="6" height="6" fill="#1d4ed8" rx="1"/>
+  <rect x="550" y="228" width="6" height="6" fill="#1d4ed8" rx="1"/>
+  <text x="400" y="214" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Standard Ethernet Cable (Cat 5e / Cat 6)</text>
+  <text x="400" y="258" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Push firmly until you hear a click at both ends</text>
 
-  <!-- ═══ ROUTER (right) ═══ -->
-  <rect x="550" y="40" width="200" height="140" fill="#111e14" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- ROUTER (right) -->
+  <rect x="564" y="88" width="212" height="200" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
   <!-- Antennas -->
-  <line x1="580" y1="60" x2="578" y2="42" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="578" cy="40" r="2.5" fill="#3b82f6"/>
-  <line x1="615" y1="60" x2="615" y2="40" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="615" cy="38" r="2.5" fill="#3b82f6"/>
-  <line x1="650" y1="60" x2="652" y2="42" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="652" cy="40" r="2.5" fill="#3b82f6"/>
-  <line x1="685" y1="60" x2="687" y2="42" stroke="#5a9af0" stroke-width="2" stroke-linecap="round"/>
-  <circle cx="687" cy="40" r="2.5" fill="#3b82f6"/>
+  <line x1="600" y1="112" x2="597" y2="90" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="597" cy="88" r="4" fill="#3b82f6"/>
+  <line x1="638" y1="112" x2="638" y2="88" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="638" cy="86" r="4" fill="#3b82f6"/>
+  <line x1="676" y1="112" x2="678" y2="90" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="678" cy="88" r="4" fill="#3b82f6"/>
+  <line x1="714" y1="112" x2="716" y2="90" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="716" cy="88" r="4" fill="#3b82f6"/>
 
-  <text x="650" y="60" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle" letter-spacing="1">ROUTER</text>
+  <text x="670" y="114" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">ROUTER</text>
 
-  <!-- Router body -->
-  <rect x="570" y="70" width="160" height="50" fill="#0d1810" rx="4" stroke="#3b82f6"/>
-  <circle cx="590" cy="88" r="5" fill="#00E5A0" opacity=".9"/>
-  <text x="590" y="105" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Power</text>
-  <circle cx="620" cy="88" r="5" fill="#3b82f6" opacity=".8"/>
-  <text x="620" y="105" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Internet</text>
-  <circle cx="650" cy="88" r="5" fill="#3b82f6" opacity=".5"/>
-  <text x="650" y="105" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">2.4G</text>
-  <circle cx="680" cy="88" r="5" fill="#3b82f6" opacity=".4"/>
-  <text x="680" y="105" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">5G</text>
+  <!-- Router body LEDs -->
+  <rect x="580" y="122" width="180" height="64" fill="#091510" rx="4" stroke="#3b82f6"/>
+  <circle cx="600" cy="148" r="7" fill="#00E5A0" opacity=".9"/>
+  <text x="600" y="168" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Power</text>
+  <circle cx="636" cy="148" r="7" fill="#3b82f6" opacity=".8"/>
+  <text x="636" y="168" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">Internet</text>
+  <circle cx="672" cy="148" r="7" fill="#3b82f6" opacity=".5"/>
+  <text x="672" y="168" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">2.4G</text>
+  <circle cx="708" cy="148" r="7" fill="#3b82f6" opacity=".4"/>
+  <text x="708" y="168" fill="#D4EAD8" font-size="13" font-family="monospace" text-anchor="middle">5G</text>
 
-  <!-- Ports row -->
-  <!-- WAN port (correct, highlighted) -->
-  <rect x="562" y="130" width="28" height="24" fill="#0A130E" rx="3" stroke="#00E5A0" stroke-width="2"/>
-  <text x="576" y="142" fill="#00E5A0" font-size="7" font-family="monospace" text-anchor="middle" font-weight="bold">WAN</text>
-  <text x="576" y="152" fill="#00E5A0" font-size="6" font-family="monospace" text-anchor="middle">✓</text>
+  <!-- WAN port (correct) -->
+  <rect x="572" y="200" width="38" height="32" fill="#091510" rx="3" stroke="#00E5A0" stroke-width="2.5"/>
+  <text x="591" y="214" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">WAN</text>
+  <text x="591" y="228" fill="#00E5A0" font-size="14" text-anchor="middle">✓</text>
 
   <!-- Divider -->
-  <line x1="594" y1="130" x2="594" y2="154" stroke="#1e3a22" stroke-width="1"/>
+  <line x1="614" y1="198" x2="614" y2="234" stroke="#1e3a22" stroke-width="1.5"/>
 
-  <!-- LAN ports 1-4 (wrong, grayed out) -->
-  <rect x="598" y="130" width="22" height="24" fill="#0A130E" rx="2" stroke="#1e3a22"/>
-  <text x="609" y="145" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">LAN 1</text>
-  <rect x="624" y="130" width="22" height="24" fill="#0A130E" rx="2" stroke="#1e3a22"/>
-  <text x="635" y="145" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">LAN 2</text>
-  <rect x="650" y="130" width="22" height="24" fill="#0A130E" rx="2" stroke="#1e3a22"/>
-  <text x="661" y="145" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">LAN 3</text>
-  <rect x="676" y="130" width="22" height="24" fill="#0A130E" rx="2" stroke="#1e3a22"/>
-  <text x="687" y="145" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">LAN 4</text>
+  <!-- LAN ports 1-4 (wrong for modem) -->
+  <rect x="618" y="200" width="30" height="32" fill="#091510" rx="2" stroke="#1e3a22"/>
+  <text x="633" y="218" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">LAN1</text>
+  <rect x="652" y="200" width="30" height="32" fill="#091510" rx="2" stroke="#1e3a22"/>
+  <text x="667" y="218" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">LAN2</text>
+  <rect x="686" y="200" width="30" height="32" fill="#091510" rx="2" stroke="#1e3a22"/>
+  <text x="701" y="218" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">LAN3</text>
+  <rect x="720" y="200" width="30" height="32" fill="#091510" rx="2" stroke="#1e3a22"/>
+  <text x="735" y="218" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">LAN4</text>
 
   <!-- X marks over LAN ports -->
-  <text x="635" y="160" fill="#ef4444" font-size="7.5" font-family="monospace" text-anchor="middle" opacity=".7">✕ Do not use these</text>
+  <text x="686" y="250" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">✕ Do not connect modem here</text>
+  <text x="686" y="266" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">LAN ports = for your devices</text>
+  <text x="686" y="282" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">(PC, TV, game console)</text>
 
-  <!-- Bottom legend -->
-  <rect x="30" y="195" width="12" height="8" fill="#00E5A0" rx="1" opacity=".3" stroke="#00E5A0" stroke-width="1"/>
-  <text x="47" y="202" fill="#6B7F72" font-size="8" font-family="monospace">Correct port</text>
-  <rect x="130" y="195" width="12" height="8" fill="#1e3a22" rx="1" stroke="#1e3a22"/>
-  <text x="147" y="202" fill="#6B7F72" font-size="8" font-family="monospace">Wrong port (for devices, not modem)</text>
-  <line x1="420" y1="196" x2="440" y2="196" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
-  <text x="446" y="202" fill="#6B7F72" font-size="8" font-family="monospace">Ethernet cable</text>
+  <!-- Port summary table -->
+  <rect x="24" y="306" width="752" height="100" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="400" y="328" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Port Summary</text>
+  <line x1="32" y1="336" x2="768" y2="336" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="60" y="358" fill="#A8C4B0" font-size="13" font-family="monospace">Port</text>
+  <text x="200" y="358" fill="#A8C4B0" font-size="13" font-family="monospace">Color</text>
+  <text x="320" y="358" fill="#A8C4B0" font-size="13" font-family="monospace">Use for</text>
+  <text x="580" y="358" fill="#A8C4B0" font-size="13" font-family="monospace">Connect from</text>
+  <line x1="32" y1="364" x2="768" y2="364" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="60" y="384" fill="#00E5A0" font-size="14" font-family="monospace" font-weight="bold">WAN (Internet)</text>
+  <text x="200" y="384" fill="#f59e0b" font-size="14" font-family="monospace">Yellow/blue</text>
+  <text x="320" y="384" fill="#D4EAD8" font-size="14" font-family="monospace">Upstream internet</text>
+  <text x="580" y="384" fill="#00E5A0" font-size="14" font-family="monospace" font-weight="bold">Modem's Ethernet/LAN port</text>
+
+  <text x="60" y="398" fill="#A8C4B0" font-size="13" font-family="monospace">LAN 1–4</text>
+  <text x="200" y="398" fill="#A8C4B0" font-size="13" font-family="monospace">Gray/black</text>
+  <text x="320" y="398" fill="#A8C4B0" font-size="13" font-family="monospace">Wired devices</text>
+  <text x="580" y="398" fill="#A8C4B0" font-size="13" font-family="monospace">PC, TV, game console (Ethernet)</text>
 </svg>

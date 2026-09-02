@@ -1,132 +1,152 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 180" role="img" aria-label="WiFi router setup: 5 steps — position router, connect to modem, open admin panel, set WiFi name and password, connect devices">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="WiFi router setup: 5 steps — position router, connect to modem, open admin panel, set WiFi name and password, connect devices">
   <defs>
     <pattern id="sg" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
     <marker id="sa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-      <polygon points="0 0,8 4,0 8" fill="#00E5A0" opacity=".6"/>
+      <polygon points="0 0,8 4,0 8" fill="#00E5A0" opacity=".8"/>
     </marker>
   </defs>
-  <rect width="780" height="180" fill="#0A130E" rx="10"/>
-  <rect width="780" height="180" fill="url(#sg)" rx="10"/>
-  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">ROUTER SETUP — 5 STEPS</text>
+  <rect width="800" height="420" fill="#091510" rx="10"/>
+  <rect width="800" height="420" fill="url(#sg)" rx="10"/>
 
-  <!-- Step boxes: x positions 20, 168, 316, 464, 612 — width 136 -->
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">WiFi Router Setup — 5 Steps</text>
+  <text x="400" y="58" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Complete setup guide from box to browsing the internet</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
 
+  <!-- Step boxes: 5 equal columns -->
   <!-- STEP 1: Position -->
-  <rect x="20" y="34" width="136" height="128" fill="#0f1f15" rx="7" stroke="#1e3a22" stroke-width="1.2"/>
-  <text x="88" y="52" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">STEP 1</text>
+  <rect x="24" y="82" width="144" height="290" fill="#0d1e16" rx="7" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="96" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">STEP 1</text>
   <!-- House + router icon -->
-  <polygon points="88,62 72,76 72,95 104,95 104,76" fill="none" stroke="#2d5a3d" stroke-width="1.5"/>
-  <rect x="80" y="80" width="16" height="15" fill="#0A130E" stroke="#2d5a3d" stroke-width="1"/>
+  <polygon points="96,128 76,148 76,172 116,172 116,148" fill="none" stroke="#2a5236" stroke-width="1.8"/>
+  <rect x="84" y="155" width="24" height="17" fill="#091510" stroke="#2a5236" stroke-width="1"/>
   <!-- router small -->
-  <rect x="76" y="100" width="24" height="9" fill="#111e14" rx="2" stroke="#3b82f6" stroke-width="1"/>
-  <circle cx="81" cy="104" r="1.5" fill="#00E5A0"/>
-  <line x1="88" y1="100" x2="86" y2="94" stroke="#5a9af0" stroke-width="1.2"/>
-  <line x1="88" y1="100" x2="90" y2="94" stroke="#5a9af0" stroke-width="1.2"/>
-  <text x="88" y="124" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Position</text>
-  <text x="88" y="137" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">Central, elevated</text>
-  <text x="88" y="150" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">away from walls</text>
+  <rect x="78" y="178" width="36" height="14" fill="#0d1e16" rx="3" stroke="#3b82f6" stroke-width="1.2"/>
+  <circle cx="87" cy="185" r="3" fill="#00E5A0"/>
+  <line x1="96" y1="178" x2="93" y2="168" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="96" y1="178" x2="99" y2="168" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="96" y="212" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Position</text>
+  <text x="96" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Central location</text>
+  <text x="96" y="250" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Elevated shelf</text>
+  <text x="96" y="268" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Away from walls</text>
+  <text x="96" y="288" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Open air for</text>
+  <text x="96" y="304" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">ventilation</text>
+  <text x="96" y="328" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">No microwave</text>
+  <text x="96" y="344" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">nearby</text>
 
   <!-- Arrow 1→2 -->
-  <line x1="156" y1="98" x2="168" y2="98" stroke="#00E5A0" stroke-width="1.5" marker-end="url(#sa)" opacity=".5"/>
+  <line x1="168" y1="220" x2="184" y2="220" stroke="#00E5A0" stroke-width="2" marker-end="url(#sa)" opacity=".7"/>
 
   <!-- STEP 2: Connect cable -->
-  <rect x="168" y="34" width="136" height="128" fill="#0f1f15" rx="7" stroke="#1e3a22" stroke-width="1.2"/>
-  <text x="236" y="52" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">STEP 2</text>
-  <!-- Modem + cable + router -->
-  <rect x="176" y="62" width="32" height="22" fill="#0d1810" rx="3" stroke="#2d5a3d"/>
-  <circle cx="183" cy="68" r="2" fill="#00E5A0"/>
-  <circle cx="191" cy="68" r="2" fill="#00E5A0" opacity=".4"/>
-  <text x="192" y="93" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Modem</text>
+  <rect x="188" y="82" width="144" height="290" fill="#0d1e16" rx="7" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="260" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">STEP 2</text>
+  <!-- Modem + cable + router icon -->
+  <rect x="198" y="130" width="42" height="30" fill="#091510" rx="4" stroke="#2a5236"/>
+  <circle cx="211" cy="140" r="4" fill="#00E5A0"/>
+  <circle cx="225" cy="140" r="4" fill="#00E5A0" opacity=".4"/>
+  <text x="219" y="175" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Modem</text>
   <!-- Cable -->
-  <line x1="208" y1="73" x2="252" y2="73" stroke="#3b82f6" stroke-width="2"/>
-  <rect x="206" y="70" width="5" height="6" fill="#3b82f6" rx="1"/>
-  <rect x="252" y="70" width="5" height="6" fill="#3b82f6" rx="1"/>
-  <text x="230" y="66" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Ethernet</text>
+  <line x1="240" y1="145" x2="288" y2="145" stroke="#3b82f6" stroke-width="2.5"/>
+  <rect x="238" y="141" width="6" height="8" fill="#3b82f6" rx="1"/>
+  <rect x="288" y="141" width="6" height="8" fill="#3b82f6" rx="1"/>
+  <text x="264" y="136" fill="#3b82f6" font-size="12" font-family="monospace" text-anchor="middle">Ethernet</text>
   <!-- Router -->
-  <rect x="256" y="62" width="36" height="22" fill="#0d1810" rx="3" stroke="#3b82f6"/>
-  <circle cx="264" cy="68" r="2" fill="#00E5A0"/>
-  <circle cx="272" cy="68" r="2" fill="#3b82f6"/>
-  <text x="274" y="93" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Router</text>
+  <rect x="294" y="130" width="30" height="30" fill="#091510" rx="3" stroke="#3b82f6"/>
+  <circle cx="301" cy="139" r="3" fill="#00E5A0"/>
+  <circle cx="311" cy="139" r="3" fill="#3b82f6"/>
+  <text x="309" y="175" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Router</text>
   <!-- WAN label -->
-  <rect x="256" y="77" width="14" height="7" fill="#3b82f6" rx="1" opacity=".6"/>
-  <text x="263" y="83" fill="#F0F4F1" font-size="5.5" font-family="monospace" text-anchor="middle">WAN</text>
-  <text x="236" y="112" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Connect cable</text>
-  <text x="236" y="125" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">Modem LAN →</text>
-  <text x="236" y="138" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">Router WAN port</text>
+  <rect x="293" y="152" width="20" height="8" fill="#3b82f6" rx="1" opacity=".6"/>
+  <text x="303" y="159" fill="#D4EAD8" font-size="11" font-family="monospace" text-anchor="middle">WAN</text>
+  <text x="260" y="212" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Connect cable</text>
+  <text x="260" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Modem LAN →</text>
+  <text x="260" y="250" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Router WAN port</text>
+  <text x="260" y="272" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Then plug power</text>
+  <text x="260" y="290" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Wait 60 seconds</text>
+  <text x="260" y="310" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">WAN LED = green</text>
+  <text x="260" y="328" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">= internet ready</text>
 
   <!-- Arrow 2→3 -->
-  <line x1="304" y1="98" x2="316" y2="98" stroke="#00E5A0" stroke-width="1.5" marker-end="url(#sa)" opacity=".5"/>
+  <line x1="332" y1="220" x2="348" y2="220" stroke="#00E5A0" stroke-width="2" marker-end="url(#sa)" opacity=".7"/>
 
   <!-- STEP 3: Admin panel -->
-  <rect x="316" y="34" width="136" height="128" fill="#0f1f15" rx="7" stroke="#1e3a22" stroke-width="1.2"/>
-  <text x="384" y="52" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">STEP 3</text>
+  <rect x="352" y="82" width="144" height="290" fill="#0d1e16" rx="7" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="424" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">STEP 3</text>
   <!-- Browser mockup -->
-  <rect x="332" y="60" width="104" height="54" fill="#0A130E" rx="4" stroke="#2d5a3d"/>
-  <rect x="332" y="60" width="104" height="14" fill="#0d1810" rx="4"/>
-  <rect x="332" y="67" width="104" height="7" fill="#0d1810"/>
+  <rect x="366" y="126" width="112" height="74" fill="#091510" rx="4" stroke="#2a5236"/>
+  <rect x="366" y="126" width="112" height="18" fill="#0d1e16" rx="4"/>
+  <rect x="366" y="136" width="112" height="8" fill="#0d1e16"/>
   <!-- address bar -->
-  <rect x="348" y="62" width="72" height="10" fill="#0A130E" rx="2" stroke="#243d28"/>
-  <text x="384" y="70" fill="#00E5A0" font-size="7" font-family="monospace" text-anchor="middle">192.168.1.1</text>
+  <rect x="380" y="128" width="84" height="14" fill="#091510" rx="2" stroke="#2a5236"/>
+  <text x="422" y="139" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">192.168.1.1</text>
   <!-- login form -->
-  <rect x="344" y="80" width="88" height="8" fill="#111e14" rx="2"/>
-  <text x="388" y="87" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">Username: admin</text>
-  <rect x="344" y="92" width="88" height="8" fill="#111e14" rx="2"/>
-  <text x="388" y="99" fill="#6B7F72" font-size="6" font-family="monospace" text-anchor="middle">Password: ••••••</text>
-  <text x="384" y="124" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Admin panel</text>
-  <text x="384" y="137" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">192.168.1.1 in</text>
-  <text x="384" y="150" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">address bar</text>
+  <rect x="374" y="148" width="104" height="12" fill="#0d1e16" rx="2"/>
+  <text x="426" y="158" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Username: admin</text>
+  <rect x="374" y="164" width="104" height="12" fill="#0d1e16" rx="2"/>
+  <text x="426" y="174" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Password: ••••••</text>
+  <text x="424" y="212" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Admin panel</text>
+  <text x="424" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Open browser</text>
+  <text x="424" y="250" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">type 192.168.1.1</text>
+  <text x="424" y="272" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Default login:</text>
+  <text x="424" y="290" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">admin / password</text>
+  <text x="424" y="310" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">or admin / admin</text>
+  <text x="424" y="330" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Check router label</text>
 
   <!-- Arrow 3→4 -->
-  <line x1="452" y1="98" x2="464" y2="98" stroke="#00E5A0" stroke-width="1.5" marker-end="url(#sa)" opacity=".5"/>
+  <line x1="496" y1="220" x2="512" y2="220" stroke="#00E5A0" stroke-width="2" marker-end="url(#sa)" opacity=".7"/>
 
   <!-- STEP 4: WiFi name + password -->
-  <rect x="464" y="34" width="136" height="128" fill="#0f1f15" rx="7" stroke="#1e3a22" stroke-width="1.2"/>
-  <text x="532" y="52" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">STEP 4</text>
+  <rect x="516" y="82" width="144" height="290" fill="#0d1e16" rx="7" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="588" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">STEP 4</text>
   <!-- Settings panel -->
-  <rect x="478" y="60" width="108" height="52" fill="#0A130E" rx="3" stroke="#2d5a3d"/>
-  <text x="532" y="73" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Wireless Settings</text>
+  <rect x="528" y="126" width="120" height="76" fill="#091510" rx="3" stroke="#2a5236"/>
+  <text x="588" y="143" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Wireless Settings</text>
   <!-- SSID row -->
-  <text x="482" y="83" fill="#4a5e4e" font-size="6.5" font-family="monospace">Network Name</text>
-  <rect x="518" y="77" width="62" height="8" fill="#111e14" rx="1" stroke="#243d28"/>
-  <text x="549" y="83" fill="#F0F4F1" font-size="6" font-family="monospace" text-anchor="middle">MyHomeWiFi</text>
+  <text x="534" y="160" fill="#7FB09A" font-size="12" font-family="monospace">Network Name</text>
+  <rect x="534" y="164" width="108" height="12" fill="#0d1e16" rx="1" stroke="#2a5236"/>
+  <text x="588" y="174" fill="#D4EAD8" font-size="12" font-family="monospace" text-anchor="middle">MyHomeWiFi</text>
   <!-- Security row -->
-  <text x="482" y="94" fill="#4a5e4e" font-size="6.5" font-family="monospace">Security</text>
-  <rect x="518" y="88" width="62" height="8" fill="#111e14" rx="1" stroke="#243d28"/>
-  <text x="549" y="94" fill="#00E5A0" font-size="6" font-family="monospace" text-anchor="middle">WPA2 (AES)</text>
-  <!-- Password row -->
-  <text x="482" y="105" fill="#4a5e4e" font-size="6.5" font-family="monospace">Password</text>
-  <rect x="518" y="99" width="62" height="8" fill="#111e14" rx="1" stroke="#243d28"/>
-  <text x="549" y="105" fill="#F0F4F1" font-size="6" font-family="monospace" text-anchor="middle">••••••••••••</text>
-  <text x="532" y="124" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Set WiFi name</text>
-  <text x="532" y="137" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">SSID + strong</text>
-  <text x="532" y="150" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">WPA2 password</text>
+  <text x="534" y="188" fill="#7FB09A" font-size="12" font-family="monospace">Security</text>
+  <rect x="534" y="191" width="108" height="12" fill="#0d1e16" rx="1" stroke="#2a5236"/>
+  <text x="588" y="201" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">WPA2 (AES)</text>
+  <text x="588" y="212" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Set WiFi name</text>
+  <text x="588" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">SSID + WPA2</text>
+  <text x="588" y="250" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">strong password</text>
+  <text x="588" y="272" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">Min 12 chars</text>
+  <text x="588" y="290" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">letters+numbers</text>
+  <text x="588" y="310" fill="#7FB09A" font-size="13" font-family="monospace" text-anchor="middle">+symbols</text>
+  <text x="588" y="330" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">Never use WEP</text>
 
   <!-- Arrow 4→5 -->
-  <line x1="600" y1="98" x2="612" y2="98" stroke="#00E5A0" stroke-width="1.5" marker-end="url(#sa)" opacity=".5"/>
+  <line x1="660" y1="220" x2="676" y2="220" stroke="#00E5A0" stroke-width="2" marker-end="url(#sa)" opacity=".7"/>
 
   <!-- STEP 5: Connect devices -->
-  <rect x="612" y="34" width="148" height="128" fill="#0f1f15" rx="7" stroke="#00E5A0" stroke-width="1.5"/>
-  <text x="686" y="52" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">STEP 5</text>
+  <rect x="680" y="82" width="96" height="290" fill="#0d1e16" rx="7" stroke="#00E5A0" stroke-width="1.8"/>
+  <text x="728" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">STEP 5</text>
   <!-- Devices -->
-  <rect x="626" y="62" width="36" height="24" fill="#0d1810" rx="3" stroke="#2d5a3d"/>
-  <rect x="628" y="64" width="32" height="17" fill="#0A130E" rx="1"/>
-  <rect x="620" y="86" width="48" height="4" fill="#0d1810" rx="1" stroke="#1e3a22"/>
-  <text x="644" y="100" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Laptop</text>
+  <!-- Laptop -->
+  <rect x="690" y="126" width="46" height="30" fill="#091510" rx="3" stroke="#2a5236"/>
+  <rect x="693" y="129" width="40" height="22" fill="#091510" rx="1"/>
+  <rect x="684" y="156" width="58" height="5" fill="#0d1e16" rx="1" stroke="#1e3a22"/>
+  <text x="713" y="172" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Laptop</text>
   <!-- Phone -->
-  <rect x="672" y="62" width="18" height="30" fill="#0d1810" rx="4" stroke="#2d5a3d"/>
-  <rect x="674" y="64" width="14" height="22" fill="#0A130E" rx="1"/>
-  <text x="681" y="100" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">Phone</text>
+  <rect x="695" y="186" width="26" height="40" fill="#091510" rx="5" stroke="#2a5236"/>
+  <rect x="699" y="190" width="18" height="30" fill="#091510" rx="1"/>
+  <text x="708" y="240" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Phone</text>
   <!-- TV -->
-  <rect x="700" y="67" width="44" height="28" fill="#0d1810" rx="3" stroke="#2d5a3d"/>
-  <rect x="702" y="69" width="40" height="22" fill="#0A130E" rx="1"/>
-  <rect x="716" y="95" width="12" height="4" fill="#0d1810" rx="1"/>
-  <text x="722" y="105" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">TV</text>
-  <text x="686" y="122" fill="#F0F4F1" font-size="10" font-family="monospace" text-anchor="middle">Connect all</text>
-  <text x="686" y="135" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">devices to new</text>
-  <text x="686" y="148" fill="#6B7F72" font-size="8.5" font-family="monospace" text-anchor="middle">WiFi network</text>
+  <rect x="686" y="256" width="60" height="38" fill="#091510" rx="3" stroke="#2a5236"/>
+  <rect x="689" y="259" width="54" height="30" fill="#091510" rx="1"/>
+  <rect x="711" y="289" width="16" height="5" fill="#0d1e16" rx="1"/>
+  <text x="716" y="308" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">TV</text>
   <!-- Done checkmark -->
-  <circle cx="730" cy="48" r="8" fill="#00E5A0" opacity=".15" stroke="#00E5A0" stroke-width="1"/>
-  <text x="730" y="52" fill="#00E5A0" font-size="10" text-anchor="middle">✓</text>
+  <circle cx="728" cy="344" r="14" fill="#00E5A0" opacity=".18" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="728" y="350" fill="#00E5A0" font-size="20" text-anchor="middle" font-weight="bold">✓</text>
+  <text x="728" y="370" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Done!</text>
+
+  <!-- Bottom tip -->
+  <rect x="24" y="388" width="752" height="22" fill="#0d1e16" rx="4" stroke="#2a5236"/>
+  <text x="40" y="403" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Pro tip:</text>
+  <text x="110" y="403" fill="#D4EAD8" font-size="14" font-family="monospace">Also set custom DNS (8.8.8.8) in WAN settings, change WiFi channel to 1/6/11, and disable WPS for security</text>
 </svg>

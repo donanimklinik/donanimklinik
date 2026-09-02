@@ -1,85 +1,109 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="Why WiFi keeps disconnecting: 4 main causes — Windows power management turns off adapter, channel interference from neighbors, weak signal at edge of range, router DHCP lease expiry">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Why WiFi keeps disconnecting: 4 main causes — Windows power management turns off adapter, channel interference from neighbors, weak signal at edge of range, router DHCP lease expiry">
   <defs>
     <pattern id="g2" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
   </defs>
-  <rect width="800" height="280" fill="#0A130E" rx="12"/>
-  <rect width="800" height="280" fill="url(#g2)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">WHY WIFI KEEPS DISCONNECTING — 4 CAUSES &amp; FIXES</text>
+  <rect width="800" height="460" fill="#091510" rx="12"/>
+  <rect width="800" height="460" fill="url(#g2)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Why WiFi Keeps Disconnecting</text>
+  <text x="400" y="56" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle">4 most common causes with exact fix steps for each</text>
+  <line x1="40" y1="68" x2="760" y2="68" stroke="#1e3a22" stroke-width="1"/>
 
   <!-- Cause 1: Power Management -->
-  <rect x="20" y="36" width="180" height="224" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.8"/>
-  <rect x="20" y="36" width="180" height="36" fill="#1a1200" rx="10"/>
-  <rect x="20" y="60" width="180" height="12" fill="#1a1200"/>
-  <text x="110" y="54" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Power Management</text>
-  <text x="110" y="68" fill="#f59e0b" font-size="11" font-family="monospace" text-anchor="middle">Most common cause</text>
+  <rect x="20" y="82" width="182" height="318" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="20" y="82" width="182" height="48" fill="#1a1000" rx="10"/>
+  <rect x="20" y="118" width="182" height="12" fill="#1a1000"/>
+  <text x="111" y="106" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Power Mgmt</text>
+  <text x="111" y="124" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">Most common cause</text>
   <!-- Power icon -->
-  <circle cx="110" cy="108" r="26" fill="#0A130E" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="110" y="114" fill="#f59e0b" font-size="22" text-anchor="middle">⏻</text>
-  <text x="110" y="148" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">Windows turns off</text>
-  <text x="110" y="163" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">WiFi adapter to</text>
-  <text x="110" y="178" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">save power</text>
-  <line x1="36" y1="196" x2="184" y2="196" stroke="#1e3a22" stroke-width="1"/>
-  <text x="110" y="212" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
-  <text x="110" y="227" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Device Manager →</text>
-  <text x="110" y="242" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">WiFi adapter →</text>
-  <text x="110" y="257" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">Power: Never save</text>
+  <circle cx="111" cy="170" r="30" fill="#091510" stroke="#f59e0b" stroke-width="2"/>
+  <text x="111" y="178" fill="#f59e0b" font-size="28" text-anchor="middle">⏻</text>
+  <text x="111" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Windows turns off</text>
+  <text x="111" y="234" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">WiFi adapter to</text>
+  <text x="111" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">save power</text>
+  <line x1="36" y1="268" x2="186" y2="268" stroke="#1e3a22" stroke-width="1"/>
+  <text x="111" y="288" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="111" y="306" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Device Manager →</text>
+  <text x="111" y="322" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">WiFi adapter →</text>
+  <text x="111" y="338" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Power Management</text>
+  <text x="111" y="356" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">→ Uncheck "allow</text>
+  <text x="111" y="372" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">PC to turn off"</text>
+  <text x="111" y="390" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Also: Power Plan →</text>
+  <text x="111" y="406" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">High Performance</text>
 
   <!-- Cause 2: Channel Interference -->
-  <rect x="214" y="36" width="180" height="224" fill="#0d1810" rx="10" stroke="#ef4444" stroke-width="1.8"/>
-  <rect x="214" y="36" width="180" height="36" fill="#1a0d0d" rx="10"/>
-  <rect x="214" y="60" width="180" height="12" fill="#1a0d0d"/>
-  <text x="304" y="54" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Channel Interference</text>
-  <text x="304" y="68" fill="#ef4444" font-size="11" font-family="monospace" text-anchor="middle">Neighbor routers</text>
+  <rect x="216" y="82" width="182" height="318" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="2"/>
+  <rect x="216" y="82" width="182" height="48" fill="#1a0808" rx="10"/>
+  <rect x="216" y="118" width="182" height="12" fill="#1a0808"/>
+  <text x="307" y="106" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Channel Crowding</text>
+  <text x="307" y="124" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle">Neighbor routers</text>
   <!-- Overlapping waves icon -->
-  <path d="M264 108 Q284 88 304 108 Q324 128 344 108" fill="none" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
-  <path d="M264 118 Q284 98 304 118 Q324 138 344 118" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" opacity=".5"/>
-  <text x="304" y="148" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">2.4 GHz channels</text>
-  <text x="304" y="163" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">overlap — nearby</text>
-  <text x="304" y="178" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">routers compete</text>
-  <line x1="230" y1="196" x2="378" y2="196" stroke="#1e3a22" stroke-width="1"/>
-  <text x="304" y="212" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
-  <text x="304" y="227" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Switch to 5 GHz</text>
-  <text x="304" y="242" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">or change channel</text>
-  <text x="304" y="257" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">to 1, 6, or 11</text>
+  <path d="M262 158 Q282 138 302 158 Q322 178 342 158" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M262 170 Q282 150 302 170 Q322 190 342 170" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M262 182 Q282 162 302 182 Q322 202 342 182" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+  <text x="307" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">2.4 GHz only has</text>
+  <text x="307" y="234" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">3 non-overlapping</text>
+  <text x="307" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">channels total</text>
+  <line x1="232" y1="268" x2="382" y2="268" stroke="#1e3a22" stroke-width="1"/>
+  <text x="307" y="288" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="307" y="306" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Router admin →</text>
+  <text x="307" y="322" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Switch to 5 GHz</text>
+  <text x="307" y="338" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">or set channel to</text>
+  <text x="307" y="356" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">1, 6, or 11 only</text>
+  <text x="307" y="390" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Use WiFi Analyzer</text>
+  <text x="307" y="406" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">app to find gaps</text>
 
   <!-- Cause 3: Weak Signal -->
-  <rect x="408" y="36" width="180" height="224" fill="#0d1810" rx="10" stroke="#6B7F72" stroke-width="1.8"/>
-  <rect x="408" y="36" width="180" height="36" fill="#111e14" rx="10"/>
-  <rect x="408" y="60" width="180" height="12" fill="#111e14"/>
-  <text x="498" y="54" fill="#93B5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Weak Signal</text>
-  <text x="498" y="68" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Edge of range</text>
-  <!-- Fading signal bars -->
-  <rect x="470" y="104" width="10" height="20" fill="#00E5A0" rx="2" opacity=".9"/>
-  <rect x="485" y="96" width="10" height="28" fill="#00E5A0" rx="2" opacity=".5"/>
-  <rect x="500" y="88" width="10" height="36" fill="#1e3a22" rx="2"/>
-  <rect x="515" y="80" width="10" height="44" fill="#1e3a22" rx="2"/>
-  <text x="498" y="148" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">Connection drops</text>
-  <text x="498" y="163" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">when signal falls</text>
-  <text x="498" y="178" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">below threshold</text>
-  <line x1="424" y1="196" x2="572" y2="196" stroke="#1e3a22" stroke-width="1"/>
-  <text x="498" y="212" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
-  <text x="498" y="227" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Move router to</text>
-  <text x="498" y="242" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">central location or</text>
-  <text x="498" y="257" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">add WiFi extender</text>
+  <rect x="412" y="82" width="182" height="318" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="412" y="82" width="182" height="48" fill="#0a1020" rx="10"/>
+  <rect x="412" y="118" width="182" height="12" fill="#0a1020"/>
+  <text x="503" y="106" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Weak Signal</text>
+  <text x="503" y="124" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle">Edge of range</text>
+  <!-- Signal bars (fading) -->
+  <rect x="467" y="154" width="12" height="24" fill="#00E5A0" rx="2"/>
+  <rect x="484" y="144" width="12" height="34" fill="#00E5A0" rx="2" opacity="0.6"/>
+  <rect x="501" y="134" width="12" height="44" fill="#2a5236" rx="2"/>
+  <rect x="518" y="124" width="12" height="54" fill="#1a2a1e" rx="2"/>
+  <text x="503" y="198" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">signal drops at range edge</text>
+  <text x="503" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Connection drops</text>
+  <text x="503" y="234" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">when signal falls</text>
+  <text x="503" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">below threshold</text>
+  <line x1="428" y1="268" x2="578" y2="268" stroke="#1e3a22" stroke-width="1"/>
+  <text x="503" y="288" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="503" y="306" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Move router to</text>
+  <text x="503" y="322" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">central location</text>
+  <text x="503" y="338" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">or add a WiFi</text>
+  <text x="503" y="356" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">range extender</text>
+  <text x="503" y="390" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Mesh system is</text>
+  <text x="503" y="406" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">best long-term fix</text>
 
   <!-- Cause 4: DHCP Lease -->
-  <rect x="602" y="36" width="178" height="224" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.8"/>
-  <rect x="602" y="36" width="178" height="36" fill="#0a1020" rx="10"/>
-  <rect x="602" y="60" width="178" height="12" fill="#0a1020"/>
-  <text x="691" y="54" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">DHCP Lease</text>
-  <text x="691" y="68" fill="#3b82f6" font-size="11" font-family="monospace" text-anchor="middle">IP address expires</text>
+  <rect x="608" y="82" width="172" height="318" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="2"/>
+  <rect x="608" y="82" width="172" height="48" fill="#0d1e16" rx="10"/>
+  <rect x="608" y="118" width="172" height="12" fill="#0d1e16"/>
+  <text x="694" y="106" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">DHCP Lease</text>
+  <text x="694" y="124" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">IP address expires</text>
   <!-- Clock icon -->
-  <circle cx="691" cy="108" r="26" fill="#0A130E" stroke="#3b82f6" stroke-width="1.5"/>
-  <line x1="691" y1="108" x2="691" y2="92" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
-  <line x1="691" y1="108" x2="703" y2="108" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
-  <text x="691" y="148" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">Router recycles IP</text>
-  <text x="691" y="163" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">— device loses</text>
-  <text x="691" y="178" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle">connection briefly</text>
-  <line x1="618" y1="196" x2="764" y2="196" stroke="#1e3a22" stroke-width="1"/>
-  <text x="691" y="212" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
-  <text x="691" y="227" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Reboot router or</text>
-  <text x="691" y="242" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">assign static IP</text>
-  <text x="691" y="257" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">in router settings</text>
+  <circle cx="694" cy="168" r="30" fill="#091510" stroke="#00E5A0" stroke-width="2"/>
+  <line x1="694" y1="168" x2="694" y2="148" stroke="#00E5A0" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="694" y1="168" x2="710" y2="168" stroke="#00E5A0" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="694" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Router recycles</text>
+  <text x="694" y="234" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">IP address —</text>
+  <text x="694" y="252" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">brief disconnect</text>
+  <line x1="624" y1="268" x2="764" y2="268" stroke="#1e3a22" stroke-width="1"/>
+  <text x="694" y="288" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix:</text>
+  <text x="694" y="306" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Reboot router or</text>
+  <text x="694" y="322" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">assign a static</text>
+  <text x="694" y="338" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">IP to your device</text>
+  <text x="694" y="356" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">in router admin</text>
+  <text x="694" y="390" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">DHCP reservation</text>
+  <text x="694" y="406" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">= permanent fix</text>
+
+  <!-- Bottom bar -->
+  <rect x="20" y="412" width="760" height="34" fill="#0d1e16" rx="6" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="430" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Quick diagnosis: If only your PC disconnects → Power Mgmt or Driver · If all devices drop → Router or ISP</text>
+  <text x="400" y="446" fill="#A8C4B0" font-size="12" font-family="monospace" text-anchor="middle">Start with Power Management fix (Cause 1) — it solves over 50% of laptop WiFi disconnect issues</text>
 </svg>

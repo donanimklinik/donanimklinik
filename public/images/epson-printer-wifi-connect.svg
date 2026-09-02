@@ -1,67 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Epson printer not connecting to WiFi: use WiFi Setup on printer control panel, or Epson Smart Panel app on phone — check WiFi indicator light, blue steady means connected">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" role="img" aria-label="Epson printer not connecting to WiFi: use WiFi Setup on printer control panel, or Epson Smart Panel app on phone — check WiFi indicator light, blue steady means connected">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">EPSON PRINTER NOT CONNECTING TO WIFI</text>
 
-  <!-- Epson WiFi indicator guide -->
-  <rect x="20" y="38" width="220" height="178" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="130" y="60" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">WiFi Light Status</text>
-  <line x1="36" y1="68" x2="224" y2="68" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="800" height="430" fill="#091510" rx="12"/>
+  <rect width="800" height="430" fill="url(#g)" rx="12"/>
 
-  <circle cx="50" cy="92" r="8" fill="#00E5A0"/>
-  <text x="68" y="97" fill="#00E5A0" font-size="13" font-family="monospace" font-weight="bold">Steady blue</text>
-  <text x="68" y="112" fill="#93B5A0" font-size="11" font-family="monospace">Connected ✓</text>
+  <!-- Title -->
+  <text x="400" y="32" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Epson Printer — WiFi Connection Guide</text>
+  <line x1="20" y1="44" x2="780" y2="44" stroke="#1e3a22" stroke-width="1"/>
 
-  <circle cx="50" cy="138" r="8" fill="#f59e0b"/>
-  <text x="68" y="143" fill="#f59e0b" font-size="13" font-family="monospace" font-weight="bold">Blinking</text>
-  <text x="68" y="158" fill="#93B5A0" font-size="11" font-family="monospace">Connecting...</text>
+  <!-- WiFi Light Status panel -->
+  <rect x="20" y="56" width="230" height="230" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="135" y="80" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">WiFi Light Status</text>
+  <line x1="36" y1="90" x2="234" y2="90" stroke="#1e3a22" stroke-width="1"/>
 
-  <circle cx="50" cy="184" r="8" fill="#ef4444"/>
-  <text x="68" y="189" fill="#ef4444" font-size="13" font-family="monospace" font-weight="bold">Off / red</text>
-  <text x="68" y="204" fill="#93B5A0" font-size="11" font-family="monospace">Not connected</text>
+  <circle cx="54" cy="122" r="10" fill="#00E5A0"/>
+  <text x="74" y="118" fill="#00E5A0" font-size="14" font-family="monospace" font-weight="bold">Steady blue</text>
+  <text x="74" y="137" fill="#A8C4B0" font-size="13" font-family="monospace">Connected ✓</text>
 
-  <!-- Setup steps -->
-  <rect x="256" y="38" width="290" height="178" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
-  <text x="401" y="60" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Setup Steps</text>
-  <line x1="272" y1="68" x2="530" y2="68" stroke="#1e3a22" stroke-width="1"/>
+  <line x1="36" y1="155" x2="234" y2="155" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="272" y="90" fill="#00E5A0" font-size="12" font-family="monospace">①</text>
-  <text x="292" y="90" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Settings → WiFi Setup</text>
-  <text x="292" y="107" fill="#93B5A0" font-size="12" font-family="monospace">On printer touchscreen/buttons</text>
+  <circle cx="54" cy="183" r="10" fill="#f59e0b"/>
+  <text x="74" y="179" fill="#f59e0b" font-size="14" font-family="monospace" font-weight="bold">Blinking blue</text>
+  <text x="74" y="198" fill="#A8C4B0" font-size="13" font-family="monospace">Connecting...</text>
 
-  <text x="272" y="129" fill="#00E5A0" font-size="12" font-family="monospace">②</text>
-  <text x="292" y="129" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">WiFi Setup Wizard</text>
-  <text x="292" y="146" fill="#93B5A0" font-size="12" font-family="monospace">Select network → enter password</text>
+  <line x1="36" y1="215" x2="234" y2="215" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="272" y="168" fill="#00E5A0" font-size="12" font-family="monospace">③</text>
-  <text x="292" y="168" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Print Connection Check</text>
-  <text x="292" y="185" fill="#93B5A0" font-size="12" font-family="monospace">Settings → Network Status → Print</text>
-  <text x="292" y="201" fill="#6B7F72" font-size="11" font-family="monospace">Shows IP and WiFi connection status</text>
+  <circle cx="54" cy="244" r="10" fill="#ef4444"/>
+  <text x="74" y="240" fill="#ef4444" font-size="14" font-family="monospace" font-weight="bold">Off or red</text>
+  <text x="74" y="259" fill="#A8C4B0" font-size="13" font-family="monospace">Not connected</text>
 
-  <!-- Common issues -->
-  <rect x="562" y="38" width="218" height="178" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="671" y="60" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Quick Fixes</text>
-  <line x1="578" y1="68" x2="764" y2="68" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Setup Steps panel -->
+  <rect x="266" y="56" width="310" height="230" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="421" y="80" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Setup Steps</text>
+  <line x1="282" y1="90" x2="560" y2="90" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="578" y="92" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="598" y="92" fill="#93B5A0" font-size="12" font-family="monospace">WPS button</text>
-  <text x="598" y="108" fill="#6B7F72" font-size="11" font-family="monospace">Router then printer</text>
+  <text x="290" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="316" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Settings → WiFi Setup</text>
+  <text x="316" y="135" fill="#A8C4B0" font-size="13" font-family="monospace">On printer touchscreen or buttons</text>
 
-  <text x="578" y="130" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="598" y="130" fill="#93B5A0" font-size="12" font-family="monospace">Epson Smart Panel</text>
-  <text x="598" y="146" fill="#6B7F72" font-size="11" font-family="monospace">App-guided setup</text>
+  <line x1="282" y1="150" x2="560" y2="150" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="578" y="168" fill="#f59e0b" font-size="12" font-family="monospace">→</text>
-  <text x="598" y="168" fill="#93B5A0" font-size="12" font-family="monospace">Network reset:</text>
-  <text x="598" y="184" fill="#6B7F72" font-size="11" font-family="monospace">Settings → Restore</text>
-  <text x="598" y="200" fill="#6B7F72" font-size="11" font-family="monospace">Network Settings</text>
+  <text x="290" y="176" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="316" y="176" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">WiFi Setup Wizard</text>
+  <text x="316" y="195" fill="#A8C4B0" font-size="13" font-family="monospace">Select network → enter password</text>
 
-  <!-- Bottom -->
-  <rect x="20" y="228" width="760" height="22" fill="#0d1810" rx="4" stroke="#1e3a22"/>
-  <text x="400" y="243" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Epson printers support 2.4 GHz only — if router uses only 5 GHz, enable 2.4 GHz band in router settings</text>
+  <line x1="282" y1="210" x2="560" y2="210" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="290" y="236" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="316" y="236" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Print Connection Check</text>
+  <text x="316" y="255" fill="#A8C4B0" font-size="13" font-family="monospace">Settings → Network Status → Print</text>
+  <text x="316" y="272" fill="#7FB09A" font-size="12" font-family="monospace">Shows IP + WiFi connection status</text>
+
+  <!-- Quick Fixes panel -->
+  <rect x="592" y="56" width="188" height="230" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="686" y="80" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Quick Fixes</text>
+  <line x1="608" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="616" y="116" fill="#00E5A0" font-size="16" font-family="monospace">✓</text>
+  <text x="638" y="116" fill="#D4EAD8" font-size="14" font-family="monospace">WPS button</text>
+  <text x="638" y="135" fill="#A8C4B0" font-size="13" font-family="monospace">Router first, then printer</text>
+
+  <line x1="608" y1="152" x2="764" y2="152" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="616" y="178" fill="#00E5A0" font-size="16" font-family="monospace">✓</text>
+  <text x="638" y="178" fill="#D4EAD8" font-size="14" font-family="monospace">Smart Panel app</text>
+  <text x="638" y="197" fill="#A8C4B0" font-size="13" font-family="monospace">Guided phone setup</text>
+
+  <line x1="608" y1="214" x2="764" y2="214" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="616" y="240" fill="#f59e0b" font-size="16" font-family="monospace">→</text>
+  <text x="638" y="240" fill="#D4EAD8" font-size="14" font-family="monospace">Network reset:</text>
+  <text x="638" y="259" fill="#A8C4B0" font-size="13" font-family="monospace">Settings → Restore</text>
+  <text x="638" y="276" fill="#A8C4B0" font-size="13" font-family="monospace">Network Settings</text>
+
+  <!-- 2.4 GHz note -->
+  <rect x="20" y="302" width="760" height="56" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="326" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Important: Epson Printers Use 2.4 GHz Only</text>
+  <line x1="36" y1="336" x2="764" y2="336" stroke="#1e3a22" stroke-width="1"/>
+  <text x="400" y="354" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">If your router broadcasts 5 GHz only, enable the 2.4 GHz band in router admin settings</text>
+
+  <!-- Epson Smart Panel detail -->
+  <rect x="20" y="374" width="760" height="46" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="396" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Epson Smart Panel App: connects printer via Bluetooth first, then transfers WiFi credentials automatically</text>
+  <text x="400" y="414" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Available free on App Store and Google Play — easiest setup method for Epson printers</text>
 </svg>

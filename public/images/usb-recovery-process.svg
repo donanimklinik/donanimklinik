@@ -1,46 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="USB flash drive recovery: diagnose if USB is detected or not — if detected use Recuva or Disk Drill, if not try different port then diskpart to check if recognized at system level">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="USB flash drive recovery: diagnose if USB is detected or not — if detected use Recuva or Disk Drill, if not try different port then diskpart to check if recognized at system level">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
+    <marker id="arr-green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
+    <marker id="arr-red" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#ef4444"/>
+    </marker>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">USB FLASH DRIVE RECOVERY — DIAGNOSIS FIRST</text>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">USB Flash Drive Recovery — Diagnose First</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
 
   <!-- Decision diamond -->
-  <polygon points="400,40 490,90 400,140 310,90" fill="#0d1810" stroke="#f59e0b" stroke-width="2"/>
-  <text x="400" y="84" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">USB detected</text>
-  <text x="400" y="100" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle">in Disk Mgmt?</text>
+  <polygon points="400,58 500,118 400,178 300,118" fill="#0d1e16" stroke="#f59e0b" stroke-width="2"/>
+  <text x="400" y="108" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">USB detected</text>
+  <text x="400" y="128" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle">in Disk Mgmt?</text>
 
-  <!-- Yes branch -->
-  <line x1="490" y1="90" x2="560" y2="90" stroke="#00E5A0" stroke-width="2"/>
-  <text x="525" y="82" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle">YES</text>
-  <rect x="560" y="48" width="220" height="160" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
-  <text x="670" y="72" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Detected Path</text>
-  <text x="670" y="92" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Files deleted or</text>
-  <text x="670" y="108" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">drive formatted</text>
-  <text x="670" y="128" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">→ Run Recuva</text>
-  <text x="670" y="144" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Select the USB drive</text>
-  <text x="670" y="160" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Deep scan mode</text>
-  <text x="670" y="178" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">High recovery chance ✓</text>
-  <text x="670" y="196" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Or Disk Drill (free 500MB)</text>
+  <!-- YES label and arrow -->
+  <line x1="500" y1="118" x2="556" y2="118" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr-green)"/>
+  <text x="528" y="108" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">YES</text>
 
-  <!-- No branch -->
-  <line x1="310" y1="90" x2="240" y2="90" stroke="#ef4444" stroke-width="2"/>
-  <text x="275" y="82" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle">NO</text>
-  <rect x="20" y="48" width="220" height="160" fill="#1a0d0d" rx="10" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="130" y="72" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Not Detected</text>
-  <text x="130" y="94" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">① Try different USB port</text>
-  <text x="130" y="112" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">② Try different PC</text>
-  <text x="130" y="130" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">③ diskpart → list disk</text>
-  <text x="130" y="148" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">If still not seen:</text>
-  <text x="130" y="164" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle">Controller chip dead</text>
-  <text x="130" y="182" fill="#ef4444" font-size="11" font-family="monospace" text-anchor="middle">Pro data recovery only</text>
-  <text x="130" y="198" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">or it's truly gone</text>
+  <!-- NO label and arrow -->
+  <line x1="300" y1="118" x2="244" y2="118" stroke="#ef4444" stroke-width="2" marker-end="url(#arr-red)"/>
+  <text x="272" y="108" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">NO</text>
 
-  <!-- Bottom bar -->
-  <rect x="20" y="222" width="760" height="28" fill="#0d1810" rx="4" stroke="#1e3a22"/>
-  <text x="400" y="234" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Open Disk Management: Win+X → Disk Management — look for your USB in the lower panel</text>
-  <text x="400" y="246" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">If RAW filesystem shown: DO NOT format — run recovery software first to extract files</text>
+  <!-- YES panel: Detected -->
+  <rect x="558" y="58" width="222" height="210" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="669" y="82" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Detected Path</text>
+  <line x1="574" y1="92" x2="764" y2="92" stroke="#1e3a22" stroke-width="1"/>
+  <text x="669" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Files deleted or</text>
+  <text x="669" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">drive was formatted</text>
+  <line x1="574" y1="148" x2="764" y2="148" stroke="#1e3a22" stroke-width="1"/>
+  <text x="669" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">&#x2192; Run Recuva</text>
+  <text x="669" y="188" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Select USB drive letter</text>
+  <text x="669" y="206" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Enable Deep Scan mode</text>
+  <text x="669" y="228" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">High recovery chance ✓</text>
+  <text x="669" y="248" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Or Disk Drill (free 500MB)</text>
+
+  <!-- NO panel: Not detected -->
+  <rect x="20" y="58" width="222" height="210" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="131" y="82" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Not Detected</text>
+  <line x1="36" y1="92" x2="226" y2="92" stroke="#1e3a22" stroke-width="1"/>
+  <text x="131" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">&#x2460; Try different USB port</text>
+  <text x="131" y="136" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">&#x2461; Try on a different PC</text>
+  <text x="131" y="156" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">&#x2462; Run diskpart in CMD</text>
+  <text x="131" y="178" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle">diskpart &#x2192; list disk</text>
+  <line x1="36" y1="194" x2="226" y2="194" stroke="#1e3a22" stroke-width="1"/>
+  <text x="131" y="214" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle">Still not seen?</text>
+  <text x="131" y="234" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Controller chip dead</text>
+  <text x="131" y="252" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Pro lab only</text>
+
+  <!-- Middle tip box -->
+  <rect x="258" y="194" width="284" height="74" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.2"/>
+  <text x="400" y="218" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">How to Open Disk Management</text>
+  <text x="400" y="238" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Press Win+X &#x2192; Disk Management</text>
+  <text x="400" y="256" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Look for USB in the lower panel</text>
+
+  <!-- Bottom warning -->
+  <rect x="20" y="286" width="760" height="116" fill="#0d1e16" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="310" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">&#x26A0; Critical: RAW Filesystem Warning</text>
+  <line x1="36" y1="320" x2="764" y2="320" stroke="#1e3a22" stroke-width="1"/>
+  <text x="400" y="344" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">If Disk Management shows "RAW" instead of NTFS or FAT32:</text>
+  <text x="400" y="364" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">DO NOT format the drive — run recovery software first</text>
+  <text x="400" y="384" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Formatting destroys the file table and makes recovery much harder</text>
 </svg>

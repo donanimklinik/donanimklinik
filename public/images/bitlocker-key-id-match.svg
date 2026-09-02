@@ -1,64 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" role="img" aria-label="BitLocker recovery key not working: match the Key ID on the recovery screen with the correct key in your Microsoft account — wrong key ID means wrong key">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-label="BitLocker recovery key not working: match the Key ID on the recovery screen with the correct key in your Microsoft account — wrong key ID means wrong key">
   <defs>
     <pattern id="g6" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
   </defs>
-  <rect width="800" height="280" fill="#0A130E" rx="12"/>
-  <rect width="800" height="280" fill="url(#g6)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">BITLOCKER KEY NOT WORKING — MATCH THE KEY ID</text>
+  <rect width="800" height="440" fill="#091510" rx="12"/>
+  <rect width="800" height="440" fill="url(#g6)" rx="12"/>
 
-  <!-- Recovery screen mockup -->
-  <rect x="20" y="36" width="340" height="228" fill="#0d1810" rx="10" stroke="#1e3a22" stroke-width="1.5"/>
-  <rect x="20" y="36" width="340" height="28" fill="#0A130E" rx="10"/>
-  <rect x="20" y="55" width="340" height="9" fill="#0A130E"/>
-  <text x="190" y="53" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Recovery screen (your locked PC)</text>
-  <!-- Screen content -->
-  <rect x="36" y="72" width="308" height="176" fill="#000814" rx="6" stroke="#1e4a8a" stroke-width="1.5"/>
-  <text x="190" y="94" fill="#60a5fa" font-size="13" font-family="monospace" text-anchor="middle">BitLocker Recovery</text>
-  <text x="190" y="112" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Enter the recovery key for this drive</text>
-  <line x1="52" y1="120" x2="328" y2="120" stroke="#1e3a22" stroke-width="1"/>
-  <text x="56" y="138" fill="#93B5A0" font-size="11" font-family="monospace">Key ID (first 8 chars):</text>
-  <!-- Highlighted Key ID -->
-  <rect x="56" y="146" width="268" height="28" fill="#0a1f4a" rx="4" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="190" y="165" fill="#F0F4F1" font-size="15" font-family="monospace" text-anchor="middle" font-weight="bold">A3F7-9C2E</text>
-  <circle cx="72" cy="160" r="8" fill="#ef4444" opacity=".2"/>
-  <circle cx="72" cy="160" r="4" fill="#ef4444"/>
-  <text x="190" y="192" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Enter 48-digit recovery key:</text>
-  <rect x="56" y="198" width="268" height="22" fill="#0A130E" rx="4" stroke="#243d28"/>
-  <text x="190" y="213" fill="#4a5e4e" font-size="11" font-family="monospace" text-anchor="middle">______-______-______-______</text>
-  <text x="190" y="240" fill="#f59e0b" font-size="11" font-family="monospace" text-anchor="middle">⚠ Note this Key ID before typing</text>
+  <!-- Title -->
+  <text x="400" y="36" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">BitLocker Key Not Working — Match the Key ID</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
 
-  <!-- Arrow -->
-  <text x="390" y="155" fill="#00E5A0" font-size="24" text-anchor="middle">→</text>
-  <text x="390" y="172" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle">match</text>
+  <!-- Recovery screen mockup (left) -->
+  <rect x="18" y="62" width="340" height="268" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <!-- Browser-style title bar -->
+  <rect x="18" y="62" width="340" height="30" fill="#091510" rx="10"/>
+  <rect x="18" y="83" width="340" height="9" fill="#091510"/>
+  <text x="188" y="80" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Recovery screen (your locked PC)</text>
 
-  <!-- Microsoft account panel -->
-  <rect x="420" y="36" width="360" height="228" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="600" y="58" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">account.microsoft.com → Devices</text>
-  <!-- Key entries -->
-  <rect x="436" y="68" width="328" height="44" fill="#0a1020" rx="6" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="452" y="86" fill="#6B7F72" font-size="11" font-family="monospace">Key ID:</text>
-  <text x="510" y="86" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">A3F7-9C2E</text>
-  <circle cx="740" cy="80" r="10" fill="#00E5A0" opacity=".15"/>
-  <text x="740" y="84" fill="#00E5A0" font-size="12" text-anchor="middle">✓</text>
-  <text x="452" y="103" fill="#4a5e4e" font-size="11" font-family="monospace">Recovery key: 123456-789012-...</text>
+  <!-- Blue BIOS-style screen -->
+  <rect x="30" y="96" width="316" height="222" fill="#000c1e" rx="6" stroke="#1e4a8a" stroke-width="1.5"/>
+  <text x="188" y="122" fill="#60a5fa" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">BitLocker Recovery</text>
+  <text x="188" y="142" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Enter the recovery key for this drive</text>
+  <line x1="46" y1="150" x2="330" y2="150" stroke="#1e3a22" stroke-width="1"/>
 
-  <rect x="436" y="120" width="328" height="44" fill="#0d1810" rx="6" stroke="#1e3a22" stroke-width="1"/>
-  <text x="452" y="138" fill="#6B7F72" font-size="11" font-family="monospace">Key ID:</text>
-  <text x="510" y="138" fill="#4a5e4e" font-size="13" font-family="monospace">B1D4-5E8F</text>
-  <circle cx="740" cy="132" r="10" fill="#ef4444" opacity=".1"/>
-  <text x="740" y="136" fill="#ef4444" font-size="12" text-anchor="middle">✕</text>
-  <text x="452" y="155" fill="#4a5e4e" font-size="11" font-family="monospace">Recovery key: 654321-098765-...</text>
+  <text x="50" y="172" fill="#A8C4B0" font-size="13" font-family="monospace">Key ID (first 8 characters):</text>
+  <!-- Key ID highlight box -->
+  <rect x="46" y="180" width="284" height="34" fill="#071840" rx="4" stroke="#3b82f6" stroke-width="1.5"/>
+  <circle cx="64" cy="197" r="6" fill="#ef4444"/>
+  <text x="188" y="202" fill="#D4EAD8" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">A3F7-9C2E</text>
 
-  <rect x="436" y="172" width="328" height="44" fill="#0d1810" rx="6" stroke="#1e3a22" stroke-width="1"/>
-  <text x="452" y="190" fill="#6B7F72" font-size="11" font-family="monospace">Key ID:</text>
-  <text x="510" y="190" fill="#4a5e4e" font-size="13" font-family="monospace">C9A2-1B7D</text>
-  <circle cx="740" cy="184" r="10" fill="#ef4444" opacity=".1"/>
-  <text x="740" y="188" fill="#ef4444" font-size="12" text-anchor="middle">✕</text>
-  <text x="452" y="207" fill="#4a5e4e" font-size="11" font-family="monospace">Recovery key: 112233-445566-...</text>
+  <text x="188" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Enter 48-digit recovery key:</text>
+  <rect x="46" y="240" width="284" height="26" fill="#000814" rx="4" stroke="#1e3a22" stroke-width="1"/>
+  <text x="188" y="257" fill="#2a5236" font-size="13" font-family="monospace" text-anchor="middle">______-______-______-______</text>
 
-  <!-- Bottom key tip -->
-  <rect x="436" y="224" width="328" height="30" fill="#0d1a12" rx="6" stroke="#00E5A0" stroke-width="1"/>
-  <text x="600" y="243" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Use ONLY the key whose ID matches the screen</text>
+  <text x="188" y="296" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">⚠ Note this Key ID before typing!</text>
+
+  <!-- Match arrow -->
+  <text x="390" y="200" fill="#00E5A0" font-size="28" text-anchor="middle">→</text>
+  <text x="390" y="220" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">match</text>
+
+  <!-- Microsoft account panel (right) -->
+  <rect x="420" y="62" width="362" height="268" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="601" y="88" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">account.microsoft.com → Devices</text>
+  <line x1="434" y1="96" x2="768" y2="96" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Key entry: MATCH -->
+  <rect x="434" y="104" width="334" height="58" fill="#071840" rx="6" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="450" y="124" fill="#7FB09A" font-size="12" font-family="monospace">Key ID:</text>
+  <text x="510" y="124" fill="#D4EAD8" font-size="16" font-family="monospace" font-weight="bold">A3F7-9C2E</text>
+  <circle cx="750" cy="118" r="12" fill="#00E5A0" opacity="0.2"/>
+  <text x="750" y="123" fill="#00E5A0" font-size="14" text-anchor="middle" font-weight="bold">✓</text>
+  <text x="450" y="148" fill="#A8C4B0" font-size="13" font-family="monospace">Key: 123456-789012-345678-9012...</text>
+
+  <!-- Key entry: NO MATCH 1 -->
+  <rect x="434" y="170" width="334" height="58" fill="#091510" rx="6" stroke="#1e3a22" stroke-width="1"/>
+  <text x="450" y="190" fill="#7FB09A" font-size="12" font-family="monospace">Key ID:</text>
+  <text x="510" y="190" fill="#A8C4B0" font-size="14" font-family="monospace">B1D4-5E8F</text>
+  <circle cx="750" cy="184" r="12" fill="#ef4444" opacity="0.15"/>
+  <text x="750" y="189" fill="#ef4444" font-size="14" text-anchor="middle">✕</text>
+  <text x="450" y="214" fill="#2a5236" font-size="13" font-family="monospace">Key: 654321-098765-432109-8765...</text>
+
+  <!-- Key entry: NO MATCH 2 -->
+  <rect x="434" y="236" width="334" height="58" fill="#091510" rx="6" stroke="#1e3a22" stroke-width="1"/>
+  <text x="450" y="256" fill="#7FB09A" font-size="12" font-family="monospace">Key ID:</text>
+  <text x="510" y="256" fill="#A8C4B0" font-size="14" font-family="monospace">C9A2-1B7D</text>
+  <circle cx="750" cy="250" r="12" fill="#ef4444" opacity="0.15"/>
+  <text x="750" y="255" fill="#ef4444" font-size="14" text-anchor="middle">✕</text>
+  <text x="450" y="280" fill="#2a5236" font-size="13" font-family="monospace">Key: 112233-445566-778899-0011...</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="350" x2="760" y2="350" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Bottom tip -->
+  <rect x="18" y="362" width="764" height="64" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="400" y="386" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Only use the key whose ID exactly matches the screen</text>
+  <text x="400" y="412" fill="#A8C4B0" font-size="14" font-family="monospace" text-anchor="middle">If you have multiple keys, try each one whose ID starts with A3F7 — the full ID is shown on the recovery screen</text>
 </svg>

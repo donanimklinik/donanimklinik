@@ -1,62 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Windows digital license: linked to Microsoft account and hardware fingerprint — no product key needed. If not working, sign in to Microsoft account and run troubleshooter">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Windows digital license: linked to Microsoft account and hardware fingerprint — no product key needed. If not working, sign in to Microsoft account and run troubleshooter">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
-    <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+    <marker id="arr-blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
       <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
     </marker>
+    <marker id="arr-green" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
+    </marker>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">WINDOWS DIGITAL LICENSE — HOW IT WORKS</text>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
 
-  <!-- How digital license works -->
-  <rect x="20" y="38" width="180" height="120" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="110" y="62" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Your PC</text>
-  <text x="110" y="82" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Hardware ID</text>
-  <text x="110" y="98" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">(CPU + mobo hash)</text>
-  <text x="110" y="116" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Sent to MS servers</text>
-  <text x="110" y="132" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">on activation</text>
-  <text x="110" y="152" fill="#3b82f6" font-size="11" font-family="monospace" text-anchor="middle">Linked forever ✓</text>
+  <!-- Main title -->
+  <text x="400" y="38" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Windows Digital License — How It Works</text>
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#1e3a22" stroke-width="1"/>
 
-  <line x1="202" y1="98" x2="238" y2="98" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- Flow: PC hardware → MS servers → MS Account -->
+  <!-- PC Box -->
+  <rect x="20" y="62" width="200" height="130" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="120" y="86" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Your PC</text>
+  <line x1="36" y1="94" x2="204" y2="94" stroke="#1e3a22" stroke-width="1"/>
+  <text x="120" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Hardware fingerprint</text>
+  <text x="120" y="132" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">CPU + motherboard hash</text>
+  <text x="120" y="152" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Sent to MS servers</text>
+  <text x="120" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">on activation</text>
+  <text x="120" y="185" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle">Linked permanently ✓</text>
 
-  <!-- MS Account -->
-  <rect x="240" y="38" width="180" height="120" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="2"/>
-  <text x="330" y="62" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">MS Account</text>
-  <text x="330" y="82" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">License stored in</text>
-  <text x="330" y="98" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">your account</text>
-  <text x="330" y="116" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Survives reinstall</text>
-  <text x="330" y="136" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">No key needed ✓</text>
-  <text x="330" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Auto-activates</text>
+  <!-- Arrow PC → MS Account -->
+  <line x1="222" y1="127" x2="262" y2="127" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr-blue)"/>
 
-  <line x1="422" y1="98" x2="458" y2="98" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr)"/>
+  <!-- MS Account box -->
+  <rect x="264" y="62" width="200" height="130" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="2"/>
+  <text x="364" y="86" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">MS Account</text>
+  <line x1="280" y1="94" x2="448" y2="94" stroke="#1e3a22" stroke-width="1"/>
+  <text x="364" y="114" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">License stored in</text>
+  <text x="364" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">your MS account</text>
+  <text x="364" y="152" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Survives reinstall</text>
+  <text x="364" y="170" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">No key needed ✓</text>
+  <text x="364" y="185" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Auto-activates</text>
 
-  <!-- Activation check -->
-  <rect x="460" y="38" width="180" height="120" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="550" y="62" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Not Working?</text>
-  <text x="550" y="82" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Sign in to same</text>
-  <text x="550" y="98" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Microsoft account</text>
-  <text x="550" y="116" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">Settings → Activation</text>
-  <text x="550" y="132" fill="#93c5fd" font-size="11" font-family="monospace" text-anchor="middle">→ Troubleshoot</text>
-  <text x="550" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Add MS account first</text>
+  <!-- Arrow MS Account → Benefits -->
+  <line x1="466" y1="127" x2="506" y2="127" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr-green)"/>
 
-  <!-- Hardware change note -->
-  <rect x="660" y="38" width="120" height="120" fill="#1a0d0d" rx="10" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="720" y="64" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">Hw Change</text>
-  <text x="720" y="84" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">New CPU or</text>
-  <text x="720" y="100" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">motherboard</text>
-  <text x="720" y="118" fill="#ef4444" font-size="11" font-family="monospace" text-anchor="middle">May deactivate</text>
-  <text x="720" y="136" fill="#f59e0b" font-size="11" font-family="monospace" text-anchor="middle">→ Troubleshoot</text>
-  <text x="720" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">to relink</text>
+  <!-- Benefits box -->
+  <rect x="508" y="62" width="272" height="130" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="644" y="86" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Benefits</text>
+  <line x1="524" y1="94" x2="764" y2="94" stroke="#1e3a22" stroke-width="1"/>
+  <text x="530" y="115" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="550" y="115" fill="#D4EAD8" font-size="14" font-family="monospace">No product key to lose</text>
+  <text x="530" y="135" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="550" y="135" fill="#D4EAD8" font-size="14" font-family="monospace">Re-install anytime, auto-activates</text>
+  <text x="530" y="155" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="550" y="155" fill="#D4EAD8" font-size="14" font-family="monospace">Free after Win 10/11 upgrade</text>
+  <text x="530" y="175" fill="#f59e0b" font-size="14" font-family="monospace">!</text>
+  <text x="550" y="175" fill="#D4EAD8" font-size="14" font-family="monospace">CPU/mobo change may reset it</text>
+  <text x="530" y="185" fill="#A8C4B0" font-size="13" font-family="monospace">  → use Troubleshooter to relink</text>
 
-  <!-- Bottom instructions -->
-  <rect x="20" y="174" width="760" height="72" fill="#0d1810" rx="8" stroke="#1e3a22"/>
-  <text x="400" y="196" fill="#F0F4F1" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Steps When Digital License Fails</text>
-  <text x="130" y="218" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">① Settings → Activation</text>
-  <text x="320" y="218" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">② Add MS account</text>
-  <text x="510" y="218" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">③ Click Troubleshoot</text>
-  <text x="690" y="218" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">④ Select hardware changed</text>
-  <text x="400" y="238" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">If troubleshooter fails: slmgr /upk → slmgr /cpky → then re-activate via Settings</text>
+  <!-- Bottom: Fix Steps -->
+  <rect x="20" y="206" width="760" height="202" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="230" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Steps When Digital License Fails</text>
+  <line x1="36" y1="238" x2="764" y2="238" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- 4 steps in a row -->
+  <rect x="36" y="248" width="162" height="90" fill="#091510" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="117" y="270" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">① Settings</text>
+  <text x="117" y="289" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Open Settings app</text>
+  <text x="117" y="307" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">System → Activation</text>
+  <text x="117" y="325" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Check current status</text>
+
+  <rect x="210" y="248" width="162" height="90" fill="#091510" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="291" y="270" fill="#3b82f6" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">② Add Account</text>
+  <text x="291" y="289" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Sign in to the</text>
+  <text x="291" y="307" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Microsoft account</text>
+  <text x="291" y="325" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">used at purchase</text>
+
+  <rect x="384" y="248" width="162" height="90" fill="#091510" rx="8" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="465" y="270" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">③ Troubleshoot</text>
+  <text x="465" y="289" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Click "Troubleshoot"</text>
+  <text x="465" y="307" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">in Activation panel</text>
+  <text x="465" y="325" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Sign in when asked</text>
+
+  <rect x="558" y="248" width="186" height="90" fill="#091510" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="651" y="270" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">④ Select Reason</text>
+  <text x="651" y="289" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Pick "I changed</text>
+  <text x="651" y="307" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">hardware recently"</text>
+  <text x="651" y="325" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle">Relinks license ✓</text>
+
+  <!-- Fallback CMD tip -->
+  <text x="400" y="360" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">If Troubleshooter Fails — Run in CMD as Admin:</text>
+  <text x="400" y="380" fill="#93c5fd" font-size="14" font-family="monospace" text-anchor="middle">slmgr /upk   →   slmgr /cpky   →   then re-activate via Settings</text>
+
+  <text x="400" y="410" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Digital license is free for users who upgraded from Windows 7/8.1 or purchased Windows 10/11 through Microsoft Store.</text>
 </svg>

@@ -1,65 +1,86 @@
-<svg xmlns="http://www.w3.org/2020/svg" viewBox="0 0 800 270" role="img" aria-label="Printer paper jam but no paper visible: ghost jam where sensor thinks paper is stuck — open all covers, check rollers, and reset printer to clear false jam error">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-label="Printer paper jam but no paper visible: ghost jam where sensor thinks paper is stuck — open all covers, check rollers, and reset printer to clear false jam error">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
   </defs>
-  <rect width="800" height="270" fill="#0A130E" rx="12"/>
-  <rect width="800" height="270" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">PRINTER PAPER JAM — NO PAPER VISIBLE (GHOST JAM)</text>
 
-  <!-- Printer diagram with zones -->
-  <rect x="20" y="38" width="340" height="200" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="2"/>
-  <text x="190" y="62" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Where to Check</text>
-  <line x1="36" y1="70" x2="344" y2="70" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Background -->
+  <rect width="800" height="460" fill="#091510" rx="12"/>
+  <rect width="800" height="460" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Printer Paper Jam — No Paper Visible (Ghost Jam Fix)</text>
+  <line x1="20" y1="44" x2="780" y2="44" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Where to Check panel -->
+  <rect x="20" y="56" width="360" height="266" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="2"/>
+  <text x="200" y="80" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Where to Check</text>
+  <line x1="36" y1="90" x2="364" y2="90" stroke="#1e3a22" stroke-width="1"/>
 
   <!-- Zone 1: Paper Tray -->
-  <rect x="36" y="80" width="140" height="44" fill="#1a1200" rx="4" stroke="#f59e0b" stroke-width="1"/>
-  <text x="106" y="100" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">① Paper Tray</text>
-  <text x="106" y="117" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Tiny torn fragment?</text>
+  <rect x="36" y="100" width="148" height="62" fill="#1a1200" rx="6" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="110" y="122" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">① Paper Tray</text>
+  <text x="110" y="140" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Remove all paper</text>
+  <text x="110" y="156" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Tiny torn fragment?</text>
 
   <!-- Zone 2: Rear Door -->
-  <rect x="188" y="80" width="140" height="44" fill="#1a1200" rx="4" stroke="#f59e0b" stroke-width="1"/>
-  <text x="258" y="100" fill="#f59e0b" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">② Rear Door</text>
-  <text x="258" y="117" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Open if possible</text>
+  <rect x="196" y="100" width="148" height="62" fill="#1a1200" rx="6" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="270" y="122" fill="#f59e0b" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">② Rear Door</text>
+  <text x="270" y="140" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Open if present</text>
+  <text x="270" y="156" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Check inside path</text>
 
-  <!-- Zone 3: Inside -->
-  <rect x="36" y="134" width="140" height="44" fill="#1a1200" rx="4" stroke="#ef4444" stroke-width="1"/>
-  <text x="106" y="154" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">③ Rollers</text>
-  <text x="106" y="171" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Stuck confetti-size?</text>
+  <!-- Zone 3: Rollers -->
+  <rect x="36" y="176" width="148" height="62" fill="#1a0d0d" rx="6" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="110" y="198" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">③ Rollers</text>
+  <text x="110" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Confetti-sized scrap</text>
+  <text x="110" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">can trigger sensor</text>
 
-  <!-- Zone 4: Sensor -->
-  <rect x="188" y="134" width="140" height="44" fill="#1a1200" rx="4" stroke="#ef4444" stroke-width="1"/>
-  <text x="258" y="154" fill="#ef4444" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">④ Sensor Flap</text>
-  <text x="258" y="171" fill="#93B5A0" font-size="11" font-family="monospace" text-anchor="middle">Move gently → spring</text>
+  <!-- Zone 4: Sensor Flap -->
+  <rect x="196" y="176" width="148" height="62" fill="#1a0d0d" rx="6" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="270" y="198" fill="#ef4444" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">④ Sensor Flap</text>
+  <text x="270" y="216" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Move gently</text>
+  <text x="270" y="232" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Should spring back</text>
 
-  <text x="190" y="210" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Use flashlight — pieces</text>
-  <text x="190" y="226" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">as small as 5mm cause jam</text>
+  <text x="200" y="268" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Use a flashlight — pieces</text>
+  <text x="200" y="286" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">as small as 5 mm cause jams</text>
+  <text x="200" y="306" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Check: top cover, cartridge area, output tray</text>
 
-  <!-- Fix panel -->
-  <rect x="378" y="38" width="402" height="200" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
-  <text x="579" y="62" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Clear the Ghost Jam</text>
-  <line x1="394" y1="70" x2="764" y2="70" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Clear the Ghost Jam panel -->
+  <rect x="398" y="56" width="382" height="266" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="589" y="80" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Clear the Ghost Jam — Step by Step</text>
+  <line x1="414" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="394" y="92" fill="#00E5A0" font-size="12" font-family="monospace">①</text>
-  <text x="414" y="92" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Power off completely</text>
-  <text x="414" y="109" fill="#93B5A0" font-size="12" font-family="monospace">Unplug from wall — not just standby</text>
+  <text x="422" y="116" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">①</text>
+  <text x="448" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Power off completely</text>
+  <text x="448" y="135" fill="#A8C4B0" font-size="13" font-family="monospace">Unplug from wall — not just standby</text>
 
-  <line x1="394" y1="120" x2="764" y2="120" stroke="#1e3a22" stroke-width="1"/>
+  <line x1="414" y1="150" x2="764" y2="150" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="394" y="142" fill="#00E5A0" font-size="12" font-family="monospace">②</text>
-  <text x="414" y="142" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Open ALL access covers</text>
-  <text x="414" y="159" fill="#93B5A0" font-size="12" font-family="monospace">Front, rear, top — leave open 30s</text>
+  <text x="422" y="176" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">②</text>
+  <text x="448" y="176" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Open ALL access covers</text>
+  <text x="448" y="195" fill="#A8C4B0" font-size="13" font-family="monospace">Front, rear, top — leave open 30 seconds</text>
 
-  <line x1="394" y1="170" x2="764" y2="170" stroke="#1e3a22" stroke-width="1"/>
+  <line x1="414" y1="210" x2="764" y2="210" stroke="#1e3a22" stroke-width="1"/>
 
-  <text x="394" y="192" fill="#00E5A0" font-size="12" font-family="monospace">③</text>
-  <text x="414" y="192" fill="#F0F4F1" font-size="13" font-family="monospace" font-weight="bold">Remove ALL paper</text>
-  <text x="414" y="209" fill="#93B5A0" font-size="12" font-family="monospace">Empty all trays — use flashlight</text>
+  <text x="422" y="236" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">③</text>
+  <text x="448" y="236" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Remove ALL paper from trays</text>
+  <text x="448" y="255" fill="#A8C4B0" font-size="13" font-family="monospace">Use flashlight — check every path</text>
 
-  <text x="414" y="228" fill="#6B7F72" font-size="11" font-family="monospace">If error persists: factory reset</text>
+  <line x1="414" y1="270" x2="764" y2="270" stroke="#1e3a22" stroke-width="1"/>
 
-  <!-- Bottom -->
-  <rect x="20" y="248" width="760" height="14" fill="#0d1810" rx="4" stroke="#1e3a22"/>
-  <text x="400" y="258" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Stuck paper: never pull forcefully — hand-turn the roller knob (if available) to advance and release it gently</text>
+  <text x="422" y="296" fill="#00E5A0" font-size="16" font-family="monospace" font-weight="bold">④</text>
+  <text x="448" y="296" fill="#D4EAD8" font-size="14" font-family="monospace" font-weight="bold">Plug in and power on</text>
+  <text x="448" y="312" fill="#A8C4B0" font-size="13" font-family="monospace">Error persists → factory reset printer</text>
+
+  <!-- Safety tip -->
+  <rect x="20" y="338" width="760" height="56" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="400" y="362" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">NEVER Pull Paper Forcefully</text>
+  <line x1="36" y1="372" x2="764" y2="372" stroke="#1e3a22" stroke-width="1"/>
+  <text x="400" y="390" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Tearing paper leaves smaller fragments deeper in the roller path → worsens the jam</text>
+
+  <!-- Roller tip -->
+  <rect x="20" y="406" width="760" height="44" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="428" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Stuck paper: hand-turn the roller knob (if available) to slowly advance and release jammed sheet</text>
+  <text x="400" y="444" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Dirty rollers also cause jams — clean with a lint-free cloth slightly dampened with water</text>
 </svg>

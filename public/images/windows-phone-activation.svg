@@ -1,64 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Windows phone activation: run slui 4 to open phone activation wizard, call the number shown, enter installation ID digits, receive confirmation ID, enter it to activate Windows offline">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Windows phone activation: run slui 4 to open phone activation wizard, call the number shown, enter installation ID digits, receive confirmation ID, enter it to activate Windows offline">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
     <marker id="arr" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
       <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
     </marker>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">WINDOWS PHONE ACTIVATION — STEP BY STEP</text>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
+
+  <!-- Main title -->
+  <text x="400" y="38" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Windows Phone Activation — Step by Step</text>
+  <line x1="40" y1="50" x2="760" y2="50" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="68" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Use this method when online activation fails (errors 0xC004F074, 0xC004C008). Works fully offline without internet.</text>
 
   <!-- Step 1 -->
-  <rect x="20" y="40" width="165" height="120" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="102" y="64" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">① Run slui 4</text>
-  <text x="102" y="84" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Press Win+R</text>
-  <text x="102" y="100" fill="#93c5fd" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">slui 4</text>
-  <text x="102" y="118" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Phone Activation</text>
-  <text x="102" y="134" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">wizard opens</text>
-  <text x="102" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Select country first</text>
+  <rect x="20" y="80" width="178" height="140" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="109" y="104" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">① Open Wizard</text>
+  <line x1="36" y1="112" x2="182" y2="112" stroke="#1e3a22" stroke-width="1"/>
+  <text x="109" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Press Win+R,</text>
+  <text x="109" y="150" fill="#93c5fd" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">slui 4</text>
+  <text x="109" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Phone Activation</text>
+  <text x="109" y="188" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">wizard opens</text>
+  <text x="109" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Select your country</text>
 
-  <line x1="187" y1="100" x2="213" y2="100" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="200" y1="150" x2="218" y2="150" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
 
   <!-- Step 2 -->
-  <rect x="215" y="40" width="165" height="120" fill="#0d1810" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="297" y="64" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">② Call Number</text>
-  <text x="297" y="84" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Shown in wizard</text>
-  <text x="297" y="100" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Automated system</text>
-  <text x="297" y="116" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Press 1 to activate</text>
-  <text x="297" y="134" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">by phone</text>
-  <text x="297" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Free 0800 number</text>
+  <rect x="220" y="80" width="178" height="140" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="309" y="104" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">② Call Number</text>
+  <line x1="236" y1="112" x2="382" y2="112" stroke="#1e3a22" stroke-width="1"/>
+  <text x="309" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Free 0800 number</text>
+  <text x="309" y="150" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">shown in wizard</text>
+  <text x="309" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Automated system</text>
+  <text x="309" y="188" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Press 1 to activate</text>
+  <text x="309" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">by phone</text>
 
-  <line x1="382" y1="100" x2="408" y2="100" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="400" y1="150" x2="418" y2="150" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
 
   <!-- Step 3 -->
-  <rect x="410" y="40" width="165" height="120" fill="#0d1810" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="492" y="64" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">③ Enter Install ID</text>
-  <text x="492" y="84" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">9 groups of digits</text>
-  <text x="492" y="100" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">shown on screen</text>
-  <text x="492" y="116" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Read them to the</text>
-  <text x="492" y="132" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">automated system</text>
-  <text x="492" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">via keypad or voice</text>
+  <rect x="420" y="80" width="178" height="140" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="509" y="104" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">③ Give Install ID</text>
+  <line x1="436" y1="112" x2="582" y2="112" stroke="#1e3a22" stroke-width="1"/>
+  <text x="509" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">9 groups of digits</text>
+  <text x="509" y="150" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">shown on screen</text>
+  <text x="509" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Read them to the</text>
+  <text x="509" y="188" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">automated system</text>
+  <text x="509" y="208" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">via keypad or voice</text>
 
-  <line x1="577" y1="100" x2="603" y2="100" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="600" y1="150" x2="618" y2="150" stroke="#00E5A0" stroke-width="2" marker-end="url(#arr)"/>
 
   <!-- Step 4 -->
-  <rect x="605" y="40" width="175" height="120" fill="#0d1a12" rx="10" stroke="#00E5A0" stroke-width="2"/>
-  <text x="692" y="64" fill="#00E5A0" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">④ Get Confirm ID</text>
-  <text x="692" y="84" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Automated gives</text>
-  <text x="692" y="100" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Confirmation ID</text>
-  <text x="692" y="116" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Type into wizard</text>
-  <text x="692" y="132" fill="#00E5A0" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">→ Activated ✓</text>
-  <text x="692" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Works offline</text>
+  <rect x="620" y="80" width="160" height="140" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="2"/>
+  <text x="700" y="104" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">④ Enter ID</text>
+  <line x1="636" y1="112" x2="764" y2="112" stroke="#1e3a22" stroke-width="1"/>
+  <text x="700" y="132" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Automated gives</text>
+  <text x="700" y="150" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Confirmation ID</text>
+  <text x="700" y="170" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Type it into</text>
+  <text x="700" y="188" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">the wizard</text>
+  <text x="700" y="208" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Activated ✓</text>
 
-  <!-- Note about agent -->
-  <rect x="20" y="176" width="760" height="72" fill="#0d1810" rx="8" stroke="#1e3a22"/>
-  <text x="400" y="198" fill="#F0F4F1" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Tips</text>
-  <text x="200" y="220" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Automated system fails?</text>
-  <text x="200" y="238" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Press 0 to reach an agent</text>
-  <line x1="400" y1="204" x2="400" y2="242" stroke="#1e3a22" stroke-width="1"/>
-  <text x="590" y="220" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Use this when internet</text>
-  <text x="590" y="238" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">activation fails (0xC004F074)</text>
+  <!-- Tips & Troubleshooting -->
+  <rect x="20" y="234" width="760" height="174" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="400" y="258" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Tips &amp; Troubleshooting</text>
+  <line x1="36" y1="266" x2="764" y2="266" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Left column -->
+  <rect x="36" y="276" width="346" height="114" fill="#091510" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="209" y="298" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">If Automated System Fails</text>
+  <line x1="52" y1="305" x2="366" y2="305" stroke="#1e3a22" stroke-width="1"/>
+  <text x="52" y="324" fill="#f59e0b" font-size="14" font-family="monospace">→</text>
+  <text x="72" y="324" fill="#D4EAD8" font-size="14" font-family="monospace">Press 0 to reach a live agent</text>
+  <text x="52" y="342" fill="#f59e0b" font-size="14" font-family="monospace">→</text>
+  <text x="72" y="342" fill="#D4EAD8" font-size="14" font-family="monospace">Explain hardware change</text>
+  <text x="52" y="360" fill="#f59e0b" font-size="14" font-family="monospace">→</text>
+  <text x="72" y="360" fill="#D4EAD8" font-size="14" font-family="monospace">Agent can reset activation count</text>
+  <text x="52" y="378" fill="#A8C4B0" font-size="13" font-family="monospace">Available Mon–Fri during business hours</text>
+
+  <!-- Right column -->
+  <rect x="394" y="276" width="350" height="114" fill="#091510" rx="8" stroke="#2a5236" stroke-width="1"/>
+  <text x="569" y="298" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">When to Use Phone Activation</text>
+  <line x1="410" y1="305" x2="728" y2="305" stroke="#1e3a22" stroke-width="1"/>
+  <text x="410" y="324" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="430" y="324" fill="#D4EAD8" font-size="14" font-family="monospace">Online activation fails (0xC004F074)</text>
+  <text x="410" y="342" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="430" y="342" fill="#D4EAD8" font-size="14" font-family="monospace">Key blocked after hardware change</text>
+  <text x="410" y="360" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="430" y="360" fill="#D4EAD8" font-size="14" font-family="monospace">PC has no internet access</text>
+  <text x="410" y="378" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="430" y="378" fill="#D4EAD8" font-size="14" font-family="monospace">Retail key on new device</text>
+
+  <text x="400" y="413" fill="#7FB09A" font-size="12" font-family="monospace" text-anchor="middle">Phone activation is free and available in most countries. Find your country's number at microsoft.com/en-us/activation.</text>
 </svg>

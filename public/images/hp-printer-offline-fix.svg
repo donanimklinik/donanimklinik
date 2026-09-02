@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="HP printer showing offline status: fix by unchecking Use Printer Offline, restarting Print Spooler, updating port IP address if on WiFi, and reinstalling driver as last resort">
+  <defs>
+    <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="#091510" rx="12"/>
+  <rect width="800" height="450" fill="url(#g)" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="32" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">HP Printer Offline — Complete Fix Guide</text>
+  <line x1="20" y1="44" x2="780" y2="44" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Why Printer Goes Offline panel -->
+  <rect x="20" y="56" width="370" height="130" fill="#0d1e16" rx="10" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="205" y="80" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Why HP Shows "Offline"</text>
+  <line x1="36" y1="90" x2="374" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="114" fill="#D4EAD8" font-size="14" font-family="monospace">Windows lost communication with printer</text>
+  <text x="36" y="134" fill="#D4EAD8" font-size="14" font-family="monospace">"Use Printer Offline" flag got toggled on</text>
+  <text x="36" y="154" fill="#D4EAD8" font-size="14" font-family="monospace">WiFi printer changed its IP address</text>
+  <text x="36" y="173" fill="#A8C4B0" font-size="13" font-family="monospace">Print Spooler crashed and did not recover</text>
+
+  <!-- Fix 1: Uncheck Offline -->
+  <rect x="410" y="56" width="370" height="130" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="595" y="80" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix 1 — Uncheck "Use Offline"</text>
+  <line x1="426" y1="90" x2="764" y2="90" stroke="#1e3a22" stroke-width="1"/>
+  <text x="426" y="114" fill="#D4EAD8" font-size="14" font-family="monospace">Settings → Printers &amp; Scanners → HP</text>
+  <text x="426" y="134" fill="#D4EAD8" font-size="14" font-family="monospace">→ Open print queue → Printer menu</text>
+  <text x="426" y="154" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Uncheck: "Use Printer Offline"</text>
+  <text x="426" y="173" fill="#A8C4B0" font-size="13" font-family="monospace">Fixes 60% of offline issues instantly</text>
+
+  <!-- Fix 2: Restart Spooler -->
+  <rect x="20" y="202" width="370" height="120" fill="#0d1e16" rx="10" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="205" y="226" fill="#f59e0b" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix 2 — Restart Print Spooler</text>
+  <line x1="36" y1="236" x2="374" y2="236" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="260" fill="#D4EAD8" font-size="14" font-family="monospace">Win+R → type: services.msc → Enter</text>
+  <text x="36" y="280" fill="#D4EAD8" font-size="14" font-family="monospace">Scroll to "Print Spooler" → Right-click</text>
+  <text x="36" y="300" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Select "Restart" — clears all stuck jobs</text>
+
+  <!-- Fix 3: Update Port IP -->
+  <rect x="410" y="202" width="370" height="120" fill="#0d1e16" rx="10" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="595" y="226" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix 3 — Update Port IP (WiFi only)</text>
+  <line x1="426" y1="236" x2="764" y2="236" stroke="#1e3a22" stroke-width="1"/>
+  <text x="426" y="260" fill="#D4EAD8" font-size="14" font-family="monospace">Control Panel → Devices &amp; Printers</text>
+  <text x="426" y="280" fill="#D4EAD8" font-size="14" font-family="monospace">Right-click HP → Properties → Ports tab</text>
+  <text x="426" y="300" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Configure Port → enter new IP address</text>
+
+  <!-- Fix 4: Reinstall Driver -->
+  <rect x="20" y="338" width="370" height="100" fill="#0d1e16" rx="10" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="205" y="362" fill="#4ade80" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Fix 4 — Reinstall HP Driver</text>
+  <line x1="36" y1="372" x2="374" y2="372" stroke="#1e3a22" stroke-width="1"/>
+  <text x="36" y="396" fill="#D4EAD8" font-size="14" font-family="monospace">Remove HP printer from Settings completely</text>
+  <text x="36" y="416" fill="#D4EAD8" font-size="14" font-family="monospace">Download fresh driver from hp.com/support</text>
+  <text x="36" y="432" fill="#A8C4B0" font-size="13" font-family="monospace">Use HP Easy Start installer for auto-setup</text>
+
+  <!-- Decision flow -->
+  <rect x="410" y="338" width="370" height="100" fill="#0d1e16" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="595" y="362" fill="#00E5A0" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Try in This Order</text>
+  <line x1="426" y1="372" x2="764" y2="372" stroke="#1e3a22" stroke-width="1"/>
+  <text x="426" y="396" fill="#D4EAD8" font-size="14" font-family="monospace">Fix 1 → Fix 2 → Fix 3 → Fix 4</text>
+  <text x="426" y="416" fill="#A8C4B0" font-size="13" font-family="monospace">Most cases resolved by Fix 1 or Fix 2</text>
+  <text x="426" y="432" fill="#7FB09A" font-size="12" font-family="monospace">WiFi offline: Fix 3 is often the answer</text>
+</svg>

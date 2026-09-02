@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-label="Outlook not sending email: email goes from compose through SMTP authentication to mail server — blocked at SMTP auth means wrong password or port, stuck in outbox means server timeout">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Outlook not sending email: email goes from compose through SMTP authentication to mail server — blocked at SMTP auth means wrong password or port, stuck in outbox means server timeout">
   <defs>
     <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width="0.6"/>
     </pattern>
     <marker id="ok" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
       <polygon points="0 0,9 4.5,0 9" fill="#00E5A0"/>
@@ -9,63 +9,87 @@
     <marker id="fail" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
       <polygon points="0 0,9 4.5,0 9" fill="#ef4444"/>
     </marker>
+    <marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <polygon points="0 0,9 4.5,0 9" fill="#3b82f6"/>
+    </marker>
   </defs>
-  <rect width="800" height="260" fill="#0A130E" rx="12"/>
-  <rect width="800" height="260" fill="url(#g)" rx="12"/>
-  <text x="400" y="22" fill="#4a5e4e" font-size="10" font-family="monospace" text-anchor="middle" letter-spacing="2">OUTLOOK NOT SENDING — WHERE THE BLOCK HAPPENS</text>
+  <rect width="800" height="420" fill="#091510" rx="12"/>
+  <rect width="800" height="420" fill="url(#g)" rx="12"/>
 
-  <!-- Compose -->
-  <rect x="20" y="60" width="120" height="100" fill="#0d1810" rx="8" stroke="#6B7F72" stroke-width="1.2"/>
-  <text x="80" y="86" fill="#93B5A0" font-size="18" text-anchor="middle">✉</text>
-  <text x="80" y="108" fill="#93B5A0" font-size="13" font-family="monospace" text-anchor="middle">Compose</text>
-  <text x="80" y="124" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Click Send</text>
-  <text x="80" y="148" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">Goes to Outbox</text>
+  <!-- Title -->
+  <text x="400" y="34" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Outlook Not Sending — Where the Block Happens</text>
+  <line x1="40" y1="46" x2="760" y2="46" stroke="#1e3a22" stroke-width="1"/>
 
-  <line x1="142" y1="110" x2="178" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ok)"/>
+  <!-- Flow label -->
+  <text x="400" y="68" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Email send path: Compose → SMTP Auth → Mail Server → Delivered</text>
 
-  <!-- SMTP Auth - common fail point -->
-  <rect x="180" y="44" width="170" height="132" fill="#1a0d0d" rx="8" stroke="#ef4444" stroke-width="2"/>
-  <text x="265" y="68" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">SMTP Auth</text>
-  <text x="265" y="86" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Outlook logs in</text>
-  <text x="265" y="102" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">to mail server</text>
-  <text x="265" y="120" fill="#ef4444" font-size="11" font-family="monospace" text-anchor="middle">⚠ Fails here most:</text>
-  <text x="265" y="137" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">wrong password</text>
-  <text x="265" y="152" fill="#6B7F72" font-size="11" font-family="monospace" text-anchor="middle">wrong port (587/465)</text>
-  <text x="265" y="168" fill="#f59e0b" font-size="11" font-family="monospace" text-anchor="middle">App password needed?</text>
+  <!-- Stage 1: Compose -->
+  <rect x="20" y="82" width="130" height="118" fill="#0d1e16" rx="8" stroke="#2a5236" stroke-width="1.5"/>
+  <text x="85" y="108" fill="#D4EAD8" font-size="22" text-anchor="middle">✉</text>
+  <text x="85" y="132" fill="#4ade80" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Compose</text>
+  <text x="85" y="152" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Click Send</text>
+  <text x="85" y="170" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Goes to</text>
+  <text x="85" y="188" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Outbox</text>
 
-  <line x1="352" y1="110" x2="388" y2="110" stroke="#3b82f6" stroke-width="2" marker-end="url(#ok)"/>
+  <line x1="152" y1="141" x2="180" y2="141" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue)"/>
 
-  <!-- Mail server -->
-  <rect x="390" y="60" width="140" height="100" fill="#0d1810" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="460" y="86" fill="#3b82f6" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">Mail Server</text>
-  <text x="460" y="104" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Accepts email</text>
-  <text x="460" y="120" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Delivers to</text>
-  <text x="460" y="136" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">recipient</text>
-  <text x="460" y="155" fill="#00E5A0" font-size="11" font-family="monospace" text-anchor="middle">If reached: sent ✓</text>
+  <!-- Stage 2: SMTP Auth — red, most common fail -->
+  <rect x="182" y="60" width="190" height="160" fill="#1a0d0d" rx="8" stroke="#ef4444" stroke-width="2"/>
+  <text x="277" y="86" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">SMTP Auth</text>
+  <line x1="198" y1="96" x2="356" y2="96" stroke="#2a1010" stroke-width="1"/>
+  <text x="277" y="116" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Outlook logs in</text>
+  <text x="277" y="136" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">to mail server</text>
+  <text x="277" y="158" fill="#ef4444" font-size="13" font-family="monospace" text-anchor="middle" font-weight="bold">⚠ Fails here most often:</text>
+  <text x="277" y="177" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Wrong password</text>
+  <text x="277" y="196" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Wrong port (use 587/465)</text>
+  <text x="277" y="213" fill="#f59e0b" font-size="13" font-family="monospace" text-anchor="middle">App password needed?</text>
 
-  <line x1="532" y1="110" x2="568" y2="110" stroke="#00E5A0" stroke-width="2" marker-end="url(#ok)"/>
+  <line x1="374" y1="141" x2="402" y2="141" stroke="#3b82f6" stroke-width="2" marker-end="url(#blue)"/>
 
-  <!-- Fix panel -->
-  <rect x="570" y="44" width="210" height="172" fill="#0d1810" rx="10" stroke="#00E5A0" stroke-width="1.5"/>
-  <text x="675" y="66" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Checklist</text>
-  <line x1="586" y1="74" x2="764" y2="74" stroke="#1e3a22" stroke-width="1"/>
-  <text x="586" y="94" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="606" y="94" fill="#93B5A0" font-size="12" font-family="monospace">Re-enter password</text>
-  <text x="586" y="114" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="606" y="114" fill="#93B5A0" font-size="12" font-family="monospace">Port 587 + STARTTLS</text>
-  <text x="586" y="134" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="606" y="134" fill="#93B5A0" font-size="12" font-family="monospace">Gmail: use App Password</text>
-  <text x="586" y="154" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="606" y="154" fill="#93B5A0" font-size="12" font-family="monospace">Enable SMTP in webmail</text>
-  <text x="586" y="174" fill="#00E5A0" font-size="12" font-family="monospace">✓</text>
-  <text x="606" y="174" fill="#93B5A0" font-size="12" font-family="monospace">Delete stuck Outbox msg</text>
-  <text x="586" y="194" fill="#6B7F72" font-size="11" font-family="monospace">Repair account:</text>
-  <text x="586" y="208" fill="#6B7F72" font-size="11" font-family="monospace">File → Account Settings</text>
+  <!-- Stage 3: Mail Server -->
+  <rect x="404" y="82" width="160" height="118" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="484" y="108" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">Mail Server</text>
+  <line x1="420" y1="116" x2="548" y2="116" stroke="#1e3a22" stroke-width="1"/>
+  <text x="484" y="138" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Accepts email</text>
+  <text x="484" y="158" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Delivers to</text>
+  <text x="484" y="178" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">recipient</text>
 
-  <!-- Bottom -->
-  <rect x="20" y="210" width="540" height="38" fill="#0d1810" rx="6" stroke="#1e3a22"/>
-  <text x="280" y="226" fill="#F0F4F1" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">SMTP Settings Reference</text>
-  <text x="100" y="242" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Gmail: smtp.gmail.com:587</text>
-  <text x="290" y="242" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Outlook: smtp.office365.com:587</text>
-  <text x="480" y="242" fill="#93B5A0" font-size="12" font-family="monospace" text-anchor="middle">Yahoo: smtp.mail.yahoo.com:587</text>
+  <line x1="566" y1="141" x2="596" y2="141" stroke="#00E5A0" stroke-width="2" marker-end="url(#ok)"/>
+
+  <!-- Delivered -->
+  <rect x="598" y="100" width="60" height="82" fill="#0d1e16" rx="6" stroke="#00E5A0" stroke-width="2"/>
+  <text x="628" y="126" fill="#00E5A0" font-size="20" text-anchor="middle">📤</text>
+  <text x="628" y="148" fill="#00E5A0" font-size="14" font-family="monospace" text-anchor="middle">Sent</text>
+  <text x="628" y="168" fill="#4ade80" font-size="12" font-family="monospace" text-anchor="middle">✓</text>
+
+  <!-- Divider -->
+  <line x1="40" y1="240" x2="760" y2="240" stroke="#1e3a22" stroke-width="1"/>
+
+  <!-- Fix Checklist Panel -->
+  <rect x="20" y="252" width="440" height="150" fill="#0d1e16" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <text x="240" y="276" fill="#00E5A0" font-size="20" font-family="monospace" text-anchor="middle" font-weight="bold">Fix Checklist</text>
+  <line x1="36" y1="286" x2="444" y2="286" stroke="#1e3a22" stroke-width="1"/>
+  <text x="42" y="308" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="64" y="308" fill="#D4EAD8" font-size="14" font-family="monospace">Re-enter account password</text>
+  <text x="42" y="328" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="64" y="328" fill="#D4EAD8" font-size="14" font-family="monospace">Set Port 587 + STARTTLS</text>
+  <text x="42" y="348" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="64" y="348" fill="#D4EAD8" font-size="14" font-family="monospace">Gmail: use App Password (not main)</text>
+  <text x="42" y="368" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="64" y="368" fill="#D4EAD8" font-size="14" font-family="monospace">Enable SMTP access in webmail</text>
+  <text x="42" y="390" fill="#00E5A0" font-size="14" font-family="monospace">✓</text>
+  <text x="64" y="390" fill="#D4EAD8" font-size="14" font-family="monospace">Delete stuck Outbox message first</text>
+
+  <!-- SMTP Reference Panel -->
+  <rect x="474" y="252" width="306" height="150" fill="#0d1e16" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="627" y="276" fill="#3b82f6" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">SMTP Settings</text>
+  <line x1="490" y1="286" x2="764" y2="286" stroke="#1e3a22" stroke-width="1"/>
+
+  <text x="490" y="308" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Gmail</text>
+  <text x="490" y="326" fill="#A8C4B0" font-size="13" font-family="monospace">smtp.gmail.com : 587</text>
+
+  <text x="490" y="350" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Outlook / M365</text>
+  <text x="490" y="368" fill="#A8C4B0" font-size="13" font-family="monospace">smtp.office365.com : 587</text>
+
+  <text x="490" y="390" fill="#4ade80" font-size="14" font-family="monospace" font-weight="bold">Yahoo   <tspan fill="#A8C4B0" font-size="13" font-weight="normal">smtp.mail.yahoo.com : 587</tspan></text>
 </svg>

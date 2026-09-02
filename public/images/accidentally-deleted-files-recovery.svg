@@ -61,4 +61,16 @@
   <text x="694" y="236" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Last software resort</text>
 
   <!-- Step numbers bottom -->
-  <text x="107" y="272" fill="#A8C4B0" font-size="13" font-family="mono
+  <text x="107" y="272" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">STEP 1</text>
+  <text x="302" y="272" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">STEP 2</text>
+  <text x="497" y="272" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">STEP 3</text>
+  <text x="694" y="272" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">STEP 4</text>
+
+  <!-- Warning box -->
+  <rect x="20" y="290" width="760" height="112" fill="#0d1e16" rx="8" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="400" y="316" fill="#ef4444" font-size="16" font-family="monospace" text-anchor="middle" font-weight="bold">&#x26A0; Stop Using the Drive Immediately</text>
+  <line x1="36" y1="326" x2="764" y2="326" stroke="#1e3a22" stroke-width="1"/>
+  <text x="400" y="350" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Every write operation can permanently overwrite your deleted file.</text>
+  <text x="400" y="370" fill="#D4EAD8" font-size="14" font-family="monospace" text-anchor="middle">Minimize disk activity. Do not install recovery software on the same drive.</text>
+  <text x="400" y="392" fill="#A8C4B0" font-size="13" font-family="monospace" text-anchor="middle">Recover to a different drive or USB — never the source drive</text>
+</svg>
