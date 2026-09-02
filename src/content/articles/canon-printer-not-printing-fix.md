@@ -33,6 +33,8 @@ A Canon printer that appears ready but produces no output — or prints blank pa
 
 According to Canon's official printer troubleshooting documentation, the most common causes are depleted ink cartridges (including non-printing colours), clogged print head nozzles, and stuck jobs in the Windows print queue.
 
+![Canon printer not printing: check ink levels and print head, run nozzle check from printer utility, clear print queue in Windows, ensure Canon driver is installed correctly](/images/canon-printer-not-printing.svg)
+
 ## What causes a Canon printer to not print
 
 Canon printers stop printing for a distinct set of reasons:

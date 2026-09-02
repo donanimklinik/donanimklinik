@@ -33,6 +33,8 @@ An HP printer that shows a solid Wi-Fi connection on its own screen but appears 
 
 According to HP's official support documentation, this specific scenario — connected to Wi-Fi but offline in Windows — almost always results from an IP address change. The printer received a new IP from the router after a restart, but Windows still points to the old address.
 
+![HP printer offline fix: printer shows offline in Windows even when powered on — uncheck Use Printer Offline, update port IP address, or run HP Print and Scan Doctor](/images/hp-printer-status-fix.svg)
+
 ## Why HP printer shows connected but offline in Windows
 
 The printer's Wi-Fi status and the Windows printer status are separate systems:

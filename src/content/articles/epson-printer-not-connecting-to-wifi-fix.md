@@ -33,6 +33,8 @@ Epson printers lose their Wi-Fi connection after a router change, password updat
 
 According to Epson's official wireless troubleshooting documentation, the most common causes are stale network credentials stored on the printer, 5 GHz band incompatibility, and router security settings that conflict with the printer's wireless adapter.
 
+![Epson printer not connecting to WiFi: use WiFi Setup on printer control panel or Epson Smart Panel app — blue steady light means connected, 2.4 GHz only, WPA2 required](/images/epson-printer-wifi-connect.svg)
+
 ## What causes Epson printer Wi-Fi connection failures
 
 Epson printers store the network name (SSID) and password internally. Connection failures occur when:

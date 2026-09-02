@@ -33,6 +33,8 @@ A Canon printer loses its Wi-Fi connection when the network changes — such as 
 
 According to Canon's official wireless troubleshooting documentation, the printer stores the previous network credentials and must be reconfigured when the network details change. The most common fix is using the Canon Wi-Fi Connection Assistant utility to re-enter the credentials.
 
+![Canon printer not connecting to WiFi: use Wireless LAN Setup in printer menu or Canon PRINT app — 2.4 GHz only, WPA2 required, reset LAN settings clears old credentials](/images/canon-printer-wifi-connect.svg)
+
 ## What causes Canon printer Wi-Fi connection failures
 
 Canon printers store the Wi-Fi network name and password internally. Connection failures occur when:

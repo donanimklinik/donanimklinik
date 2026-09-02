@@ -33,6 +33,8 @@ A Canon printer that is not responding receives the print command from Windows b
 
 According to Canon's official troubleshooting documentation, a non-responding printer is almost always a communication issue between Windows and the printer, not a hardware failure. The most common causes are a blocked print queue, a stalled Print Spooler service, or a lost connection.
 
+![Canon printer not responding: printer is online but PC cannot communicate — check USB cable, restart print spooler, reinstall driver, or clear Windows spool folder](/images/canon-printer-not-responding.svg)
+
 ## What causes Canon printer not responding
 
 Canon printers stop responding to print commands for specific reasons:

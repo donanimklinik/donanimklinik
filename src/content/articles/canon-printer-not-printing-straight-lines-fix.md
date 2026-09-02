@@ -33,6 +33,8 @@ A Canon printer that produces wavy, skewed, or misaligned lines — on what shou
 
 According to Canon's official maintenance documentation, print head misalignment is a normal occurrence that develops over time or after the printer is moved. It is corrected through the built-in alignment procedure, not through hardware repair.
 
+![Canon printer not printing straight lines: misaligned print head causes diagonal or wavy lines — fix by running print head alignment from Canon utilities or control panel](/images/canon-straight-lines-fix.svg)
+
 ## What causes Canon printer to not print straight lines
 
 Lines appear crooked or wavy for specific reasons:

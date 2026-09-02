@@ -33,6 +33,8 @@ A printer that reports a paper jam when no paper is visibly stuck is experiencin
 
 According to HP's official jam troubleshooting documentation, false jam errors are most commonly caused by small paper fragments left from a previous jam, debris on the paper feed rollers, or a firmware error that misreads the sensor state.
 
+![Printer paper jam but no paper visible: ghost jam where sensor thinks paper is stuck — open all covers, check rollers, remove fragments, power cycle to clear false jam error](/images/printer-paper-jam-fix.svg)
+
 ## What causes a false paper jam error
 
 The jam sensor works by detecting whether the paper path is clear. A false error occurs when:

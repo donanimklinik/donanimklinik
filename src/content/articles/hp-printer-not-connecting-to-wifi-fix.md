@@ -33,6 +33,8 @@ An HP printer that won't connect to Wi-Fi is one of the most common printer issu
 
 According to HP's wireless printer setup documentation, the most frequent causes are temporary network faults that a restart resolves, Wi-Fi band incompatibility (5 GHz only routers), or an incorrect password entered during setup.
 
+![HP printer not connecting to WiFi: use HP printer control panel wireless setup wizard or WPS button on router — ensure 2.4 GHz band is active, run HP Print and Scan Doctor for auto-fix](/images/hp-printer-wifi-setup.svg)
+
 ## What causes HP printer Wi-Fi connection failures
 
 HP printers communicate with your network through an internal wireless adapter. Connection failures occur when:

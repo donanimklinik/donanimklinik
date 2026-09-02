@@ -33,6 +33,8 @@ A Brother printer that won't connect to Wi-Fi displays a blinking WLAN light, sh
 
 According to Brother's official wireless troubleshooting documentation, the most common causes are outdated credentials stored on the printer, 5 GHz band incompatibility, and router security settings that block the printer's wireless adapter.
 
+![Brother printer not connecting to WiFi: use wireless setup wizard on printer or Brother iPrint app — factory reset clears old WiFi settings, 2.4 GHz only, WPA2 required](/images/brother-printer-wifi-connect.svg)
+
 ## What causes Brother printer Wi-Fi connection failures
 
 Brother printers store the Wi-Fi SSID and password internally. Connection failures occur when:
