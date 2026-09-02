@@ -426,15 +426,15 @@ const searchIndex = allArticles.map(a => ({
     input.focus();
   });
 
-  // Close when focus leaves the lookup-wrap
+  // Close only when focus/click lands outside BOTH the lookup-wrap AND the dropdown
   document.addEventListener('focusin', (e) => {
     const wrap = document.querySelector('.lookup-wrap');
-    if (wrap && !wrap.contains(e.target)) close();
+    if (wrap && !wrap.contains(e.target) && !drop.contains(e.target)) close();
   });
 
   document.addEventListener('click', (e) => {
     const wrap = document.querySelector('.lookup-wrap');
-    if (wrap && !wrap.contains(e.target)) close();
+    if (wrap && !wrap.contains(e.target) && !drop.contains(e.target)) close();
   });
 })();
 </script>
