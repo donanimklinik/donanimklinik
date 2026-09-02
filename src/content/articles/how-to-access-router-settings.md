@@ -30,7 +30,7 @@ howto_steps:
 
 The router admin panel — also called the router settings page or router dashboard — is accessed through any web browser using the router's local IP address. According to NETGEAR's documentation, the most common mistake is typing the router's address into a search engine instead of the browser's address bar, which takes you to a web search instead of the router login page.
 
-![How to access router settings: open browser, type 192.168.1.1, log in with admin credentials, see router settings panel](/images/router-admin-panel.svg)
+![How to access router settings: step 1 connect to router WiFi or cable, step 2 open browser and type 192.168.1.1, step 3 login with admin credentials to reach settings panel](/images/router-access-steps.svg)
 
 ## Finding your router's admin address
 

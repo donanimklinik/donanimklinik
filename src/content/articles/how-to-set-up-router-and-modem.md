@@ -32,7 +32,7 @@ howto_steps:
 
 Setting up a modem and router together involves two separate processes: getting the modem online with your ISP, then connecting the router to share that connection. According to NETGEAR's networking documentation, the most common mistake is connecting the router before the modem has fully registered with the ISP — which causes the internet connection to fail even when all cables are correctly installed.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![Correct power-on sequence: unplug both, plug modem first and wait 60 seconds for Online LED, then plug router and wait 60 seconds, check WAN LED green](/images/modem-router-power-sequence.svg)
 
 ## Understanding the two-device setup
 

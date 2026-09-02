@@ -32,7 +32,7 @@ howto_steps:
 
 Router configuration controls who can use your network, how fast it performs, and how secure it is. According to NETGEAR's official documentation, the factory default settings — default SSID, default admin password, and mixed security mode — leave your network less secure and performing below its potential.
 
-![How to access router settings: open browser, type 192.168.1.1, log in with admin credentials](/images/router-admin-panel.svg)
+![Router admin panel wireless settings: change SSID, set security to WPA2-Personal AES, enter strong password, select channel 1 6 or 11](/images/wifi-settings-panel.svg)
 
 ## Accessing the router admin panel
 

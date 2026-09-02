@@ -171,3 +171,104 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
 
   </div>
 </Layout>
+
+<!-- Lightbox -->
+<div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button id="lb-close" aria-label="Close image">&times;</button>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<style>
+  /* ── Article images ── */
+  .article-body img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #1e3a22;
+    margin: 2rem auto;
+    cursor: zoom-in;
+    transition: opacity .15s, border-color .15s;
+  }
+  .article-body img:hover {
+    opacity: .88;
+    border-color: #00E5A0;
+  }
+
+  /* ── Lightbox overlay ── */
+  #lb-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    animation: lb-in .15s ease;
+  }
+  #lb-overlay[hidden] { display: none; }
+  @keyframes lb-in { from { opacity: 0; } to { opacity: 1; } }
+
+  #lb-img {
+    max-width: min(96vw, 1100px);
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #2d5a3d;
+    box-shadow: 0 0 80px rgba(0,229,160,.08);
+    cursor: default;
+  }
+
+  #lb-close {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: none;
+    border: 1px solid #2d5a3d;
+    color: #F0F4F1;
+    font-size: 1.8rem;
+    line-height: 1;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color .15s, color .15s;
+  }
+  #lb-close:hover { border-color: #00E5A0; color: #00E5A0; }
+</style>
+
+<script>
+  const overlay = document.getElementById('lb-overlay') as HTMLElement;
+  const lbImg   = document.getElementById('lb-img')     as HTMLImageElement;
+  const lbClose = document.getElementById('lb-close')   as HTMLButtonElement;
+
+  function openLightbox(src: string, alt: string) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    overlay.hidden = false;
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLightbox() {
+    overlay.hidden = true;
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  // Click any article image
+  document.querySelectorAll('.article-body img').forEach(img => {
+    const el = img as HTMLImageElement;
+    el.setAttribute('title', 'Click to enlarge');
+    el.addEventListener('click', () => openLightbox(el.src, el.alt));
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeLightbox(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>

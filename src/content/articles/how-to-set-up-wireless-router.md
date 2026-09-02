@@ -32,7 +32,7 @@ howto_steps:
 
 A wireless router creates the WiFi network that all devices in your home connect to. According to NETGEAR's router installation documentation, placement and physical connection to the modem are the two factors that most affect wireless performance — configuration in the admin panel matters less than getting these two steps right.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![Router placement guide: good positions are central elevated open areas, bad positions are corners closets near microwaves or behind TVs](/images/router-placement-guide.svg)
 
 ## What you need
 

@@ -34,7 +34,7 @@ howto_steps:
 
 Setting up a new WiFi router takes under 15 minutes when you follow the steps in the right order. According to NETGEAR's official installation documentation, the most common setup mistakes are plugging the Ethernet cable into the wrong port, skipping the admin panel step, and leaving the default password unchanged.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![WiFi router setup in 5 steps: position router centrally, connect to modem, open admin panel at 192.168.1.1, set WiFi name and password, connect all devices](/images/setup-wifi-router-steps.svg)
 
 ## What you need before starting
 
@@ -82,7 +82,7 @@ The default network name typically looks like `NETGEAR-xxxx`, `TP-Link_xxxx`, or
 
 ### Step 4 — Access the router admin panel
 
-![How to access router settings: open browser, type 192.168.1.1, log in with admin credentials](/images/router-admin-panel.svg)
+![Router admin panel wireless settings: change SSID network name, set security to WPA2-Personal AES, enter strong password minimum 12 characters, apply settings](/images/wifi-settings-panel.svg)
 
 1. Open any web browser (Chrome, Edge, Firefox)
 2. Type the router's admin address in the address bar — do **not** search for it, type it directly:

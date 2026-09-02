@@ -32,7 +32,7 @@ howto_steps:
 
 NETGEAR routers can be set up in two ways: through the **Nighthawk app** on a smartphone (the faster method) or through the **web browser admin panel** at routerlogin.net. According to NETGEAR's official installation guide, both methods produce identical results — the app simply guides you through the steps visually.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![Netgear router setup two methods: Method A Nighthawk app on phone, Method B web browser at routerlogin.net — both lead to internet connected](/images/netgear-setup-options.svg)
 
 ## Before you start
 

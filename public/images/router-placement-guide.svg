@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 240" role="img" aria-label="Router placement guide: good positions are central elevated open areas, bad positions are corners closets near microwaves or behind TVs">
+  <defs>
+    <pattern id="rpg" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+  </defs>
+  <rect width="780" height="240" fill="#0A130E" rx="10"/>
+  <rect width="780" height="240" fill="url(#rpg)" rx="10"/>
+  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">ROUTER PLACEMENT — GOOD vs BAD</text>
+
+  <!-- ══ LEFT: GOOD placement ══ -->
+  <rect x="20" y="30" width="358" height="196" fill="#091509" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <rect x="20" y="30" width="358" height="26" fill="#0a1f0d" rx="8"/>
+  <rect x="20" y="47" width="358" height="9" fill="#0a1f0d"/>
+  <circle cx="36" cy="43" r="5" fill="#00E5A0" opacity=".3"/>
+  <text x="45" y="47" fill="#00E5A0" font-size="9" font-family="monospace">✓  GOOD PLACEMENT</text>
+
+  <!-- Floor plan top-down view: house outline -->
+  <rect x="36" y="66" width="156" height="148" fill="#0d1810" rx="4" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Rooms -->
+  <line x1="36" y1="130" x2="192" y2="130" stroke="#1e3a22" stroke-width="1"/>
+  <line x1="114" y1="66" x2="114" y2="214" stroke="#1e3a22" stroke-width="1"/>
+  <!-- Room labels -->
+  <text x="75" y="102" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Living</text>
+  <text x="75" y="111" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Room</text>
+  <text x="153" y="102" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Bedroom</text>
+  <text x="75" y="172" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Kitchen</text>
+  <text x="153" y="172" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Office</text>
+  <!-- Router at center -->
+  <circle cx="114" cy="130" r="10" fill="#00E5A0" opacity=".15" stroke="#00E5A0" stroke-width="1.5"/>
+  <rect x="109" y="125" width="10" height="10" fill="#111e14" rx="1" stroke="#00E5A0" stroke-width="1"/>
+  <line x1="112" y1="125" x2="111" y2="120" stroke="#3b82f6" stroke-width="1" stroke-linecap="round"/>
+  <line x1="116" y1="125" x2="117" y2="120" stroke="#3b82f6" stroke-width="1" stroke-linecap="round"/>
+  <!-- Signal rings -->
+  <circle cx="114" cy="130" r="22" fill="none" stroke="#00E5A0" stroke-width="1" stroke-dasharray="4,3" opacity=".5"/>
+  <circle cx="114" cy="130" r="38" fill="none" stroke="#00E5A0" stroke-width="1" stroke-dasharray="4,4" opacity=".25"/>
+  <circle cx="114" cy="130" r="54" fill="none" stroke="#00E5A0" stroke-width="1" stroke-dasharray="3,5" opacity=".12"/>
+
+  <!-- Good points list -->
+  <text x="204" y="76" fill="#00E5A0" font-size="8.5" font-family="monospace">✓  Central location</text>
+  <text x="204" y="92" fill="#6B7F72" font-size="7.5" font-family="monospace">  Equal reach all rooms</text>
+  <text x="204" y="110" fill="#00E5A0" font-size="8.5" font-family="monospace">✓  Elevated shelf / desk</text>
+  <text x="204" y="126" fill="#6B7F72" font-size="7.5" font-family="monospace">  Off floor = fewer</text>
+  <text x="204" y="136" fill="#6B7F72" font-size="7.5" font-family="monospace">  obstructions</text>
+  <text x="204" y="154" fill="#00E5A0" font-size="8.5" font-family="monospace">✓  Open air — no cabinet</text>
+  <text x="204" y="170" fill="#6B7F72" font-size="7.5" font-family="monospace">  Ventilation prevents</text>
+  <text x="204" y="180" fill="#6B7F72" font-size="7.5" font-family="monospace">  overheating</text>
+  <text x="204" y="198" fill="#00E5A0" font-size="8.5" font-family="monospace">✓  Away from walls</text>
+  <text x="204" y="214" fill="#6B7F72" font-size="7.5" font-family="monospace">  Signal penetrates freely</text>
+
+  <!-- ══ RIGHT: BAD placement ══ -->
+  <rect x="402" y="30" width="358" height="196" fill="#180a09" rx="8" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="402" y="30" width="358" height="26" fill="#1a0b0a" rx="8"/>
+  <rect x="402" y="47" width="358" height="9" fill="#1a0b0a"/>
+  <circle cx="418" cy="43" r="5" fill="#ef4444" opacity=".3"/>
+  <text x="427" y="47" fill="#ef4444" font-size="9" font-family="monospace">✕  BAD PLACEMENT</text>
+
+  <!-- Bad scenario icons: 4 cases -->
+  <!-- BAD 1: corner -->
+  <rect x="418" y="64" width="70" height="60" fill="#0d1810" rx="4" stroke="#2d1810" stroke-width="1"/>
+  <text x="453" y="78" fill="#6B7F72" font-size="7" font-family="monospace" text-anchor="middle">Floor plan</text>
+  <!-- corner indicator -->
+  <rect x="422" y="94" width="28" height="26" fill="#1a0b0a" stroke="#ef4444" stroke-width="1"/>
+  <rect x="424" y="96" width="10" height="10" fill="#111e14" rx="1" stroke="#ef4444"/>
+  <line x1="426" y1="96" x2="425" y2="93" stroke="#ef4444" stroke-width="1"/>
+  <line x1="430" y1="96" x2="431" y2="93" stroke="#ef4444" stroke-width="1"/>
+  <circle cx="428" cy="102" r="6" fill="none" stroke="#ef4444" stroke-width="1" stroke-dasharray="2,2" opacity=".5"/>
+  <text x="466" y="113" fill="#ef4444" font-size="7" font-family="monospace">signal trapped</text>
+  <text x="453" y="134" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle">Corner / edge</text>
+
+  <!-- BAD 2: microwave/kitchen -->
+  <rect x="500" y="64" width="70" height="60" fill="#0d1810" rx="4" stroke="#2d1810" stroke-width="1"/>
+  <rect x="512" y="76" width="46" height="30" fill="#1a0b0a" rx="3" stroke="#f59e0b" stroke-width="1"/>
+  <text x="535" y="90" fill="#f59e0b" font-size="8" font-family="monospace" text-anchor="middle">µwave</text>
+  <text x="535" y="100" fill="#6B7F72" font-size="6.5" font-family="monospace" text-anchor="middle">2.4 GHz !</text>
+  <line x1="535" y1="108" x2="535" y2="116" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="2,1"/>
+  <text x="535" y="134" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle">Near microwave</text>
+
+  <!-- BAD 3: closed cabinet -->
+  <rect x="582" y="64" width="70" height="60" fill="#0d1810" rx="4" stroke="#2d1810" stroke-width="1"/>
+  <rect x="594" y="72" width="46" height="42" fill="#111e14" rx="3" stroke="#6B7F72" stroke-width="1"/>
+  <line x1="617" y1="72" x2="617" y2="114" stroke="#4a5e4e" stroke-width="1" stroke-dasharray="2,2"/>
+  <rect x="598" y="82" width="14" height="22" fill="#0d1810" rx="1" stroke="#1e3a22"/>
+  <line x1="602" y1="93" x2="603" y2="93" stroke="#4a5e4e" stroke-width="2" stroke-linecap="round"/>
+  <text x="617" y="134" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle">In a cabinet</text>
+
+  <!-- BAD 4: behind TV -->
+  <rect x="664" y="64" width="84" height="60" fill="#0d1810" rx="4" stroke="#2d1810" stroke-width="1"/>
+  <rect x="672" y="72" width="68" height="42" fill="#111e14" rx="3" stroke="#3b82f6" stroke-width="1"/>
+  <rect x="674" y="74" width="64" height="35" fill="#0A130E" rx="1"/>
+  <text x="706" y="96" fill="#3b82f6" font-size="8" font-family="monospace" text-anchor="middle">TV</text>
+  <rect x="692" y="80" width="14" height="22" fill="#111e14" rx="1" stroke="#ef4444" stroke-width="1" opacity=".6"/>
+  <text x="706" y="134" fill="#ef4444" font-size="8" font-family="monospace" text-anchor="middle">Behind TV / metal</text>
+
+  <!-- Bad details list -->
+  <text x="418" y="154" fill="#ef4444" font-size="8" font-family="monospace">✕  Corner of a room</text>
+  <text x="418" y="165" fill="#6B7F72" font-size="7.5" font-family="monospace">  Wastes 75% of signal</text>
+  <text x="418" y="180" fill="#ef4444" font-size="8" font-family="monospace">✕  Near microwave / cordless phone</text>
+  <text x="418" y="191" fill="#6B7F72" font-size="7.5" font-family="monospace">  2.4 GHz interference</text>
+  <text x="418" y="206" fill="#ef4444" font-size="8" font-family="monospace">✕  Inside cabinet or behind TV</text>
+  <text x="418" y="217" fill="#6B7F72" font-size="7.5" font-family="monospace">  Blocks signal, causes overheating</text>
+
+  <!-- Bottom tip -->
+  <rect x="20" y="232" width="740" height="0" fill="none"/>
+</svg>

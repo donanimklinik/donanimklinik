@@ -29,7 +29,7 @@ howto_steps:
 
 Connecting a router to a modem is a single Ethernet cable connection — but the order in which you power the devices on matters. According to NETGEAR's home networking documentation, most connection failures occur because the modem was powered on after the router, causing the modem to fail to assign the router an IP address.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![How to connect modem to router: modem Ethernet port connects via cable to router WAN port highlighted green, LAN ports 1-4 marked do not use](/images/router-port-connection.svg)
 
 ## Understanding the modem-router connection
 

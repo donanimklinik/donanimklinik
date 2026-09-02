@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 230" role="img" aria-label="Netgear router setup: two methods — Nighthawk app on phone or browser at routerlogin.net — both lead to same result, internet connected">
+  <defs>
+    <pattern id="nsg" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0L0 0 0 24" fill="none" stroke="#111e14" stroke-width=".7"/>
+    </pattern>
+    <marker id="nsa" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <polygon points="0 0,8 4,0 8" fill="#00E5A0" opacity=".7"/>
+    </marker>
+  </defs>
+  <rect width="780" height="230" fill="#0A130E" rx="10"/>
+  <rect width="780" height="230" fill="url(#nsg)" rx="10"/>
+  <text x="390" y="20" fill="#4a5e4e" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="2">NETGEAR SETUP — 2 METHODS</text>
+
+  <!-- ── Method A: Nighthawk App ── -->
+  <rect x="20" y="30" width="320" height="178" fill="#0d1810" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="30" width="320" height="24" fill="#0a1405" rx="8"/>
+  <rect x="20" y="46" width="320" height="8" fill="#0a1405"/>
+  <text x="180" y="46" fill="#3b82f6" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">METHOD A — NIGHTHAWK APP</text>
+  <text x="180" y="59" fill="#4a5e4e" font-size="7.5" font-family="monospace" text-anchor="middle">Easiest · Recommended for beginners</text>
+
+  <!-- Phone mockup -->
+  <rect x="154" y="68" width="52" height="88" fill="#0d1810" rx="8" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="157" y="72" width="46" height="70" fill="#0A130E" rx="2"/>
+  <!-- App UI on phone -->
+  <rect x="160" y="75" width="40" height="10" fill="#111e14" rx="1" stroke="#243d28"/>
+  <text x="180" y="83" fill="#3b82f6" font-size="6" font-family="monospace" text-anchor="middle">Nighthawk</text>
+  <circle cx="172" cy="96" r="8" fill="#00E5A0" opacity=".1" stroke="#00E5A0" stroke-width="1"/>
+  <text x="172" y="100" fill="#00E5A0" font-size="9" text-anchor="middle">✓</text>
+  <text x="192" y="94" fill="#6B7F72" font-size="5.5" font-family="monospace">Auto</text>
+  <text x="192" y="101" fill="#6B7F72" font-size="5.5" font-family="monospace">detect</text>
+  <rect x="161" y="107" width="38" height="7" fill="#00E5A0" rx="2" opacity=".8"/>
+  <text x="180" y="113" fill="#0A130E" font-size="5.5" font-family="monospace" text-anchor="middle">Set Up Router</text>
+  <rect x="163" y="118" width="34" height="7" fill="#111e14" rx="2" stroke="#1e3a22"/>
+  <text x="180" y="124" fill="#6B7F72" font-size="5.5" font-family="monospace" text-anchor="middle">Skip</text>
+  <!-- home button -->
+  <rect x="174" y="148" width="12" height="4" fill="#1e3a22" rx="2"/>
+
+  <!-- App steps -->
+  <text x="36" y="86" fill="#6B7F72" font-size="8" font-family="monospace">1. Download</text>
+  <text x="36" y="97" fill="#F0F4F1" font-size="8" font-family="monospace">  Nighthawk app</text>
+  <text x="36" y="113" fill="#6B7F72" font-size="8" font-family="monospace">2. Connect phone</text>
+  <text x="36" y="124" fill="#F0F4F1" font-size="8" font-family="monospace">  to router WiFi</text>
+  <text x="36" y="140" fill="#6B7F72" font-size="8" font-family="monospace">3. Tap "Set Up"</text>
+  <text x="36" y="151" fill="#F0F4F1" font-size="8" font-family="monospace">  — auto guided</text>
+  <text x="36" y="167" fill="#6B7F72" font-size="8" font-family="monospace">4. Set SSID +</text>
+  <text x="36" y="178" fill="#F0F4F1" font-size="8" font-family="monospace">  password</text>
+
+  <!-- Badge: iOS/Android -->
+  <rect x="218" y="98" width="108" height="40" fill="#0A130E" rx="4" stroke="#243d28"/>
+  <text x="272" y="113" fill="#6B7F72" font-size="7.5" font-family="monospace" text-anchor="middle">iOS App Store</text>
+  <text x="272" y="126" fill="#6B7F72" font-size="7.5" font-family="monospace" text-anchor="middle">Google Play</text>
+  <text x="272" y="139" fill="#4a5e4e" font-size="7" font-family="monospace" text-anchor="middle">Search: "Nighthawk"</text>
+
+  <rect x="222" y="156" width="100" height="14" fill="#3b82f6" rx="3" opacity=".15" stroke="#3b82f6" stroke-width="1"/>
+  <text x="272" y="166" fill="#3b82f6" font-size="7.5" font-family="monospace" text-anchor="middle">✓ No browser needed</text>
+
+  <!-- ── DIVIDER + OR ── -->
+  <text x="390" y="128" fill="#4a5e4e" font-size="11" font-family="monospace" text-anchor="middle">OR</text>
+  <line x1="390" y1="50" x2="390" y2="112" stroke="#1e3a22" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="390" y1="142" x2="390" y2="208" stroke="#1e3a22" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- ── Method B: Browser ── -->
+  <rect x="440" y="30" width="320" height="178" fill="#0d1810" rx="8" stroke="#00E5A0" stroke-width="1.5"/>
+  <rect x="440" y="30" width="320" height="24" fill="#0a1509" rx="8"/>
+  <rect x="440" y="46" width="320" height="8" fill="#0a1509"/>
+  <text x="600" y="46" fill="#00E5A0" font-size="9" font-family="monospace" text-anchor="middle" letter-spacing="1">METHOD B — WEB BROWSER</text>
+  <text x="600" y="59" fill="#4a5e4e" font-size="7.5" font-family="monospace" text-anchor="middle">Works on any device · More control</text>
+
+  <!-- Browser step 1 -->
+  <text x="456" y="78" fill="#6B7F72" font-size="8" font-family="monospace">1. Connect PC/laptop</text>
+  <text x="456" y="89" fill="#F0F4F1" font-size="8" font-family="monospace">  to router via WiFi or cable</text>
+
+  <!-- Address bar mockup -->
+  <rect x="456" y="98" width="288" height="18" fill="#0A130E" rx="3" stroke="#243d28"/>
+  <rect x="460" y="101" width="230" height="12" fill="#111e14" rx="2" stroke="#243d28"/>
+  <text x="575" y="110" fill="#00E5A0" font-size="8.5" font-family="monospace" text-anchor="middle">routerlogin.net</text>
+  <text x="710" y="110" fill="#4a5e4e" font-size="8" font-family="monospace">↵</text>
+  <text x="456" y="130" fill="#6B7F72" font-size="8" font-family="monospace">2. Open browser → type</text>
+  <text x="474" y="141" fill="#00E5A0" font-size="8.5" font-family="monospace">routerlogin.net</text>
+  <text x="540" y="141" fill="#6B7F72" font-size="8" font-family="monospace">or 192.168.1.1</text>
+
+  <!-- Login form -->
+  <rect x="456" y="150" width="288" height="40" fill="#0A130E" rx="3" stroke="#1e3a22"/>
+  <text x="470" y="163" fill="#6B7F72" font-size="7.5" font-family="monospace">Username</text>
+  <rect x="520" y="156" width="90" height="10" fill="#111e14" rx="2"/>
+  <text x="565" y="164" fill="#F0F4F1" font-size="7" font-family="monospace" text-anchor="middle">admin</text>
+  <text x="470" y="178" fill="#6B7F72" font-size="7.5" font-family="monospace">Password</text>
+  <rect x="520" y="172" width="90" height="10" fill="#111e14" rx="2"/>
+  <text x="565" y="180" fill="#F0F4F1" font-size="7" font-family="monospace" text-anchor="middle">password</text>
+  <text x="630" y="163" fill="#4a5e4e" font-size="7" font-family="monospace">← default</text>
+  <text x="630" y="178" fill="#4a5e4e" font-size="7" font-family="monospace">← default</text>
+  <text x="456" y="203" fill="#6B7F72" font-size="8" font-family="monospace">3. Log in → run Setup Wizard</text>
+
+  <!-- ── RESULT (bottom center) ── -->
+  <rect x="270" y="218" width="240" height="0" fill="none"/>
+  <line x1="180" y1="208" x2="280" y2="220" stroke="#1e3a22" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#nsa)" opacity=".5"/>
+  <line x1="600" y1="208" x2="500" y2="220" stroke="#1e3a22" stroke-width="1" stroke-dasharray="3,2" marker-end="url(#nsa)" opacity=".5"/>
+  <circle cx="390" cy="223" r="0" fill="none"/>
+  <rect x="286" y="212" width="208" height="16" fill="#0d1a12" rx="4" stroke="#00E5A0" stroke-width="1.2"/>
+  <text x="390" y="223" fill="#00E5A0" font-size="8.5" font-family="monospace" text-anchor="middle">Both methods → same result: Internet ✓</text>
+</svg>

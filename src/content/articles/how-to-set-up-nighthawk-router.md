@@ -32,7 +32,7 @@ howto_steps:
 
 The NETGEAR Nighthawk line includes high-performance routers (RAX series, R7000, R8000, and others) designed for demanding home networks. According to NETGEAR's official Nighthawk documentation, setup using the Nighthawk app takes under 10 minutes and is the recommended method for first-time installation.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![Nighthawk router LED guide: Power LED green means ready, Internet LED green means connected, Internet LED amber means no internet, WiFi LED blue means broadcasting](/images/nighthawk-led-guide.svg)
 
 ## Nighthawk models covered
 

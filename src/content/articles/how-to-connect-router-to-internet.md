@@ -31,7 +31,7 @@ howto_steps:
 
 A router connects to the internet through a modem — the modem handles the ISP connection, and the router shares it with your devices. According to NETGEAR's home networking documentation, the three most common causes of a router not connecting to the internet are: the Ethernet cable is in the wrong port, the modem has not restarted after the router was connected, or the WAN connection type in the router is set incorrectly.
 
-![Home network topology: Internet connects to modem, modem connects to router via Ethernet, router broadcasts WiFi to devices](/images/router-network-topology.svg)
+![Internet connection troubleshooting flowchart: check cables, check modem Online LED, reboot sequence modem first then router, check WAN LED, check router WAN settings, contact ISP](/images/internet-troubleshoot-flow.svg)
 
 ## Understanding how the router gets internet
 

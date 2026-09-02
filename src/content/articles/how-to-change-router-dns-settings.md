@@ -30,7 +30,7 @@ howto_steps:
 
 DNS (Domain Name System) servers translate website names like `google.com` into the IP addresses computers use to connect. Your router uses DNS servers assigned by your ISP by default — but these are often slower and less reliable than public alternatives. According to Google's Public DNS documentation, switching to a faster DNS server reduces the time websites take to load, particularly the initial connection delay.
 
-![DNS settings: router forwards queries to ISP DNS or Google public DNS 8.8.8.8](/images/router-dns-diagram.svg)
+![Router DNS settings panel: change primary DNS to 8.8.8.8 Google or 1.1.1.1 Cloudflare for faster and more private browsing](/images/dns-settings-panel.svg)
 
 ## Why change your router's DNS settings
 
