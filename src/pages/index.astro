@@ -2,9 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
+import { toPillarSlug } from '../utils/pillarSlug';
 
 const allArticles = await getCollection('articles', ({ data }) => data.status === 'published');
 const latest = allArticles
+  .filter((a) => a.id !== toPillarSlug(a.data.pillar ?? ''))
   .sort((a, b) => {
     const dA = a.data.published_at ?? a.data.written_at;
     const dB = b.data.published_at ?? b.data.written_at;
