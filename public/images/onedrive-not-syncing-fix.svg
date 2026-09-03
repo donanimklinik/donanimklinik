@@ -58,7 +58,7 @@
   <text x="205" y="296" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">File Name Restrictions</text>
   <line x1="36" y1="306" x2="374" y2="306" stroke="#2a5236" stroke-width="1"/>
   <text x="36" y="326" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Characters not allowed in file or folder names:</text>
-  <text x="36" y="346" font-family="system-ui,sans-serif" font-size="14" fill="#D4EAD8" font-family="monospace">\ / : * ? " &lt; &gt; |</text>
+  <text x="36" y="346" font-size="14" fill="#D4EAD8" font-family="monospace">\ / : * ? " &lt; &gt; |</text>
   <text x="36" y="368" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Name cannot end with space or period</text>
   <text x="36" y="386" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Full path (folders + filename) must be ≤ 260 characters</text>
 
