@@ -162,14 +162,21 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <aside class="source-section">
       <h2 class="source-section-title mono">Source</h2>
       <a class="source-card" href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
-        <span class="source-card-dot" aria-hidden="true"></span>
-        <div class="source-card-body">
-          <span class="source-card-domain">{sourceDomain}</span>
-          <span class="source-card-caption">Official documentation</span>
+        <div class="source-card-icon-zone" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" width="20" height="20">
+            <path d="M8 4H4a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M12 2h6m0 0v6m0-6L10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </div>
-        <svg class="source-card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-          <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <div class="source-card-body">
+          <span class="source-card-label">Official Source</span>
+          <span class="source-card-domain">{sourceDomain}</span>
+        </div>
+        <div class="source-card-action">
+          <span>View docs</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" width="11" height="11" aria-hidden="true">
+            <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
       </a>
     </aside>
 
