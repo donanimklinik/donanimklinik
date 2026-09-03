@@ -159,29 +159,23 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
 
     <!-- Source citation -->
-    <div class="source-box">
-      <div class="source-bar" aria-hidden="true">
-        <span class="source-dots"><span></span><span></span><span></span></span>
-        <span class="source-bar-label">verified source</span>
-      </div>
-      <div class="source-body">
-        <svg class="source-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <aside class="source-section">
+      <h2 class="source-section-title mono">Source</h2>
+      <a class="source-card" href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
+        <svg class="source-card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/>
           <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           <circle cx="12" cy="16" r="1.5" fill="currentColor"/>
         </svg>
-        <div class="source-info">
-          <span class="source-domain">{sourceDomain}</span>
-          <span class="source-caption">Official documentation</span>
+        <div class="source-card-body">
+          <span class="source-card-domain">{sourceDomain}</span>
+          <span class="source-card-caption">Official documentation</span>
         </div>
-        <a class="source-link" href={officialSourceUrl} target="_blank" rel="noopener noreferrer">
-          View source
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" width="10" height="10" aria-hidden="true">
-            <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
-    </div>
+        <svg class="source-card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2 10L10 2M10 2H5M10 2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </aside>
 
   </div>
 </Layout>
