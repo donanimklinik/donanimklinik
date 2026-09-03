@@ -1411,12 +1411,12 @@ body.cat-peripherals {
   border: 1px solid transparent;
   background:
     linear-gradient(#090e0b, #090e0b) padding-box,
-    linear-gradient(115deg, rgba(0,229,160,.32) 0%, rgba(0,229,160,.06) 55%, transparent 100%) border-box;
-  box-shadow: 0 4px 28px rgba(0,229,160,.05), inset 0 1px 0 rgba(0,229,160,.07);
+    linear-gradient(115deg, rgba(0,229,160,.55) 0%, rgba(0,229,160,.12) 50%, rgba(0,229,160,.04) 100%) border-box;
+  box-shadow: 0 4px 28px rgba(0,229,160,.07), inset 0 1px 0 rgba(0,229,160,.09);
   transition: box-shadow .22s, transform .18s;
 }
 .source-card:hover {
-  box-shadow: 0 6px 40px rgba(0,229,160,.11), inset 0 1px 0 rgba(0,229,160,.12);
+  box-shadow: 0 6px 40px rgba(0,229,160,.14), inset 0 1px 0 rgba(0,229,160,.14);
   transform: translateY(-1px);
 }
 .source-card-dot {
@@ -1457,7 +1457,7 @@ body.cat-peripherals {
 .source-card-arrow {
   width: 14px;
   height: 14px;
-  color: var(--brand);
+  color: #00E5A0;
   opacity: .5;
   flex-shrink: 0;
   transition: opacity .2s, transform .2s;
