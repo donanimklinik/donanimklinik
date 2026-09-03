@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Cloud storage sync errors overview for OneDrive, Dropbox, and Google Drive">
+  <rect width="800" height="420" fill="#091510"/>
+  <!-- Title -->
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Cloud Storage Sync Errors — Common Causes</text>
+
+  <!-- OneDrive column -->
+  <rect x="20" y="58" width="238" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="139" y="84" font-family="system-ui,sans-serif" font-size="16" fill="#4ade80" font-weight="bold" text-anchor="middle">OneDrive</text>
+  <line x1="36" y1="94" x2="242" y2="94" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="36" y="118" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Red X icon</text>
+  <text x="36" y="136" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Account disconnected</text>
+  <text x="36" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Sign out and sign back in</text>
+
+  <text x="36" y="178" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Sync pending</text>
+  <text x="36" y="196" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ File locked or name invalid</text>
+  <text x="36" y="212" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Close app or rename file</text>
+
+  <text x="36" y="238" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Won't open</text>
+  <text x="36" y="256" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Process crashed</text>
+  <text x="36" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Start manually or reset</text>
+
+  <text x="36" y="298" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Reset command</text>
+  <text x="36" y="316" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">onedrive.exe /reset</text>
+
+  <text x="36" y="344" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Storage full</text>
+  <text x="36" y="362" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Uploads stop silently</text>
+  <text x="36" y="378" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Free space to resume</text>
+
+  <!-- Dropbox column -->
+  <rect x="281" y="58" width="238" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="400" y="84" font-family="system-ui,sans-serif" font-size="16" fill="#3b82f6" font-weight="bold" text-anchor="middle">Dropbox</text>
+  <line x1="297" y1="94" x2="503" y2="94" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="297" y="118" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Spinning never stops</text>
+  <text x="297" y="136" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Pause and resume sync</text>
+  <text x="297" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Restart the client</text>
+
+  <text x="297" y="178" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Files not appearing</text>
+  <text x="297" y="196" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Check Selective Sync</text>
+  <text x="297" y="212" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Folder may be excluded</text>
+
+  <text x="297" y="238" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Files not updating</text>
+  <text x="297" y="256" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Downloads not coming in</text>
+  <text x="297" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Quit and restart client</text>
+
+  <text x="297" y="298" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Bandwidth throttled</text>
+  <text x="297" y="316" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Preferences &gt; Bandwidth</text>
+  <text x="297" y="332" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Set to Don't limit</text>
+
+  <text x="297" y="358" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Folder path moved</text>
+  <text x="297" y="376" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Preferences &gt; Sync</text>
+  <text x="297" y="392" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Correct the folder path</text>
+
+  <!-- Google Drive column -->
+  <rect x="542" y="58" width="238" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="661" y="84" font-family="system-ui,sans-serif" font-size="16" fill="#f59e0b" font-weight="bold" text-anchor="middle">Google Drive</text>
+  <line x1="558" y1="94" x2="764" y2="94" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="558" y="118" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Paused or stopped</text>
+  <text x="558" y="136" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Pause and resume sync</text>
+  <text x="558" y="152" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Check status panel</text>
+
+  <text x="558" y="178" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Auth expired</text>
+  <text x="558" y="196" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ After password change</text>
+  <text x="558" y="212" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Disconnect and sign in</text>
+
+  <text x="558" y="238" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Nothing uploads</text>
+  <text x="558" y="256" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Check Google storage</text>
+  <text x="558" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ 15 GB free across all apps</text>
+
+  <text x="558" y="298" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Process not running</text>
+  <text x="558" y="316" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ No icon in system tray</text>
+  <text x="558" y="332" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Reopen from Start menu</text>
+
+  <text x="558" y="358" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Corrupted install</text>
+  <text x="558" y="376" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Uninstall and reinstall</text>
+  <text x="558" y="392" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Files stay in the cloud</text>
+</svg>

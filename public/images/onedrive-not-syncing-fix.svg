@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="OneDrive not syncing: icon meanings, common causes, and fix steps">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">OneDrive Not Syncing — Diagnosis Guide</text>
+
+  <!-- Icon meanings panel -->
+  <rect x="20" y="56" width="230" height="200" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="135" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Sync Icon Meanings</text>
+  <line x1="36" y1="90" x2="234" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="36" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Spinning blue circle</text>
+  <text x="36" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Syncing — may be slow or stuck</text>
+
+  <text x="36" y="152" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Red X</text>
+  <text x="36" y="168" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Account disconnected / error</text>
+
+  <text x="36" y="192" font-family="system-ui,sans-serif" font-size="13" fill="#A8C4B0" font-weight="bold">Blue cloud with X</text>
+  <text x="36" y="208" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Cannot reach OneDrive servers</text>
+
+  <text x="36" y="232" font-family="system-ui,sans-serif" font-size="13" fill="#A8C4B0" font-weight="bold">Grey icon</text>
+  <text x="36" y="248" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Paused or signed out</text>
+
+  <!-- Causes panel -->
+  <rect x="270" y="56" width="250" height="200" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="395" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Common Causes</text>
+  <line x1="286" y1="90" x2="504" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="286" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Session expired</text>
+  <text x="286" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">After password change</text>
+
+  <text x="286" y="150" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Corrupted sync database</text>
+  <text x="286" y="166" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Internal index damaged</text>
+
+  <text x="286" y="188" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">File name / path issue</text>
+  <text x="286" y="204" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Invalid chars or path &gt;260 chars</text>
+
+  <text x="286" y="226" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Storage quota full</text>
+  <text x="286" y="242" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Uploads stop silently at 100%</text>
+
+  <!-- Fix order panel -->
+  <rect x="540" y="56" width="240" height="200" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="660" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Fix Order</text>
+  <line x1="556" y1="90" x2="764" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="556" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">1. Pause and resume sync</text>
+  <text x="556" y="128" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Clears temporary queue errors</text>
+
+  <text x="556" y="150" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">2. Sign out and sign back in</text>
+  <text x="556" y="166" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Refreshes account session</text>
+
+  <text x="556" y="188" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">3. Reset client</text>
+  <text x="556" y="204" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">onedrive.exe /reset</text>
+
+  <text x="556" y="226" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">4. Check storage quota</text>
+  <text x="556" y="242" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">onedrive.live.com → storage bar</text>
+
+  <!-- File name restrictions panel -->
+  <rect x="20" y="272" width="370" height="130" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="205" y="296" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">File Name Restrictions</text>
+  <line x1="36" y1="306" x2="374" y2="306" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="326" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Characters not allowed in file or folder names:</text>
+  <text x="36" y="346" font-family="system-ui,sans-serif" font-size="14" fill="#D4EAD8" font-family="monospace">\ / : * ? " &lt; &gt; |</text>
+  <text x="36" y="368" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Name cannot end with space or period</text>
+  <text x="36" y="386" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Full path (folders + filename) must be ≤ 260 characters</text>
+
+  <!-- Verify panel -->
+  <rect x="410" y="272" width="370" height="130" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="595" y="296" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">How to Verify the Fix</text>
+  <line x1="426" y1="306" x2="764" y2="306" stroke="#2a5236" stroke-width="1"/>
+  <text x="426" y="326" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">1. Add a small test file to OneDrive folder</text>
+  <text x="426" y="348" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">2. Watch icon — brief spin then steady blue cloud</text>
+  <text x="426" y="370" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">3. Open onedrive.live.com — confirm file appears</text>
+  <text x="426" y="392" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Sync confirmed working ✓</text>
+</svg>

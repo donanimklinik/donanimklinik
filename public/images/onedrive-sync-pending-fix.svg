@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="OneDrive sync pending causes: file locked, bad file name, path too long, or large file blocking queue">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">OneDrive Sync Pending — Why Files Get Stuck</text>
+
+  <!-- What it means -->
+  <rect x="20" y="56" width="360" height="100" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="200" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">What "Sync Pending" Means</text>
+  <line x1="36" y1="90" x2="364" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">File is queued for upload — OneDrive is waiting for a condition to be met.</text>
+  <text x="36" y="132" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">No red X, no error — just a spinning icon that never finishes.</text>
+  <text x="36" y="150" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Check activity panel: click OneDrive icon → see which file is stuck and why.</text>
+
+  <!-- Cause 1: File locked -->
+  <rect x="20" y="172" width="360" height="110" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="200" y="196" font-family="system-ui,sans-serif" font-size="15" fill="#FBB03B" font-weight="bold" text-anchor="middle">Cause 1 — File Locked by Another App</text>
+  <line x1="36" y1="206" x2="364" y2="206" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="226" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Most common cause. Another program has the file open.</text>
+  <text x="36" y="246" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Word / Excel / Outlook / Acrobat hold files open in background.</text>
+  <text x="36" y="264" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0">Fix: Save and close the file in the application.</text>
+
+  <!-- Cause 2: File name -->
+  <rect x="20" y="298" width="360" height="110" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="200" y="322" font-family="system-ui,sans-serif" font-size="15" fill="#FBB03B" font-weight="bold" text-anchor="middle">Cause 2 — Invalid File Name / Path</text>
+  <line x1="36" y1="332" x2="364" y2="332" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="352" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">File contains:  \ / : * ? " &lt; &gt; |  or ends with space/period</text>
+  <text x="36" y="370" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Path longer than 260 characters — OneDrive holds it pending silently.</text>
+  <text x="36" y="390" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0">Fix: Rename the file. Shorten the folder path.</text>
+
+  <!-- Cause 3: Queue blocked -->
+  <rect x="400" y="56" width="380" height="110" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="590" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#FBB03B" font-weight="bold" text-anchor="middle">Cause 3 — Large File Blocking Queue</text>
+  <line x1="416" y1="90" x2="764" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="416" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">OneDrive uploads files sequentially. A large file (5 GB+)</text>
+  <text x="416" y="130" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">ahead in the queue blocks everything behind it.</text>
+  <text x="416" y="152" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0">Fix: Pause and resume sync to restart the queue.</text>
+
+  <!-- Fix order -->
+  <rect x="400" y="182" width="380" height="228" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="590" y="206" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Fix Order</text>
+  <line x1="416" y1="216" x2="764" y2="216" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="416" y="240" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Step 1</text>
+  <text x="466" y="240" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Check OneDrive activity panel</text>
+  <text x="416" y="258" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Identify the stuck file and reason shown</text>
+
+  <text x="416" y="282" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Step 2</text>
+  <text x="466" y="282" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Close app that has file open</text>
+  <text x="416" y="300" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Pending clears within 30 seconds</text>
+
+  <text x="416" y="324" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Step 3</text>
+  <text x="466" y="324" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Check file name restrictions</text>
+  <text x="416" y="342" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Rename if invalid characters found</text>
+
+  <text x="416" y="366" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Step 4</text>
+  <text x="466" y="366" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Pause and resume sync</text>
+  <text x="416" y="384" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Restarts queue — unblocks other files</text>
+
+  <text x="416" y="400" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Last resort: onedrive.exe /reset</text>
+</svg>

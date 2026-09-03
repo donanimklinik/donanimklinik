@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="OneDrive not working troubleshooting: start process, restart, relink account, reset, or reinstall">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">OneDrive Not Working — Troubleshooting Flow</text>
+
+  <!-- Symptom boxes -->
+  <rect x="20" y="56" width="220" height="170" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="130" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Symptoms</text>
+  <line x1="36" y1="90" x2="224" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="112" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Icon missing from tray</text>
+  <text x="36" y="132" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Process not running</text>
+  <text x="36" y="156" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Crashes on startup</text>
+  <text x="36" y="176" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Corrupted install</text>
+  <text x="36" y="200" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Account error shown</text>
+  <text x="36" y="220" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Session expired</text>
+
+  <!-- Arrow -->
+  <text x="255" y="148" font-family="system-ui,sans-serif" font-size="22" fill="#2a5236">→</text>
+
+  <!-- Fix steps -->
+  <rect x="280" y="56" width="260" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="410" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Fix Steps (in order)</text>
+  <line x1="296" y1="90" x2="524" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="296" y="114" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">1. Start manually</text>
+  <text x="296" y="130" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Win+R → onedrive.exe</text>
+
+  <line x1="296" y1="145" x2="524" y2="145" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="166" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">2. Kill process and restart</text>
+  <text x="296" y="182" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Task Manager → end OneDrive.exe</text>
+  <text x="296" y="198" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">then run onedrive.exe again</text>
+
+  <line x1="296" y1="213" x2="524" y2="213" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="234" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">3. Unlink and relink account</text>
+  <text x="296" y="250" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Settings → Account → Unlink this PC</text>
+  <text x="296" y="266" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">then sign in again</text>
+
+  <line x1="296" y1="281" x2="524" y2="281" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="302" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">4. Reset client</text>
+  <text x="296" y="318" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">onedrive.exe /reset</text>
+  <text x="296" y="334" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Clears sync DB, keeps files</text>
+
+  <line x1="296" y1="349" x2="524" y2="349" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="370" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">5. Reinstall</text>
+  <text x="296" y="386" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">Uninstall → download from</text>
+  <text x="296" y="400" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">microsoft.com → sign in</text>
+
+  <!-- Notes panel -->
+  <rect x="560" y="56" width="220" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="670" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Key Notes</text>
+  <line x1="576" y1="90" x2="764" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="576" y="116" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" font-weight="bold">Files are safe</text>
+  <text x="576" y="134" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Reset and reinstall never</text>
+  <text x="576" y="150" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">delete your OneDrive files.</text>
+  <text x="576" y="166" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Files stay in the cloud.</text>
+
+  <text x="576" y="196" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" font-weight="bold">After Windows update</text>
+  <text x="576" y="214" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Check Apps → Startup to</text>
+  <text x="576" y="230" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">confirm OneDrive is enabled.</text>
+
+  <text x="576" y="260" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" font-weight="bold">Auto-start setting</text>
+  <text x="576" y="278" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">OneDrive Settings → General</text>
+  <text x="576" y="294" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Start OneDrive automatically</text>
+
+  <text x="576" y="324" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Reset command</text>
+  <text x="576" y="342" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">%localappdata%\Microsoft\</text>
+  <text x="576" y="358" font-family="system-ui,sans-serif" font-size="11" fill="#A8C4B0">OneDrive\onedrive.exe /reset</text>
+
+  <!-- Symptom box continued -->
+  <rect x="20" y="242" width="220" height="155" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="130" y="266" font-family="system-ui,sans-serif" font-size="14" fill="#4ade80" font-weight="bold" text-anchor="middle">More Symptoms</text>
+  <line x1="36" y1="276" x2="224" y2="276" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="298" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Opens but nothing syncs</text>
+  <text x="36" y="316" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Unlink and relink</text>
+  <text x="36" y="340" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">After Windows reinstall</text>
+  <text x="36" y="358" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Reinstall OneDrive</text>
+  <text x="36" y="382" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B">Old password still showing</text>
+  <text x="36" y="400" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ Unlink and sign in fresh</text>
+</svg>

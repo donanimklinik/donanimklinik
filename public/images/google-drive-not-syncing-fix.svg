@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Google Drive not syncing: status icon guide, fix steps including pause-resume, sign out, and reinstall">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Google Drive Not Syncing — Fix Guide</text>
+
+  <!-- Icon guide -->
+  <rect x="20" y="56" width="240" height="200" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="140" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#f59e0b" font-weight="bold" text-anchor="middle">Status Icon Guide</text>
+  <line x1="36" y1="90" x2="244" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="36" y="114" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Spinning arrows</text>
+  <text x="36" y="130" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Actively syncing — wait for it</text>
+
+  <text x="36" y="154" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">Steady checkmark</text>
+  <text x="36" y="170" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">All files synced — no action needed</text>
+
+  <text x="36" y="194" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Pause symbol</text>
+  <text x="36" y="210" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Sync paused — resume it</text>
+
+  <text x="36" y="234" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Warning triangle</text>
+  <text x="36" y="250" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Error — check status panel</text>
+
+  <!-- Fix steps -->
+  <rect x="280" y="56" width="250" height="340" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="405" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#f59e0b" font-weight="bold" text-anchor="middle">Fix Steps</text>
+  <line x1="296" y1="90" x2="514" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="296" y="114" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">1. Pause and resume</text>
+  <text x="296" y="130" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Click icon → pause button → wait 10s</text>
+  <text x="296" y="146" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">→ resume button</text>
+
+  <line x1="296" y1="160" x2="514" y2="160" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="182" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">2. Quit and restart</text>
+  <text x="296" y="198" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Gear icon → Quit Google Drive</text>
+  <text x="296" y="214" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Reopen from Start menu</text>
+
+  <line x1="296" y1="228" x2="514" y2="228" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="250" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">3. Sign out and sign in</text>
+  <text x="296" y="266" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Gear → Preferences → Disconnect</text>
+  <text x="296" y="282" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">then Sign in again</text>
+
+  <line x1="296" y1="296" x2="514" y2="296" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="318" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">4. Check Google storage</text>
+  <text x="296" y="334" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">one.google.com/storage</text>
+  <text x="296" y="350" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">15 GB free across Gmail+Drive+Photos</text>
+
+  <line x1="296" y1="364" x2="514" y2="364" stroke="#1a3020" stroke-width="1"/>
+
+  <text x="296" y="386" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">5. Reinstall</text>
+  <text x="296" y="402" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">google.com/drive/download</text>
+
+  <!-- Common causes + notes -->
+  <rect x="550" y="56" width="230" height="200" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="665" y="80" font-family="system-ui,sans-serif" font-size="15" fill="#f59e0b" font-weight="bold" text-anchor="middle">Common Causes</text>
+  <line x1="566" y1="90" x2="764" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="566" y="114" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Sync paused (most common)</text>
+  <text x="566" y="134" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Google account auth expired</text>
+  <text x="566" y="154" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Google account storage full</text>
+  <text x="566" y="174" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Drive process crashed</text>
+  <text x="566" y="194" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">File too large (&gt;5 TB)</text>
+  <text x="566" y="214" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Corrupted Drive installation</text>
+  <text x="566" y="244" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Storage: 15 GB free shared across all Google apps</text>
+
+  <!-- Storage warning -->
+  <rect x="550" y="272" width="230" height="125" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="665" y="296" font-family="system-ui,sans-serif" font-size="14" fill="#FBB03B" font-weight="bold" text-anchor="middle">Storage Full Warning</text>
+  <line x1="566" y1="306" x2="764" y2="306" stroke="#2a5236" stroke-width="1"/>
+  <text x="566" y="328" font-family="system-ui,sans-serif" font-size="12" fill="#D4EAD8">When 15 GB is full, all uploads</text>
+  <text x="566" y="346" font-family="system-ui,sans-serif" font-size="12" fill="#D4EAD8">stop — no clear error shown.</text>
+  <text x="566" y="370" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Fix: empty Drive Trash first —</text>
+  <text x="566" y="388" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Trash files still count toward quota.</text>
+
+  <!-- Icon missing -->
+  <rect x="20" y="272" width="240" height="130" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="140" y="296" font-family="system-ui,sans-serif" font-size="14" fill="#f59e0b" font-weight="bold" text-anchor="middle">No Icon in System Tray</text>
+  <line x1="36" y1="306" x2="244" y2="306" stroke="#2a5236" stroke-width="1"/>
+  <text x="36" y="328" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Drive is not running at all.</text>
+  <text x="36" y="348" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0">Open from Start menu</text>
+  <text x="36" y="368" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Search "Google Drive" → launch it</text>
+  <text x="36" y="388" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">If not found → reinstall</text>
+</svg>

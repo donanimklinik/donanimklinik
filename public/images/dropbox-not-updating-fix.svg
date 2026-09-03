@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Dropbox not updating: changes from other devices not downloading — check sync direction, selective sync, folder path">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="system-ui,sans-serif" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Dropbox Not Updating — Two-Way Sync Explained</text>
+
+  <!-- Sync direction diagram -->
+  <rect x="20" y="56" width="760" height="90" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="400" y="80" font-family="system-ui,sans-serif" font-size="14" fill="#4ade80" font-weight="bold" text-anchor="middle">Two-Way Sync — Which Direction Is Broken?</text>
+  <line x1="36" y1="90" x2="764" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <!-- Upload direction -->
+  <rect x="40" y="100" width="230" height="34" fill="#0f2a18" stroke="#2a5236" rx="4"/>
+  <text x="155" y="122" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Your PC → Dropbox Cloud</text>
+
+  <text x="285" y="122" font-family="system-ui,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">NOT SYNCING</text>
+
+  <!-- Download direction -->
+  <rect x="320" y="100" width="230" height="34" fill="#0f2a18" stroke="#1e3a22" rx="4"/>
+  <text x="435" y="122" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Dropbox Cloud → Your PC</text>
+
+  <text x="570" y="122" font-family="system-ui,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">NOT UPDATING</text>
+
+  <rect x="600" y="100" width="150" height="34" fill="#0f1e10" stroke="#2a5236" rx="4"/>
+  <text x="675" y="122" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">← This guide</text>
+
+  <!-- Causes -->
+  <rect x="20" y="162" width="360" height="170" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="200" y="186" font-family="system-ui,sans-serif" font-size="15" fill="#3b82f6" font-weight="bold" text-anchor="middle">Why Downloads Stop</text>
+  <line x1="36" y1="196" x2="364" y2="196" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="36" y="218" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Sync is paused</text>
+  <text x="36" y="234" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">All downloads blocked when paused</text>
+
+  <text x="36" y="256" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Selective Sync excludes the folder</text>
+  <text x="36" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">New files from other devices won't download here</text>
+
+  <text x="36" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Dropbox folder moved or renamed</text>
+  <text x="36" y="310" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Client can't find where to put downloads</text>
+
+  <text x="36" y="332" font-family="system-ui,sans-serif" font-size="13" fill="#FBB03B" font-weight="bold">Client not polling server</text>
+
+  <!-- Fix steps -->
+  <rect x="400" y="162" width="380" height="170" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="590" y="186" font-family="system-ui,sans-serif" font-size="15" fill="#3b82f6" font-weight="bold" text-anchor="middle">Fix Steps</text>
+  <line x1="416" y1="196" x2="764" y2="196" stroke="#2a5236" stroke-width="1"/>
+
+  <text x="416" y="218" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">1.</text>
+  <text x="434" y="218" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Pause then resume sync</text>
+  <text x="434" y="234" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Forces immediate server check</text>
+
+  <text x="416" y="256" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">2.</text>
+  <text x="434" y="256" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Check Selective Sync</text>
+  <text x="434" y="272" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Prefs → Sync → check all folders</text>
+
+  <text x="416" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">3.</text>
+  <text x="434" y="294" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Quit and restart Dropbox</text>
+  <text x="434" y="310" font-family="system-ui,sans-serif" font-size="12" fill="#A8C4B0">Downloads resume after restart</text>
+
+  <text x="416" y="332" font-family="system-ui,sans-serif" font-size="13" fill="#00E5A0" font-weight="bold">4.</text>
+  <text x="434" y="332" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8">Verify folder path in Prefs → Sync</text>
+
+  <!-- Verify -->
+  <rect x="20" y="348" width="760" height="58" fill="#0d1e16" stroke="#2a5236" stroke-width="1" rx="8"/>
+  <text x="400" y="372" font-family="system-ui,sans-serif" font-size="14" fill="#4ade80" font-weight="bold" text-anchor="middle">How to Confirm Files Exist in Your Account</text>
+  <text x="400" y="394" font-family="system-ui,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Open dropbox.com → navigate to the folder → if file is there, problem is download direction on this device only</text>
+</svg>
