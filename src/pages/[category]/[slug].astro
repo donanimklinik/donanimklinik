@@ -72,14 +72,16 @@ if (type === 'hub') {
   const props = Astro.props as any;
   pillarName = props.pillarName;
   hubCategory = props.category;
-  hubArticles = props.hubArticles.map((a: any) => ({
-    id: a.id,
-    title: a.data.title,
-    description: a.data.description,
-    category: a.data.category,
-    readTime: a.data.read_time,
-    schemaType: a.data.schema_type,
-  }));
+  hubArticles = props.hubArticles
+    .filter((a: any) => a.id !== toPillarSlug(a.data.pillar ?? ''))
+    .map((a: any) => ({
+      id: a.id,
+      title: a.data.title,
+      description: a.data.description,
+      category: a.data.category,
+      readTime: a.data.read_time,
+      schemaType: a.data.schema_type,
+    }));
 }
 ---
 
