@@ -1389,10 +1389,9 @@ body.cat-peripherals {
 /* Source citation */
 .source-section {
   max-width: 720px;
-  margin: 0 auto;
+  margin: 48px auto 0;
   border-top: 1px solid var(--line);
   padding-top: 32px;
-  margin-top: 48px;
 }
 .source-section-title {
   font-size: 11px;
@@ -1405,25 +1404,39 @@ body.cat-peripherals {
 .source-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 16px 20px;
-  border: 1px solid var(--line);
-  border-radius: 4px;
+  gap: 16px;
+  padding: 18px 22px;
+  border-radius: 8px;
   text-decoration: none;
-  transition: border-color .15s;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#090e0b, #090e0b) padding-box,
+    linear-gradient(115deg, rgba(0,229,160,.32) 0%, rgba(0,229,160,.06) 55%, transparent 100%) border-box;
+  box-shadow: 0 4px 28px rgba(0,229,160,.05), inset 0 1px 0 rgba(0,229,160,.07);
+  transition: box-shadow .22s, transform .18s;
 }
-.source-card:hover { border-color: var(--text-faint); }
-.source-card-icon {
-  width: 18px;
-  height: 18px;
-  color: var(--text-faint);
+.source-card:hover {
+  box-shadow: 0 6px 40px rgba(0,229,160,.11), inset 0 1px 0 rgba(0,229,160,.12);
+  transform: translateY(-1px);
+}
+.source-card-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--brand);
   flex-shrink: 0;
+  box-shadow: 0 0 0 3px rgba(0,229,160,.14);
+  animation: srcPulse 2.8s ease-in-out infinite;
+}
+@keyframes srcPulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(0,229,160,.14); }
+  50%       { box-shadow: 0 0 0 6px rgba(0,229,160,.04); }
 }
 .source-card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
   min-width: 0;
 }
 .source-card-domain {
@@ -1438,19 +1451,23 @@ body.cat-peripherals {
 }
 .source-card-caption {
   display: block;
-  font-size: 13px;
-  color: var(--text-dim);
+  font-size: 12px;
+  color: var(--text-faint);
 }
 .source-card-arrow {
   width: 14px;
   height: 14px;
-  color: var(--text-faint);
+  color: var(--brand);
+  opacity: .5;
   flex-shrink: 0;
-  transition: color .15s;
+  transition: opacity .2s, transform .2s;
 }
-.source-card:hover .source-card-arrow { color: var(--text); }
+.source-card:hover .source-card-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
 @media (max-width: 640px) {
-  .source-card { padding: 14px 16px; }
+  .source-card { padding: 16px 18px; }
 }
 
 /* Empty state */
