@@ -4,7 +4,7 @@ description: "Epson printer won't connect to Wi-Fi? These official Epson steps w
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://epson.com/support/wa00383"
+official_source_url: "https://epson.com/support"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

@@ -4,7 +4,7 @@ description: "Brother printer stuck on 'Connecting WLAN' or won't find your netw
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://support.brother.com/g/b/faqend.aspx?c=us&lang=en&prod=mfc_j5945dw_us_eu_as&faqid=faq00002761_000"
+official_source_url: "https://support.brother.com/g/s/en/install/win/index.htm"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

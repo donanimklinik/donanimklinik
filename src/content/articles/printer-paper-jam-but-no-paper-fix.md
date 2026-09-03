@@ -1,10 +1,10 @@
----
+﻿---
 title: "Printer Paper Jam But No Paper — Fix"
 description: "Printer shows a paper jam error but there's no paper stuck inside? This guide covers the official steps to clear false jam errors on HP, Epson, and Canon."
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://support.hp.com/us-en/document/c03633887"
+official_source_url: "https://support.hp.com/us-en/printer-issues"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

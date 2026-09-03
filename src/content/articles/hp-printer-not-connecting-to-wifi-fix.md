@@ -1,10 +1,10 @@
----
+﻿---
 title: "HP Printer Not Connecting to WiFi — Fix"
 description: "HP printer won't connect to Wi-Fi? Follow these official HP steps to reconnect your wireless printer to your network in Windows 10 and 11."
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://support.hp.com/us-en/document/c03521161"
+official_source_url: "https://support.hp.com/us-en/printer-issues"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

@@ -1,10 +1,10 @@
----
+﻿---
 title: "HP Printer Offline — Fix"
 description: "HP printer shows offline even when connected? Follow these official HP steps to clear the offline status and restore printing in Windows 10 and 11."
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://support.hp.com/us-en/document/c03793761"
+official_source_url: "https://support.hp.com/us-en/printer-issues"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

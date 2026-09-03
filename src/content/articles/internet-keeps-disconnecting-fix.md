@@ -4,7 +4,7 @@ description: "Internet keeps dropping even though WiFi shows connected? This gui
 category: networking
 pillar: "WiFi & Internet Connection Errors"
 status: published
-official_source_url: "https://www.xfinity.com/support/articles/internet-connection-troubleshooting-tips"
+official_source_url: "https://support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

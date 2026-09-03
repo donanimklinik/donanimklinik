@@ -1,10 +1,10 @@
----
+﻿---
 title: "HP Printer Connected to WiFi But Offline — Fix"
 description: "HP printer shows connected to Wi-Fi on its screen but appears offline in Windows? The fix is usually an IP address mismatch between the printer and Windows."
 category: peripherals
 pillar: "Printer Errors"
 status: published
-official_source_url: "https://support.hp.com/us-en/document/c03793761"
+official_source_url: "https://support.hp.com/us-en/printer-issues"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
