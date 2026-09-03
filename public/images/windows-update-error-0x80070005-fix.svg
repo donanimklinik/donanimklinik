@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Windows Update Error 0x80070005 — Fix</text>
+
+  <!-- Panel 1: What This Error Means -->
+  <rect x="30" y="58" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="142" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Error Meaning</text>
+  <line x1="50" y1="90" x2="235" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="112" font-family="monospace" font-size="13" fill="#FBB03B">ERROR_ACCESS_DENIED</text>
+  <text x="50" y="140" font-family="monospace" font-size="13" fill="#D4EAD8">Windows Update could</text>
+  <text x="50" y="158" font-family="monospace" font-size="13" fill="#D4EAD8">not write to system</text>
+  <text x="50" y="176" font-family="monospace" font-size="13" fill="#D4EAD8">folders due to</text>
+  <text x="50" y="194" font-family="monospace" font-size="13" fill="#D4EAD8">permission errors.</text>
+  <text x="50" y="224" font-family="monospace" font-size="12" fill="#A8C4B0">Caused by:</text>
+  <text x="50" y="244" font-family="monospace" font-size="13" fill="#FBB03B">▸ Third-party antivirus</text>
+  <text x="50" y="262" font-family="monospace" font-size="13" fill="#FBB03B">▸ Restricted user account</text>
+  <text x="50" y="280" font-family="monospace" font-size="13" fill="#FBB03B">▸ Corrupted ACL entries</text>
+  <text x="50" y="298" font-family="monospace" font-size="13" fill="#FBB03B">▸ SoftwareDistribution</text>
+  <text x="66" y="316" font-family="monospace" font-size="13" fill="#FBB03B">  folder permissions</text>
+
+  <!-- Panel 2: Fix Steps -->
+  <rect x="287" y="58" width="226" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="400" y="82" font-family="monospace" font-size="15" fill="#3b82f6" font-weight="bold" text-anchor="middle">Fix Steps</text>
+  <line x1="307" y1="90" x2="493" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="307" y="110" font-family="monospace" font-size="13" fill="#D4EAD8">1. Disable antivirus</text>
+  <text x="323" y="128" font-family="monospace" font-size="12" fill="#A8C4B0">Temporarily disable</text>
+  <text x="323" y="144" font-family="monospace" font-size="12" fill="#A8C4B0">real-time protection</text>
+  <text x="307" y="166" font-family="monospace" font-size="13" fill="#D4EAD8">2. Run as Admin</text>
+  <text x="323" y="184" font-family="monospace" font-size="12" fill="#A8C4B0">Right-click Windows</text>
+  <text x="323" y="200" font-family="monospace" font-size="12" fill="#A8C4B0">Update → Run as admin</text>
+  <text x="307" y="222" font-family="monospace" font-size="13" fill="#D4EAD8">3. Reset permissions</text>
+  <text x="323" y="240" font-family="monospace" font-size="12" fill="#00E5A0">icacls C:\Windows</text>
+  <text x="323" y="256" font-family="monospace" font-size="12" fill="#00E5A0">\SoftwareDistribution</text>
+  <text x="323" y="272" font-family="monospace" font-size="12" fill="#00E5A0">/reset /T /C</text>
+  <text x="307" y="294" font-family="monospace" font-size="13" fill="#D4EAD8">4. SFC + DISM</text>
+  <text x="323" y="312" font-family="monospace" font-size="12" fill="#00E5A0">sfc /scannow</text>
+  <text x="323" y="330" font-family="monospace" font-size="12" fill="#00E5A0">DISM /RestoreHealth</text>
+  <text x="307" y="354" font-family="monospace" font-size="13" fill="#D4EAD8">5. Retry update</text>
+
+  <!-- Panel 3: Verify -->
+  <rect x="545" y="58" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="657" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Verify &amp; Confirm</text>
+  <line x1="565" y1="90" x2="750" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="565" y="112" font-family="monospace" font-size="13" fill="#D4EAD8">After each fix step,</text>
+  <text x="565" y="130" font-family="monospace" font-size="13" fill="#D4EAD8">open Settings and</text>
+  <text x="565" y="148" font-family="monospace" font-size="13" fill="#D4EAD8">retry Windows Update.</text>
+  <text x="565" y="178" font-family="monospace" font-size="12" fill="#A8C4B0">Success indicator:</text>
+  <text x="565" y="198" font-family="monospace" font-size="13" fill="#00E5A0">Update downloads and</text>
+  <text x="565" y="216" font-family="monospace" font-size="13" fill="#00E5A0">installs without the</text>
+  <text x="565" y="234" font-family="monospace" font-size="13" fill="#00E5A0">0x80070005 error.</text>
+  <text x="565" y="264" font-family="monospace" font-size="12" fill="#FBB03B">Re-enable antivirus</text>
+  <text x="565" y="282" font-family="monospace" font-size="12" fill="#FBB03B">after update finishes.</text>
+  <text x="565" y="310" font-family="monospace" font-size="12" fill="#A8C4B0">Source: Microsoft</text>
+  <text x="565" y="328" font-family="monospace" font-size="12" fill="#A8C4B0">Support Article</text>
+  <text x="565" y="346" font-family="monospace" font-size="12" fill="#A8C4B0">KB3073930</text>
+
+  <!-- Footer -->
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#2a5236" text-anchor="middle">donanimklinik.com — Windows Update Error 0x80070005 Fix</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Windows Update Troubleshooter — Fix Guide</text>
+
+  <!-- Panel 1: When Troubleshooter Fails -->
+  <rect x="30" y="58" width="220" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="140" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Why It Fails</text>
+  <line x1="50" y1="90" x2="230" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="112" font-family="monospace" font-size="13" fill="#D4EAD8">Troubleshooter reports</text>
+  <text x="50" y="130" font-family="monospace" font-size="13" fill="#D4EAD8">"couldn't fix" or</text>
+  <text x="50" y="148" font-family="monospace" font-size="13" fill="#D4EAD8">"issues found" but</text>
+  <text x="50" y="166" font-family="monospace" font-size="13" fill="#D4EAD8">updates still fail.</text>
+  <text x="50" y="196" font-family="monospace" font-size="12" fill="#A8C4B0">Common reasons:</text>
+  <text x="50" y="216" font-family="monospace" font-size="13" fill="#FBB03B">▸ Corrupted system</text>
+  <text x="50" y="234" font-family="monospace" font-size="13" fill="#FBB03B">  component files</text>
+  <text x="50" y="256" font-family="monospace" font-size="13" fill="#FBB03B">▸ Broken WMI repo</text>
+  <text x="50" y="278" font-family="monospace" font-size="13" fill="#FBB03B">▸ BITS service fault</text>
+  <text x="50" y="300" font-family="monospace" font-size="13" fill="#FBB03B">▸ Registry damage</text>
+  <text x="50" y="322" font-family="monospace" font-size="13" fill="#FBB03B">▸ Antivirus blocking</text>
+
+  <!-- Panel 2: Manual Fix Steps -->
+  <rect x="280" y="58" width="240" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="400" y="82" font-family="monospace" font-size="15" fill="#3b82f6" font-weight="bold" text-anchor="middle">Manual Fix Steps</text>
+  <line x1="300" y1="90" x2="500" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="300" y="110" font-family="monospace" font-size="13" fill="#D4EAD8">Step 1 — SFC scan</text>
+  <text x="316" y="128" font-family="monospace" font-size="12" fill="#00E5A0">sfc /scannow</text>
+  <text x="316" y="144" font-family="monospace" font-size="12" fill="#A8C4B0">Repairs system files</text>
+  <text x="300" y="168" font-family="monospace" font-size="13" fill="#D4EAD8">Step 2 — DISM</text>
+  <text x="316" y="186" font-family="monospace" font-size="12" fill="#00E5A0">DISM /Online</text>
+  <text x="316" y="202" font-family="monospace" font-size="12" fill="#00E5A0">/Cleanup-Image</text>
+  <text x="316" y="218" font-family="monospace" font-size="12" fill="#00E5A0">/RestoreHealth</text>
+  <text x="300" y="242" font-family="monospace" font-size="13" fill="#D4EAD8">Step 3 — Reset BITS</text>
+  <text x="316" y="260" font-family="monospace" font-size="12" fill="#00E5A0">sc.exe sdset bits</text>
+  <text x="316" y="278" font-family="monospace" font-size="12" fill="#A8C4B0">Resets BITS perms</text>
+  <text x="300" y="302" font-family="monospace" font-size="13" fill="#D4EAD8">Step 4 — Run again</text>
+  <text x="316" y="320" font-family="monospace" font-size="12" fill="#A8C4B0">Re-run troubleshooter</text>
+  <text x="316" y="338" font-family="monospace" font-size="12" fill="#A8C4B0">after SFC/DISM</text>
+  <text x="316" y="356" font-family="monospace" font-size="12" fill="#A8C4B0">Restart required</text>
+
+  <!-- Panel 3: How to Run Troubleshooter -->
+  <rect x="550" y="58" width="220" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="660" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Run Troubleshooter</text>
+  <line x1="570" y1="90" x2="750" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="570" y="112" font-family="monospace" font-size="13" fill="#D4EAD8">Windows 11:</text>
+  <text x="570" y="130" font-family="monospace" font-size="12" fill="#A8C4B0">Settings › System</text>
+  <text x="570" y="148" font-family="monospace" font-size="12" fill="#A8C4B0">› Troubleshoot</text>
+  <text x="570" y="166" font-family="monospace" font-size="12" fill="#A8C4B0">› Other troubleshooters</text>
+  <text x="570" y="184" font-family="monospace" font-size="12" fill="#00E5A0">→ Windows Update → Run</text>
+  <text x="570" y="212" font-family="monospace" font-size="13" fill="#D4EAD8">Windows 10:</text>
+  <text x="570" y="230" font-family="monospace" font-size="12" fill="#A8C4B0">Settings › Update</text>
+  <text x="570" y="248" font-family="monospace" font-size="12" fill="#A8C4B0">› Troubleshoot</text>
+  <text x="570" y="266" font-family="monospace" font-size="12" fill="#00E5A0">→ Run the troubleshooter</text>
+  <text x="570" y="296" font-family="monospace" font-size="12" fill="#FBB03B">Note: Troubleshooter</text>
+  <text x="570" y="314" font-family="monospace" font-size="12" fill="#FBB03B">alone may not fix</text>
+  <text x="570" y="332" font-family="monospace" font-size="12" fill="#FBB03B">deep issues — use</text>
+  <text x="570" y="350" font-family="monospace" font-size="12" fill="#FBB03B">SFC/DISM as well.</text>
+
+  <!-- Footer -->
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#2a5236" text-anchor="middle">donanimklinik.com — Windows Update Troubleshooter Fix</text>
+</svg>

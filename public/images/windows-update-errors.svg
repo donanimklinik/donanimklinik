@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Windows Update Errors — Overview</text>
+
+  <!-- Panel 1: What is Windows Update -->
+  <rect x="30" y="60" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="142" y="88" font-family="monospace" font-size="16" fill="#4ade80" font-weight="bold" text-anchor="middle">What It Does</text>
+  <line x1="50" y1="96" x2="235" y2="96" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="118" font-family="monospace" font-size="13" fill="#D4EAD8">Windows Update</text>
+  <text x="50" y="136" font-family="monospace" font-size="13" fill="#D4EAD8">downloads and installs</text>
+  <text x="50" y="154" font-family="monospace" font-size="13" fill="#D4EAD8">security patches,</text>
+  <text x="50" y="172" font-family="monospace" font-size="13" fill="#D4EAD8">feature updates, and</text>
+  <text x="50" y="190" font-family="monospace" font-size="13" fill="#D4EAD8">driver updates.</text>
+  <text x="50" y="220" font-family="monospace" font-size="13" fill="#A8C4B0">Runs automatically</text>
+  <text x="50" y="238" font-family="monospace" font-size="13" fill="#A8C4B0">on Windows 10/11.</text>
+  <text x="50" y="268" font-family="monospace" font-size="13" fill="#FBB03B">Errors can stop</text>
+  <text x="50" y="286" font-family="monospace" font-size="13" fill="#FBB03B">updates entirely or</text>
+  <text x="50" y="304" font-family="monospace" font-size="13" fill="#FBB03B">leave the PC in a</text>
+  <text x="50" y="322" font-family="monospace" font-size="13" fill="#FBB03B">broken state.</text>
+
+  <!-- Panel 2: Common Error Codes -->
+  <rect x="287" y="60" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="400" y="88" font-family="monospace" font-size="16" fill="#3b82f6" font-weight="bold" text-anchor="middle">Common Error Codes</text>
+  <line x1="307" y1="96" x2="492" y2="96" stroke="#2a5236" stroke-width="1"/>
+  <text x="307" y="120" font-family="monospace" font-size="13" fill="#00E5A0">0x80070005</text>
+  <text x="307" y="138" font-family="monospace" font-size="12" fill="#A8C4B0">Access denied</text>
+  <text x="307" y="162" font-family="monospace" font-size="13" fill="#00E5A0">0x800F0922</text>
+  <text x="307" y="180" font-family="monospace" font-size="12" fill="#A8C4B0">Reserved partition too small</text>
+  <text x="307" y="204" font-family="monospace" font-size="13" fill="#00E5A0">0xC1900101</text>
+  <text x="307" y="222" font-family="monospace" font-size="12" fill="#A8C4B0">Driver compatibility</text>
+  <text x="307" y="246" font-family="monospace" font-size="13" fill="#00E5A0">Stuck / Not Working</text>
+  <text x="307" y="264" font-family="monospace" font-size="12" fill="#A8C4B0">Service or cache issue</text>
+  <text x="307" y="288" font-family="monospace" font-size="13" fill="#00E5A0">Troubleshooter fails</text>
+  <text x="307" y="306" font-family="monospace" font-size="12" fill="#A8C4B0">Corrupted system files</text>
+
+  <!-- Panel 3: Fix Strategy -->
+  <rect x="544" y="60" width="226" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="657" y="88" font-family="monospace" font-size="16" fill="#4ade80" font-weight="bold" text-anchor="middle">Fix Strategy</text>
+  <line x1="564" y1="96" x2="750" y2="96" stroke="#2a5236" stroke-width="1"/>
+  <text x="564" y="120" font-family="monospace" font-size="13" fill="#D4EAD8">1. Run Troubleshooter</text>
+  <text x="580" y="138" font-family="monospace" font-size="12" fill="#A8C4B0">Settings › Update › Diagnose</text>
+  <text x="564" y="164" font-family="monospace" font-size="13" fill="#D4EAD8">2. Reset Update Cache</text>
+  <text x="580" y="182" font-family="monospace" font-size="12" fill="#A8C4B0">Stop services, clear</text>
+  <text x="580" y="198" font-family="monospace" font-size="12" fill="#A8C4B0">SoftwareDistribution</text>
+  <text x="564" y="222" font-family="monospace" font-size="13" fill="#D4EAD8">3. Run SFC / DISM</text>
+  <text x="580" y="240" font-family="monospace" font-size="12" fill="#A8C4B0">Repair system files</text>
+  <text x="564" y="264" font-family="monospace" font-size="13" fill="#D4EAD8">4. Check error code</text>
+  <text x="580" y="282" font-family="monospace" font-size="12" fill="#A8C4B0">Targeted fix per code</text>
+  <text x="564" y="306" font-family="monospace" font-size="13" fill="#00E5A0">5. Retry update</text>
+  <text x="580" y="324" font-family="monospace" font-size="12" fill="#A8C4B0">Check Windows Update</text>
+  <text x="580" y="340" font-family="monospace" font-size="12" fill="#A8C4B0">after each step</text>
+
+  <!-- Footer -->
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#2a5236" text-anchor="middle">donanimklinik.com — Windows Update Error Guide</text>
+</svg>

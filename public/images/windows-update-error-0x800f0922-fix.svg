@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Windows Update Error 0x800F0922 — Fix</text>
+
+  <!-- Panel 1: Root Cause -->
+  <rect x="30" y="58" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="142" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Root Cause</text>
+  <line x1="50" y1="90" x2="235" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="112" font-family="monospace" font-size="13" fill="#D4EAD8">Error 0x800F0922 means</text>
+  <text x="50" y="130" font-family="monospace" font-size="13" fill="#D4EAD8">the System Reserved</text>
+  <text x="50" y="148" font-family="monospace" font-size="13" fill="#D4EAD8">partition (SRP) is</text>
+  <text x="50" y="166" font-family="monospace" font-size="13" fill="#D4EAD8">too small to hold</text>
+  <text x="50" y="184" font-family="monospace" font-size="13" fill="#D4EAD8">update boot files.</text>
+  <text x="50" y="214" font-family="monospace" font-size="12" fill="#A8C4B0">SRP is a small hidden</text>
+  <text x="50" y="232" font-family="monospace" font-size="12" fill="#A8C4B0">partition (300-500MB)</text>
+  <text x="50" y="250" font-family="monospace" font-size="12" fill="#A8C4B0">created during Windows</text>
+  <text x="50" y="268" font-family="monospace" font-size="12" fill="#A8C4B0">installation.</text>
+  <text x="50" y="296" font-family="monospace" font-size="13" fill="#FBB03B">Also occurs when</text>
+  <text x="50" y="314" font-family="monospace" font-size="13" fill="#FBB03B">VPN software prevents</text>
+  <text x="50" y="332" font-family="monospace" font-size="13" fill="#FBB03B">update server access.</text>
+
+  <!-- Panel 2: Fix Steps -->
+  <rect x="287" y="58" width="226" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="400" y="82" font-family="monospace" font-size="15" fill="#3b82f6" font-weight="bold" text-anchor="middle">Fix Steps</text>
+  <line x1="307" y1="90" x2="493" y2="90" stroke="#2a5236" stroke-width="1"/>
+  <text x="307" y="110" font-family="monospace" font-size="13" fill="#D4EAD8">1. Disconnect VPN</text>
+  <text x="323" y="128" font-family="monospace" font-size="12" fill="#A8C4B0">Disable VPN software</text>
+  <text x="323" y="144" font-family="monospace" font-size="12" fill="#A8C4B0">before running update</text>
+  <text x="307" y="166" font-family="monospace" font-size="13" fill="#D4EAD8">2. Free up SRP space</text>
+  <text x="323" y="184" font-family="monospace" font-size="12" fill="#A8C4B0">Use Disk Management</text>
+  <text x="323" y="200" font-family="monospace" font-size="12" fill="#A8C4B0">to check partition</text>
+  <text x="307" y="222" font-family="monospace" font-size="13" fill="#D4EAD8">3. Clean up language</text>
+  <text x="307" y="238" font-family="monospace" font-size="13" fill="#D4EAD8">   packs</text>
+  <text x="323" y="258" font-family="monospace" font-size="12" fill="#00E5A0">lpksetup /u</text>
+  <text x="323" y="276" font-family="monospace" font-size="12" fill="#A8C4B0">Remove unused langs</text>
+  <text x="307" y="298" font-family="monospace" font-size="13" fill="#D4EAD8">4. SFC + DISM</text>
+  <text x="323" y="316" font-family="monospace" font-size="12" fill="#00E5A0">sfc /scannow</text>
+  <text x="323" y="334" font-family="monospace" font-size="12" fill="#00E5A0">DISM /RestoreHealth</text>
+  <text x="307" y="356" font-family="monospace" font-size="13" fill="#D4EAD8">5. Retry Windows Update</text>
+
+  <!-- Panel 3: SRP Diagram -->
+  <rect x="545" y="58" width="225" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="657" y="82" font-family="monospace" font-size="15" fill="#4ade80" font-weight="bold" text-anchor="middle">Disk Layout</text>
+  <line x1="565" y1="90" x2="750" y2="90" stroke="#2a5236" stroke-width="1"/>
+
+  <!-- SRP partition box -->
+  <rect x="575" y="108" width="185" height="48" fill="#1a3a1a" stroke="#FBB03B" stroke-width="1.5" rx="4"/>
+  <text x="667" y="128" font-family="monospace" font-size="12" fill="#FBB03B" text-anchor="middle">System Reserved</text>
+  <text x="667" y="148" font-family="monospace" font-size="12" fill="#FBB03B" text-anchor="middle">~300-500 MB (hidden)</text>
+
+  <!-- Arrow -->
+  <line x1="667" y1="156" x2="667" y2="174" stroke="#2a5236" stroke-width="1.5"/>
+  <polygon points="660,174 667,188 674,174" fill="#2a5236"/>
+
+  <!-- C drive box -->
+  <rect x="575" y="188" width="185" height="48" fill="#0d2d0d" stroke="#3b82f6" stroke-width="1.5" rx="4"/>
+  <text x="667" y="208" font-family="monospace" font-size="12" fill="#3b82f6" text-anchor="middle">C:\ Windows drive</text>
+  <text x="667" y="228" font-family="monospace" font-size="12" fill="#A8C4B0" text-anchor="middle">Where updates write to</text>
+
+  <text x="565" y="268" font-family="monospace" font-size="12" fill="#A8C4B0">If SRP is full, updates</text>
+  <text x="565" y="286" font-family="monospace" font-size="12" fill="#A8C4B0">fail to place boot</text>
+  <text x="565" y="304" font-family="monospace" font-size="12" fill="#A8C4B0">manager files in SRP.</text>
+  <text x="565" y="332" font-family="monospace" font-size="12" fill="#00E5A0">Check in Disk Mgmt:</text>
+  <text x="565" y="350" font-family="monospace" font-size="12" fill="#00E5A0">diskmgmt.msc</text>
+  <text x="565" y="368" font-family="monospace" font-size="12" fill="#A8C4B0">→ See partition sizes</text>
+
+  <!-- Footer -->
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#2a5236" text-anchor="middle">donanimklinik.com — Windows Update Error 0x800F0922 Fix</text>
+</svg>

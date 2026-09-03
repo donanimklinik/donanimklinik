@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+
+  <!-- Title -->
+  <text x="400" y="38" font-family="monospace" font-size="20" fill="#00E5A0" font-weight="bold" text-anchor="middle">Windows Update Not Working — Fix Flow</text>
+
+  <!-- Panel 1: Symptoms -->
+  <rect x="30" y="58" width="220" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="140" y="84" font-family="monospace" font-size="16" fill="#4ade80" font-weight="bold" text-anchor="middle">Symptoms</text>
+  <line x1="50" y1="92" x2="230" y2="92" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="114" font-family="monospace" font-size="13" fill="#FBB03B">▸ Update button grayed</text>
+  <text x="50" y="136" font-family="monospace" font-size="13" fill="#FBB03B">▸ Stuck at 0%</text>
+  <text x="50" y="158" font-family="monospace" font-size="13" fill="#FBB03B">▸ "Error occurred"</text>
+  <text x="50" y="180" font-family="monospace" font-size="13" fill="#FBB03B">▸ Update service stops</text>
+  <text x="50" y="202" font-family="monospace" font-size="13" fill="#FBB03B">▸ No updates found</text>
+  <text x="50" y="234" font-family="monospace" font-size="13" fill="#A8C4B0">Root cause is usually</text>
+  <text x="50" y="252" font-family="monospace" font-size="13" fill="#A8C4B0">a corrupted update</text>
+  <text x="50" y="270" font-family="monospace" font-size="13" fill="#A8C4B0">cache or a stopped</text>
+  <text x="50" y="288" font-family="monospace" font-size="13" fill="#A8C4B0">Windows Update</text>
+  <text x="50" y="306" font-family="monospace" font-size="13" fill="#A8C4B0">service.</text>
+
+  <!-- Panel 2: Fix Steps -->
+  <rect x="280" y="58" width="240" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="400" y="84" font-family="monospace" font-size="16" fill="#3b82f6" font-weight="bold" text-anchor="middle">Fix Steps</text>
+  <line x1="300" y1="92" x2="500" y2="92" stroke="#2a5236" stroke-width="1"/>
+  <text x="300" y="114" font-family="monospace" font-size="13" fill="#D4EAD8">1. Run Troubleshooter</text>
+  <text x="316" y="130" font-family="monospace" font-size="12" fill="#A8C4B0">Settings › Windows Update</text>
+  <text x="316" y="146" font-family="monospace" font-size="12" fill="#A8C4B0">› Troubleshoot</text>
+  <text x="300" y="168" font-family="monospace" font-size="13" fill="#D4EAD8">2. Restart Update service</text>
+  <text x="316" y="184" font-family="monospace" font-size="12" fill="#00E5A0">services.msc</text>
+  <text x="316" y="200" font-family="monospace" font-size="12" fill="#A8C4B0">→ wuauserv → Restart</text>
+  <text x="300" y="222" font-family="monospace" font-size="13" fill="#D4EAD8">3. Clear update cache</text>
+  <text x="316" y="238" font-family="monospace" font-size="12" fill="#00E5A0">net stop wuauserv</text>
+  <text x="316" y="254" font-family="monospace" font-size="12" fill="#A8C4B0">del SoftwareDistribution</text>
+  <text x="316" y="270" font-family="monospace" font-size="12" fill="#00E5A0">net start wuauserv</text>
+  <text x="300" y="292" font-family="monospace" font-size="13" fill="#D4EAD8">4. Run SFC scan</text>
+  <text x="316" y="308" font-family="monospace" font-size="12" fill="#00E5A0">sfc /scannow</text>
+  <text x="316" y="324" font-family="monospace" font-size="12" fill="#A8C4B0">Repair system files</text>
+  <text x="316" y="348" font-family="monospace" font-size="12" fill="#D4EAD8">5. Retry Windows Update</text>
+
+  <!-- Panel 3: Verify -->
+  <rect x="550" y="58" width="220" height="330" fill="#0d1e16" stroke="#2a5236" stroke-width="1.5" rx="8"/>
+  <text x="660" y="84" font-family="monospace" font-size="16" fill="#4ade80" font-weight="bold" text-anchor="middle">Verify Fix</text>
+  <line x1="570" y1="92" x2="750" y2="92" stroke="#2a5236" stroke-width="1"/>
+  <text x="570" y="116" font-family="monospace" font-size="13" fill="#D4EAD8">Open Settings</text>
+  <text x="570" y="134" font-family="monospace" font-size="13" fill="#D4EAD8">› Windows Update</text>
+  <text x="570" y="152" font-family="monospace" font-size="13" fill="#D4EAD8">› Check for updates</text>
+  <text x="570" y="182" font-family="monospace" font-size="13" fill="#A8C4B0">Expected result:</text>
+  <text x="570" y="200" font-family="monospace" font-size="13" fill="#00E5A0">"You're up to date"</text>
+  <text x="570" y="218" font-family="monospace" font-size="13" fill="#00E5A0">or download starts</text>
+  <text x="570" y="250" font-family="monospace" font-size="13" fill="#FBB03B">If still failing:</text>
+  <text x="570" y="268" font-family="monospace" font-size="12" fill="#A8C4B0">Check specific</text>
+  <text x="570" y="286" font-family="monospace" font-size="12" fill="#A8C4B0">error code shown</text>
+  <text x="570" y="304" font-family="monospace" font-size="12" fill="#A8C4B0">in Update history</text>
+
+  <!-- Footer -->
+  <text x="400" y="410" font-family="monospace" font-size="12" fill="#2a5236" text-anchor="middle">donanimklinik.com — Windows Update Not Working Fix</text>
+</svg>
