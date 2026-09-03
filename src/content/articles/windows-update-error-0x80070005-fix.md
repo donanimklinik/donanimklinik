@@ -27,6 +27,17 @@ howto_steps:
     text: "Open Command Prompt as administrator and run: sfc /scannow. The scan takes 10-15 minutes. SFC checks all protected system files and replaces corrupted versions. After the scan completes, restart the computer and attempt Windows Update again."
   - name: "Install the update manually from Microsoft Update Catalog"
     text: "If Windows Update still fails with 0x80070005, download the specific update directly from catalog.update.microsoft.com. Search for the KB number shown in Windows Update history, download the correct version for your Windows edition (x64 or x86), and run the installer directly. This bypasses the Windows Update service entirely."
+faq:
+  - q: "What does Windows Update error 0x80070005 mean?"
+    a: "Error 0x80070005 is an 'Access Denied' error. Windows Update cannot read from or write to a folder it needs — typically C:\\Windows\\SoftwareDistribution or C:\\Windows\\System32\\catroot2. The error occurs when permission entries on these folders are corrupted or when a third-party security program is blocking access."
+  - q: "Does antivirus cause error 0x80070005?"
+    a: "Yes. Third-party antivirus software can intercept Windows Update's file operations and block access, producing the 0x80070005 error even when permissions are correct. Temporarily disable your antivirus, run Windows Update, then re-enable protection. If the update succeeds with antivirus disabled, add the SoftwareDistribution folder to your antivirus exclusion list."
+  - q: "Can error 0x80070005 appear on Windows 11?"
+    a: "Yes. Error 0x80070005 appears on both Windows 10 and Windows 11 and has the same causes: corrupted folder permissions on Windows Update directories, blocked access by security software, or corrupted system files. The same fixes — permission reset commands and SFC scan — resolve it on both versions."
+  - q: "Is it safe to reset Windows Update folder permissions?"
+    a: "Yes. The icacls reset commands restore default Windows permissions on the SoftwareDistribution and catroot2 folders. These are Windows Update working directories — not system files. Resetting their permissions does not affect your personal files or installed programs."
+  - q: "How do I find the KB number to download an update manually?"
+    a: "Open Settings > Windows Update > Update history. Find the failed update in the list — it shows a KB number (for example, KB5034441). Go to catalog.update.microsoft.com, search for that KB number, and download the version matching your Windows edition (Windows 10 or 11, x64)."
 ---
 
 Windows Update error 0x80070005 means **Access Denied** — Windows Update cannot read or write to a folder it needs during the update process. The error occurs because the Windows Update service does not have the required permissions on the SoftwareDistribution or System32\catroot2 folders.

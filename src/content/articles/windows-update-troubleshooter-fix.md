@@ -27,6 +27,17 @@ howto_steps:
     text: "After the troubleshooter completes, restart the PC even if the tool does not prompt you to. Some fixes — particularly service restarts and Winsock resets — only take full effect after a reboot. After restarting, go to Settings > Windows Update and click Check for updates."
   - name: "If the troubleshooter reports no issues but problems continue — run manual fixes"
     text: "If the troubleshooter completes with 'No issues found' but Windows Update still fails, the problem is in an area the tool does not cover. The next steps are: clear the SoftwareDistribution folder manually, reset Windows Update components via Command Prompt, or run DISM /Online /Cleanup-Image /RestoreHealth to repair the Windows component store."
+faq:
+  - q: "What does the Windows Update Troubleshooter actually fix?"
+    a: "The Windows Update Troubleshooter resets the Windows Update and BITS services, clears the SoftwareDistribution download cache, re-registers Windows Update DLL files, and checks network connectivity to Microsoft update servers. It resolves errors caused by corrupted update files or stuck services — typically error codes 0x80070002, 0x8007000d, and 0x80240034."
+  - q: "Why does the Windows Update Troubleshooter say 'not fixed'?"
+    a: "The troubleshooter reports 'not fixed' when the problem requires a more advanced repair than it can perform automatically — for example, deeply corrupted system files or a damaged Windows component store. Run DISM /Online /Cleanup-Image /RestoreHealth followed by sfc /scannow in an elevated command prompt to repair the underlying issue."
+  - q: "Can I run the Windows Update Troubleshooter from the command line?"
+    a: "Yes. Open an elevated command prompt and run: msdt.exe /id WindowsUpdateDiagnostic. This launches the same troubleshooter without opening Settings. On Windows 11, you can also search for 'Troubleshoot settings' in the Start menu and navigate directly to Windows Update in the troubleshooter list."
+  - q: "Does the Windows Update Troubleshooter delete my files?"
+    a: "No. The troubleshooter only resets Windows Update services and clears the update download cache in C:\\Windows\\SoftwareDistribution\\Download. Your personal files, installed programs, and settings are not affected. The cleared cache files are re-downloaded automatically when Windows Update runs next."
+  - q: "How long does the Windows Update Troubleshooter take to run?"
+    a: "The troubleshooter typically completes in 2 to 5 minutes. If it appears frozen for more than 10 minutes, close it and run it again. If it consistently hangs, manually stop the Windows Update service using net stop wuauserv in an elevated command prompt, then relaunch the troubleshooter."
 ---
 
 The **Windows Update Troubleshooter** is a built-in Microsoft diagnostic tool that automatically detects and repairs the most common causes of Windows Update failures. According to Microsoft's official documentation, it checks service states, network connectivity to update servers, update database integrity, and Windows Firewall configuration — and applies fixes without requiring manual command-line steps.

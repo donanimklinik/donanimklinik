@@ -27,6 +27,17 @@ howto_steps:
     text: "Go to Settings > Network & internet > Wi-Fi > click your network > Hardware properties. Under DNS server assignment, click Edit, switch to Manual, and enter 8.8.8.8 (Primary) and 8.8.4.4 (Secondary) for Google DNS, or 1.1.1.1 and 1.0.0.1 for Cloudflare DNS. Click Save."
   - name: "Check for a router or ISP outage"
     text: "Connect another device (phone, tablet) to the same Wi-Fi network and check if it has internet access. If all devices show connected but no internet, the issue is with the router or your ISP — not the device. Log into your router's admin page and check the WAN/Internet status. If no WAN IP is assigned, contact your ISP."
+faq:
+  - q: "Why does my WiFi show connected but there's no internet?"
+    a: "Your device connected to the router successfully, but the router itself cannot reach the internet — or your device received incorrect DNS or IP settings. The most common cause is a temporary router glitch, which a 30-second power cycle fixes in most cases."
+  - q: "Does restarting the router fix 'connected but no internet'?"
+    a: "Yes, in the majority of cases. Unplugging the router for 30 seconds clears its DHCP lease table, resets the WAN connection to your ISP, and flushes the DNS cache. After the router restarts, devices reconnect and receive fresh IP addresses."
+  - q: "Why is only my laptop not connecting while other devices work fine?"
+    a: "If other devices on the same network have internet but your laptop doesn't, the problem is specific to your device — not the router or ISP. Common causes include a corrupted Windows network stack, incorrect DNS settings on the adapter, or a VPN or firewall application blocking traffic."
+  - q: "What does 'No internet, secured' mean on Windows?"
+    a: "'No internet, secured' means Windows connected to the Wi-Fi network and the connection is encrypted, but your device cannot reach the internet. This usually means the device received an APIPA address (169.254.x.x) instead of a valid IP, or DNS resolution is failing."
+  - q: "How do I fix WiFi connected but no internet on Android?"
+    a: "On Android, go to Settings > Network and internet > Wi-Fi, long-press your network, and select Forget. Reconnect and enter your password. If that does not work, go to Settings > General management > Reset > Reset network settings to clear all saved Wi-Fi credentials and network configuration."
 ---
 
 The **WiFi connected but no internet** error is one of the most common network problems across Windows, Android, and Mac. Your device successfully joins the Wi-Fi network — the Wi-Fi icon appears, the signal bars are full — but web pages refuse to load and apps report no connection.

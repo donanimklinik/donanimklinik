@@ -16,6 +16,7 @@ interface Props {
   schemaType?: 'Article' | 'HowTo' | 'FAQPage';
   howtoSteps?: { name: string; text: string }[];
   relatedArticles?: { id: string; title: string; description: string; category: string; readTime?: number }[];
+  faq?: { q: string; a: string }[];
   pillarName?: string;
   pillarSlug?: string;
 }
@@ -33,9 +34,20 @@ const {
   schemaType = 'Article',
   howtoSteps,
   relatedArticles = [],
+  faq,
   pillarName,
   pillarSlug,
 } = Astro.props;
+
+const faqSchema = faq && faq.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map(item => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+} : null;
 
 const canonical = `https://www.donanimklinik.com/${category}/${slug}/`;
 const pubDate = publishedAt ?? writtenAt;
@@ -127,6 +139,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   </Fragment>
 
   <div class="article-page-hero">
@@ -174,6 +187,19 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <!-- Related articles -->
     {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
 
+    <!-- FAQ section -->
+    {faq && faq.length > 0 && (
+      <section class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        {faq.map(item => (
+          <details class="faq-item">
+            <summary class="faq-q">{item.q}</summary>
+            <p class="faq-a">{item.a}</p>
+          </details>
+        ))}
+      </section>
+    )}
+
     <!-- Source citation -->
     <aside class="source-section">
       <h2 class="source-section-title mono">Source</h2>
@@ -206,6 +232,56 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
 </div>
 
 <style>
+  /* ── FAQ section ── */
+  .faq-section {
+    margin: 3rem 0 2rem;
+    border-top: 1px solid #1e3a22;
+    padding-top: 2rem;
+  }
+  .faq-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #4ade80;
+    margin: 0 0 1.2rem;
+  }
+  .faq-item {
+    border: 1px solid #1e3a22;
+    border-radius: 8px;
+    margin-bottom: 0.6rem;
+    background: #0d1e16;
+    transition: border-color .15s;
+  }
+  .faq-item[open] { border-color: #2a5236; }
+  .faq-q {
+    padding: 0.95rem 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #D4EAD8;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+  }
+  .faq-q::-webkit-details-marker { display: none; }
+  .faq-q::after {
+    content: '+';
+    color: #00E5A0;
+    font-size: 1.4rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .faq-item[open] .faq-q::after { content: '−'; }
+  .faq-a {
+    padding: 0 1.1rem 1rem;
+    color: #A8C4B0;
+    line-height: 1.75;
+    margin: 0;
+    font-size: 0.92rem;
+  }
+
   /* ── Article images ── */
   .article-body img {
     display: block;

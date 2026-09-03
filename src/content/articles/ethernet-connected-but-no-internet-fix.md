@@ -27,6 +27,17 @@ howto_steps:
     text: "Go to Control Panel > Network and Sharing Center > Change adapter settings. Right-click your Ethernet adapter > Properties > Internet Protocol Version 4 (TCP/IPv4) > Properties. Select Use the following DNS server addresses. Enter 8.8.8.8 and 8.8.4.4. Click OK. ISP DNS failures are a common cause of no-internet errors on otherwise-working connections."
   - name: "Update or reinstall the Ethernet adapter driver"
     text: "In Device Manager, right-click the Ethernet adapter and select Update driver > Search automatically. If no update is found, right-click > Uninstall device, restart the computer, and let Windows reinstall the driver. If the issue persists, download the Ethernet driver from the computer manufacturer's support site and install it manually."
+faq:
+  - q: "Why is my Ethernet connected but showing no internet access?"
+    a: "An Ethernet cable connects your device to the router, but internet access requires the router to have a working WAN connection to your ISP. If the router's WAN light is off or amber, the issue is upstream — contact your ISP. If other devices on the same Ethernet switch work fine, the problem is your device's IP or DNS configuration."
+  - q: "Why does my Ethernet work on one device but not another?"
+    a: "If Ethernet works on one device but not another connected to the same port, the problem is device-specific. Common causes include a disabled network adapter, an outdated or corrupted Ethernet driver, incorrect IP configuration (check that DHCP is enabled), or a firewall rule blocking the connection."
+  - q: "Can a faulty Ethernet cable cause intermittent internet drops?"
+    a: "Yes. A damaged cable — one with a bent pin, a cracked connector, or internal wire breaks — can cause the link to drop and reconnect repeatedly. To test, swap the cable with a new one and monitor for drops over 30 minutes. If drops stop, the cable was the cause."
+  - q: "How do I know if my Ethernet port is broken?"
+    a: "Connect a known-working Ethernet cable to the port. If the link light on the port (a small LED near the connector) does not light up, the port or cable is faulty. Try a different cable first. If the light still does not appear, the port may be damaged — a USB-to-Ethernet adapter is an effective workaround."
+  - q: "Is Ethernet faster than WiFi for internet speed?"
+    a: "Yes, in almost all cases. Ethernet eliminates wireless interference, provides consistent low latency, and supports full-duplex communication. A Cat6 Ethernet cable on a Gigabit connection reliably achieves 900+ Mbps, while WiFi 6 under typical home conditions delivers 300-600 Mbps with higher latency variability."
 ---
 
 An Ethernet connection that shows as connected in Windows — the cable icon appears in the system tray, Device Manager shows the adapter working — but produces no internet access is almost always a software configuration issue rather than a hardware failure.
