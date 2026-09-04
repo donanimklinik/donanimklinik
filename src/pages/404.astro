@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="404 — Page Not Found | DonanimKlinik"
+  description="The page you're looking for doesn't exist. Browse our guides for computers, networking, software, and peripherals."
+  canonical="https://www.donanimklinik.com/404/"
+>
+
+<div class="page-header">
+  <div class="wrap">
+    <nav class="page-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span aria-current="page">404</span>
+    </nav>
+    <p class="page-eyebrow mono" style="color: var(--red);">ERROR · 0x00000404</p>
+    <h1 class="page-title display">Page not found</h1>
+    <p class="page-desc">This URL doesn't exist — or it moved. Try searching below, or browse by category.</p>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top: 2rem; padding-bottom: 4rem;">
+
+  <div class="not-found-search" style="max-width: 600px; margin: 0 auto 3rem;">
+    <a href="/" class="btn-back">← Back to home</a>
+  </div>
+
+  <div class="section-label">Browse by category</div>
+  <div class="cat-grid" style="margin-top: 1.5rem;">
+
+    <a href="/computers" class="cat red">
+      <div class="cat-icon-ring">
+        <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2.5" y="4" width="19" height="13" rx="1.5" stroke="var(--red)" stroke-width="1.6"/>
+          <path d="M8.5 20.5h7M12 17v3.5" stroke="var(--red)" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="cat-code mono">01 · COMPUTERS</div>
+      <h3>Computers</h3>
+      <p>BSOD codes, boot loops, dead drives, data recovery.</p>
+    </a>
+
+    <a href="/networking" class="cat blue">
+      <div class="cat-icon-ring">
+        <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 9.5c4.5-4 11.5-4 16 0M7 13c2.8-2.3 7.2-2.3 10 0M10 16.5c1.2-1 2.8-1 4 0" stroke="var(--brand-blue)" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="12" cy="19.5" r="1.2" fill="var(--brand-blue)"/>
+        </svg>
+      </div>
+      <div class="cat-code mono">02 · NETWORKING</div>
+      <h3>Networking</h3>
+      <p>Wi-Fi, routers, VPN conflicts, NAS devices.</p>
+    </a>
+
+    <a href="/software" class="cat trace">
+      <div class="cat-icon-ring">
+        <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="2.5" y="4" width="19" height="16" rx="1.5" stroke="var(--trace)" stroke-width="1.6"/>
+          <path d="M2.5 8h19" stroke="var(--trace)" stroke-width="1.6"/>
+        </svg>
+      </div>
+      <div class="cat-code mono">03 · SOFTWARE</div>
+      <h3>Software</h3>
+      <p>Office errors, activation codes, sync failures.</p>
+    </a>
+
+    <a href="/peripherals" class="cat amber">
+      <div class="cat-icon-ring">
+        <svg class="cat-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 12a8 8 0 0 1 16 0" stroke="var(--amber)" stroke-width="1.6"/>
+          <rect x="2.5" y="12" width="4" height="6" rx="1.2" stroke="var(--amber)" stroke-width="1.6"/>
+          <rect x="17.5" y="12" width="4" height="6" rx="1.2" stroke="var(--amber)" stroke-width="1.6"/>
+        </svg>
+      </div>
+      <div class="cat-code mono">04 · PERIPHERALS</div>
+      <h3>Peripherals</h3>
+      <p>USB drives, external storage, display adapters.</p>
+    </a>
+
+  </div>
+</div>
+
+<style>
+  .btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.1rem;
+    background: #0d2e1a;
+    border: 1px solid #2a5236;
+    border-radius: 6px;
+    color: #00E5A0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color .15s;
+  }
+  .btn-back:hover { border-color: #00E5A0; }
+</style>
+
+</Layout>

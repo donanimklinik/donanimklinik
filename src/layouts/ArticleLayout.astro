@@ -68,7 +68,6 @@ const modDate = updatedAt ?? sourceLastVerifiedAt ?? pubDate;
 
 const tagMap: Record<string, { label: string; cls: string; color: string }> = {
   computers:   { label: 'Computers',   cls: 'red',    color: 'var(--red)' },
-  phones:      { label: 'Phones',      cls: 'violet', color: 'var(--violet)' },
   networking:  { label: 'Networking',  cls: 'blue',   color: 'var(--brand-blue)' },
   software:    { label: 'Software',    cls: 'trace',  color: 'var(--trace)' },
   peripherals: { label: 'Peripherals', cls: 'amber',  color: 'var(--amber)' },
@@ -103,13 +102,16 @@ const articleSchema = {
   url: canonical,
   datePublished: pubDate.toISOString(),
   dateModified: modDate.toISOString(),
+  articleSection: tag.label,
   author: {
     '@type': 'Organization',
+    '@id': 'https://www.donanimklinik.com/#organization',
     name: 'DonanimKlinik',
     url: 'https://www.donanimklinik.com',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.donanimklinik.com/#organization',
     name: 'DonanimKlinik',
     url: 'https://www.donanimklinik.com',
     logo: {
@@ -124,7 +126,6 @@ const articleSchema = {
     '@id': canonical,
   },
   ...(schemaType === 'Article' && {
-    articleSection: tag.label,
     isBasedOn: { '@type': 'WebPage', url: officialSourceUrl },
   }),
   ...(schemaType === 'HowTo' && howtoSteps && {
@@ -166,6 +167,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   ogTitle={title}
   ogDescription={description}
   ogType="article"
+  ogImage={heroImageUrl || undefined}
   catClass={`cat-${category}`}
 >
   <Fragment slot="head">
