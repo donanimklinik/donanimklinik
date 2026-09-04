@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 7
+fix_summary: "DIY tools fix logical failures (deleted files, corrupted filesystem) — clicking sounds or motor failure require a professional clean-room service; attempting DIY on physical damage destroys data."
+fix_time_display: "~10 min"
+fix_difficulty: Hard
 schema_type: Article
 featured: false
 top_search_queries:

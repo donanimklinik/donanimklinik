@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Open the print queue (Settings > Printers > your printer > Open print queue), delete stuck jobs with Ctrl+A then Delete, then restart the Print Spooler service in services.msc."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

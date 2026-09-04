@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 6
+fix_summary: "Windows File Recovery (free Microsoft Store app) scans your drive and recovers deleted files before they're overwritten — run it as soon as you notice files are missing."
+fix_time_display: "~10 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

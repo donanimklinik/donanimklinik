@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Run HP Print and Scan Doctor (free from hp.com/go/tools) — it automatically detects and fixes most HP WiFi connection issues including IP conflicts and firewall blocks."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

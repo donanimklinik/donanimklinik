@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 7
+fix_summary: "This error means the System Reserved partition is full or update servers are unreachable — disable VPN if connected, then run 'sfc /scannow' in an elevated Command Prompt."
+fix_time_display: "~8 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

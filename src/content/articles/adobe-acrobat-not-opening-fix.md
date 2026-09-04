@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 6
+fix_summary: "Renaming the Acrobat settings folder in AppData\\Adobe\\Acrobat\\DC forces Acrobat to rebuild its configuration — fixes most won't open issues without reinstalling."
+fix_time_display: "~4 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

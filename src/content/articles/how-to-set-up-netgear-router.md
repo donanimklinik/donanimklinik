@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Connect to routerlogin.net (or 192.168.1.1) after plugging in the Netgear router and run the Setup Wizard — most home connections use DHCP and need no ISP credentials."
+fix_time_display: "~10 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

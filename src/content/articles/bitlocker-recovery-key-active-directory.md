@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 6
+fix_summary: "IT admins retrieve the key from Active Directory Users and Computers — search by computer name, open Properties > BitLocker Recovery tab to find all stored recovery keys."
+fix_time_display: "~3 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

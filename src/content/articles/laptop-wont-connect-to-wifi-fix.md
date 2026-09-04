@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Press Fn + the WiFi key (or toggle the physical WiFi switch) first — if WiFi is still missing from the taskbar, right-click the adapter in Device Manager and select Enable Device."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

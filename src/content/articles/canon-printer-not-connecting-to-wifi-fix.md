@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "On Canon printers, go to Menu > WLAN Setup > Cableless Setup to enter WPS mode, then press the router's WPS button within 2 minutes — no password needed."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

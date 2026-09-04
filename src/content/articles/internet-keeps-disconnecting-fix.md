@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 7
+fix_summary: "Changing DNS to Google (8.8.8.8 / 8.8.4.4) in Network Settings > Adapter Options > IPv4 Properties fixes most random disconnections caused by your ISP's unstable DNS resolver."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 7
+fix_summary: "Right-click the OneDrive tray icon > Settings > Account > Unlink this PC, then sign back in — this resets sync state and fixes persistent errors without deleting your files."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

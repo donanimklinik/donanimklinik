@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Place the router centrally, connect it to the modem via the WAN port, access 192.168.1.1, and run the setup wizard — use WPA3 or WPA2 security with a strong unique password."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

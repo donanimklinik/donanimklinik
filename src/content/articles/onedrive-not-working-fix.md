@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 6
+fix_summary: "Reset OneDrive by typing onedrive.exe /reset in the Run dialog (Win+R) — it restarts with fresh settings and re-syncs everything without deleting any of your files."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

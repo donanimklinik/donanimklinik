@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-04
 read_time: 5
+fix_summary: "Go to File > Account Settings, select your Exchange or Microsoft 365 account, click Repair, and follow the prompts — this refreshes calendar sync without losing any data."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

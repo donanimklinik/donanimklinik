@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 4
+fix_summary: "Run 'slmgr /ato' in an elevated Command Prompt to force online activation — if this fails, the product key may need to be deactivated on the old PC before it can activate here."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: Article
 featured: false
 top_search_queries:

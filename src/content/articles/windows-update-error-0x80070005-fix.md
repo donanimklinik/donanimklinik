@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 6
+fix_summary: "This Access Denied error means Windows Update lacks write permission — run the Windows Update Troubleshooter first (Settings > Update & Security > Troubleshoot > Windows Update)."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

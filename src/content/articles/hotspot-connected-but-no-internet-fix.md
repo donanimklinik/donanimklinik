@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Forget the hotspot network and reconnect — if that fails, toggle Airplane mode on the hotspot device to restart its mobile connection, then reconnect your device."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

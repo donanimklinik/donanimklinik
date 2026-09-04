@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "Run 'slmgr /skms kms.core.windows.net' then 'slmgr /ato' in an elevated Command Prompt — this points Windows to Microsoft's public KMS server and forces activation."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

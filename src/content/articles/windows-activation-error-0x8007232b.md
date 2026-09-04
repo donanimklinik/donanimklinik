@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "This error means Windows can't find the KMS server — if on a work network, connect via VPN first. For home users, use the phone activation method at Settings > Activation > Activate by phone."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

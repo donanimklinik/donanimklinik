@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "If your 48-digit key is rejected, the key may be from a different recovery point — try all keys listed at account.microsoft.com/devices, as Windows stores multiple keys per device."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Disabling Wi-Fi adapter power saving (Device Manager > your adapter > Properties > Power Management > uncheck 'Allow computer to turn off this device') stops Windows from dropping WiFi."
+fix_time_display: "~4 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

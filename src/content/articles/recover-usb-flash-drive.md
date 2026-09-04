@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 7
+fix_summary: "Right-click the USB in File Explorer > Properties > Previous Versions for a quick restore. For formatted drives, run Recuva's Deep Scan before copying anything new to the drive."
+fix_time_display: "~10 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

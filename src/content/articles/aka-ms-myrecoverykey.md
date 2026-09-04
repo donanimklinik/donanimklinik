@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 4
+fix_summary: "Visiting aka.ms/myrecoverykey redirects to your Microsoft account's BitLocker key page — sign in to instantly see all 48-digit recovery keys stored for your devices."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

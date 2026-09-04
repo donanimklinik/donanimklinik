@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Connect to 192.168.1.1, run the Quick Setup wizard, select DHCP as your internet type (for most home users), set a strong WiFi name and password, and save — takes under 10 minutes."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

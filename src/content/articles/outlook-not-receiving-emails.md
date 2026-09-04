@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-04
 read_time: 4
+fix_summary: "Check Junk Email first, then go to Home > Rules > Manage Rules to confirm no rule is redirecting messages. Also check File > Info > Mailbox Cleanup to see if storage is full."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

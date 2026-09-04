@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 6
+fix_summary: "Right-click the PDF and select Open with > Adobe Acrobat Reader — this bypasses the broken file association that makes PDFs open in the wrong app or fail to open entirely."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

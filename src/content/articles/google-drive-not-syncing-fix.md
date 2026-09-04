@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 6
+fix_summary: "Click the Drive for Desktop tray icon > gear icon > Quit Google Drive, wait 30 seconds, then relaunch — this restarts the sync daemon and fixes most stuck sync issues."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

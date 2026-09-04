@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Use an Ethernet cable from the modem's LAN port to the router's WAN (Internet) port — NOT the router's LAN ports. Reboot the modem first, then the router."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

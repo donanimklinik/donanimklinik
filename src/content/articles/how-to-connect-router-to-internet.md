@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Connect the router's WAN port to your modem, access 192.168.1.1, and run the Setup wizard — select DHCP unless your ISP provided specific PPPoE credentials."
+fix_time_display: "~10 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

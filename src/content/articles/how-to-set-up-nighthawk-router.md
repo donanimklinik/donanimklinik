@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Use the Nighthawk app (iOS/Android) for guided setup — it auto-detects your internet type and configures optimal settings. Alternatively go to routerlogin.net in a browser."
+fix_time_display: "~10 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

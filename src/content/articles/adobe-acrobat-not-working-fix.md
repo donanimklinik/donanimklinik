@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 6
+fix_summary: "Running Acrobat's built-in Repair (Help > Repair Installation) replaces corrupted program files and fixes most not working issues without a full reinstall."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Run the Canon print head alignment utility from the printer's control panel menu — this corrects the misalignment causing diagonal or wavy lines without any manual adjustment."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 6
+fix_summary: "Disabling Protected Mode (Edit > Preferences > Security (Enhanced) > uncheck Enable Protected Mode) eliminates most Acrobat freezes caused by sandboxing conflicts with Windows."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

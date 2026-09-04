@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 7
+fix_summary: "Click the Dropbox tray icon > your avatar > Pause Syncing, wait 30 seconds, then Resume — this restarts the sync engine and clears most stuck sync states without signing out."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

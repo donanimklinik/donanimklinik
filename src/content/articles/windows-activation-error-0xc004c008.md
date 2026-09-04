@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 4
+fix_summary: "This license is already in use on another PC — call Microsoft's activation hotline (1-888-571-2048) and explain you replaced hardware to get a new activation confirmation ID."
+fix_time_display: "~10 min"
+fix_difficulty: Medium
 schema_type: Article
 featured: false
 top_search_queries:

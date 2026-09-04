@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "BitLocker suspended means encryption is paused, not off — re-enable it in Control Panel > BitLocker Drive Encryption > Resume Protection with one click and no data loss."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

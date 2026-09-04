@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 6
+fix_summary: "Check available disk space first (Dropbox stops syncing with less than 200MB free) — if space is fine, click the tray icon > your avatar > Check for Updates to get the latest version."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

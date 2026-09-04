@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 5
+fix_summary: "Right-click the PDF > Open with > Adobe Acrobat to bypass the broken file association — then go to Settings > Default Apps to make Acrobat the permanent default PDF opener."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

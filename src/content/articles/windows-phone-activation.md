@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 4
+fix_summary: "Call 1-888-571-2048, follow the automated prompts, enter your Installation ID from the activation screen, and the system gives you a Confirmation ID to complete activation."
+fix_time_display: "~10 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

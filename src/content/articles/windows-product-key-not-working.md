@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "If the key was bought from an unofficial seller it may be invalid or already used — buy from microsoft.com. Legitimate keys rejected once can be retried after 24 hours."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

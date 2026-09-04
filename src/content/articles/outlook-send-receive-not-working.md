@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-05
 read_time: 5
+fix_summary: "Press F9 to force a Send/Receive — if it hangs, go to File > Account Settings > select account > Repair. This refreshes the authentication token that most commonly causes this error."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

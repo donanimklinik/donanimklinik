@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 4
+fix_summary: "Save your BitLocker recovery key to your Microsoft account now before a lockout — go to Settings > Privacy & Security > Device Encryption > Manage BitLocker > Back up your recovery key."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: Article
 featured: false
 top_search_queries:

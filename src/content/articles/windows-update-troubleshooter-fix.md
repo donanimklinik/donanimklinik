@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 5
+fix_summary: "Open Settings > Update & Security > Troubleshoot > Additional troubleshooters > Windows Update > Run the troubleshooter — it automatically detects and repairs the most common update blockers."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-03
 read_time: 5
+fix_summary: "This error means Outlook can't reach the mail server — go to File > Account Settings and verify your SMTP server (smtp.office365.com) and port (587 with TLS/STARTTLS)."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

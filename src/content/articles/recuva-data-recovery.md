@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "Run Recuva's Deep Scan on the target drive — even after emptying the Recycle Bin, Recuva finds recoverable files that haven't yet been overwritten by new data."
+fix_time_display: "~15 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

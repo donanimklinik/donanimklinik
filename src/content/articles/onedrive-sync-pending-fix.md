@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 6
+fix_summary: "Files stuck on sync pending usually have the file open in another app — close all Office apps, wait 60 seconds. If still pending, right-click the file > Always keep on this device."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

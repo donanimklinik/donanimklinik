@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 6
+fix_summary: "Recuva (free, by Piriform) recovers most accidentally deleted files in minutes — download from piriform.com, run Deep Scan, and restore files before they get overwritten."
+fix_time_display: "~15 min"
+fix_difficulty: Easy
 schema_type: Article
 featured: false
 top_search_queries:

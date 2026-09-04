@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 8
+fix_summary: "If stuck for over 2 hours, restart the Windows Update service: open services.msc, find Windows Update, click Stop, wait 30 seconds, then Start — and try the update again."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

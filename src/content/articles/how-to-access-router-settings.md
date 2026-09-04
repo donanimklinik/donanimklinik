@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Type 192.168.1.1 (or 192.168.0.1) in your browser's address bar — log in with admin/admin or admin/password if you haven't changed the defaults (check the label on the router)."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

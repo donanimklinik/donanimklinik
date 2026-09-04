@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
 read_time: 7
+fix_summary: "This driver compatibility error during feature updates is fixed by uninstalling incompatible drivers (especially graphics and antivirus) before running the update again."
+fix_time_display: "~15 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

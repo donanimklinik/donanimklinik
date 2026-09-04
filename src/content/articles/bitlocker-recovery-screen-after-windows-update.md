@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "BitLocker triggers after updates that modify the boot configuration — enter your 48-digit recovery key (from account.microsoft.com/devices) and BitLocker resumes automatically after login."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

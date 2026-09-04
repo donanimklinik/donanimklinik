@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 7
+fix_summary: "Plug in power and WAN cable, go to 192.168.1.1 in a browser, run Quick Setup, choose your WiFi name and password, and save — your network is ready in under 10 minutes."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

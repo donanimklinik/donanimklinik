@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "A digital license is tied to your motherboard — after hardware replacement, run the Activation Troubleshooter (Settings > Activation > Troubleshoot) and select 'I changed hardware recently'."
+fix_time_display: "~5 min"
+fix_difficulty: Medium
 schema_type: HowTo
 featured: false
 top_search_queries:

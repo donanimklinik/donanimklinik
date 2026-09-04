@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04
 read_time: 6
+fix_summary: "Clearing the Acrobat cache folder (in AppData\\Adobe\\Acrobat\\DC\\Cache) and disabling Protected Mode (Edit > Preferences > Security) stops most Acrobat crash loops."
+fix_time_display: "~6 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

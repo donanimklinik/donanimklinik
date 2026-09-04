@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-02
 read_time: 4
+fix_summary: "Stuck Outbox emails are almost always caused by a large attachment — right-click the stuck email > Delete, then resend without the attachment or with a compressed version."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

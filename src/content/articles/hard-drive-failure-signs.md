@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 6
+fix_summary: "Run the built-in SMART check in Command Prompt: type wmic diskdrive get status — 'OK' means healthy; any other result means back up everything immediately and replace the drive."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: Article
 featured: false
 top_search_queries:

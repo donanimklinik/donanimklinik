@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Check your Outbox for stuck messages, then go to File > Account Settings > Test Account Settings to verify SMTP credentials — wrong port (use 587 with TLS) causes most send failures."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

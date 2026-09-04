@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "Without the recovery key your options are: check all Microsoft accounts ever linked to the device, check Azure AD (work devices), or contact your IT admin — there is no bypass method."
+fix_time_display: "~5 min"
+fix_difficulty: Hard
 schema_type: Article
 featured: false
 top_search_queries:

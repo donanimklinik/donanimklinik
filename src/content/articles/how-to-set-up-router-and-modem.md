@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Connect modem to router's WAN port, wait 2 minutes for both to boot, then connect your device to the router's WiFi — check the router's bottom label for the default WiFi name and password."
+fix_time_display: "~10 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

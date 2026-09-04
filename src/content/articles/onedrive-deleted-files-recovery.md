@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 5
+fix_summary: "Deleted files stay in OneDrive's Recycle Bin for 30–93 days — go to onedrive.com, click Recycle Bin in the left sidebar, select your files, and click Restore."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

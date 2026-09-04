@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Hold the WiFi button on the Brother printer for 3 seconds (WPS mode), then press the WPS button on your router within 2 minutes — the connection completes automatically without a password."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

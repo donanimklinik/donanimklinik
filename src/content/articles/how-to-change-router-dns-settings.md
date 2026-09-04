@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "Log in at 192.168.1.1, find DNS under WAN or Internet Setup, and enter 8.8.8.8 (primary) and 8.8.4.4 (secondary) — faster and more reliable than your ISP's default DNS."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:
