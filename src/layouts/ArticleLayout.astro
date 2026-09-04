@@ -674,6 +674,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
         }
       });
     }, { rootMargin: '0px 0px -15% 0px' });
-    h2s.forEach(h => observer.observe(h));
+    // Delay ensures browser paints initial width:0 state before observer fires
+    setTimeout(() => h2s.forEach(h => observer.observe(h)), 120);
   }
 </script>
