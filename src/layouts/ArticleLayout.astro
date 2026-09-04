@@ -89,7 +89,7 @@ function toIsoDuration(s?: string): string | undefined {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': schemaType,
+  '@type': 'Article',
   name: title,
   headline: title,
   description,
@@ -101,6 +101,7 @@ const articleSchema = {
   datePublished: pubDate.toISOString(),
   dateModified: modDate.toISOString(),
   articleSection: tag.label,
+  isBasedOn: { '@type': 'WebPage', url: officialSourceUrl },
   author: {
     '@type': 'Organization',
     '@id': 'https://www.donanimklinik.com/#organization',
@@ -123,19 +124,22 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': canonical,
   },
-  ...(schemaType === 'Article' && {
-    isBasedOn: { '@type': 'WebPage', url: officialSourceUrl },
-  }),
-  ...(schemaType === 'HowTo' && howtoSteps && {
-    ...(toIsoDuration(fixTime) && { totalTime: toIsoDuration(fixTime) }),
-    step: howtoSteps.map((s, i) => ({
-      '@type': 'HowToStep',
-      position: i + 1,
-      name: s.name,
-      text: s.text,
-    })),
-  }),
 };
+
+const howtoSchema = (schemaType === 'HowTo' && howtoSteps && howtoSteps.length > 0) ? {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: title,
+  description,
+  url: canonical,
+  ...(toIsoDuration(fixTime) && { totalTime: toIsoDuration(fixTime) }),
+  step: howtoSteps.map((s, i) => ({
+    '@type': 'HowToStep',
+    position: i + 1,
+    name: s.name,
+    text: s.text,
+  })),
+} : null;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -171,6 +175,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {howtoSchema && <script type="application/ld+json" set:html={JSON.stringify(howtoSchema)} />}
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
     <!-- Ezoic content category — improves advertiser targeting after Ezoic switch -->
     <meta name="ezoic-category" content={category} />

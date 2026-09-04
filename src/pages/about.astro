@@ -1,5 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'About DonanimKlinik',
+  url: 'https://www.donanimklinik.com/about/',
+  description: 'Learn how DonanimKlinik verifies every fix and how to contact the editorial team.',
+  mainEntity: {
+    '@type': 'Organization',
+    '@id': 'https://www.donanimklinik.com/#organization',
+    name: 'DonanimKlinik',
+    email: 'donanimklinik@gmail.com',
+    url: 'https://www.donanimklinik.com/',
+  },
+};
 ---
 
 <Layout
@@ -7,6 +22,9 @@ import Layout from '../layouts/Layout.astro';
   description="DonanimKlinik publishes only official-source-backed tech fixes. Learn how every guide is written, verified, and approved before publication."
   canonical="https://www.donanimklinik.com/about/"
 >
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(contactPageSchema)} />
+  </Fragment>
 
 <div class="page-header">
   <div class="wrap">

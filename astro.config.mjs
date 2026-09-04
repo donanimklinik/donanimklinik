@@ -7,7 +7,7 @@ export default defineConfig({
   output: 'static',
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/draft/'),
+      filter: (page) => !/(?:^|\/)draft(?:\/|$)/.test(new URL(page).pathname),
     }),
   ],
 });
