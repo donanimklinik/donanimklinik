@@ -15,6 +15,17 @@ top_search_queries:
   - "preparing bitlocker recovery"
   - "preparing bitlocker recovery screen"
   - "what does preparing bitlocker recovery mean"
+faq:
+  - q: "What does the 'Preparing BitLocker Recovery' message mean?"
+    a: "It means BitLocker detected a change in the startup environment that the TPM cannot verify, and it is about to ask for the recovery key. The message appears briefly before the full key entry screen."
+  - q: "Is 'Preparing BitLocker Recovery' an error message?"
+    a: "No. It is a notification that BitLocker's recovery process is starting. It indicates BitLocker is working as designed after detecting an unexpected change in the boot environment."
+  - q: "How long does the 'Preparing BitLocker Recovery' screen last?"
+    a: "The message typically displays for a few seconds, then transitions to the full BitLocker recovery screen where you enter the 48-digit key. It does not stay on screen indefinitely."
+  - q: "Will I see this message every time I restart my computer?"
+    a: "No. After you enter the correct recovery key and Windows restarts normally, BitLocker re-evaluates the boot environment. The message will not appear again unless another triggering event occurs."
+  - q: "Can I skip past the 'Preparing BitLocker Recovery' screen?"
+    a: "No. After this screen, Windows requires the recovery key to proceed. There is no option to cancel or bypass it at this stage. You must enter the correct 48-digit key."
 ---
 
 The "Preparing BitLocker Recovery" message appears briefly at startup before Windows transitions to the BitLocker recovery key entry screen. It is not an error in itself — it is a notification that BitLocker has detected a change it cannot verify and is preparing to ask for the recovery key.

@@ -28,6 +28,17 @@ howto_steps:
     text: "Open the print queue by clicking your HP printer in Settings > Printers & scanners, then click Open print queue. Select all pending jobs with Ctrl+A and press Delete."
   - name: "Run HP Print and Scan Doctor"
     text: "Download HP Print and Scan Doctor from the official HP support site. Run the tool, select your printer when prompted, and let it diagnose and repair the connection automatically."
+faq:
+  - q: "Why does my HP printer show as offline even when it is on?"
+    a: "An offline status in Windows usually means Windows cannot communicate with the printer, not that the printer is off. Common causes are the Use Printer Offline mode being active in Windows, a stalled Print Spooler service, a stuck print job, or the printer receiving a new IP address that Windows does not have."
+  - q: "How do I turn off Use Printer Offline mode in Windows?"
+    a: "Open Settings > Bluetooth & devices > Printers & scanners, click your HP printer, select Open print queue, then click Printer in the menu bar and uncheck Use Printer Offline. This mode prevents Windows from communicating with the printer regardless of its actual connection status."
+  - q: "What does the Print Spooler service do and why does restarting it fix printer offline errors?"
+    a: "The Print Spooler manages communication between Windows and all installed printers. When it crashes or stalls, all printers can appear offline even though they are connected. Restarting it via services.msc refreshes the connection state and often restores printer access immediately."
+  - q: "What is HP Print and Scan Doctor?"
+    a: "HP Print and Scan Doctor is a free official diagnostic tool from HP that automatically identifies and fixes common printer problems including offline errors, connection issues, and print queue blockages. Download it from the official HP support site and select your printer model."
+  - q: "My HP printer keeps going offline repeatedly. How do I stop this?"
+    a: "A printer that repeatedly goes offline usually has an IP address that changes after each restart. Log into your router and assign the printer a static IP address using DHCP reservation based on the printer's MAC address. This prevents the IP from changing and stops the recurring offline problem."
 ---
 
 An HP printer that shows **Offline** in Windows is not responding to print commands — even though the printer itself is powered on. The offline status is a Windows communication state, not necessarily a hardware failure.

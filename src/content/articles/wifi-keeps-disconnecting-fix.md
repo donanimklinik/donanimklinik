@@ -28,6 +28,17 @@ howto_steps:
     text: "Open Command Prompt as administrator and run: ipconfig /release, then ipconfig /renew, then ipconfig /flushdns. Then change DNS to 8.8.8.8 and 8.8.4.4 in Settings > Network & internet > Wi-Fi > your network > Hardware properties."
   - name: "Check for router channel interference and update firmware"
     text: "Log into your router's admin page (192.168.1.1 or 192.168.0.1). Under Wireless settings, change the Wi-Fi channel to 1, 6, or 11 on the 2.4 GHz band (the only non-overlapping channels). Also check for a firmware update in the router's admin panel and apply it if available."
+faq:
+  - q: "Why does my Wi-Fi keep disconnecting on Windows?"
+    a: "The most common causes are the Wi-Fi adapter power management setting that allows Windows to turn off the adapter to save power, an outdated or incompatible wireless driver, and router channel interference. Disabling adapter power management is the most effective first fix."
+  - q: "How do I stop Windows from turning off my Wi-Fi adapter?"
+    a: "Open Device Manager, expand Network adapters, double-click your Wi-Fi adapter, go to the Power Management tab, and uncheck Allow the computer to turn off this device to save power. This prevents Windows from disconnecting Wi-Fi during power-saving cycles."
+  - q: "What is roaming aggressiveness and how does it cause Wi-Fi drops?"
+    a: "Roaming aggressiveness controls how eagerly the Wi-Fi adapter scans for and switches to other access points. A high setting causes the adapter to frequently test other access points, causing brief disconnections. Setting it to Lowest in Device Manager > Wi-Fi adapter > Advanced prevents unnecessary roaming."
+  - q: "Can channel interference cause Wi-Fi to keep disconnecting?"
+    a: "Yes. On the 2.4 GHz band, neighboring networks on the same or overlapping channels compete for bandwidth, causing intermittent drops. Setting your router to channels 1, 6, or 11 (the only non-overlapping channels) reduces interference and improves connection stability."
+  - q: "Should I use the 2.4 GHz or 5 GHz band for a more stable Wi-Fi connection?"
+    a: "The 5 GHz band is generally more stable in congested environments because it has more non-overlapping channels and is used by fewer devices. However, it has shorter range. Connect to 5 GHz if you are close to the router. Use 2.4 GHz for longer range at the cost of potential interference."
 ---
 
 Wi-Fi that repeatedly disconnects — dropping every few minutes, reconnecting automatically, then dropping again — is almost never a hardware failure. According to Microsoft's Windows networking documentation, the most common causes are the Windows Wi-Fi adapter power management setting and an outdated or incompatible wireless driver.

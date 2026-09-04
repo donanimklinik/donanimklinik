@@ -25,6 +25,17 @@ howto_steps:
     text: "If the device is managed by an organisation, the KMS server address may be misconfigured or unreachable. Your IT administrator needs to verify KMS connectivity using: nslookup -type=srv _vlmcs._tcp — run from an administrator Command Prompt."
   - name: "Check DNS resolution for the KMS server"
     text: "On a domain-joined device, run: nslookup -type=srv _vlmcs._tcp from an administrator Command Prompt. If it returns no records or an error, the DNS record for the KMS server is missing or the device cannot reach the network where the KMS server is located."
+faq:
+  - q: "What does Windows activation error 0x8007232B mean?"
+    a: "Error 0x8007232B means Windows tried to find a KMS (Key Management Service) server by querying DNS and received no valid response. The message says DNS name does not exist, which means the KMS server record is not found in DNS."
+  - q: "Does 0x8007232B appear on personal home computers?"
+    a: "Occasionally, but it usually means the device was set up with a volume licence key intended for organizations. On a personal device, the fix is to replace the volume licence key with a retail product key using slmgr /ipk followed by your key."
+  - q: "How do I fix 0x8007232B on a work laptop when working from home?"
+    a: "Connect to your organization's VPN first, then open an administrator Command Prompt and run slmgr /ato. The KMS server is on the internal network and is typically unreachable without VPN."
+  - q: "Can the 0x8007232B error be fixed without IT support?"
+    a: "On a personal device, yes — replace the volume licence key with a valid retail key. On a domain-joined work device, the fix requires IT admin access to verify and fix the DNS record for the KMS server or configure the KMS address manually."
+  - q: "What command checks if the KMS server is discoverable?"
+    a: "Open an administrator Command Prompt and run nslookup -type=srv _vlmcs._tcp. If this returns no records, the DNS entry for the KMS server is missing. An IT administrator needs to add the SRV record or configure the KMS server address manually using slmgr /skms."
 ---
 
 Error code **0x8007232B** appears during Windows activation with the message: "DNS name does not exist." This is a network-level error — Windows attempted to locate a Key Management Service (KMS) server by querying DNS, and the query failed.

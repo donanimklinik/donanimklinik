@@ -25,6 +25,17 @@ howto_steps:
     text: "With files selected, click Restore at the top of the page. Files return to the exact folder they were in before deletion and sync back to all connected devices."
   - name: "Check the Second-stage Recycle Bin if files are not visible"
     text: "If the file is not in the main Recycle Bin, scroll to the bottom of the Recycle Bin page and click Restore from second-stage Recycle Bin. This holds recently purged items for a short additional period."
+faq:
+  - q: "How long do deleted OneDrive files stay in the Recycle Bin?"
+    a: "On personal OneDrive plans and Microsoft 365 Personal or Family plans, deleted files stay in the Recycle Bin for 30 days. Business plans may retain them longer depending on admin settings."
+  - q: "Can I recover files deleted from OneDrive more than 30 days ago?"
+    a: "After 30 days, files are moved to a second-stage Recycle Bin for a short additional period before permanent deletion. Once permanently deleted, recovery is not possible through OneDrive's built-in tools."
+  - q: "Does deleting a file from my PC's OneDrive folder also delete it from the cloud?"
+    a: "Yes. OneDrive syncs deletions in both directions. Deleting a file from the OneDrive folder on your PC removes it from the cloud and all other synced devices. The file moves to the OneDrive Recycle Bin, not the Windows Recycle Bin."
+  - q: "How do I recover a previous version of a file in OneDrive?"
+    a: "Right-click the file in OneDrive on the web, select Version history, and choose the version you want to restore. OneDrive keeps version history for files on personal plans for up to 30 days and Microsoft 365 plans for longer."
+  - q: "Can I recover files if someone else shared them with me and then deleted them?"
+    a: "If a shared file is deleted by the owner, it is removed from your OneDrive as well. You cannot recover it yourself. The original owner needs to restore it from their own OneDrive Recycle Bin."
 ---
 
 When you delete a file from OneDrive — whether by pressing Delete on your keyboard, moving it to the Windows Recycle Bin from a synced folder, or deleting it through the OneDrive website — it is moved to the OneDrive Recycle Bin, not permanently deleted. According to Microsoft's documentation, files remain in the OneDrive Recycle Bin for 30 days on personal plans before being permanently removed.

@@ -27,6 +27,17 @@ howto_steps:
     text: "Brother consumer printers support only the 2.4 GHz Wi-Fi band. Log into your router and confirm the 2.4 GHz band is active. Set the security mode to WPA2-Personal (AES). Brother printers may fail to connect to WPA3 networks or networks with mixed WPA/WPA2 settings."
   - name: "Use Brother iPrint&Scan to reinstall the connection"
     text: "Download Brother iPrint&Scan from brother.com. Open the application, click Add Printer, and follow the on-screen guide to locate the Brother printer on the network and install the correct driver and connection settings for your Windows version."
+faq:
+  - q: "Why won't my Brother printer connect to Wi-Fi?"
+    a: "The most common causes are outdated credentials stored on the printer after a router change, a 5 GHz band incompatibility (Brother printers only support 2.4 GHz), or a router security setting like WPA3 that the printer cannot handle. Reset the network settings and reconnect using the control panel Wireless Setup Wizard."
+  - q: "Do Brother printers work on 5 GHz Wi-Fi?"
+    a: "No. Brother consumer printers support only the 2.4 GHz Wi-Fi band. If your router broadcasts both bands under the same network name, the printer may try to connect to the 5 GHz band and fail. Create a separate 2.4 GHz SSID or connect the printer with WPS."
+  - q: "How do I reset the Wi-Fi settings on a Brother printer?"
+    a: "On the control panel, go to Menu > Network > Network Reset. Confirm the reset. This clears all stored wireless credentials and returns the network adapter to factory defaults. After the reset, run the Wireless Setup Wizard to reconnect with your current password."
+  - q: "What does 'Connecting WLAN' mean on a Brother printer?"
+    a: "Connecting WLAN means the printer is actively trying to establish a wireless connection. If it stays at this message without connecting, the credentials are wrong, the network name does not match, or the router settings are incompatible. Try resetting the network settings and reconnecting."
+  - q: "Can Brother iPrint&Scan fix Wi-Fi connection problems?"
+    a: "Yes. Brother iPrint&Scan includes a built-in setup wizard that can detect the printer on the network and reinstall the connection with the correct driver and settings. Download it from brother.com if manual setup through the control panel does not work."
 ---
 
 A Brother printer that won't connect to Wi-Fi displays a blinking WLAN light, shows "Connecting WLAN" on the control panel, or appears offline in Windows. This is one of the most reported Brother printer issues after a router change, firmware update, or network password update.

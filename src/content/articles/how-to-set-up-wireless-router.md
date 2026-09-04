@@ -28,6 +28,17 @@ howto_steps:
     text: "In Wireless or WiFi Settings, set a new network name (SSID) and a strong password. Select WPA2-Personal (AES) or WPA3 as the security type — never use WEP or leave security disabled. Click Apply. Your router restarts with the new settings."
   - name: "Test the connection on all devices"
     text: "Connect each device to the new WiFi network using the password you set. Run a speed test at fast.com or speedtest.net to verify your ISP speed is being delivered. For devices that need maximum speed and reliability, connect via Ethernet cable to the router's LAN ports."
+faq:
+  - q: "Where should I place my wireless router for the best coverage?"
+    a: "Place the router in a central location at least 1 meter off the floor, away from walls, metal objects, and appliances like microwaves that operate on the 2.4 GHz frequency. Avoid placing it inside cabinets or behind TVs. A central elevated position maximizes coverage throughout the home."
+  - q: "How do I log in to my wireless router admin panel?"
+    a: "Connect a device to the router's Wi-Fi or via Ethernet cable. Open a browser and type 192.168.1.1 or 192.168.0.1 in the address bar (not in a search engine). Enter the admin username and password from the label on the router."
+  - q: "Do I need to use an Ethernet cable to set up a wireless router?"
+    a: "You can use Wi-Fi for setup by connecting to the router's default network (name and password are on the router label). However, using an Ethernet cable for initial setup is more reliable as it avoids any wireless connectivity issues during configuration."
+  - q: "What is the difference between 2.4 GHz and 5 GHz Wi-Fi bands?"
+    a: "The 2.4 GHz band has longer range but is slower and more prone to interference from other devices. The 5 GHz band is faster and less congested but has shorter range. Most modern routers broadcast both simultaneously. Connect phones and laptops close to the router to 5 GHz and devices further away to 2.4 GHz."
+  - q: "How long does it take to set up a wireless router?"
+    a: "Initial setup takes 10 to 20 minutes from unboxing to having devices connected. This includes connecting the hardware, logging into the admin panel, setting a new Wi-Fi name and password, and reconnecting all your devices. Using the manufacturer's setup app can reduce this to under 10 minutes."
 ---
 
 A wireless router creates the WiFi network that all devices in your home connect to. According to NETGEAR's router installation documentation, placement and physical connection to the modem are the two factors that most affect wireless performance — configuration in the admin panel matters less than getting these two steps right.

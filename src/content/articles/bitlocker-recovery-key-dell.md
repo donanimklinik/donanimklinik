@@ -24,6 +24,17 @@ howto_steps:
     text: "If the Dell was purchased through a business or was pre-configured with a company account, the recovery key may be in Azure Active Directory. Contact whoever manages the device — an IT administrator or the original purchaser."
   - name: "Check for a USB drive or printed key"
     text: "During Windows setup on some Dell devices, BitLocker is enabled automatically. If a prompt appeared to save the key, check any USB drive used at that time for a .bek file, or look for a printed copy."
+faq:
+  - q: "Does Dell store my BitLocker recovery key?"
+    a: "No. Dell does not store BitLocker recovery keys and cannot retrieve them. Dell support cannot help you regain access to a BitLocker-encrypted drive, regardless of whether the device is under warranty."
+  - q: "Why did my Dell laptop enable BitLocker without asking me?"
+    a: "Dell ships many laptops with BitLocker pre-configured. When you sign in with a Microsoft account during Windows setup, BitLocker activates automatically and saves the key to that Microsoft account."
+  - q: "Where is my Dell's BitLocker recovery key stored?"
+    a: "If BitLocker was set up automatically during Windows sign-in, the key is in your Microsoft account at account.microsoft.com/devices/recoverykey. For a work-issued Dell, contact your IT department."
+  - q: "Can Dell SupportAssist find my BitLocker recovery key?"
+    a: "No. Dell SupportAssist and other Dell utilities do not have access to BitLocker recovery keys. The key must be retrieved from your Microsoft account or your IT administrator."
+  - q: "My Dell showed a BitLocker screen after a BIOS update. Is that normal?"
+    a: "Yes. Dell SupportAssist often installs BIOS updates automatically, and BIOS updates change TPM measurements that BitLocker monitors, triggering the recovery screen. Enter your recovery key to regain access, then consider suspending BitLocker before future BIOS updates."
 ---
 
 Dell does not store BitLocker recovery keys. This is one of the most common points of confusion for users who contact Dell support after being locked out — Dell support cannot retrieve the key for you, and neither can Microsoft support. The key exists only in the location where it was saved when BitLocker was first enabled on that device.

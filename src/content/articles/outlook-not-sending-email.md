@@ -25,6 +25,17 @@ howto_steps:
     text: "Open the Outbox folder. If a message is there, do not double-click it — this can lock it. Instead, drag it to the Drafts folder. Once moved, open it from Drafts, remove any large attachments, and click Send again."
   - name: "Verify your SMTP server settings"
     text: "Go to File > Account Settings > Account Settings. Select your email account and click Change. Under More Settings > Outgoing Server, ensure My outgoing server (SMTP) requires authentication is checked. Under Advanced, confirm the SMTP port is 587 (TLS) or 465 (SSL) — not 25, which many ISPs block."
+faq:
+  - q: "Why is Outlook not sending emails?"
+    a: "The most common causes are that Outlook is in Work Offline mode, an email is stuck in the Outbox blocking all subsequent messages, the SMTP server settings are wrong, or the email password has changed and Outlook is failing authentication silently."
+  - q: "What does Work Offline mean in Outlook and how do I turn it off?"
+    a: "Work Offline mode prevents Outlook from connecting to any mail server, so no emails can be sent or received. Check the Send/Receive tab — if the Work Offline button appears highlighted or active, click it once to disable it. The status bar at the bottom should then show your connection status."
+  - q: "Why is a message stuck in the Outbox and blocking all other emails?"
+    a: "Outlook processes the Outbox in order. If the first message fails to send, all subsequent messages queue behind it and none are delivered. Common causes are a message with an oversized attachment or an intermittent server connection that failed mid-send."
+  - q: "What SMTP port should Outlook use?"
+    a: "Use port 587 with STARTTLS or port 465 with SSL/TLS. Port 25 is intended for server-to-server communication and is blocked by most internet service providers for outbound mail from personal connections. Using port 25 in Outlook typically results in connection failures."
+  - q: "Can antivirus software stop Outlook from sending emails?"
+    a: "Yes. Some antivirus programs scan outbound email and can interfere with the SMTP connection. Temporarily disable the email scanning feature in your antivirus (not the full protection) and try sending again. If it works, configure the antivirus to exclude Outlook."
 ---
 
 Outlook not sending email is one of the most common issues reported across Microsoft 365, Outlook 2019, 2021, and Outlook.com. The message is written, you click Send, and it sits in the Outbox — or disappears with no confirmation that it was delivered.

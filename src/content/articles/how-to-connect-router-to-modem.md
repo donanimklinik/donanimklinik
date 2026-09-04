@@ -25,6 +25,17 @@ howto_steps:
     text: "Plug the modem back in and wait 60 seconds for it to fully connect to your ISP. You will see its lights stabilise. Then power on the router. Wait another 60 seconds. The router's WAN or Internet LED should light up, indicating it received an IP address from the modem."
   - name: "Connect a device and verify internet access"
     text: "Connect a laptop or phone to the router's WiFi network (network name and password are on the router label) or via Ethernet. Open a browser and test internet access. If internet works, the modem-router connection is successful."
+faq:
+  - q: "Which cable connects the modem to the router?"
+    a: "A standard Ethernet (RJ45) cable connects the modem to the router. Plug one end into the modem's single Ethernet port and the other end into the router's WAN port (labelled WAN, Internet, or a different color from the LAN ports)."
+  - q: "Why should I power on the modem before the router?"
+    a: "The modem needs time to register with the ISP and obtain a valid connection before the router connects to it. If the router powers on before the modem is ready, the router fails to receive an IP address from the modem. Always power on the modem first and wait 60 seconds before powering on the router."
+  - q: "What happens if I plug the Ethernet cable into a LAN port instead of the WAN port?"
+    a: "Plugging the modem into a LAN port is the most common setup mistake. In this configuration, the router cannot share the internet connection and all devices will have no internet access. Unplug the cable and move it to the WAN port (usually a different color and labelled WAN or Internet)."
+  - q: "Do I need a separate modem and router or can I use one device?"
+    a: "Many ISPs provide a gateway device that combines a modem and router in one unit. If you have one of these, no separate router connection is needed. If you want to add your own router for better performance or features, you connect it to the gateway's LAN port in router mode."
+  - q: "The router's WAN LED is not lighting up after connecting. What does that mean?"
+    a: "A dark WAN LED usually means the modem has not provided an IP address to the router. Restart both devices: unplug the modem for 60 seconds, plug it back in and wait for the Online LED to become solid, then power on the router. If the WAN LED still does not light, check that the Ethernet cable is fully seated in both ports."
 ---
 
 Connecting a router to a modem is a single Ethernet cable connection — but the order in which you power the devices on matters. According to NETGEAR's home networking documentation, most connection failures occur because the modem was powered on after the router, causing the modem to fail to assign the router an IP address.

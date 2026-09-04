@@ -25,6 +25,17 @@ howto_steps:
     text: "Type the 48-digit recovery key without spaces or hyphens, or copy it exactly including hyphens if the field accepts them. A single wrong character causes rejection."
   - name: "Check alternative key locations if no match found"
     text: "If no Microsoft account key matches, check: a printed copy made during BitLocker setup, a USB drive saved as a .bek file, or run manage-bde -protectors -get C: from an administrator Command Prompt on a working system."
+faq:
+  - q: "Why does my BitLocker recovery key keep getting rejected?"
+    a: "The most common cause is entering a key for the wrong drive. Each drive has a unique recovery key identified by an 8-digit Key ID. Only the key whose Key ID matches the one shown on the recovery screen will be accepted."
+  - q: "How do I find the Key ID on the BitLocker recovery screen?"
+    a: "The Key ID appears at the top of the recovery screen as an 8-character string before the key entry field. Write it down before attempting to enter any key so you can match it against your saved keys."
+  - q: "I have multiple keys on my Microsoft account. Which one should I use?"
+    a: "Each key on the account.microsoft.com/devices/recoverykey page shows its own Key ID. Compare the Key ID on the recovery screen to the Key ID listed next to each saved key and enter the matching one."
+  - q: "Does entering the wrong BitLocker key damage the drive?"
+    a: "No. Entering an incorrect key simply produces a rejection message. You can retry with the correct key without any damage to the drive or its data."
+  - q: "What if none of my saved keys match the Key ID on screen?"
+    a: "If no saved key matches the Key ID, the key was either never backed up or was saved to a different account. For work devices, contact IT support. If no key exists anywhere, the encrypted data cannot be recovered."
 ---
 
 You found a BitLocker recovery key but the screen keeps rejecting it. According to Microsoft's BitLocker recovery documentation, this almost always means you are entering the wrong key — not that the key itself is broken or that the drive has failed.

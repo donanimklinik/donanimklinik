@@ -25,6 +25,17 @@ howto_steps:
     text: "Sign in with the Microsoft account that was active on the locked device when BitLocker was set up — not necessarily the account you use most often."
   - name: "Match the Key ID and enter the recovery key"
     text: "Each listed key shows its Key ID. Find the key whose ID matches what is on your screen. Copy the 48-digit key and enter it on the BitLocker recovery screen."
+faq:
+  - q: "What is aka.ms/myrecoverykey?"
+    a: "It is a Microsoft short URL displayed on the BitLocker recovery screen that redirects to account.microsoft.com/devices/recoverykey, the official page where BitLocker recovery keys saved to your Microsoft account are listed."
+  - q: "Does aka.ms/myrecoverykey work on any browser?"
+    a: "Yes. Typing aka.ms/myrecoverykey into any browser on any device redirects to your Microsoft account recovery key page. You can use a phone, tablet, or another computer."
+  - q: "What if the aka.ms/myrecoverykey page shows no keys for my device?"
+    a: "This means BitLocker was set up without a Microsoft account, or the key was saved to a USB drive, printed, or backed up to an organization's directory. Check those alternative locations."
+  - q: "Can I access aka.ms/myrecoverykey on my phone while my PC is locked?"
+    a: "Yes. Open any browser on your phone, navigate to aka.ms/myrecoverykey, and sign in with the Microsoft account used on the locked PC. The page is fully accessible on mobile."
+  - q: "I see my device listed but no recovery key is shown. Why?"
+    a: "The key may have been saved to a different Microsoft account, or it was not saved to any Microsoft account at all. Try signing in with other Microsoft accounts you own, or check USB drives and printed copies."
 ---
 
 When Windows locks a drive with BitLocker and asks for a recovery key, it sometimes displays **aka.ms/myrecoverykey** on screen. This is a Microsoft short URL — a shortcut that takes you directly to the page where your recovery key is stored.

@@ -28,6 +28,17 @@ howto_steps:
     text: "After powering on the router, wait 90 seconds. The router's WAN or Internet LED should turn solid green, indicating the modem assigned it an IP address. If the LED stays red or amber, restart the modem (unplug 30 seconds), wait 60 seconds, then restart the router."
   - name: "Configure WiFi in the router admin panel"
     text: "Connect a device to the router's default WiFi (name and password on the router label). Open a browser and go to 192.168.1.1 or 192.168.0.1. Log in and set a new WiFi name (SSID) and strong password. Apply the settings and reconnect all devices to the new network."
+faq:
+  - q: "Do I need to register a new modem with my ISP before it works?"
+    a: "Yes. Most cable ISPs (such as Xfinity, Spectrum, and Cox) require the modem's MAC address to be registered before it can connect to the internet. You can usually do this online through your ISP's account portal. DSL and fiber providers have different activation processes."
+  - q: "What is the correct order to power on a modem and router?"
+    a: "Always power on the modem first. Wait 60 to 90 seconds until the modem's Online or Internet LED is solid. Then power on the router and wait 60 seconds. This order ensures the modem has a valid ISP connection before the router requests an IP address from it."
+  - q: "What does the WAN LED on the router indicate?"
+    a: "A solid green WAN LED means the router successfully received an IP address from the modem and has an active internet connection. A red or amber WAN LED means the connection failed, usually because the modem is not fully online or the Ethernet cable is in the wrong port."
+  - q: "Can I use any modem with any router?"
+    a: "Generally yes for cable internet. The modem connects to the ISP and the router to the modem via a standard Ethernet cable. However, ensure the modem is certified or approved by your ISP, as some providers only support their own equipment or a list of approved third-party modems."
+  - q: "My router gets internet but the WAN LED is amber or red. Is that normal?"
+    a: "A green WAN LED is the expected indicator of a successful connection. Amber or red can indicate partial connection or that the router received an IP but is flagging a quality issue. Check your ISP connection and the Ethernet cable between modem and router if this persists."
 ---
 
 Setting up a modem and router together involves two separate processes: getting the modem online with your ISP, then connecting the router to share that connection. According to NETGEAR's networking documentation, the most common mistake is connecting the router before the modem has fully registered with the ISP — which causes the internet connection to fail even when all cables are correctly installed.

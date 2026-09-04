@@ -27,6 +27,17 @@ howto_steps:
     text: "Go to Settings > Bluetooth & devices > Printers & scanners. Turn off Let Windows manage my default printer. Click your Canon printer and select Set as default. Windows may be sending jobs to a different printer, causing the Canon to appear unresponsive."
   - name: "Reinstall the Canon printer driver"
     text: "Go to Settings > Bluetooth & devices > Printers & scanners, click your Canon printer, and select Remove device. Download the latest driver for your Canon model from support.usa.canon.com. Install it and reconnect the printer when the installer prompts you."
+faq:
+  - q: "Why is my Canon printer not responding to print commands?"
+    a: "A non-responding Canon printer is almost always a communication issue rather than a hardware failure. The most common causes are a stuck job in the print queue blocking all new jobs, a stalled Windows Print Spooler service, or a lost connection between Windows and the printer."
+  - q: "How do I restart the Windows Print Spooler to fix a Canon printer?"
+    a: "Press Win+R, type services.msc, and press Enter. Scroll to Print Spooler in the list, right-click it, and select Restart. This clears the service's state and re-establishes communication with all printers including the Canon."
+  - q: "Why does setting the Canon as the default printer fix the no response issue?"
+    a: "Windows sometimes sends print jobs to a different printer that is also installed, causing the Canon to appear unresponsive when in fact it is simply not receiving the jobs. Setting the Canon as the default ensures all jobs are directed to it."
+  - q: "Does reinstalling the Canon driver fix printer not responding errors?"
+    a: "Yes, in many cases. A corrupted or outdated driver can break the communication channel between Windows and the printer, causing the printer to appear responsive on the network but not react to print commands. Download the latest driver from support.usa.canon.com for your specific model."
+  - q: "My Canon printer is not responding even with a USB cable. What should I try?"
+    a: "Try a different USB port on your computer, then try a different USB cable. USB cables can fail while appearing functional. Also check that the printer appears in Windows Settings > Printers & scanners and is not showing as offline or in error state."
 ---
 
 A Canon printer that is not responding receives the print command from Windows but does not act on it. The printer may be powered on, connected, and showing no error — yet jobs accumulate in the queue without printing.

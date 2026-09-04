@@ -27,6 +27,17 @@ howto_steps:
     text: "Look for a printed sheet stored with important documents from when BitLocker was first set up."
   - name: "Contact IT for Active Directory"
     text: "If the device is on a corporate domain, provide the Key ID to your IT administrator who can retrieve it from Active Directory or Intune."
+faq:
+  - q: "Where is my BitLocker recovery key stored?"
+    a: "It depends on how BitLocker was set up. Most commonly it is saved to your Microsoft account at account.microsoft.com/devices/recoverykey. Other locations include Azure Active Directory (for work devices), a USB drive saved during setup, or a printed copy."
+  - q: "Can I find my BitLocker recovery key without another device?"
+    a: "If you have a printed copy or a USB drive with the .bek file, you can use those directly without another device. Otherwise you need a phone, tablet, or another computer to access account.microsoft.com/devices/recoverykey."
+  - q: "What is the 8-digit Key ID on the BitLocker recovery screen?"
+    a: "The Key ID identifies which specific recovery key is needed for that drive. Use it to match against the keys listed on your Microsoft account page. Only the key whose ID matches will unlock the drive."
+  - q: "Can Microsoft support retrieve my BitLocker recovery key for me?"
+    a: "No. Microsoft does not store your recovery key and cannot provide it to you. The key exists only in the location where it was saved when BitLocker was first enabled on your device."
+  - q: "What if none of the five key locations have my recovery key?"
+    a: "If the key was never saved during BitLocker setup and no backup exists anywhere, the encrypted data cannot be recovered. This is why Microsoft recommends saving the key to at least two locations before enabling BitLocker."
 ---
 
 When Windows cannot unlock a BitLocker-protected drive on its own — after a firmware update, a hardware change, or a failed PIN attempt — it displays a blue recovery screen and asks for a 48-digit recovery key. Without that key, the drive stays locked. Where the key is stored depends entirely on choices made when BitLocker was first set up. According to official Microsoft documentation, there are five places to check, in order of likelihood.

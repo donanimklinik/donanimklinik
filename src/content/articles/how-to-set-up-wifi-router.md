@@ -30,6 +30,17 @@ howto_steps:
     text: "In the admin panel, go to Wireless or WiFi Settings. Change the network name (SSID) to a name you will recognise. Set a strong password — at least 12 characters, mixing letters, numbers, and symbols. Select WPA2-Personal (AES) or WPA3 as the security type. Save and apply settings."
   - name: "Connect your devices to the new network"
     text: "On each device, open WiFi settings and select your new network name. Enter the password you set. For the best performance, connect desktop computers and smart TVs via Ethernet cable — reserve WiFi bandwidth for phones and laptops."
+faq:
+  - q: "What is the difference between the WAN port and LAN ports on a router?"
+    a: "The WAN port connects the router to your modem and receives your internet connection from the ISP. LAN ports connect devices like computers and smart TVs directly to the router via Ethernet. Plugging the modem cable into a LAN port instead of the WAN port is the most common setup mistake."
+  - q: "What is the default admin address for most routers?"
+    a: "Most routers use 192.168.1.1 or 192.168.0.1 as their admin address. Type this directly into a browser's address bar (not a search engine). The exact address is printed on the label on the bottom of the router."
+  - q: "What Wi-Fi security type should I choose when setting up my router?"
+    a: "Choose WPA2-Personal (AES) for broad compatibility with all modern devices. WPA3 is more secure but not supported by older devices. Never use WEP, as it is easily broken. Leave security disabled only if you intend to use a completely isolated guest network."
+  - q: "How do I change my Wi-Fi name and password after the router is already set up?"
+    a: "Log into the router admin panel by typing 192.168.1.1 in a browser, navigate to Wireless or Wi-Fi Settings, update the SSID and password fields, and click Save. All devices will need to reconnect using the new password."
+  - q: "Should I keep both 2.4 GHz and 5 GHz bands on my router?"
+    a: "Yes. Keep both bands active. The 5 GHz band offers faster speeds for devices close to the router. The 2.4 GHz band has better range for devices further away. Give each band a different name so you can manually choose which band each device connects to."
 ---
 
 Setting up a new WiFi router takes under 15 minutes when you follow the steps in the right order. According to NETGEAR's official installation documentation, the most common setup mistakes are plugging the Ethernet cable into the wrong port, skipping the admin panel step, and leaving the default password unchanged.

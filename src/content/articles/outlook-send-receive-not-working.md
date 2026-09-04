@@ -25,6 +25,17 @@ howto_steps:
     text: "Go to Control Panel > Mail > Show Profiles. Select your current profile and click Properties > Email Accounts. Remove your account, then add it back using the same credentials. Outlook will rebuild the local data files and reconnect to the server."
   - name: "Run the Microsoft Support and Recovery Assistant"
     text: "Download the Microsoft Support and Recovery Assistant (SaRA) from Microsoft's support site. Select Outlook as the product and choose I can't send or receive email as the problem. SaRA runs a full diagnostic of your Outlook profile, account settings, and server connection, and applies fixes automatically where possible."
+faq:
+  - q: "Why is Outlook send and receive not working at all?"
+    a: "A complete send and receive failure means Outlook cannot connect to the mail server in either direction. The most common causes are Work Offline mode being active, your internet connection being down, or the Outlook profile becoming corrupted."
+  - q: "What does pressing F9 do in Outlook?"
+    a: "Pressing F9 manually triggers a Send/Receive cycle, forcing Outlook to immediately attempt to connect to the mail server, send queued outgoing messages, and download waiting incoming messages. This is useful for testing whether the connection is working."
+  - q: "How do I read the Outlook Send/Receive error log?"
+    a: "Click Send/Receive > Show Progress to open the progress dialog during a sync. After the attempt completes, click Details to see the full activity log including any error codes. The error code identifies the specific cause of the failure."
+  - q: "What is an Outlook profile and why does it become corrupted?"
+    a: "An Outlook profile stores your account settings, server connection details, and references to your data files. Profiles can become corrupted due to improper shutdowns, software conflicts, or data file errors. Creating a new profile in Control Panel > Mail resets these settings and often resolves persistent send/receive failures."
+  - q: "Can a VPN or firewall block Outlook send and receive?"
+    a: "Yes. VPNs that route traffic through corporate firewalls can block the ports that Outlook uses (SMTP 587 or 465, IMAP 993, Exchange HTTPS). If Outlook stopped working after connecting to a VPN, try disconnecting the VPN and testing. Contact your IT administrator to configure VPN split tunneling or firewall exceptions for Outlook."
 ---
 
 When Outlook send and receive is not working, no email can be sent or received — the mailbox is completely disconnected from the server. This is different from a one-directional failure (sending works but not receiving, or vice versa). A complete send and receive failure means the connection between Outlook and the mail server has broken down.

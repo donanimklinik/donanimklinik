@@ -32,6 +32,17 @@ howto_steps:
     text: "A router that is hot to the touch throttles its CPU, which causes brief internet drops every hour or so. Move the router to an open shelf — never inside a cabinet. Check the router admin panel under Administration or Advanced for a firmware update. Outdated firmware on both the modem and router is a documented cause of DHCP failures that result in repeated disconnections."
   - name: "Run the Windows network troubleshooter and flush DNS"
     text: "On Windows, right-click the network icon in the taskbar and select Troubleshoot Problems. Also open Command Prompt as administrator and run: ipconfig /release, then ipconfig /renew, then ipconfig /flushdns. These commands clear the local IP lease and DNS cache, which can resolve disconnections caused by stale network state on the device itself."
+faq:
+  - q: "Why does my internet keep disconnecting even though Wi-Fi shows connected?"
+    a: "Wi-Fi can show as connected while internet access fails due to DNS server failures, ISP outages, an expired DHCP lease, or a router that has been running too long without a reboot. Check whether all devices lose internet simultaneously — if so, the issue is the modem, router, or ISP rather than your device."
+  - q: "How do I know if my ISP is causing the disconnections?"
+    a: "Check your ISP's official status page or app for reported outages. Also check whether other devices in your home lose internet at the same time as yours. If multiple devices disconnect together, the issue is the modem, ISP line, or the router — not an individual device."
+  - q: "Can a loose coaxial cable cause intermittent internet disconnections?"
+    a: "Yes. A half-turn loose coax cable at the modem or wall outlet causes the modem to repeatedly lose and re-establish the connection with the ISP. Power off the modem, unscrew and firmly reattach the coax cable at both ends, then power the modem back on."
+  - q: "Why does changing DNS servers fix internet disconnections?"
+    a: "When ISP DNS servers are slow or failing, websites appear to be unavailable even though the internet connection itself is up. DNS lookups fail silently and pages refuse to load, mimicking a connection drop. Switching to Google DNS (8.8.8.8) or Cloudflare (1.1.1.1) bypasses unreliable ISP DNS servers."
+  - q: "Can router overheating cause internet to keep disconnecting?"
+    a: "Yes. A router that is hot to the touch throttles its CPU, which can cause brief drops every hour or so. Place the router on an open shelf with airflow around all sides. Never place it inside a cabinet, closet, or directly behind a TV where heat cannot escape."
 ---
 
 When your internet keeps disconnecting — dropping every few minutes, every hour, or at random — the cause is almost never the website you were visiting. It is always something in the path between your device and your ISP: a loose cable, an overheating modem, an expired DHCP lease, or a failing DNS server.

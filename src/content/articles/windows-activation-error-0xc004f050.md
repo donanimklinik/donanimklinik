@@ -25,6 +25,17 @@ howto_steps:
     text: "Go to Settings > System > Activation and select Troubleshoot. Windows will attempt to diagnose and fix the activation problem automatically."
   - name: "Contact Microsoft support if the key is legitimate"
     text: "If the key came with a new device or was purchased directly from Microsoft or an authorised retailer, contact Microsoft support with proof of purchase. They can validate and reissue the activation."
+faq:
+  - q: "What does Windows activation error 0xC004F050 mean?"
+    a: "Error 0xC004F050 means Windows rejected the product key as invalid. The key was refused before activation could even be attempted. This is usually caused by a typo when entering the key, a key for the wrong Windows edition, or a key from an unauthorized source."
+  - q: "How do I know if my product key is for the right Windows edition?"
+    a: "Go to Settings > System > About and check the Edition field. A Windows 11 Home key only works on Windows 11 Home; a Pro key only works on Pro. If the editions do not match, you need the correct key for your installed edition."
+  - q: "Can a Windows 10 product key activate Windows 11?"
+    a: "No. Windows 10 and Windows 11 use different product keys. A Windows 10 key will be rejected on a Windows 11 installation, producing error 0xC004F050 or a similar invalid key error."
+  - q: "What characters are commonly confused when entering a Windows product key?"
+    a: "The digit 0 and the letter O look similar, as do the digit 1 and the letters I or L. A single wrong character causes the key to be rejected. Re-enter the key carefully, or copy and paste it directly from the email or document where it was provided."
+  - q: "My key came with a new PC and still gets 0xC004F050. What should I do?"
+    a: "OEM keys shipped with new devices are tied to the specific hardware. If you have reinstalled Windows or replaced the motherboard, the key may not reactivate. Contact Microsoft support with proof of purchase; they can verify the original licence and assist with reactivation."
 ---
 
 Error code **0xC004F050** appears when Windows cannot accept the product key you entered. The full message from the Software Licensing Service reads: "The product key is invalid." This does not mean Windows itself is broken — it means the key was rejected before activation could complete.

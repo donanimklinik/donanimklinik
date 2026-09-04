@@ -25,6 +25,17 @@ howto_steps:
     text: "Go to account.microsoft.com and sign in. Under Devices, check whether your device is listed. If it is listed, the digital licence is stored under that account. If it is not listed, try other Microsoft accounts you may have used on this device."
   - name: "Contact Microsoft support if the troubleshooter cannot restore the licence"
     text: "If the troubleshooter cannot find the licence, contact Microsoft support at support.microsoft.com. Provide the device details and the Microsoft account email. Support can verify whether a digital licence exists for the device and assist with restoration."
+faq:
+  - q: "What is a Windows digital licence?"
+    a: "A digital licence ties your Windows activation to your device's hardware fingerprint and your Microsoft account, rather than a physical product key. When Windows detects the same hardware it was activated on, it activates automatically without requiring you to enter a key."
+  - q: "Why is my Windows digital licence no longer working after a hardware change?"
+    a: "A significant hardware change, especially a motherboard replacement, changes your device's hardware fingerprint. Windows no longer recognizes the hardware as the same device and treats it as a new machine requiring reactivation. Sign in with the same Microsoft account and run the activation troubleshooter."
+  - q: "How do I link my digital licence to my Microsoft account?"
+    a: "Go to Settings > System > Activation and click Add a Microsoft account. Sign in with the Microsoft account that was used when Windows was originally activated on this device. Once linked, you can restore the licence on the same hardware through the troubleshooter."
+  - q: "Can I transfer a digital licence to a new computer?"
+    a: "It depends on the licence type. Retail digital licences can be transferred to new hardware. OEM digital licences are permanently tied to the original device and cannot be transferred, even if the original device is retired."
+  - q: "My device is listed under my Microsoft account but Windows still shows as unactivated. Why?"
+    a: "Run the activation troubleshooter in Settings > System > Activation and select I changed hardware on this device recently. This prompts Microsoft's system to re-verify the hardware and restore the digital licence. If it still fails, contact Microsoft support."
 ---
 
 A **digital licence** (called a digital entitlement in earlier versions of Windows) is a method of Windows activation that ties your licence to your device's hardware rather than a product key. When Windows detects the same hardware configuration it was originally activated on, it activates automatically — no key required.

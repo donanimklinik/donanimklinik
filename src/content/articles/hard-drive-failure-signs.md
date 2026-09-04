@@ -16,6 +16,17 @@ top_search_queries:
   - "failed hard drive"
   - "hard drive failing symptoms"
   - "signs hard drive is dying"
+faq:
+  - q: "What are the most common signs that a hard drive is failing?"
+    a: "The most common warning signs are clicking or grinding sounds during operation, unusually slow file access or application loading, files that unexpectedly become corrupted or disappear, frequent freezes or blue screen errors, and SMART error warnings from diagnostic software."
+  - q: "What does a clicking hard drive mean?"
+    a: "Clicking from a hard drive is known as the click of death. It indicates the read/write head is repeatedly failing to locate its position on the platters. This is a serious mechanical failure sign. Stop using the drive and back up your data immediately."
+  - q: "How do I check if my hard drive is failing?"
+    a: "Open Task Manager and check the Disk tab for consistently high disk usage. Run chkdsk C: /f from an administrator Command Prompt to scan for file system errors. Use CrystalDiskInfo or Windows Storage Settings to read the SMART diagnostic data from the drive."
+  - q: "How long does a hard drive last before failing?"
+    a: "Most hard drives last 3 to 5 years under normal use. Drives used heavily or in hot environments may fail sooner. SMART data shows accumulated wear statistics and can give early warning before complete failure."
+  - q: "What should I do if I see a SMART error from my hard drive?"
+    a: "A SMART error means the drive's own diagnostics have detected a problem. Back up all important data immediately and start planning to replace the drive. Do not ignore SMART errors, as the drive can fail completely without further warning."
 ---
 
 Hard drives give warnings before they fail completely. Recognising those warnings early — and acting on them — is the difference between a simple backup and losing everything. Most hard drive failures are gradual, not sudden, which means there is usually a window to save data if you know what to look for.

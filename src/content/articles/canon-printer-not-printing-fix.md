@@ -27,6 +27,17 @@ howto_steps:
     text: "Remove all paper from the tray, fan the sheets to separate them, and reload them. Confirm the paper guides touch the paper edges without pressing too tightly. In Windows, open the print dialog and confirm the paper size in the application matches the paper size set on the printer."
   - name: "Reinstall the Canon printer driver"
     text: "Go to Settings > Bluetooth & devices > Printers & scanners, click your Canon printer, and select Remove device. Download the latest full driver for your Canon model from support.usa.canon.com. Install it and reconnect the printer when prompted."
+faq:
+  - q: "Why is my Canon printer not printing anything?"
+    a: "The most common causes are an empty ink cartridge (including colours not used in the current document), clogged print head nozzles, a stuck job in the Windows print queue, or a communication issue between Windows and the printer driver."
+  - q: "Can a low or empty colour cartridge stop a Canon printer from printing at all?"
+    a: "Yes. Some Canon models require all cartridges to have ink before printing, even for black-and-white documents. If any cartridge is empty or below a threshold, the printer may refuse all print jobs. Check ink levels in the Canon IJ Status Monitor and replace any depleted cartridge."
+  - q: "How do I clear stuck print jobs on a Canon printer?"
+    a: "Go to Settings > Bluetooth & devices > Printers & scanners, click your Canon printer, select Open print queue, select all jobs with Ctrl+A, and press Delete. Then restart the Print Spooler service by pressing Win+R, typing services.msc, finding Print Spooler, right-clicking it, and selecting Restart."
+  - q: "What does print head cleaning do on a Canon printer?"
+    a: "Print head cleaning forces ink through the nozzles to clear dried ink blockages. It consumes a small amount of ink. Access it from the printer's control panel under Maintenance > Cleaning, or from the Canon IJ Printer Assistant Tool on Windows. Run it when print quality is poor or nozzles are missing output."
+  - q: "Canon printer prints blank pages. What does that mean?"
+    a: "Blank pages usually mean the print head nozzles are clogged and no ink is being deposited on the paper, or all ink cartridges are depleted. Run the print head cleaning cycle, then print the nozzle check pattern. If the pattern shows missing lines, run deep cleaning or replace the cartridges."
 ---
 
 A Canon printer that appears ready but produces no output — or prints blank pages — is almost always a software, ink, or print head issue rather than a hardware failure. The printer receives the job, processes it, and moves paper through, but nothing appears on the page.

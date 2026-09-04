@@ -30,6 +30,17 @@ howto_steps:
     text: "On the laptop or tablet that cannot get internet, go to WiFi settings, find the hotspot network, and choose Forget Network. Then reconnect from scratch and enter the hotspot password again. A stale network profile on the client device can store an incorrect gateway or DNS address, preventing internet even when the hotspot itself is working correctly."
   - name: "Reset network settings on the host phone if nothing else works"
     text: "On iPhone, go to Settings → General → Transfer or Reset iPhone → Reset → Reset Network Settings. On Android, go to Settings → General Management → Reset → Reset Network Settings. This clears all saved WiFi passwords, Bluetooth pairings, and mobile data configurations, restoring them to factory defaults. After resetting, reconfigure the hotspot password and reconnect your devices."
+faq:
+  - q: "Why is my hotspot connected but there is no internet?"
+    a: "When you are connected to a hotspot but cannot access the internet, the problem is almost always on the host phone, not the connecting device. The most common cause is that mobile data is turned off on the host phone while the hotspot is still broadcasting a Wi-Fi signal."
+  - q: "Can a VPN on the host phone block hotspot internet?"
+    a: "Yes. A VPN running on the host phone routes all traffic through its tunnel, and many VPN configurations block tethered traffic from connected devices. Disable the VPN on the host phone and test internet on the connected device. If it works, the VPN was the cause."
+  - q: "How do I fix no internet when connected to an iPhone hotspot?"
+    a: "First confirm mobile data is on in Settings > Cellular or Mobile Data on the iPhone. Then toggle Personal Hotspot off and back on. On the connecting device, forget the hotspot network and reconnect. If signal is poor, move to a location with stronger cellular coverage."
+  - q: "My hotspot shows full signal but websites won't load. Why?"
+    a: "This typically means the host phone is connected to Wi-Fi instead of mobile data and is trying to share a connection that itself has no internet, or the phone's mobile data is turned off. Check whether Mobile Data is enabled on the host phone independently of the hotspot switch."
+  - q: "Does restarting the hotspot fix no internet issues?"
+    a: "Yes, often. Turning the hotspot off, waiting 10 seconds, and turning it back on clears any stale routing state. On the connecting device, forget the hotspot network and reconnect fresh. This resolves most no-internet situations caused by cached connection state."
 ---
 
 When your hotspot shows as connected on the laptop or tablet but no websites load, the problem is almost always on the **host phone** — not the device trying to connect. The hotspot signal is reaching your device fine, but the phone itself cannot get data from the mobile network to pass through.

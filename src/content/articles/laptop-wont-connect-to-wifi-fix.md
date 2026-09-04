@@ -27,6 +27,17 @@ howto_steps:
     text: "Open Command Prompt as administrator. Run these commands: netsh winsock reset, netsh int ip reset, ipconfig /flushdns, ipconfig /release, ipconfig /renew. Restart the computer after all commands complete. These commands fix corrupted TCP/IP settings that prevent Wi-Fi connections."
   - name: "Reinstall the Wi-Fi adapter driver"
     text: "In Device Manager, right-click your Wi-Fi adapter and select Uninstall device. Check Delete the driver software for this device if the option appears. Restart the computer — Windows reinstalls the driver automatically. If the adapter is still missing after restart, download the driver from the laptop manufacturer's support site and install it manually."
+faq:
+  - q: "Why won't my laptop connect to Wi-Fi even though the network is visible?"
+    a: "The most common causes are corrupted saved credentials for the network, a corrupted TCP/IP or Winsock stack, or a misconfigured wireless adapter. Forgetting the network and reconnecting with the correct password resolves most cases. Running netsh winsock reset and restarting fixes deeper network stack issues."
+  - q: "What does 'Can't connect to this network' mean on Windows?"
+    a: "This Windows error usually means the saved credentials for the network are corrupted or incorrect. Forget the network in Settings > Network & internet > Wi-Fi > Manage known networks, then reconnect from scratch by entering the Wi-Fi password again."
+  - q: "How do I fix a laptop that won't connect to Wi-Fi after a Windows update?"
+    a: "Windows updates sometimes install incompatible Wi-Fi driver versions. Open Device Manager, find your Wi-Fi adapter under Network adapters, right-click it, select Properties > Driver tab, and click Roll Back Driver to revert to the version that worked before the update."
+  - q: "My laptop can connect to other Wi-Fi networks but not mine. Why?"
+    a: "This suggests the issue is with the stored profile for your specific network rather than the adapter or driver. Forget your home network in Wi-Fi settings, restart the router, and reconnect. Also ensure the router is using a compatible security type such as WPA2 rather than WPA3 only."
+  - q: "Can running network reset commands damage anything on my laptop?"
+    a: "No. The commands netsh winsock reset, netsh int ip reset, ipconfig /flushdns, and ipconfig /release all reset network configuration to defaults. They do not delete files or affect anything outside of network settings. A restart is required after running them."
 ---
 
 A laptop that can see Wi-Fi networks in the list but fails to connect — showing errors like "Can't connect to this network," "Authentication failed," or simply spinning without connecting — almost always has a driver, credential, or network stack issue rather than a hardware fault.

@@ -25,6 +25,17 @@ howto_steps:
     text: "Close Outlook. Open the Control Panel, search for Mail, and open the Mail setup dialog. Click Data Files, select your account's OST or PST file, and click Settings > Open File Location. Close the dialog, then run the SCANPST.EXE tool (found in the Office installation folder) on that file to repair any corruption."
   - name: "Remove and re-add your email account"
     text: "Go to File > Account Settings > Account Settings. Select your account and click Remove. Confirm the removal, then click New to add the account again with the same credentials. Outlook will recreate the local data file and perform a full sync from the server."
+faq:
+  - q: "Why does Outlook not sync new emails automatically?"
+    a: "Outlook may be in offline mode, have a corrupted local data file (OST), or have a misconfigured sync interval. Press F9 to trigger a manual sync. If that works, check your Send/Receive schedule and ensure Work Offline mode is not active."
+  - q: "What is the difference between OST and PST files in Outlook?"
+    a: "An OST file is an offline copy of your Exchange or Microsoft 365 mailbox that syncs with the server. A PST file is a local archive that is independent of the server. Sync problems usually involve the OST file. Corrupted OST files can cause sync failures that require the file to be rebuilt."
+  - q: "How do I fix a corrupted Outlook OST file?"
+    a: "Close Outlook and run the SCANPST.EXE tool (Inbox Repair Tool) found in the Microsoft Office installation folder. Point it at your OST file and click Start. Alternatively, rename or delete the OST file — Outlook will recreate it and perform a fresh full sync from the server."
+  - q: "How often does Outlook sync with the mail server?"
+    a: "By default, Outlook syncs every 30 minutes in standard mode and more frequently in Cached Exchange Mode. You can change the Send/Receive schedule under Send/Receive > Send/Receive Groups > Define Send/Receive Groups."
+  - q: "Why does Outlook mobile sync work but Outlook desktop does not?"
+    a: "Desktop Outlook uses a locally cached data file (OST) that can become corrupted or out of date, while mobile uses a direct server connection without local caching. If mobile syncs correctly but desktop does not, the issue is in the local data file or Outlook profile on the desktop."
 ---
 
 Outlook not syncing means the desktop or mobile application is not reflecting the current state of your mailbox. New emails do not arrive, sent messages do not appear in Sent Items, or folder counts remain stale even when the server has new data.

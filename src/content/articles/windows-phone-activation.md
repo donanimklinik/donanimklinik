@@ -25,6 +25,17 @@ howto_steps:
     text: "Call the number shown on screen. The automated system will ask you to enter the Installation ID — a long number displayed in the activation window, grouped into sections. Read each group of digits carefully when prompted."
   - name: "Enter the confirmation ID you receive"
     text: "After the automated system processes your Installation ID, it provides a Confirmation ID. Enter this number into the activation window in the corresponding fields and click Activate. Windows will complete activation immediately."
+faq:
+  - q: "What is Windows phone activation?"
+    a: "Phone activation is Microsoft's official alternative to internet-based activation. You call a Microsoft automated phone system, provide an Installation ID displayed on your screen, and receive a Confirmation ID that completes the activation without an internet connection."
+  - q: "How do I start the Windows phone activation process?"
+    a: "Open an administrator Command Prompt and run slui 4. This opens the Windows Activation by Phone window where you select your country, get the phone number to call, and see the Installation ID to read to the automated system."
+  - q: "Does phone activation work without an internet connection?"
+    a: "Yes. Phone activation is fully independent of your internet connection. The verification happens over a phone call with Microsoft's automated system, and the Confirmation ID you receive is entered manually on your screen."
+  - q: "What is the Installation ID in phone activation?"
+    a: "The Installation ID is a long number generated from your product key and hardware configuration. It is displayed in the activation window when you run slui 4. You read this number to the automated phone system, which uses it to generate a matching Confirmation ID."
+  - q: "What if the automated phone system refuses to provide a Confirmation ID?"
+    a: "If the automated system rejects your Installation ID, it typically means the product key has been flagged or used too many times. Stay on the line and ask to speak with a licensing agent. With proof of purchase, a human agent can manually verify and provide the Confirmation ID."
 ---
 
 Phone activation is Microsoft's official alternative to online activation for Windows. It is available for Windows 10 and Windows 11 and works independently of your internet connection — the verification is handled over the phone through an automated system.

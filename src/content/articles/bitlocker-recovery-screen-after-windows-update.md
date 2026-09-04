@@ -21,6 +21,17 @@ howto_steps:
     text: "Note the Key ID on the recovery screen, go to account.microsoft.com/devices/recoverykey on another device, sign in with your Microsoft account, and enter the matching 48-digit key."
   - name: "Suspend BitLocker before future updates"
     text: "Open Manage BitLocker from the Start menu, click Suspend protection next to the encrypted drive, run the Windows update, then let Windows re-enable BitLocker automatically after restart."
+faq:
+  - q: "Why does Windows Update trigger the BitLocker recovery screen?"
+    a: "Windows updates that modify boot files change the measurements stored in the TPM. BitLocker detects this as an unexpected change and requests the recovery key as a security measure before allowing access."
+  - q: "Is my data safe when the BitLocker recovery screen appears after an update?"
+    a: "Yes. Your data is fully intact and still encrypted. The recovery screen does not indicate data loss or drive corruption. Entering the correct recovery key restores normal access immediately."
+  - q: "Will this happen every time Windows updates?"
+    a: "Not for every update. Routine security patches usually do not trigger BitLocker recovery. Major feature updates and firmware updates delivered through Windows Update are more likely to cause it."
+  - q: "How do I suspend BitLocker before a Windows update?"
+    a: "Open Manage BitLocker from the Start menu, click Suspend protection next to the encrypted drive, then install the update. BitLocker re-enables automatically after the system restarts."
+  - q: "Do I need to enter my recovery key every time after a Windows update?"
+    a: "No. Only updates that modify boot components trigger the recovery screen. Once you enter the key after such an update, BitLocker records the new boot measurements and will not ask again for subsequent routine restarts."
 ---
 
 If a Windows update finishes and the next restart brings up the blue BitLocker recovery screen, your drive is not corrupted and your data is not lost. According to official Microsoft documentation, this is an expected response: Windows updates — particularly major feature updates and certain security patches — can modify boot components that BitLocker monitors. When those measurements change, BitLocker deliberately locks the drive and requests the recovery key as a security measure.

@@ -27,6 +27,17 @@ howto_steps:
     text: "If the initial scan does not find what you need, go to Options > Actions and enable Deep Scan, then scan again. Deep Scan ignores the file system and searches raw data — it takes longer but finds more."
   - name: "Select files and recover to a different drive"
     text: "Tick the files you want to recover, click Recover, and choose a destination folder on a different drive. Never recover files back to the same drive being scanned."
+faq:
+  - q: "Is Recuva free to use?"
+    a: "Yes. Recuva is free for personal use. A paid Professional version adds automatic updates and virtual hard drive support, but the free version includes all core recovery features including deep scan."
+  - q: "Why should I install Recuva on a different drive than the one I'm recovering from?"
+    a: "Installing software to the same drive you are trying to recover overwrites the sectors where deleted file data may still exist. Install Recuva on your system drive or a USB drive, then scan the target drive without writing to it."
+  - q: "What do the green, orange, and red indicators mean in Recuva?"
+    a: "Green means the file has a good chance of full recovery. Orange means the file is recoverable but may be partially damaged. Red means the file's data has been overwritten and recovery is unlikely or impossible."
+  - q: "When should I use Recuva's Deep Scan?"
+    a: "Use Deep Scan when a standard scan finds nothing or misses files you know were deleted. Deep Scan ignores the file system index and searches raw drive data. It takes significantly longer but recovers more files, especially from formatted drives."
+  - q: "Can Recuva recover files from an empty Recycle Bin?"
+    a: "Yes. Once the Recycle Bin is emptied, files are marked as deleted but are often still physically present on the drive. Recuva scans for these and can recover them as long as the drive space has not been overwritten by new data."
 ---
 
 Recuva is a free file recovery tool developed by Piriform. When a file is deleted from a drive, the data is not immediately erased — the space is simply marked as available. Recuva scans the drive for this data before it gets overwritten and allows you to restore it.

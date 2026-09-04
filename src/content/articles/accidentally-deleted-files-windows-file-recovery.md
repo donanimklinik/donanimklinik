@@ -25,6 +25,17 @@ howto_steps:
     text: "Open Windows File Recovery as administrator and run: winfr SOURCE: DESTINATION /regular /n \\path\\to\\folder\\ — replacing SOURCE with the drive letter of the deleted file and DESTINATION with a different drive for output."
   - name: "Check the recovered files"
     text: "Open the destination folder and verify the recovered files. Open documents and preview images to confirm the content is intact."
+faq:
+  - q: "Can I recover permanently deleted files that are no longer in the Recycle Bin?"
+    a: "Often yes. When a file is deleted, its disk space is marked as available but the data usually remains until overwritten. Microsoft's free Windows File Recovery tool can scan for and restore these files. Act quickly before new data overwrites them."
+  - q: "What is the Windows File Recovery tool and where do I get it?"
+    a: "Windows File Recovery is a free official Microsoft tool available in the Microsoft Store. It works on Windows 10 version 2004 and later, and Windows 11. It runs from the Command Prompt and can recover files from NTFS, FAT, and exFAT drives."
+  - q: "What is the difference between Regular and Extensive mode in Windows File Recovery?"
+    a: "Regular mode scans recently deleted files on intact NTFS drives and is faster. Extensive mode performs a deeper scan of the entire drive and works on formatted drives, corrupted file systems, and older deletions. Use Extensive mode when Regular finds nothing."
+  - q: "Why should I save recovered files to a different drive?"
+    a: "Recovering files to the same drive you are scanning risks overwriting the very data you are trying to retrieve. Always specify a destination on a separate drive, USB drive, or external storage."
+  - q: "How soon do I need to act after accidentally deleting files?"
+    a: "As soon as possible. Every write operation to the drive can overwrite deleted file data. Stop using the drive immediately after deletion and run recovery software before saving anything else to it."
 ---
 
 When a file is deleted and is no longer in the Recycle Bin — because it was removed with Shift+Delete, the bin was emptied, or the file was on a USB drive — it is not necessarily gone forever. According to official Microsoft documentation, deleting a file marks its disk space as available but does not immediately erase the data. The file remains physically on the drive until new data is written over it.

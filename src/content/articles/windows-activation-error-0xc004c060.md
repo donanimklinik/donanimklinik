@@ -15,6 +15,17 @@ top_search_queries:
   - "0xc004c060"
   - "error 0xc004c060"
   - "windows activation error 0xc004c060"
+faq:
+  - q: "What does Windows activation error 0xC004C060 mean?"
+    a: "Error 0xC004C060 means Microsoft's activation server determined that the product key is not available. This is a server-side rejection where the key was received but refused, typically because it has been flagged, suspended, or is from an unauthorized source."
+  - q: "Is 0xC004C060 the same as 0xC004C008?"
+    a: "They are similar. Both are server-side key rejections. 0xC004C008 specifically means the key is blocked, while 0xC004C060 means the key is flagged as unavailable. The troubleshooting steps are similar: run the activation troubleshooter, then contact Microsoft support if the key is legitimate."
+  - q: "Can the activation troubleshooter fix 0xC004C060?"
+    a: "Sometimes. Go to Settings > System > Activation and select Troubleshoot. If the key was legitimately purchased but incorrectly flagged by Microsoft's automated systems, the troubleshooter can contact Microsoft's licensing servers and resolve it automatically."
+  - q: "What if I bought the key directly from Microsoft and still get 0xC004C060?"
+    a: "Contact Microsoft support at support.microsoft.com with your order confirmation and proof of purchase. Microsoft can verify the key's origin and manually clear the flag or provide a replacement key if the key is legitimate."
+  - q: "Why do education or OEM keys trigger 0xC004C060 on personal builds?"
+    a: "Education, charity, and OEM product keys are licensed for specific use cases and cannot be used outside their authorized channels. Using such a key on a personal self-built computer will trigger a server-side rejection like 0xC004C060 because the use violates the licensing terms."
 ---
 
 Error code **0xC004C060** appears when the Microsoft activation server determines there is a problem with the specific product key being used. The Software Licensing Service message reads: "The activation server determined that the specified product key is not available."

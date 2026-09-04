@@ -27,6 +27,17 @@ howto_steps:
     text: "Log into your router's admin page (usually 192.168.1.1). Find the DHCP reservation or static IP assignment section. Add a reservation using the printer's MAC address (shown on the Wireless Network Test Report) and assign it a fixed IP address. This prevents the IP from changing after each restart."
   - name: "Run HP Print and Scan Doctor"
     text: "Download HP Print and Scan Doctor from support.hp.com and run it. Select your HP printer and choose Fix Printing. The tool automatically detects the IP mismatch, updates the port, and restores communication between Windows and the printer."
+faq:
+  - q: "Why is my HP printer connected to Wi-Fi but still showing as offline in Windows?"
+    a: "When a printer is connected to Wi-Fi but offline in Windows, the two devices are on different IP addresses. The printer received a new IP from the router after a restart, but Windows still points to the old address. Update the printer port in Windows to match the printer's current IP."
+  - q: "How do I find my HP printer's current IP address?"
+    a: "On the HP printer's control panel, go to Settings or Network > Wireless > Wireless Network Test, or print a Wireless Network Test Report from the printer menu. The report shows the current IP address, MAC address, and connection status."
+  - q: "How do I update the printer port in Windows to fix the offline error?"
+    a: "Go to Settings > Bluetooth & devices > Printers & scanners, click your HP printer, select Printer properties, then click the Ports tab. Find the active port (checked) and click Configure Port. Enter the printer's current IP address and click OK."
+  - q: "How do I stop my HP printer's IP address from changing?"
+    a: "Log into your router's admin page and find the DHCP reservation or static IP assignment section. Reserve an IP address for the printer using its MAC address (shown on the Wireless Network Test Report). This gives the printer the same IP every time and prevents Windows from losing track of it."
+  - q: "Does HP Print and Scan Doctor fix IP address mismatch issues automatically?"
+    a: "Yes. HP Print and Scan Doctor detects when Windows is pointing to the wrong IP address for the printer, updates the port configuration automatically, and restores communication. Download it from support.hp.com and run Fix Printing for your specific HP model."
 ---
 
 An HP printer that shows a solid Wi-Fi connection on its own screen but appears **Offline** in Windows has a communication mismatch — the printer is genuinely connected to the network, but Windows is trying to reach it at a different IP address than the one it currently holds.

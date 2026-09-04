@@ -26,6 +26,17 @@ howto_steps:
     text: "Type the admin credentials printed on the router label. The username is usually admin. The password is usually admin, password, or a unique code on the label. If these do not work, someone changed the credentials — reset the router using the reset button on the back (hold 10 seconds)."
   - name: "Navigate to the setting you need to change"
     text: "After logging in, use the menu to find the section you need: Wireless or WiFi Settings for network name and password, WAN or Internet for connection type, Advanced for port forwarding and firewall, Administration for admin password and firmware updates."
+faq:
+  - q: "How do I access my router settings?"
+    a: "Connect to your router via Wi-Fi or Ethernet, open a browser, and type 192.168.1.1 or 192.168.0.1 directly in the address bar (not in a search engine). The router login page appears. Enter the admin credentials from the label on your router."
+  - q: "What is the most common router admin IP address?"
+    a: "The most common addresses are 192.168.1.1 (used by NETGEAR, TP-Link, Linksys) and 192.168.0.1 (used by ASUS and D-Link). The exact address is printed on the label on the bottom or back of your router. You can also find it on Windows by running ipconfig in Command Prompt and reading the Default Gateway line."
+  - q: "What should I do if I forgot my router admin password?"
+    a: "If you changed the default admin password and forgot it, hold the reset button on the back of the router for 10 seconds. The router resets to factory defaults, and you can log in with the original credentials printed on the label. All custom settings will be lost."
+  - q: "Can I access router settings from my phone?"
+    a: "Yes. Connect your phone to the router's Wi-Fi, open any browser, and type the router's admin IP address (usually 192.168.1.1). The router login page works on mobile browsers the same as on a desktop."
+  - q: "Why does typing 192.168.1.1 in a browser take me to a search results page?"
+    a: "This happens when you type the address in the search bar instead of the browser's address bar. Click directly in the address bar at the top of the browser (showing the URL), type 192.168.1.1, and press Enter. Do not use the search box that appears on the browser's home page."
 ---
 
 The router admin panel — also called the router settings page or router dashboard — is accessed through any web browser using the router's local IP address. According to NETGEAR's documentation, the most common mistake is typing the router's address into a search engine instead of the browser's address bar, which takes you to a web search instead of the router login page.

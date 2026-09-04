@@ -27,6 +27,17 @@ howto_steps:
     text: "On the Canon printer's control panel, navigate to LAN Settings or Network Settings, then select Reset LAN Settings or Restore Network Defaults. After the reset, use the Wi-Fi Connection Assistant or the printer's control panel to reconnect."
   - name: "Check router band and security settings"
     text: "Canon consumer printers support only the 2.4 GHz Wi-Fi band. Log into your router and confirm the 2.4 GHz band is active. Set the wireless security to WPA2-Personal (AES). Canon printers may fail to connect to networks using WPA3 or combined SSID names for both bands."
+faq:
+  - q: "Why won't my Canon printer connect to Wi-Fi?"
+    a: "The most common causes are stale network credentials stored on the printer after a router change, an incompatible Wi-Fi band (Canon printers only support 2.4 GHz), or a router security setting like WPA3 that the printer cannot handle. Reset the printer's network settings and reconnect using the Canon Wi-Fi Connection Assistant."
+  - q: "Do Canon printers support 5 GHz Wi-Fi?"
+    a: "No. Canon consumer inkjet and laser printers support only the 2.4 GHz Wi-Fi band. If your router uses a single combined SSID for both 2.4 GHz and 5 GHz, the printer may attempt to connect to the 5 GHz band and fail. Configure a separate 2.4 GHz SSID for the printer."
+  - q: "How do I use WPS to connect my Canon printer to Wi-Fi?"
+    a: "Press the WPS button on your router, then within two minutes press and hold the Wi-Fi button on the Canon printer until its lamp flashes. The printer connects automatically without requiring you to enter the Wi-Fi password."
+  - q: "How do I reset Canon printer Wi-Fi settings?"
+    a: "On the printer's control panel, go to LAN Settings or Network Settings, then select Reset LAN Settings or Restore Network Defaults. After the reset, use the Canon Wi-Fi Connection Assistant or the control panel wizard to reconnect with your current network credentials."
+  - q: "What is the Canon Wi-Fi Connection Assistant?"
+    a: "It is a free utility from Canon that runs on your Windows PC and guides you through connecting your Canon printer to a Wi-Fi network. Download it from support.usa.canon.com for your specific printer model. It automatically detects the printer and handles the full connection setup."
 ---
 
 A Canon printer loses its Wi-Fi connection when the network changes — such as after a router replacement, a Wi-Fi password update, or a network reset. The printer's Wi-Fi lamp blinks or turns off, and the printer becomes unavailable in Windows.

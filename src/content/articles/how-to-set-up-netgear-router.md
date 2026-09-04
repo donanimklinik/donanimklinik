@@ -28,6 +28,17 @@ howto_steps:
     text: "In the setup wizard, enter a new WiFi network name (SSID) and password. These replace the printed defaults. Write down the new password before confirming. Click Apply. The router restarts and begins broadcasting with the new network name."
   - name: "Connect all devices to the new network"
     text: "On each phone, laptop, or tablet, open WiFi settings, select your new network name, and enter the new password. For smart TVs and desktop computers, use Ethernet cables plugged into the router's LAN ports (numbered 1–4)."
+faq:
+  - q: "What is the default admin address for a NETGEAR router?"
+    a: "NETGEAR routers use routerlogin.net or 192.168.1.1 as the admin address. Type either directly into a browser's address bar. The default username is admin and the default password is password, or check the label on the router for the exact credentials."
+  - q: "Which port on a NETGEAR router connects to the modem?"
+    a: "Connect the modem's Ethernet cable to the NETGEAR router's yellow WAN (Internet) port. Do not use the numbered LAN ports (1-4) for the modem connection. The WAN port is usually a different color and located separately from the LAN ports."
+  - q: "What is the Nighthawk app and do I need it to set up a NETGEAR router?"
+    a: "The Nighthawk app is NETGEAR's official smartphone setup utility for iOS and Android. It is the fastest setup method but optional — you can also set up any NETGEAR router through the web browser admin panel at routerlogin.net. Both methods produce identical results."
+  - q: "What do I do if routerlogin.net does not open during NETGEAR setup?"
+    a: "Use the IP address 192.168.1.1 directly instead of routerlogin.net. Also ensure you are connected to the NETGEAR router's Wi-Fi or via Ethernet, not to a different network. If the page still does not load, restart the router and try again."
+  - q: "Can I set up a NETGEAR router without a modem?"
+    a: "No. A NETGEAR router requires a modem connected to the WAN port to provide internet access. The router itself does not connect to your ISP — it shares the connection from the modem. Without a modem, the router creates a local network with no internet."
 ---
 
 NETGEAR routers can be set up in two ways: through the **Nighthawk app** on a smartphone (the faster method) or through the **web browser admin panel** at routerlogin.net. According to NETGEAR's official installation guide, both methods produce identical results — the app simply guides you through the steps visually.

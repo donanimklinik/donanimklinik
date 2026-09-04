@@ -25,6 +25,17 @@ howto_steps:
     text: "If your organisation has enabled self-service recovery, sign in to myaccount.microsoft.com with your work account, go to Devices, select the locked device, and look for the BitLocker Keys section to retrieve the key yourself."
   - name: "Enter the 48-digit key on the recovery screen"
     text: "Type the key exactly as provided. The field accepts the key with or without hyphens. A single incorrect digit causes rejection."
+faq:
+  - q: "Who can retrieve my BitLocker key from Active Directory?"
+    a: "Only IT administrators with the appropriate Active Directory permissions can retrieve the key. Regular users cannot access it themselves unless the organization has enabled a self-service recovery portal."
+  - q: "What information do I need to give IT support to get my recovery key?"
+    a: "Provide the 8-digit Key ID displayed on the BitLocker recovery screen, along with your device name or serial number. The Key ID lets IT locate the exact key among many records."
+  - q: "What if my company uses Microsoft Intune instead of on-premises Active Directory?"
+    a: "If the device is enrolled in Intune, the recovery key is stored in the Azure AD portal. IT administrators access it through the Microsoft Intune admin center or the Azure portal under the device record."
+  - q: "Can I retrieve a work device's BitLocker key from my personal Microsoft account?"
+    a: "No. For domain-joined or Azure AD-joined work devices, the key is stored in the organization's directory, not in your personal Microsoft account. You must contact IT support."
+  - q: "How long does it take for IT to retrieve a BitLocker key from Active Directory?"
+    a: "Once IT receives your request with the Key ID, an administrator can typically retrieve the key within minutes. The actual wait depends on your organization's IT support response time and ticketing process."
 ---
 
 Work and school computers managed by an organisation behave differently from personal devices. According to Microsoft's BitLocker and Active Directory FAQ, when a domain-joined or Azure Active Directory-joined device enables BitLocker, the recovery key is automatically escrowed to the organisation's directory — not to the employee's personal Microsoft account.

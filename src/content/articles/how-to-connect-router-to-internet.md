@@ -27,6 +27,17 @@ howto_steps:
     text: "Log in to the router admin panel at 192.168.1.1. Go to WAN or Internet Settings. The connection type should be set to Automatic/DHCP for cable and fiber connections. For DSL, select PPPoE and enter the username and password provided by your ISP. Save and apply."
   - name: "Verify the WAN IP address in the router admin panel"
     text: "In the router admin panel, go to WAN Status, Internet Status, or Router Status. The WAN IP Address field should show a valid public IP address (not 0.0.0.0 or 169.254.x.x). A valid WAN IP means the router successfully connected to the internet through the modem."
+faq:
+  - q: "How do I connect a router to the internet?"
+    a: "Connect an Ethernet cable from your modem's Ethernet port to the router's WAN port. Power on the modem first, wait 60 seconds for it to connect to the ISP, then power on the router. The router requests an IP address from the modem and, once received, shares the internet connection with all connected devices."
+  - q: "My router says no internet even though it is connected to the modem. Why?"
+    a: "Check the modem's Online or Internet LED first. If it is not solid, the modem has not connected to the ISP yet. If the modem is online, verify the Ethernet cable is in the router's WAN port, not a LAN port. Restart both devices with the modem first."
+  - q: "What does WAN IP 0.0.0.0 mean on a router?"
+    a: "A WAN IP of 0.0.0.0 means the router has not received an IP address from the modem. This typically means the modem is not yet online, the Ethernet cable is in the wrong port, or the router needs to be restarted after the modem is fully online."
+  - q: "What WAN connection type should I set on my router?"
+    a: "Set it to Automatic/DHCP for most cable and fiber connections. For DSL connections, select PPPoE and enter the username and password provided by your ISP. The connection type is found in the router admin panel under WAN or Internet Settings."
+  - q: "Does the router need a modem to connect to the internet?"
+    a: "Yes. A router alone cannot connect to the internet. The modem handles the physical connection to your ISP (via coaxial, phone line, or fiber cable). The router connects to the modem and shares that connection wirelessly and via Ethernet ports to your devices."
 ---
 
 A router connects to the internet through a modem — the modem handles the ISP connection, and the router shares it with your devices. According to NETGEAR's home networking documentation, the three most common causes of a router not connecting to the internet are: the Ethernet cable is in the wrong port, the modem has not restarted after the router was connected, or the WAN connection type in the router is set incorrectly.

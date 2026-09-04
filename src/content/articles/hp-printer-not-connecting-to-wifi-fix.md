@@ -27,6 +27,17 @@ howto_steps:
     text: "Download HP Print and Scan Doctor from the official HP support site and run it. Select your printer, then choose Fix Printing. The tool detects connection issues, reinstalls the wireless driver if needed, and re-establishes communication between the printer and your network."
   - name: "Check the 2.4 GHz vs 5 GHz band"
     text: "HP printers, particularly older models, support only the 2.4 GHz Wi-Fi band. If your router uses a combined SSID or broadcasts only on 5 GHz, the printer cannot connect. Log into your router settings and ensure the 2.4 GHz band is active and has a separate SSID the printer can join."
+faq:
+  - q: "Why won't my HP printer connect to Wi-Fi?"
+    a: "The most common causes are an incorrect Wi-Fi password entered during setup, a 5 GHz band that HP printers cannot use (they need 2.4 GHz), a router security setting incompatibility, or stale credentials from a previous network. Restart both devices and run the HP Wireless Setup Wizard."
+  - q: "Do HP printers support 5 GHz Wi-Fi?"
+    a: "Older HP printers support only the 2.4 GHz band. Some newer HP printers support both bands. If you are unsure, check your printer's specifications on support.hp.com. If your printer only supports 2.4 GHz, ensure your router has that band active and accessible."
+  - q: "How do I run the HP Wireless Setup Wizard?"
+    a: "On the printer's control panel, go to the Wireless or Network Setup menu and select Wireless Setup Wizard. Follow the prompts to select your network name and enter the Wi-Fi password. The wizard guides the printer through the full connection process."
+  - q: "What does HP Print and Scan Doctor do for Wi-Fi connection problems?"
+    a: "HP Print and Scan Doctor diagnoses wireless connection issues, reinstalls wireless drivers if corrupted, and re-establishes the connection between the printer and the network. Download it from the official HP support site and select Fix Printing for your printer model."
+  - q: "Can an incorrect Wi-Fi password prevent an HP printer from connecting?"
+    a: "Yes. If you recently changed your Wi-Fi password and have not updated it on the printer, the printer will fail to connect. Reset the printer's network settings and run the Wireless Setup Wizard again, entering the current Wi-Fi password carefully."
 ---
 
 An HP printer that won't connect to Wi-Fi is one of the most common printer issues reported on Windows. The printer may have connected previously and lost the network after a router change, password update, or network reset — or it may be connecting for the first time.

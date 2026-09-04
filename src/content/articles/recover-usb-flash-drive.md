@@ -25,6 +25,17 @@ howto_steps:
     text: "If Windows shows the drive as RAW or prompts you to format it, run: chkdsk E: /f from an administrator Command Prompt. This repairs file system errors and may restore access without any recovery tool."
   - name: "Use a third-party recovery tool if built-in tools fail"
     text: "For drives that Windows File Recovery cannot fully scan, Recuva (free) or TestDisk (free, open source) are the most widely recommended options. Run them from a different drive and save recovered files to a location other than the USB drive."
+faq:
+  - q: "Can I recover files from a USB drive that Windows says needs to be formatted?"
+    a: "Often yes. Run chkdsk E: /f from an administrator Command Prompt first, replacing E: with your USB drive letter. This repairs file system errors and may restore access without any formatting. If that fails, use Recuva or TestDisk to scan the raw drive."
+  - q: "What is the first thing to do when I accidentally delete files from a USB drive?"
+    a: "Stop using the drive immediately. Eject it and keep it disconnected. Every new file written to the USB drive can overwrite the space where deleted files still exist, making recovery impossible."
+  - q: "Can I recover files from a USB drive that has been formatted?"
+    a: "Often yes. A quick format marks all sectors as available but does not erase data. Tools like Recuva in Deep Scan mode or TestDisk can scan formatted drives and recover files. A full format overwrites all sectors and makes recovery much harder."
+  - q: "Why should I recover USB files to a different drive and not back to the USB?"
+    a: "Saving recovered files to the same USB drive overwrites the sectors that still contain other recoverable data. Always select a folder on your PC's internal drive, an external hard drive, or another USB drive as the recovery destination."
+  - q: "My USB drive is not detected by Windows at all. Can I still recover files?"
+    a: "Try a different USB port and a different PC first. If the drive still does not appear in Disk Management, the USB controller chip may have failed. In that case, professional data recovery services may be able to recover data by directly reading the flash memory chips."
 ---
 
 USB flash drive problems fall into a few predictable categories, and each has a different solution. Accidentally deleted files, a drive you formatted by mistake, a drive that Windows cannot read, and a drive that is not detected at all — the approach changes depending on what actually went wrong.

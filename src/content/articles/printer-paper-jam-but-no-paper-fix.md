@@ -27,6 +27,17 @@ howto_steps:
     text: "Remove all paper from the tray. Fan the sheets to eliminate static cling between pages. Reload the paper so it sits flat against the back of the tray. Adjust the width and length guides so they touch the paper edges without pressing inward. Misaligned guides cause the paper to skew into the sensor."
   - name: "Update the printer firmware"
     text: "Outdated printer firmware can cause sensors to misreport. For HP printers, open HP Smart or the printer's control panel and check for firmware updates. For Epson, use the Epson Software Updater. For Canon, check the Maintenance menu on the control panel. Apply any available updates and test after restarting."
+faq:
+  - q: "Why does my printer say there is a paper jam when there is no paper stuck?"
+    a: "A false jam error is caused by the jam sensor triggering without paper actually being present. Common causes are a small paper fragment left from a previous jam, dirty or worn paper feed rollers, or a firmware bug that misreads the sensor state."
+  - q: "How do I clear a paper jam error when I cannot see any paper?"
+    a: "Perform a full power cycle first: turn off the printer, unplug the power cable, wait 60 seconds, then plug in and turn back on. If the error persists, open every door and cover and use a flashlight to check for paper fragments, torn label backing, or any debris anywhere in the paper path."
+  - q: "Can dirty rollers cause a false paper jam error?"
+    a: "Yes. Paper feed rollers that are dirty, worn, or coated with paper dust can misread the paper presence sensor, triggering a jam error without any paper being stuck. Clean the rollers with a lint-free cloth dampened with distilled water to restore normal sensor readings."
+  - q: "Where do paper fragments hide inside a printer after a jam?"
+    a: "Torn paper fragments often remain in areas that are not visible with the front cover open: the rear access door, the duplexer unit, the rollers deep in the paper feed path, and the area around the print heads. Open every removable cover and check with a flashlight."
+  - q: "Can a firmware update fix a false paper jam error?"
+    a: "Yes. Printer manufacturers occasionally release firmware updates that fix sensor misreading bugs causing false jam errors. Check for updates through HP Smart, Epson Software Updater, or the Canon Maintenance menu and apply any available updates."
 ---
 
 A printer that reports a paper jam when no paper is visibly stuck is experiencing a sensor error, not a mechanical blockage. The jam sensor — a small optical or mechanical switch in the paper path — is triggering without paper actually being caught in the mechanism.

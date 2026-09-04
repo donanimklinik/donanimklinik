@@ -27,6 +27,17 @@ howto_steps:
     text: "The encoder strip is a thin transparent strip that runs horizontally inside the printer, allowing the carriage to track position. If it is dirty or smeared with ink, lines print at incorrect positions. With the printer off and unplugged, use a cotton swab lightly dampened with distilled water to wipe the strip gently from end to end."
   - name: "Run manual print head alignment if automatic alignment fails"
     text: "Go to Setup > Maintenance > Print Head Alignment > Manual. The printer prints a grid of alignment patterns. Examine each pattern and enter the number of the straightest column into the control panel. Repeat for each alignment pattern group until all settings are entered."
+faq:
+  - q: "Why is my Canon printer printing wavy or crooked lines?"
+    a: "Wavy or misaligned lines are caused by print head misalignment, which develops over time or after moving the printer. The print head is printing ink rows at slightly offset positions. Running the print head alignment from the printer's Maintenance menu corrects this in most cases."
+  - q: "How do I run print head alignment on a Canon printer?"
+    a: "On the printer's control panel, go to Setup > Maintenance > Print Head Alignment > Auto (Start). The printer prints an alignment sheet, scans it, and adjusts the head position automatically. If auto alignment is not available on your model, use Manual alignment and enter the pattern numbers shown."
+  - q: "Why do Canon print head nozzles cause line quality problems?"
+    a: "Clogged nozzles deliver ink unevenly, causing some rows to be thicker, thinner, or missing entirely. This makes straight lines appear broken or wavy. Run a nozzle check pattern from the Maintenance menu to diagnose, then run standard or deep cleaning if nozzles are blocked."
+  - q: "What is the encoder strip and why does it affect print line quality?"
+    a: "The encoder strip is a thin transparent strip inside the printer that helps the print carriage track its horizontal position. If it is smeared with ink or dust, the carriage loses positional accuracy, causing lines to print at wrong positions. Clean it gently with a damp lint-free cloth."
+  - q: "Can paper type settings cause Canon printer lines to look wavy?"
+    a: "Yes. Printing on coated or glossy paper with plain paper settings causes ink to spread unpredictably, making lines appear uneven or wavy. Open the print dialog and match the Paper Type setting exactly to the paper loaded in the tray."
 ---
 
 A Canon printer that produces wavy, skewed, or misaligned lines — on what should be straight horizontal or vertical lines — has a print head alignment issue. The print head is slightly out of position, causing each row of ink drops to land at a slightly different position than intended.

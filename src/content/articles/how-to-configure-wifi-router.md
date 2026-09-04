@@ -28,6 +28,17 @@ howto_steps:
     text: "In Wireless Advanced Settings, find the Channel setting. For 2.4 GHz, select channel 1, 6, or 11 — these are the only non-overlapping channels. For 5 GHz, any channel from 36 to 48 avoids weather radar conflicts. Leave it on Auto if you are unsure — routers choose the least congested channel automatically."
   - name: "Update the router admin password"
     text: "Go to Administration or Advanced Settings and change the admin login password from the default. This prevents anyone on your network from accessing the router settings. Save and log back in with the new password."
+faq:
+  - q: "What router settings should I change after buying a new router?"
+    a: "Change these four settings immediately: the Wi-Fi network name (SSID) from the default, the Wi-Fi password to a strong unique one, the admin panel password from the default, and the Wi-Fi security type to WPA2-Personal (AES) or WPA3 if all your devices support it."
+  - q: "What Wi-Fi channel should I set on my router?"
+    a: "On the 2.4 GHz band, use channels 1, 6, or 11 — these are the only non-overlapping channels. For 5 GHz, channels 36 to 48 are generally stable and avoid conflicts with weather radar. If you are unsure, leave the channel setting on Auto and the router will pick the least congested channel."
+  - q: "Is it safe to leave the router on the default admin password?"
+    a: "No. The default admin credentials (often admin/admin or admin/password) are publicly known. Anyone connected to your Wi-Fi network can access the router settings with these credentials. Change the admin password immediately after setup."
+  - q: "What does WPA2-Personal (AES) mean in router settings?"
+    a: "WPA2-Personal is the Wi-Fi security standard that encrypts traffic between devices and the router. AES is the encryption algorithm, which is the most secure option available in WPA2. All devices made after 2006 support WPA2-AES. Selecting it protects your network from most wireless intrusion attempts."
+  - q: "How do I reset my router to factory defaults if I forgot the admin password?"
+    a: "Hold the reset button on the back of the router for 10 seconds. The router restarts with factory default settings, including the default admin credentials and Wi-Fi name/password printed on the label. All custom settings are lost, and you will need to reconfigure the router."
 ---
 
 Router configuration controls who can use your network, how fast it performs, and how secure it is. According to NETGEAR's official documentation, the factory default settings — default SSID, default admin password, and mixed security mode — leave your network less secure and performing below its potential.

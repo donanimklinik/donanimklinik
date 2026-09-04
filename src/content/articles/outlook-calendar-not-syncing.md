@@ -25,6 +25,17 @@ howto_steps:
     text: "In Outlook, right-click the calendar in the navigation pane and select Delete Calendar. Then re-add it: for shared calendars, go to Home > Open Calendar > Open Shared Calendar and enter the owner's name. For internet calendars (ICS), go to File > Account Settings > Internet Calendars tab, remove the subscription, and re-add the URL."
   - name: "Clear the Outlook cache for calendar data"
     text: "Close Outlook. Press Win+R and type %localappdata%\\Microsoft\\Outlook and press Enter. Look for files with .OST extension associated with your account. Rename the file by adding .old to the end. Restart Outlook — it will recreate the file and perform a full sync including calendar data."
+faq:
+  - q: "Why is my Outlook calendar not syncing across devices?"
+    a: "Calendar sync relies on the same Exchange or Microsoft 365 connection that handles email. Common causes include a corrupted local cache (OST file), the wrong calendar set as default, or a permissions issue with a shared calendar. Force a Send/Receive with F9 to trigger an immediate sync."
+  - q: "How do I check which calendar is my default in Outlook?"
+    a: "Go to File > Account Settings > Account Settings > Data Files tab. The account with a checkmark is the default. If a local PST file is set as default instead of your Exchange account, new meetings are saved locally and do not sync to other devices."
+  - q: "Why are meetings from colleagues not appearing in my Outlook calendar?"
+    a: "If shared calendar updates from colleagues are missing, check your calendar permissions. In Exchange environments, calendar sharing permissions can expire or be changed by administrators. Ask the colleague to re-share the calendar or contact your IT department."
+  - q: "Can I sync my Outlook calendar with Google Calendar?"
+    a: "Microsoft's official support for syncing Outlook with Google Calendar directly is limited. The most reliable method is to use Microsoft 365's connected accounts feature or a third-party sync tool. Native ICS subscription links offer a one-way read-only sync."
+  - q: "How long does it take for Outlook calendar to sync after a change?"
+    a: "In Exchange or Microsoft 365 environments, calendar changes typically sync within seconds to a minute. Delays longer than a few minutes usually indicate a sync configuration issue or a corrupted local cache that needs to be rebuilt."
 ---
 
 When Outlook calendar is not syncing, meetings created or accepted on one device do not appear on others, shared calendar updates from colleagues are missing, or calendar events from mobile are absent on the desktop. The calendar appears frozen at a point in the past.

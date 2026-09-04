@@ -25,6 +25,17 @@ howto_steps:
     text: "Some antivirus programs inspect outgoing email on port 25 and interfere with encrypted SMTP on other ports. Temporarily disable email scanning in your antivirus (not the entire program) and attempt to send. If it succeeds, configure the antivirus to exclude Outlook from email scanning."
   - name: "Re-enter your email password"
     text: "A password change — on the server, in Microsoft 365 admin, or through a provider portal — causes Outlook to fail authentication silently, producing 0x800CCC0E. Go to File > Account Settings, select your account, click Change, and re-enter your current password. Tick Remember password and click Next."
+faq:
+  - q: "What does Outlook error 0x800CCC0E mean?"
+    a: "Error 0x800CCC0E means Outlook could not establish a connection to the outgoing SMTP mail server. The server either did not respond or rejected the connection before authentication could complete."
+  - q: "What SMTP port should I use to fix 0x800CCC0E?"
+    a: "Change the SMTP port to 587 with STARTTLS or 465 with SSL/TLS. Port 25 is blocked by most internet service providers for outbound mail. Go to File > Account Settings > select your account > Change > More Settings > Advanced to update the port number."
+  - q: "Can a wrong password cause Outlook error 0x800CCC0E?"
+    a: "Yes. If your email password changed and Outlook still has the old password, authentication fails and can produce 0x800CCC0E. Go to your account settings and re-enter the current password to resolve it."
+  - q: "Does antivirus software cause Outlook error 0x800CCC0E?"
+    a: "Yes. Some antivirus programs intercept email traffic and can block or corrupt the SMTP connection. Temporarily disable the email scanning component of your antivirus (not full protection) and test whether Outlook can send. If successful, add Outlook to the antivirus exclusion list."
+  - q: "Is 0x800CCC0E only an outgoing email error?"
+    a: "Primarily yes. The 0x800CCC0E error code is associated with the SMTP subsystem, which handles outgoing mail. However, similar connection failures can occur on incoming mail connections and may produce related error codes in the 0x800CCC range."
 ---
 
 Error **0x800CCC0E** appears in Outlook with the message: "The connection to the server failed. Account: [your account], Server: [server name], Protocol: SMTP, Port: [port], Secure(SSL): No/Yes, Socket Error: 10060, Error Number: 0x800CCC0E."

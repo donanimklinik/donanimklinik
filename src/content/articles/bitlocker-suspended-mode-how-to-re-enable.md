@@ -23,6 +23,17 @@ howto_steps:
     text: "Click the Resume protection link next to the suspended drive. Windows will re-record the current TPM measurements and restore full BitLocker coverage."
   - name: "Verify the status"
     text: "Confirm the drive now shows BitLocker On in the Manage BitLocker screen, or run manage-bde -status C: in an administrator Command Prompt to verify Protection Status: Protection On."
+faq:
+  - q: "Is my data still protected when BitLocker is in suspended mode?"
+    a: "The drive remains encrypted, but a clear key is stored openly on the drive, making the encryption bypassable with physical access. Full protection is effectively off until you resume BitLocker."
+  - q: "Why did BitLocker enter suspended mode without me doing anything?"
+    a: "Windows automatically suspends BitLocker before certain updates, BIOS changes, or system maintenance operations. It should re-enable automatically after the operation completes, but sometimes it does not."
+  - q: "How do I resume BitLocker protection?"
+    a: "Open Manage BitLocker from the Start menu and click Resume protection next to the suspended drive. The process takes only a few seconds and requires no recovery key."
+  - q: "Will resuming BitLocker require me to enter the recovery key?"
+    a: "No. Resuming BitLocker from suspended mode does not trigger the recovery screen. Windows simply re-records the current TPM measurements and restores full protection."
+  - q: "Can I keep using my computer while BitLocker is suspended?"
+    a: "Yes, the computer works normally in suspended mode. However, physical access to the drive could allow someone to read data without authentication, so you should resume protection as soon as possible."
 ---
 
 If the Manage BitLocker screen shows your drive as **Suspended** rather than **On**, the drive is still encrypted — but the boot-time protection that makes BitLocker effective has been temporarily disabled. According to official Microsoft documentation, suspended mode is a deliberate, controlled state designed for short-term use during system maintenance. It is not meant to persist, and restoring full protection takes less than a minute.

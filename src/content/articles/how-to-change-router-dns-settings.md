@@ -26,6 +26,17 @@ howto_steps:
     text: "Clear the existing DNS entries and type the new addresses. For Google Public DNS: Primary 8.8.8.8, Secondary 8.8.4.4. For Cloudflare DNS: Primary 1.1.1.1, Secondary 1.0.0.1. Both options are free, faster than most ISP DNS servers, and do not require account registration."
   - name: "Save and flush DNS cache on your devices"
     text: "Click Save or Apply in the router admin panel. Then flush the DNS cache on your devices: on Windows, open Command Prompt and run ipconfig /flushdns. On Mac, open Terminal and run sudo dscacheutil -flushcache. This ensures devices use the new DNS servers immediately instead of cached lookups."
+faq:
+  - q: "What is DNS and why does changing it on the router matter?"
+    a: "DNS (Domain Name System) translates website names like google.com into IP addresses. Changing the DNS server on the router affects all devices on your network simultaneously. Switching from your ISP's DNS to Google (8.8.8.8) or Cloudflare (1.1.1.1) typically improves website loading speed and reliability."
+  - q: "What are the best DNS servers to use on a router?"
+    a: "Google Public DNS (8.8.8.8 and 8.8.4.4) and Cloudflare DNS (1.1.1.1 and 1.0.0.1) are the most widely recommended free alternatives. Both are faster than most ISP DNS servers, free to use, and do not require account registration."
+  - q: "Will changing DNS on the router affect all my devices?"
+    a: "Yes. When you change DNS on the router, all devices that use the router's DHCP for network settings will automatically use the new DNS servers. Devices with manually configured DNS in their own settings will not be affected."
+  - q: "Do I need to flush DNS cache after changing router DNS settings?"
+    a: "Yes. Your devices cache DNS lookups from the previous DNS server. Flushing the cache ensures they use the new DNS server for fresh lookups immediately. On Windows, run ipconfig /flushdns in an administrator Command Prompt. On Mac, run sudo dscacheutil -flushcache in Terminal."
+  - q: "Can changing DNS on the router fix internet connection problems?"
+    a: "Yes, in some cases. If your ISP's DNS servers are slow or unreliable, websites may fail to load or respond slowly even when the internet connection is working. Switching to a faster public DNS server resolves these symptoms without changing the underlying internet connection."
 ---
 
 DNS (Domain Name System) servers translate website names like `google.com` into the IP addresses computers use to connect. Your router uses DNS servers assigned by your ISP by default — but these are often slower and less reliable than public alternatives. According to Google's Public DNS documentation, switching to a faster DNS server reduces the time websites take to load, particularly the initial connection delay.

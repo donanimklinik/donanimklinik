@@ -25,6 +25,17 @@ howto_steps:
     text: "Open Settings > System > Activation > Change product key and retype the key carefully. Common mistakes: digit 0 vs letter O, digit 1 vs letter I or L. If possible, copy and paste the key directly from its source."
   - name: "Try phone activation if online activation fails"
     text: "Open an administrator Command Prompt and run: slui 4 — select your country and call the displayed number. Phone activation uses a separate system and can succeed when online activation cannot."
+faq:
+  - q: "Why is my Windows product key not working?"
+    a: "A Windows product key can be rejected for several reasons: it was entered with a typo, it is for a different Windows edition (Home vs Pro), it has been used on too many devices, or it came from an unauthorized source and has been blocked by Microsoft."
+  - q: "How do I find out why my product key was rejected?"
+    a: "Note the error code displayed after the rejection. Common codes are 0xC004F050 for an invalid key, 0xC004C008 for a blocked key, and 0x8007007B for a format error. Each code has a specific cause and fix."
+  - q: "Can I use a Windows 10 product key on Windows 11?"
+    a: "No. Windows 10 and Windows 11 require separate product keys. A Windows 10 key will not activate Windows 11. If you upgraded from Windows 10 to Windows 11 on the same device, activation is handled by the digital licence system automatically."
+  - q: "My product key worked before but stopped working after I built a new PC. Why?"
+    a: "OEM product keys are permanently tied to the original device's hardware. If you transferred an OEM key to a new build, it will be rejected. Retail product keys can be transferred, but you must deactivate on the old device first."
+  - q: "Is phone activation worth trying when online activation fails?"
+    a: "Yes. Phone activation runs through a separate verification system and can succeed for legitimately purchased keys that are being rejected by the automated online process, particularly after hardware changes."
 ---
 
 A Windows product key that does not work has a specific reason for failing — and that reason determines the fix. Windows rejects product keys for a small number of well-defined causes, each producing a different error code.

@@ -27,6 +27,17 @@ howto_steps:
     text: "Epson consumer printers support only the 2.4 GHz band. Log into your router and confirm the 2.4 GHz band is enabled. Also check that the router security is set to WPA2-Personal (AES) — some Epson models have difficulty connecting to networks using mixed WPA/WPA2 or WPA3 security settings."
   - name: "Use Epson Connect to re-register the printer"
     text: "Download Epson Connect Printer Setup from epson.com. Run the utility and follow the prompts to register or re-register your printer on the Epson network. This resets the cloud connection and re-establishes full wireless functionality including mobile printing."
+faq:
+  - q: "Why won't my Epson printer connect to Wi-Fi?"
+    a: "The most common causes are stale network credentials stored on the printer, an incompatible Wi-Fi band (Epson printers only support 2.4 GHz), or a router security setting the printer cannot handle. Reset the printer's network settings and reconnect using the Wi-Fi Setup Wizard on the control panel."
+  - q: "Do Epson printers support 5 GHz Wi-Fi?"
+    a: "No. Epson consumer printers support only the 2.4 GHz Wi-Fi band. If your router broadcasts on 5 GHz only, or uses a combined SSID, the Epson printer may fail to connect. Ensure your router has an active 2.4 GHz network and connect the printer to that band."
+  - q: "How do I use WPS to connect an Epson printer to Wi-Fi?"
+    a: "Press the WPS button on your router, then press and hold the Wi-Fi button on the Epson printer until the Wi-Fi light blinks. The printer connects automatically within a couple of minutes without requiring you to enter the Wi-Fi password."
+  - q: "How do I reset the Wi-Fi settings on an Epson printer?"
+    a: "On the control panel, go to Settings > Network Settings > Restore Default Settings, or use Wi-Fi Setup > Other Methods > Restore Wi-Fi Default Settings. After the reset, run the Wi-Fi Setup Wizard to reconnect with your current network credentials."
+  - q: "What is Epson Connect and do I need it to use my printer?"
+    a: "Epson Connect is a cloud service that enables features like mobile printing and email-to-print. You do not need it for basic wireless printing on your local network, but it is required for printing from a smartphone outside the home network or using Epson Email Print features."
 ---
 
 Epson printers lose their Wi-Fi connection after a router change, password update, or network reset. The printer's wireless light may blink or remain off, and Windows shows the printer as offline or unavailable.

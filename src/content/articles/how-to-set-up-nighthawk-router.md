@@ -28,6 +28,17 @@ howto_steps:
     text: "Open a browser and go to routerlogin.net or type 192.168.1.1. Log in with username admin and password password (or the label password). The Smart Setup Wizard runs automatically. Follow the wizard to configure internet connection type, WiFi name, and password."
   - name: "Reconnect all devices to the new WiFi network"
     text: "After setup completes, the Nighthawk broadcasts with your new WiFi name. On each device, open WiFi settings, select your new network name, and enter the new password. Connect desktop computers and smart TVs to the Nighthawk's Ethernet ports for the fastest speeds."
+faq:
+  - q: "What is the difference between a NETGEAR Nighthawk and a regular NETGEAR router?"
+    a: "Nighthawk is NETGEAR's performance router line designed for demanding home networks with many connected devices, gaming, and 4K streaming. Nighthawk routers typically have more processing power, more antennas, and advanced features like MU-MIMO and beamforming compared to standard NETGEAR routers."
+  - q: "What do the LED lights on a Nighthawk router mean during setup?"
+    a: "During setup, the Power LED should be solid white or green when the router is ready. The Internet LED solid green means the router has internet. Internet LED amber means no internet connection. The Wi-Fi LED solid blue or white means the network is broadcasting."
+  - q: "Can I set up a Nighthawk router without the Nighthawk app?"
+    a: "Yes. Open a browser and go to routerlogin.net or 192.168.1.1 while connected to the Nighthawk's default Wi-Fi. Log in with admin and password. The Smart Setup Wizard launches automatically and guides you through configuration."
+  - q: "What is the default Wi-Fi password for a Nighthawk router?"
+    a: "The default Wi-Fi password (called a Wi-Fi Passphrase) is printed on the label on the bottom of the Nighthawk router. It is a unique code specific to your unit, not a generic password. You should change it during setup."
+  - q: "Does the Nighthawk app update router firmware automatically?"
+    a: "Yes. When you set up a Nighthawk router using the Nighthawk app, the app checks for available firmware updates and applies them as part of the setup process. You can also check for firmware updates manually in the router admin panel under Administration > Firmware Update."
 ---
 
 The NETGEAR Nighthawk line includes high-performance routers (RAX series, R7000, R8000, and others) designed for demanding home networks. According to NETGEAR's official Nighthawk documentation, setup using the Nighthawk app takes under 10 minutes and is the recommended method for first-time installation.

@@ -25,6 +25,17 @@ howto_steps:
     text: "The KMS service uses TCP port 1688. Run: telnet kms-server-name 1688 from an administrator Command Prompt. If the connection fails, a firewall rule is blocking the port between your device and the KMS server."
   - name: "Set the KMS server address manually if DNS discovery fails"
     text: "If DNS auto-discovery does not work, an IT administrator can set the KMS server address directly: slmgr /skms kms-server-name:1688 — then run slmgr /ato to attempt activation with the specified server."
+faq:
+  - q: "What does Windows activation error 0xC004F074 mean?"
+    a: "Error 0xC004F074 means Windows attempted to contact a Key Management Service (KMS) server for volume licence activation and could not establish contact. This is a connectivity issue between the device and the KMS server, not a problem with the product key itself."
+  - q: "Does 0xC004F074 appear on personal home devices?"
+    a: "Rarely. This error almost exclusively affects workplace or domain-joined devices using KMS volume licensing. Personal devices activated with retail product keys use a different activation method and do not typically encounter this error."
+  - q: "How do I fix 0xC004F074 when working remotely?"
+    a: "Connect to your organization's VPN first, then open an administrator Command Prompt and run slmgr /ato. KMS servers are typically only reachable from the internal corporate network, and VPN provides that access from a remote location."
+  - q: "What is a MAK key and can it fix 0xC004F074?"
+    a: "A Multiple Activation Key (MAK) activates Windows directly against Microsoft's servers without needing a KMS server. If your organization provides a MAK key, it can resolve 0xC004F074 for devices that cannot reliably reach the internal KMS server."
+  - q: "How long does Windows stay activated after reaching the KMS server?"
+    a: "KMS activation is valid for 180 days. Windows renews automatically by contacting the KMS server every 7 days. If the renewal fails, Windows enters a grace period. If no renewal succeeds within 180 days, the activation expires and 0xC004F074 appears."
 ---
 
 Error code **0xC004F074** appears with the message: "The Software Licensing Service reported that the computer could not be activated. No Key Management Service (KMS) could be contacted."

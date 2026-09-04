@@ -25,6 +25,17 @@ howto_steps:
     text: "Go to Home > Rules > Manage Rules and Alerts. Review all active rules. A rule that moves, deletes, or redirects incoming messages from specific senders can cause messages to appear missing. Disable rules one at a time to identify the cause."
   - name: "Run the Microsoft Support and Recovery Assistant"
     text: "Download and run the Microsoft Support and Recovery Assistant (SaRA) from Microsoft's website. Select Outlook, then I can send but not receive email. SaRA tests the incoming mail server connection, account settings, and Outlook profile, and applies fixes automatically where possible."
+faq:
+  - q: "Why is Outlook not receiving emails but can still send?"
+    a: "Sending and receiving use different server connections. If you can send but not receive, the incoming mail server (IMAP or Exchange) has an issue while the outgoing server (SMTP) is working fine. Common causes include a full mailbox, a redirecting Outlook rule, or a problem with the incoming server settings."
+  - q: "Where do missing emails go in Outlook?"
+    a: "Check the Junk Email folder first, as aggressive spam filters often redirect legitimate messages there. Then check any custom folders you have, since Outlook rules can silently move incoming messages. Also check the Trash or Deleted Items folder."
+  - q: "How do I force Outlook to check for new emails?"
+    a: "Press F9 or click Send/Receive All Folders on the Send/Receive tab. This forces Outlook to contact the mail server immediately and download any waiting messages. If an error appears, note the error code it shows."
+  - q: "Can a full mailbox stop Outlook from receiving new emails?"
+    a: "Yes. When a mailbox reaches its storage limit, the server stops accepting new incoming messages. Check your mailbox size in Outlook or your webmail account settings. Delete old emails or empty the Deleted Items folder to free up space."
+  - q: "What does the Microsoft Support and Recovery Assistant do for Outlook?"
+    a: "SaRA is a free Microsoft diagnostic tool that tests your Outlook profile, account settings, and server connection. It identifies specific configuration errors and can apply fixes automatically, including recreating corrupted profiles and correcting server settings."
 ---
 
 When Outlook is not receiving emails but can still send, the problem is isolated to the incoming mail path. This distinction matters because sending and receiving use different server connections and different ports: SMTP for outgoing, and either IMAP or Exchange for incoming.

@@ -25,6 +25,17 @@ howto_steps:
     text: "Open the moved message from Drafts. If it contains attachments, check their total size — Microsoft 365 and most providers reject messages over 25 MB. Remove the attachment, save it to OneDrive or a file sharing service, and paste a link into the message body instead. Then click Send."
   - name: "Restart Outlook in Safe Mode"
     text: "Hold Ctrl and click the Outlook icon to start in Safe Mode. In Safe Mode, all add-ins are disabled. If the email sends successfully in Safe Mode, a third-party add-in is blocking delivery. Go to File > Options > Add-ins to identify and disable the conflicting add-in."
+faq:
+  - q: "Why is my email stuck in the Outlook Outbox and not sending?"
+    a: "The most common causes are that Outlook is in Work Offline mode, the message has an attachment that exceeds the server's size limit, or a previous failed send attempt locked the message in the queue. Disable Work Offline mode and move the stuck email to Drafts to clear the queue."
+  - q: "Can I delete an email that is stuck in the Outlook Outbox?"
+    a: "Yes, but be careful. Do not double-click the message first, as opening it can lock it and prevent deletion. Right-click the message and select Delete, or drag it to Drafts first and then delete it from there."
+  - q: "Why shouldn't I double-click an email stuck in the Outbox?"
+    a: "Double-clicking a message in the Outbox while Outlook is trying to send it can lock the message in a sending state, making it impossible to edit or delete. Move it to Drafts by right-clicking or dragging instead."
+  - q: "What is the maximum attachment size in Outlook?"
+    a: "Microsoft 365 and most major email providers reject messages with attachments over 25 MB total. If your stuck message has large attachments, move it to Drafts, remove the attachments, upload them to OneDrive or another file sharing service, and send a link instead."
+  - q: "How do I find which add-in is causing emails to get stuck in the Outbox?"
+    a: "Start Outlook by holding Ctrl while clicking its icon to launch in Safe Mode with add-ins disabled. If email sends normally in Safe Mode, an add-in is the cause. Go to File > Options > Add-ins and disable add-ins one at a time until you find the one causing the problem."
 ---
 
 When an email is stuck in the Outlook Outbox, it means Outlook has accepted the message for sending but has not transmitted it to the mail server. The message sits in the Outbox folder, sometimes showing as italic (which indicates Outlook is actively attempting to send it), and no subsequent emails can be sent until the queue clears.
