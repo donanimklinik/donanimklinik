@@ -175,8 +175,8 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   </div>
 
   <div class="wrap">
-    <!-- SLOT A: above article — highest viewability, above the fold (ezoicId=101, add slotId after approval) -->
-    <AdUnit position="top" ezoicId={101} />
+    <!-- SLOT A: above article — add slotId after AdSense approval, ezoicId=101 after Ezoic switch -->
+    <AdUnit position="top" />
 
     <!-- Article content -->
     <article class="article-body">
@@ -186,8 +186,8 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <!-- Related articles -->
     {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
 
-    <!-- SLOT C: before FAQ — high dwell area, good viewability (ezoicId=102, add slotId after approval) -->
-    <AdUnit position="bottom" ezoicId={102} />
+    <!-- SLOT C: before FAQ — add slotId after AdSense approval, ezoicId=102 after Ezoic switch -->
+    <AdUnit position="bottom" />
 
     <!-- FAQ section -->
     {faq && faq.length > 0 && (
