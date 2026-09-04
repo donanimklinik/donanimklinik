@@ -360,7 +360,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   :global(.article-body h2.h2-revealed)::after { width: 100%; }
 
   /* ── Article images ── */
-  .article-body img {
+  :global(.article-body img) {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -371,7 +371,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     cursor: zoom-in;
     transition: opacity .18s, border-color .18s, transform .22s, filter .22s;
   }
-  .article-body img:hover {
+  :global(.article-body img:hover) {
     opacity: .92;
     border-color: #00E5A0;
     transform: scale(1.015);

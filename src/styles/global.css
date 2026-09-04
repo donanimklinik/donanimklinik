@@ -1331,7 +1331,6 @@ body.cat-peripherals {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 22px; font-weight: 700; letter-spacing: -0.01em;
   margin: 40px 0 16px; color: var(--text);
-  padding-bottom: 10px; border-bottom: 1px solid var(--line);
 }
 .article-body h3 {
   font-family: 'Space Grotesk', sans-serif;
