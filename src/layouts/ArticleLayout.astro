@@ -95,9 +95,7 @@ const articleSchema = {
   description,
   image: {
     '@type': 'ImageObject',
-    url: heroImageUrl ?? `https://www.donanimklinik.com/images/${slug}.svg`,
-    width: 800,
-    height: 420,
+    url: heroImageUrl || `https://www.donanimklinik.com/images/${slug}.svg`,
   },
   url: canonical,
   datePublished: pubDate.toISOString(),
@@ -167,7 +165,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   ogTitle={title}
   ogDescription={description}
   ogType="article"
-  ogImage={heroImageUrl || undefined}
+  ogImage={(heroImageUrl && !heroImageUrl.endsWith('.svg')) ? heroImageUrl : undefined}
   catClass={`cat-${category}`}
 >
   <Fragment slot="head">

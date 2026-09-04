@@ -24,36 +24,64 @@ import Layout from '../layouts/Layout.astro';
   <div class="article-body" style="padding-top: 40px;">
 
     <h2>1. Overview</h2>
-    <p>DonanimKlinik ("we", "us", "our") operates the website donanimklinik.com. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our site, and the choices you have associated with that data.</p>
+    <p>DonanimKlinik ("we", "us", "our") operates the website <strong>donanimklinik.com</strong>. This page explains our policies regarding the collection, use, and disclosure of data when you visit our site, and the rights you have under applicable law including the EU General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA).</p>
+    <p>Our legal basis for data processing is <strong>legitimate interest</strong> (GDPR Art. 6(1)(f)) for analytics, and <strong>consent</strong> (GDPR Art. 6(1)(a)) for personalised advertising. You may withdraw consent at any time via the cookie controls below.</p>
 
-    <h2>2. Information We Collect</h2>
-    <p>We do not directly collect personally identifiable information unless you contact us voluntarily. However, third-party services we use may collect certain data automatically:</p>
+    <h2>2. Data We Collect</h2>
+    <p>We do not directly collect personally identifiable information unless you contact us voluntarily. Third-party services embedded on this site may collect data automatically:</p>
     <ul>
-      <li><strong>Google Analytics</strong> — collects anonymised usage data (pages visited, time on site, general location). You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google's opt-out tool</a>.</li>
-      <li><strong>Google AdSense</strong> — serves advertisements and may use cookies to show personalised ads based on your browsing history. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's ad policy</a>.</li>
+      <li><strong>Google Analytics 4</strong> — collects anonymised usage data (pages visited, session duration, approximate location at city level, device type). Data is retained for <strong>14 months</strong> in Google's systems. You can opt out via <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google's opt-out browser add-on</a>.</li>
+      <li><strong>Google AdSense</strong> — serves advertisements and may use cookies and device identifiers to show ads based on your browsing history. Google acts as an independent data controller for advertising data. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google's advertising policy</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</li>
     </ul>
+    <p>Data transfers to the United States are covered by Google LLC's Standard Contractual Clauses (SCCs) with the European Commission.</p>
 
     <h2>3. Cookies</h2>
-    <p>This site uses cookies through third-party services (Google Analytics, Google AdSense). Cookies are small data files stored on your device. You can control cookies through your browser settings or via Google's <a href="https://adssettings.google.com" target="_blank" rel="noopener">Ad Settings</a>.</p>
+    <p>This site uses cookies through Google Analytics and Google AdSense. We operate Google Consent Mode v2 — by default, no advertising or analytics cookies are set until you give consent. Specifically:</p>
+    <ul>
+      <li><strong>Before consent:</strong> no advertising cookies are placed; GA4 fires only non-personalised pings.</li>
+      <li><strong>After "Accept":</strong> full analytics and advertising cookies are enabled.</li>
+      <li><strong>After "Decline":</strong> non-personalised ads may still be served by Google using contextual signals only.</li>
+    </ul>
+    <p>Your choice is stored locally in your browser (localStorage key: <code>cookie-consent</code>). You can reset it by clearing your browser's site data. You can also control cookies via <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">Google's Ad Settings</a> or your browser's cookie controls.</p>
 
     <h2>4. Advertising</h2>
-    <p>We use Google AdSense to display advertisements. Google, as a third-party vendor, uses cookies to serve ads based on your prior visits to this or other websites. You may opt out of personalised advertising by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info</a>.</p>
-    <p>We do not control the content of advertisements displayed on this site.</p>
+    <p>We use Google AdSense to display advertisements. Google, as a third-party vendor, may use cookies to serve ads based on your prior visits to this or other websites. You may opt out of personalised advertising by visiting <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">aboutads.info</a> or the <a href="https://optout.networkadvertising.org/" target="_blank" rel="noopener noreferrer">NAI opt-out page</a>.</p>
+    <p>We do not control the specific content of advertisements displayed on this site.</p>
 
     <h2>5. Third-Party Links</h2>
-    <p>Our articles link to official manufacturer and software documentation pages. We are not responsible for the privacy practices of those external sites. We recommend reading their privacy policies.</p>
+    <p>Our guides link to official manufacturer and software documentation (Microsoft, Apple, Google, Canon, Synology, and others). We are not responsible for the privacy practices of those external sites and recommend reading their individual privacy policies.</p>
 
-    <h2>6. Children's Privacy</h2>
-    <p>This site is not directed at children under 13. We do not knowingly collect data from children.</p>
+    <h2>6. Data Retention</h2>
+    <p>We do not store personal data on our own servers. Retention periods are determined by our processors:</p>
+    <ul>
+      <li>Google Analytics: 14 months (configurable by us in GA4 settings)</li>
+      <li>Google AdSense: as described in <a href="https://policies.google.com/technologies/retention" target="_blank" rel="noopener noreferrer">Google's retention schedule</a></li>
+    </ul>
 
-    <h2>7. Your Rights (GDPR / CCPA)</h2>
-    <p>Depending on your location, you may have rights to access, correct, or delete data held about you by third-party services. Please refer to Google's privacy controls for data held by Google Analytics and AdSense.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>This site is not directed at children under 13 (or under 16 in the EU). We do not knowingly collect data from children. If you believe a child has provided data through this site, please contact us and we will take appropriate action.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>We may update this policy from time to time. Changes will be reflected by updating the date at the top of this page.</p>
+    <h2>8. Your Rights (GDPR / CCPA)</h2>
+    <p>Depending on your location, you have the following rights regarding your personal data:</p>
+    <ul>
+      <li><strong>Right of access</strong> — request a copy of data held about you</li>
+      <li><strong>Right to rectification</strong> — correct inaccurate data</li>
+      <li><strong>Right to erasure</strong> ("right to be forgotten")</li>
+      <li><strong>Right to restrict processing</strong></li>
+      <li><strong>Right to data portability</strong></li>
+      <li><strong>Right to object</strong> — including to processing based on legitimate interest</li>
+      <li><strong>Right to withdraw consent</strong> at any time (does not affect prior lawful processing)</li>
+    </ul>
+    <p>For data held by Google's services, exercise your rights via <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener noreferrer">Google Account privacy controls</a>. For any other queries, contact us directly (see below).</p>
+    <p>EU/EEA residents may also lodge a complaint with their local supervisory authority.</p>
 
-    <h2>9. Contact</h2>
-    <p>For any privacy-related questions, please use the contact details on our <a href="/about">About page</a>.</p>
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be reflected by updating the date at the top of this page. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact</h2>
+    <p>For privacy-related questions, data subject requests, or to withdraw consent:</p>
+    <p><strong>Email:</strong> <a href="mailto:donanimklinik@gmail.com">donanimklinik@gmail.com</a></p>
+    <p>We aim to respond to all requests within 30 days.</p>
 
   </div>
 </div>

@@ -19,10 +19,15 @@ const {
   canonical = 'https://www.donanimklinik.com/',
   ogTitle = title,
   ogDescription = description,
-  ogImage = 'https://www.donanimklinik.com/og-default.svg',
+  ogImage = 'https://www.donanimklinik.com/og-default.png',
   ogType = 'website',
   catClass,
 } = Astro.props;
+
+const { pathname } = Astro.url;
+function navCurrent(path: string) {
+  return (pathname === path || pathname.startsWith(path + '/')) ? 'page' : undefined;
+}
 
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -39,7 +44,14 @@ const websiteSchema = {
       '@id': 'https://www.donanimklinik.com/#organization',
       url: 'https://www.donanimklinik.com/',
       name: 'DonanimKlinik',
-      description: 'Diagnostic tech guides sourced from official manufacturer documentation.',
+      description: 'Step-by-step fixes for tech problems — sourced from official documentation.',
+      email: 'donanimklinik@gmail.com',
+      sameAs: [],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'donanimklinik@gmail.com',
+        contactType: 'customer support',
+      },
       logo: {
         '@type': 'ImageObject',
         url: 'https://www.donanimklinik.com/logo.png',
@@ -83,6 +95,7 @@ const websiteSchema = {
 
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/ibm-plex-mono-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Google Consent Mode v2 — must run synchronously before GA4 and AdSense load -->
   <script is:inline>
@@ -134,10 +147,10 @@ const websiteSchema = {
     </div>
 
     <nav class="desktop-nav" aria-label="Main categories">
-      <a href="/computers" class="nav-red"><span class="nav-dot" aria-hidden="true"></span>Computers</a>
-      <a href="/networking" class="nav-blue"><span class="nav-dot" aria-hidden="true"></span>Networking</a>
-      <a href="/software" class="nav-trace"><span class="nav-dot" aria-hidden="true"></span>Software</a>
-      <a href="/peripherals" class="nav-amber"><span class="nav-dot" aria-hidden="true"></span>Peripherals</a>
+      <a href="/computers" class="nav-red" aria-current={navCurrent('/computers')}><span class="nav-dot" aria-hidden="true"></span>Computers</a>
+      <a href="/networking" class="nav-blue" aria-current={navCurrent('/networking')}><span class="nav-dot" aria-hidden="true"></span>Networking</a>
+      <a href="/software" class="nav-trace" aria-current={navCurrent('/software')}><span class="nav-dot" aria-hidden="true"></span>Software</a>
+      <a href="/peripherals" class="nav-amber" aria-current={navCurrent('/peripherals')}><span class="nav-dot" aria-hidden="true"></span>Peripherals</a>
     </nav>
 
     <div class="lang" aria-label="Language">
@@ -153,10 +166,10 @@ const websiteSchema = {
   </div>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile categories">
-    <a href="/computers" class="nav-red">Computers</a>
-    <a href="/networking" class="nav-blue">Networking</a>
-    <a href="/software" class="nav-trace">Software</a>
-    <a href="/peripherals" class="nav-amber">Peripherals</a>
+    <a href="/computers" class="nav-red" aria-current={navCurrent('/computers')}>Computers</a>
+    <a href="/networking" class="nav-blue" aria-current={navCurrent('/networking')}>Networking</a>
+    <a href="/software" class="nav-trace" aria-current={navCurrent('/software')}>Software</a>
+    <a href="/peripherals" class="nav-amber" aria-current={navCurrent('/peripherals')}>Peripherals</a>
   </nav>
 </header>
 
@@ -231,7 +244,7 @@ const websiteSchema = {
 
 
 <!-- Cookie Consent Banner -->
-<div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" aria-live="polite">
+<div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie notice">
   <p class="cookie-text">
     We use cookies to analyse traffic and serve ads. By continuing you agree to our
     <a href="/privacy">Privacy Policy</a>.
