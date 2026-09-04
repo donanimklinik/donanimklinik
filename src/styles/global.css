@@ -1352,7 +1352,7 @@ body.cat-peripherals {
 .article-body pre {
   background: var(--panel); border: 1px solid var(--line);
   padding: 20px 24px; border-radius: 4px; overflow-x: auto;
-  margin-bottom: 24px;
+  margin-bottom: 24px; position: relative;
 }
 .article-body pre code {
   background: transparent; padding: 0; font-size: 13.5px; color: var(--trace);

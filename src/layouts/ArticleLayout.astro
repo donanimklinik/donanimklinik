@@ -193,7 +193,7 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <AdUnit position="top" />
 
     <!-- Article content -->
-    <article class="article-body">
+    <article class="article-body" data-copy-buttons>
       <slot />
     </article>
 
@@ -379,6 +379,29 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     transition: border-color .15s, color .15s;
   }
   #lb-close:hover { border-color: #00E5A0; color: #00E5A0; }
+
+  /* ── Copy button ── */
+  :global(.copy-btn) {
+    position: absolute;
+    top: 0.55rem;
+    right: 0.55rem;
+    padding: 0.28rem 0.6rem;
+    background: #0d2e1a;
+    border: 1px solid #2a5236;
+    border-radius: 5px;
+    color: #A8C4B0;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: inherit;
+    line-height: 1;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .15s, border-color .15s, color .15s;
+    user-select: none;
+  }
+  :global(.article-body pre:hover .copy-btn) { opacity: 1; }
+  :global(.copy-btn.copied) { color: #00E5A0; border-color: #00E5A0; opacity: 1; }
+  @media (hover: none) { :global(.copy-btn) { opacity: 1; } }
 </style>
 
 <script>
@@ -409,4 +432,32 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   lbClose.addEventListener('click', closeLightbox);
   overlay.addEventListener('click', e => { if (e.target === overlay) closeLightbox(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+<script>
+  // Copy button for code blocks
+  document.querySelectorAll('article[data-copy-buttons] pre').forEach(pre => {
+    const btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.type = 'button';
+    btn.textContent = 'Copy';
+    btn.setAttribute('aria-label', 'Copy code');
+    pre.appendChild(btn);
+
+    btn.addEventListener('click', async () => {
+      const code = pre.querySelector('code');
+      const text = (code ?? pre).innerText;
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 1500);
+      } catch {
+        // clipboard unavailable (HTTP or denied)
+      }
+    });
+  });
 </script>

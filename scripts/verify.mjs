@@ -96,8 +96,7 @@ function checkFeedbackWidget(html, label) {
 }
 
 function checkCopyButton(html, label) {
-  // Uncomment after Feature 6 (Copy Button) is shipped:
-  // check(`${label} — Copy button JS`, html.includes('copy-btn'));
+  check(`${label} — Copy button wired`, html.includes('data-copy-buttons'));
 }
 
 // ─── Run all checks ───────────────────────────────────────────────────────────
