@@ -1,0 +1,75 @@
+---
+interface Props {
+  pillarName: string;
+  pillarSlug: string;
+  category: string;
+}
+const { pillarName, category, pillarSlug } = Astro.props;
+const href = `/${category}/${pillarSlug}/`;
+---
+
+<a href={href} class="hub-pill" aria-label={`Back to ${pillarName}`} hidden>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+       width="13" height="13" aria-hidden="true">
+    <path d="M10 13L5 8l5-5" stroke="#00E5A0" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <span>{pillarName}</span>
+</a>
+
+<style>
+  .hub-pill {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.9rem 0.45rem 0.7rem;
+    background: #0d1e16;
+    border: 1px solid #2a5236;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #D4EAD8;
+    box-shadow: 0 2px 12px rgba(0,0,0,.4);
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity .25s, transform .25s, border-color .15s;
+    pointer-events: none;
+    max-width: calc(50vw - 2rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .hub-pill:not([hidden]) { display: flex; }
+  .hub-pill.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .hub-pill:hover { border-color: #00E5A0; }
+  .hub-pill span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  @media (max-width: 480px) {
+    .hub-pill { bottom: 1rem; left: 1rem; font-size: 0.75rem; }
+  }
+</style>
+
+<script>
+  const pill = document.querySelector('.hub-pill') as HTMLElement | null;
+  if (pill) {
+    pill.removeAttribute('hidden');
+    const THRESHOLD = 0.6;
+    function onScroll() {
+      const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      pill.classList.toggle('visible', scrolled >= THRESHOLD);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+</script>

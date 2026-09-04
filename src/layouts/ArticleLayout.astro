@@ -4,6 +4,7 @@ import AdUnit from '../components/AdUnit.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import AnswerCard from '../components/AnswerCard.astro';
 import RelatedChips from '../components/RelatedChips.astro';
+import HubPill from '../components/HubPill.astro';
 
 interface Props {
   title: string;
@@ -244,6 +245,10 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
 
   </div>
 </Layout>
+
+{pillarName && pillarSlug && (
+  <HubPill pillarName={pillarName} pillarSlug={pillarSlug} category={category} />
+)}
 
 <!-- Lightbox -->
 <div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>

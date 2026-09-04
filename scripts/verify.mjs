@@ -88,8 +88,7 @@ function checkAnswerCard(html, label) {
 }
 
 function checkHubPill(html, label) {
-  // Uncomment after Feature 3 (Hub Pill) is shipped:
-  // check(`${label} — Hub pill present`, html.includes('class="hub-pill"'));
+  check(`${label} — Hub pill present`, html.includes('class="hub-pill"'));
 }
 
 function checkCopyButton(html, label) {
