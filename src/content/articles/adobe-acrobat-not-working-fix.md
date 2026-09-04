@@ -60,4 +60,4 @@ Identify your specific symptom first: if tools are greyed out, start at step 3 (
 
 ## How to verify the fix
 
-Test the specific feature that was broken: attempt a print job, save a file to your Desktop, or use a previously greyed-out tool. If the feature works correctly, the fix was successful. If Acrobat freezes during the test rather than producing an error, see [Adobe Acrobat Not Responding — Fix](/software/adobe-acrobat-errors/adobe-acrobat-not-responding-fix/).
+Test the specific feature that was broken: attempt a print job, save a file to your Desktop, or use a previously greyed-out tool. If the feature works correctly, the fix was successful. If Acrobat freezes during the test rather than producing an error, see [Adobe Acrobat Not Responding — Fix](/software/adobe-acrobat-not-responding-fix/).

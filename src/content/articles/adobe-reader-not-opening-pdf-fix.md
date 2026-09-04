@@ -60,4 +60,4 @@ If PDFs open in Chrome or Edge instead of Reader, steps 1 and 5 are the most dir
 
 ## How to verify the fix
 
-Double-click a PDF file on your desktop. Acrobat Reader should open within 5 seconds and display the document. Check that the Reader window appears and shows the PDF content — not an error message, not a blank screen. If Reader opens but the specific PDF file shows an error, the Reader installation is working correctly but the file may be corrupted — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/adobe-acrobat-errors/cannot-open-pdf-fix/).
+Double-click a PDF file on your desktop. Acrobat Reader should open within 5 seconds and display the document. Check that the Reader window appears and shows the PDF content — not an error message, not a blank screen. If Reader opens but the specific PDF file shows an error, the Reader installation is working correctly but the file may be corrupted — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/cannot-open-pdf-fix/).

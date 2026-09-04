@@ -60,4 +60,4 @@ Always start by ending the frozen process in Task Manager, then apply fixes befo
 
 ## How to verify the fix
 
-Open the PDF that previously caused the freeze. Wait for it to fully render. Scroll through several pages and attempt any action that previously triggered the freeze. If Acrobat remains responsive throughout, the fix was successful. If Acrobat still freezes on the same file but works on others, the issue may be with that specific PDF — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/adobe-acrobat-errors/cannot-open-pdf-fix/).
+Open the PDF that previously caused the freeze. Wait for it to fully render. Scroll through several pages and attempt any action that previously triggered the freeze. If Acrobat remains responsive throughout, the fix was successful. If Acrobat still freezes on the same file but works on others, the issue may be with that specific PDF — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/cannot-open-pdf-fix/).

@@ -37,7 +37,7 @@ This hub covers the most common Acrobat errors. Select the guide that matches yo
 
 ## Fix guides in this pillar
 
-### [Adobe Acrobat Not Opening — Fix](/software/adobe-acrobat-errors/adobe-acrobat-not-opening-fix/)
+### [Adobe Acrobat Not Opening — Fix](/software/adobe-acrobat-not-opening-fix/)
 
 Acrobat does not launch at all — you click the icon or a PDF file and nothing happens, or a loading screen briefly appears then disappears. This guide covers ending stuck Acrobat processes, running as administrator, repairing the installation, disabling Protected Mode, and reinstalling.
 
@@ -45,7 +45,7 @@ Acrobat does not launch at all — you click the icon or a PDF file and nothing 
 
 ---
 
-### [Cannot Open PDF in Adobe Acrobat — Fix](/software/adobe-acrobat-errors/cannot-open-pdf-fix/)
+### [Cannot Open PDF in Adobe Acrobat — Fix](/software/cannot-open-pdf-fix/)
 
 Acrobat itself opens but a specific PDF file fails to load — you see a blank page, an error message, or the file appears damaged. This guide covers checking the PDF source, repairing the file, clearing Acrobat's cache, and updating Acrobat.
 
@@ -53,7 +53,7 @@ Acrobat itself opens but a specific PDF file fails to load — you see a blank p
 
 ---
 
-### [Adobe Acrobat Keeps Crashing — Fix](/software/adobe-acrobat-errors/adobe-acrobat-keeps-crashing-fix/)
+### [Adobe Acrobat Keeps Crashing — Fix](/software/adobe-acrobat-keeps-crashing-fix/)
 
 Acrobat opens but crashes when printing, saving, editing, or shortly after launch. This guide covers disabling hardware acceleration, clearing the cache, repairing the installation, and resolving plugin conflicts.
 
@@ -61,7 +61,7 @@ Acrobat opens but crashes when printing, saving, editing, or shortly after launc
 
 ---
 
-### [Adobe Acrobat Not Responding — Fix](/software/adobe-acrobat-errors/adobe-acrobat-not-responding-fix/)
+### [Adobe Acrobat Not Responding — Fix](/software/adobe-acrobat-not-responding-fix/)
 
 Acrobat opens but freezes — the title bar shows "Not Responding" and the application stops accepting input. This guide covers ending the frozen process, disabling hardware acceleration, clearing the cache, and adjusting rendering settings.
 
@@ -69,7 +69,7 @@ Acrobat opens but freezes — the title bar shows "Not Responding" and the appli
 
 ---
 
-### [Adobe Acrobat Not Working — Fix](/software/adobe-acrobat-errors/adobe-acrobat-not-working-fix/)
+### [Adobe Acrobat Not Working — Fix](/software/adobe-acrobat-not-working-fix/)
 
 Acrobat opens but features stop functioning — printing fails, saving does not work, editing tools are greyed out, or the application behaves erratically. This guide covers repairing the installation, resetting preferences, and resolving licensing errors.
 
@@ -77,7 +77,7 @@ Acrobat opens but features stop functioning — printing fails, saving does not 
 
 ---
 
-### [Adobe Reader Not Opening PDF — Fix](/software/adobe-acrobat-errors/adobe-reader-not-opening-pdf-fix/)
+### [Adobe Reader Not Opening PDF — Fix](/software/adobe-reader-not-opening-pdf-fix/)
 
 Adobe Acrobat Reader is installed but PDF files do not open — double-clicking opens a different application, or Reader launches but shows an error. This guide covers setting Acrobat Reader as the default PDF app, repairing the installation, and resolving file association problems.
 

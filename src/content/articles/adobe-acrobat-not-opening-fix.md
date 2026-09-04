@@ -60,4 +60,4 @@ Work through the steps in order. Most users resolve this at step 1 or step 3.
 
 ## How to verify the fix
 
-After applying each fix, double-click any PDF file on your desktop and wait 10 seconds. If Acrobat opens and displays the document, the fix worked. If Acrobat opens but shows an error about the specific file, the application itself is working — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/adobe-acrobat-errors/cannot-open-pdf-fix/) for file-specific problems.
+After applying each fix, double-click any PDF file on your desktop and wait 10 seconds. If Acrobat opens and displays the document, the fix worked. If Acrobat opens but shows an error about the specific file, the application itself is working — see [Cannot Open PDF in Adobe Acrobat — Fix](/software/cannot-open-pdf-fix/) for file-specific problems.

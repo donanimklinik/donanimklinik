@@ -60,4 +60,4 @@ Work through the steps in order. If a browser can open the file but Acrobat cann
 
 ## How to verify the fix
 
-After each step, close Acrobat completely, reopen it, and then open the PDF. If the document displays with all pages visible and content rendered correctly, the fix worked. If Acrobat itself still refuses to launch, see [Adobe Acrobat Not Opening — Fix](/software/adobe-acrobat-errors/adobe-acrobat-not-opening-fix/).
+After each step, close Acrobat completely, reopen it, and then open the PDF. If the document displays with all pages visible and content rendered correctly, the fix worked. If Acrobat itself still refuses to launch, see [Adobe Acrobat Not Opening — Fix](/software/adobe-acrobat-not-opening-fix/).
