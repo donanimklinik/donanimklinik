@@ -259,6 +259,9 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   <HubPill pillarName={pillarName} pillarSlug={pillarSlug} category={category} />
 )}
 
+<!-- Scroll progress bar -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
 <!-- Lightbox -->
 <div id="lb-overlay" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
   <button id="lb-close" aria-label="Close image">&times;</button>
@@ -380,6 +383,20 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   }
   #lb-close:hover { border-color: #00E5A0; color: #00E5A0; }
 
+  /* ── Scroll progress bar ── */
+  #scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #00E5A0;
+    z-index: 9998;
+    opacity: 0;
+    transition: width .12s linear, opacity .2s;
+    pointer-events: none;
+  }
+
   /* ── Copy button ── */
   :global(.copy-btn) {
     position: absolute;
@@ -460,4 +477,24 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
       }
     });
   });
+</script>
+
+<script>
+  // Scroll progress bar — starts at 25% scroll, caps visual fill at 90%
+  const bar = document.getElementById('scroll-progress') as HTMLElement | null;
+  if (bar) {
+    function updateBar() {
+      const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      if (scrolled < 0.25) {
+        bar.style.opacity = '0';
+        bar.style.width = '0%';
+      } else {
+        const visual = Math.min((scrolled - 0.25) / 0.75 * 90, 90);
+        bar.style.opacity = '1';
+        bar.style.width = visual + '%';
+      }
+    }
+    window.addEventListener('scroll', updateBar, { passive: true });
+    updateBar();
+  }
 </script>

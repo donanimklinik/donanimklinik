@@ -99,6 +99,10 @@ function checkCopyButton(html, label) {
   check(`${label} — Copy button wired`, html.includes('data-copy-buttons'));
 }
 
+function checkScrollProgress(html, label) {
+  check(`${label} — Scroll progress bar present`, html.includes('id="scroll-progress"'));
+}
+
 // ─── Run all checks ───────────────────────────────────────────────────────────
 
 console.log('\n📋 DonanimKlinik — Build Verification\n');
@@ -135,6 +139,7 @@ for (const { label, path } of SAMPLES) {
       checkHubPill(html, label);
       checkFeedbackWidget(html, label);
       checkCopyButton(html, label);
+      checkScrollProgress(html, label);
     }
   }
 }
