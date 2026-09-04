@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Excel Keeps Crashing — Diagnosis &amp; Fix</text>
+
+  <!-- Diagnosis step -->
+  <rect x="200" y="52" width="400" height="55" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="400" y="73" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 1 — Diagnose with Event Viewer</text>
+  <text x="400" y="93" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Start → Event Viewer → Windows Logs → Application → find Excel error</text>
+
+  <!-- Branch: faulting module -->
+  <text x="200" y="130" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">3rd-party DLL in faulting module</text>
+  <text x="200" y="148" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">→ Add-in is crashing Excel</text>
+
+  <text x="600" y="130" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">EXCEL.EXE in faulting module</text>
+  <text x="600" y="148" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">→ Installation is corrupted</text>
+
+  <!-- Fix 2: Add-in isolation -->
+  <rect x="20" y="162" width="370" height="95" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="205" y="183" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix 2 — Isolate the Add-in</text>
+  <line x1="40" y1="191" x2="370" y2="191" stroke="#2a5236" stroke-width="1"/>
+  <text x="205" y="211" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Win+R → excel /safe (Hold Ctrl works too)</text>
+  <text x="205" y="231" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">File > Options > Add-ins > COM Add-ins > Go</text>
+  <text x="205" y="251" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Uncheck ALL → restart → re-enable one by one</text>
+
+  <!-- Fix 3: Hardware acceleration -->
+  <rect x="410" y="162" width="370" height="95" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="595" y="183" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 3 — Disable GPU Acceleration</text>
+  <line x1="430" y1="191" x2="760" y2="191" stroke="#2a5236" stroke-width="1"/>
+  <text x="595" y="211" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">File > Options > Advanced > Display</text>
+  <text x="595" y="231" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Check: Disable hardware graphics acceleration</text>
+  <text x="595" y="251" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crashes on scroll/chart render → this fix</text>
+
+  <!-- Fix 4: Antivirus -->
+  <rect x="20" y="272" width="370" height="85" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="205" y="293" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 4 — Antivirus Exclusion</text>
+  <line x1="40" y1="301" x2="370" y2="301" stroke="#2a5236" stroke-width="1"/>
+  <text x="205" y="321" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Crashes only on save? → Antivirus interfering</text>
+  <text x="205" y="341" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Add EXCEL.EXE + docs folder to AV exclusions</text>
+
+  <!-- Fix 5: Online Repair -->
+  <rect x="410" y="272" width="370" height="85" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="595" y="293" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 5 — Office Online Repair</text>
+  <line x1="430" y1="301" x2="760" y2="301" stroke="#2a5236" stroke-width="1"/>
+  <text x="595" y="321" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Control Panel > Programs > Office > Change</text>
+  <text x="595" y="341" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Online Repair (full reinstall, needs internet)</text>
+
+  <text x="400" y="390" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crash only on save = antivirus (Fix 4) | Crash on scroll/charts = GPU (Fix 3) | Random crash = Online Repair (Fix 5)</text>
+  <text x="400" y="408" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Event Viewer Faulting module: 3rd-party DLL = add-in | EXCEL.EXE = installation corrupted</text>
+</svg>

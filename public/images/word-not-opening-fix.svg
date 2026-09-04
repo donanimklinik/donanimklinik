@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Word Not Opening — Fix by Symptom</text>
+
+  <!-- Symptom row -->
+  <rect x="20" y="52" width="230" height="80" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="135" y="73" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">Opens wrong app</text>
+  <line x1="40" y1="81" x2="230" y2="81" stroke="#2a5236" stroke-width="1"/>
+  <text x="135" y="101" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">.docx opens in Google Docs,</text>
+  <text x="135" y="118" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">browser, or wrong program</text>
+
+  <rect x="285" y="52" width="230" height="80" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="400" y="73" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">Word itself won't launch</text>
+  <line x1="305" y1="81" x2="495" y2="81" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="101" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Word freezes on splash screen</text>
+  <text x="400" y="118" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">or closes immediately</text>
+
+  <rect x="550" y="52" width="230" height="80" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="665" y="73" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Document won't open</text>
+  <line x1="570" y1="81" x2="760" y2="81" stroke="#2a5236" stroke-width="1"/>
+  <text x="665" y="101" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Word launches but shows error</text>
+  <text x="665" y="118" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">for a specific .docx file</text>
+
+  <!-- Fix 1: File Association -->
+  <rect x="20" y="152" width="230" height="100" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="135" y="173" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">Fix 1 — Set Default App</text>
+  <line x1="40" y1="181" x2="230" y2="181" stroke="#2a5236" stroke-width="1"/>
+  <text x="135" y="201" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Right-click .docx → Open with</text>
+  <text x="135" y="219" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Choose another app → Word</text>
+  <text x="135" y="239" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Check: Always use this app</text>
+
+  <!-- Fix 2: Safe Mode -->
+  <rect x="285" y="152" width="230" height="100" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="400" y="173" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix 2 — Safe Mode</text>
+  <line x1="305" y1="181" x2="495" y2="181" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="201" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Win+R → winword /safe</text>
+  <text x="400" y="219" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Stable? → Add-in is the cause</text>
+  <text x="400" y="239" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Disable add-ins one by one</text>
+
+  <!-- Fix 3: Open and Repair -->
+  <rect x="550" y="152" width="230" height="100" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="665" y="173" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 3 — Open and Repair</text>
+  <line x1="570" y1="181" x2="760" y2="181" stroke="#2a5236" stroke-width="1"/>
+  <text x="665" y="201" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">File > Open > Browse → select file</text>
+  <text x="665" y="219" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Open dropdown → Open and Repair</text>
+  <text x="665" y="239" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Save recovered file immediately</text>
+
+  <!-- Fix 4: Windows Block -->
+  <rect x="20" y="268" width="370" height="80" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="205" y="289" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 4 — Unblock the File</text>
+  <line x1="40" y1="297" x2="370" y2="297" stroke="#2a5236" stroke-width="1"/>
+  <text x="205" y="317" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Right-click file → Properties → General tab</text>
+  <text x="205" y="335" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Security section → check Unblock → OK</text>
+
+  <!-- Fix 5: Quick Repair -->
+  <rect x="410" y="268" width="370" height="80" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="595" y="289" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 5 — Office Quick Repair</text>
+  <line x1="430" y1="297" x2="760" y2="297" stroke="#2a5236" stroke-width="1"/>
+  <text x="595" y="317" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Control Panel > Programs > Office > Change</text>
+  <text x="595" y="335" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Quick Repair → 2 min, offline, restart</text>
+
+  <text x="400" y="382" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Downloaded file not opening? Check Fix 4 (Windows blocks downloads). Wrong app opening? Fix 1. Word won't launch? Fix 2.</text>
+  <text x="400" y="406" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">If Open and Repair fails: try Insert > Object > Text from File in a blank document to extract text content</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Word Keeps Crashing — Fix Path</text>
+
+  <!-- Safe Mode test -->
+  <rect x="200" y="52" width="400" height="55" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="400" y="73" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 1 — Test in Safe Mode (30 sec)</text>
+  <text x="400" y="93" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Win+R → winword /safe → perform the action that crashes Word</text>
+
+  <!-- Branch -->
+  <text x="200" y="130" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Stable in Safe Mode</text>
+  <text x="200" y="148" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">→ Normal.dotm or add-in cause</text>
+
+  <text x="600" y="130" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">Still crashes in Safe Mode</text>
+  <text x="600" y="148" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">→ Installation or driver cause</text>
+
+  <!-- Fix 2: Normal.dotm -->
+  <rect x="20" y="162" width="360" height="100" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="200" y="183" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 2 — Reset Normal.dotm</text>
+  <line x1="40" y1="191" x2="360" y2="191" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="211" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Close Word completely</text>
+  <text x="200" y="229" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">AppData\Roaming\Microsoft\Templates</text>
+  <text x="200" y="249" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Rename Normal.dotm → Normal.dotm.old</text>
+  <text x="200" y="257" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">Word creates a fresh template — .docx files unaffected</text>
+
+  <!-- Fix 3: Add-ins -->
+  <rect x="20" y="276" width="360" height="90" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="200" y="297" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 3 — Disable Add-ins</text>
+  <line x1="40" y1="305" x2="360" y2="305" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="325" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">File > Options > Add-ins > COM Add-ins > Go</text>
+  <text x="200" y="345" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Uncheck all → re-enable one by one</text>
+  <text x="200" y="357" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">Common: Grammarly, Zotero, EndNote</text>
+
+  <!-- Fix 4: Corrupted fonts -->
+  <rect x="420" y="162" width="360" height="95" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="600" y="183" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix 4 — Check Corrupted Fonts</text>
+  <line x1="440" y1="191" x2="760" y2="191" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="211" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Control Panel > Appearance > Fonts</text>
+  <text x="600" y="231" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Look for 0 KB or unusually large fonts</text>
+  <text x="600" y="251" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Delete suspicious fonts → reinstall</text>
+
+  <!-- Fix 5: Online Repair -->
+  <rect x="420" y="271" width="360" height="95" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="600" y="292" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 5 — Office Online Repair</text>
+  <line x1="440" y1="300" x2="760" y2="300" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="320" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Control Panel > Programs > Office > Change</text>
+  <text x="600" y="340" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Online Repair → full reinstall, needs internet</text>
+  <text x="600" y="352" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">Replaces corrupted Word DLLs</text>
+
+  <text x="400" y="390" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crashes on print? → Printer driver issue (set Microsoft Print to PDF as default to confirm)</text>
+  <text x="400" y="408" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Safe Mode stable → Normal.dotm (Fix 2) or add-in (Fix 3) | Still crashes → font or installation (Fix 4–5)</text>
+</svg>

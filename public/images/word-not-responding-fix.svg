@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Word Not Responding — Fix Path</text>
+
+  <!-- Two-column layout: Safe Mode test result branches -->
+  <rect x="200" y="55" width="400" height="50" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="400" y="75" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#3b82f6" text-anchor="middle">First: Test in Safe Mode</text>
+  <text x="400" y="95" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Win+R → winword /safe → perform the action that freezes Word</text>
+
+  <!-- Branch: Stable in Safe Mode -->
+  <text x="190" y="135" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Stable in Safe Mode</text>
+  <text x="190" y="153" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">→ Add-in or template cause</text>
+
+  <!-- Branch: Still freezes -->
+  <text x="610" y="135" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Still Freezes in Safe Mode</text>
+  <text x="610" y="153" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">→ Installation or driver cause</text>
+
+  <!-- Fix A: Normal.dotm -->
+  <rect x="20" y="165" width="360" height="105" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="200" y="187" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix A — Reset Normal.dotm</text>
+  <line x1="40" y1="195" x2="360" y2="195" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="215" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Close Word completely</text>
+  <text x="200" y="233" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">AppData\Roaming\Microsoft\Templates</text>
+  <text x="200" y="253" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Rename Normal.dotm → Normal.dotm.old</text>
+  <text x="200" y="263" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">Word creates a fresh template on next launch</text>
+
+  <!-- Fix B: Add-ins -->
+  <rect x="20" y="280" width="360" height="90" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="200" y="302" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix B — Disable Add-ins</text>
+  <line x1="40" y1="310" x2="360" y2="310" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="330" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">File &gt; Options &gt; Add-ins &gt; COM Add-ins &gt; Go</text>
+  <text x="200" y="350" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Uncheck all → re-enable one by one</text>
+  <text x="200" y="362" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">Common: Grammarly, Zotero, EndNote</text>
+
+  <!-- Fix C: Hardware acceleration -->
+  <rect x="420" y="165" width="360" height="95" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="600" y="187" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix C — Disable GPU Acceleration</text>
+  <line x1="440" y1="195" x2="760" y2="195" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="215" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">File &gt; Options &gt; Advanced</text>
+  <text x="600" y="235" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">&gt; Display section</text>
+  <text x="600" y="255" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Check: Disable hardware graphics acceleration</text>
+
+  <!-- Fix D: Office Repair -->
+  <rect x="420" y="275" width="360" height="95" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="600" y="297" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix D — Office Quick Repair</text>
+  <line x1="440" y1="305" x2="760" y2="305" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="325" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Control Panel &gt; Programs</text>
+  <text x="600" y="345" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">&gt; Microsoft Office &gt; Change</text>
+  <text x="600" y="365" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Quick Repair (2 min, offline)</text>
+
+  <text x="400" y="406" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Safe Mode result tells you which branch to follow — saves time by skipping wrong fixes</text>
+</svg>

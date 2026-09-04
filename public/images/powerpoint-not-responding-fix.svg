@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">PowerPoint Not Responding — Fix by Trigger</text>
+
+  <!-- Trigger identification -->
+  <rect x="20" y="52" width="185" height="82" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="112" y="72" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">Slideshow freeze</text>
+  <line x1="35" y1="80" x2="190" y2="80" stroke="#2a5236" stroke-width="1"/>
+  <text x="112" y="100" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Freezes during playback,</text>
+  <text x="112" y="116" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">animations, transitions</text>
+
+  <rect x="217" y="52" width="185" height="82" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="309" y="72" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">Add-in freeze</text>
+  <line x1="232" y1="80" x2="387" y2="80" stroke="#2a5236" stroke-width="1"/>
+  <text x="309" y="100" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Stable in Safe Mode,</text>
+  <text x="309" y="116" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">freezes normally</text>
+
+  <rect x="414" y="52" width="185" height="82" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="506" y="72" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Media insert freeze</text>
+  <line x1="429" y1="80" x2="584" y2="80" stroke="#2a5236" stroke-width="1"/>
+  <text x="506" y="100" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Freezes on image/video</text>
+  <text x="506" y="116" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">insert or large file open</text>
+
+  <rect x="611" y="52" width="169" height="82" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="695" y="72" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Always frozen</text>
+  <line x1="626" y1="80" x2="765" y2="80" stroke="#2a5236" stroke-width="1"/>
+  <text x="695" y="100" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Freezes randomly or</text>
+  <text x="695" y="116" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">on every presentation</text>
+
+  <!-- Fix row -->
+  <!-- Fix 1: End Task + Recovery -->
+  <rect x="20" y="155" width="185" height="105" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="112" y="176" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 1 — End Task</text>
+  <line x1="35" y1="184" x2="190" y2="184" stroke="#2a5236" stroke-width="1"/>
+  <text x="112" y="204" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Ctrl+Shift+Esc → POWERPNT</text>
+  <text x="112" y="222" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">End Task → wait 10 sec</text>
+  <text x="112" y="242" font-family="Arial,sans-serif" font-size="11" fill="#A8C4B0" text-anchor="middle">Recovery pane on reopen</text>
+  <text x="112" y="252" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">accept to restore unsaved work</text>
+
+  <!-- Fix 2: Hardware Accel -->
+  <rect x="217" y="155" width="185" height="105" rx="8" fill="#0d1e16" stroke="#FBB03B"/>
+  <text x="309" y="176" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix GPU — Disable HW Accel</text>
+  <line x1="232" y1="184" x2="387" y2="184" stroke="#2a5236" stroke-width="1"/>
+  <text x="309" y="204" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">File > Options > Advanced</text>
+  <text x="309" y="222" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">&gt; Display section</text>
+  <text x="309" y="242" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Disable hardware graphics</text>
+  <text x="309" y="252" font-family="Arial,sans-serif" font-size="10" fill="#FBB03B" text-anchor="middle">acceleration → OK → restart</text>
+
+  <!-- Fix 3: Safe Mode Add-ins -->
+  <rect x="414" y="155" width="185" height="105" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="506" y="176" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix Add-in — Safe Mode</text>
+  <line x1="429" y1="184" x2="584" y2="184" stroke="#2a5236" stroke-width="1"/>
+  <text x="506" y="204" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Win+R → powerpnt /safe</text>
+  <text x="506" y="222" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Options > Add-ins > COM</text>
+  <text x="506" y="242" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Uncheck all → re-enable</text>
+  <text x="506" y="252" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">Grammarly, Zoom, Mentimeter</text>
+
+  <!-- Fix 4: Compress Media -->
+  <rect x="611" y="155" width="169" height="105" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="695" y="176" font-family="Arial,sans-serif" font-size="12" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix Media — Compress</text>
+  <line x1="626" y1="184" x2="765" y2="184" stroke="#2a5236" stroke-width="1"/>
+  <text x="695" y="204" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">File > Compress Media</text>
+  <text x="695" y="222" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">Presentation Quality</text>
+  <text x="695" y="242" font-family="Arial,sans-serif" font-size="11" fill="#D4EAD8" text-anchor="middle">Picture Format > Compress</text>
+  <text x="695" y="252" font-family="Arial,sans-serif" font-size="10" fill="#A8C4B0" text-anchor="middle">Apply to all images</text>
+
+  <!-- Office Quick Repair bottom -->
+  <rect x="20" y="278" width="760" height="72" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="400" y="299" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Last Resort — Office Quick Repair (2 min, offline)</text>
+  <line x1="40" y1="307" x2="760" y2="307" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="327" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Control Panel > Programs > Microsoft Office > Change > Quick Repair</text>
+  <text x="400" y="343" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Still freezing after Quick Repair? Run Online Repair for full reinstall</text>
+
+  <text x="400" y="382" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Slideshow freeze → GPU is the cause, disable hardware acceleration first</text>
+  <text x="400" y="406" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Safe Mode stable → Add-in is the cause; large file freeze → Compress Media reduces memory use</text>
+</svg>

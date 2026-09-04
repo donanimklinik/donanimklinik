@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Microsoft Office Errors — Excel, Word, PowerPoint</text>
+  <text x="400" y="58" font-family="Arial,sans-serif" font-size="13" fill="#A8C4B0" text-anchor="middle">Select the error type that matches your situation</text>
+
+  <!-- Column 1: Not Responding / Freeze -->
+  <rect x="20" y="72" width="235" height="300" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="137" y="96" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Freezes / Not Responding</text>
+  <line x1="40" y1="106" x2="235" y2="106" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="126" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">Title bar: "Not Responding"</text>
+  <text x="137" y="146" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">No input accepted</text>
+  <text x="137" y="164" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Hangs on save or print</text>
+  <line x1="40" y1="180" x2="235" y2="180" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="200" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: Disable hardware</text>
+  <text x="137" y="218" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">acceleration</text>
+  <text x="137" y="244" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: Open in Safe Mode,</text>
+  <text x="137" y="262" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">disable add-ins</text>
+  <text x="137" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Office Quick Repair</text>
+  <rect x="45" y="342" width="180" height="20" rx="4" fill="#1a3a28"/>
+  <text x="137" y="356" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">Excel / Word / PPT guides</text>
+
+  <!-- Column 2: Crashes -->
+  <rect x="282" y="72" width="235" height="300" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="399" y="96" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Crashes / Closes Suddenly</text>
+  <line x1="302" y1="106" x2="497" y2="106" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="126" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">Closes without warning</text>
+  <text x="399" y="146" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Crashes when saving</text>
+  <text x="399" y="164" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Crashes on specific file</text>
+  <line x1="302" y1="180" x2="497" y2="180" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="200" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: Event Viewer —</text>
+  <text x="399" y="218" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">find faulting module</text>
+  <text x="399" y="244" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: Disable add-ins,</text>
+  <text x="399" y="262" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">reset Normal.dotm (Word)</text>
+  <text x="399" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Office Online Repair</text>
+  <rect x="308" y="342" width="180" height="20" rx="4" fill="#1a3a28"/>
+  <text x="399" y="356" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">Excel / Word crash guides</text>
+
+  <!-- Column 3: File Not Opening -->
+  <rect x="544" y="72" width="235" height="300" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="661" y="96" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">File Won't Open</text>
+  <line x1="564" y1="106" x2="759" y2="106" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="126" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">"Cannot open the file"</text>
+  <text x="661" y="146" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Blank screen on open</text>
+  <text x="661" y="164" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Opens in wrong app</text>
+  <line x1="564" y1="180" x2="759" y2="180" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="200" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: Protected View —</text>
+  <text x="661" y="218" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">click Enable Editing</text>
+  <text x="661" y="244" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: File > Open >  </text>
+  <text x="661" y="262" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Open and Repair</text>
+  <text x="661" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Fix file association</text>
+  <rect x="571" y="342" width="180" height="20" rx="4" fill="#1a3a28"/>
+  <text x="661" y="356" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">Excel / Word file guides</text>
+
+  <text x="400" y="406" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">All fixes based on Microsoft's official Office troubleshooting documentation</text>
+</svg>
