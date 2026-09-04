@@ -103,6 +103,10 @@ function checkScrollProgress(html, label) {
   check(`${label} — Scroll progress bar present`, html.includes('id="scroll-progress"'));
 }
 
+function checkStepCounter(html, label) {
+  check(`${label} — Step resume strip present`, html.includes('id="step-resume"'));
+}
+
 // ─── Run all checks ───────────────────────────────────────────────────────────
 
 console.log('\n📋 DonanimKlinik — Build Verification\n');
@@ -140,6 +144,7 @@ for (const { label, path } of SAMPLES) {
       checkFeedbackWidget(html, label);
       checkCopyButton(html, label);
       checkScrollProgress(html, label);
+      checkStepCounter(html, label);
     }
   }
 }

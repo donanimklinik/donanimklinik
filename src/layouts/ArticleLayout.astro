@@ -192,6 +192,9 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <!-- SLOT A: above article — add slotId after AdSense approval, ezoicId=101 after Ezoic switch -->
     <AdUnit position="top" />
 
+    <!-- Step resume strip: shown by JS only to return visitors -->
+    <div id="step-resume" hidden></div>
+
     <!-- Article content -->
     <article class="article-body" data-copy-buttons>
       <slot />
@@ -383,6 +386,67 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   }
   #lb-close:hover { border-color: #00E5A0; color: #00E5A0; }
 
+  /* ── Step indicator pill ── */
+  :global(#step-indicator) {
+    position: fixed;
+    top: 0.55rem;
+    right: 1rem;
+    z-index: 9997;
+    background: #0d1e16;
+    border: 1px solid #1e3a22;
+    border-radius: 20px;
+    padding: 0.22rem 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #4a7a5a;
+    opacity: 0;
+    transition: opacity .2s;
+    pointer-events: none;
+  }
+
+  /* ── Step resume strip ── */
+  :global(#step-resume) {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    padding: 0.7rem 1rem;
+    background: #0d1e16;
+    border: 1px solid #1e3a22;
+    border-left: 3px solid #00E5A0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    font-size: 0.84rem;
+  }
+  :global(#step-resume[hidden]) { display: none; }
+  :global(.resume-text) { color: #A8C4B0; flex: 1; min-width: 0; }
+  :global(.resume-text strong) { color: #D4EAD8; }
+  :global(.resume-jump) {
+    background: #0d2e1a;
+    border: 1px solid #2a5236;
+    color: #00E5A0;
+    border-radius: 5px;
+    padding: 0.28rem 0.7rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+  :global(.resume-jump:hover) { border-color: #00E5A0; }
+  :global(.resume-dismiss) {
+    background: none;
+    border: none;
+    color: #4a7a5a;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0 0.2rem;
+    line-height: 1;
+    font-family: inherit;
+  }
+  :global(.resume-dismiss:hover) { color: #A8C4B0; }
+
   /* ── Scroll progress bar ── */
   #scroll-progress {
     position: fixed;
@@ -496,5 +560,89 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     }
     window.addEventListener('scroll', updateBar, { passive: true });
     updateBar();
+  }
+</script>
+
+<script>
+  // Step counter + localStorage checkpoint
+  const article = document.querySelector('.article-body');
+  const headings = article
+    ? (Array.from(article.querySelectorAll('h2')) as HTMLElement[])
+    : [];
+
+  if (headings.length > 1) {
+    const totalSteps = headings.length;
+    const STORAGE_KEY = 'dk_ckpt_' + window.location.pathname;
+    const EXPIRY = 72 * 60 * 60 * 1000;
+
+    // Step indicator pill (dynamically created)
+    const stepPill = document.createElement('div');
+    stepPill.id = 'step-indicator';
+    stepPill.setAttribute('aria-live', 'polite');
+    stepPill.setAttribute('aria-atomic', 'true');
+    document.body.appendChild(stepPill);
+
+    let lastStep = -1;
+    function updateStep() {
+      const scrolled = window.scrollY / Math.max(1, document.body.scrollHeight - window.innerHeight);
+      let step = 0;
+      headings.forEach((h, i) => {
+        if (h.getBoundingClientRect().top <= 120) step = i;
+      });
+      stepPill.style.opacity = scrolled >= 0.25 ? '1' : '0';
+      if (step !== lastStep) {
+        lastStep = step;
+        stepPill.textContent = `Step ${step + 1} / ${totalSteps}`;
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify({
+            step,
+            heading: headings[step].textContent?.trim() ?? '',
+            ts: Date.now(),
+          }));
+        } catch {}
+      }
+    }
+    window.addEventListener('scroll', updateStep, { passive: true });
+    updateStep();
+
+    // Resume strip: shown only to return visitors
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+      if (saved && (Date.now() - saved.ts) < EXPIRY && saved.step > 0 && headings[saved.step]) {
+        const strip = document.getElementById('step-resume');
+        if (strip) {
+          const textEl = document.createElement('span');
+          textEl.className = 'resume-text';
+          textEl.textContent = 'Continue from: ';
+          const strong = document.createElement('strong');
+          strong.textContent = saved.heading;
+          textEl.appendChild(strong);
+
+          const jumpBtn = document.createElement('button');
+          jumpBtn.className = 'resume-jump';
+          jumpBtn.type = 'button';
+          jumpBtn.textContent = 'Jump ↓';
+          jumpBtn.addEventListener('click', () => {
+            strip.hidden = true;
+            headings[saved.step].scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+
+          const dismissBtn = document.createElement('button');
+          dismissBtn.className = 'resume-dismiss';
+          dismissBtn.type = 'button';
+          dismissBtn.setAttribute('aria-label', 'Dismiss');
+          dismissBtn.textContent = '✕';
+          dismissBtn.addEventListener('click', () => {
+            strip.hidden = true;
+            try { localStorage.removeItem(STORAGE_KEY); } catch {}
+          });
+
+          strip.appendChild(textEl);
+          strip.appendChild(jumpBtn);
+          strip.appendChild(dismissBtn);
+          strip.hidden = false;
+        }
+      }
+    } catch {}
   }
 </script>
