@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "Launch Word in Safe Mode (winword /safe) to test stability — Safe Mode Word = add-in or Normal.dotm template is causing the crashes. Full guide shows exactly which file to delete or disable."
+fix_time_display: "~6 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

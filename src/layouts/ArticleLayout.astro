@@ -2,6 +2,7 @@
 import Layout from './Layout.astro';
 import AdUnit from '../components/AdUnit.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
+import AnswerCard from '../components/AnswerCard.astro';
 
 interface Props {
   title: string;
@@ -19,6 +20,9 @@ interface Props {
   faq?: { q: string; a: string }[];
   pillarName?: string;
   pillarSlug?: string;
+  fixSummary?: string;
+  fixTime?: string;
+  fixDifficulty?: 'Easy' | 'Medium' | 'Hard';
 }
 
 const {
@@ -37,6 +41,9 @@ const {
   faq,
   pillarName,
   pillarSlug,
+  fixSummary,
+  fixTime,
+  fixDifficulty,
 } = Astro.props;
 
 const faqSchema = faq && faq.length > 0 ? {
@@ -175,6 +182,10 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   </div>
 
   <div class="wrap">
+    {fixSummary && (
+      <AnswerCard summary={fixSummary} time={fixTime} difficulty={fixDifficulty} />
+    )}
+
     <!-- SLOT A: above article — add slotId after AdSense approval, ezoicId=101 after Ezoic switch -->
     <AdUnit position="top" />
 

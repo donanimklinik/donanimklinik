@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "Open Excel in Safe Mode (hold Ctrl while launching) — if crashes stop, a COM add-in is the culprit. Go to File › Options › Add-ins, select COM Add-ins, and disable them one by one to find it."
+fix_time_display: "~8 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

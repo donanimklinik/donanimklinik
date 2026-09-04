@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "A yellow Protected View bar at the top means Excel blocked the file as unsafe — click Enable Editing to fix it instantly. If the file opens blank, use File › Open › Recover Unsaved Workbooks."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

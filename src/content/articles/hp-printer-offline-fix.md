@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 5
+fix_summary: "The most common cause is Windows enabling 'Use Printer Offline' mode — open the print queue (Settings › Printers › your printer › Open print queue › Printer menu) and uncheck it."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

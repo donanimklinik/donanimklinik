@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "Running Word in Safe Mode (winword /safe from Run dialog) reveals the root cause instantly — if Word is stable in Safe Mode, a COM add-in or corrupted Normal.dotm template is the culprit."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

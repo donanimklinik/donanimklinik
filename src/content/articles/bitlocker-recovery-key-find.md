@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01
 read_time: 6
+fix_summary: "Your 48-digit recovery key is saved to your Microsoft account — sign in at account.microsoft.com, go to Devices, and look for BitLocker Keys under your device's details."
+fix_time_display: "~2 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: true
 top_search_queries:

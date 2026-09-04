@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "Disabling hardware graphics acceleration (File › Options › Advanced › Display section) stops most PowerPoint freezes caused by GPU driver conflicts — takes 30 seconds to toggle."
+fix_time_display: "~3 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

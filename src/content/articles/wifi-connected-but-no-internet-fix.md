@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02
 read_time: 6
+fix_summary: "Flushing DNS (ipconfig /flushdns) and resetting Winsock (netsh winsock reset) clears the stale network state causing 'connected but no internet' — run both commands and restart."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

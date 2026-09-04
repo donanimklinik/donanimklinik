@@ -1,0 +1,92 @@
+---
+interface Props {
+  summary: string;
+  time?: string;
+  difficulty?: 'Easy' | 'Medium' | 'Hard';
+}
+
+const { summary, time, difficulty } = Astro.props;
+
+const difficultyColor: Record<string, string> = {
+  Easy:   '#00E5A0',
+  Medium: '#F59E0B',
+  Hard:   '#EF4444',
+};
+const diffColor = difficulty ? difficultyColor[difficulty] : '#A8C4B0';
+---
+
+<div class="answer-card">
+  <div class="answer-card-header">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" width="17" height="17" aria-hidden="true">
+      <circle cx="10" cy="10" r="8" stroke="#00E5A0" stroke-width="1.5"/>
+      <path d="M7 10l2 2 4-4" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="answer-card-label">Quick Fix</span>
+  </div>
+  <p class="answer-card-summary">{summary}</p>
+  <div class="answer-card-footer">
+    {time && <span class="answer-card-badge">{time}</span>}
+    {difficulty && (
+      <span class="answer-card-badge answer-card-badge--diff"
+            style={`color:${diffColor};border-color:${diffColor}40;`}>
+        {difficulty}
+      </span>
+    )}
+    <span class="answer-card-cta">Full steps below ↓</span>
+  </div>
+</div>
+
+<style>
+  .answer-card {
+    background: #0d1e16;
+    border: 1px solid #1e3a22;
+    border-left: 3px solid #00E5A0;
+    border-radius: 8px;
+    padding: 1.2rem 1.4rem;
+    margin: 0 0 2rem;
+    max-width: 720px;
+  }
+  .answer-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.7rem;
+  }
+  .answer-card-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #00E5A0;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .answer-card-summary {
+    color: #D4EAD8;
+    font-size: 0.96rem;
+    line-height: 1.65;
+    margin: 0 0 0.9rem;
+  }
+  .answer-card-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .answer-card-badge {
+    display: inline-block;
+    padding: 0.18rem 0.5rem;
+    border: 1px solid #2a5236;
+    border-radius: 4px;
+    font-size: 0.77rem;
+    font-weight: 600;
+    color: #A8C4B0;
+    background: #091510;
+    white-space: nowrap;
+  }
+  .answer-card-cta {
+    margin-left: auto;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #00E5A0;
+    opacity: 0.75;
+  }
+</style>

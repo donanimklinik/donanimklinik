@@ -84,8 +84,7 @@ function checkHub(html, label) {
 
 // ─── Future feature checks (activate when feature is shipped) ─────────────────
 function checkAnswerCard(html, label) {
-  // Uncomment after Feature 1 (Answer Card) is shipped:
-  // check(`${label} — Answer Card present`, html.includes('class="answer-card"'));
+  check(`${label} — Answer Card present`, html.includes('class="answer-card"'));
 }
 
 function checkHubPill(html, label) {

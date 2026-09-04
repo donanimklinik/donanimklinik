@@ -9,6 +9,9 @@ source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
 read_time: 6
+fix_summary: "Disabling COM add-ins in Safe Mode (hold Ctrl + open Excel) isolates the culprit in under 2 minutes — if Excel runs normally in Safe Mode, one bad add-in is causing the freeze."
+fix_time_display: "~5 min"
+fix_difficulty: Easy
 schema_type: HowTo
 featured: false
 top_search_queries:

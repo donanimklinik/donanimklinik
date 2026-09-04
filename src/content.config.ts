@@ -23,6 +23,9 @@ const articles = defineCollection({
     read_time: z.number().optional(),
     schema_type: z.enum(['Article', 'HowTo', 'FAQPage']).default('Article'),
     featured: z.boolean().default(false),
+    fix_summary: z.string().optional(),
+    fix_time_display: z.string().optional(),
+    fix_difficulty: z.enum(['Easy', 'Medium', 'Hard']).optional(),
   }),
 });
 
