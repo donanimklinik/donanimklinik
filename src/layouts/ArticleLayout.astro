@@ -689,8 +689,14 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   // H2 accent reveal — step badge + gradient sweep
   const h2s = document.querySelectorAll('.article-body h2');
   if (h2s.length && 'IntersectionObserver' in window) {
-    // Assign step numbers via data attr (doesn't affect textContent)
-    h2s.forEach((h, i) => h.setAttribute('data-step-num', String(i + 1).padStart(2, '0')));
+    // Only badge "action" H2s — skip context sections
+    const NON_STEP = /what causes|how to verify|frequently asked|faq|overview|introduction/i;
+    let stepIndex = 0;
+    h2s.forEach(h => {
+      if (!NON_STEP.test(h.textContent?.trim() ?? '')) {
+        h.setAttribute('data-step-num', String(++stepIndex).padStart(2, '0'));
+      }
+    });
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
