@@ -5,6 +5,7 @@ import RelatedArticles from '../components/RelatedArticles.astro';
 import AnswerCard from '../components/AnswerCard.astro';
 import RelatedChips from '../components/RelatedChips.astro';
 import HubPill from '../components/HubPill.astro';
+import FeedbackWidget from '../components/FeedbackWidget.astro';
 
 interface Props {
   title: string;
@@ -220,6 +221,14 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
         ))}
       </section>
     )}
+
+    <!-- Feedback widget -->
+    <FeedbackWidget
+      relatedArticles={relatedArticles}
+      pillarName={pillarName}
+      pillarSlug={pillarSlug}
+      category={category}
+    />
 
     <!-- Source citation -->
     <aside class="source-section">

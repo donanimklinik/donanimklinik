@@ -91,8 +91,12 @@ function checkHubPill(html, label) {
   check(`${label} — Hub pill present`, html.includes('class="hub-pill"'));
 }
 
+function checkFeedbackWidget(html, label) {
+  check(`${label} — Feedback widget present`, html.includes('class="feedback-widget"'));
+}
+
 function checkCopyButton(html, label) {
-  // Uncomment after Feature 5 (Copy Button) is shipped:
+  // Uncomment after Feature 6 (Copy Button) is shipped:
   // check(`${label} — Copy button JS`, html.includes('copy-btn'));
 }
 
@@ -130,6 +134,7 @@ for (const { label, path } of SAMPLES) {
       checkArticle(html, label);
       checkAnswerCard(html, label);
       checkHubPill(html, label);
+      checkFeedbackWidget(html, label);
       checkCopyButton(html, label);
     }
   }

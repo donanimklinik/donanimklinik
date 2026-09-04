@@ -1,0 +1,203 @@
+---
+interface Article {
+  id: string;
+  title: string;
+  category: string;
+  readTime?: number;
+}
+
+interface Props {
+  relatedArticles?: Article[];
+  pillarName?: string;
+  pillarSlug?: string;
+  category: string;
+}
+
+const { relatedArticles = [], pillarName, category, pillarSlug } = Astro.props;
+const hubHref = pillarName && pillarSlug ? `/${category}/${pillarSlug}/` : `/${category}/`;
+---
+
+<div class="feedback-widget" id="feedback-widget">
+  <div class="feedback-question" id="fb-question">
+    <p class="feedback-label">Did this fix your problem?</p>
+    <div class="feedback-btns">
+      <button class="fb-btn fb-yes" id="fb-yes" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true">
+          <path d="M3 8l3.5 3.5L13 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Yes, fixed it
+      </button>
+      <button class="fb-btn fb-no" id="fb-no" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true">
+          <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        Still not working
+      </button>
+    </div>
+  </div>
+
+  <!-- Yes response -->
+  <div class="feedback-response fb-response-yes" id="fb-resp-yes" hidden>
+    <div class="fb-resp-header fb-resp-header--yes">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" width="18" height="18" aria-hidden="true">
+        <circle cx="10" cy="10" r="8" stroke="#00E5A0" stroke-width="1.5"/>
+        <path d="M7 10l2 2 4-4" stroke="#00E5A0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Great! Check these related guides:</span>
+    </div>
+    {relatedArticles.length > 0 && (
+      <div class="fb-chips">
+        {relatedArticles.slice(0, 3).map((a) => (
+          <a href={`/${a.category}/${a.id}/`} class="fb-chip">
+            <span>{a.title}</span>
+            {a.readTime && <span class="fb-chip-time">{a.readTime} min</span>}
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+
+  <!-- No response -->
+  <div class="feedback-response fb-response-no" id="fb-resp-no" hidden>
+    <div class="fb-resp-header fb-resp-header--no">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" width="18" height="18" aria-hidden="true">
+        <circle cx="10" cy="10" r="8" stroke="#F59E0B" stroke-width="1.5"/>
+        <path d="M10 6v5M10 13.5v.5" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <span>Try these next:</span>
+    </div>
+    <ul class="fb-no-list">
+      <li>Double-check each step above — a missed detail is the most common cause</li>
+      <li>Run the steps as Administrator (right-click > Run as administrator)</li>
+      <li>Restart your computer after each fix before testing again</li>
+    </ul>
+    {pillarName && (
+      <a href={hubHref} class="fb-hub-link">
+        See all {pillarName} guides →
+      </a>
+    )}
+  </div>
+</div>
+
+<style>
+  .feedback-widget {
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    padding: 1.25rem 1.4rem;
+    background: #0d1e16;
+    border: 1px solid #1e3a22;
+    border-radius: 8px;
+  }
+  .feedback-label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #D4EAD8;
+    margin: 0 0 0.9rem;
+  }
+  .feedback-btns {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+  .fb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .fb-yes {
+    background: #0d2e1a;
+    border-color: #2a5236;
+    color: #00E5A0;
+  }
+  .fb-yes:hover { background: #112e1d; border-color: #00E5A0; }
+  .fb-no {
+    background: #1e1a0d;
+    border-color: #3d3318;
+    color: #A8C4B0;
+  }
+  .fb-no:hover { background: #241e0d; border-color: #F59E0B; color: #F59E0B; }
+
+  /* Responses */
+  .feedback-response { padding-top: 0.2rem; }
+  .fb-resp-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.85rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  .fb-resp-header--yes { color: #00E5A0; }
+  .fb-resp-header--no  { color: #F59E0B; }
+
+  /* Yes chips */
+  .fb-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .fb-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.38rem 0.8rem;
+    background: #091510;
+    border: 1px solid #1e3a22;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.81rem;
+    font-weight: 500;
+    color: #D4EAD8;
+    transition: border-color .15s;
+    max-width: 100%;
+  }
+  .fb-chip:hover { border-color: #00E5A0; }
+  .fb-chip-time { font-size: 0.72rem; color: #4a7a5a; flex-shrink: 0; }
+
+  /* No list */
+  .fb-no-list {
+    margin: 0 0 0.9rem 1.1rem;
+    padding: 0;
+    color: #A8C4B0;
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+  .fb-hub-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #00E5A0;
+    text-decoration: none;
+  }
+  .fb-hub-link:hover { text-decoration: underline; }
+</style>
+
+<script>
+  const question  = document.getElementById('fb-question');
+  const respYes   = document.getElementById('fb-resp-yes');
+  const respNo    = document.getElementById('fb-resp-no');
+
+  function sendGA(result: string) {
+    if (typeof (window as any).gtag === 'function') {
+      (window as any).gtag('event', 'fix_feedback', {
+        result,
+        page_path: window.location.pathname,
+      });
+    }
+  }
+
+  document.getElementById('fb-yes')?.addEventListener('click', () => {
+    question!.hidden = true;
+    respYes!.hidden = false;
+    sendGA('yes');
+  });
+
+  document.getElementById('fb-no')?.addEventListener('click', () => {
+    question!.hidden = true;
+    respNo!.hidden = false;
+    sendGA('no');
+  });
+</script>
