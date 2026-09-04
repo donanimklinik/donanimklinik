@@ -65,6 +65,7 @@ const breadcrumbSchema = {
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify(hubSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    <meta name="ezoic-category" content={category} />
   </Fragment>
 
   <div class="page-header">
