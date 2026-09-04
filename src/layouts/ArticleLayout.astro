@@ -323,18 +323,41 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     font-size: 0.92rem;
   }
 
-  /* ── H2 accent reveal ── */
-  .article-body h2::after {
+  /* ── H2 accent reveal — step badge + gradient sweep ── */
+  :global(.article-body h2[data-step-num])::before {
+    content: attr(data-step-num);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #0d2e1a;
+    border: 1px solid #2a5236;
+    border-radius: 5px;
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: #00E5A0;
+    font-family: 'IBM Plex Mono', monospace;
+    margin-right: 0.55rem;
+    vertical-align: middle;
+    flex-shrink: 0;
+    transform: scale(0) rotate(-12deg);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  :global(.article-body h2.h2-revealed[data-step-num])::before {
+    transform: scale(1) rotate(0deg);
+  }
+  :global(.article-body h2)::after {
     content: '';
     display: block;
-    height: 3px;
-    background: #00E5A0;
-    width: 0;
-    margin-top: 5px;
-    border-radius: 2px;
-    transition: width .45s ease;
+    height: 2px;
+    background: linear-gradient(90deg, #00E5A0 0%, rgba(0,229,160,0.35) 55%, transparent 100%);
+    width: 0%;
+    margin-top: 6px;
+    border-radius: 1px;
+    transition: width 0.55s ease 0.18s;
   }
-  .article-body h2.h2-revealed::after { width: 40px; }
+  :global(.article-body h2.h2-revealed)::after { width: 100%; }
 
   /* ── Article images ── */
   .article-body img {
@@ -663,9 +686,12 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
 </script>
 
 <script>
-  // H2 accent reveal on scroll into view
+  // H2 accent reveal — step badge + gradient sweep
   const h2s = document.querySelectorAll('.article-body h2');
   if (h2s.length && 'IntersectionObserver' in window) {
+    // Assign step numbers via data attr (doesn't affect textContent)
+    h2s.forEach((h, i) => h.setAttribute('data-step-num', String(i + 1).padStart(2, '0')));
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -673,8 +699,8 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
           observer.unobserve(entry.target);
         }
       });
-    }, { rootMargin: '0px 0px -15% 0px' });
-    // Delay ensures browser paints initial width:0 state before observer fires
+    }, { rootMargin: '0px 0px -12% 0px' });
+    // Delay ensures browser paints initial state before observer fires
     setTimeout(() => h2s.forEach(h => observer.observe(h)), 120);
   }
 </script>
