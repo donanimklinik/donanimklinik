@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Adobe Acrobat Not Opening — Fix Path</text>
+
+  <!-- Step 1 -->
+  <rect x="20" y="60" width="220" height="155" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="130" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 1</text>
+  <text x="130" y="105" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">Task Manager</text>
+  <line x1="40" y1="115" x2="220" y2="115" stroke="#2a5236" stroke-width="1"/>
+  <text x="130" y="135" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Ctrl + Shift + Esc</text>
+  <text x="130" y="155" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Find AcroRd32.exe</text>
+  <text x="130" y="175" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or Acrobat.exe</text>
+  <text x="130" y="200" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">→ End Task</text>
+
+  <!-- Arrow 1→2 -->
+  <text x="252" y="145" font-family="Arial,sans-serif" font-size="22" fill="#2a5236" text-anchor="middle">→</text>
+
+  <!-- Step 2 -->
+  <rect x="275" y="60" width="220" height="155" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="385" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 2</text>
+  <text x="385" y="105" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">Run as Administrator</text>
+  <line x1="295" y1="115" x2="475" y2="115" stroke="#2a5236" stroke-width="1"/>
+  <text x="385" y="135" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Right-click Acrobat icon</text>
+  <text x="385" y="155" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Select Run as</text>
+  <text x="385" y="175" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">administrator</text>
+  <text x="385" y="200" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">→ Test if it opens</text>
+
+  <!-- Arrow 2→3 -->
+  <text x="507" y="145" font-family="Arial,sans-serif" font-size="22" fill="#2a5236" text-anchor="middle">→</text>
+
+  <!-- Step 3 -->
+  <rect x="530" y="60" width="250" height="155" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="655" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Step 3</text>
+  <text x="655" y="105" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">Repair Installation</text>
+  <line x1="550" y1="115" x2="760" y2="115" stroke="#2a5236" stroke-width="1"/>
+  <text x="655" y="135" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Acrobat: Help menu</text>
+  <text x="655" y="155" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">&gt; Repair Installation</text>
+  <text x="655" y="175" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Or: Control Panel</text>
+  <text x="655" y="200" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">→ Change &gt; Repair</text>
+
+  <!-- Protected Mode Panel -->
+  <rect x="20" y="240" width="365" height="120" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="202" y="265" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">If Still Not Opening: Disable Protected Mode</text>
+  <line x1="40" y1="275" x2="365" y2="275" stroke="#2a5236" stroke-width="1"/>
+  <text x="202" y="296" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Edit &gt; Preferences &gt; Security (Enhanced)</text>
+  <text x="202" y="316" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Uncheck: Enable Protected Mode at Startup</text>
+  <text x="202" y="344" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Registry path if Acrobat won't open:</text>
+  <text x="202" y="362" font-family="Arial,sans-serif" font-size="11" fill="#FBB03B" text-anchor="middle">HKCU\Software\Adobe\Acrobat Reader\&lt;ver&gt;\Privileged → bProtectedMode = 0</text>
+
+  <!-- Reinstall Panel -->
+  <rect x="415" y="240" width="365" height="120" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="597" y="265" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Last Resort: Reinstall</text>
+  <line x1="435" y1="275" x2="760" y2="275" stroke="#2a5236" stroke-width="1"/>
+  <text x="597" y="296" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Uninstall from Control Panel</text>
+  <text x="597" y="316" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Download latest installer from Adobe</text>
+  <text x="597" y="340" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Your PDF documents are not affected</text>
+  <text x="597" y="358" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">by uninstalling Acrobat</text>
+
+  <text x="400" y="406" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Most users resolve this at Step 1 (end stuck process) or Step 3 (repair installation)</text>
+</svg>

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Adobe Acrobat Not Working — Fix by Symptom</text>
+
+  <!-- Symptom columns -->
+  <!-- Print/Save fails -->
+  <rect x="20" y="58" width="230" height="75" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="135" y="78" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Print / Save Fails</text>
+  <text x="135" y="98" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Command does nothing,</text>
+  <text x="135" y="116" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or silently produces no output</text>
+
+  <!-- Tools greyed out -->
+  <rect x="285" y="58" width="230" height="75" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="400" y="78" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Tools Greyed Out</text>
+  <text x="400" y="98" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Edit, export, or sign tools</text>
+  <text x="400" y="116" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">are disabled or missing</text>
+
+  <!-- Erratic behavior -->
+  <rect x="550" y="58" width="230" height="75" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="665" y="78" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">Erratic Behavior</text>
+  <text x="665" y="98" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Features worked before,</text>
+  <text x="665" y="116" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">broken after update</text>
+
+  <!-- Arrows down -->
+  <line x1="135" y1="133" x2="135" y2="150" stroke="#2a5236" stroke-width="2"/>
+  <polygon points="129,150 141,150 135,160" fill="#2a5236"/>
+  <line x1="400" y1="133" x2="400" y2="150" stroke="#2a5236" stroke-width="2"/>
+  <polygon points="394,150 406,150 400,160" fill="#2a5236"/>
+  <line x1="665" y1="133" x2="665" y2="150" stroke="#2a5236" stroke-width="2"/>
+  <polygon points="659,150 671,150 665,160" fill="#2a5236"/>
+
+  <!-- Fix panels -->
+  <!-- Fix for print/save -->
+  <rect x="20" y="162" width="230" height="100" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="135" y="182" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix: Run as Administrator</text>
+  <line x1="40" y1="190" x2="230" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="135" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Right-click Acrobat</text>
+  <text x="135" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">→ Run as administrator</text>
+  <text x="135" y="252" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fixes permission-based failures</text>
+
+  <!-- Fix for greyed out -->
+  <rect x="285" y="162" width="230" height="100" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="400" y="182" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix: Check License</text>
+  <line x1="305" y1="190" x2="495" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Help &gt; Sign In</text>
+  <text x="400" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Verify subscription active</text>
+  <text x="400" y="252" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Sign out, then sign back in</text>
+
+  <!-- Fix for erratic -->
+  <rect x="550" y="162" width="230" height="100" rx="8" fill="#0d1e16" stroke="#4ade80"/>
+  <text x="665" y="182" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix: Repair Installation</text>
+  <line x1="570" y1="190" x2="760" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="665" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Help &gt; Repair Installation</text>
+  <text x="665" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Replaces changed files</text>
+  <text x="665" y="252" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fixes partial update damage</text>
+
+  <!-- Bottom: Reset Preferences -->
+  <rect x="20" y="280" width="760" height="110" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="400" y="303" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">If All Features Misbehave: Reset Preferences</text>
+  <line x1="40" y1="312" x2="760" y2="312" stroke="#2a5236" stroke-width="1"/>
+  <text x="400" y="333" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Close Acrobat → Hold Ctrl + Shift + Alt → Launch Acrobat → Click Yes to delete settings</text>
+  <text x="400" y="355" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Resets all preferences to defaults — your PDF documents are not affected</text>
+  <text x="400" y="377" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Last resort: Uninstall → Reinstall latest Acrobat from Adobe's website</text>
+</svg>

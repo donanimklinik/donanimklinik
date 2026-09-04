@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <!-- Title -->
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Adobe Acrobat Error Types</text>
+  <text x="400" y="58" font-family="Arial,sans-serif" font-size="13" fill="#A8C4B0" text-anchor="middle">Select the error category that matches your situation</text>
+
+  <!-- Panel 1: Launch Failures -->
+  <rect x="20" y="75" width="235" height="310" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="137" y="103" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#4ade80" text-anchor="middle">Launch Failures</text>
+  <line x1="40" y1="112" x2="235" y2="112" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="135" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">Nothing happens on click</text>
+  <text x="137" y="158" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Loading screen disappears</text>
+  <text x="137" y="181" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">"Has stopped working" error</text>
+  <line x1="40" y1="198" x2="235" y2="198" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="220" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: End AcroRd32.exe</text>
+  <text x="137" y="240" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">in Task Manager</text>
+  <text x="137" y="268" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: Help &gt; Repair</text>
+  <text x="137" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Installation</text>
+  <text x="137" y="316" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Disable Protected</text>
+  <text x="137" y="336" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Mode / Reinstall</text>
+  <rect x="50" y="352" width="175" height="22" rx="4" fill="#1a3a28"/>
+  <text x="137" y="367" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">Acrobat Not Opening Fix</text>
+
+  <!-- Panel 2: Crash & Freeze -->
+  <rect x="282" y="75" width="235" height="310" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="399" y="103" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#4ade80" text-anchor="middle">Crash &amp; Freeze</text>
+  <line x1="302" y1="112" x2="497" y2="112" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="135" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">Closes without warning</text>
+  <text x="399" y="158" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Title bar: "Not Responding"</text>
+  <text x="399" y="181" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Hangs on print or save</text>
+  <line x1="302" y1="198" x2="497" y2="198" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="220" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: Disable hardware</text>
+  <text x="399" y="240" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">acceleration (GPU)</text>
+  <text x="399" y="268" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: Clear Acrobat</text>
+  <text x="399" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">cache folder</text>
+  <text x="399" y="316" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Repair Installation</text>
+  <text x="399" y="336" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">+ disable plugins</text>
+  <rect x="310" y="352" width="175" height="22" rx="4" fill="#1a3a28"/>
+  <text x="399" y="367" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">Crashing / Not Responding</text>
+
+  <!-- Panel 3: PDF Display / Feature Issues -->
+  <rect x="544" y="75" width="235" height="310" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="661" y="103" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#4ade80" text-anchor="middle">PDF &amp; Feature Issues</text>
+  <line x1="564" y1="112" x2="759" y2="112" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="135" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">Blank page on PDF open</text>
+  <text x="661" y="158" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Print / Save not working</text>
+  <text x="661" y="181" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Tools greyed out</text>
+  <line x1="564" y1="198" x2="759" y2="198" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="220" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 1: Re-download PDF</text>
+  <text x="661" y="240" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or clear Acrobat cache</text>
+  <text x="661" y="268" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 2: Reset preferences</text>
+  <text x="661" y="288" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or reactivate license</text>
+  <text x="661" y="316" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Fix 3: Repair Installation</text>
+  <text x="661" y="336" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or reinstall Acrobat</text>
+  <rect x="574" y="352" width="175" height="22" rx="4" fill="#1a3a28"/>
+  <text x="661" y="367" font-family="Arial,sans-serif" font-size="12" fill="#00E5A0" text-anchor="middle">PDF / Feature Fix Guides</text>
+
+  <!-- Bottom line -->
+  <text x="400" y="408" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">All fixes based on Adobe's official troubleshooting documentation</text>
+</svg>

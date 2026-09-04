@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Adobe Acrobat Keeps Crashing — Causes &amp; Fixes</text>
+
+  <!-- Cause 1: GPU -->
+  <rect x="20" y="60" width="235" height="250" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="137" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Cause 1</text>
+  <text x="137" y="104" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">GPU / Hardware Acceleration</text>
+  <line x1="40" y1="114" x2="235" y2="114" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="134" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Most common crash cause</text>
+  <text x="137" y="155" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crashes when scrolling,</text>
+  <text x="137" y="173" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">printing, or zooming</text>
+  <line x1="40" y1="190" x2="235" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="137" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Fix: Edit &gt; Preferences</text>
+  <text x="137" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">&gt; Page Display</text>
+  <text x="137" y="246" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">&gt; Rendering</text>
+  <text x="137" y="272" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Uncheck: Enable hardware</text>
+  <text x="137" y="290" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">acceleration</text>
+
+  <!-- Cause 2: Cache -->
+  <rect x="282" y="60" width="235" height="250" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="399" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Cause 2</text>
+  <text x="399" y="104" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">Corrupted Cache</text>
+  <line x1="302" y1="114" x2="497" y2="114" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="134" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crashes on specific files</text>
+  <text x="399" y="155" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">or after several minutes</text>
+  <text x="399" y="173" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">of use</text>
+  <line x1="302" y1="190" x2="497" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="399" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Fix: Navigate to</text>
+  <text x="399" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">AppData\Local\Adobe</text>
+  <text x="399" y="246" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">\Acrobat\Cache</text>
+  <text x="399" y="272" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Delete all files inside</text>
+  <text x="399" y="290" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">the Cache folder</text>
+
+  <!-- Cause 3: Installation / Plugins -->
+  <rect x="544" y="60" width="235" height="250" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="661" y="84" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Cause 3</text>
+  <text x="661" y="104" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#D4EAD8" text-anchor="middle">Plugins / Corrupt Install</text>
+  <line x1="564" y1="114" x2="759" y2="114" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="134" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Started after update or</text>
+  <text x="661" y="152" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">new software install</text>
+  <text x="661" y="173" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Crash log shows DLL error</text>
+  <line x1="564" y1="190" x2="759" y2="190" stroke="#2a5236" stroke-width="1"/>
+  <text x="661" y="210" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Fix A: Edit &gt; Preferences</text>
+  <text x="661" y="228" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">&gt; General &gt; Disable</text>
+  <text x="661" y="246" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">non-Adobe plugins</text>
+  <text x="661" y="272" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Fix B: Help &gt; Repair</text>
+  <text x="661" y="290" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Installation</text>
+
+  <!-- Bottom row -->
+  <rect x="20" y="330" width="760" height="55" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="400" y="350" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">Finding the crash cause: Windows Event Viewer</text>
+  <text x="400" y="370" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Start &gt; Event Viewer &gt; Windows Logs &gt; Application — look for Faulting module name</text>
+  <text x="400" y="388" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">atioglxx.dll / nvwgf2umx.dll = GPU driver conflict → disable hardware acceleration</text>
+</svg>

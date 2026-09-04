@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Cannot Open PDF — Diagnosis &amp; Fix</text>
+
+  <!-- Decision Header -->
+  <rect x="250" y="55" width="300" height="45" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="400" y="73" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Acrobat opens, but PDF shows</text>
+  <text x="400" y="91" font-family="Arial,sans-serif" font-size="13" fill="#FBB03B" text-anchor="middle">blank page or "file is damaged"</text>
+
+  <!-- Test: Open in browser -->
+  <rect x="200" y="122" width="400" height="44" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="400" y="140" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#3b82f6" text-anchor="middle">TEST: Drag PDF into Chrome or Edge</text>
+  <text x="400" y="158" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Does the browser display the PDF?</text>
+
+  <!-- YES branch -->
+  <text x="200" y="195" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#4ade80" text-anchor="middle">YES → File is valid</text>
+  <text x="200" y="213" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Problem is with Acrobat</text>
+
+  <!-- NO branch -->
+  <text x="600" y="195" font-family="Arial,sans-serif" font-size="13" font-weight="bold" fill="#FBB03B" text-anchor="middle">NO → File is corrupted</text>
+  <text x="600" y="213" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Re-download from source</text>
+
+  <!-- YES → Acrobat fixes -->
+  <rect x="20" y="230" width="460" height="155" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="250" y="253" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix Acrobat (file is valid)</text>
+  <line x1="40" y1="262" x2="460" y2="262" stroke="#2a5236" stroke-width="1"/>
+  <text x="50" y="283" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">1. Clear Acrobat cache</text>
+  <text x="50" y="300" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   AppData\Local\Adobe\Acrobat\Cache — delete contents</text>
+  <text x="50" y="323" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">2. Check Enhanced Security settings</text>
+  <text x="50" y="340" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   Edit &gt; Preferences &gt; Security — add file location to Privileged</text>
+  <text x="50" y="363" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">3. Update Acrobat</text>
+  <text x="50" y="380" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   Help &gt; Check for Updates — newer Acrobat supports newer PDF standards</text>
+
+  <!-- NO → File fixes -->
+  <rect x="500" y="230" width="280" height="155" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="640" y="253" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#FBB03B" text-anchor="middle">Fix Corrupted File</text>
+  <line x1="520" y1="262" x2="760" y2="262" stroke="#2a5236" stroke-width="1"/>
+  <text x="510" y="283" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">1. Re-download the PDF</text>
+  <text x="510" y="302" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   Check file size is not 0 KB</text>
+  <text x="510" y="325" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">2. Ask sender to re-export</text>
+  <text x="510" y="344" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   Request original file again</text>
+  <text x="510" y="367" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8">3. Repair at acrobat.adobe.com</text>
+  <text x="510" y="386" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0">   Adobe online PDF repair tool</text>
+
+  <text x="400" y="407" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Browser test determines whether to fix Acrobat or obtain a new copy of the file</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#091510"/>
+  <text x="400" y="36" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#00E5A0" text-anchor="middle">Adobe Acrobat Not Responding — Fix Path</text>
+
+  <!-- Step 0: First action -->
+  <rect x="200" y="55" width="400" height="55" rx="8" fill="#0d1e16" stroke="#3b82f6"/>
+  <text x="400" y="77" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">Always First: End the Frozen Process</text>
+  <text x="400" y="99" font-family="Arial,sans-serif" font-size="13" fill="#D4EAD8" text-anchor="middle">Ctrl+Shift+Esc → Find Acrobat.exe → End Task → Wait 10 seconds</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="110" x2="400" y2="128" stroke="#2a5236" stroke-width="2"/>
+  <polygon points="394,128 406,128 400,138" fill="#2a5236"/>
+
+  <!-- Fix 1 -->
+  <rect x="20" y="140" width="360" height="110" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="200" y="162" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 1 — Disable Hardware Acceleration</text>
+  <line x1="40" y1="170" x2="360" y2="170" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="191" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Edit &gt; Preferences &gt; Page Display &gt; Rendering</text>
+  <text x="200" y="211" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Uncheck: Enable hardware acceleration</text>
+  <text x="200" y="231" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Resolves most freeze cases — GPU driver conflict</text>
+
+  <!-- Fix 2 -->
+  <rect x="420" y="140" width="360" height="110" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="600" y="162" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 2 — Clear Acrobat Cache</text>
+  <line x1="440" y1="170" x2="760" y2="170" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="191" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">AppData\Local\Adobe\Acrobat\Cache</text>
+  <text x="600" y="211" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Delete all files inside Cache folder</text>
+  <text x="600" y="231" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Corrupted cache loops = freeze</text>
+
+  <!-- Fix 3 -->
+  <rect x="20" y="270" width="360" height="110" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="200" y="293" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 3 — Reduce Memory Load</text>
+  <line x1="40" y1="302" x2="360" y2="302" stroke="#2a5236" stroke-width="1"/>
+  <text x="200" y="322" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Edit &gt; Preferences &gt; Page Display</text>
+  <text x="200" y="342" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Lower DPI setting (below 150)</text>
+  <text x="200" y="362" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Helps with large PDFs (100+ pages)</text>
+
+  <!-- Fix 4 -->
+  <rect x="420" y="270" width="360" height="110" rx="8" fill="#0d1e16" stroke="#2a5236"/>
+  <text x="600" y="293" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#4ade80" text-anchor="middle">Fix 4 — Repair Installation</text>
+  <line x1="440" y1="302" x2="760" y2="302" stroke="#2a5236" stroke-width="1"/>
+  <text x="600" y="322" font-family="Arial,sans-serif" font-size="12" fill="#D4EAD8" text-anchor="middle">Help &gt; Repair Installation</text>
+  <text x="600" y="342" font-family="Arial,sans-serif" font-size="12" fill="#FBB03B" text-anchor="middle">Use if every PDF causes freeze</text>
+  <text x="600" y="362" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">Replaces corrupted application files</text>
+
+  <text x="400" y="405" font-family="Arial,sans-serif" font-size="12" fill="#A8C4B0" text-anchor="middle">"Not Responding" appears after 5s of no response — wait 60s before ending large-file tasks</text>
+</svg>
