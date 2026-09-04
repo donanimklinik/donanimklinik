@@ -3,6 +3,7 @@ import Layout from './Layout.astro';
 import AdUnit from '../components/AdUnit.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import AnswerCard from '../components/AnswerCard.astro';
+import RelatedChips from '../components/RelatedChips.astro';
 
 interface Props {
   title: string;
@@ -194,7 +195,13 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
       <slot />
     </article>
 
-    <!-- Related articles -->
+    <!-- SLOT B: mid-article — add slotId after AdSense approval, ezoicId=103 after Ezoic switch -->
+    <AdUnit position="middle" />
+
+    <!-- Related chips: compact inline navigation after article body -->
+    {relatedArticles.length > 0 && <RelatedChips articles={relatedArticles} />}
+
+    <!-- Related articles (full cards at bottom) -->
     {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
 
     <!-- SLOT C: before FAQ — add slotId after AdSense approval, ezoicId=102 after Ezoic switch -->

@@ -1,0 +1,86 @@
+---
+interface Article {
+  id: string;
+  title: string;
+  category: string;
+  readTime?: number;
+}
+
+interface Props {
+  articles: Article[];
+}
+
+const { articles } = Astro.props;
+if (!articles || articles.length === 0) return;
+
+const shown = articles.slice(0, 3);
+---
+
+<div class="related-chips">
+  <span class="related-chips-label">More on this topic</span>
+  <div class="related-chips-row">
+    {shown.map((a) => (
+      <a href={`/${a.category}/${a.id}/`} class="related-chip">
+        <span class="related-chip-title">{a.title}</span>
+        {a.readTime && <span class="related-chip-time">{a.readTime} min</span>}
+      </a>
+    ))}
+  </div>
+</div>
+
+<style>
+  .related-chips {
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #1e3a22;
+  }
+  .related-chips-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #4a7a5a;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 0.75rem;
+  }
+  .related-chips-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .related-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.85rem;
+    background: #0d1e16;
+    border: 1px solid #1e3a22;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: border-color .15s, background .15s;
+    max-width: 100%;
+  }
+  .related-chip:hover {
+    border-color: #00E5A0;
+    background: #112218;
+  }
+  .related-chip-title {
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: #D4EAD8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
+  }
+  .related-chip-time {
+    font-size: 0.72rem;
+    color: #4a7a5a;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  @media (max-width: 600px) {
+    .related-chip-title { max-width: 180px; }
+  }
+</style>
