@@ -27,6 +27,17 @@ howto_steps:
     text: "Open Command Prompt as administrator. Run: DISM /Online /Cleanup-Image /RestoreHealth and wait for it to complete (10–20 minutes). Then run: sfc /scannow. These commands repair the Windows component store and system files that 0x800f0922 may indicate are corrupted."
   - name: "Download and install the update manually"
     text: "Find the KB number of the failing update in Settings > Windows Update > Update history. Go to catalog.update.microsoft.com, search for the KB number, and download the correct version for your Windows edition. Run the .msu installer directly to bypass the Windows Update service."
+faq:
+  - q: "What does Windows Update error 0x800f0922 mean?"
+    a: "Error 0x800f0922 means Windows Update could not complete the installation due to one of two causes: the System Reserved partition does not have enough free space to stage the update, or a .NET Framework component installation failed during the update process. Check the System Reserved partition size in Disk Management first to identify which cause applies."
+  - q: "How do I free up space on the System Reserved partition?"
+    a: "Open Command Prompt as administrator and run: Dism /Online /Cleanup-Image /StartComponentCleanup — this removes superseded Windows components from the system partition. Also remove old Volume Shadow Copy snapshots with: vssadmin delete shadows /for=C: /Oldest. These commands typically recover enough space to allow the update to proceed."
+  - q: "How do I know if 0x800f0922 is caused by .NET Framework?"
+    a: "Open Event Viewer (search in Start menu), go to Windows Logs > Application, and look for errors mentioning CBS_E_INSTALLERS_FAILED. If this error appears at the time of the Windows Update failure, the cause is .NET Framework. Repair it by unchecking and rechecking .NET Framework 3.5 in the Windows Features panel (optionalfeatures command)."
+  - q: "Why does the System Reserved partition fill up?"
+    a: "The System Reserved partition stores boot files, BitLocker encryption data, and Windows recovery environment files. It fills up over time as Windows accumulates superseded update components, recovery tools, and Volume Shadow Copy snapshots. The DISM StartComponentCleanup command removes old components without affecting the current Windows installation."
+  - q: "Can I install the update manually if 0x800f0922 keeps returning?"
+    a: "Yes. Find the KB number in Settings > Windows Update > Update history, search for it at catalog.update.microsoft.com, and download the matching package for your Windows edition. Running the .msu file directly bypasses the System Reserved partition space check that causes 0x800f0922 in the Windows Update client."
 ---
 
 Windows Update error 0x800f0922 appears when Windows cannot complete a cumulative update installation. The error has two distinct root causes: the **System Reserved partition is full**, or a **.NET Framework component installation failed** (logged internally as CBS_E_INSTALLERS_FAILED).

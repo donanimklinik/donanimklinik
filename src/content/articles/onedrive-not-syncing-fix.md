@@ -27,6 +27,17 @@ howto_steps:
     text: "Press Win + R to open the Run dialog. Paste this command and press Enter: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset — this resets OneDrive's sync database without deleting your files. Wait 2 minutes, then open OneDrive from the Start menu. If the icon does not reappear within 5 minutes, open Run again and type: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe to start it manually."
   - name: "Check your OneDrive storage quota"
     text: "Open OneDrive in a browser and check the storage indicator at the bottom-left. If your account is full (100% used), OneDrive stops uploading new files immediately — the sync icon shows a red X with no further explanation. Free up space by deleting files from your OneDrive account online, or upgrade your storage plan. Once space is available, sync resumes automatically within a few minutes."
+faq:
+  - q: "Why does OneDrive show a red X and stop syncing?"
+    a: "A red X on the OneDrive icon means the client has lost its connection to your account. The most common causes are an expired sign-in session after a password change, a full storage quota, or a corrupted sync database. Click the OneDrive icon and read the activity panel — it displays the specific reason. Sign out and back in to restore the account connection."
+  - q: "How do I reset the OneDrive sync client?"
+    a: "Press Win + R and run: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset — this resets OneDrive's internal sync database without deleting any of your files. Wait 2 minutes for OneDrive to restart automatically. If it does not reopen on its own, open Run again and run the same path without /reset to start it manually."
+  - q: "Will unlinking my PC from OneDrive delete my files?"
+    a: "No. Unlinking removes the connection between the OneDrive desktop client and your account but does not delete files from your OneDrive account online or from the local OneDrive folder on your PC. When you sign back in and relink, OneDrive re-indexes your local files and syncs normally. Both your cloud and local files remain intact."
+  - q: "Why does OneDrive sync work on some files but not others?"
+    a: "OneDrive skips files that are currently open in another application, files with unsupported characters in the name, files with a full path longer than 260 characters, and files in folders excluded by a policy or personal vault restriction. Click the OneDrive icon and check the activity panel for the specific file name and the reason it is not syncing."
+  - q: "How much storage does a free OneDrive account include?"
+    a: "A free Microsoft account includes 5 GB of OneDrive storage. Microsoft 365 Personal and Family subscribers receive 1 TB per person. When storage is full, OneDrive stops uploading new files and shows a red X. Free up space by deleting files from onedrive.live.com, emptying the OneDrive recycle bin, or upgrading to a Microsoft 365 plan."
 ---
 
 **OneDrive not syncing** means files you add or edit on your computer are not uploading to your OneDrive account, or changes from other devices are not downloading to your PC. According to Microsoft's official sync troubleshooting documentation, the most common causes are an expired account session, a corrupted sync database, a file with an unsupported name, or a full storage quota.

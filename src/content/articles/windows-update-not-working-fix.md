@@ -27,6 +27,17 @@ howto_steps:
     text: "Open Command Prompt as administrator and run these commands in order: net stop wuauserv, net stop cryptsvc, net stop bits, net stop msiserver. Then rename the corrupted folders: ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old and ren C:\\Windows\\System32\\catroot2 catroot2.old. Finally restart all services: net start wuauserv, net start cryptsvc, net start bits, net start msiserver. This is a deeper reset that clears both the download cache and the cryptographic store."
   - name: "Check available disk space"
     text: "Windows Update requires at least 10 GB of free disk space on the system drive (C:) to download and install updates. Open File Explorer, right-click drive C:, and select Properties to view free space. If space is low, run Disk Cleanup: search for Disk Cleanup in the Start menu, select drive C:, and check Windows Update Cleanup along with Temporary files. Freeing space often resolves update failures that have no specific error code."
+faq:
+  - q: "Why is Windows Update not working on my PC?"
+    a: "The most common causes are a stopped Windows Update service, a corrupted SoftwareDistribution download folder, or insufficient free disk space on the C: drive. Less common causes include antivirus interference or corrupted Windows system files. Start with the Windows Update Troubleshooter — it fixes most of these automatically."
+  - q: "How do I restart the Windows Update service?"
+    a: "Press Win + R, type services.msc, and press Enter. Scroll down to Windows Update, right-click it, and select Restart. Also restart Background Intelligent Transfer Service (BITS) and Cryptographic Services in the same list. All three must be running for Windows Update to function."
+  - q: "Is it safe to delete the SoftwareDistribution folder?"
+    a: "It is safe to delete the contents of C:\\Windows\\SoftwareDistribution\\Download after stopping the Windows Update service with the command net stop wuauserv. Do not delete the folder itself — only its contents. Windows automatically rebuilds the download cache on the next update check. Your installed programs and Windows settings are not affected."
+  - q: "How much disk space does Windows Update need?"
+    a: "Windows Update requires at least 10 GB of free space on the C: drive to download and stage updates. Feature updates like Windows 11 version upgrades may require 20 GB or more. If disk space is the cause of update failures, run Disk Cleanup and select Windows Update Cleanup to remove old update packages."
+  - q: "Can antivirus software stop Windows Update from working?"
+    a: "Yes. Some antivirus programs block Windows Update's network connections or prevent update files from being written to the SoftwareDistribution folder. Temporarily disable your antivirus, try running Windows Update, then re-enable it. If the update succeeds with antivirus disabled, add the SoftwareDistribution folder to your antivirus exclusion list."
 ---
 
 **Windows Update not working** means updates either refuse to download, freeze at a percentage, or complete the download but fail to install — often returning a generic error or rolling back automatically. According to Microsoft's official troubleshooting documentation, the most common causes are a stopped Windows Update service, a corrupted download cache in the SoftwareDistribution folder, or insufficient disk space on the system drive.

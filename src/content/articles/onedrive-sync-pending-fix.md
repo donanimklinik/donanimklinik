@@ -27,6 +27,17 @@ howto_steps:
     text: "Right-click the OneDrive icon in the system tray and select Pause syncing, then 2 hours. Wait 10 seconds, then right-click and select Resume syncing. This resets the sync queue and forces OneDrive to re-evaluate which files still need to be uploaded. Files that were waiting behind the stuck file will now proceed."
   - name: "Reset OneDrive if multiple files are stuck"
     text: "Press Win + R, paste %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset and press Enter. Wait 2 minutes for OneDrive to restart, then open it from the Start menu if it does not reopen automatically. The reset clears the sync database and rebuilds it — all pending files are re-evaluated and most will begin syncing immediately."
+faq:
+  - q: "What does 'sync pending' mean in OneDrive?"
+    a: "Sync pending means OneDrive has added the file to its upload queue but cannot start or complete the transfer. Unlike a sync error, there is no red X — just a persistent spinning icon. The most common causes are another application holding the file open, an unsupported character in the file name, or a large file blocking the queue ahead of smaller files."
+  - q: "Why does OneDrive show sync pending for a file that is not open?"
+    a: "Even if you close a file in its application, some programs keep the file locked for a short time afterward — Microsoft Office applications, Adobe Acrobat, and video editing software often do this. Wait a few minutes after closing the application and check if the sync pending status clears. If it does not, check for unsupported characters in the file name or an overly long file path."
+  - q: "What file names cause OneDrive sync pending?"
+    a: "OneDrive cannot sync files with names containing these characters: backslash, forward slash, colon, asterisk, question mark, quotation mark, less-than, greater-than, or pipe symbol. It also skips files with names ending in a space or period, and files where the complete path (folder names plus file name) exceeds 260 characters. Rename the file to remove these issues."
+  - q: "How do I find which file is causing sync pending in OneDrive?"
+    a: "Click the OneDrive icon in the system tray and look at the activity panel. It lists every file in the pending queue with how long each has been waiting. A file that has been pending for more than 10 minutes is the blocked file. Note its name and location, then close any application that may have it open or rename it to fix the issue."
+  - q: "Does pausing and resuming sync in OneDrive fix sync pending?"
+    a: "Yes, pausing and resuming sync forces OneDrive to reset its upload queue and re-evaluate all pending files from the beginning. This is especially effective when a large file was blocking the queue — after the reset, smaller files can proceed even if the large file is still pending. Right-click the OneDrive icon, select Pause syncing for 2 hours, wait 10 seconds, then select Resume syncing."
 ---
 
 **OneDrive sync pending** means OneDrive has queued a file for upload but has not started or cannot complete the transfer. According to Microsoft's official documentation, "sync pending" is not the same as an error — it means OneDrive is waiting for a condition to be met before it can proceed. The most common conditions are another application holding the file open, an unsupported character in the file name, or the upload queue being blocked by a single large file ahead of it.

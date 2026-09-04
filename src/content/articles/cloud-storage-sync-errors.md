@@ -16,6 +16,17 @@ top_search_queries:
   - "onedrive not syncing"
   - "dropbox not syncing"
   - "google drive not syncing"
+faq:
+  - q: "Why do cloud storage services stop syncing?"
+    a: "The most common causes are an expired account session after a password change, a full storage quota, a file that is open in another application and cannot be uploaded, or a temporary error in the desktop client. Pausing and resuming sync fixes most temporary errors. If sync is still stopped, signing out and back in refreshes the account connection."
+  - q: "Does pausing and resuming sync actually fix sync problems?"
+    a: "Yes, for many temporary errors. Pausing sync stops the upload queue, and resuming it forces the client to re-evaluate every pending file from scratch. Files that were blocked by a temporary network timeout or a momentary file lock will often start syncing immediately after a pause-resume cycle."
+  - q: "Will uninstalling and reinstalling a cloud storage app delete my files?"
+    a: "No. Your files are stored on the cloud servers, not only on your computer. Reinstalling the desktop client only replaces the application software. After reinstalling and signing back in, the client re-syncs your files from the cloud to your computer. Files already on your computer that are already synced remain in place."
+  - q: "Can cloud storage sync errors be caused by file names?"
+    a: "Yes. OneDrive and Dropbox skip files with names containing certain special characters such as backslash, colon, asterisk, question mark, and quotation mark. Extremely long file paths (over 260 characters on Windows) also cause sync failures. Google Drive for Desktop is more permissive but still rejects some special characters. Renaming the affected files resolves these errors."
+  - q: "How do I know if my cloud storage quota is full?"
+    a: "For OneDrive: open onedrive.live.com and check the storage indicator at the bottom-left. For Dropbox: open dropbox.com and look at the storage bar in the left sidebar. For Google Drive: open drive.google.com and check the storage indicator at the bottom-left. A full quota causes the sync client to stop uploading immediately and display a red X or warning icon."
 ---
 
 Cloud storage sync errors stop your files from reaching the cloud — or stop changes made on one device from appearing on another. OneDrive, Dropbox, and Google Drive all fail in recognizable patterns: a spinning sync icon that never finishes, a "sync pending" status that persists for hours, or a client that simply stops updating files without showing any error.

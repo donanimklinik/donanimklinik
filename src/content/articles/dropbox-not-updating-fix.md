@@ -27,6 +27,17 @@ howto_steps:
     text: "Click the Dropbox icon, click your profile picture, and select Quit Dropbox. Wait 10 seconds. Reopen Dropbox from the Start menu. After reopening, Dropbox immediately connects to its servers and downloads all pending updates from other devices. This is the most reliable way to force Dropbox to fetch new changes."
   - name: "Check that the Dropbox folder location is unchanged"
     text: "If the Dropbox folder has been moved or renamed, the Dropbox client loses track of where to put downloaded files and appears to stop updating. Right-click the Dropbox icon, go to Preferences > Sync, and check the folder path shown. If it points to the wrong location, click Move Dropbox folder and navigate to the correct location."
+faq:
+  - q: "Why are files I added on another device not appearing in my Dropbox folder?"
+    a: "Files from other devices are not appearing locally because sync is either paused, a Selective Sync exclusion is hiding that folder, or the Dropbox client has not yet checked in with the server. Force an immediate check by pausing and resuming sync in the Dropbox system tray icon. Also verify the folder is included in Selective Sync under Dropbox Preferences > Sync."
+  - q: "How long does Dropbox take to sync changes from other devices?"
+    a: "Dropbox typically syncs changes from other devices within seconds to a few minutes, depending on file size and internet speed. If changes from another device are not appearing after 5 minutes, the issue is a sync problem — not a normal delay. Quit and restart the Dropbox client to force an immediate connection to Dropbox servers and download pending changes."
+  - q: "What does it mean when the Dropbox icon shows a steady blue droplet with no activity?"
+    a: "A steady blue droplet with no activity means Dropbox believes all files are up to date on this device. If you are expecting new files from another device that are not appearing, Dropbox has not received the update notification yet. Force a manual check by pausing and immediately resuming sync from the Dropbox icon in the system tray."
+  - q: "Why does Dropbox not update files when the Dropbox folder has been moved?"
+    a: "If the Dropbox folder is moved or renamed outside of Dropbox Preferences, the Dropbox client loses track of where to place downloaded files from other devices. Check the folder path in Dropbox Preferences > Sync — if it shows the old location, click Move Dropbox folder and point it to the new location so downloads can proceed."
+  - q: "Can Selective Sync cause Dropbox to appear not to update?"
+    a: "Yes. If a folder is excluded from Selective Sync on this device, files added to that folder on other devices or the web will never download here — even though they appear in your Dropbox account online. This looks like the folder is not updating. Go to Dropbox Preferences > Sync > Selective Sync and make sure all expected folders are checked."
 ---
 
 **Dropbox not updating** means files added or edited on another device — a second computer, a phone, or a web browser — are not appearing in your local Dropbox folder. The files exist in your Dropbox account online, but the desktop client on this computer has not downloaded the new versions. According to Dropbox's official documentation, this is typically caused by a paused sync, a Selective Sync exclusion, or the Dropbox client not checking in with the server.

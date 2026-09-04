@@ -16,6 +16,17 @@ top_search_queries:
   - "windows update error codes"
   - "fix windows update"
   - "windows update not working"
+faq:
+  - q: "Why does Windows Update keep failing?"
+    a: "The most common causes are a stopped Windows Update service, a corrupted SoftwareDistribution download cache, or insufficient disk space on the C: drive. Run the Windows Update Troubleshooter first — it automatically detects and fixes the most frequent causes without manual steps."
+  - q: "How do I fix Windows Update when it stops working?"
+    a: "Start with the Windows Update Troubleshooter in Settings > System > Troubleshoot. If that does not help, restart the Windows Update service in services.msc, clear the SoftwareDistribution folder, and check that drive C: has at least 10 GB free. If a specific error code appears, use the matching fix guide for that code."
+  - q: "Is it safe to turn off the PC while Windows Update is running?"
+    a: "No. Turning off the PC during an active update can corrupt Windows system files. If the update appears completely frozen for more than 2 hours with no progress, it is safe to hold the power button to shut down — Windows will attempt to roll back the partial update automatically on the next boot."
+  - q: "What is the SoftwareDistribution folder and can I delete it?"
+    a: "The SoftwareDistribution folder at C:\\Windows\\SoftwareDistribution stores downloaded update packages temporarily. You can safely delete the contents of the Download subfolder after stopping the Windows Update service — Windows rebuilds the cache on the next update check. Deleting it does not affect installed updates or Windows settings."
+  - q: "Can Windows Update errors damage my PC?"
+    a: "Update errors themselves do not damage your PC — they simply prevent the update from installing. However, leaving your PC without security updates for extended periods increases vulnerability to malware. Fix the update error as soon as possible to ensure security patches are applied."
 ---
 
 Windows Update errors stop your PC from receiving security patches, feature updates, and driver upgrades. According to Microsoft's official documentation, most update failures fall into three categories: service configuration problems, corrupted update caches, and network or disk space constraints.

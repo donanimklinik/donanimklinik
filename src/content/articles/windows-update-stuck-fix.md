@@ -27,6 +27,17 @@ howto_steps:
     text: "Go to Settings > Windows Update > Update history and note the KB number of the stuck update (e.g., KB5034441). Open a browser and go to catalog.update.microsoft.com. Search for the KB number and download the package matching your Windows version and architecture (x64 for most modern PCs). Run the downloaded .msu or .exe file to install the update directly, bypassing Windows Update entirely."
   - name: "Run the Windows Update Troubleshooter after the fix"
     text: "After resolving the stuck update, go to Settings > System > Troubleshoot > Other troubleshooters (Windows 11) or Settings > Update & Security > Troubleshoot (Windows 10) and run the Windows Update troubleshooter. This resets service states and cleans up any residual configuration problems left by the stuck update, preventing the same issue from recurring."
+faq:
+  - q: "How long should I wait before assuming Windows Update is stuck?"
+    a: "Wait at least 2 hours before concluding an update is genuinely stuck. Large feature updates can appear frozen at the same percentage for 30–60 minutes while processing in the background. The update is stuck if the percentage counter has not changed at all for 2 hours, the hard drive activity light is off, and the PC is not hot."
+  - q: "Is it safe to restart my PC when Windows Update is stuck?"
+    a: "Yes, after 2 hours of no progress it is safe to hold the power button for 5 seconds to force a shutdown. Windows detects the interrupted update on the next boot and automatically rolls back the partial installation. Your files and programs are not affected by the rollback."
+  - q: "Why does Windows Update get stuck at 0%?"
+    a: "Stuck at 0% almost always means the download has not started. The causes are a stopped Windows Update service, a corrupted SoftwareDistribution download folder blocking new downloads, or a network problem preventing the download server from being reached. Restart the update services and clear the SoftwareDistribution\\Download folder to resolve this."
+  - q: "Why does Windows Update get stuck at 100% or on the 'Working on updates' screen?"
+    a: "Stuck at 100% or on the Working on updates screen means the installation started but cannot complete. This is typically caused by an incompatible driver, corrupted system files, or the update conflicting with installed software. Running DISM and SFC repairs the Windows component store and resolves most installation-phase stuck updates."
+  - q: "What is the Microsoft Update Catalog and how do I use it?"
+    a: "The Microsoft Update Catalog at catalog.update.microsoft.com is Microsoft's official download site for individual update packages. Search for the KB number of the stuck update (found in Settings > Windows Update > Update history), download the correct version for your Windows edition, and run the downloaded file to install the update directly without using Windows Update."
 ---
 
 **Windows Update stuck** means the download or installation progress has frozen — the percentage counter stops moving and the update never completes. According to Microsoft's troubleshooting documentation, updates most commonly get stuck during the download phase (at 0% or a fixed percentage) or during the installation phase (the "Working on updates — Do not turn off your PC" screen after a restart).

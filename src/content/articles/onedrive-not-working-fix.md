@@ -27,6 +27,17 @@ howto_steps:
     text: "Press Win + R and run: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset — this resets OneDrive's internal settings and sync database without deleting your files. Wait 2 minutes for the process to restart. If OneDrive does not reopen automatically, run the same path without /reset to start it manually."
   - name: "Reinstall OneDrive"
     text: "Open Settings > Apps > Installed apps and search for Microsoft OneDrive. Click Uninstall and confirm. Then go to microsoft.com/en-us/microsoft-365/onedrive/download and download the latest OneDrive installer. Run the installer and sign in. Reinstalling replaces all OneDrive program files, which fixes problems caused by corrupted installation files."
+faq:
+  - q: "Why is the OneDrive icon missing from my system tray?"
+    a: "The OneDrive icon is missing when the OneDrive process is not running. Press Win + R and run: %localappdata%\\Microsoft\\OneDrive\\onedrive.exe to start it. If it starts and the icon appears, fix it permanently by going to Settings > Apps > Startup and enabling Microsoft OneDrive, or in OneDrive Settings > General enabling Start OneDrive automatically when I sign in to Windows."
+  - q: "Why does OneDrive crash immediately on startup?"
+    a: "OneDrive crashes on startup when its installation files are corrupted. The fastest fix is to reset it first: press Win + R and run %localappdata%\\Microsoft\\OneDrive\\onedrive.exe /reset. If it still crashes after a reset, uninstall OneDrive from Settings > Apps, then download and reinstall the latest version from Microsoft's website."
+  - q: "Does reinstalling OneDrive delete my files?"
+    a: "No. Your files are stored in your OneDrive account on Microsoft's servers. Reinstalling the desktop client only replaces the application software on your computer. After reinstalling and signing in, OneDrive re-syncs your files from the cloud. Files already on your computer in the OneDrive folder remain in place."
+  - q: "Why does OneDrive say it cannot connect to OneDrive?"
+    a: "This error appears when the OneDrive client cannot reach Microsoft's servers. Check your internet connection first. If internet is working, the issue is usually an expired account token — click the OneDrive icon, go to Settings > Account, unlink the PC, and sign back in. If the problem persists, check if a firewall or VPN is blocking OneDrive's connections."
+  - q: "How do I set OneDrive to start automatically with Windows?"
+    a: "Click the OneDrive icon in the system tray, go to Settings (gear icon) > Settings > General, and check Start OneDrive automatically when I sign in to Windows. Alternatively, open Task Manager, go to the Startup tab, find Microsoft OneDrive, right-click it, and select Enable. After either change, OneDrive will start with Windows automatically."
 ---
 
 **OneDrive not working** covers several different symptoms: the OneDrive icon is missing from the system tray, the application crashes on startup, it shows account errors, or it opens but refuses to sync anything. According to Microsoft's official troubleshooting documentation, these problems are most commonly caused by a crashed OneDrive process, an expired account session, or corrupted OneDrive installation files.

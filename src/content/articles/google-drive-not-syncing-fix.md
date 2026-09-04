@@ -27,6 +27,17 @@ howto_steps:
     text: "Click the Google Drive icon, then click the gear icon > Preferences. In the Preferences window, click your Google account name and select Disconnect account. Confirm the sign-out. Then click Sign in and authenticate with your Google account. Disconnecting refreshes the authentication token — this fixes sync failures caused by expired credentials or a Google account password change."
   - name: "Reinstall Google Drive for Desktop"
     text: "Quit Google Drive completely. Go to Settings > Apps > Installed apps, find Google Drive, and uninstall it. Download the latest version of Google Drive for Desktop from google.com/drive/download and run the installer. Sign in with your Google account. Your files in Google Drive are not deleted — they re-sync to your computer after setup."
+faq:
+  - q: "Why has Google Drive stopped syncing files?"
+    a: "The most common causes are a paused sync, expired Google account credentials after a password change, a temporary error in the Google Drive for Desktop client, or a file that cannot be synced due to its name or type. Click the Google Drive icon in the system tray and check the status panel — it shows the specific reason and the affected file name."
+  - q: "How do I fix Google Drive not syncing after a password change?"
+    a: "When your Google account password changes, Google Drive for Desktop loses its authentication token and stops syncing. Fix it by clicking the Drive icon, going to Preferences > your Google account > Disconnect account, then signing back in with your updated password. This refreshes the authentication and restores sync."
+  - q: "Does quitting and restarting Google Drive for Desktop fix sync problems?"
+    a: "Yes, for many temporary sync errors. Quitting Google Drive completely (including ending the process in Task Manager) and restarting it forces the client to reconnect to Google's servers and re-evaluate the sync queue. This resolves errors caused by network timeouts, temporary server issues, or the client getting into a stuck state."
+  - q: "Will reinstalling Google Drive for Desktop delete my files?"
+    a: "No. Your files are stored in your Google account on Google's servers. Reinstalling only replaces the desktop application. After reinstalling and signing back in, Google Drive for Desktop re-syncs your files from the cloud. Files already on your computer in the Google Drive folder are not deleted during reinstallation."
+  - q: "How do I know if Google Drive is syncing or has an error?"
+    a: "Click the Google Drive icon in the system tray to open the status panel. A spinning sync icon means Drive is actively syncing. A checkmark means everything is up to date. A red X or warning triangle means an error has stopped sync. The status panel lists the specific file causing the error and the reason, making it easy to identify what needs to be fixed."
 ---
 
 **Google Drive not syncing** means files you place in your Google Drive folder are not uploading to your account, or changes made in Google Drive online are not appearing on your computer. According to Google's official documentation, the most common causes are a paused sync, expired Google account credentials, or an error in the Google Drive for Desktop client.

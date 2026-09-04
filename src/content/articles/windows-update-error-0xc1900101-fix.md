@@ -27,6 +27,17 @@ howto_steps:
     text: "Go to Settings > System > Troubleshoot > Other troubleshooters and run Windows Update. The troubleshooter clears the update cache and resets the update components. After it completes, restart and attempt the update again."
   - name: "Use the Media Creation Tool instead of Windows Update"
     text: "Download the Media Creation Tool from microsoft.com/software-download/windows11 (or windows10). Select Upgrade this PC now. The tool performs the same Windows version upgrade as Windows Update but uses a fresh downloaded image rather than the cached update files. This method bypasses many driver-related rollback issues."
+faq:
+  - q: "What does Windows Update error 0xc1900101 mean?"
+    a: "Error 0xc1900101 means Windows detected an incompatible driver and rolled back the feature update to protect your system. The secondary code narrows the cause: 0x20017 indicates a driver failure in the safe OS phase, and 0x4000D indicates a migration failure. Your PC boots normally after the rollback — no data is lost."
+  - q: "How do I find which driver is causing 0xc1900101?"
+    a: "Download SetupDiag from Microsoft's website and run it. The tool reads the Windows Setup log files and outputs a report naming the exact driver file and version that caused the rollback. Use that driver name to identify the device in Device Manager and update or uninstall it."
+  - q: "Can I fix 0xc1900101 by uninstalling the incompatible driver?"
+    a: "Yes. Once you know which driver is causing the error from SetupDiag, open Device Manager, find the corresponding device, right-click it, and select Uninstall device. Check Delete the driver software for this device before confirming. With the driver removed, run Windows Update again — the update will proceed past the point where it previously rolled back."
+  - q: "Why does disconnecting USB devices fix 0xc1900101?"
+    a: "USB devices install their own drivers, and some of these drivers are incompatible with the Windows version being installed. Disconnecting all non-essential USB devices before running the update removes those drivers from the compatibility check. After the update completes, reconnect the devices one at a time to identify which one was causing the conflict."
+  - q: "What is the difference between 0xc1900101 and other Windows Update errors?"
+    a: "The 0xc1900101 error is specifically a rollback error — it only occurs during feature updates (major version upgrades) when Windows Setup determines a driver is incompatible. Other Windows Update errors like 0x80070005 or 0x800f0922 occur during cumulative updates and have different causes. If you see 0xc1900101, the fix always involves identifying and removing the incompatible driver."
 ---
 
 Windows Update error 0xc1900101 means the update installation started but was **rolled back** before completing. Windows detected an incompatible driver during the upgrade process and automatically reversed the installation to prevent a non-bootable system.

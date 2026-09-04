@@ -29,6 +29,17 @@ howto_steps:
     text: "Click the Dropbox icon, then click your profile picture or initials and select Quit Dropbox. Open Task Manager (Ctrl + Shift + Esc) and confirm that Dropbox.exe is no longer running. Then reopen Dropbox from the Start menu or Applications folder. A full quit-and-restart clears any hung state in the sync engine without resetting your settings or account."
   - name: "Reinstall Dropbox"
     text: "If the above steps do not work, reinstall the Dropbox desktop client. First quit Dropbox completely. Then go to Settings > Apps > Installed apps, find Dropbox, and uninstall it. Download the latest Dropbox installer from dropbox.com/install and run it. Sign in with your Dropbox account. Your files remain in your Dropbox account — they re-sync to your computer after setup."
+faq:
+  - q: "Why has Dropbox stopped syncing files?"
+    a: "The most common causes are a paused sync, an upload bandwidth limit set too low in Dropbox Preferences, a Selective Sync exclusion hiding the folder, or a temporary error in the Dropbox desktop client. Start with a pause-resume cycle to reset the sync queue. If sync is still stopped, check Selective Sync settings and bandwidth limits in Dropbox Preferences."
+  - q: "What is Selective Sync and why does it stop files from syncing?"
+    a: "Selective Sync is a Dropbox feature that lets you choose which folders from your Dropbox account are synced to your computer's local storage. If a folder is excluded from Selective Sync on this device, files you add to that folder on another device or on the web will never appear locally — even though they exist in your account. Enable all needed folders in Dropbox Preferences > Sync > Selective Sync."
+  - q: "Why does Dropbox sync appear to work but never finish?"
+    a: "This usually means Dropbox has an upload rate limit set that is too low. Open Dropbox Preferences > Bandwidth and check the Upload rate setting. If it is set to a specific low value like 10 KB/s, the sync will process files very slowly. Set it to Don't limit to use the full available bandwidth."
+  - q: "Will reinstalling Dropbox delete my files?"
+    a: "No. Your files are stored in your Dropbox account on Dropbox's servers. Reinstalling the desktop client only replaces the application. After reinstalling and signing in, Dropbox re-syncs your files from the cloud. The local Dropbox folder on your computer remains after uninstalling — its contents are not deleted during reinstallation."
+  - q: "How do I check if Dropbox is syncing or paused?"
+    a: "Click the Dropbox icon in the system tray. A spinning blue circle means Dropbox is actively syncing. A steady blue droplet with no activity means everything is up to date. A pause symbol means sync is manually paused. A red X means an error has stopped sync. Hover over the icon without clicking to see a tooltip with the number of files remaining and estimated sync time."
 ---
 
 **Dropbox not syncing** means files you add or edit in your local Dropbox folder are not uploading to your account, or changes made on other devices are not appearing on your computer. According to Dropbox's official troubleshooting documentation, the most common causes are a paused sync, a bandwidth limit set too low, Selective Sync excluding the relevant folder, or a temporary error in the Dropbox desktop client.
