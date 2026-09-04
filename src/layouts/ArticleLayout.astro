@@ -13,9 +13,11 @@ interface Props {
   category: string;
   slug: string;
   officialSourceUrl: string;
+  heroImageUrl?: string;
   writtenAt: Date;
   publishedAt?: Date;
   updatedAt?: Date;
+  sourceLastVerifiedAt?: Date;
   readTime?: number;
   schemaType?: 'Article' | 'HowTo' | 'FAQPage';
   howtoSteps?: { name: string; text: string }[];
@@ -34,9 +36,11 @@ const {
   category,
   slug,
   officialSourceUrl,
+  heroImageUrl,
   writtenAt,
   publishedAt,
   updatedAt,
+  sourceLastVerifiedAt,
   readTime,
   schemaType = 'Article',
   howtoSteps,
@@ -61,7 +65,7 @@ const faqSchema = faq && faq.length > 0 ? {
 
 const canonical = `https://www.donanimklinik.com/${category}/${slug}/`;
 const pubDate = publishedAt ?? writtenAt;
-const modDate = updatedAt ?? pubDate;
+const modDate = updatedAt ?? sourceLastVerifiedAt ?? pubDate;
 
 const tagMap: Record<string, { label: string; cls: string; color: string }> = {
   computers:   { label: 'Computers',   cls: 'red',    color: 'var(--red)' },
@@ -80,7 +84,7 @@ const articleSchema = {
   description,
   image: {
     '@type': 'ImageObject',
-    url: `https://www.donanimklinik.com/images/${slug}.svg`,
+    url: heroImageUrl ?? `https://www.donanimklinik.com/images/${slug}.svg`,
     width: 800,
     height: 420,
   },
@@ -99,8 +103,8 @@ const articleSchema = {
     logo: {
       '@type': 'ImageObject',
       url: 'https://www.donanimklinik.com/logo.png',
-      width: 120,
-      height: 34,
+      width: 398,
+      height: 80,
     },
   },
   mainEntityOfPage: {

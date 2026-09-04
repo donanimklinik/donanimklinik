@@ -44,6 +44,7 @@ const { type } = Astro.props;
 let Content: any;
 let article: any;
 let relatedArticles: any[] = [];
+let heroImageUrl = '';
 
 if (type === 'article') {
   const { article: a, allArticles } = Astro.props as any;
@@ -61,6 +62,12 @@ if (type === 'article') {
       category: x.data.category,
       readTime: x.data.read_time,
     }));
+
+  // Extract actual hero image filename from markdown body
+  const heroMatch = article.body?.match(/!\[.*?\]\(\/images\/([^)]+)\)/);
+  heroImageUrl = heroMatch
+    ? `https://www.donanimklinik.com/images/${heroMatch[1]}`
+    : `https://www.donanimklinik.com/images/${article.id}.svg`;
 }
 
 // ── Hub page ──────────────────────────────────────────────────
@@ -92,9 +99,11 @@ if (type === 'hub') {
     category={article.data.category}
     slug={article.id}
     officialSourceUrl={article.data.official_source_url}
+    heroImageUrl={heroImageUrl}
     writtenAt={article.data.written_at}
     publishedAt={article.data.published_at}
     updatedAt={article.data.updated_at}
+    sourceLastVerifiedAt={article.data.source_last_verified_at}
     readTime={article.data.read_time}
     schemaType={article.data.schema_type}
     howtoSteps={article.data.howto_steps}
