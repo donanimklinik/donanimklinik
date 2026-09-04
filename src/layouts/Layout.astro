@@ -90,11 +90,32 @@ const websiteSchema = {
   <link rel="preload" href="/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 
-  <!-- Google Analytics 4 — replace G-N4RX0LVRDE with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4RX0LVRDE"></script>
-  <script>
+  <!-- Google Consent Mode v2 — must run synchronously before GA4 and AdSense load -->
+  <script is:inline>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny all storage (EU-safe baseline)
+    gtag('consent', 'default', {
+      ad_storage:          'denied',
+      analytics_storage:   'denied',
+      ad_user_data:        'denied',
+      ad_personalization:  'denied',
+      wait_for_update:     500,
+    });
+    // If user already consented in a previous session, grant immediately
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('cookie-consent') === 'accepted') {
+      gtag('consent', 'update', {
+        ad_storage:         'granted',
+        analytics_storage:  'granted',
+        ad_user_data:       'granted',
+        ad_personalization: 'granted',
+      });
+    }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N4RX0LVRDE"></script>
+  <script is:inline>
     gtag('js', new Date());
     gtag('config', 'G-N4RX0LVRDE');
   </script>
@@ -227,19 +248,39 @@ const websiteSchema = {
   </div>
 </div>
 
-<script>
+<script is:inline>
   (function () {
     const banner = document.getElementById('cookie-banner');
     const consent = localStorage.getItem('cookie-consent');
     if (!banner) return;
     if (consent) { banner.remove(); return; }
     banner.classList.add('cookie-banner--visible');
+
     document.getElementById('cookie-accept')?.addEventListener('click', () => {
       localStorage.setItem('cookie-consent', 'accepted');
+      // Grant all consent signals for Google Consent Mode v2
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+          ad_storage:         'granted',
+          analytics_storage:  'granted',
+          ad_user_data:       'granted',
+          ad_personalization: 'granted',
+        });
+      }
       banner.remove();
     });
+
     document.getElementById('cookie-decline')?.addEventListener('click', () => {
       localStorage.setItem('cookie-consent', 'declined');
+      // Keep denied — Google will serve non-personalized ads (~40% of personalized RPM, not zero)
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+          ad_storage:         'denied',
+          analytics_storage:  'denied',
+          ad_user_data:       'denied',
+          ad_personalization: 'denied',
+        });
+      }
       banner.remove();
     });
   })();

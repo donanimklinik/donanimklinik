@@ -140,6 +140,8 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
     {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+    <!-- Ezoic content category — improves advertiser targeting after Ezoic switch -->
+    <meta name="ezoic-category" content={category} />
   </Fragment>
 
   <div class="article-page-hero">
@@ -173,19 +175,19 @@ const sourceDomain = sourceUrl.hostname.replace('www.', '');
   </div>
 
   <div class="wrap">
-    <!-- Ad: above article -->
-    <AdUnit />
+    <!-- SLOT A: above article — highest viewability, above the fold (ezoicId=101, add slotId after approval) -->
+    <AdUnit position="top" ezoicId={101} />
 
     <!-- Article content -->
     <article class="article-body">
       <slot />
     </article>
 
-    <!-- Ad: below article -->
-    <AdUnit />
-
     <!-- Related articles -->
     {relatedArticles.length > 0 && <RelatedArticles articles={relatedArticles} />}
+
+    <!-- SLOT C: before FAQ — high dwell area, good viewability (ezoicId=102, add slotId after approval) -->
+    <AdUnit position="bottom" ezoicId={102} />
 
     <!-- FAQ section -->
     {faq && faq.length > 0 && (

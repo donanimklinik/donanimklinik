@@ -1,11 +1,41 @@
 ---
 interface Props {
-  slot?: 'top' | 'middle' | 'bottom';
+  position?: 'top' | 'middle' | 'bottom';
+  slotId?: string;        // AdSense slot ID — leave undefined until approved (renders nothing)
+  ezoicId?: number;       // Ezoic placeholder ID — used after switching to Ezoic
   label?: string;
 }
-const { slot = 'middle', label = 'Advertisement' } = Astro.props;
+const { position = 'middle', slotId, ezoicId, label = 'Advertisement' } = Astro.props;
+
+// Phase 1 (review): no slotId → renders nothing — no empty containers for Google's reviewer
+// Phase 2 (approved): pass slotId → renders <ins> AdSense unit
+// Phase 3 (Ezoic): pass ezoicId without slotId → renders Ezoic placeholder div
+const renderAdsense = Boolean(slotId);
+const renderEzoic   = Boolean(ezoicId) && !slotId;
 ---
-<div class="ad-unit ad-unit--{slot}" aria-label={label}>
-  <!-- AdSense unit ({slot}) — publisher ID will be inserted after approval -->
-  <!-- ins class="adsbygoogle" data-ad-client="pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" -->
-</div>
+
+{renderAdsense && (
+  <div
+    class={`ad-unit ad-unit--${position}`}
+    aria-label={label}
+    {...(ezoicId ? { id: `ezoic-pub-ad-placeholder-${ezoicId}` } : {})}
+  >
+    <ins
+      class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-1585472496460949"
+      data-ad-slot={slotId}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+)}
+
+{renderEzoic && (
+  <div
+    class={`ad-unit ad-unit--${position}`}
+    id={`ezoic-pub-ad-placeholder-${ezoicId}`}
+    aria-label={label}
+  ></div>
+)}

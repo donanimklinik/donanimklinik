@@ -1198,12 +1198,17 @@ footer { padding: 56px 0; border-top: 1px solid var(--line); }
    Ad Units
    ============================================================ */
 .ad-unit {
-  background: var(--panel); border: 1px dashed var(--line);
-  border-radius: 2px; padding: 12px; text-align: center;
-  color: var(--text-faint); font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px; letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 32px 0;
+  min-height: 280px; /* Ezoic injection space — do not remove */
+  border-radius: 4px;
+  overflow: hidden;
 }
+.ad-unit--top    { min-height: 90px; }
+.ad-unit--middle { min-height: 280px; }
+.ad-unit--bottom { min-height: 280px; }
 
 /* ============================================================
    Category/Article Page Layout
