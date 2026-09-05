@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T00:34:44.843Z",
-  "gsc_data_through": null,
-  "has_gsc_data": false,
+  "generated_at": "2026-09-05T14:28:38.226Z",
+  "gsc_data_through": "2026-09-02",
+  "has_gsc_data": true,
   "site_totals": {
     "impressions_28d": 0,
     "clicks_28d": 0,
@@ -13,6 +13,7 @@
     "acil": [],
     "izle": [],
     "firsat": [],
+    "yildiz": [],
     "stabil": [
       "accidentally-deleted-files-windows-file-recovery",
       "adobe-acrobat-errors",
@@ -102,14 +103,13 @@
       "word-not-opening-fix",
       "word-not-responding-fix"
     ],
-    "yildiz": [],
     "olu": []
   },
   "articles": [
     {
       "slug": "accidentally-deleted-files-windows-file-recovery",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/accidentally-deleted-files-windows-file-recovery/",
       "title": "Accidentally Deleted Files — Windows File Recovery Tool Guide",
       "ahs": 50,
       "ahs_prev": 50,
@@ -138,7 +138,7 @@
     {
       "slug": "adobe-acrobat-errors",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-acrobat-errors/",
       "title": "Adobe Acrobat Errors — Fix Guide",
       "ahs": 50,
       "ahs_prev": 50,
@@ -167,7 +167,7 @@
     {
       "slug": "adobe-acrobat-keeps-crashing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-acrobat-keeps-crashing-fix/",
       "title": "Adobe Acrobat Keeps Crashing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -196,7 +196,7 @@
     {
       "slug": "adobe-acrobat-not-opening-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-acrobat-not-opening-fix/",
       "title": "Adobe Acrobat Not Opening — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -225,7 +225,7 @@
     {
       "slug": "adobe-acrobat-not-responding-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-acrobat-not-responding-fix/",
       "title": "Adobe Acrobat Not Responding — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -254,7 +254,7 @@
     {
       "slug": "adobe-acrobat-not-working-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-acrobat-not-working-fix/",
       "title": "Adobe Acrobat Not Working — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -283,7 +283,7 @@
     {
       "slug": "adobe-reader-not-opening-pdf-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/adobe-reader-not-opening-pdf-fix/",
       "title": "Adobe Reader Not Opening PDF — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -312,7 +312,7 @@
     {
       "slug": "aka-ms-myrecoverykey",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/aka-ms-myrecoverykey/",
       "title": "aka.ms/myrecoverykey — What It Is and How to Use It",
       "ahs": 50,
       "ahs_prev": 50,
@@ -341,7 +341,7 @@
     {
       "slug": "best-data-recovery-software-windows",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/best-data-recovery-software-windows/",
       "title": "Best Free Data Recovery Software for Windows (2026)",
       "ahs": 50,
       "ahs_prev": 50,
@@ -370,7 +370,7 @@
     {
       "slug": "bitlocker-recovery-key-active-directory",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-recovery-key-active-directory/",
       "title": "How to Get Your BitLocker Recovery Key from Active Directory or Azure AD",
       "ahs": 50,
       "ahs_prev": 50,
@@ -399,7 +399,7 @@
     {
       "slug": "bitlocker-recovery-key-dell",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-recovery-key-dell/",
       "title": "How to Find the BitLocker Recovery Key on a Dell Computer",
       "ahs": 50,
       "ahs_prev": 50,
@@ -428,7 +428,7 @@
     {
       "slug": "bitlocker-recovery-key-find",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-recovery-key-find/",
       "title": "BitLocker Recovery Key — Where to Find It (Official Methods)",
       "ahs": 50,
       "ahs_prev": 50,
@@ -457,7 +457,7 @@
     {
       "slug": "bitlocker-recovery-key-not-working",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-recovery-key-not-working/",
       "title": "BitLocker Recovery Key Not Working — How to Find the Right One",
       "ahs": 50,
       "ahs_prev": 50,
@@ -486,7 +486,7 @@
     {
       "slug": "bitlocker-recovery-screen-after-windows-update",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-recovery-screen-after-windows-update/",
       "title": "BitLocker Recovery Screen After Windows Update — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -515,7 +515,7 @@
     {
       "slug": "bitlocker-suspended-mode-how-to-re-enable",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/bitlocker-suspended-mode-how-to-re-enable/",
       "title": "BitLocker Suspended Mode — What It Means and How to Re-enable It",
       "ahs": 50,
       "ahs_prev": 50,
@@ -544,7 +544,7 @@
     {
       "slug": "brother-printer-not-connecting-to-wifi-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/brother-printer-not-connecting-to-wifi-fix/",
       "title": "Brother Printer Not Connecting to WiFi — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -573,7 +573,7 @@
     {
       "slug": "cannot-open-pdf-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/cannot-open-pdf-fix/",
       "title": "Cannot Open PDF in Adobe Acrobat — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -602,7 +602,7 @@
     {
       "slug": "canon-printer-not-connecting-to-wifi-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/canon-printer-not-connecting-to-wifi-fix/",
       "title": "Canon Printer Not Connecting to WiFi — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -631,7 +631,7 @@
     {
       "slug": "canon-printer-not-printing-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/canon-printer-not-printing-fix/",
       "title": "Canon Printer Not Printing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -660,7 +660,7 @@
     {
       "slug": "canon-printer-not-printing-straight-lines-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/canon-printer-not-printing-straight-lines-fix/",
       "title": "Canon Printer Not Printing Straight Lines — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -689,7 +689,7 @@
     {
       "slug": "canon-printer-not-responding-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/canon-printer-not-responding-fix/",
       "title": "Canon Printer Not Responding — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -718,7 +718,7 @@
     {
       "slug": "cloud-storage-sync-errors",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/cloud-storage-sync-errors/",
       "title": "Cloud Storage Sync Errors — Fix Guide",
       "ahs": 50,
       "ahs_prev": 50,
@@ -747,7 +747,7 @@
     {
       "slug": "dropbox-not-syncing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/dropbox-not-syncing-fix/",
       "title": "Dropbox Not Syncing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -776,7 +776,7 @@
     {
       "slug": "dropbox-not-updating-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/dropbox-not-updating-fix/",
       "title": "Dropbox Not Updating — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -805,7 +805,7 @@
     {
       "slug": "emails-stuck-in-outlook-outbox",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/emails-stuck-in-outlook-outbox/",
       "title": "Emails Stuck in Outlook Outbox — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -834,7 +834,7 @@
     {
       "slug": "epson-printer-not-connecting-to-wifi-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/epson-printer-not-connecting-to-wifi-fix/",
       "title": "Epson Printer Not Connecting to WiFi — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -863,7 +863,7 @@
     {
       "slug": "ethernet-connected-but-no-internet-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/ethernet-connected-but-no-internet-fix/",
       "title": "Ethernet Connected But No Internet — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -892,7 +892,7 @@
     {
       "slug": "excel-file-not-opening-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/excel-file-not-opening-fix/",
       "title": "Excel File Not Opening — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -921,7 +921,7 @@
     {
       "slug": "excel-keeps-crashing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/excel-keeps-crashing-fix/",
       "title": "Excel Keeps Crashing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -950,7 +950,7 @@
     {
       "slug": "excel-not-responding-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/excel-not-responding-fix/",
       "title": "Excel Not Responding — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -979,7 +979,7 @@
     {
       "slug": "google-drive-not-syncing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/google-drive-not-syncing-fix/",
       "title": "Google Drive Not Syncing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1008,7 +1008,7 @@
     {
       "slug": "hard-drive-failure-signs",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/hard-drive-failure-signs/",
       "title": "Signs of Hard Drive Failure — And What to Do Before It's Too Late",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1037,7 +1037,7 @@
     {
       "slug": "hard-drive-recovery-services-when-diy-fails",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/hard-drive-recovery-services-when-diy-fails/",
       "title": "Hard Drive Recovery Services — When DIY Isn't Enough",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1066,7 +1066,7 @@
     {
       "slug": "hotspot-connected-but-no-internet-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/hotspot-connected-but-no-internet-fix/",
       "title": "Hotspot Connected But No Internet — Fix It in Minutes",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1095,7 +1095,7 @@
     {
       "slug": "how-to-access-router-settings",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-access-router-settings/",
       "title": "How to Access Your Router Settings",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1124,7 +1124,7 @@
     {
       "slug": "how-to-change-router-dns-settings",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-change-router-dns-settings/",
       "title": "How to Change Router DNS Settings",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1153,7 +1153,7 @@
     {
       "slug": "how-to-configure-wifi-router",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-configure-wifi-router/",
       "title": "How to Configure a WiFi Router",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1182,7 +1182,7 @@
     {
       "slug": "how-to-connect-router-to-internet",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-connect-router-to-internet/",
       "title": "How to Connect Your Router to the Internet",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1211,7 +1211,7 @@
     {
       "slug": "how-to-connect-router-to-modem",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-connect-router-to-modem/",
       "title": "How to Connect a Router to a Modem",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1240,7 +1240,7 @@
     {
       "slug": "how-to-set-up-netgear-router",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-set-up-netgear-router/",
       "title": "How to Set Up a Netgear Router",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1269,7 +1269,7 @@
     {
       "slug": "how-to-set-up-nighthawk-router",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-set-up-nighthawk-router/",
       "title": "How to Set Up a Nighthawk Router",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1298,7 +1298,7 @@
     {
       "slug": "how-to-set-up-router-and-modem",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-set-up-router-and-modem/",
       "title": "How to Set Up Router and Modem Together",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1327,7 +1327,7 @@
     {
       "slug": "how-to-set-up-wifi-router",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-set-up-wifi-router/",
       "title": "How to Set Up a WiFi Router",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1356,7 +1356,7 @@
     {
       "slug": "how-to-set-up-wireless-router",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/how-to-set-up-wireless-router/",
       "title": "How to Set Up a Wireless Router",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1385,7 +1385,7 @@
     {
       "slug": "hp-printer-connected-wifi-but-offline-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/hp-printer-connected-wifi-but-offline-fix/",
       "title": "HP Printer Connected to WiFi But Offline — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1414,7 +1414,7 @@
     {
       "slug": "hp-printer-not-connecting-to-wifi-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/hp-printer-not-connecting-to-wifi-fix/",
       "title": "HP Printer Not Connecting to WiFi — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1443,7 +1443,7 @@
     {
       "slug": "hp-printer-offline-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/hp-printer-offline-fix/",
       "title": "HP Printer Offline — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1472,7 +1472,7 @@
     {
       "slug": "internet-keeps-disconnecting-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/internet-keeps-disconnecting-fix/",
       "title": "Internet Keeps Disconnecting? Here's How to Fix It",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1501,7 +1501,7 @@
     {
       "slug": "laptop-wont-connect-to-wifi-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/laptop-wont-connect-to-wifi-fix/",
       "title": "Laptop Won't Connect to WiFi — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1530,7 +1530,7 @@
     {
       "slug": "office-errors",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/office-errors/",
       "title": "Microsoft Office Errors — Fix Guide",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1559,7 +1559,7 @@
     {
       "slug": "onedrive-deleted-files-recovery",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/onedrive-deleted-files-recovery/",
       "title": "How to Recover Deleted Files from OneDrive",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1588,7 +1588,7 @@
     {
       "slug": "onedrive-not-syncing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/onedrive-not-syncing-fix/",
       "title": "OneDrive Not Syncing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1617,7 +1617,7 @@
     {
       "slug": "onedrive-not-working-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/onedrive-not-working-fix/",
       "title": "OneDrive Not Working — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1646,7 +1646,7 @@
     {
       "slug": "onedrive-sync-pending-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/onedrive-sync-pending-fix/",
       "title": "OneDrive Sync Pending — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1675,7 +1675,7 @@
     {
       "slug": "outlook-calendar-not-syncing",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-calendar-not-syncing/",
       "title": "Outlook Calendar Not Syncing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1704,7 +1704,7 @@
     {
       "slug": "outlook-error-0x800ccc0e",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-error-0x800ccc0e/",
       "title": "Outlook Error 0x800CCC0E — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1733,7 +1733,7 @@
     {
       "slug": "outlook-not-receiving-emails",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-not-receiving-emails/",
       "title": "Outlook Not Receiving Emails — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1762,7 +1762,7 @@
     {
       "slug": "outlook-not-sending-email",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-not-sending-email/",
       "title": "Outlook Not Sending Email — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1791,7 +1791,7 @@
     {
       "slug": "outlook-not-syncing",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-not-syncing/",
       "title": "Outlook Not Syncing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1820,7 +1820,7 @@
     {
       "slug": "outlook-send-receive-not-working",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/outlook-send-receive-not-working/",
       "title": "Outlook Send and Receive Not Working — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1849,7 +1849,7 @@
     {
       "slug": "powerpoint-not-responding-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/powerpoint-not-responding-fix/",
       "title": "PowerPoint Not Responding — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1878,7 +1878,7 @@
     {
       "slug": "preparing-bitlocker-recovery",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/preparing-bitlocker-recovery/",
       "title": "Preparing BitLocker Recovery — What This Screen Means",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1907,7 +1907,7 @@
     {
       "slug": "printer-paper-jam-but-no-paper-fix",
       "category": "peripherals",
-      "url": "/peripherals/undefined/",
+      "url": "/peripherals/printer-paper-jam-but-no-paper-fix/",
       "title": "Printer Paper Jam But No Paper — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1936,7 +1936,7 @@
     {
       "slug": "recover-usb-flash-drive",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/recover-usb-flash-drive/",
       "title": "How to Recover Files from a USB Flash Drive",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1965,7 +1965,7 @@
     {
       "slug": "recuva-data-recovery",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/recuva-data-recovery/",
       "title": "How to Use Recuva to Recover Deleted Files",
       "ahs": 50,
       "ahs_prev": 50,
@@ -1994,7 +1994,7 @@
     {
       "slug": "ssd-recovery-after-failure",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/ssd-recovery-after-failure/",
       "title": "SSD Data Recovery After Failure — What Is Actually Possible",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2023,7 +2023,7 @@
     {
       "slug": "unlock-bitlocker-without-recovery-key",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/unlock-bitlocker-without-recovery-key/",
       "title": "Can You Unlock BitLocker Without the Recovery Key?",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2052,7 +2052,7 @@
     {
       "slug": "wifi-connected-but-no-internet-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/wifi-connected-but-no-internet-fix/",
       "title": "WiFi Connected But No Internet — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2081,7 +2081,7 @@
     {
       "slug": "wifi-keeps-disconnecting-fix",
       "category": "networking",
-      "url": "/networking/undefined/",
+      "url": "/networking/wifi-keeps-disconnecting-fix/",
       "title": "WiFi Keeps Disconnecting — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2110,7 +2110,7 @@
     {
       "slug": "windows-activation-error-0x8007232b",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-activation-error-0x8007232b/",
       "title": "Windows Activation Error 0x8007232B — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2139,7 +2139,7 @@
     {
       "slug": "windows-activation-error-0xc004c008",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-activation-error-0xc004c008/",
       "title": "Windows Activation Error 0xC004C008 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2168,7 +2168,7 @@
     {
       "slug": "windows-activation-error-0xc004c060",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-activation-error-0xc004c060/",
       "title": "Windows Activation Error 0xC004C060 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2197,7 +2197,7 @@
     {
       "slug": "windows-activation-error-0xc004f050",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-activation-error-0xc004f050/",
       "title": "Windows Activation Error 0xC004F050 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2226,7 +2226,7 @@
     {
       "slug": "windows-activation-error-0xc004f074",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-activation-error-0xc004f074/",
       "title": "Windows Activation Error 0xC004F074 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2255,7 +2255,7 @@
     {
       "slug": "windows-digital-license-not-working",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-digital-license-not-working/",
       "title": "Windows Digital Licence Not Working — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2284,7 +2284,7 @@
     {
       "slug": "windows-phone-activation",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-phone-activation/",
       "title": "Windows Phone Activation — When Online Activation Fails",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2313,7 +2313,7 @@
     {
       "slug": "windows-product-key-not-working",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-product-key-not-working/",
       "title": "Windows Product Key Not Working — What to Do",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2342,7 +2342,7 @@
     {
       "slug": "windows-update-error-0x80070005-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-error-0x80070005-fix/",
       "title": "Windows Update Error 0x80070005 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2371,7 +2371,7 @@
     {
       "slug": "windows-update-error-0x800f0922-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-error-0x800f0922-fix/",
       "title": "Windows Update Error 0x800f0922 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2400,7 +2400,7 @@
     {
       "slug": "windows-update-error-0xc1900101-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-error-0xc1900101-fix/",
       "title": "Windows Update Error 0xc1900101 — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2429,7 +2429,7 @@
     {
       "slug": "windows-update-errors",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-errors/",
       "title": "Windows Update Errors — Fix Guide",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2458,7 +2458,7 @@
     {
       "slug": "windows-update-not-working-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-not-working-fix/",
       "title": "Windows Update Not Working — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2487,7 +2487,7 @@
     {
       "slug": "windows-update-stuck-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-stuck-fix/",
       "title": "Windows Update Stuck — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2516,7 +2516,7 @@
     {
       "slug": "windows-update-troubleshooter-fix",
       "category": "computers",
-      "url": "/computers/undefined/",
+      "url": "/computers/windows-update-troubleshooter-fix/",
       "title": "Windows Update Troubleshooter — How to Run",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2545,7 +2545,7 @@
     {
       "slug": "word-keeps-crashing-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/word-keeps-crashing-fix/",
       "title": "Word Keeps Crashing — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2574,7 +2574,7 @@
     {
       "slug": "word-not-opening-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/word-not-opening-fix/",
       "title": "Word Not Opening — Fix",
       "ahs": 50,
       "ahs_prev": 50,
@@ -2603,7 +2603,7 @@
     {
       "slug": "word-not-responding-fix",
       "category": "software",
-      "url": "/software/undefined/",
+      "url": "/software/word-not-responding-fix/",
       "title": "Word Not Responding — Fix",
       "ahs": 50,
       "ahs_prev": 50,

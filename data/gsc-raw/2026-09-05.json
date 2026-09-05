@@ -1,0 +1,46 @@
+{
+  "fetched_at": "2026-09-05T14:28:38.166Z",
+  "site_url": "https://www.donanimklinik.com/",
+  "windows": {
+    "current": {
+      "start": "2026-08-06",
+      "end": "2026-09-02"
+    },
+    "previous": {
+      "start": "2026-07-09",
+      "end": "2026-08-05"
+    }
+  },
+  "pages_current": [
+    {
+      "keys": [
+        "https://www.donanimklinik.com/telefon-tamiri"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1.5
+    }
+  ],
+  "pages_previous": [
+    {
+      "keys": [
+        "https://www.donanimklinik.com/telefon-tamiri"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "keys": [
+        "https://www.donanimklinik.com/veri-kurtarma/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3
+    }
+  ],
+  "queries": []
+}
