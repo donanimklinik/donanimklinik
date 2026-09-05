@@ -1,0 +1,55 @@
+name: Daily GSC Sync
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # 04:00 UTC daily
+  workflow_dispatch:        # Manual trigger from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch GSC data
+        env:
+          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
+          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
+          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_SITE_URL: https://www.donanimklinik.com/
+        run: node scripts/gsc-fetch.mjs
+
+      - name: Calculate AHS scores & build dashboard
+        run: node scripts/calc-ahs.mjs
+
+      - name: Rotate old raw files (keep last 90 days)
+        run: |
+          cd data/gsc-raw
+          ls -t *.json 2>/dev/null | tail -n +91 | xargs rm -f || true
+
+      - name: Generate weekly digest (Mondays only)
+        if: github.event_name == 'schedule'
+        run: |
+          DOW=$(date -u +%u)
+          if [ "$DOW" = "1" ]; then
+            node scripts/weekly-digest.mjs || true
+          fi
+
+      - name: Commit data
+        run: |
+          git config --local user.email "gsc-bot@donanimklinik.com"
+          git config --local user.name "GSC Bot"
+          git add data/
+          git diff --staged --quiet && echo "No changes" || (
+            git commit -m "chore: gsc sync $(date -u '+%Y-%m-%d')" &&
+            git push
+          )

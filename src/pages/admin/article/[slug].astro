@@ -1,0 +1,195 @@
+---
+import AdminLayout from '../../../layouts/AdminLayout.astro';
+import dashboard from '../../../../data/dashboard.json';
+
+export function getStaticPaths() {
+  return dashboard.articles.map((a: any) => ({ params: { slug: a.slug }, props: { article: a } }));
+}
+
+const { article } = Astro.props;
+const { slug, category, title, ahs, ahs_prev, ahs_delta, group, metrics_28d, metrics_prev_28d, trend, top_queries, suggestions, last_refresh, refresh_count, source_url } = article;
+
+function fmtNum(n: number) { return n >= 1000 ? (n / 1000).toFixed(1) + 'K' : String(n || 0); }
+function fmtCtr(n: number) { return ((n || 0) * 100).toFixed(2) + '%'; }
+function fmtPos(n: number) { return n ? n.toFixed(1) : '—'; }
+function fmtDelta(cur: number, prev: number) {
+  if (!prev) return '';
+  const pct = Math.round((cur - prev) / prev * 100);
+  return pct > 0 ? `+${pct}%` : pct < 0 ? `${pct}%` : '—';
+}
+function ahsColor(n: number) {
+  if (n < 30) return '#F87171';
+  if (n < 50) return '#FB923C';
+  if (n < 70) return '#8CAA8C';
+  if (n < 85) return '#4ADE80';
+  return '#22C55E';
+}
+function groupLabel(g: string) {
+  const m: Record<string,string> = { ACIL:'ACIL', IZLE:'İZLE', FIRSAT:'FIRSAT', YILDIZ:'YILDIZ', STABIL:'STABİL', OLU:'ÖLÜ' };
+  return m[g] || g;
+}
+function groupBadge(g: string) {
+  const m: Record<string,string> = { ACIL:'badge-acil', IZLE:'badge-izle', FIRSAT:'badge-firsat', YILDIZ:'badge-yildiz', STABIL:'badge-stabil', OLU:'badge-olu' };
+  return m[g] || 'badge-stabil';
+}
+
+const impDelta = fmtDelta(metrics_28d.impressions, metrics_prev_28d.impressions);
+const clickDelta = fmtDelta(metrics_28d.clicks, metrics_prev_28d.clicks);
+const posDelta = metrics_28d.position && metrics_prev_28d.position
+  ? (metrics_28d.position - metrics_prev_28d.position).toFixed(1)
+  : null;
+
+// Mini sparkline using block characters
+function sparkbar(cur: number, prev: number) {
+  if (!cur || !prev) return '░░░░░░░░░░░░░░░░░░░░';
+  const bars = ['▁','▂','▃','▄','▅','▆','▇','█'];
+  const ratio = Math.min(cur / prev, 2);
+  const idx = Math.min(Math.floor(ratio * 4), 7);
+  return bars[idx].repeat(8) + '░'.repeat(8 - Math.min(idx, 8));
+}
+---
+
+<AdminLayout title={slug} active="dashboard">
+
+  <!-- Breadcrumb -->
+  <div style="margin-bottom:20px;color:#4A6B4A;font-size:11px">
+    <a href="/admin" style="color:#4A6B4A;text-decoration:none">Dashboard</a>
+    <span style="margin:0 6px">›</span>
+    <span>{slug}</span>
+  </div>
+
+  <!-- Article header -->
+  <div style="display:flex;align-items:flex-start;gap:20px;margin-bottom:24px;flex-wrap:wrap">
+    <div style="flex:1;min-width:280px">
+      <h1 style="color:#C8D5C0;font-size:15px;font-weight:600;margin-bottom:6px">{title}</h1>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <span class={`badge ${groupBadge(group)}`}>{groupLabel(group)}</span>
+        <span style="color:#4A6B4A">/{category}/{slug}/</span>
+        <a href={`https://www.donanimklinik.com/${category}/${slug}/`} target="_blank" rel="noopener" style="color:#4A6B4A;font-size:11px">Canlı ↗</a>
+      </div>
+      {last_refresh && <p style="color:#4A6B4A;font-size:11px;margin-top:8px">Son refresh: {last_refresh} · {refresh_count}x güncellendi</p>}
+    </div>
+
+    <!-- AHS big display -->
+    <div style="text-align:center;min-width:100px">
+      <div style={`font-size:42px;font-weight:700;line-height:1;color:${ahsColor(ahs)}`}>{ahs}</div>
+      <div style="font-size:10px;color:#4A6B4A;margin-top:4px">AHS Skoru</div>
+      {ahs_delta !== 0 && (
+        <div style={`font-size:12px;margin-top:4px;color:${ahs_delta > 0 ? '#4ADE80' : '#F87171'}`}>
+          {ahs_delta > 0 ? '+' : ''}{ahs_delta} önceki dönem
+        </div>
+      )}
+    </div>
+  </div>
+
+  <!-- Metrics grid -->
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-label">Impression (28g)</div>
+      <div class="metric-value">{fmtNum(metrics_28d.impressions)}</div>
+      <div class={`metric-delta ${trend === 'up' ? 'delta-up' : trend === 'down' ? 'delta-down' : 'delta-neu'}`}>
+        {trend === 'up' ? '▲' : trend === 'down' ? '▼' : '→'} {impDelta}
+        <span style="opacity:0.5;margin-left:4px">vs {fmtNum(metrics_prev_28d.impressions)}</span>
+      </div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Tıklama (28g)</div>
+      <div class="metric-value">{fmtNum(metrics_28d.clicks)}</div>
+      <div class="metric-delta">{clickDelta} <span style="opacity:0.5">vs {fmtNum(metrics_prev_28d.clicks)}</span></div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Ort. CTR</div>
+      <div class="metric-value">{fmtCtr(metrics_28d.ctr)}</div>
+      <div class="metric-delta" style="opacity:0.6">Önceki: {fmtCtr(metrics_prev_28d.ctr)}</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-label">Ort. Pozisyon</div>
+      <div class="metric-value" style={metrics_28d.position > 0 && metrics_28d.position <= 5 ? 'color:#4ADE80' : metrics_28d.position > 15 ? 'color:#F87171' : ''}>
+        {fmtPos(metrics_28d.position)}
+      </div>
+      <div class="metric-delta" style={posDelta ? (parseFloat(posDelta) < 0 ? 'color:#4ADE80' : parseFloat(posDelta) > 0 ? 'color:#F87171' : '') : ''}>
+        {posDelta ? (parseFloat(posDelta) > 0 ? '+' : '') + posDelta + ' pozisyon' : '— veri yok'}
+      </div>
+    </div>
+  </div>
+
+  <!-- Suggestions -->
+  {suggestions.length > 0 && (
+    <div style="margin-top:20px">
+      <p style="color:#FBBF24;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px">⚡ Önerilen Aksiyonlar</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:6px">
+        {suggestions.map((s: string) => (
+          <li style="display:flex;align-items:flex-start;gap:8px;background:#0C1A0F;border:1px solid #172B1B;border-left:3px solid #FBBF24;padding:8px 12px;border-radius:4px;font-size:12px">
+            <span style="color:#FBBF24">›</span> {s}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+
+  <!-- Top queries -->
+  {top_queries.length > 0 && (
+    <div style="margin-top:24px">
+      <p style="color:#4A6B4A;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px">Top Query'ler (28g)</p>
+      <table>
+        <thead><tr>
+          <th>Query</th><th>Imp</th><th>Tık</th><th>CTR</th><th>Pos</th>
+        </tr></thead>
+        <tbody>
+          {top_queries.map((q: any) => (
+            <tr>
+              <td style="color:#C8D5C0">{q.query}</td>
+              <td>{fmtNum(q.impressions)}</td>
+              <td>{fmtNum(q.clicks)}</td>
+              <td>{fmtCtr(q.ctr)}</td>
+              <td style={q.position <= 5 ? 'color:#4ADE80' : q.position > 15 ? 'color:#F87171' : 'color:#8CAA8C'}>{q.position.toFixed(1)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  {top_queries.length === 0 && (
+    <div style="margin-top:20px;color:#4A6B4A;font-size:12px">
+      Query verisi yok — GSC bağlantısı kurulduktan sonra görünecek.
+    </div>
+  )}
+
+  <!-- Source URL -->
+  {source_url && (
+    <div style="margin-top:24px;padding:10px 14px;background:#0C1A0F;border:1px solid #172B1B;border-radius:4px">
+      <span style="color:#4A6B4A;font-size:11px">Kaynak: </span>
+      <a href={source_url} target="_blank" rel="noopener noreferrer" style="color:#60A5FA;font-size:11px">{source_url}</a>
+    </div>
+  )}
+
+  <!-- Action buttons -->
+  <div style="margin-top:32px;display:flex;gap:10px;flex-wrap:wrap">
+    <a href={`https://www.donanimklinik.com/${category}/${slug}/`} target="_blank" class="btn">Canlıyı Gör ↗</a>
+    <a href={`https://search.google.com/search-console/performance/search-analytics?resource_id=https%3A%2F%2Fwww.donanimklinik.com%2F&page=https%3A%2F%2Fwww.donanimklinik.com%2F${category}%2F${slug}%2F`} target="_blank" class="btn">GSC'de Aç ↗</a>
+    <a href="/admin" class="btn">← Geri</a>
+  </div>
+
+</AdminLayout>
+
+<style>
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 0;
+  }
+  .metric-card {
+    background: #0C1A0F;
+    border: 1px solid #172B1B;
+    border-radius: 4px;
+    padding: 14px 16px;
+  }
+  .metric-label { font-size: 10px; color: #4A6B4A; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .metric-value { font-size: 24px; font-weight: 600; color: #C8D5C0; }
+  .metric-delta { font-size: 11px; color: #4A6B4A; margin-top: 4px; }
+  .delta-up { color: #4ADE80; }
+  .delta-down { color: #F87171; }
+  .delta-neu { color: #4A6B4A; }
+</style>

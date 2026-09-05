@@ -1,0 +1,168 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import dashboard from '../../../data/dashboard.json';
+
+const { health } = dashboard;
+const broken   = health?.broken_links   || [];
+const dupRisks = health?.duplicate_risks || [];
+const cannibals = health?.cannibal_pairs || [];
+const checkedAt = health?.checked_at;
+---
+
+<AdminLayout title="Site Sağlığı" active="health">
+
+  <div style="margin-bottom:20px">
+    <h1 style="color:#C8D5C0;font-size:15px;font-weight:600">Site Sağlık Raporu</h1>
+    <p style="color:#4A6B4A;font-size:12px;margin-top:4px">
+      {checkedAt
+        ? `Son kontrol: ${checkedAt}`
+        : 'Henüz kontrol yapılmadı — GitHub Actions (weekly-health.yml) her Pazar çalışır'}
+    </p>
+  </div>
+
+  <!-- Summary stat bar -->
+  <div class="stat-bar" style="margin-bottom:24px">
+    <div class="stat">
+      <span class="stat-label">Kırık Link</span>
+      <span class="stat-value" style={broken.length > 0 ? 'color:#F87171' : 'color:#4ADE80'}>{broken.length}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Duplikasyon Riski</span>
+      <span class="stat-value" style={dupRisks.length > 0 ? 'color:#FBBF24' : 'color:#4ADE80'}>{dupRisks.length}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Kannibalizasyon</span>
+      <span class="stat-value" style={cannibals.length > 0 ? 'color:#FB923C' : 'color:#4ADE80'}>{cannibals.length}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Genel Durum</span>
+      <span class="stat-value" style={broken.length === 0 && dupRisks.length === 0 ? 'color:#4ADE80' : 'color:#FBBF24'}>
+        {broken.length === 0 && dupRisks.length === 0 ? '✓ İYİ' : '⚠ KONTROL ET'}
+      </span>
+    </div>
+  </div>
+
+  <!-- Broken links -->
+  <div class="section-header" style="border-top:none;margin-top:0">
+    <span style={broken.length > 0 ? 'color:#F87171' : 'color:#4ADE80'}>
+      {broken.length > 0 ? '✗ KIRIK LİNKLER' : '✓ KIRIK LİNK YOK'}
+    </span>
+    {broken.length > 0 && <span class="badge badge-acil">{broken.length}</span>}
+    <span style="color:#555;font-size:10px;margin-left:4px">official_source_url 4xx/5xx dönenler</span>
+  </div>
+
+  {broken.length > 0 && (
+    <table>
+      <thead><tr>
+        <th>Makale</th><th>Kırık URL</th><th>HTTP Status</th><th>Aksiyon</th>
+      </tr></thead>
+      <tbody>
+        {broken.map((b: any) => (
+          <tr>
+            <td>
+              <a href={`/admin/article/${b.slug}`} style="color:#8CAA8C;text-decoration:none">{b.slug}</a>
+            </td>
+            <td style="color:#F87171;font-size:11px;max-width:300px;word-break:break-all">{b.url}</td>
+            <td><span class="badge badge-acil">{b.status}</span></td>
+            <td>
+              <a href={`/admin/article/${b.slug}`} class="btn" style="border-color:#F87171;color:#F87171">Düzelt →</a>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+
+  {broken.length === 0 && (
+    <div style="padding:12px 0;color:#4A6B4A;font-size:12px">
+      Tüm kaynak URL'ler geçerli. Haftalık kontrolde tekrar doğrulanacak.
+    </div>
+  )}
+
+  <!-- Duplicate risks -->
+  <div class="section-header">
+    <span style={dupRisks.length > 0 ? 'color:#FBBF24' : 'color:#4ADE80'}>
+      {dupRisks.length > 0 ? '⚠ DUPLİKASYON RİSKİ' : '✓ DUPLİKASYON YOK'}
+    </span>
+    {dupRisks.length > 0 && <span class="badge badge-firsat">{dupRisks.length}</span>}
+    <span style="color:#555;font-size:10px;margin-left:4px">Başlık benzerliği &gt;%60 olan çiftler</span>
+  </div>
+
+  {dupRisks.length > 0 && (
+    <table>
+      <thead><tr>
+        <th>Makale A</th><th>Makale B</th><th>Benzerlik</th>
+      </tr></thead>
+      <tbody>
+        {dupRisks.map((d: any) => (
+          <tr>
+            <td>
+              <a href={`/admin/article/${d.slug_a}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_a}</a>
+            </td>
+            <td>
+              <a href={`/admin/article/${d.slug_b}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_b}</a>
+            </td>
+            <td><span class="badge badge-firsat">{d.similarity}%</span></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+
+  {dupRisks.length === 0 && (
+    <div style="padding:12px 0;color:#4A6B4A;font-size:12px">
+      Tekrarlanan konu tespit edilmedi.
+    </div>
+  )}
+
+  <!-- Cannibalization -->
+  <div class="section-header">
+    <span style={cannibals.length > 0 ? 'color:#FB923C' : 'color:#4ADE80'}>
+      {cannibals.length > 0 ? '⚡ KANNİBALİZASYON' : '✓ KANNİBALİZASYON YOK'}
+    </span>
+    {cannibals.length > 0 && <span class="badge badge-izle">{cannibals.length}</span>}
+    <span style="color:#555;font-size:10px;margin-left:4px">Aynı query'de yarışan makaleler (GSC verisi gerekli)</span>
+  </div>
+
+  {cannibals.length > 0 && (
+    <table>
+      <thead><tr>
+        <th>Query</th><th>Kazanan URL</th><th>Kaybeden URL</th><th>Ortak Imp</th>
+      </tr></thead>
+      <tbody>
+        {cannibals.map((c: any) => (
+          <tr>
+            <td style="color:#C8D5C0;max-width:220px">{c.query}</td>
+            <td>
+              <a href={`/admin/article/${c.winner}`} style="color:#4ADE80;text-decoration:none;font-size:11px">{c.winner}</a>
+            </td>
+            <td>
+              <a href={`/admin/article/${c.loser}`} style="color:#F87171;text-decoration:none;font-size:11px">{c.loser}</a>
+            </td>
+            <td>{c.shared_impressions || '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+
+  {cannibals.length === 0 && (
+    <div style="padding:12px 0;color:#4A6B4A;font-size:12px">
+      {dashboard.has_gsc_data
+        ? 'Aynı query\'de yarışan makale çifti yok.'
+        : 'GSC bağlantısı kurulmadan kannibalizasyon tespiti yapılamaz.'}
+    </div>
+  )}
+
+  <!-- Manual re-run note -->
+  <div style="margin-top:40px;padding:16px;background:#0C1A0F;border:1px solid #172B1B;border-radius:4px;font-size:12px">
+    <p style="color:#8CAA8C;margin-bottom:8px"><strong style="color:#C8D5C0">Manuel Kontrol</strong></p>
+    <p style="color:#4A6B4A">Anlık sağlık raporu almak için:</p>
+    <pre style="color:#8CAA8C;margin-top:8px;background:#060D08;padding:10px;border-radius:3px;font-size:11px">node scripts/health-check.mjs</pre>
+    <p style="color:#4A6B4A;margin-top:8px">
+      GitHub Actions'ta <strong style="color:#8CAA8C">weekly-health.yml</strong> her Pazar 05:00 UTC'de otomatik çalışır ve
+      sonuçları commit eder. Vercel yeni build alır, dashboard güncellenir.
+    </p>
+  </div>
+
+</AdminLayout>

@@ -1,0 +1,37 @@
+name: Weekly Health Check
+
+on:
+  schedule:
+    - cron: '0 5 * * 0'   # 05:00 UTC every Sunday
+  workflow_dispatch:
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Check source URLs (broken link scan)
+        run: node scripts/check-sources.mjs > /tmp/link-check.txt 2>&1 || true
+
+      - name: Update health data in dashboard
+        run: node scripts/health-check.mjs
+
+      - name: Commit health data
+        run: |
+          git config --local user.email "gsc-bot@donanimklinik.com"
+          git config --local user.name "GSC Bot"
+          git add data/
+          git diff --staged --quiet && echo "No changes" || (
+            git commit -m "chore: weekly health check $(date -u '+%Y-%m-%d')" &&
+            git push
+          )

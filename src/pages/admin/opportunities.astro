@@ -1,0 +1,112 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import dashboard from '../../../data/dashboard.json';
+
+const { opportunities, has_gsc_data, gsc_data_through } = dashboard;
+
+function fmtNum(n: number) { return n >= 1000 ? (n / 1000).toFixed(1) + 'K' : String(n || 0); }
+function fmtPos(n: number) { return n ? n.toFixed(1) : '—'; }
+
+// Separate new article candidates vs expansion candidates
+const newArticle  = opportunities.filter((o: any) => o.position > 10);
+const expansion   = opportunities.filter((o: any) => o.position >= 5 && o.position <= 10);
+---
+
+<AdminLayout title="Fırsatlar" active="opportunities">
+
+  <div style="margin-bottom:20px">
+    <h1 style="color:#C8D5C0;font-size:15px;font-weight:600">Query Gap Analizi</h1>
+    <p style="color:#4A6B4A;font-size:12px;margin-top:4px">
+      {has_gsc_data
+        ? `GSC verisi: ${gsc_data_through} · ${opportunities.length} fırsat query tespit edildi`
+        : 'GSC bağlantısı yok — fırsatlar GSC verisiyle otomatik tespit edilir'}
+    </p>
+  </div>
+
+  {!has_gsc_data && (
+    <div class="notice">
+      📡 GSC bağlantısı kurulmadan fırsat analizi yapılamaz.
+      <a href="/admin#gsc-setup">Kurulum rehberi ↓</a>
+    </div>
+  )}
+
+  {has_gsc_data && opportunities.length === 0 && (
+    <div class="notice" style="border-left-color:#4ADE80">
+      ✓ Tespit edilen query gap yok — siteye henüz yeterli trafik gelmemiş olabilir.
+    </div>
+  )}
+
+  <!-- Expansion opportunities (pos 5-10) -->
+  {expansion.length > 0 && (
+    <>
+      <div class="section-header" style="border-top:none;margin-top:0">
+        <span style="color:#4ADE80">▲ MEVCUT MAKALE GENİŞLET</span>
+        <span class="badge badge-yildiz">{expansion.length}</span>
+        <span style="color:#555;font-size:10px;margin-left:4px">Pozisyon 5-10 — H2 veya FAQ ekle</span>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Query</th><th>Mevcut Makale</th><th>Imp</th><th>Pos</th><th>CTR</th><th>Aksiyon</th>
+        </tr></thead>
+        <tbody>
+          {expansion.map((o: any) => (
+            <tr>
+              <td style="color:#C8D5C0;max-width:260px">{o.query}</td>
+              <td>
+                <a href={`/admin/article/${o.slug}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{o.slug}</a>
+              </td>
+              <td>{fmtNum(o.impressions)}</td>
+              <td style="color:#4ADE80;font-weight:600">{fmtPos(o.position)}</td>
+              <td>{((o.ctr || 0) * 100).toFixed(1)}%</td>
+              <td><a href={`/admin/article/${o.slug}`} class="btn">Makaleye Git →</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <!-- New article candidates (pos 11-20) -->
+  {newArticle.length > 0 && (
+    <>
+      <div class="section-header">
+        <span style="color:#FBBF24">+ YENİ MAKALE FIRSATI</span>
+        <span class="badge badge-firsat">{newArticle.length}</span>
+        <span style="color:#555;font-size:10px;margin-left:4px">Pozisyon 11-20 — yeni sayfa yaz</span>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Query</th><th>Kategori</th><th>Imp</th><th>Pos</th><th>Kaynak Makale</th>
+        </tr></thead>
+        <tbody>
+          {newArticle.map((o: any) => (
+            <tr>
+              <td style="color:#C8D5C0;max-width:280px">{o.query}</td>
+              <td><span style="color:#4A6B4A;font-size:11px">{o.category}</span></td>
+              <td>{fmtNum(o.impressions)}</td>
+              <td style="color:#FBBF24;font-weight:600">{fmtPos(o.position)}</td>
+              <td>
+                <a href={`/admin/article/${o.slug}`} style="color:#4A6B4A;text-decoration:none;font-size:11px">{o.slug}</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <!-- KP CSV note -->
+  <div style="margin-top:40px;padding:16px;background:#0C1A0F;border:1px solid #172B1B;border-radius:4px;font-size:12px">
+    <p style="color:#8CAA8C;margin-bottom:8px"><strong style="color:#C8D5C0">KP CSV Karşılaştırma</strong></p>
+    <p style="color:#4A6B4A">
+      batch1-8.csv, network1.csv ve SUPER.csv dosyaları yerel makinende.
+      Yeni konu seçerken bu verileri GSC fırsat listesiyle karşılaştır:
+    </p>
+    <ul style="color:#4A6B4A;margin-top:8px;padding-left:16px;line-height:2">
+      <li>CompIndex ≤ 20 → düşük rekabet</li>
+      <li>GSC'de impressions var ama URL yok → öncelikli yaz</li>
+      <li>CPC yüksek → AdSense geliri yüksek olur</li>
+    </ul>
+  </div>
+
+</AdminLayout>

@@ -1,0 +1,316 @@
+---
+interface Props {
+  title?: string;
+  active?: 'dashboard' | 'opportunities' | 'health' | 'log';
+}
+const { title = 'Dashboard', active = 'dashboard' } = Astro.props;
+
+// Client-side auth — hash is embedded at build time from env
+// Generate with: node -e "const c=require('crypto');console.log(c.createHash('sha256').update('yourpass').digest('hex'))"
+const adminHash = import.meta.env.ADMIN_HASH || '';
+---
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} — DK Admin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #060D08;
+      --surface:  #0C1A0F;
+      --border:   #172B1B;
+      --text:     #8CAA8C;
+      --text-dim: #4A6B4A;
+      --green:    #4ADE80;
+      --green-dim:#22C55E;
+      --red:      #F87171;
+      --orange:   #FB923C;
+      --yellow:   #FBBF24;
+      --blue:     #60A5FA;
+      --mono:     'IBM Plex Mono', 'Cascadia Code', 'Fira Mono', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 12.5px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ─── Header ─────────────────────────────────────────────────── */
+    .admin-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0;
+      padding: 0 20px;
+      height: 44px;
+    }
+    .admin-brand {
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-right: 24px;
+      white-space: nowrap;
+    }
+    .admin-nav { display: flex; gap: 2px; }
+    .admin-nav a {
+      color: var(--text-dim);
+      padding: 6px 14px;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 11.5px;
+      transition: background 0.1s, color 0.1s;
+    }
+    .admin-nav a:hover { background: var(--border); color: var(--text); }
+    .admin-nav a.active { background: var(--border); color: var(--green); }
+    .admin-spacer { flex: 1; }
+    .admin-meta {
+      color: var(--text-dim);
+      font-size: 11px;
+      white-space: nowrap;
+    }
+
+    /* ─── Main ───────────────────────────────────────────────────── */
+    .admin-main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+    }
+
+    /* ─── Auth gate ──────────────────────────────────────────────── */
+    #auth-gate {
+      position: fixed;
+      inset: 0;
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      flex-direction: column;
+      gap: 20px;
+    }
+    #auth-gate .auth-brand {
+      color: var(--green);
+      font-size: 16px;
+      letter-spacing: 0.1em;
+    }
+    #auth-gate input[type="password"] {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 18px;
+      font-family: var(--mono);
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      width: 260px;
+      text-align: center;
+    }
+    #auth-gate input:focus { border-color: var(--green-dim); }
+    #auth-gate button {
+      background: var(--border);
+      color: var(--green);
+      border: none;
+      padding: 10px 32px;
+      font-family: var(--mono);
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+    #auth-gate button:hover { background: var(--green); color: var(--bg); }
+    #auth-error { color: var(--red); font-size: 12px; height: 16px; }
+
+    /* ─── Shared utilities ───────────────────────────────────────── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 38px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 11.5px;
+      font-weight: 600;
+    }
+    .badge-acil    { background: #3B0A0A; color: var(--red); }
+    .badge-izle    { background: #2C1A06; color: var(--orange); }
+    .badge-firsat  { background: #2C250A; color: var(--yellow); }
+    .badge-stabil  { background: var(--border); color: var(--text); }
+    .badge-yildiz  { background: #0A1F0A; color: var(--green); }
+    .badge-olu     { background: #111; color: #555; }
+
+    .trend-up   { color: var(--green); }
+    .trend-down { color: var(--red); }
+    .trend-neu  { color: var(--text-dim); }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 0 8px;
+      border-top: 1px solid var(--border);
+      margin-top: 20px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .section-header:first-child { border-top: none; margin-top: 0; }
+    .section-label { font-size: 11px; color: var(--text-dim); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+    .section-count { font-size: 11px; }
+    .section-toggle { margin-left: auto; color: var(--text-dim); font-size: 10px; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th {
+      text-align: left;
+      font-size: 10.5px;
+      color: var(--text-dim);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 7px 8px;
+      vertical-align: middle;
+      border-bottom: 1px solid rgba(23,43,27,0.5);
+      font-size: 12px;
+    }
+    tr:hover td { background: rgba(23,43,27,0.4); }
+
+    .ahs-bar {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .ahs-track {
+      width: 50px;
+      height: 4px;
+      background: var(--border);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    .ahs-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      font-family: var(--mono);
+      font-size: 11px;
+      cursor: pointer;
+      text-decoration: none;
+      background: none;
+      color: var(--text-dim);
+      gap: 4px;
+      transition: border-color 0.1s, color 0.1s;
+    }
+    .btn:hover { border-color: var(--green-dim); color: var(--green); }
+    .btn-done { border-color: var(--green-dim); color: var(--green-dim); }
+
+    .notice {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--yellow);
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .notice a { color: var(--green); }
+
+    .stat-bar {
+      display: flex;
+      gap: 24px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .stat { display: flex; flex-direction: column; gap: 2px; }
+    .stat-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+    .stat-value { font-size: 18px; color: var(--green); font-weight: 600; }
+    .stat-sub { font-size: 10px; color: var(--text-dim); }
+  </style>
+</head>
+<body>
+
+{adminHash && (
+  <div id="auth-gate">
+    <p class="auth-brand">◈ DK Admin</p>
+    <input type="password" id="auth-input" placeholder="Şifre" autocomplete="current-password" />
+    <button id="auth-btn">Giriş</button>
+    <p id="auth-error"></p>
+  </div>
+)}
+
+<header class="admin-header">
+  <span class="admin-brand">◈ DK Admin</span>
+  <nav class="admin-nav">
+    <a href="/admin" class={active === 'dashboard' ? 'active' : ''}>Dashboard</a>
+    <a href="/admin/opportunities" class={active === 'opportunities' ? 'active' : ''}>Fırsatlar</a>
+    <a href="/admin/health" class={active === 'health' ? 'active' : ''}>Sağlık</a>
+    <a href="/admin/log" class={active === 'log' ? 'active' : ''}>Log</a>
+  </nav>
+  <span class="admin-spacer"></span>
+  <span class="admin-meta" id="header-meta">donanimklinik.com</span>
+</header>
+
+<main class="admin-main">
+  <slot />
+</main>
+
+{adminHash && (
+  <script define:vars={{ adminHash }} is:inline>
+    (function () {
+      var STORAGE_KEY = 'dk-admin-v1';
+      var stored = sessionStorage.getItem(STORAGE_KEY);
+      var gate = document.getElementById('auth-gate');
+      if (!gate) return;
+
+      if (stored === adminHash) { gate.remove(); return; }
+
+      document.body.style.overflow = 'hidden';
+
+      async function tryLogin() {
+        var pass = document.getElementById('auth-input').value;
+        if (!pass) return;
+        var enc = new TextEncoder().encode(pass);
+        var buf = await crypto.subtle.digest('SHA-256', enc);
+        var hex = Array.from(new Uint8Array(buf)).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+        if (hex === adminHash) {
+          sessionStorage.setItem(STORAGE_KEY, adminHash);
+          gate.remove();
+          document.body.style.overflow = '';
+        } else {
+          document.getElementById('auth-error').textContent = 'Hatalı şifre.';
+          document.getElementById('auth-input').value = '';
+        }
+      }
+
+      document.getElementById('auth-btn').addEventListener('click', tryLogin);
+      document.getElementById('auth-input').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') tryLogin();
+      });
+    })();
+  </script>
+)}
+
+</body>
+</html>

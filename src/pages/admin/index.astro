@@ -1,0 +1,308 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import dashboard from '../../../data/dashboard.json';
+
+const { articles, site_totals, health, has_gsc_data, gsc_data_through, generated_at } = dashboard;
+
+const acil   = articles.filter((a: any) => a.group === 'ACIL');
+const izle   = articles.filter((a: any) => a.group === 'IZLE');
+const firsat = articles.filter((a: any) => a.group === 'FIRSAT');
+const yildiz = articles.filter((a: any) => a.group === 'YILDIZ');
+const stabil = articles.filter((a: any) => a.group === 'STABIL');
+const olu    = articles.filter((a: any) => a.group === 'OLU');
+
+function fmtNum(n: number) { return n >= 1000 ? (n / 1000).toFixed(1) + 'K' : String(n || 0); }
+function fmtCtr(n: number) { return ((n || 0) * 100).toFixed(1) + '%'; }
+function fmtPos(n: number) { return n ? n.toFixed(1) : '—'; }
+function fmtDelta(cur: number, prev: number) {
+  if (!prev) return '';
+  const pct = Math.round((cur - prev) / prev * 100);
+  return pct > 0 ? `+${pct}%` : pct < 0 ? `${pct}%` : '—';
+}
+function ahsColor(n: number) {
+  if (n < 30) return '#F87171';
+  if (n < 50) return '#FB923C';
+  if (n < 70) return '#8CAA8C';
+  if (n < 85) return '#4ADE80';
+  return '#22C55E';
+}
+
+const updatedDate = generated_at ? new Date(generated_at).toLocaleDateString('tr-TR') : '—';
+const brokenCount = health?.broken_links?.length || 0;
+const cannibals   = health?.cannibal_pairs?.length || 0;
+---
+
+<AdminLayout title="Dashboard" active="dashboard">
+
+  <!-- Summary bar -->
+  <div class="stat-bar">
+    <div class="stat">
+      <span class="stat-label">Makaleler</span>
+      <span class="stat-value">{articles.length}</span>
+      <span class="stat-sub">{has_gsc_data ? `${site_totals.articles_with_data} GSC'de` : 'GSC yok'}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Impression / 28g</span>
+      <span class="stat-value">{fmtNum(site_totals.impressions_28d)}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Tıklama / 28g</span>
+      <span class="stat-value">{fmtNum(site_totals.clicks_28d)}</span>
+      <span class="stat-sub">{fmtCtr(site_totals.avg_ctr)} CTR</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Ort. Pozisyon</span>
+      <span class="stat-value">{site_totals.avg_position || '—'}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">GSC Verisi</span>
+      <span class="stat-value" style="font-size:14px">{gsc_data_through || '—'}</span>
+      <span class="stat-sub">Güncelleme: {updatedDate}</span>
+    </div>
+  </div>
+
+  <!-- Health alert -->
+  {(brokenCount > 0 || cannibals > 0) && (
+    <div class="notice">
+      ⚠ <strong>Sağlık uyarısı:</strong>
+      {brokenCount > 0 && <span> {brokenCount} kırık link</span>}
+      {cannibals > 0 && <span> · {cannibals} cannibalization</span>}
+      — <a href="/admin/health">Sağlık sayfasına git →</a>
+    </div>
+  )}
+
+  {!has_gsc_data && (
+    <div class="notice">
+      📡 <strong>GSC bağlantısı yok.</strong>
+      Veriler frontmatter'dan. Gerçek metrikler için
+      <a href="#gsc-setup">OAuth kurulumunu tamamla ↓</a>
+    </div>
+  )}
+
+  <!-- ACIL -->
+  <div class="section-header" onclick="toggleSection('acil')">
+    <span style="color:#F87171">● ACIL</span>
+    <span class="badge badge-acil">{acil.length}</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">48 saat içinde güncelle</span>
+    <span class="section-toggle" id="toggle-acil">▾</span>
+  </div>
+  <div id="section-acil">
+    {acil.length === 0 ? (
+      <p class="empty-state">Temiz ✓</p>
+    ) : (
+      <table>
+        <thead><tr>
+          <th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th>
+        </tr></thead>
+        <tbody>
+          {acil.map((a: any) => (
+            <tr>
+              <td>
+                <span class="ahs-bar">
+                  <span style={`font-weight:600;color:${ahsColor(a.ahs)}`}>{a.ahs}</span>
+                  <span class="ahs-track"><span class="ahs-fill" style={`width:${a.ahs}%;background:${ahsColor(a.ahs)}`}></span></span>
+                  {a.ahs_delta !== 0 && <span style={`font-size:10px;color:${a.ahs_delta > 0 ? '#4ADE80' : '#F87171'}`}>{a.ahs_delta > 0 ? '+' : ''}{a.ahs_delta}</span>}
+                </span>
+              </td>
+              <td>
+                <a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a>
+                <span style="color:#333;font-size:10px;margin-left:6px">{a.category}</span>
+                {a.suggestions[0] && <div style="color:#555;font-size:10px;margin-top:2px">{a.suggestions[0]}</div>}
+              </td>
+              <td style="color:#8CAA8C">{fmtNum(a.metrics_28d.impressions)}</td>
+              <td class={a.trend === 'up' ? 'trend-up' : a.trend === 'down' ? 'trend-down' : 'trend-neu'}>
+                {a.trend === 'up' ? '▲' : a.trend === 'down' ? '▼' : '→'}
+                {fmtDelta(a.metrics_28d.impressions, a.metrics_prev_28d.impressions)}
+              </td>
+              <td style="color:#8CAA8C">{fmtPos(a.metrics_28d.position)}</td>
+              <td style="color:#8CAA8C">{fmtCtr(a.metrics_28d.ctr)}</td>
+              <td>
+                <a href={`/admin/article/${a.slug}`} class="btn">Detay →</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  <!-- İZLE -->
+  <div class="section-header" onclick="toggleSection('izle')">
+    <span style="color:#FB923C">● İZLE</span>
+    <span class="badge badge-izle">{izle.length}</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">7 günde tekrar bak</span>
+    <span class="section-toggle" id="toggle-izle">▾</span>
+  </div>
+  <div id="section-izle">
+    {izle.length === 0 ? (
+      <p class="empty-state">Temiz ✓</p>
+    ) : (
+      <table>
+        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+        <tbody>
+          {izle.map((a: any) => (
+            <tr>
+              <td><span class="ahs-bar"><span style={`font-weight:600;color:${ahsColor(a.ahs)}`}>{a.ahs}</span><span class="ahs-track"><span class="ahs-fill" style={`width:${a.ahs}%;background:${ahsColor(a.ahs)}`}></span></span></span></td>
+              <td><a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a><span style="color:#333;font-size:10px;margin-left:6px">{a.category}</span></td>
+              <td>{fmtNum(a.metrics_28d.impressions)}</td>
+              <td class={a.trend === 'up' ? 'trend-up' : a.trend === 'down' ? 'trend-down' : 'trend-neu'}>{a.trend === 'up' ? '▲' : a.trend === 'down' ? '▼' : '→'} {fmtDelta(a.metrics_28d.impressions, a.metrics_prev_28d.impressions)}</td>
+              <td>{fmtPos(a.metrics_28d.position)}</td>
+              <td>{fmtCtr(a.metrics_28d.ctr)}</td>
+              <td><a href={`/admin/article/${a.slug}`} class="btn">Detay →</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  <!-- FIRSAT -->
+  <div class="section-header" onclick="toggleSection('firsat')">
+    <span style="color:#FBBF24">● FIRSAT</span>
+    <span class="badge badge-firsat">{firsat.length}</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">14 günde genişlet</span>
+    <span class="section-toggle" id="toggle-firsat">▾</span>
+  </div>
+  <div id="section-firsat">
+    {firsat.length === 0 ? (
+      <p class="empty-state">{has_gsc_data ? 'Fırsat yok' : 'GSC verisi gerekli'}</p>
+    ) : (
+      <table>
+        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Pos</th><th>Öneri</th><th style="width:130px"></th></tr></thead>
+        <tbody>
+          {firsat.map((a: any) => (
+            <tr>
+              <td><span style={`font-weight:600;color:${ahsColor(a.ahs)}`}>{a.ahs}</span></td>
+              <td><a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a></td>
+              <td>{fmtNum(a.metrics_28d.impressions)}</td>
+              <td><span style="color:#FBBF24">{fmtPos(a.metrics_28d.position)}</span></td>
+              <td style="color:#555;font-size:11px">{a.suggestions[0] || 'İçerik genişlet'}</td>
+              <td><a href={`/admin/article/${a.slug}`} class="btn">Detay →</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  <!-- YILDIZ -->
+  <div class="section-header" onclick="toggleSection('yildiz')">
+    <span style="color:#4ADE80">★ YILDIZ</span>
+    <span class="badge badge-yildiz">{yildiz.length}</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">koruma modunda</span>
+    <span class="section-toggle" id="toggle-yildiz">▾</span>
+  </div>
+  <div id="section-yildiz">
+    {yildiz.length === 0 ? (
+      <p class="empty-state">— GSC verisi gerekli</p>
+    ) : (
+      <table>
+        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+        <tbody>
+          {yildiz.map((a: any) => (
+            <tr>
+              <td><span style="font-weight:600;color:#4ADE80">{a.ahs}</span></td>
+              <td><a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a></td>
+              <td>{fmtNum(a.metrics_28d.impressions)}</td>
+              <td class="trend-up">▲ {fmtDelta(a.metrics_28d.impressions, a.metrics_prev_28d.impressions)}</td>
+              <td>{fmtPos(a.metrics_28d.position)}</td>
+              <td>{fmtCtr(a.metrics_28d.ctr)}</td>
+              <td><a href={`/admin/article/${a.slug}`} class="btn">Detay →</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    )}
+  </div>
+
+  <!-- STABİL (collapsed by default) -->
+  <div class="section-header" onclick="toggleSection('stabil')">
+    <span>● STABİL</span>
+    <span class="badge badge-stabil">{stabil.length}</span>
+    <span class="section-toggle" id="toggle-stabil">▸</span>
+  </div>
+  <div id="section-stabil" style="display:none">
+    <table>
+      <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+      <tbody>
+        {stabil.map((a: any) => (
+          <tr>
+            <td><span style={`font-weight:600;color:${ahsColor(a.ahs)}`}>{a.ahs}</span></td>
+            <td><a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a></td>
+            <td>{fmtNum(a.metrics_28d.impressions)}</td>
+            <td>{fmtPos(a.metrics_28d.position)}</td>
+            <td>{fmtCtr(a.metrics_28d.ctr)}</td>
+            <td><a href={`/admin/article/${a.slug}`} class="btn">Detay →</a></td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ÖLÜ -->
+  {olu.length > 0 && (
+    <>
+      <div class="section-header" onclick="toggleSection('olu')">
+        <span style="color:#444">● ÖLÜ</span>
+        <span class="badge badge-olu">{olu.length}</span>
+        <span style="color:#444;font-size:10px;margin-left:4px">noindex veya 301</span>
+        <span class="section-toggle" id="toggle-olu">▸</span>
+      </div>
+      <div id="section-olu" style="display:none">
+        <table>
+          <thead><tr><th>Makale</th><th>Imp (28g)</th><th>Aksiyon</th></tr></thead>
+          <tbody>
+            {olu.map((a: any) => (
+              <tr>
+                <td><a href={`/admin/article/${a.slug}`} style="color:#555;text-decoration:none">{a.slug}</a></td>
+                <td style="color:#444">{fmtNum(a.metrics_28d.impressions)}</td>
+                <td><span style="color:#F87171;font-size:11px">noindex ekle / 301 yönlendir</span></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <!-- GSC Setup guide -->
+  {!has_gsc_data && (
+    <div id="gsc-setup" style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border)">
+      <p style="color:#FBBF24;font-size:13px;margin-bottom:16px;letter-spacing:0.05em">📡 GSC OAuth Kurulum Rehberi</p>
+      <ol style="color:#8CAA8C;font-size:12px;line-height:2.2;padding-left:20px">
+        <li>Google Cloud Console → Yeni proje oluştur → Search Console API'yi etkinleştir</li>
+        <li>Kimlik Bilgileri → OAuth 2.0 İstemci Kimliği → Masaüstü Uygulaması seç</li>
+        <li>Client ID ve Secret'ı indir (<code>.json</code> dosyası)</li>
+        <li>Terminalde çalıştır: <code>node scripts/gsc-oauth-setup.mjs</code></li>
+        <li>Tarayıcıda açılan sayfayı onayla → Refresh token terminale yazılır</li>
+        <li>GitHub → Settings → Secrets → 3 secret ekle:<br/>
+          <code>GSC_CLIENT_ID</code> · <code>GSC_CLIENT_SECRET</code> · <code>GSC_REFRESH_TOKEN</code></li>
+        <li>GitHub Actions → Daily GSC Sync → "Run workflow" butonuna tıkla</li>
+        <li>Vercel Dashboard → Settings → Env Variables → <code>ADMIN_HASH</code> ekle</li>
+      </ol>
+      <p style="color:#4A6B4A;font-size:11px;margin-top:16px">
+        Şifre hash'i üretmek:<br/>
+        <code style="background:#0C1A0F;padding:4px 10px;border-radius:3px;display:inline-block;margin-top:4px">
+          node -e "const c=require('crypto');console.log(c.createHash('sha256').update('ŞIFREN').digest('hex'))"
+        </code>
+      </p>
+    </div>
+  )}
+
+</AdminLayout>
+
+<script is:inline>
+function toggleSection(id) {
+  var el = document.getElementById('section-' + id);
+  var toggle = document.getElementById('toggle-' + id);
+  if (!el) return;
+  var hidden = el.style.display === 'none';
+  el.style.display = hidden ? '' : 'none';
+  if (toggle) toggle.textContent = hidden ? '▾' : '▸';
+}
+</script>
+
+<style>
+  .empty-state { color: #4A6B4A; padding: 8px 0; font-size: 12px; }
+  code { font-family: 'IBM Plex Mono', monospace; background: #0C1A0F; padding: 1px 5px; border-radius: 3px; font-size: 11px; }
+</style>

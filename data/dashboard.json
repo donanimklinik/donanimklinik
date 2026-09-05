@@ -1,0 +1,2640 @@
+{
+  "generated_at": "2026-09-05T00:34:44.843Z",
+  "gsc_data_through": null,
+  "has_gsc_data": false,
+  "site_totals": {
+    "impressions_28d": 0,
+    "clicks_28d": 0,
+    "avg_ctr": 0,
+    "avg_position": 0,
+    "articles_with_data": 0
+  },
+  "groups": {
+    "acil": [],
+    "izle": [],
+    "firsat": [],
+    "stabil": [
+      "accidentally-deleted-files-windows-file-recovery",
+      "adobe-acrobat-errors",
+      "adobe-acrobat-keeps-crashing-fix",
+      "adobe-acrobat-not-opening-fix",
+      "adobe-acrobat-not-responding-fix",
+      "adobe-acrobat-not-working-fix",
+      "adobe-reader-not-opening-pdf-fix",
+      "aka-ms-myrecoverykey",
+      "best-data-recovery-software-windows",
+      "bitlocker-recovery-key-active-directory",
+      "bitlocker-recovery-key-dell",
+      "bitlocker-recovery-key-find",
+      "bitlocker-recovery-key-not-working",
+      "bitlocker-recovery-screen-after-windows-update",
+      "bitlocker-suspended-mode-how-to-re-enable",
+      "brother-printer-not-connecting-to-wifi-fix",
+      "cannot-open-pdf-fix",
+      "canon-printer-not-connecting-to-wifi-fix",
+      "canon-printer-not-printing-fix",
+      "canon-printer-not-printing-straight-lines-fix",
+      "canon-printer-not-responding-fix",
+      "cloud-storage-sync-errors",
+      "dropbox-not-syncing-fix",
+      "dropbox-not-updating-fix",
+      "emails-stuck-in-outlook-outbox",
+      "epson-printer-not-connecting-to-wifi-fix",
+      "ethernet-connected-but-no-internet-fix",
+      "excel-file-not-opening-fix",
+      "excel-keeps-crashing-fix",
+      "excel-not-responding-fix",
+      "google-drive-not-syncing-fix",
+      "hard-drive-failure-signs",
+      "hard-drive-recovery-services-when-diy-fails",
+      "hotspot-connected-but-no-internet-fix",
+      "how-to-access-router-settings",
+      "how-to-change-router-dns-settings",
+      "how-to-configure-wifi-router",
+      "how-to-connect-router-to-internet",
+      "how-to-connect-router-to-modem",
+      "how-to-set-up-netgear-router",
+      "how-to-set-up-nighthawk-router",
+      "how-to-set-up-router-and-modem",
+      "how-to-set-up-wifi-router",
+      "how-to-set-up-wireless-router",
+      "hp-printer-connected-wifi-but-offline-fix",
+      "hp-printer-not-connecting-to-wifi-fix",
+      "hp-printer-offline-fix",
+      "internet-keeps-disconnecting-fix",
+      "laptop-wont-connect-to-wifi-fix",
+      "office-errors",
+      "onedrive-deleted-files-recovery",
+      "onedrive-not-syncing-fix",
+      "onedrive-not-working-fix",
+      "onedrive-sync-pending-fix",
+      "outlook-calendar-not-syncing",
+      "outlook-error-0x800ccc0e",
+      "outlook-not-receiving-emails",
+      "outlook-not-sending-email",
+      "outlook-not-syncing",
+      "outlook-send-receive-not-working",
+      "powerpoint-not-responding-fix",
+      "preparing-bitlocker-recovery",
+      "printer-paper-jam-but-no-paper-fix",
+      "recover-usb-flash-drive",
+      "recuva-data-recovery",
+      "ssd-recovery-after-failure",
+      "unlock-bitlocker-without-recovery-key",
+      "wifi-connected-but-no-internet-fix",
+      "wifi-keeps-disconnecting-fix",
+      "windows-activation-error-0x8007232b",
+      "windows-activation-error-0xc004c008",
+      "windows-activation-error-0xc004c060",
+      "windows-activation-error-0xc004f050",
+      "windows-activation-error-0xc004f074",
+      "windows-digital-license-not-working",
+      "windows-phone-activation",
+      "windows-product-key-not-working",
+      "windows-update-error-0x80070005-fix",
+      "windows-update-error-0x800f0922-fix",
+      "windows-update-error-0xc1900101-fix",
+      "windows-update-errors",
+      "windows-update-not-working-fix",
+      "windows-update-stuck-fix",
+      "windows-update-troubleshooter-fix",
+      "word-keeps-crashing-fix",
+      "word-not-opening-fix",
+      "word-not-responding-fix"
+    ],
+    "yildiz": [],
+    "olu": []
+  },
+  "articles": [
+    {
+      "slug": "accidentally-deleted-files-windows-file-recovery",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Accidentally Deleted Files — Windows File Recovery Tool Guide",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://apps.microsoft.com/detail/9n26s50ln705",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-acrobat-errors",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Acrobat Errors — Fix Guide",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/kb/cant-view-pdf-web.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-acrobat-keeps-crashing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Acrobat Keeps Crashing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/desktop/troubleshoot/performance-issues/acrobat-crashes.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-acrobat-not-opening-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Acrobat Not Opening — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/kb/unable-to-launch-acrobat-on-windows.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-acrobat-not-responding-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Acrobat Not Responding — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/desktop/troubleshoot/performance-issues/acrobat-crashes.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-acrobat-not-working-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Acrobat Not Working — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/kb/cant-view-pdf-web.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "adobe-reader-not-opening-pdf-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Adobe Reader Not Opening PDF — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/kb/unable-to-launch-acrobat-on-windows.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "aka-ms-myrecoverykey",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "aka.ms/myrecoverykey — What It Is and How to Use It",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "best-data-recovery-software-windows",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Best Free Data Recovery Software for Windows (2026)",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/recover-your-files-in-windows-61f5b28a-f5b8-3cc2-0f8e-a63cb4e1d4c4",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-recovery-key-active-directory",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "How to Get Your BitLocker Recovery Key from Active Directory or Azure AD",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-and-adds-faq",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-recovery-key-dell",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "How to Find the BitLocker Recovery Key on a Dell Computer",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-recovery-key-find",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "BitLocker Recovery Key — Where to Find It (Official Methods)",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-recovery-key-not-working",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "BitLocker Recovery Key Not Working — How to Find the Right One",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-recovery-screen-after-windows-update",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "BitLocker Recovery Screen After Windows Update — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/finding-your-bitlocker-recovery-key-in-windows-6b71ad27-0b89-ea08-f143-056f5ab347d6",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "bitlocker-suspended-mode-how-to-re-enable",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "BitLocker Suspended Mode — What It Means and How to Re-enable It",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/operations-guide",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "brother-printer-not-connecting-to-wifi-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Brother Printer Not Connecting to WiFi — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.brother.com/g/s/en/install/win/index.htm",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "cannot-open-pdf-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Cannot Open PDF in Adobe Acrobat — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://helpx.adobe.com/acrobat/kb/cant-view-pdf-web.html",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "canon-printer-not-connecting-to-wifi-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Canon Printer Not Connecting to WiFi — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.usa.canon.com/kb/index?page=content&id=ART117636",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "canon-printer-not-printing-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Canon Printer Not Printing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.usa.canon.com/kb/index?page=content&id=ART109546",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "canon-printer-not-printing-straight-lines-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Canon Printer Not Printing Straight Lines — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.usa.canon.com/kb/index?page=content&id=ART109546",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "canon-printer-not-responding-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Canon Printer Not Responding — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.usa.canon.com/kb/index?page=content&id=ART109546",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "cloud-storage-sync-errors",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Cloud Storage Sync Errors — Fix Guide",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "dropbox-not-syncing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Dropbox Not Syncing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://help.dropbox.com/sync/files-not-syncing",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "dropbox-not-updating-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Dropbox Not Updating — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://help.dropbox.com/sync/files-not-syncing",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "emails-stuck-in-outlook-outbox",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Emails Stuck in Outlook Outbox — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/topic/outlook-email-stuck-5c945f98-415e-58f2-8476-b76e59dfd2e3",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "epson-printer-not-connecting-to-wifi-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Epson Printer Not Connecting to WiFi — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://epson.com/support",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "ethernet-connected-but-no-internet-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "Ethernet Connected But No Internet — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-ethernet-connection-problems-in-windows",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "excel-file-not-opening-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Excel File Not Opening — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/repair-a-corrupted-workbook-153a45f4-6cab-44b1-93ca-801ddcd4ea53",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "excel-keeps-crashing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Excel Keeps Crashing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/excel-not-responding-hangs-freezes-or-stops-working-37e7d3c9-9e84-40bf-a805-4ca6853a1ff4",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "excel-not-responding-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Excel Not Responding — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/excel-not-responding-hangs-freezes-or-stops-working-37e7d3c9-9e84-40bf-a805-4ca6853a1ff4",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "google-drive-not-syncing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Google Drive Not Syncing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.google.com/drive/answer/2565956",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hard-drive-failure-signs",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Signs of Hard Drive Failure — And What to Do Before It's Too Late",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/device-performance-and-health-in-the-windows-security-app-59d8499d-b6fd-6930-7667-ebf8ae10e08d",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hard-drive-recovery-services-when-diy-fails",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Hard Drive Recovery Services — When DIY Isn't Enough",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://www.seagate.com/products/rescue-data-recovery/",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hotspot-connected-but-no-internet-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "Hotspot Connected But No Internet — Fix It in Minutes",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.apple.com/en-us/111812",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-access-router-settings",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Access Your Router Settings",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/27262/How-do-I-log-in-to-my-NETGEAR-router-using-a-web-browser",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-change-router-dns-settings",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Change Router DNS Settings",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://developers.google.com/speed/public-dns/docs/using",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-configure-wifi-router",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Configure a WiFi Router",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/23429/How-do-I-set-up-and-install-my-NETGEAR-router",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-connect-router-to-internet",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Connect Your Router to the Internet",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/21618/How-do-I-connect-a-NETGEAR-router-to-my-existing-home-network",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-connect-router-to-modem",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Connect a Router to a Modem",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/21618/How-do-I-connect-a-NETGEAR-router-to-my-existing-home-network",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-set-up-netgear-router",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Set Up a Netgear Router",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/23429/How-do-I-set-up-and-install-my-NETGEAR-router",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-set-up-nighthawk-router",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Set Up a Nighthawk Router",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/000057419/How-do-I-set-up-my-NETGEAR-Nighthawk-router-for-the-first-time",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-set-up-router-and-modem",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Set Up Router and Modem Together",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/21618/How-do-I-connect-a-NETGEAR-router-to-my-existing-home-network",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-set-up-wifi-router",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Set Up a WiFi Router",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/23429/How-do-I-set-up-and-install-my-NETGEAR-router",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "how-to-set-up-wireless-router",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "How to Set Up a Wireless Router",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://kb.netgear.com/23429/How-do-I-set-up-and-install-my-NETGEAR-router",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hp-printer-connected-wifi-but-offline-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "HP Printer Connected to WiFi But Offline — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.hp.com/us-en/printer-issues",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hp-printer-not-connecting-to-wifi-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "HP Printer Not Connecting to WiFi — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.hp.com/us-en/printer-issues",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "hp-printer-offline-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "HP Printer Offline — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.hp.com/us-en/printer-issues",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "internet-keeps-disconnecting-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "Internet Keeps Disconnecting? Here's How to Fix It",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "laptop-wont-connect-to-wifi-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "Laptop Won't Connect to WiFi — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "office-errors",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Microsoft Office Errors — Fix Guide",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/repair-an-office-application-7821d4b6-7c1d-4205-aa0e-a6b40c5bb88b",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "onedrive-deleted-files-recovery",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "How to Recover Deleted Files from OneDrive",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/restore-items-in-the-recycle-bin-that-were-deleted-from-sharepoint-or-teams-6df466b6-55f2-4898-8d6e-c0dff851a0be",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "onedrive-not-syncing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "OneDrive Not Syncing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "onedrive-not-working-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "OneDrive Not Working — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "onedrive-sync-pending-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "OneDrive Sync Pending — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-calendar-not-syncing",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Calendar Not Syncing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/outlook/",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-error-0x800ccc0e",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Error 0x800CCC0E — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/users-get-errors-0x800ccc0e-0x800ccc0f-synchronizing-gmail-and-yahoo-accounts-in-classic-outlook-e5a7b684-7c5c-4848-ab2d-d48291451f67",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-not-receiving-emails",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Not Receiving Emails — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/i-can-t-send-or-receive-messages-in-outlook-97748418-bbd5-4743-a05b-581f22a466dd",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-not-sending-email",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Not Sending Email — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/outlook/i-can-t-send-or-receive-messages-in-outlook",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-not-syncing",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Not Syncing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/outlook/fix-email-sync-issues-by-removing-a-device-from-your-outlook-mailbox",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "outlook-send-receive-not-working",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Outlook Send and Receive Not Working — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/outlook/fix-email-sync-issues-by-removing-a-device-from-your-outlook-mailbox",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "powerpoint-not-responding-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "PowerPoint Not Responding — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/powerpoint-isn-t-responding-hangs-or-freezes-652ede6e-e3d2-449a-a07f-8c800dfb948d",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "preparing-bitlocker-recovery",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Preparing BitLocker Recovery — What This Screen Means",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "printer-paper-jam-but-no-paper-fix",
+      "category": "peripherals",
+      "url": "/peripherals/undefined/",
+      "title": "Printer Paper Jam But No Paper — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.hp.com/us-en/printer-issues",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "recover-usb-flash-drive",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "How to Recover Files from a USB Flash Drive",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/recover-your-files-in-windows-61f5b28a-f5b8-3cc2-0f8e-a63cb4e1d4c4",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "recuva-data-recovery",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "How to Use Recuva to Recover Deleted Files",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://www.ccleaner.com/recuva/download",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "ssd-recovery-after-failure",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "SSD Data Recovery After Failure — What Is Actually Possible",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://www.seagate.com/products/rescue-data-recovery/",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "unlock-bitlocker-without-recovery-key",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Can You Unlock BitLocker Without the Recovery Key?",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "wifi-connected-but-no-internet-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "WiFi Connected But No Internet — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "wifi-keeps-disconnecting-fix",
+      "category": "networking",
+      "url": "/networking/undefined/",
+      "title": "WiFi Keeps Disconnecting — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/fix-wi-fi-connection-issues-in-windows-9424a1f7-6a3b-65a6-4d78-7f07eee84d2c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-activation-error-0x8007232b",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Activation Error 0x8007232B — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-activation-error-0xc004c008",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Activation Error 0xC004C008 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/get-help-with-windows-activation-errors-09d8fb64-6768-4815-0c30-159fa7d89d85",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-activation-error-0xc004c060",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Activation Error 0xC004C060 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/get-help-with-windows-activation-errors-09d8fb64-6768-4815-0c30-159fa7d89d85",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-activation-error-0xc004f050",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Activation Error 0xC004F050 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/get-help-with-windows-activation-errors-09d8fb64-6768-4815-0c30-159fa7d89d85",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-activation-error-0xc004f074",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Activation Error 0xC004F074 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-digital-license-not-working",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Digital Licence Not Working — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-phone-activation",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Phone Activation — When Online Activation Fails",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-product-key-not-working",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Product Key Not Working — What to Do",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-error-0x80070005-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Error 0x80070005 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-error-0x800f0922-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Error 0x800f0922 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-error-0xc1900101-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Error 0xc1900101 — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/get-help-with-windows-upgrade-and-installation-errors-ea144c24-513d-a60e-40df-31ff78b3158a",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-errors",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Errors — Fix Guide",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-not-working-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Not Working — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3c-89ce169755dd",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-stuck-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Stuck — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3c-89ce169755dd",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "windows-update-troubleshooter-fix",
+      "category": "computers",
+      "url": "/computers/undefined/",
+      "title": "Windows Update Troubleshooter — How to Run",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3c-89ce169755dd",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "word-keeps-crashing-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Word Keeps Crashing — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/how-to-troubleshoot-problems-that-occur-when-you-start-or-use-word-c58cf51c-eff7-4205-89ce-1a23f8f8096e",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "word-not-opening-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Word Not Opening — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/word/open-a-document-after-a-file-corruption-error",
+      "suggestions": [],
+      "snooze_until": null
+    },
+    {
+      "slug": "word-not-responding-fix",
+      "category": "software",
+      "url": "/software/undefined/",
+      "title": "Word Not Responding — Fix",
+      "ahs": 50,
+      "ahs_prev": 50,
+      "ahs_delta": 0,
+      "group": "STABIL",
+      "metrics_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "metrics_prev_28d": {
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": 0,
+        "position": 0
+      },
+      "trend": "neutral",
+      "top_queries": [],
+      "last_refresh": null,
+      "refresh_count": 0,
+      "source_url": "https://support.microsoft.com/en-us/office/how-to-troubleshoot-problems-that-occur-when-you-start-or-use-word-c58cf51c-eff7-4205-89ce-1a23f8f8096e",
+      "suggestions": [],
+      "snooze_until": null
+    }
+  ],
+  "health": {
+    "broken_links": [],
+    "cannibal_pairs": [],
+    "duplicate_risks": [],
+    "checked_at": null
+  },
+  "opportunities": []
+}

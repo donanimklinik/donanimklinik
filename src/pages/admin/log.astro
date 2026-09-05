@@ -1,0 +1,150 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import dashboard from '../../../data/dashboard.json';
+
+const generatedAt = dashboard.generated_at;
+const gscThrough  = dashboard.gsc_data_through;
+const articles    = dashboard.articles || [];
+
+// Build a synthetic activity log from dashboard data
+const acilCount   = articles.filter((a: any) => a.group === 'ACIL').length;
+const izleCount   = articles.filter((a: any) => a.group === 'IZLE').length;
+const yildizCount = articles.filter((a: any) => a.group === 'YILDIZ').length;
+const oluCount    = articles.filter((a: any) => a.group === 'OLU').length;
+
+// Articles with refresh history
+const refreshed = articles
+  .filter((a: any) => a.refresh_count > 0)
+  .sort((x: any, y: any) => (y.last_refresh || '').localeCompare(x.last_refresh || ''));
+---
+
+<AdminLayout title="Log" active="log">
+
+  <div style="margin-bottom:20px">
+    <h1 style="color:#C8D5C0;font-size:15px;font-weight:600">Sistem Log</h1>
+    <p style="color:#4A6B4A;font-size:12px;margin-top:4px">
+      Otomatik GSC sync ve makale güncelleme geçmişi
+    </p>
+  </div>
+
+  <!-- Last sync info -->
+  <div class="stat-bar" style="margin-bottom:24px">
+    <div class="stat">
+      <span class="stat-label">Son Sync</span>
+      <span class="stat-value" style="font-size:13px">{generatedAt ? generatedAt.replace('T', ' ').slice(0, 16) : '—'}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">GSC Verisi</span>
+      <span class="stat-value" style="font-size:13px">{gscThrough || '—'}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Makale Sayısı</span>
+      <span class="stat-value">{articles.length}</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Güncellenen</span>
+      <span class="stat-value">{refreshed.length}</span>
+    </div>
+  </div>
+
+  <!-- System events -->
+  <div class="section-header" style="border-top:none;margin-top:0">
+    <span style="color:#60A5FA">▣ SİSTEM OLAYLARI</span>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:24px">
+    {generatedAt && (
+      <div style="display:flex;gap:16px;padding:8px 10px;background:#0C1A0F;border:1px solid #172B1B;border-radius:3px;font-size:11.5px">
+        <span style="color:#4A6B4A;min-width:140px">{generatedAt.replace('T', ' ').slice(0, 16)}</span>
+        <span style="color:#60A5FA">SYNC</span>
+        <span style="color:#8CAA8C">
+          dashboard.json yenilendi — {articles.length} makale, GSC: {gscThrough || 'yok'}
+        </span>
+      </div>
+    )}
+    {acilCount > 0 && (
+      <div style="display:flex;gap:16px;padding:8px 10px;background:#0C1A0F;border:1px solid #172B1B;border-radius:3px;font-size:11.5px">
+        <span style="color:#4A6B4A;min-width:140px">{generatedAt?.replace('T', ' ').slice(0, 16)}</span>
+        <span style="color:#F87171">ACIL</span>
+        <span style="color:#8CAA8C">{acilCount} makale ACIL grubuna düştü — hemen güncelle</span>
+      </div>
+    )}
+    {oluCount > 0 && (
+      <div style="display:flex;gap:16px;padding:8px 10px;background:#0C1A0F;border:1px solid #172B1B;border-radius:3px;font-size:11.5px">
+        <span style="color:#4A6B4A;min-width:140px">{generatedAt?.replace('T', ' ').slice(0, 16)}</span>
+        <span style="color:#555">ÖLÜ</span>
+        <span style="color:#4A6B4A">{oluCount} makale ÖLÜ grubunda — backlink veya yönlendirme düşün</span>
+      </div>
+    )}
+    {yildizCount > 0 && (
+      <div style="display:flex;gap:16px;padding:8px 10px;background:#0C1A0F;border:1px solid #172B1B;border-radius:3px;font-size:11.5px">
+        <span style="color:#4A6B4A;min-width:140px">{generatedAt?.replace('T', ' ').slice(0, 16)}</span>
+        <span style="color:#4ADE80">YILDIZ</span>
+        <span style="color:#8CAA8C">{yildizCount} makale en iyi performansta — iç linkleri güçlendir</span>
+      </div>
+    )}
+    {!generatedAt && (
+      <div style="padding:20px;color:#4A6B4A;font-size:12px;text-align:center">
+        Henüz log yok — ilk GSC sync'ten sonra olaylar burada görünecek.
+      </div>
+    )}
+  </div>
+
+  <!-- Refresh history -->
+  {refreshed.length > 0 && (
+    <>
+      <div class="section-header">
+        <span style="color:#8CAA8C">↻ GÜNCELLEME GEÇMİŞİ</span>
+        <span class="badge badge-stabil">{refreshed.length}</span>
+        <span style="color:#555;font-size:10px;margin-left:4px">last_refresh alanı dolu olan makaleler</span>
+      </div>
+      <table>
+        <thead><tr>
+          <th>Makale</th><th>Son Güncelleme</th><th>Kaç Kez</th><th>Grup</th>
+        </tr></thead>
+        <tbody>
+          {refreshed.slice(0, 30).map((a: any) => (
+            <tr>
+              <td>
+                <a href={`/admin/article/${a.slug}`} style="color:#8CAA8C;text-decoration:none">{a.slug}</a>
+              </td>
+              <td style="color:#4A6B4A">{a.last_refresh || '—'}</td>
+              <td><span style="color:#C8D5C0">{a.refresh_count}×</span></td>
+              <td>
+                <span class={`badge badge-${a.group?.toLowerCase() === 'yildiz' ? 'yildiz' : a.group?.toLowerCase() === 'acil' ? 'acil' : a.group?.toLowerCase() === 'izle' ? 'izle' : a.group?.toLowerCase() === 'firsat' ? 'firsat' : a.group?.toLowerCase() === 'olu' ? 'olu' : 'stabil'}`}>
+                  {a.group}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <!-- GitHub Actions status -->
+  <div style="margin-top:40px;padding:16px;background:#0C1A0F;border:1px solid #172B1B;border-radius:4px;font-size:12px">
+    <p style="color:#8CAA8C;margin-bottom:12px"><strong style="color:#C8D5C0">GitHub Actions Zamanlaması</strong></p>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#060D08;border-radius:3px">
+        <span style="color:#8CAA8C">daily-gsc.yml</span>
+        <span style="color:#4A6B4A">Her gün 04:00 UTC</span>
+        <span style="color:#4ADE80;font-size:10px">GSC sync + AHS hesapla</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#060D08;border-radius:3px">
+        <span style="color:#8CAA8C">weekly-health.yml</span>
+        <span style="color:#4A6B4A">Her Pazar 05:00 UTC</span>
+        <span style="color:#4ADE80;font-size:10px">Link kontrol + duplikasyon</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 10px;background:#060D08;border-radius:3px">
+        <span style="color:#8CAA8C">weekly-digest (Pazartesi)</span>
+        <span style="color:#4A6B4A">daily-gsc içinde — Pazartesi çalışır</span>
+        <span style="color:#4ADE80;font-size:10px">data/weekly-digest.md üretir</span>
+      </div>
+    </div>
+    <p style="color:#4A6B4A;margin-top:12px;font-size:11px">
+      Actions logları: github.com/donanimklinik/donanimklinik/actions
+    </p>
+  </div>
+
+</AdminLayout>
