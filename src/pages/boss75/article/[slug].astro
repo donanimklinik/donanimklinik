@@ -130,10 +130,10 @@ function sparkbar(cur: number, prev: number) {
   <!-- Top queries -->
   {top_queries.length > 0 && (
     <div style="margin-top:24px">
-      <p style="color:#4A6B4A;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px">Top Query'ler (28g)</p>
+      <p style="color:#4A6B4A;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px">Hangi aramalardan geliyorlar? (son 28 gün)</p>
       <table>
         <thead><tr>
-          <th>Query</th><th>Imp</th><th>Tık</th><th>CTR</th><th>Pos</th>
+          <th>Arama Kelimesi</th><th>Görünme</th><th>Tıklanma</th><th>Tıklanma%</th><th>Google Sırası</th>
         </tr></thead>
         <tbody>
           {top_queries.map((q: any) => (
@@ -152,7 +152,7 @@ function sparkbar(cur: number, prev: number) {
 
   {top_queries.length === 0 && (
     <div style="margin-top:20px;color:#4A6B4A;font-size:12px">
-      Query verisi yok — GSC bağlantısı kurulduktan sonra görünecek.
+      Henüz arama kelimesi verisi yok — Google bu makaleye trafik gönderince burada görünecek.
     </div>
   )}
 
