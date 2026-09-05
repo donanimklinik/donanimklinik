@@ -1,0 +1,154 @@
+---
+import AdminLayout from '../../layouts/AdminLayout.astro';
+import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
+
+const INDEX_PATH = join(process.cwd(), 'data/seo-refresh/query-index.json');
+
+const index = existsSync(INDEX_PATH)
+  ? JSON.parse(readFileSync(INDEX_PATH, 'utf8'))
+  : { updated_at: null, pending_count: 0, applied_count: 0, skipped_count: 0, items: [] };
+
+const pending = index.items.filter((i: any) => i.status === 'pending');
+const applied = index.items.filter((i: any) => i.status === 'applied');
+
+// Group pending by slug
+const bySlug: Record<string, any[]> = {};
+for (const item of pending) {
+  if (!bySlug[item.slug]) bySlug[item.slug] = [];
+  bySlug[item.slug].push(item);
+}
+const slugGroups = Object.entries(bySlug).sort((a, b) => {
+  const maxA = Math.max(...a[1].map((i: any) => i.impressions));
+  const maxB = Math.max(...b[1].map((i: any) => i.impressions));
+  return maxB - maxA;
+});
+
+function fmtPos(n: number) { return n ? n.toFixed(1) : '—'; }
+function fmtNum(n: number) { return n >= 1000 ? (n / 1000).toFixed(1) + 'K' : String(n || 0); }
+function posColor(p: number) {
+  if (p <= 5) return '#4ADE80';
+  if (p <= 10) return '#8CAA8C';
+  if (p <= 15) return '#FB923C';
+  return '#F87171';
+}
+
+const updatedAt = index.updated_at ? new Date(index.updated_at).toLocaleDateString('tr-TR') : '—';
+---
+
+<AdminLayout title="Refresh Fırsatları" active="refresh">
+
+  <!-- Header -->
+  <div style="margin-bottom:20px">
+    <h1 style="color:#C8D5C0;font-size:14px;font-weight:600;margin-bottom:6px">İçerik Güncelleme Fırsatları</h1>
+    <p style="color:#4A6B4A;font-size:11px">
+      Google'da 8-20. sırada görünen ama yeterince tıklanmayan kelimeler — bu makalelere H2 veya FAQ eklemek sıralamayı yukarı çekebilir.
+      Son güncelleme: {updatedAt}
+    </p>
+  </div>
+
+  <!-- Summary bar -->
+  <div class="stat-bar" style="margin-bottom:24px">
+    <div class="stat">
+      <span class="stat-label">Bekleyen</span>
+      <span class="stat-value" style={index.pending_count > 0 ? 'color:#FBBF24' : ''}>{index.pending_count}</span>
+      <span class="stat-sub">fırsat</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Uygulanan</span>
+      <span class="stat-value" style="color:#4ADE80">{index.applied_count}</span>
+      <span class="stat-sub">güncelleme</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Atlanan</span>
+      <span class="stat-value">{index.skipped_count}</span>
+      <span class="stat-sub">adet</span>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Etkilenen Makale</span>
+      <span class="stat-value">{slugGroups.length}</span>
+      <span class="stat-sub">adet</span>
+    </div>
+  </div>
+
+  {pending.length === 0 && (
+    <div class="notice">
+      <strong style="color:#FBBF24">Şu an fırsat yok.</strong> Google henüz makaleleri yeterince taramadı.
+      Siteniz trafik aldıkça burada kelime boşlukları görünmeye başlayacak.
+      GSC genellikle yayından 4-8 hafta sonra query verisi üretir.
+    </div>
+  )}
+
+  {slugGroups.map(([slug, items]) => (
+    <div style="margin-bottom:24px">
+      <!-- Article header -->
+      <div style="display:flex;align-items:center;gap:10px;padding:10px 0 6px;border-top:1px solid #172B1B">
+        <a href={`/boss75/article/${slug}`} style="color:#C8D5C0;font-size:12px;font-weight:600;text-decoration:none;flex:1">
+          {items[0].title}
+        </a>
+        <span style="color:#4A6B4A;font-size:11px">{items[0].url}</span>
+        <span style="background:#172B1B;color:#FBBF24;font-size:10px;padding:2px 7px;border-radius:3px">{items.length} fırsat</span>
+      </div>
+
+      <!-- Queries table -->
+      <table style="margin-top:4px">
+        <thead>
+          <tr>
+            <th>Arama Kelimesi</th>
+            <th style="width:80px">Görünme</th>
+            <th style="width:90px">Google Sırası</th>
+            <th style="width:70px">Tıklanma%</th>
+            <th style="width:110px">Ne Yapmalı</th>
+          </tr>
+        </thead>
+        <tbody>
+          {items.map((item: any) => (
+            <tr>
+              <td style="color:#C8D5C0;font-size:12px">{item.query}</td>
+              <td>{fmtNum(item.impressions)}</td>
+              <td style={`color:${posColor(item.position)};font-weight:600`}>{fmtPos(item.position)}</td>
+              <td style="color:#8CAA8C">{((item.ctr || 0) * 100).toFixed(1)}%</td>
+              <td>
+                {item.position <= 10
+                  ? <span style="color:#4ADE80;font-size:10px">H2 ekle</span>
+                  : <span style="color:#FB923C;font-size:10px">FAQ ekle</span>
+                }
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <!-- Write prompt hint -->
+      <div style="margin-top:6px;padding:6px 10px;background:#0C1A0F;border-left:2px solid #172B1B;border-radius:0 3px 3px 0">
+        <span style="color:#4A6B4A;font-size:10px">Yazmak için Claude'a söyle: </span>
+        <span style="color:#60A5FA;font-size:10px;font-style:italic">
+          "/{items[0].url} makalesine '{items[0].query}' için H2 bölümü yaz"
+        </span>
+      </div>
+    </div>
+  ))}
+
+  {applied.length > 0 && (
+    <div style="margin-top:32px">
+      <p style="color:#4A6B4A;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px">Uygulananlar</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Makale</th><th>Kelime</th><th>Uygulama Tarihi</th>
+          </tr>
+        </thead>
+        <tbody>
+          {applied.map((item: any) => (
+            <tr>
+              <td><a href={`/boss75/article/${item.slug}`} style="color:#4A6B4A">{item.slug}</a></td>
+              <td style="color:#8CAA8C">{item.query}</td>
+              <td style="color:#4A6B4A">{item.applied_at || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+</AdminLayout>

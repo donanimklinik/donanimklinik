@@ -39,6 +39,9 @@ jobs:
       - name: Calculate AHS scores & build dashboard
         run: node scripts/calc-ahs.mjs
 
+      - name: Harvest SEO refresh opportunities
+        run: node scripts/seo-harvest.mjs
+
       - name: Rotate old raw files (keep last 90 days)
         run: |
           cd data/gsc-raw

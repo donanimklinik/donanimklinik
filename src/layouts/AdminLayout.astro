@@ -1,7 +1,7 @@
 ---
 interface Props {
   title?: string;
-  active?: 'dashboard' | 'opportunities' | 'health' | 'log';
+  active?: 'dashboard' | 'opportunities' | 'health' | 'log' | 'refresh';
 }
 const { title = 'Dashboard', active = 'dashboard' } = Astro.props;
 
@@ -267,6 +267,7 @@ const adminHash = import.meta.env.ADMIN_HASH || '';
     <a href="/boss75/opportunities" class={active === 'opportunities' ? 'active' : ''}>Fırsatlar</a>
     <a href="/boss75/health" class={active === 'health' ? 'active' : ''}>Sağlık</a>
     <a href="/boss75/log" class={active === 'log' ? 'active' : ''}>Log</a>
+    <a href="/boss75/refresh" class={active === 'refresh' ? 'active' : ''}>Refresh</a>
   </nav>
   <span class="admin-spacer"></span>
   <span class="admin-meta" id="header-meta">donanimklinik.com</span>
