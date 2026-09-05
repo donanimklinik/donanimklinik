@@ -20,11 +20,18 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.WIF_PROVIDER }}
+          service_account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
+          token_format: 'access_token'
+          access_token_scopes: 'https://www.googleapis.com/auth/webmasters.readonly'
+
       - name: Fetch GSC data
         env:
-          GSC_CLIENT_ID: ${{ secrets.GSC_CLIENT_ID }}
-          GSC_CLIENT_SECRET: ${{ secrets.GSC_CLIENT_SECRET }}
-          GSC_REFRESH_TOKEN: ${{ secrets.GSC_REFRESH_TOKEN }}
+          GSC_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GSC_SITE_URL: https://www.donanimklinik.com/
         run: node scripts/gsc-fetch.mjs
 

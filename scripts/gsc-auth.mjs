@@ -1,31 +1,16 @@
 /**
- * GSC OAuth2 — refresh token → access token
- * Env vars required: GSC_CLIENT_ID, GSC_CLIENT_SECRET, GSC_REFRESH_TOKEN
+ * GSC auth — returns access token.
+ * In GitHub Actions: GSC_ACCESS_TOKEN is injected by google-github-actions/auth@v2 (WIF).
+ * Locally: set GSC_ACCESS_TOKEN manually for testing.
  */
 export async function getAccessToken() {
-  const { GSC_CLIENT_ID, GSC_CLIENT_SECRET, GSC_REFRESH_TOKEN } = process.env;
+  const { GSC_ACCESS_TOKEN } = process.env;
 
-  if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || !GSC_REFRESH_TOKEN) {
+  if (!GSC_ACCESS_TOKEN) {
     throw new Error(
-      'Missing GSC credentials. Set GSC_CLIENT_ID, GSC_CLIENT_SECRET, GSC_REFRESH_TOKEN in environment.'
+      'Missing GSC_ACCESS_TOKEN. In GitHub Actions this is set by the google-github-actions/auth step.'
     );
   }
 
-  const res = await fetch('https://oauth2.googleapis.com/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      client_id: GSC_CLIENT_ID,
-      client_secret: GSC_CLIENT_SECRET,
-      refresh_token: GSC_REFRESH_TOKEN,
-    }),
-  });
-
-  const data = await res.json();
-  if (!data.access_token) {
-    throw new Error(`GSC auth failed: ${JSON.stringify(data)}`);
-  }
-
-  return data.access_token;
+  return GSC_ACCESS_TOKEN;
 }
