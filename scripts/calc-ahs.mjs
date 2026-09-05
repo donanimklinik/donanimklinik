@@ -197,7 +197,7 @@ function getSuggestions(slug, cur, prev, ahs) {
     suggestions.push('Sayfa 1 sınırında — içerik genişletme ile çıkabilir');
   }
   if (cur.ctr < 0.02 && cur.impressions > 30) {
-    suggestions.push('CTR %2 altı — meta description ve title'ı yenile');
+    suggestions.push("CTR %2 altı — meta description ve title'ı yenile");
   }
   if (cur.position > 15) {
     suggestions.push('Pozisyon 15+ — anahtar kelime hedefleme gözden geçir');
