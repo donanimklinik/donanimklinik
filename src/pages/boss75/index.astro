@@ -37,27 +37,29 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
   <!-- Summary bar -->
   <div class="stat-bar">
     <div class="stat">
-      <span class="stat-label">Makaleler</span>
+      <span class="stat-label">Toplam Makale</span>
       <span class="stat-value">{articles.length}</span>
-      <span class="stat-sub">{has_gsc_data ? `${site_totals.articles_with_data} GSC'de` : 'GSC yok'}</span>
+      <span class="stat-sub">sitende yayında</span>
     </div>
     <div class="stat">
-      <span class="stat-label">Impression / 28g</span>
+      <span class="stat-label">Google'da Görünme</span>
       <span class="stat-value">{fmtNum(site_totals.impressions_28d)}</span>
+      <span class="stat-sub">son 28 günde kaç kez çıktın</span>
     </div>
     <div class="stat">
-      <span class="stat-label">Tıklama / 28g</span>
+      <span class="stat-label">Tıklanma</span>
       <span class="stat-value">{fmtNum(site_totals.clicks_28d)}</span>
-      <span class="stat-sub">{fmtCtr(site_totals.avg_ctr)} CTR</span>
+      <span class="stat-sub">{fmtCtr(site_totals.avg_ctr)} tıklanma oranı</span>
     </div>
     <div class="stat">
-      <span class="stat-label">Ort. Pozisyon</span>
+      <span class="stat-label">Ortalama Sıra</span>
       <span class="stat-value">{site_totals.avg_position || '—'}</span>
+      <span class="stat-sub">Google'da kaçıncısın</span>
     </div>
     <div class="stat">
-      <span class="stat-label">GSC Verisi</span>
+      <span class="stat-label">Veri Tarihi</span>
       <span class="stat-value" style="font-size:14px">{gsc_data_through || '—'}</span>
-      <span class="stat-sub">Güncelleme: {updatedDate}</span>
+      <span class="stat-sub">panel güncellendi: {updatedDate}</span>
     </div>
   </div>
 
@@ -73,17 +75,16 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
 
   {!has_gsc_data && (
     <div class="notice">
-      📡 <strong>GSC bağlantısı yok.</strong>
-      Veriler frontmatter'dan. Gerçek metrikler için
-      <a href="#gsc-setup">OAuth kurulumunu tamamla ↓</a>
+      📡 <strong>GSC verisi henüz yok.</strong>
+      Veriler frontmatter'dan geliyor. Daily GSC Sync workflow çalışınca gerçek metrikler görünür.
     </div>
   )}
 
   <!-- ACIL -->
   <div class="section-header" onclick="toggleSection('acil')">
-    <span style="color:#F87171">● ACIL</span>
+    <span style="color:#F87171">● ACIL — Hemen Güncelle</span>
     <span class="badge badge-acil">{acil.length}</span>
-    <span style="color:#555;font-size:10px;margin-left:4px">48 saat içinde güncelle</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">Google'da hızla düşüyor · 48 saat içinde içerik ekle</span>
     <span class="section-toggle" id="toggle-acil">▾</span>
   </div>
   <div id="section-acil">
@@ -92,7 +93,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
     ) : (
       <table>
         <thead><tr>
-          <th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th>
+          <th title="Makale Sağlık Skoru: 0=ölüyor, 100=mükemmel">Skor</th><th>Makale</th><th title="Son 28 günde Google'da kaç kez göründü">Görünme</th><th title="Önceki 28 güne göre değişim">Değişim</th><th title="Google'da ortalama kaçıncı sırada">Sıra</th><th title="Gören kaçı tıklıyor">Tıklanma%</th><th style="width:130px"></th>
         </tr></thead>
         <tbody>
           {acil.map((a: any) => (
@@ -128,9 +129,9 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
 
   <!-- İZLE -->
   <div class="section-header" onclick="toggleSection('izle')">
-    <span style="color:#FB923C">● İZLE</span>
+    <span style="color:#FB923C">● TAKİPTE — Dikkat Et</span>
     <span class="badge badge-izle">{izle.length}</span>
-    <span style="color:#555;font-size:10px;margin-left:4px">7 günde tekrar bak</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">henüz acil değil ama kötüye gidiyor · 7 günde bir bak</span>
     <span class="section-toggle" id="toggle-izle">▾</span>
   </div>
   <div id="section-izle">
@@ -158,9 +159,9 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
 
   <!-- FIRSAT -->
   <div class="section-header" onclick="toggleSection('firsat')">
-    <span style="color:#FBBF24">● FIRSAT</span>
+    <span style="color:#FBBF24">● FIRSAT — İçerik Ekle</span>
     <span class="badge badge-firsat">{firsat.length}</span>
-    <span style="color:#555;font-size:10px;margin-left:4px">14 günde genişlet</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">Google'da görünüyor ama tıklanmıyor · birkaç bölüm ekle, sırası yükselir</span>
     <span class="section-toggle" id="toggle-firsat">▾</span>
   </div>
   <div id="section-firsat">
@@ -187,14 +188,14 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
 
   <!-- YILDIZ -->
   <div class="section-header" onclick="toggleSection('yildiz')">
-    <span style="color:#4ADE80">★ YILDIZ</span>
+    <span style="color:#4ADE80">★ YILDIZ — En İyi Makaleler</span>
     <span class="badge badge-yildiz">{yildiz.length}</span>
-    <span style="color:#555;font-size:10px;margin-left:4px">koruma modunda</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">iyi gidiyor · dokunma, sadece iç linkleri güçlendir</span>
     <span class="section-toggle" id="toggle-yildiz">▾</span>
   </div>
   <div id="section-yildiz">
     {yildiz.length === 0 ? (
-      <p class="empty-state">— GSC verisi gerekli</p>
+      <p class="empty-state">Henüz yok — trafik arttıkça burası dolacak</p>
     ) : (
       <table>
         <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
@@ -217,8 +218,9 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
 
   <!-- STABİL (collapsed by default) -->
   <div class="section-header" onclick="toggleSection('stabil')">
-    <span>● STABİL</span>
+    <span>● NORMAL — Bekle ve İzle</span>
     <span class="badge badge-stabil">{stabil.length}</span>
+    <span style="color:#555;font-size:10px;margin-left:4px">ne iyi ne kötü · trafik gelince yukarı veya aşağı gruba geçer</span>
     <span class="section-toggle" id="toggle-stabil">▸</span>
   </div>
   <div id="section-stabil" style="display:none">
@@ -243,9 +245,9 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
   {olu.length > 0 && (
     <>
       <div class="section-header" onclick="toggleSection('olu')">
-        <span style="color:#444">● ÖLÜ</span>
+        <span style="color:#444">● ÖLMÜŞ — Karar Ver</span>
         <span class="badge badge-olu">{olu.length}</span>
-        <span style="color:#444;font-size:10px;margin-left:4px">noindex veya 301</span>
+        <span style="color:#444;font-size:10px;margin-left:4px">2 aydır hiç trafik yok · ya sil ya başka sayfaya yönlendir</span>
         <span class="section-toggle" id="toggle-olu">▸</span>
       </div>
       <div id="section-olu" style="display:none">
@@ -265,29 +267,6 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
     </>
   )}
 
-  <!-- GSC Setup guide -->
-  {!has_gsc_data && (
-    <div id="gsc-setup" style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border)">
-      <p style="color:#FBBF24;font-size:13px;margin-bottom:16px;letter-spacing:0.05em">📡 GSC OAuth Kurulum Rehberi</p>
-      <ol style="color:#8CAA8C;font-size:12px;line-height:2.2;padding-left:20px">
-        <li>Google Cloud Console → Yeni proje oluştur → Search Console API'yi etkinleştir</li>
-        <li>Kimlik Bilgileri → OAuth 2.0 İstemci Kimliği → Masaüstü Uygulaması seç</li>
-        <li>Client ID ve Secret'ı indir (<code>.json</code> dosyası)</li>
-        <li>Terminalde çalıştır: <code>node scripts/gsc-oauth-setup.mjs</code></li>
-        <li>Tarayıcıda açılan sayfayı onayla → Refresh token terminale yazılır</li>
-        <li>GitHub → Settings → Secrets → 3 secret ekle:<br/>
-          <code>GSC_CLIENT_ID</code> · <code>GSC_CLIENT_SECRET</code> · <code>GSC_REFRESH_TOKEN</code></li>
-        <li>GitHub Actions → Daily GSC Sync → "Run workflow" butonuna tıkla</li>
-        <li>Vercel Dashboard → Settings → Env Variables → <code>ADMIN_HASH</code> ekle</li>
-      </ol>
-      <p style="color:#4A6B4A;font-size:11px;margin-top:16px">
-        Şifre hash'i üretmek:<br/>
-        <code style="background:#0C1A0F;padding:4px 10px;border-radius:3px;display:inline-block;margin-top:4px">
-          node -e "const c=require('crypto');console.log(c.createHash('sha256').update('ŞIFREN').digest('hex'))"
-        </code>
-      </p>
-    </div>
-  )}
 
 </AdminLayout>
 
