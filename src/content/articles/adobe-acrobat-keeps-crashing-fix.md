@@ -4,7 +4,7 @@ description: "Adobe Acrobat crashes when printing, saving, or shortly after open
 category: software
 pillar: "Adobe Acrobat Errors"
 status: published
-official_source_url: "https://helpx.adobe.com/acrobat/using/crashes.html"
+official_source_url: "https://helpx.adobe.com/acrobat/desktop/troubleshoot/performance-issues/acrobat-crashes.html"
 source_last_verified_at: 2026-09-04
 written_at: 2026-09-04
 published_at: 2026-09-04

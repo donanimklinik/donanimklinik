@@ -4,7 +4,7 @@ description: "Windows Update error 0xc1900101 rolls back the installation due to
 category: computers
 pillar: "Windows Update Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/topic/windows-10-upgrade-error-0xc1900101-0x20017-a07b4db1-da25-c028-8c32-d00f8f8a2e0d"
+official_source_url: "https://support.microsoft.com/en-us/windows/get-help-with-windows-upgrade-and-installation-errors-ea144c24-513d-a60e-40df-31ff78b3158a"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

@@ -4,7 +4,7 @@ description: "Error 0xC004C060 means the activation server flagged your product 
 category: computers
 pillar: "Windows Activation Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/windows/get-help-with-windows-activation-errors-09d8fb64-6768-4815-8057-6b9b3ef04e7f"
+official_source_url: "https://support.microsoft.com/en-us/windows/get-help-with-windows-activation-errors-09d8fb64-6768-4815-0c30-159fa7d89d85"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

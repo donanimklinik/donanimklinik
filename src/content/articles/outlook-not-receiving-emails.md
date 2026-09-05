@@ -4,7 +4,7 @@ description: "Outlook is not receiving emails but can still send? The cause is u
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/i-can-t-send-or-receive-email-in-outlook-7df52d3b-9de5-11e8-8800-056d99fd44f7"
+official_source_url: "https://support.microsoft.com/en-us/office/i-can-t-send-or-receive-messages-in-outlook-97748418-bbd5-4743-a05b-581f22a466dd"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-04

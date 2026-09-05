@@ -4,7 +4,7 @@ description: "Ethernet cable connected but no internet access? These steps fix t
 category: networking
 pillar: "WiFi & Internet Connection Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/windows/fix-ethernet-connection-problems-in-windows-11-a49f3ce7-7541-47a2-a15b-3d3d0c8f1f8e"
+official_source_url: "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-ethernet-connection-problems-in-windows"
 source_last_verified_at: 2026-09-02
 written_at: 2026-09-02
 published_at: 2026-09-02

@@ -4,7 +4,7 @@ description: "Google Drive not syncing files to your computer? Restart the clien
 category: software
 pillar: "Cloud Storage Sync Errors"
 status: published
-official_source_url: "https://support.google.com/drive/answer/2633000"
+official_source_url: "https://support.google.com/drive/answer/2565956"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

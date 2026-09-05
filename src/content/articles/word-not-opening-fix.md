@@ -4,7 +4,7 @@ description: "Word documents won't open or show 'Word cannot open the document'?
 category: software
 pillar: "Office Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/open-and-repair-a-file-in-office-4f59f0fa-8416-43a1-a6c7-5dd5e2bb8a23"
+official_source_url: "https://support.microsoft.com/en-us/word/open-a-document-after-a-file-corruption-error"
 source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05

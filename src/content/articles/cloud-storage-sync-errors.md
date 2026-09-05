@@ -4,7 +4,7 @@ description: "OneDrive, Dropbox, or Google Drive not syncing? Find the right fix
 category: software
 pillar: "Cloud Storage Sync Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-945b-b26b8f33d400"
+official_source_url: "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03
@@ -106,6 +106,6 @@ Understanding which of these applies to your situation makes the fix straightfor
 
 If you have worked through all relevant guides and files are still not syncing, contact the service directly:
 
-- **OneDrive:** [Microsoft Support](https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-945b-b26b8f33d400)
+- **OneDrive:** [Microsoft Support](https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2)
 - **Dropbox:** [Dropbox Help Center](https://help.dropbox.com/)
 - **Google Drive:** [Google Drive Help](https://support.google.com/drive/)

@@ -4,7 +4,7 @@ description: "Emails stuck in Outlook's outbox won't send until the underlying c
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/email-is-stuck-in-outbox-cc425a65-3bbe-4c7d-8ce2-1a87b5e8f5e2"
+official_source_url: "https://support.microsoft.com/en-us/topic/outlook-email-stuck-5c945f98-415e-58f2-8476-b76e59dfd2e3"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-02

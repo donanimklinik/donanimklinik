@@ -4,7 +4,7 @@ description: "Microsoft Word closes unexpectedly when printing, saving, or typin
 category: software
 pillar: "Office Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/word-is-not-responding-or-hangs-e07d20e8-e7ab-4f2f-9cf7-43af94dd8e6c"
+official_source_url: "https://support.microsoft.com/en-us/office/how-to-troubleshoot-problems-that-occur-when-you-start-or-use-word-c58cf51c-eff7-4205-89ce-1a23f8f8096e"
 source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05

@@ -4,7 +4,7 @@ description: "BitLocker showing as Suspended? Your drive is still encrypted but 
 category: computers
 pillar: "BitLocker & Data Recovery"
 status: published
-official_source_url: "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-operations-guide"
+official_source_url: "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/operations-guide"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

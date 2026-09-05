@@ -4,7 +4,7 @@ description: "Dropbox not syncing files to the cloud? Pause and resume, check se
 category: software
 pillar: "Cloud Storage Sync Errors"
 status: published
-official_source_url: "https://help.dropbox.com/sync/not-syncing"
+official_source_url: "https://help.dropbox.com/sync/files-not-syncing"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

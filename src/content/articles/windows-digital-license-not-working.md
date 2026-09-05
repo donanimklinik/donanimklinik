@@ -4,7 +4,7 @@ description: "A digital licence links your Windows activation to your hardware. 
 category: computers
 pillar: "Windows Activation Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-5837-5c23-b9f8-78e0f6f0f1f7"
+official_source_url: "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

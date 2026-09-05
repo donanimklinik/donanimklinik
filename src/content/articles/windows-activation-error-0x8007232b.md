@@ -4,7 +4,7 @@ description: "Error 0x8007232B means Windows cannot reach a KMS server for activ
 category: computers
 pillar: "Windows Activation Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/topic/error-code-0x8007232b-or-0x8007007b-when-you-try-to-activate-windows-f5fde2b8-57e0-8284-8c5a-e44085a88b09"
+official_source_url: "https://support.microsoft.com/en-us/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

@@ -4,7 +4,7 @@ description: "Windows Update not working or stuck? Run the troubleshooter, resta
 category: computers
 pillar: "Windows Update Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3a-89292d261e4b"
+official_source_url: "https://support.microsoft.com/en-us/windows/windows-update-troubleshooter-19bc41ca-ad72-ae67-af3c-89ce169755dd"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

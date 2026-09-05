@@ -4,7 +4,7 @@ description: "Clicking drive, BIOS not detecting it, water damage? Software tool
 category: computers
 pillar: "BitLocker & Data Recovery"
 status: published
-official_source_url: "https://www.seagate.com/support/rescue-data-recovery-services/"
+official_source_url: "https://www.seagate.com/products/rescue-data-recovery/"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

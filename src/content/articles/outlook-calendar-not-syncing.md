@@ -4,7 +4,7 @@ description: "Outlook calendar not syncing means meetings and events are missing
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/troubleshoot-calendar-sync-issues-in-outlook-52bc1a6f-7c10-4d39-9d56-b0c0c6c4b38e"
+official_source_url: "https://support.microsoft.com/en-us/outlook/"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-04

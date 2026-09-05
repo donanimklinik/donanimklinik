@@ -4,7 +4,7 @@ description: "Seeing aka.ms/myrecoverykey on your screen? This is Microsoft's sh
 category: computers
 pillar: "BitLocker & Data Recovery"
 status: published
-official_source_url: "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-overview"
+official_source_url: "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

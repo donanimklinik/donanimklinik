@@ -4,7 +4,7 @@ description: "Error 0x800CCC0E means Outlook cannot connect to the outgoing mail
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/error-message-when-you-send-or-receive-email-in-microsoft-outlook-0x800ccc0e-cc5bd71a-0543-4e3e-a1d4-29a1e19eff78"
+official_source_url: "https://support.microsoft.com/en-us/office/users-get-errors-0x800ccc0e-0x800ccc0f-synchronizing-gmail-and-yahoo-accounts-in-classic-outlook-e5a7b684-7c5c-4848-ab2d-d48291451f67"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-03

@@ -4,7 +4,7 @@ description: "Outlook is not sending email? The most common causes are offline m
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/fix-problems-with-outlook-won-t-send-or-receive-email-57c3e64b-a3e6-4a17-8c79-2c6c38e04c16"
+official_source_url: "https://support.microsoft.com/en-us/outlook/i-can-t-send-or-receive-messages-in-outlook"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-02

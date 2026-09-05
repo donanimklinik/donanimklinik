@@ -4,7 +4,7 @@ description: "Windows Update error 0x800f0922? This error signals a full System 
 category: computers
 pillar: "Windows Update Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/topic/windows-update-error-0x800f0922-7be9b1e7-8a98-b59c-bf63-dbad2f5e866d"
+official_source_url: "https://support.microsoft.com/en-us/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

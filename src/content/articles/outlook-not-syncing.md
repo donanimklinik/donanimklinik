@@ -4,7 +4,7 @@ description: "Outlook not syncing means new emails are not arriving or sent item
 category: software
 pillar: "Microsoft 365 & Outlook Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/fix-outlook-email-sync-issues-57c3e64b-a3e6-4a17-8c79-2c6c38e04c16"
+official_source_url: "https://support.microsoft.com/en-us/outlook/fix-email-sync-issues-by-removing-a-device-from-your-outlook-mailbox"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-03

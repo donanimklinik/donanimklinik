@@ -4,7 +4,7 @@ description: "Clicking sounds, slow file access, missing files, SMART errors —
 category: computers
 pillar: "BitLocker & Data Recovery"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/windows/check-your-storage-device-health-in-windows-8b7a3835-1e95-4b82-b397-f5a4c9f07db4"
+official_source_url: "https://support.microsoft.com/en-us/windows/device-performance-and-health-in-the-windows-security-app-59d8499d-b6fd-6930-7667-ebf8ae10e08d"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

@@ -4,7 +4,7 @@ description: "Windows Update fails with error 0x80070005 Access Denied? These of
 category: computers
 pillar: "Windows Update Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/topic/error-0x80070005-access-denied-when-you-try-to-install-windows-updates-b3e87c27-9d8a-5101-59e9-e7da98d4c2a3"
+official_source_url: "https://support.microsoft.com/en-us/windows/troubleshoot-problems-updating-windows-188c2b0f-10a7-d72f-65b8-32d177eb136c"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

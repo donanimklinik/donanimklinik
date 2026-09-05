@@ -4,7 +4,7 @@ description: "OneDrive not opening or missing from system tray? Restart the proc
 category: software
 pillar: "Cloud Storage Sync Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-945b-b26b8f33d400"
+official_source_url: "https://support.microsoft.com/en-us/office/fix-onedrive-sync-problems-0899b115-05f7-45ec-95b2-e4cc8c4670b2"
 source_last_verified_at: 2026-09-03
 written_at: 2026-09-03
 published_at: 2026-09-03

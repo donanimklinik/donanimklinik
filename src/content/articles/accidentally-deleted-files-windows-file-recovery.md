@@ -4,7 +4,7 @@ description: "Deleted a file that's no longer in the Recycle Bin? Microsoft's fr
 category: computers
 pillar: "BitLocker & Data Recovery"
 status: published
-official_source_url: "https://learn.microsoft.com/en-us/windows/client-management/windows-file-recovery"
+official_source_url: "https://apps.microsoft.com/detail/9n26s50ln705"
 source_last_verified_at: 2026-09-01
 written_at: 2026-09-01
 published_at: 2026-09-01

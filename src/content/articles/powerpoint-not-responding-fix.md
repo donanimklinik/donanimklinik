@@ -4,7 +4,7 @@ description: "PowerPoint freezes during editing or slideshow? Disabling hardware
 category: software
 pillar: "Office Errors"
 status: published
-official_source_url: "https://support.microsoft.com/en-us/office/powerpoint-is-not-responding-hangs-or-freezes-90680b2e-1318-4d1b-a54b-fe4f7e89a4c2"
+official_source_url: "https://support.microsoft.com/en-us/office/powerpoint-isn-t-responding-hangs-or-freezes-652ede6e-e3d2-449a-a07f-8c800dfb948d"
 source_last_verified_at: 2026-09-05
 written_at: 2026-09-05
 published_at: 2026-09-05
