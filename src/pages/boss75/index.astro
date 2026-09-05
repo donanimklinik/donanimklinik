@@ -139,7 +139,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
       <p class="empty-state">Temiz ✓</p>
     ) : (
       <table>
-        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+        <thead><tr><th>Skor</th><th>Makale URL</th><th>Görünme</th><th>Değişim</th><th>Google Sırası</th><th>Tıklanma%</th><th style="width:130px"></th></tr></thead>
         <tbody>
           {izle.map((a: any) => (
             <tr>
@@ -169,7 +169,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
       <p class="empty-state">{has_gsc_data ? 'Fırsat yok' : 'GSC verisi gerekli'}</p>
     ) : (
       <table>
-        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Pos</th><th>Öneri</th><th style="width:130px"></th></tr></thead>
+        <thead><tr><th>Skor</th><th>Makale URL</th><th>Görünme</th><th>Google Sırası</th><th>Ne Yapmalısın</th><th style="width:130px"></th></tr></thead>
         <tbody>
           {firsat.map((a: any) => (
             <tr>
@@ -198,7 +198,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
       <p class="empty-state">Henüz yok — trafik arttıkça burası dolacak</p>
     ) : (
       <table>
-        <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Δ%</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+        <thead><tr><th>Skor</th><th>Makale URL</th><th>Görünme</th><th>Değişim</th><th>Google Sırası</th><th>Tıklanma%</th><th style="width:130px"></th></tr></thead>
         <tbody>
           {yildiz.map((a: any) => (
             <tr>
@@ -225,7 +225,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
   </div>
   <div id="section-stabil" style="display:none">
     <table>
-      <thead><tr><th>AHS</th><th>Makale</th><th>Imp</th><th>Pos</th><th>CTR</th><th style="width:130px"></th></tr></thead>
+      <thead><tr><th>Skor</th><th>Makale URL</th><th>Görünme</th><th>Google Sırası</th><th>Tıklanma%</th><th style="width:130px"></th></tr></thead>
       <tbody>
         {stabil.map((a: any) => (
           <tr>
@@ -252,7 +252,7 @@ const cannibals   = health?.cannibal_pairs?.length || 0;
       </div>
       <div id="section-olu" style="display:none">
         <table>
-          <thead><tr><th>Makale</th><th>Imp (28g)</th><th>Aksiyon</th></tr></thead>
+          <thead><tr><th>Makale URL</th><th>Görünme (28g)</th><th>Ne Yapmalısın</th></tr></thead>
           <tbody>
             {olu.map((a: any) => (
               <tr>
