@@ -60,12 +60,12 @@ const checkedAt = health?.checked_at;
         {broken.map((b: any) => (
           <tr>
             <td>
-              <a href={`/admin/article/${b.slug}`} style="color:#8CAA8C;text-decoration:none">{b.slug}</a>
+              <a href={`/boss75/article/${b.slug}`} style="color:#8CAA8C;text-decoration:none">{b.slug}</a>
             </td>
             <td style="color:#F87171;font-size:11px;max-width:300px;word-break:break-all">{b.url}</td>
             <td><span class="badge badge-acil">{b.status}</span></td>
             <td>
-              <a href={`/admin/article/${b.slug}`} class="btn" style="border-color:#F87171;color:#F87171">Düzelt →</a>
+              <a href={`/boss75/article/${b.slug}`} class="btn" style="border-color:#F87171;color:#F87171">Düzelt →</a>
             </td>
           </tr>
         ))}
@@ -97,10 +97,10 @@ const checkedAt = health?.checked_at;
         {dupRisks.map((d: any) => (
           <tr>
             <td>
-              <a href={`/admin/article/${d.slug_a}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_a}</a>
+              <a href={`/boss75/article/${d.slug_a}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_a}</a>
             </td>
             <td>
-              <a href={`/admin/article/${d.slug_b}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_b}</a>
+              <a href={`/boss75/article/${d.slug_b}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{d.slug_b}</a>
             </td>
             <td><span class="badge badge-firsat">{d.similarity}%</span></td>
           </tr>
@@ -134,10 +134,10 @@ const checkedAt = health?.checked_at;
           <tr>
             <td style="color:#C8D5C0;max-width:220px">{c.query}</td>
             <td>
-              <a href={`/admin/article/${c.winner}`} style="color:#4ADE80;text-decoration:none;font-size:11px">{c.winner}</a>
+              <a href={`/boss75/article/${c.winner}`} style="color:#4ADE80;text-decoration:none;font-size:11px">{c.winner}</a>
             </td>
             <td>
-              <a href={`/admin/article/${c.loser}`} style="color:#F87171;text-decoration:none;font-size:11px">{c.loser}</a>
+              <a href={`/boss75/article/${c.loser}`} style="color:#F87171;text-decoration:none;font-size:11px">{c.loser}</a>
             </td>
             <td>{c.shared_impressions || '—'}</td>
           </tr>

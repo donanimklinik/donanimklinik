@@ -62,10 +62,10 @@ if (d.opportunities?.length > 0) {
 
 const broken = d.health?.broken_links?.length || 0;
 if (broken > 0) {
-  md += `## ⚠ Kırık Linkler: ${broken}\n\nAdmin panelinden düzelt → /admin/health\n\n`;
+  md += `## ⚠ Kırık Linkler: ${broken}\n\nAdmin panelinden düzelt → /boss75/health\n\n`;
 }
 
-md += `---\n*Otomatik üretildi — admin panelinden detay: /admin*\n`;
+md += `---\n*Otomatik üretildi — admin panelinden detay: /boss75*\n`;
 
 writeFileSync(join(ROOT, 'data/weekly-digest.md'), md, 'utf8');
 console.log(`✓ weekly-digest.md generated`);

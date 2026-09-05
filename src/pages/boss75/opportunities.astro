@@ -26,7 +26,7 @@ const expansion   = opportunities.filter((o: any) => o.position >= 5 && o.positi
   {!has_gsc_data && (
     <div class="notice">
       📡 GSC bağlantısı kurulmadan fırsat analizi yapılamaz.
-      <a href="/admin#gsc-setup">Kurulum rehberi ↓</a>
+      <a href="/boss75#gsc-setup">Kurulum rehberi ↓</a>
     </div>
   )}
 
@@ -53,12 +53,12 @@ const expansion   = opportunities.filter((o: any) => o.position >= 5 && o.positi
             <tr>
               <td style="color:#C8D5C0;max-width:260px">{o.query}</td>
               <td>
-                <a href={`/admin/article/${o.slug}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{o.slug}</a>
+                <a href={`/boss75/article/${o.slug}`} style="color:#8CAA8C;text-decoration:none;font-size:11px">{o.slug}</a>
               </td>
               <td>{fmtNum(o.impressions)}</td>
               <td style="color:#4ADE80;font-weight:600">{fmtPos(o.position)}</td>
               <td>{((o.ctr || 0) * 100).toFixed(1)}%</td>
-              <td><a href={`/admin/article/${o.slug}`} class="btn">Makaleye Git →</a></td>
+              <td><a href={`/boss75/article/${o.slug}`} class="btn">Makaleye Git →</a></td>
             </tr>
           ))}
         </tbody>
@@ -86,7 +86,7 @@ const expansion   = opportunities.filter((o: any) => o.position >= 5 && o.positi
               <td>{fmtNum(o.impressions)}</td>
               <td style="color:#FBBF24;font-weight:600">{fmtPos(o.position)}</td>
               <td>
-                <a href={`/admin/article/${o.slug}`} style="color:#4A6B4A;text-decoration:none;font-size:11px">{o.slug}</a>
+                <a href={`/boss75/article/${o.slug}`} style="color:#4A6B4A;text-decoration:none;font-size:11px">{o.slug}</a>
               </td>
             </tr>
           ))}
